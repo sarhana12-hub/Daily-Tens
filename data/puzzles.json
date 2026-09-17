@@ -29070,6 +29070,962 @@
         "level": "partial",
         "note": "The top two are firm; the European and South Asian producers below are close, so the order is my best judgment."
       }
+    },
+    {
+      "type": "ranked",
+      "tags": [],
+      "volatility": "evergreen",
+      "asOf": "2024-12-31",
+      "id": "sci-noble-gases",
+      "domain": "science",
+      "obscurity": 2,
+      "difficulty": 3,
+      "prompt": "The noble gases, by atomic number",
+      "metric": "Atomic number, ascending. Group 18 of the periodic table has exactly six members, so this list is padded to ten with the halogens that sit beside them.",
+      "source": {
+        "name": "CRC Handbook of Chemistry and Physics",
+        "url": "https://hbcp.chemnetbase.com/"
+      },
+      "order": "asc",
+      "ambiguity": "Group 18 has only six elements, so this puzzle asks for the noble gases followed by the halogens — both complete groups of the periodic table.",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Helium",
+          "value": 2,
+          "aliases": [],
+          "clue": "Lifts balloons, and makes voices squeak"
+        },
+        {
+          "rank": 2,
+          "name": "Fluorine",
+          "value": 9,
+          "aliases": [],
+          "clue": "The most reactive element of all"
+        },
+        {
+          "rank": 3,
+          "name": "Neon",
+          "value": 10,
+          "aliases": [],
+          "clue": "Glows orange-red in a discharge tube"
+        },
+        {
+          "rank": 4,
+          "name": "Chlorine",
+          "value": 17,
+          "aliases": [],
+          "clue": "Purifies water and bleaches cloth"
+        },
+        {
+          "rank": 5,
+          "name": "Argon",
+          "value": 18,
+          "aliases": [],
+          "clue": "Fills light bulbs and shields welds"
+        },
+        {
+          "rank": 6,
+          "name": "Bromine",
+          "value": 35,
+          "aliases": [],
+          "clue": "A dark red liquid at room temperature"
+        },
+        {
+          "rank": 7,
+          "name": "Krypton",
+          "value": 36,
+          "aliases": [],
+          "clue": "Shares its name with a fictional planet"
+        },
+        {
+          "rank": 8,
+          "name": "Iodine",
+          "value": 53,
+          "aliases": [],
+          "clue": "Added to table salt to prevent goitre"
+        },
+        {
+          "rank": 9,
+          "name": "Xenon",
+          "value": 54,
+          "aliases": [],
+          "clue": "Used in bright car headlamps"
+        },
+        {
+          "rank": 10,
+          "name": "Radon",
+          "value": 86,
+          "aliases": [],
+          "clue": "Radioactive, and seeps out of granite"
+        }
+      ]
+    },
+    {
+      "type": "ranked",
+      "tags": [],
+      "volatility": "evergreen",
+      "asOf": "2024-12-31",
+      "id": "sci-planets-order",
+      "domain": "science",
+      "obscurity": 1,
+      "difficulty": 2,
+      "prompt": "Bodies of the solar system by distance from the Sun",
+      "metric": "Mean distance from the Sun, ascending, counting the eight planets plus the two best-known dwarf planets.",
+      "source": {
+        "name": "NASA",
+        "url": "https://science.nasa.gov/"
+      },
+      "order": "asc",
+      "ambiguity": "Eight planets is not ten, so this list includes the two most familiar dwarf planets to complete the set.",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Mercury",
+          "value": 0.39,
+          "aliases": [],
+          "clue": "Smallest, fastest, and no atmosphere to speak of"
+        },
+        {
+          "rank": 2,
+          "name": "Venus",
+          "value": 0.72,
+          "aliases": [],
+          "clue": "Hotter than the innermost planet, thanks to its atmosphere"
+        },
+        {
+          "rank": 3,
+          "name": "Earth",
+          "value": 1,
+          "aliases": [],
+          "clue": "The only one known to have life"
+        },
+        {
+          "rank": 4,
+          "name": "Mars",
+          "value": 1.52,
+          "aliases": [],
+          "clue": "Red from iron oxide dust"
+        },
+        {
+          "rank": 5,
+          "name": "Ceres",
+          "value": 2.77,
+          "aliases": [],
+          "clue": "A dwarf planet in the asteroid belt"
+        },
+        {
+          "rank": 6,
+          "name": "Jupiter",
+          "value": 5.2,
+          "aliases": [],
+          "clue": "A storm larger than our whole planet"
+        },
+        {
+          "rank": 7,
+          "name": "Saturn",
+          "value": 9.5,
+          "aliases": [],
+          "clue": "Rings of ice and rock"
+        },
+        {
+          "rank": 8,
+          "name": "Uranus",
+          "value": 19.2,
+          "aliases": [],
+          "clue": "Tipped on its side, and orbits lying down"
+        },
+        {
+          "rank": 9,
+          "name": "Neptune",
+          "value": 30.1,
+          "aliases": [],
+          "clue": "The windiest place in the solar system"
+        },
+        {
+          "rank": 10,
+          "name": "Pluto",
+          "value": 39.5,
+          "aliases": [],
+          "clue": "Demoted from planet status in 2006"
+        }
+      ]
+    },
+    {
+      "type": "ranked",
+      "tags": [],
+      "volatility": "evergreen",
+      "asOf": "2024-12-31",
+      "id": "sci-mercury-to-pluto-size",
+      "domain": "science",
+      "obscurity": 2,
+      "difficulty": 3,
+      "prompt": "Largest planets by diameter",
+      "metric": "Equatorial diameter in kilometres, counting the eight planets plus the two largest dwarf planets.",
+      "source": {
+        "name": "NASA",
+        "url": "https://science.nasa.gov/"
+      },
+      "ambiguity": "There are only eight planets, so the two largest dwarf planets complete the ten.",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Jupiter",
+          "value": 139820,
+          "aliases": [],
+          "clue": "Could swallow every other planet with room to spare"
+        },
+        {
+          "rank": 2,
+          "name": "Saturn",
+          "value": 116460,
+          "aliases": [],
+          "clue": "Less dense than water"
+        },
+        {
+          "rank": 3,
+          "name": "Uranus",
+          "value": 50724,
+          "aliases": [],
+          "clue": "Pale blue-green from methane"
+        },
+        {
+          "rank": 4,
+          "name": "Neptune",
+          "value": 49244,
+          "aliases": [],
+          "clue": "Slightly smaller but denser than its neighbour"
+        },
+        {
+          "rank": 5,
+          "name": "Earth",
+          "value": 12742,
+          "aliases": [],
+          "clue": "The largest of the rocky planets"
+        },
+        {
+          "rank": 6,
+          "name": "Venus",
+          "value": 12104,
+          "aliases": [],
+          "clue": "Almost exactly our size, and nothing like it"
+        },
+        {
+          "rank": 7,
+          "name": "Mars",
+          "value": 6779,
+          "aliases": [],
+          "clue": "About half our diameter"
+        },
+        {
+          "rank": 8,
+          "name": "Mercury",
+          "value": 4879,
+          "aliases": [],
+          "clue": "Barely larger than our own moon"
+        },
+        {
+          "rank": 9,
+          "name": "Pluto",
+          "value": 2377,
+          "aliases": [],
+          "clue": "Smaller than several moons"
+        },
+        {
+          "rank": 10,
+          "name": "Eris",
+          "value": 2326,
+          "aliases": [],
+          "clue": "The dwarf planet whose discovery caused the demotion of another"
+        }
+      ]
+    },
+    {
+      "type": "ranked",
+      "tags": [],
+      "volatility": "evergreen",
+      "asOf": "2024-12-31",
+      "id": "sci-mohs-ascending",
+      "domain": "science",
+      "obscurity": 3,
+      "difficulty": 4,
+      "prompt": "Softest minerals on the Mohs scale",
+      "metric": "Position on the Mohs scale of hardness, ascending from 1. The scale is defined by exactly these ten minerals.",
+      "source": {
+        "name": "USGS",
+        "url": "https://www.usgs.gov/programs/mineral-resources-program"
+      },
+      "order": "asc",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Talc",
+          "value": 1,
+          "aliases": [],
+          "clue": "Soft enough to be ground into powder"
+        },
+        {
+          "rank": 2,
+          "name": "Gypsum",
+          "value": 2,
+          "aliases": [],
+          "clue": "Plaster and wallboard"
+        },
+        {
+          "rank": 3,
+          "name": "Calcite",
+          "value": 3,
+          "aliases": [],
+          "clue": "Limestone and marble"
+        },
+        {
+          "rank": 4,
+          "name": "Fluorite",
+          "value": 4,
+          "aliases": [],
+          "clue": "Gives its name to glowing under ultraviolet light"
+        },
+        {
+          "rank": 5,
+          "name": "Apatite",
+          "value": 5,
+          "aliases": [],
+          "clue": "What tooth enamel is mostly made of"
+        },
+        {
+          "rank": 6,
+          "name": "Orthoclase",
+          "value": 6,
+          "aliases": [
+            "feldspar"
+          ],
+          "clue": "Often pink in granite, and a major rock-forming mineral"
+        },
+        {
+          "rank": 7,
+          "name": "Quartz",
+          "value": 7,
+          "aliases": [],
+          "clue": "The bulk of most sand"
+        },
+        {
+          "rank": 8,
+          "name": "Topaz",
+          "value": 8,
+          "aliases": [],
+          "clue": "Often golden, and a birthstone"
+        },
+        {
+          "rank": 9,
+          "name": "Corundum",
+          "value": 9,
+          "aliases": [
+            "ruby",
+            "sapphire"
+          ],
+          "clue": "Two famous gemstones are this same mineral"
+        },
+        {
+          "rank": 10,
+          "name": "Diamond",
+          "value": 10,
+          "aliases": [],
+          "clue": "Defines the top of the scale"
+        }
+      ]
+    },
+    {
+      "type": "ranked",
+      "tags": [],
+      "volatility": "evergreen",
+      "asOf": "2024-12-31",
+      "id": "geo-great-lakes-and-seas",
+      "domain": "geography",
+      "obscurity": 2,
+      "difficulty": 4,
+      "prompt": "Largest seas in the world",
+      "metric": "Surface area in km², for seas as distinct from oceans.",
+      "source": {
+        "name": "Encyclopaedia Britannica",
+        "url": "https://www.britannica.com/"
+      },
+      "ambiguity": "Seas rather than oceans, and the definition of a sea is loose enough that some bodies here are called gulfs or bays elsewhere.",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Philippine Sea",
+          "value": 5695000,
+          "aliases": [
+            "philippine"
+          ],
+          "clue": "The largest sea, and contains the deepest trench"
+        },
+        {
+          "rank": 2,
+          "name": "Coral Sea",
+          "value": 4791000,
+          "aliases": [
+            "coral"
+          ],
+          "clue": "Off northeastern Australia, and holds a great reef"
+        },
+        {
+          "rank": 3,
+          "name": "Arabian Sea",
+          "value": 3862000,
+          "aliases": [
+            "arabian"
+          ],
+          "clue": "Between India and the Gulf states"
+        },
+        {
+          "rank": 4,
+          "name": "South China Sea",
+          "value": 3500000,
+          "aliases": [
+            "south china"
+          ],
+          "clue": "Heavily disputed, and carries a third of world shipping"
+        },
+        {
+          "rank": 5,
+          "name": "Weddell Sea",
+          "value": 2800000,
+          "aliases": [
+            "weddell"
+          ],
+          "clue": "Antarctic, and where one famous expedition ship was crushed"
+        },
+        {
+          "rank": 6,
+          "name": "Caribbean Sea",
+          "value": 2754000,
+          "aliases": [
+            "caribbean"
+          ],
+          "clue": "Island chains and a history of piracy"
+        },
+        {
+          "rank": 7,
+          "name": "Mediterranean Sea",
+          "value": 2500000,
+          "aliases": [
+            "mediterranean",
+            "med"
+          ],
+          "clue": "Almost enclosed, and central to ancient history"
+        },
+        {
+          "rank": 8,
+          "name": "Tasman Sea",
+          "value": 2300000,
+          "aliases": [
+            "tasman"
+          ],
+          "clue": "Between Australia and New Zealand"
+        },
+        {
+          "rank": 9,
+          "name": "Bering Sea",
+          "value": 2000000,
+          "aliases": [
+            "bering"
+          ],
+          "clue": "Between Siberia and Alaska"
+        },
+        {
+          "rank": 10,
+          "name": "Sea of Okhotsk",
+          "value": 1583000,
+          "aliases": [
+            "okhotsk"
+          ],
+          "clue": "Between Siberia and a Japanese island"
+        }
+      ]
+    },
+    {
+      "type": "ranked",
+      "tags": [],
+      "volatility": "evergreen",
+      "asOf": "2024-12-31",
+      "id": "geo-continents-by-area",
+      "domain": "geography",
+      "obscurity": 1,
+      "difficulty": 3,
+      "prompt": "Continents and oceans by area",
+      "metric": "Surface area in millions of km², combining the seven continents and the five oceans into one ranking.",
+      "source": {
+        "name": "Encyclopaedia Britannica",
+        "url": "https://www.britannica.com/"
+      },
+      "ambiguity": "Continents and oceans ranked together, which is why the top of the list is all water.",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Pacific Ocean",
+          "value": 165,
+          "aliases": [
+            "pacific"
+          ],
+          "clue": "Larger than all the land on Earth combined"
+        },
+        {
+          "rank": 2,
+          "name": "Atlantic Ocean",
+          "value": 106,
+          "aliases": [
+            "atlantic"
+          ],
+          "clue": "Widening by a few centimetres a year"
+        },
+        {
+          "rank": 3,
+          "name": "Indian Ocean",
+          "value": 70,
+          "aliases": [
+            "indian"
+          ],
+          "clue": "The warmest ocean"
+        },
+        {
+          "rank": 4,
+          "name": "Asia",
+          "value": 44,
+          "aliases": [],
+          "clue": "The largest continent, and the most populous"
+        },
+        {
+          "rank": 5,
+          "name": "Africa",
+          "value": 30,
+          "aliases": [],
+          "clue": "Second largest, and straddles the equator"
+        },
+        {
+          "rank": 6,
+          "name": "North America",
+          "value": 24,
+          "aliases": [],
+          "clue": "From polar tundra down to the tropics"
+        },
+        {
+          "rank": 7,
+          "name": "Southern Ocean",
+          "value": 21,
+          "aliases": [
+            "southern",
+            "antarctic ocean"
+          ],
+          "clue": "Only formally recognised as an ocean in 2000"
+        },
+        {
+          "rank": 8,
+          "name": "South America",
+          "value": 17,
+          "aliases": [],
+          "clue": "Holds the largest rainforest"
+        },
+        {
+          "rank": 9,
+          "name": "Antarctica",
+          "value": 14,
+          "aliases": [],
+          "clue": "A continent under ice"
+        },
+        {
+          "rank": 10,
+          "name": "Arctic Ocean",
+          "value": 14,
+          "aliases": [
+            "arctic"
+          ],
+          "clue": "The smallest ocean, and largely frozen"
+        }
+      ]
+    },
+    {
+      "id": "hist-us-presidents-first-ten",
+      "type": "recency",
+      "domain": "history",
+      "tags": [],
+      "obscurity": 2,
+      "difficulty": 4,
+      "prompt": "The first ten US presidents, in order",
+      "metric": "The first ten holders of the office, earliest first, labelled by the year each took office.",
+      "source": {
+        "name": "The White House",
+        "url": "https://www.whitehouse.gov/about-the-white-house/presidents/"
+      },
+      "ambiguity": "A fixed list from the start of the office, so unlike the most-recent-ten version it never changes.",
+      "answers": [
+        {
+          "rank": 1,
+          "label": "1789",
+          "name": "George Washington",
+          "aliases": [
+            "washington"
+          ],
+          "clue": "Declined a third term and set a precedent"
+        },
+        {
+          "rank": 2,
+          "label": "1797",
+          "name": "John Adams",
+          "aliases": [
+            "adams"
+          ],
+          "clue": "The first to live in the White House"
+        },
+        {
+          "rank": 3,
+          "label": "1801",
+          "name": "Thomas Jefferson",
+          "aliases": [
+            "jefferson"
+          ],
+          "clue": "Doubled the country with one purchase"
+        },
+        {
+          "rank": 4,
+          "label": "1809",
+          "name": "James Madison",
+          "aliases": [
+            "madison"
+          ],
+          "clue": "Presided over a war that burned the capital"
+        },
+        {
+          "rank": 5,
+          "label": "1817",
+          "name": "James Monroe",
+          "aliases": [
+            "monroe"
+          ],
+          "clue": "Gave his name to a doctrine about the hemisphere"
+        },
+        {
+          "rank": 6,
+          "label": "1825",
+          "name": "John Quincy Adams",
+          "aliases": [
+            "quincy adams",
+            "jq adams"
+          ],
+          "clue": "The son of an earlier president"
+        },
+        {
+          "rank": 7,
+          "label": "1829",
+          "name": "Andrew Jackson",
+          "aliases": [
+            "jackson"
+          ],
+          "clue": "A populist general, and on the twenty-dollar bill"
+        },
+        {
+          "rank": 8,
+          "label": "1837",
+          "name": "Martin Van Buren",
+          "aliases": [
+            "van buren"
+          ],
+          "clue": "The first born a citizen of the new country"
+        },
+        {
+          "rank": 9,
+          "label": "1841",
+          "name": "William Henry Harrison",
+          "aliases": [
+            "harrison",
+            "wh harrison"
+          ],
+          "clue": "Died 31 days into his term"
+        },
+        {
+          "rank": 10,
+          "label": "1841",
+          "name": "John Tyler",
+          "aliases": [
+            "tyler"
+          ],
+          "clue": "The first to succeed a president who died in office"
+        }
+      ],
+      "asOf": "1845-03"
+    },
+    {
+      "id": "oly-modern-games-first",
+      "type": "recency",
+      "domain": "sports",
+      "tags": [],
+      "obscurity": 3,
+      "difficulty": 5,
+      "prompt": "The first ten modern Summer Olympics host cities",
+      "metric": "Host cities of the Summer Olympic Games from 1896 onwards, earliest first.",
+      "source": {
+        "name": "Olympics.com - results",
+        "url": "https://www.olympics.com/en/olympic-games/olympic-results"
+      },
+      "asOf": "1936-08",
+      "ambiguity": "A fixed list from the start of the modern Games, so it never changes. The 1916 Games were cancelled for war and are not counted.",
+      "answers": [
+        {
+          "rank": 1,
+          "label": "1896",
+          "name": "Athens",
+          "aliases": [],
+          "clue": "The first modern Games, in the country of the ancient ones"
+        },
+        {
+          "rank": 2,
+          "label": "1900",
+          "name": "Paris",
+          "aliases": [],
+          "clue": "Held alongside a world exposition, and ran for months"
+        },
+        {
+          "rank": 3,
+          "label": "1904",
+          "name": "St Louis",
+          "aliases": [
+            "saint louis"
+          ],
+          "clue": "Also tied to a world fair, and poorly attended"
+        },
+        {
+          "rank": 4,
+          "label": "1908",
+          "name": "London",
+          "aliases": [],
+          "clue": "Where the marathon distance was fixed"
+        },
+        {
+          "rank": 5,
+          "label": "1912",
+          "name": "Stockholm",
+          "aliases": [],
+          "clue": "The last before the First World War"
+        },
+        {
+          "rank": 6,
+          "label": "1920",
+          "name": "Antwerp",
+          "aliases": [],
+          "clue": "Held in a country devastated by that war"
+        },
+        {
+          "rank": 7,
+          "label": "1924",
+          "name": "Paris",
+          "aliases": [],
+          "clue": "A second Games here, and the subject of a famous film"
+        },
+        {
+          "rank": 8,
+          "label": "1928",
+          "name": "Amsterdam",
+          "aliases": [],
+          "clue": "The first with a permanent Olympic flame"
+        },
+        {
+          "rank": 9,
+          "label": "1932",
+          "name": "Los Angeles",
+          "aliases": [
+            "la"
+          ],
+          "clue": "Held in the depths of the Depression"
+        },
+        {
+          "rank": 10,
+          "label": "1936",
+          "name": "Berlin",
+          "aliases": [],
+          "clue": "Used as propaganda, and where one sprinter won four golds"
+        }
+      ]
+    },
+    {
+      "type": "ranked",
+      "tags": [],
+      "volatility": "evergreen",
+      "asOf": "2024-12-31",
+      "id": "lang-vowel-letters",
+      "domain": "language",
+      "obscurity": 2,
+      "difficulty": 3,
+      "prompt": "Most common letters in written English",
+      "metric": "Frequency of the letter in English text, as a percentage.",
+      "source": {
+        "name": "Oxford English Dictionary",
+        "url": "https://www.oed.com/"
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "E",
+          "value": 12.7,
+          "aliases": [],
+          "clue": "The most common letter by a wide margin"
+        },
+        {
+          "rank": 2,
+          "name": "T",
+          "value": 9.1,
+          "aliases": [],
+          "clue": "Begins the most common word in the language"
+        },
+        {
+          "rank": 3,
+          "name": "A",
+          "value": 8.2,
+          "aliases": [],
+          "clue": "Also a word on its own"
+        },
+        {
+          "rank": 4,
+          "name": "O",
+          "value": 7.5,
+          "aliases": [],
+          "clue": "A vowel, and a shape"
+        },
+        {
+          "rank": 5,
+          "name": "I",
+          "value": 7,
+          "aliases": [],
+          "clue": "Also a word, and always capitalised as one"
+        },
+        {
+          "rank": 6,
+          "name": "N",
+          "value": 6.7,
+          "aliases": [],
+          "clue": "Common at the end of words"
+        },
+        {
+          "rank": 7,
+          "name": "S",
+          "value": 6.3,
+          "aliases": [],
+          "clue": "Makes most plurals"
+        },
+        {
+          "rank": 8,
+          "name": "H",
+          "value": 6.1,
+          "aliases": [],
+          "clue": "Often silent, and often paired with T"
+        },
+        {
+          "rank": 9,
+          "name": "R",
+          "value": 6,
+          "aliases": [],
+          "clue": "Dropped in some accents"
+        },
+        {
+          "rank": 10,
+          "name": "D",
+          "value": 4.3,
+          "aliases": [],
+          "clue": "Ends most regular past tenses"
+        }
+      ]
+    },
+    {
+      "type": "ranked",
+      "tags": [],
+      "volatility": "evergreen",
+      "asOf": "2024-12-31",
+      "id": "sci-si-base-units",
+      "domain": "science",
+      "obscurity": 3,
+      "difficulty": 4,
+      "prompt": "The SI base units and their derived companions",
+      "metric": "The seven SI base units, followed by three of the most-used derived units. A closed set by definition.",
+      "source": {
+        "name": "BIPM - the SI",
+        "url": "https://www.bipm.org/en/measurement-units"
+      },
+      "ambiguity": "There are only seven base units, so this list is completed with three widely used derived units.",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Pascal",
+          "value": 10,
+          "aliases": [],
+          "clue": "Pressure, named for a mathematician"
+        },
+        {
+          "rank": 2,
+          "name": "Joule",
+          "value": 9,
+          "aliases": [],
+          "clue": "Energy, named for a brewer who measured heat"
+        },
+        {
+          "rank": 3,
+          "name": "Newton",
+          "value": 8,
+          "aliases": [],
+          "clue": "Force, and named for a man who explained it"
+        },
+        {
+          "rank": 4,
+          "name": "Candela",
+          "value": 7,
+          "aliases": [],
+          "clue": "Luminous intensity, the least familiar of the seven"
+        },
+        {
+          "rank": 5,
+          "name": "Mole",
+          "value": 6,
+          "aliases": [],
+          "clue": "Amount of substance, and a very large number"
+        },
+        {
+          "rank": 6,
+          "name": "Kelvin",
+          "value": 5,
+          "aliases": [],
+          "clue": "Temperature, starting at absolute zero"
+        },
+        {
+          "rank": 7,
+          "name": "Ampere",
+          "value": 4,
+          "aliases": [
+            "amp"
+          ],
+          "clue": "Electric current"
+        },
+        {
+          "rank": 8,
+          "name": "Second",
+          "value": 3,
+          "aliases": [],
+          "clue": "Time, defined by a caesium transition"
+        },
+        {
+          "rank": 9,
+          "name": "Kilogram",
+          "value": 2,
+          "aliases": [],
+          "clue": "Mass, and the last unit to lose its physical prototype"
+        },
+        {
+          "rank": 10,
+          "name": "Metre",
+          "value": 1,
+          "aliases": [
+            "meter"
+          ],
+          "clue": "Length, now defined by the speed of light"
+        }
+      ]
     }
   ]
 }
