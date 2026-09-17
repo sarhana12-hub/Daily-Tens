@@ -685,7 +685,27 @@ function wire() {
 }
 
 /* ---------- boot ---------- */
+function registerSW() {
+  if (!('serviceWorker' in navigator)) return;
+  window.addEventListener('load', function () {
+    // updateViaCache:'none' bypasses GitHub Pages' Cache-Control: max-age=600
+    // when checking sw.js for changes; reg.update() forces an immediate
+    // check; auto-reload on controllerchange applies an update as soon as
+    // it activates, instead of requiring a manual reopen.
+    navigator.serviceWorker.register('./sw.js', { updateViaCache: 'none' }).then(function (reg) {
+      reg.update();
+      var reloaded = false;
+      navigator.serviceWorker.addEventListener('controllerchange', function () {
+        if (reloaded) return;
+        reloaded = true;
+        location.reload();
+      });
+    }).catch(function () {});
+  });
+}
+
 (async function boot() {
+  registerSW();            // before any early return, so a shared link still registers
   await loadPuzzles();
   const link = readHash();
   if (link) {
@@ -695,7 +715,6 @@ function wire() {
     if (p) { startGame(p, link.score != null ? { score: link.score } : null); return; }
   }
   render();
-  if ('serviceWorker' in navigator) navigator.serviceWorker.register('./sw.js').catch(() => {});
 })();
 </script>
 </body>
