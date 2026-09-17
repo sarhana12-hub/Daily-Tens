@@ -600,19 +600,7 @@ function submitGuess() {
   const raw = input.value.trim();
   if (!raw) return;
   input.value = '';
-  // Repeating a guess never costs a heart. Forgetting what you already tried
-  // is not the kind of mistake this game should punish — it punishes not
-  // knowing the list, which is a different thing.
   const key = norm(raw);
-  if (game.tried.has(key)) {
-    game.just = new Set();
-    flash = { msg: 'Already tried “' + raw + '”', kind: 'dup' };
-    render();
-    const i0 = document.getElementById('guess'); if (i0) i0.focus();
-    return;
-  }
-  game.tried.add(key);
-
   const res = resolveGuess(raw, game.puzzle.answers);
 
   // An ambiguous guess is narrowed where possible: if all but one candidate is
@@ -623,7 +611,6 @@ function submitGuess() {
     const open = names.filter(n => res.slots[n].some(i => !game.found.has(i)));
     if (open.length === 1) names = open;
     else if (open.length > 1) {
-      game.tried.delete(key);          // let them retry, more specifically
       game.just = new Set();
       flash = { msg: 'More than one answer matches — be more specific', kind: 'dup' };
       render();
@@ -635,19 +622,29 @@ function submitGuess() {
   const hits = names.length ? res.slots[names[0]] : [];
   const fresh = hits.filter(i => !game.found.has(i));
   game.just = new Set(fresh);          // highlighted on this render only
-  if (!hits.length) {
-    game.misses++;
-    game.rejected = true;
-    flash = { msg: '“' + raw + '” isn’t on the list', kind: 'bad' };
-    if (game.misses >= 5) return endGame();
-  } else if (!fresh.length) {
-    flash = { msg: 'Already got ' + game.puzzle.answers[hits[0]].name, kind: 'dup' };
-  } else {
+
+  // Resolve first, then choose the message. Checking "already tried" before
+  // resolving told a player who re-typed a correct answer that they'd merely
+  // tried it — which reads like a rejection, rather than telling them it is
+  // already on the board.
+  if (fresh.length) {
     fresh.forEach(i => game.found.add(i));
     flash = fresh.length > 1
       ? { msg: game.puzzle.answers[fresh[0]].name + ' — ' + fresh.length + ' slots', kind: 'dup' }
       : { msg: '', kind: '' };
     if (game.found.size === game.puzzle.answers.length) return endGame();
+  } else if (hits.length) {
+    // Right answer, already on the board, whatever wording was used.
+    flash = { msg: 'Already got ' + game.puzzle.answers[hits[0]].name, kind: 'dup' };
+  } else if (game.tried.has(key)) {
+    // Wrong, and already known to be wrong: never charge for it twice.
+    flash = { msg: 'Already tried “' + raw + '”', kind: 'dup' };
+  } else {
+    game.tried.add(key);
+    game.misses++;
+    game.rejected = true;
+    flash = { msg: '“' + raw + '” isn’t on the list', kind: 'bad' };
+    if (game.misses >= 5) return endGame();
   }
   render();
   const i2 = document.getElementById('guess'); if (i2) i2.focus();

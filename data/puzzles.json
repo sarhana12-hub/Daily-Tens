@@ -1256,7 +1256,7 @@
       "answers": [
         {
           "rank": 1,
-          "label": "47th",
+          "label": "2025",
           "name": "Donald Trump",
           "aliases": [
             "trump"
@@ -1265,7 +1265,7 @@
         },
         {
           "rank": 2,
-          "label": "46th",
+          "label": "2021",
           "name": "Joe Biden",
           "aliases": [
             "biden"
@@ -1274,7 +1274,7 @@
         },
         {
           "rank": 3,
-          "label": "44th",
+          "label": "2009",
           "name": "Barack Obama",
           "aliases": [
             "obama"
@@ -1283,7 +1283,7 @@
         },
         {
           "rank": 4,
-          "label": "43rd",
+          "label": "2001",
           "name": "George W. Bush",
           "aliases": [
             "george w bush",
@@ -1295,7 +1295,7 @@
         },
         {
           "rank": 5,
-          "label": "42nd",
+          "label": "1993",
           "name": "Bill Clinton",
           "aliases": [
             "clinton"
@@ -1304,7 +1304,7 @@
         },
         {
           "rank": 6,
-          "label": "41st",
+          "label": "1989",
           "name": "George H. W. Bush",
           "aliases": [
             "george hw bush",
@@ -1315,7 +1315,7 @@
         },
         {
           "rank": 7,
-          "label": "40th",
+          "label": "1981",
           "name": "Ronald Reagan",
           "aliases": [
             "reagan"
@@ -1324,7 +1324,7 @@
         },
         {
           "rank": 8,
-          "label": "39th",
+          "label": "1977",
           "name": "Jimmy Carter",
           "aliases": [
             "carter"
@@ -1333,7 +1333,7 @@
         },
         {
           "rank": 9,
-          "label": "38th",
+          "label": "1974",
           "name": "Gerald Ford",
           "aliases": [
             "ford"
@@ -1342,7 +1342,7 @@
         },
         {
           "rank": 10,
-          "label": "37th",
+          "label": "1969",
           "name": "Richard Nixon",
           "aliases": [
             "nixon"
