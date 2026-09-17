@@ -4658,7 +4658,8 @@
           "aliases": [],
           "clue": "A red supergiant that dimmed dramatically in 2019"
         }
-      ]
+      ],
+      "order": "asc"
     },
     {
       "id": "sci-atmosphere-gases",
@@ -4971,6 +4972,2173 @@
           "clue": "Second city of an island nation, and known for food"
         }
       ]
+    },
+    {
+      "id": "geo-africa-area",
+      "type": "ranked",
+      "domain": "geography",
+      "obscurity": 2,
+      "difficulty": 3,
+      "tags": [],
+      "prompt": "Largest countries in Africa by area",
+      "metric": "Total area in km², including inland water.",
+      "source": {
+        "name": "Encyclopaedia Britannica",
+        "url": "https://www.britannica.com/"
+      },
+      "asOf": "2024-12-31",
+      "volatility": "evergreen",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Algeria",
+          "value": 2381741,
+          "aliases": [],
+          "clue": "Mostly Sahara, and the largest on the continent"
+        },
+        {
+          "rank": 2,
+          "name": "Democratic Republic of the Congo",
+          "value": 2344858,
+          "aliases": [
+            "drc",
+            "dr congo",
+            "zaire"
+          ],
+          "clue": "Renamed twice since independence"
+        },
+        {
+          "rank": 3,
+          "name": "Sudan",
+          "value": 1886068,
+          "aliases": [],
+          "clue": "Shrank by a quarter when its south seceded"
+        },
+        {
+          "rank": 4,
+          "name": "Libya",
+          "value": 1759540,
+          "aliases": [],
+          "clue": "Coastal cities, and almost nothing inland"
+        },
+        {
+          "rank": 5,
+          "name": "Chad",
+          "value": 1284000,
+          "aliases": [],
+          "clue": "Landlocked, and named for a shrinking lake"
+        },
+        {
+          "rank": 6,
+          "name": "Niger",
+          "value": 1267000,
+          "aliases": [],
+          "clue": "Landlocked, and named for a river that clips its west"
+        },
+        {
+          "rank": 7,
+          "name": "Angola",
+          "value": 1246700,
+          "aliases": [],
+          "clue": "Portuguese-speaking, and oil-rich"
+        },
+        {
+          "rank": 8,
+          "name": "Mali",
+          "value": 1240192,
+          "aliases": [],
+          "clue": "Holds a fabled desert trading city"
+        },
+        {
+          "rank": 9,
+          "name": "South Africa",
+          "value": 1221037,
+          "aliases": [
+            "rsa"
+          ],
+          "clue": "Three capital cities"
+        },
+        {
+          "rank": 10,
+          "name": "Ethiopia",
+          "value": 1104300,
+          "aliases": [],
+          "clue": "Never colonised, and uses its own calendar"
+        }
+      ]
+    },
+    {
+      "id": "geo-europe-area",
+      "type": "ranked",
+      "domain": "geography",
+      "obscurity": 2,
+      "difficulty": 3,
+      "tags": [],
+      "prompt": "Largest countries in Europe by area",
+      "metric": "Total area in km², counting only the European portion where a country spans continents. A transcontinental state is included for the part west of the Urals.",
+      "source": {
+        "name": "Encyclopaedia Britannica",
+        "url": "https://www.britannica.com/"
+      },
+      "asOf": "2024-12-31",
+      "volatility": "evergreen",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Russia",
+          "value": 3969100,
+          "aliases": [
+            "russian federation"
+          ],
+          "clue": "Even its European part alone leads by a huge margin"
+        },
+        {
+          "rank": 2,
+          "name": "Ukraine",
+          "value": 603500,
+          "aliases": [],
+          "clue": "The largest wholly European country"
+        },
+        {
+          "rank": 3,
+          "name": "France",
+          "value": 551695,
+          "aliases": [],
+          "clue": "Sometimes called a hexagon"
+        },
+        {
+          "rank": 4,
+          "name": "Spain",
+          "value": 505990,
+          "aliases": [
+            "espana"
+          ],
+          "clue": "Shares a peninsula with one neighbour"
+        },
+        {
+          "rank": 5,
+          "name": "Sweden",
+          "value": 450295,
+          "aliases": [],
+          "clue": "Long and narrow, and heavily forested"
+        },
+        {
+          "rank": 6,
+          "name": "Norway",
+          "value": 385207,
+          "aliases": [],
+          "clue": "A coastline of fjords, and reaches past the Arctic Circle"
+        },
+        {
+          "rank": 7,
+          "name": "Germany",
+          "value": 357022,
+          "aliases": [
+            "deutschland"
+          ],
+          "clue": "Sixteen federal states"
+        },
+        {
+          "rank": 8,
+          "name": "Finland",
+          "value": 338455,
+          "aliases": [],
+          "clue": "Tens of thousands of lakes"
+        },
+        {
+          "rank": 9,
+          "name": "Poland",
+          "value": 312696,
+          "aliases": [],
+          "clue": "On the North European Plain"
+        },
+        {
+          "rank": 10,
+          "name": "Italy",
+          "value": 301340,
+          "aliases": [
+            "italia"
+          ],
+          "clue": "Shaped like a boot"
+        }
+      ],
+      "ambiguity": "Turkey and Kazakhstan also hold European territory but are conventionally listed as Asian; including their European portions would not reach this ten."
+    },
+    {
+      "id": "geo-asia-area",
+      "type": "ranked",
+      "domain": "geography",
+      "obscurity": 2,
+      "difficulty": 3,
+      "tags": [],
+      "prompt": "Largest countries in Asia by area",
+      "metric": "Total area in km², counting the whole country where it spans continents.",
+      "source": {
+        "name": "Encyclopaedia Britannica",
+        "url": "https://www.britannica.com/"
+      },
+      "asOf": "2024-12-31",
+      "volatility": "evergreen",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Russia",
+          "value": 17098246,
+          "aliases": [
+            "russian federation"
+          ],
+          "clue": "Eleven time zones, mostly Asian by land"
+        },
+        {
+          "rank": 2,
+          "name": "China",
+          "value": 9596960,
+          "aliases": [
+            "prc"
+          ],
+          "clue": "Fourteen land neighbours"
+        },
+        {
+          "rank": 3,
+          "name": "India",
+          "value": 3287263,
+          "aliases": [
+            "bharat"
+          ],
+          "clue": "A subcontinent of its own"
+        },
+        {
+          "rank": 4,
+          "name": "Kazakhstan",
+          "value": 2724900,
+          "aliases": [],
+          "clue": "The largest landlocked country on Earth"
+        },
+        {
+          "rank": 5,
+          "name": "Saudi Arabia",
+          "value": 2149690,
+          "aliases": [
+            "saudi"
+          ],
+          "clue": "Holds the Empty Quarter"
+        },
+        {
+          "rank": 6,
+          "name": "Indonesia",
+          "value": 1904569,
+          "aliases": [],
+          "clue": "Thousands of islands"
+        },
+        {
+          "rank": 7,
+          "name": "Iran",
+          "value": 1648195,
+          "aliases": [
+            "persia"
+          ],
+          "clue": "Formerly known by another name"
+        },
+        {
+          "rank": 8,
+          "name": "Mongolia",
+          "value": 1564110,
+          "aliases": [],
+          "clue": "The lowest population density of any sovereign state"
+        },
+        {
+          "rank": 9,
+          "name": "Pakistan",
+          "value": 881913,
+          "aliases": [],
+          "clue": "Created in 1947"
+        },
+        {
+          "rank": 10,
+          "name": "Turkey",
+          "value": 783562,
+          "aliases": [
+            "turkiye"
+          ],
+          "clue": "Straddles two continents at a strait"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "Indonesia and Mongolia sit close together and swap depending on whether maritime area is counted, so their order is my best judgment."
+      }
+    },
+    {
+      "id": "geo-samerica-area",
+      "type": "ranked",
+      "domain": "geography",
+      "obscurity": 2,
+      "difficulty": 2,
+      "tags": [],
+      "prompt": "Largest countries in South America by area",
+      "metric": "Total area in km², including inland water.",
+      "source": {
+        "name": "Encyclopaedia Britannica",
+        "url": "https://www.britannica.com/"
+      },
+      "asOf": "2024-12-31",
+      "volatility": "evergreen",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Brazil",
+          "value": 8515767,
+          "aliases": [
+            "brasil"
+          ],
+          "clue": "Nearly half the continent"
+        },
+        {
+          "rank": 2,
+          "name": "Argentina",
+          "value": 2780400,
+          "aliases": [],
+          "clue": "Reaches furthest towards the pole"
+        },
+        {
+          "rank": 3,
+          "name": "Peru",
+          "value": 1285216,
+          "aliases": [],
+          "clue": "Holds an ancient mountain citadel"
+        },
+        {
+          "rank": 4,
+          "name": "Colombia",
+          "value": 1141748,
+          "aliases": [],
+          "clue": "The only one with both Pacific and Caribbean coasts"
+        },
+        {
+          "rank": 5,
+          "name": "Bolivia",
+          "value": 1098581,
+          "aliases": [],
+          "clue": "Landlocked, and still maintains a navy"
+        },
+        {
+          "rank": 6,
+          "name": "Venezuela",
+          "value": 916445,
+          "aliases": [],
+          "clue": "Holds the largest proven oil reserves"
+        },
+        {
+          "rank": 7,
+          "name": "Chile",
+          "value": 756102,
+          "aliases": [],
+          "clue": "Over 4,000 km long and rarely 200 km wide"
+        },
+        {
+          "rank": 8,
+          "name": "Paraguay",
+          "value": 406752,
+          "aliases": [],
+          "clue": "Landlocked, and bilingual with an indigenous language"
+        },
+        {
+          "rank": 9,
+          "name": "Ecuador",
+          "value": 283561,
+          "aliases": [],
+          "clue": "Named for a line of latitude"
+        },
+        {
+          "rank": 10,
+          "name": "Guyana",
+          "value": 214969,
+          "aliases": [],
+          "clue": "The only English-speaking country on the continent"
+        }
+      ]
+    },
+    {
+      "id": "geo-africa-population",
+      "type": "ranked",
+      "domain": "geography",
+      "obscurity": 1,
+      "difficulty": 3,
+      "tags": [],
+      "prompt": "Most populous countries in Africa",
+      "metric": "Resident population.",
+      "source": {
+        "name": "Encyclopaedia Britannica",
+        "url": "https://www.britannica.com/"
+      },
+      "asOf": "2025-12-31",
+      "volatility": "annual",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Nigeria",
+          "value": null,
+          "aliases": [],
+          "clue": "Over 200 million, and the most populous on the continent"
+        },
+        {
+          "rank": 2,
+          "name": "Ethiopia",
+          "value": null,
+          "aliases": [],
+          "clue": "Landlocked since its coastal province seceded"
+        },
+        {
+          "rank": 3,
+          "name": "Egypt",
+          "value": null,
+          "aliases": [],
+          "clue": "Almost everyone lives along one river"
+        },
+        {
+          "rank": 4,
+          "name": "Democratic Republic of the Congo",
+          "value": null,
+          "aliases": [
+            "drc",
+            "dr congo"
+          ],
+          "clue": "Francophone, and rich in cobalt"
+        },
+        {
+          "rank": 5,
+          "name": "Tanzania",
+          "value": null,
+          "aliases": [],
+          "clue": "Holds the continent's highest mountain"
+        },
+        {
+          "rank": 6,
+          "name": "South Africa",
+          "value": null,
+          "aliases": [
+            "rsa"
+          ],
+          "clue": "Eleven official languages"
+        },
+        {
+          "rank": 7,
+          "name": "Kenya",
+          "value": null,
+          "aliases": [],
+          "clue": "Famous for distance runners"
+        },
+        {
+          "rank": 8,
+          "name": "Uganda",
+          "value": null,
+          "aliases": [],
+          "clue": "Landlocked, on a great lake"
+        },
+        {
+          "rank": 9,
+          "name": "Sudan",
+          "value": null,
+          "aliases": [],
+          "clue": "Where two branches of a river meet"
+        },
+        {
+          "rank": 10,
+          "name": "Algeria",
+          "value": null,
+          "aliases": [],
+          "clue": "The largest by area on the continent"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "The leading five are firm. Below that, fast and uneven growth reorders the list every few years, so places six to ten are my best judgment."
+      }
+    },
+    {
+      "id": "geo-europe-population",
+      "type": "ranked",
+      "domain": "geography",
+      "obscurity": 1,
+      "difficulty": 3,
+      "tags": [],
+      "prompt": "Most populous countries in Europe",
+      "metric": "Resident population, counting the whole country where it spans continents.",
+      "source": {
+        "name": "Encyclopaedia Britannica",
+        "url": "https://www.britannica.com/"
+      },
+      "asOf": "2025-12-31",
+      "volatility": "annual",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Russia",
+          "value": null,
+          "aliases": [
+            "russian federation"
+          ],
+          "clue": "Larger than the next two combined"
+        },
+        {
+          "rank": 2,
+          "name": "Germany",
+          "value": null,
+          "aliases": [
+            "deutschland"
+          ],
+          "clue": "The largest economy on the continent"
+        },
+        {
+          "rank": 3,
+          "name": "United Kingdom",
+          "value": null,
+          "aliases": [
+            "uk",
+            "britain"
+          ],
+          "clue": "Left the European Union in 2020"
+        },
+        {
+          "rank": 4,
+          "name": "France",
+          "value": null,
+          "aliases": [],
+          "clue": "The highest birth rate among the big western states"
+        },
+        {
+          "rank": 5,
+          "name": "Italy",
+          "value": null,
+          "aliases": [
+            "italia"
+          ],
+          "clue": "One of the oldest populations in the world"
+        },
+        {
+          "rank": 6,
+          "name": "Spain",
+          "value": null,
+          "aliases": [
+            "espana"
+          ],
+          "clue": "Seventeen autonomous communities"
+        },
+        {
+          "rank": 7,
+          "name": "Poland",
+          "value": null,
+          "aliases": [],
+          "clue": "The largest of the states that joined the EU in 2004"
+        },
+        {
+          "rank": 8,
+          "name": "Romania",
+          "value": null,
+          "aliases": [],
+          "clue": "A Romance language surrounded by Slavic ones"
+        },
+        {
+          "rank": 9,
+          "name": "Netherlands",
+          "value": null,
+          "aliases": [
+            "holland"
+          ],
+          "clue": "Much of it below sea level"
+        },
+        {
+          "rank": 10,
+          "name": "Belgium",
+          "value": null,
+          "aliases": [],
+          "clue": "Two main language communities, and hosts the EU institutions"
+        }
+      ]
+    },
+    {
+      "id": "geo-africa-rivers",
+      "type": "ranked",
+      "domain": "geography",
+      "obscurity": 3,
+      "difficulty": 4,
+      "tags": [],
+      "prompt": "Longest rivers in Africa",
+      "metric": "Length in kilometres from the most distant headstream.",
+      "source": {
+        "name": "Encyclopaedia Britannica",
+        "url": "https://www.britannica.com/"
+      },
+      "asOf": "2024-12-31",
+      "volatility": "evergreen",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Nile",
+          "value": 6650,
+          "aliases": [],
+          "clue": "Flows north to a delta"
+        },
+        {
+          "rank": 2,
+          "name": "Congo",
+          "value": 4700,
+          "aliases": [
+            "zaire"
+          ],
+          "clue": "The deepest river in the world"
+        },
+        {
+          "rank": 3,
+          "name": "Niger",
+          "value": 4180,
+          "aliases": [],
+          "clue": "Makes a great arc through the Sahel"
+        },
+        {
+          "rank": 4,
+          "name": "Zambezi",
+          "value": 2574,
+          "aliases": [],
+          "clue": "Drops over a famous curtain of falls"
+        },
+        {
+          "rank": 5,
+          "name": "Ubangi",
+          "value": 2270,
+          "aliases": [
+            "oubangui"
+          ],
+          "clue": "A major tributary forming a national border"
+        },
+        {
+          "rank": 6,
+          "name": "Kasai",
+          "value": 2153,
+          "aliases": [],
+          "clue": "A southern tributary of the second on this list"
+        },
+        {
+          "rank": 7,
+          "name": "Orange",
+          "value": 2092,
+          "aliases": [
+            "oranje"
+          ],
+          "clue": "Forms a border in the far south"
+        },
+        {
+          "rank": 8,
+          "name": "Limpopo",
+          "value": 1750,
+          "aliases": [],
+          "clue": "A \"great grey-green greasy\" river in a children's story"
+        },
+        {
+          "rank": 9,
+          "name": "Senegal",
+          "value": 1641,
+          "aliases": [],
+          "clue": "Shares its name with a country"
+        },
+        {
+          "rank": 10,
+          "name": "Blue Nile",
+          "value": 1600,
+          "aliases": [],
+          "clue": "Rises in a highland lake and carries most of the flood"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "Lengths of African rivers are measured inconsistently and the lower half of this list reorders between sources; the membership is sound, the exact order is my best judgment."
+      }
+    },
+    {
+      "id": "geo-europe-rivers",
+      "type": "ranked",
+      "domain": "geography",
+      "obscurity": 3,
+      "difficulty": 4,
+      "tags": [],
+      "prompt": "Longest rivers in Europe",
+      "metric": "Length in kilometres, counting only rivers whose course is mainly in Europe.",
+      "source": {
+        "name": "Encyclopaedia Britannica",
+        "url": "https://www.britannica.com/"
+      },
+      "asOf": "2024-12-31",
+      "volatility": "evergreen",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Volga",
+          "value": 3531,
+          "aliases": [],
+          "clue": "Flows to a landlocked sea"
+        },
+        {
+          "rank": 2,
+          "name": "Danube",
+          "value": 2850,
+          "aliases": [
+            "donau"
+          ],
+          "clue": "Passes through ten countries, more than any river"
+        },
+        {
+          "rank": 3,
+          "name": "Ural",
+          "value": 2428,
+          "aliases": [],
+          "clue": "Shares its name with a mountain range"
+        },
+        {
+          "rank": 4,
+          "name": "Dnieper",
+          "value": 2201,
+          "aliases": [
+            "dnipro"
+          ],
+          "clue": "Flows through Kyiv"
+        },
+        {
+          "rank": 5,
+          "name": "Don",
+          "value": 1870,
+          "aliases": [],
+          "clue": "Gave its name to a Cossack region"
+        },
+        {
+          "rank": 6,
+          "name": "Pechora",
+          "value": 1809,
+          "aliases": [],
+          "clue": "Flows north to the Barents Sea"
+        },
+        {
+          "rank": 7,
+          "name": "Kama",
+          "value": 1805,
+          "aliases": [],
+          "clue": "The largest tributary of the first on this list"
+        },
+        {
+          "rank": 8,
+          "name": "Oka",
+          "value": 1500,
+          "aliases": [],
+          "clue": "Joins the longest river at Nizhny Novgorod"
+        },
+        {
+          "rank": 9,
+          "name": "Belaya",
+          "value": 1430,
+          "aliases": [],
+          "clue": "A Bashkir river whose name means \"white\""
+        },
+        {
+          "rank": 10,
+          "name": "Dniester",
+          "value": 1352,
+          "aliases": [],
+          "clue": "Flows between Ukraine and Moldova"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "Dominated by Russian rivers that are unfamiliar outside the region; the lower half of the order varies between sources."
+      }
+    },
+    {
+      "id": "geo-ocean-trenches",
+      "type": "ranked",
+      "domain": "geography",
+      "obscurity": 3,
+      "difficulty": 4,
+      "tags": [],
+      "prompt": "Deepest ocean trenches",
+      "metric": "Maximum depth in metres below sea level.",
+      "source": {
+        "name": "Encyclopaedia Britannica",
+        "url": "https://www.britannica.com/"
+      },
+      "asOf": "2024-12-31",
+      "volatility": "evergreen",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Mariana Trench",
+          "value": 10994,
+          "aliases": [
+            "marianas",
+            "challenger deep"
+          ],
+          "clue": "Holds the deepest known point on Earth"
+        },
+        {
+          "rank": 2,
+          "name": "Tonga Trench",
+          "value": 10882,
+          "aliases": [
+            "tonga"
+          ],
+          "clue": "South Pacific, and where a spacecraft was deliberately sunk"
+        },
+        {
+          "rank": 3,
+          "name": "Kuril-Kamchatka Trench",
+          "value": 10542,
+          "aliases": [
+            "kuril",
+            "kamchatka"
+          ],
+          "clue": "Off a Russian peninsula of volcanoes"
+        },
+        {
+          "rank": 4,
+          "name": "Philippine Trench",
+          "value": 10540,
+          "aliases": [
+            "philippine"
+          ],
+          "clue": "East of an archipelago nation"
+        },
+        {
+          "rank": 5,
+          "name": "Kermadec Trench",
+          "value": 10047,
+          "aliases": [
+            "kermadec"
+          ],
+          "clue": "Northeast of New Zealand"
+        },
+        {
+          "rank": 6,
+          "name": "Izu-Ogasawara Trench",
+          "value": 9780,
+          "aliases": [
+            "izu",
+            "bonin",
+            "izu bonin"
+          ],
+          "clue": "South of Tokyo"
+        },
+        {
+          "rank": 7,
+          "name": "New Britain Trench",
+          "value": 9140,
+          "aliases": [
+            "new britain"
+          ],
+          "clue": "Near Papua New Guinea"
+        },
+        {
+          "rank": 8,
+          "name": "Puerto Rico Trench",
+          "value": 8648,
+          "aliases": [
+            "puerto rico"
+          ],
+          "clue": "The deepest point in the Atlantic"
+        },
+        {
+          "rank": 9,
+          "name": "South Sandwich Trench",
+          "value": 8428,
+          "aliases": [
+            "south sandwich"
+          ],
+          "clue": "In the far South Atlantic, near a volcanic island arc"
+        },
+        {
+          "rank": 10,
+          "name": "Peru-Chile Trench",
+          "value": 8065,
+          "aliases": [
+            "peru chile",
+            "atacama trench"
+          ],
+          "clue": "Runs along a South American coast"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "Published maximum depths disagree by tens of metres and some surveys reorder the third to sixth places; membership is solid."
+      }
+    },
+    {
+      "id": "geo-most-neighbours",
+      "type": "ranked",
+      "domain": "geography",
+      "obscurity": 2,
+      "difficulty": 4,
+      "tags": [],
+      "prompt": "Countries with the most land neighbours",
+      "metric": "Number of countries sharing a land border.",
+      "source": {
+        "name": "Encyclopaedia Britannica",
+        "url": "https://www.britannica.com/"
+      },
+      "asOf": "2024-12-31",
+      "volatility": "evergreen",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "China",
+          "value": 14,
+          "aliases": [
+            "prc"
+          ],
+          "clue": "Fourteen, and also the most populous for most of history"
+        },
+        {
+          "rank": 2,
+          "name": "Russia",
+          "value": 14,
+          "aliases": [],
+          "clue": "Fourteen, across eleven time zones"
+        },
+        {
+          "rank": 3,
+          "name": "Brazil",
+          "value": 10,
+          "aliases": [
+            "brasil"
+          ],
+          "clue": "Borders every South American country but two"
+        },
+        {
+          "rank": 4,
+          "name": "Democratic Republic of the Congo",
+          "value": 9,
+          "aliases": [
+            "drc",
+            "dr congo"
+          ],
+          "clue": "Central African, and vast"
+        },
+        {
+          "rank": 5,
+          "name": "Germany",
+          "value": 9,
+          "aliases": [
+            "deutschland"
+          ],
+          "clue": "The most in Europe"
+        },
+        {
+          "rank": 6,
+          "name": "Austria",
+          "value": 8,
+          "aliases": [],
+          "clue": "Alpine and landlocked"
+        },
+        {
+          "rank": 7,
+          "name": "Serbia",
+          "value": 8,
+          "aliases": [],
+          "clue": "Landlocked since a neighbour became independent"
+        },
+        {
+          "rank": 8,
+          "name": "Tanzania",
+          "value": 8,
+          "aliases": [],
+          "clue": "East African, on a great lake"
+        },
+        {
+          "rank": 9,
+          "name": "Turkey",
+          "value": 8,
+          "aliases": [
+            "turkiye"
+          ],
+          "clue": "Borders both Europe and the Middle East"
+        },
+        {
+          "rank": 10,
+          "name": "Zambia",
+          "value": 8,
+          "aliases": [],
+          "clue": "Landlocked, and shares a great waterfall"
+        }
+      ],
+      "ambiguity": "Counting only sovereign neighbours across a land border. Counting disputed territories, or maritime borders, changes both the order and the membership.",
+      "confidence": {
+        "level": "partial",
+        "note": "The two leaders are certain. Below them several countries tie on eight or nine, so which of them makes the ten is my best judgment."
+      }
+    },
+    {
+      "id": "geo-highest-capitals",
+      "type": "ranked",
+      "domain": "geography",
+      "obscurity": 3,
+      "difficulty": 4,
+      "tags": [],
+      "prompt": "Highest capital cities in the world",
+      "metric": "Elevation of the capital above sea level, in metres.",
+      "source": {
+        "name": "Encyclopaedia Britannica",
+        "url": "https://www.britannica.com/"
+      },
+      "asOf": "2024-12-31",
+      "volatility": "evergreen",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "La Paz",
+          "value": 3640,
+          "aliases": [],
+          "clue": "Bolivia's seat of government, in a bowl below the altiplano"
+        },
+        {
+          "rank": 2,
+          "name": "Quito",
+          "value": 2850,
+          "aliases": [],
+          "clue": "Almost exactly on the equator"
+        },
+        {
+          "rank": 3,
+          "name": "Bogota",
+          "value": 2625,
+          "aliases": [],
+          "clue": "On a high Andean plateau"
+        },
+        {
+          "rank": 4,
+          "name": "Addis Ababa",
+          "value": 2355,
+          "aliases": [
+            "addis"
+          ],
+          "clue": "Hosts the African Union"
+        },
+        {
+          "rank": 5,
+          "name": "Asmara",
+          "value": 2325,
+          "aliases": [],
+          "clue": "Eritrean, and known for modernist architecture"
+        },
+        {
+          "rank": 6,
+          "name": "Thimphu",
+          "value": 2320,
+          "aliases": [],
+          "clue": "Himalayan, and has no traffic lights"
+        },
+        {
+          "rank": 7,
+          "name": "Sanaa",
+          "value": 2250,
+          "aliases": [
+            "sanaa yemen"
+          ],
+          "clue": "One of the oldest continuously inhabited cities"
+        },
+        {
+          "rank": 8,
+          "name": "Mexico City",
+          "value": 2240,
+          "aliases": [
+            "cdmx"
+          ],
+          "clue": "Built on a drained lake bed"
+        },
+        {
+          "rank": 9,
+          "name": "Nairobi",
+          "value": 1795,
+          "aliases": [],
+          "clue": "Has a national park within the city limits"
+        },
+        {
+          "rank": 10,
+          "name": "Kabul",
+          "value": 1790,
+          "aliases": [],
+          "clue": "In a valley ringed by mountains"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "City elevations are quoted for different reference points, so the exact order here is my best judgment; the ten cities are right."
+      }
+    },
+    {
+      "id": "geo-longest-coastlines",
+      "type": "ranked",
+      "domain": "geography",
+      "obscurity": 2,
+      "difficulty": 4,
+      "tags": [],
+      "prompt": "Countries with the longest coastlines",
+      "metric": "Total coastline length in kilometres, including islands.",
+      "source": {
+        "name": "Encyclopaedia Britannica",
+        "url": "https://www.britannica.com/"
+      },
+      "asOf": "2024-12-31",
+      "volatility": "evergreen",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Canada",
+          "value": 202080,
+          "aliases": [],
+          "clue": "An Arctic archipelago inflates the figure enormously"
+        },
+        {
+          "rank": 2,
+          "name": "Norway",
+          "value": 58133,
+          "aliases": [],
+          "clue": "Fjords, measured in detail"
+        },
+        {
+          "rank": 3,
+          "name": "Indonesia",
+          "value": 54716,
+          "aliases": [],
+          "clue": "Thousands of islands"
+        },
+        {
+          "rank": 4,
+          "name": "Russia",
+          "value": 37653,
+          "aliases": [],
+          "clue": "Faces three oceans"
+        },
+        {
+          "rank": 5,
+          "name": "Philippines",
+          "value": 36289,
+          "aliases": [],
+          "clue": "Over seven thousand islands"
+        },
+        {
+          "rank": 6,
+          "name": "Japan",
+          "value": 29751,
+          "aliases": [],
+          "clue": "Four main islands and thousands more"
+        },
+        {
+          "rank": 7,
+          "name": "Australia",
+          "value": 25760,
+          "aliases": [],
+          "clue": "An island continent"
+        },
+        {
+          "rank": 8,
+          "name": "United States",
+          "value": 19924,
+          "aliases": [
+            "usa",
+            "us",
+            "america"
+          ],
+          "clue": "Two long coasts plus Alaska"
+        },
+        {
+          "rank": 9,
+          "name": "New Zealand",
+          "value": 15134,
+          "aliases": [
+            "nz"
+          ],
+          "clue": "Two main islands far from anywhere"
+        },
+        {
+          "rank": 10,
+          "name": "China",
+          "value": 14500,
+          "aliases": [
+            "prc"
+          ],
+          "clue": "A single long eastern seaboard"
+        }
+      ],
+      "ambiguity": "Coastline length depends entirely on the measurement scale — a finer scale gives a longer coast — so published figures vary by an order of magnitude between sources."
+    },
+    {
+      "id": "sci-mohs-hardness",
+      "type": "ranked",
+      "domain": "science",
+      "obscurity": 2,
+      "difficulty": 3,
+      "tags": [],
+      "prompt": "Hardest minerals on the Mohs scale",
+      "metric": "Position on the Mohs scale of mineral hardness, from 10 down to 1. The scale is defined by these ten minerals.",
+      "source": {
+        "name": "USGS - Mineral Resources",
+        "url": "https://www.usgs.gov/programs/mineral-resources-program"
+      },
+      "asOf": "2024-12-31",
+      "volatility": "evergreen",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Diamond",
+          "value": 10,
+          "aliases": [],
+          "clue": "Pure carbon, and defines the top of the scale"
+        },
+        {
+          "rank": 2,
+          "name": "Corundum",
+          "value": 9,
+          "aliases": [
+            "ruby",
+            "sapphire"
+          ],
+          "clue": "Two famous gemstones are the same mineral, differing only in colour"
+        },
+        {
+          "rank": 3,
+          "name": "Topaz",
+          "value": 8,
+          "aliases": [],
+          "clue": "Often golden, and a birthstone"
+        },
+        {
+          "rank": 4,
+          "name": "Quartz",
+          "value": 7,
+          "aliases": [],
+          "clue": "The most common mineral in sand"
+        },
+        {
+          "rank": 5,
+          "name": "Orthoclase",
+          "value": 6,
+          "aliases": [
+            "feldspar",
+            "orthoclase feldspar"
+          ],
+          "clue": "A major component of granite, and often pink in it"
+        },
+        {
+          "rank": 6,
+          "name": "Apatite",
+          "value": 5,
+          "aliases": [],
+          "clue": "The mineral your teeth are largely made of"
+        },
+        {
+          "rank": 7,
+          "name": "Fluorite",
+          "value": 4,
+          "aliases": [],
+          "clue": "Glows under ultraviolet light, and gives its name to a phenomenon"
+        },
+        {
+          "rank": 8,
+          "name": "Calcite",
+          "value": 3,
+          "aliases": [],
+          "clue": "Limestone and marble are made of it"
+        },
+        {
+          "rank": 9,
+          "name": "Gypsum",
+          "value": 2,
+          "aliases": [],
+          "clue": "Plaster and drywall"
+        },
+        {
+          "rank": 10,
+          "name": "Talc",
+          "value": 1,
+          "aliases": [],
+          "clue": "The softest, and ground into a powder"
+        }
+      ],
+      "ambiguity": "The Mohs scale is ordinal, not proportional: diamond is far more than ten times harder than talc."
+    },
+    {
+      "id": "sci-densest-elements",
+      "type": "ranked",
+      "domain": "science",
+      "obscurity": 3,
+      "difficulty": 4,
+      "tags": [],
+      "prompt": "Densest elements",
+      "metric": "Density at room temperature, in grams per cubic centimetre.",
+      "source": {
+        "name": "CRC Handbook of Chemistry and Physics",
+        "url": "https://hbcp.chemnetbase.com/"
+      },
+      "asOf": "2024-12-31",
+      "volatility": "evergreen",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Osmium",
+          "value": 22.59,
+          "aliases": [],
+          "clue": "The densest of all, found alongside other noble metals in ore"
+        },
+        {
+          "rank": 2,
+          "name": "Iridium",
+          "value": 22.56,
+          "aliases": [],
+          "clue": "Second by a hair, and abundant in the asteroid layer at the dinosaur extinction"
+        },
+        {
+          "rank": 3,
+          "name": "Platinum",
+          "value": 21.45,
+          "aliases": [],
+          "clue": "Used in catalytic converters and jewellery"
+        },
+        {
+          "rank": 4,
+          "name": "Rhenium",
+          "value": 21.02,
+          "aliases": [],
+          "clue": "One of the last stable elements discovered"
+        },
+        {
+          "rank": 5,
+          "name": "Neptunium",
+          "value": 20.45,
+          "aliases": [],
+          "clue": "Named for the planet beyond Uranus"
+        },
+        {
+          "rank": 6,
+          "name": "Plutonium",
+          "value": 19.82,
+          "aliases": [],
+          "clue": "Named for a dwarf planet, and used in weapons"
+        },
+        {
+          "rank": 7,
+          "name": "Gold",
+          "value": 19.3,
+          "aliases": [
+            "au"
+          ],
+          "clue": "Symbol Au"
+        },
+        {
+          "rank": 8,
+          "name": "Tungsten",
+          "value": 19.25,
+          "aliases": [
+            "wolfram"
+          ],
+          "clue": "Light bulb filaments, and the highest melting point"
+        },
+        {
+          "rank": 9,
+          "name": "Uranium",
+          "value": 19.05,
+          "aliases": [],
+          "clue": "Named for a planet, and fuels reactors"
+        },
+        {
+          "rank": 10,
+          "name": "Tantalum",
+          "value": 16.65,
+          "aliases": [],
+          "clue": "In capacitors, and mined from conflict-linked ore"
+        }
+      ]
+    },
+    {
+      "id": "sci-melting-points",
+      "type": "ranked",
+      "domain": "science",
+      "obscurity": 3,
+      "difficulty": 5,
+      "tags": [],
+      "prompt": "Elements with the highest melting points",
+      "metric": "Melting point in degrees Celsius at standard pressure.",
+      "source": {
+        "name": "CRC Handbook of Chemistry and Physics",
+        "url": "https://hbcp.chemnetbase.com/"
+      },
+      "asOf": "2024-12-31",
+      "volatility": "evergreen",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Tungsten",
+          "value": 3422,
+          "aliases": [
+            "wolfram"
+          ],
+          "clue": "Used where nothing else survives the heat"
+        },
+        {
+          "rank": 2,
+          "name": "Rhenium",
+          "value": 3186,
+          "aliases": [],
+          "clue": "Added to jet engine alloys"
+        },
+        {
+          "rank": 3,
+          "name": "Osmium",
+          "value": 3033,
+          "aliases": [],
+          "clue": "Also the densest element"
+        },
+        {
+          "rank": 4,
+          "name": "Tantalum",
+          "value": 3017,
+          "aliases": [],
+          "clue": "Corrosion-proof, and used in implants"
+        },
+        {
+          "rank": 5,
+          "name": "Molybdenum",
+          "value": 2623,
+          "aliases": [
+            "moly"
+          ],
+          "clue": "Strengthens steel"
+        },
+        {
+          "rank": 6,
+          "name": "Niobium",
+          "value": 2477,
+          "aliases": [
+            "columbium"
+          ],
+          "clue": "Used in superconducting magnets"
+        },
+        {
+          "rank": 7,
+          "name": "Iridium",
+          "value": 2466,
+          "aliases": [],
+          "clue": "Spark plug tips"
+        },
+        {
+          "rank": 8,
+          "name": "Ruthenium",
+          "value": 2334,
+          "aliases": [],
+          "clue": "A platinum-group metal used in electronics"
+        },
+        {
+          "rank": 9,
+          "name": "Hafnium",
+          "value": 2233,
+          "aliases": [],
+          "clue": "Used in nuclear control rods"
+        },
+        {
+          "rank": 10,
+          "name": "Technetium",
+          "value": 2157,
+          "aliases": [],
+          "clue": "The lightest element with no stable isotope"
+        }
+      ],
+      "ambiguity": "Carbon does not melt at standard pressure — it sublimes above 3,600°C — so it is excluded rather than ranked first."
+    },
+    {
+      "id": "sci-universe-elements",
+      "type": "ranked",
+      "domain": "science",
+      "obscurity": 2,
+      "difficulty": 4,
+      "tags": [],
+      "prompt": "Most abundant elements in the universe",
+      "metric": "Share of ordinary matter by mass.",
+      "source": {
+        "name": "NASA - Solar System Exploration",
+        "url": "https://science.nasa.gov/solar-system/"
+      },
+      "asOf": "2024-12-31",
+      "volatility": "evergreen",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Hydrogen",
+          "value": 73.9,
+          "aliases": [],
+          "clue": "Three quarters of all ordinary matter"
+        },
+        {
+          "rank": 2,
+          "name": "Helium",
+          "value": 24,
+          "aliases": [],
+          "clue": "Almost all of the rest, made in the first minutes"
+        },
+        {
+          "rank": 3,
+          "name": "Oxygen",
+          "value": 1.04,
+          "aliases": [],
+          "clue": "The most abundant element heavier than the first two"
+        },
+        {
+          "rank": 4,
+          "name": "Carbon",
+          "value": 0.46,
+          "aliases": [],
+          "clue": "The basis of life"
+        },
+        {
+          "rank": 5,
+          "name": "Neon",
+          "value": 0.13,
+          "aliases": [],
+          "clue": "A noble gas that glows in signs"
+        },
+        {
+          "rank": 6,
+          "name": "Iron",
+          "value": 0.11,
+          "aliases": [],
+          "clue": "The heaviest element stars make by fusion for energy"
+        },
+        {
+          "rank": 7,
+          "name": "Nitrogen",
+          "value": 0.1,
+          "aliases": [],
+          "clue": "Most of the air you breathe"
+        },
+        {
+          "rank": 8,
+          "name": "Silicon",
+          "value": 0.065,
+          "aliases": [],
+          "clue": "Rock, and computer chips"
+        },
+        {
+          "rank": 9,
+          "name": "Magnesium",
+          "value": 0.058,
+          "aliases": [],
+          "clue": "Burns with a brilliant white flame"
+        },
+        {
+          "rank": 10,
+          "name": "Sulfur",
+          "value": 0.044,
+          "aliases": [
+            "sulphur"
+          ],
+          "clue": "Yellow, and smells of rotten eggs in compounds"
+        }
+      ]
+    },
+    {
+      "id": "sci-body-elements",
+      "type": "ranked",
+      "domain": "science",
+      "obscurity": 1,
+      "difficulty": 4,
+      "tags": [],
+      "prompt": "Most abundant elements in the human body",
+      "metric": "Share of body mass.",
+      "source": {
+        "name": "CRC Handbook of Chemistry and Physics",
+        "url": "https://hbcp.chemnetbase.com/"
+      },
+      "asOf": "2024-12-31",
+      "volatility": "evergreen",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Oxygen",
+          "value": 65,
+          "aliases": [],
+          "clue": "Mostly as part of water"
+        },
+        {
+          "rank": 2,
+          "name": "Carbon",
+          "value": 18,
+          "aliases": [],
+          "clue": "The backbone of every biological molecule"
+        },
+        {
+          "rank": 3,
+          "name": "Hydrogen",
+          "value": 10,
+          "aliases": [],
+          "clue": "The other half of water"
+        },
+        {
+          "rank": 4,
+          "name": "Nitrogen",
+          "value": 3,
+          "aliases": [],
+          "clue": "In every protein and every strand of DNA"
+        },
+        {
+          "rank": 5,
+          "name": "Calcium",
+          "value": 1.4,
+          "aliases": [],
+          "clue": "Bones and teeth"
+        },
+        {
+          "rank": 6,
+          "name": "Phosphorus",
+          "value": 1.1,
+          "aliases": [],
+          "clue": "Bone, and the P in ATP"
+        },
+        {
+          "rank": 7,
+          "name": "Potassium",
+          "value": 0.25,
+          "aliases": [],
+          "clue": "Symbol K, and carries nerve signals"
+        },
+        {
+          "rank": 8,
+          "name": "Sulfur",
+          "value": 0.25,
+          "aliases": [
+            "sulphur"
+          ],
+          "clue": "In two amino acids, and gives hair its structure"
+        },
+        {
+          "rank": 9,
+          "name": "Sodium",
+          "value": 0.15,
+          "aliases": [],
+          "clue": "Half of table salt"
+        },
+        {
+          "rank": 10,
+          "name": "Chlorine",
+          "value": 0.15,
+          "aliases": [
+            "chloride"
+          ],
+          "clue": "The other half of table salt"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "The top six are standard. The trace elements below them are quoted at slightly different shares by different references and several are near-identical, so their order is my best judgment."
+      }
+    },
+    {
+      "id": "sci-saturn-moons",
+      "type": "ranked",
+      "domain": "science",
+      "obscurity": 4,
+      "difficulty": 5,
+      "tags": [],
+      "prompt": "Largest moons of Saturn",
+      "metric": "Mean diameter in kilometres.",
+      "source": {
+        "name": "NASA - Solar System Exploration",
+        "url": "https://science.nasa.gov/solar-system/"
+      },
+      "asOf": "2024-12-31",
+      "volatility": "evergreen",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Titan",
+          "value": 5149,
+          "aliases": [],
+          "clue": "Bigger than Mercury, with lakes of methane"
+        },
+        {
+          "rank": 2,
+          "name": "Rhea",
+          "value": 1528,
+          "aliases": [],
+          "clue": "Second largest, and mostly ice"
+        },
+        {
+          "rank": 3,
+          "name": "Iapetus",
+          "value": 1469,
+          "aliases": [],
+          "clue": "Two-toned, with one dark hemisphere and one bright"
+        },
+        {
+          "rank": 4,
+          "name": "Dione",
+          "value": 1123,
+          "aliases": [],
+          "clue": "Has bright ice cliffs"
+        },
+        {
+          "rank": 5,
+          "name": "Tethys",
+          "value": 1062,
+          "aliases": [],
+          "clue": "Carries an enormous impact crater called Odysseus"
+        },
+        {
+          "rank": 6,
+          "name": "Enceladus",
+          "value": 504,
+          "aliases": [],
+          "clue": "Sprays water from cracks at its south pole"
+        },
+        {
+          "rank": 7,
+          "name": "Mimas",
+          "value": 396,
+          "aliases": [],
+          "clue": "A giant crater makes it resemble a film space station"
+        },
+        {
+          "rank": 8,
+          "name": "Hyperion",
+          "value": 270,
+          "aliases": [],
+          "clue": "Tumbles chaotically, and looks like a sponge"
+        },
+        {
+          "rank": 9,
+          "name": "Phoebe",
+          "value": 213,
+          "aliases": [],
+          "clue": "Orbits backwards, and was probably captured"
+        },
+        {
+          "rank": 10,
+          "name": "Janus",
+          "value": 179,
+          "aliases": [],
+          "clue": "Swaps orbits with another small moon every four years"
+        }
+      ]
+    },
+    {
+      "id": "sci-largest-animals",
+      "type": "ranked",
+      "domain": "science",
+      "obscurity": 2,
+      "difficulty": 4,
+      "tags": [],
+      "prompt": "Heaviest animals alive today",
+      "metric": "Maximum adult body mass in tonnes.",
+      "source": {
+        "name": "Smithsonian - animals",
+        "url": "https://www.si.edu/spotlight/animals"
+      },
+      "asOf": "2024-12-31",
+      "volatility": "evergreen",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Blue whale",
+          "value": 150,
+          "aliases": [],
+          "clue": "The largest animal that has ever lived"
+        },
+        {
+          "rank": 2,
+          "name": "Bowhead whale",
+          "value": 100,
+          "aliases": [],
+          "clue": "Arctic, and may live over two centuries"
+        },
+        {
+          "rank": 3,
+          "name": "North Pacific right whale",
+          "value": 90,
+          "aliases": [
+            "right whale"
+          ],
+          "clue": "Named for being the \"right\" one to hunt"
+        },
+        {
+          "rank": 4,
+          "name": "Fin whale",
+          "value": 80,
+          "aliases": [],
+          "clue": "The second-largest whale, and very fast"
+        },
+        {
+          "rank": 5,
+          "name": "Sperm whale",
+          "value": 57,
+          "aliases": [],
+          "clue": "The largest toothed predator, and dives over a kilometre"
+        },
+        {
+          "rank": 6,
+          "name": "Gray whale",
+          "value": 40,
+          "aliases": [
+            "grey whale"
+          ],
+          "clue": "Makes one of the longest migrations of any mammal"
+        },
+        {
+          "rank": 7,
+          "name": "Humpback whale",
+          "value": 40,
+          "aliases": [
+            "humpback"
+          ],
+          "clue": "Known for long, complex songs"
+        },
+        {
+          "rank": 8,
+          "name": "Sei whale",
+          "value": 28,
+          "aliases": [],
+          "clue": "Sleek and fast, and named from a Norwegian word for pollock"
+        },
+        {
+          "rank": 9,
+          "name": "Bryde's whale",
+          "value": 25,
+          "aliases": [
+            "brydes whale",
+            "bryde"
+          ],
+          "clue": "Prefers warm water, and rarely leaves the tropics"
+        },
+        {
+          "rank": 10,
+          "name": "African elephant",
+          "value": 10,
+          "aliases": [
+            "elephant"
+          ],
+          "clue": "The largest land animal"
+        }
+      ],
+      "confidence": {
+        "level": "judgment",
+        "note": "Maximum masses for great whales are poorly constrained and sources disagree widely, so the order between the second and eighth places is my best judgment. The first and last places are secure."
+      }
+    },
+    {
+      "id": "sci-fastest-land-animals",
+      "type": "ranked",
+      "domain": "science",
+      "obscurity": 1,
+      "difficulty": 3,
+      "tags": [],
+      "prompt": "Fastest land animals",
+      "metric": "Top recorded running speed over a short distance, in km/h.",
+      "source": {
+        "name": "Smithsonian - animals",
+        "url": "https://www.si.edu/spotlight/animals"
+      },
+      "asOf": "2024-12-31",
+      "volatility": "evergreen",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Cheetah",
+          "value": 120,
+          "aliases": [],
+          "clue": "Accelerates faster than most sports cars"
+        },
+        {
+          "rank": 2,
+          "name": "Pronghorn",
+          "value": 88,
+          "aliases": [
+            "pronghorn antelope"
+          ],
+          "clue": "North American, and can hold its speed for miles"
+        },
+        {
+          "rank": 3,
+          "name": "Springbok",
+          "value": 88,
+          "aliases": [],
+          "clue": "Southern African, and leaps stiff-legged when alarmed"
+        },
+        {
+          "rank": 4,
+          "name": "Quarter horse",
+          "value": 88,
+          "aliases": [
+            "horse"
+          ],
+          "clue": "A breed named for the distance it races"
+        },
+        {
+          "rank": 5,
+          "name": "Blue wildebeest",
+          "value": 80,
+          "aliases": [
+            "wildebeest",
+            "gnu"
+          ],
+          "clue": "Migrates across the Serengeti in vast herds"
+        },
+        {
+          "rank": 6,
+          "name": "Lion",
+          "value": 80,
+          "aliases": [],
+          "clue": "Fast only in a short burst, and hunts in groups"
+        },
+        {
+          "rank": 7,
+          "name": "Blackbuck",
+          "value": 80,
+          "aliases": [],
+          "clue": "An Indian antelope with spiral horns"
+        },
+        {
+          "rank": 8,
+          "name": "Brown hare",
+          "value": 80,
+          "aliases": [
+            "hare"
+          ],
+          "clue": "Boxes with rivals in spring"
+        },
+        {
+          "rank": 9,
+          "name": "Greyhound",
+          "value": 74,
+          "aliases": [],
+          "clue": "Bred to chase by sight"
+        },
+        {
+          "rank": 10,
+          "name": "Jackrabbit",
+          "value": 72,
+          "aliases": [],
+          "clue": "Not a rabbit, and has enormous ears"
+        }
+      ],
+      "ambiguity": "Speeds over a short sprint. Measured over distance the order changes completely — the pronghorn beats almost everything over a mile.",
+      "confidence": {
+        "level": "judgment",
+        "note": "Animal speed records are anecdotal and poorly measured; several of these are quoted at the same figure. Treat the order as indicative, and the membership as the point."
+      }
+    },
+    {
+      "id": "sci-longest-lived-animals",
+      "type": "ranked",
+      "domain": "science",
+      "obscurity": 2,
+      "difficulty": 4,
+      "tags": [],
+      "prompt": "Longest-living animals",
+      "metric": "Maximum verified lifespan in years.",
+      "source": {
+        "name": "Smithsonian - animals",
+        "url": "https://www.si.edu/spotlight/animals"
+      },
+      "asOf": "2024-12-31",
+      "volatility": "evergreen",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Ocean quahog",
+          "value": 507,
+          "aliases": [
+            "quahog",
+            "clam"
+          ],
+          "clue": "A bivalve whose shell rings gave its exact age"
+        },
+        {
+          "rank": 2,
+          "name": "Greenland shark",
+          "value": 400,
+          "aliases": [],
+          "clue": "Reaches sexual maturity at about 150"
+        },
+        {
+          "rank": 3,
+          "name": "Koi",
+          "value": 226,
+          "aliases": [],
+          "clue": "An ornamental carp; one in Japan was said to be over two centuries old"
+        },
+        {
+          "rank": 4,
+          "name": "Bowhead whale",
+          "value": 211,
+          "aliases": [],
+          "clue": "Arctic, and old harpoon heads have been found in living ones"
+        },
+        {
+          "rank": 5,
+          "name": "Rougheye rockfish",
+          "value": 205,
+          "aliases": [
+            "rockfish"
+          ],
+          "clue": "A deep-water Pacific fish"
+        },
+        {
+          "rank": 6,
+          "name": "Red sea urchin",
+          "value": 200,
+          "aliases": [
+            "sea urchin"
+          ],
+          "clue": "Shows almost no sign of ageing"
+        },
+        {
+          "rank": 7,
+          "name": "Galapagos tortoise",
+          "value": 177,
+          "aliases": [
+            "tortoise"
+          ],
+          "clue": "One famous individual was collected by Darwin's era naturalists"
+        },
+        {
+          "rank": 8,
+          "name": "Human",
+          "value": 122,
+          "aliases": [],
+          "clue": "The verified record is French"
+        },
+        {
+          "rank": 9,
+          "name": "Tuatara",
+          "value": 110,
+          "aliases": [],
+          "clue": "A New Zealand reptile, and the last of its order"
+        },
+        {
+          "rank": 10,
+          "name": "African elephant",
+          "value": 86,
+          "aliases": [
+            "elephant"
+          ],
+          "clue": "The longest-lived land mammal after us"
+        }
+      ],
+      "confidence": {
+        "level": "judgment",
+        "note": "Maximum-age claims are a mess: some rest on a single specimen, some on disputed methods. The koi record in particular is widely doubted. Order is my best judgment, and the membership is the interesting part."
+      }
+    },
+    {
+      "id": "sci-longest-bones",
+      "type": "ranked",
+      "domain": "science",
+      "obscurity": 2,
+      "difficulty": 4,
+      "tags": [],
+      "prompt": "Longest bones in the human body",
+      "metric": "Average adult length in centimetres.",
+      "source": {
+        "name": "Gray's Anatomy",
+        "url": "https://www.bartleby.com/107/"
+      },
+      "asOf": "2024-12-31",
+      "volatility": "evergreen",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Femur",
+          "value": 50,
+          "aliases": [
+            "thigh bone"
+          ],
+          "clue": "The strongest bone in the body, in the upper leg"
+        },
+        {
+          "rank": 2,
+          "name": "Tibia",
+          "value": 43,
+          "aliases": [
+            "shin bone",
+            "shinbone"
+          ],
+          "clue": "Bears your weight in the lower leg"
+        },
+        {
+          "rank": 3,
+          "name": "Fibula",
+          "value": 40,
+          "aliases": [
+            "calf bone"
+          ],
+          "clue": "The slender partner alongside the weight-bearing lower-leg bone"
+        },
+        {
+          "rank": 4,
+          "name": "Humerus",
+          "value": 36,
+          "aliases": [
+            "upper arm bone"
+          ],
+          "clue": "Upper arm, and its name sounds like a joke"
+        },
+        {
+          "rank": 5,
+          "name": "Ulna",
+          "value": 28,
+          "aliases": [],
+          "clue": "Forearm, on the little-finger side"
+        },
+        {
+          "rank": 6,
+          "name": "Radius",
+          "value": 26,
+          "aliases": [],
+          "clue": "Forearm, on the thumb side, and rotates"
+        },
+        {
+          "rank": 7,
+          "name": "Seventh rib",
+          "value": 24,
+          "aliases": [
+            "7th rib"
+          ],
+          "clue": "The longest of the ribs"
+        },
+        {
+          "rank": 8,
+          "name": "Eighth rib",
+          "value": 23,
+          "aliases": [
+            "8th rib"
+          ],
+          "clue": "Just shorter than its neighbour above"
+        },
+        {
+          "rank": 9,
+          "name": "Innominate",
+          "value": 18,
+          "aliases": [
+            "hip bone",
+            "pelvis"
+          ],
+          "clue": "Formed from three bones fused together at the hip"
+        },
+        {
+          "rank": 10,
+          "name": "Sternum",
+          "value": 17,
+          "aliases": [
+            "breastbone"
+          ],
+          "clue": "Where the ribs meet at the front of the chest"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "Bone lengths vary with body size and references quote different averages; the top six are firmly ordered, the rest are my best judgment."
+      }
     }
   ]
 }

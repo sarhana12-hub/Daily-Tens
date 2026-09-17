@@ -103,6 +103,21 @@ const puzzles = src.puzzles.map(p => {
   if (!p.asOf) problems.push(`${p.id}: no asOf date`);
   if (!p.obscurity) problems.push(`${p.id}: no obscurity rating`);
   if (p.type === 'recency' && p.answers.some(a => !a.label)) problems.push(`${p.id}: recency answers need labels`);
+
+  // A ranked list with values must actually be in rank order. Easy to get
+  // wrong when authoring by hand, and invisible until a player notices the
+  // numbers don't descend.
+  // `order: "asc"` for metrics where smaller is better — star magnitude runs
+  // backwards, and so do finishing times.
+  if (p.type === 'ranked' && p.answers.every(a => a.value != null)) {
+    const asc = p.order === 'asc';
+    for (let i = 1; i < p.answers.length; i++) {
+      const prev = p.answers[i - 1].value, cur = p.answers[i].value;
+      if (asc ? cur < prev : cur > prev) {
+        problems.push(`${p.id}: #${i + 1} (${p.answers[i].name}, ${cur}) outranks #${i} (${p.answers[i - 1].name}, ${prev})`);
+      }
+    }
+  }
   if (p.volatility && p.volatility !== 'evergreen' && p.margin && p.margin.gapPct < 5) {
     problems.push(`${p.id}: volatile list with only ${p.margin.gapPct}% tail margin (rule 5 needs >5%)`);
   }
