@@ -204,6 +204,10 @@ const defaults = () => ({
   settings: {
     caps: Object.fromEntries(DOMAINS.map(d => [d[0], 3])),
     boost: [],
+    // Difficulty is a set of allowed levels, not a ceiling. A cap can say
+    // "nothing brutal" but not "only give me the brutal ones", and both are
+    // reasonable moods to be in.
+    diffs: [1, 2, 3, 4, 5],
   },
 });
 let store = load();
@@ -223,6 +227,7 @@ function load() {
       };
     }
     if (!s.settings.boost) s.settings.boost = [];
+    if (!Array.isArray(s.settings.diffs) || !s.settings.diffs.length) s.settings.diffs = [1, 2, 3, 4, 5];
     return s;
   } catch { return defaults(); }
 }
@@ -279,6 +284,37 @@ function lev(a, b) {
   return prev[b.length];
 }
 function tolerance(n) { return n <= 6 ? 1 : n <= 12 ? 2 : 3; }
+
+/* Words that carry no identifying weight on their own. "River" shouldn't
+   match the Yellow River and "New" shouldn't match the New York Knicks, but
+   "Yellow" and "York" must. */
+const WEAK = new Set([
+  'river', 'rivers', 'mount', 'mountain', 'mountains', 'lake', 'sea', 'gulf',
+  'island', 'islands', 'city', 'state', 'states', 'united', 'republic',
+  'democratic', 'people', 'peoples', 'new', 'old', 'saint', 'north', 'south',
+  'east', 'west', 'national', 'university', 'football', 'club', 'the',
+  'after', 'with', 'from', 'into', 'over', 'under', 'once', 'all', 'and',
+  'for', 'that', 'this', 'when', 'what', 'which', 'battle',
+]);
+
+// Every shorthand a player might reasonably type, derived rather than listed:
+// each identifying word on its own, and the name with its weak words removed.
+// A hand-written alias list will always have holes — "Manning" and "Yellow"
+// were both rejected because of one. Collisions this creates are handled by
+// resolveGuess, which asks for precision instead of penalising.
+function derivedAliases(name) {
+  const words = norm(name).split(' ').filter(Boolean);
+  if (words.length < 2) return [];
+  const out = new Set();
+  for (const w of words) if (w.length >= 4 && !WEAK.has(w)) out.add(w);
+  const strong = words.filter(w => !WEAK.has(w));
+  if (strong.length && strong.length < words.length) out.add(strong.join(' '));
+  // The last word regardless of length — surnames and team nicknames.
+  const last = words[words.length - 1];
+  if (last.length >= 3) out.add(last);
+  out.delete(norm(name));
+  return [...out];
+}
 
 // Resolves a guess to the distinct answers it could mean.
 //   { names: [canonical, ...], slots: { canonical: [index, ...] } }
@@ -349,15 +385,8 @@ function normalizePuzzle(p, obfuscated) {
     const name = obfuscated ? deob(a.name) : a.name;
     const aliases = (a.aliases || []).map(x => (obfuscated ? deob(x) : x));
 
-    // Derive the last word as an alias: the surname for a person, the nickname
-    // for a team. Typing "Manning" or "Eagles" is how people actually answer,
-    // and a hand-written alias list will always have holes. Where this creates
-    // a genuine collision ("Bush" is two presidents) resolveGuess asks the
-    // player to be more specific rather than penalising them.
-    const words = String(name).trim().split(/\s+/);
-    if (words.length > 1) {
-      const last = words[words.length - 1].replace(/[^A-Za-z'’-]/g, '');
-      if (last.length >= 3 && !aliases.some(x => norm(x) === norm(last))) aliases.push(last);
+    for (const x of derivedAliases(name)) {
+      if (!aliases.some(y => norm(y) === x)) aliases.push(x);
     }
 
     return {
@@ -386,8 +415,12 @@ function ceilingFor(p, explicit) {
 // caps. Naming a domain overrides an "off" cap — an explicit pick beats a
 // standing preference.
 function eligible(domain) {
+  const diffs = store.settings.diffs;
   return PUZZLES.filter(p => {
     if (domain && p.domain !== domain) return false;
+    // An unrated puzzle is never filtered out by difficulty — the rating is
+    // optional, and absence of a judgment shouldn't hide content.
+    if (p.difficulty && !diffs.includes(p.difficulty)) return false;
     const ceil = ceilingFor(p, !!domain);
     return ceil > 0 && (p.obscurity || 1) <= ceil;
   });
@@ -777,6 +810,11 @@ function viewSheet() {
             ${[1, 2, 3, 4, 5].map(n => `<button class="${cap === n ? 'on' : ''}" data-cap="${k}:${n}">${n}</button>`).join('')}
           </div></div>`;
       }).join('')}
+      <h2 class="sec">Difficulty</h2>
+      <p class="helper" style="font-size:12.5px;margin-bottom:8px">Which levels to serve. Pick any combination — this is how hard you want it, separate from whether you care about the subject.</p>
+      <div class="range">${[1, 2, 3, 4, 5].map(n =>
+        `<button class="${s.diffs.includes(n) ? 'on' : ''}" data-diff="${n}">${n}</button>`).join('')}</div>
+      <p class="helper" style="margin-top:7px;font-size:12px">${[1, 2, 3, 4, 5].filter(n => s.diffs.includes(n)).map(n => DIFFICULTY[n]).join(' · ') || 'none'}</p>
       ${tags.length ? `<h2 class="sec">Go deep on</h2>
       <p class="helper" style="font-size:12.5px;margin-bottom:10px">Follow these all the way to specialist level, whatever their category is set to. Useful when you're into one corner of a sport but not the rest of it.</p>
       <div class="chips">${tags.map(([t]) =>
@@ -846,6 +884,12 @@ function wire() {
     s.caps[k] = +n;
     // Never leave the random rotation with nothing to serve.
     if (Object.values(s.caps).every(v => v === 0)) s.caps[k] = 1;
+    save(); render();
+  }));
+  document.querySelectorAll('[data-diff]').forEach(b => b.addEventListener('click', () => {
+    const n = +b.dataset.diff, s = store.settings;
+    s.diffs = s.diffs.includes(n) ? s.diffs.filter(x => x !== n) : s.diffs.concat(n);
+    if (!s.diffs.length) s.diffs = [n];      // never leave nothing playable
     save(); render();
   }));
   document.querySelectorAll('[data-boost]').forEach(b => b.addEventListener('click', () => {
