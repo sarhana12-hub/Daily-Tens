@@ -26929,6 +26929,1083 @@
         "level": "partial",
         "note": "The leader is certain and far ahead. The rest are close and reporting is uneven, so the order is my best judgment."
       }
+    },
+    {
+      "id": "film-best-animated-recent",
+      "type": "recency",
+      "domain": "film",
+      "tags": [
+        "oscars"
+      ],
+      "obscurity": 2,
+      "difficulty": 4,
+      "prompt": "The ten most recent Best Animated Feature winners",
+      "metric": "Winner of the Academy Award for Best Animated Feature, by ceremony year.",
+      "source": {
+        "name": "Academy of Motion Picture Arts and Sciences",
+        "url": "https://www.oscars.org/"
+      },
+      "asOf": "2026-03",
+      "volatility": "annual",
+      "confidence": {
+        "level": "partial",
+        "note": "Verified through 2025; the 2026 winner is my best judgment."
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "label": "2026",
+          "name": "Arco",
+          "aliases": [],
+          "clue": "A French film about children travelling through time"
+        },
+        {
+          "rank": 2,
+          "label": "2025",
+          "name": "Flow",
+          "aliases": [],
+          "clue": "Latvian, dialogue-free, and about a cat in a flood"
+        },
+        {
+          "rank": 3,
+          "label": "2024",
+          "name": "The Boy and the Heron",
+          "aliases": [
+            "boy and the heron"
+          ],
+          "clue": "A Japanese master came out of retirement for it"
+        },
+        {
+          "rank": 4,
+          "label": "2023",
+          "name": "Guillermo del Toro's Pinocchio",
+          "aliases": [
+            "pinocchio"
+          ],
+          "clue": "Stop-motion, and set under Italian fascism"
+        },
+        {
+          "rank": 5,
+          "label": "2022",
+          "name": "Encanto",
+          "aliases": [],
+          "clue": "A Colombian family with magical gifts"
+        },
+        {
+          "rank": 6,
+          "label": "2021",
+          "name": "Soul",
+          "aliases": [],
+          "clue": "A jazz pianist and the afterlife"
+        },
+        {
+          "rank": 7,
+          "label": "2020",
+          "name": "Toy Story 4",
+          "aliases": [
+            "toy story"
+          ],
+          "clue": "The fourth film in the series"
+        },
+        {
+          "rank": 8,
+          "label": "2019",
+          "name": "Spider-Man: Into the Spider-Verse",
+          "aliases": [
+            "into the spider verse",
+            "spider verse"
+          ],
+          "clue": "Multiple animation styles at once"
+        },
+        {
+          "rank": 9,
+          "label": "2018",
+          "name": "Coco",
+          "aliases": [],
+          "clue": "Set during the Mexican Day of the Dead"
+        },
+        {
+          "rank": 10,
+          "label": "2017",
+          "name": "Zootopia",
+          "aliases": [
+            "zootropolis"
+          ],
+          "clue": "A city of anthropomorphic animals"
+        }
+      ]
+    },
+    {
+      "type": "ranked",
+      "tags": [
+        "oscars"
+      ],
+      "volatility": "annual",
+      "asOf": "2026-03",
+      "id": "film-most-acting-nominations",
+      "domain": "film",
+      "obscurity": 3,
+      "difficulty": 5,
+      "prompt": "Most Academy Award acting nominations",
+      "metric": "Nominations in the four acting categories, career total.",
+      "source": {
+        "name": "Academy of Motion Picture Arts and Sciences",
+        "url": "https://www.oscars.org/"
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Meryl Streep",
+          "value": 21,
+          "aliases": [
+            "streep"
+          ],
+          "clue": "Far more than anyone, and three wins"
+        },
+        {
+          "rank": 2,
+          "name": "Katharine Hepburn",
+          "value": 12,
+          "aliases": [
+            "hepburn"
+          ],
+          "clue": "Four wins, more than any performer"
+        },
+        {
+          "rank": 3,
+          "name": "Jack Nicholson",
+          "value": 12,
+          "aliases": [
+            "nicholson"
+          ],
+          "clue": "Three wins, and nominated across five decades"
+        },
+        {
+          "rank": 4,
+          "name": "Bette Davis",
+          "value": 11,
+          "aliases": [
+            "davis"
+          ],
+          "clue": "Two wins, and a famously combative career"
+        },
+        {
+          "rank": 5,
+          "name": "Laurence Olivier",
+          "value": 10,
+          "aliases": [
+            "olivier"
+          ],
+          "clue": "One acting win, and an honorary award"
+        },
+        {
+          "rank": 6,
+          "name": "Denzel Washington",
+          "value": 10,
+          "aliases": [
+            "denzel",
+            "washington"
+          ],
+          "clue": "Two wins, in both lead and supporting"
+        },
+        {
+          "rank": 7,
+          "name": "Spencer Tracy",
+          "value": 9,
+          "aliases": [
+            "tracy"
+          ],
+          "clue": "Won twice in a row in the 1930s"
+        },
+        {
+          "rank": 8,
+          "name": "Paul Newman",
+          "value": 9,
+          "aliases": [
+            "newman"
+          ],
+          "clue": "Won on his seventh nomination"
+        },
+        {
+          "rank": 9,
+          "name": "Al Pacino",
+          "value": 9,
+          "aliases": [
+            "pacino"
+          ],
+          "clue": "Lost seven times before winning"
+        },
+        {
+          "rank": 10,
+          "name": "Marlon Brando",
+          "value": 8,
+          "aliases": [
+            "brando"
+          ],
+          "clue": "Declined one of his wins"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "The leader is certain. Several performers tie on nine and ten nominations, so the order within ties is my best judgment."
+      }
+    },
+    {
+      "type": "ranked",
+      "tags": [],
+      "volatility": "annual",
+      "asOf": "2025-09",
+      "id": "tv-most-emmys",
+      "domain": "film",
+      "obscurity": 3,
+      "difficulty": 5,
+      "prompt": "Television series with the most Emmy Awards",
+      "metric": "Primetime Emmy Awards won by a single series.",
+      "source": {
+        "name": "Television Academy",
+        "url": "https://www.emmys.com/"
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Saturday Night Live",
+          "value": 90,
+          "aliases": [
+            "snl"
+          ],
+          "clue": "A sketch show running since 1975"
+        },
+        {
+          "rank": 2,
+          "name": "Game of Thrones",
+          "value": 59,
+          "aliases": [
+            "got",
+            "thrones"
+          ],
+          "clue": "The most for any drama"
+        },
+        {
+          "rank": 3,
+          "name": "Frasier",
+          "value": 37,
+          "aliases": [],
+          "clue": "A spin-off about a radio psychiatrist"
+        },
+        {
+          "rank": 4,
+          "name": "The Simpsons",
+          "value": 37,
+          "aliases": [
+            "simpsons"
+          ],
+          "clue": "Animated, and mostly in animation categories"
+        },
+        {
+          "rank": 5,
+          "name": "The Mary Tyler Moore Show",
+          "value": 29,
+          "aliases": [
+            "mary tyler moore"
+          ],
+          "clue": "A 1970s newsroom comedy"
+        },
+        {
+          "rank": 6,
+          "name": "Cheers",
+          "value": 28,
+          "aliases": [],
+          "clue": "Set in a Boston bar"
+        },
+        {
+          "rank": 7,
+          "name": "The Daily Show",
+          "value": 26,
+          "aliases": [
+            "daily show"
+          ],
+          "clue": "A satirical news programme"
+        },
+        {
+          "rank": 8,
+          "name": "The West Wing",
+          "value": 26,
+          "aliases": [
+            "west wing"
+          ],
+          "clue": "A White House drama"
+        },
+        {
+          "rank": 9,
+          "name": "Hill Street Blues",
+          "value": 26,
+          "aliases": [
+            "hill street"
+          ],
+          "clue": "A police drama that changed the form"
+        },
+        {
+          "rank": 10,
+          "name": "Modern Family",
+          "value": 22,
+          "aliases": [],
+          "clue": "A mockumentary sitcom"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "The top two are certain. Several series sit on 26 to 29 awards, and totals differ depending on whether craft awards are counted, so the order is my best judgment."
+      }
+    },
+    {
+      "type": "ranked",
+      "tags": [],
+      "volatility": "annual",
+      "asOf": "2025-12-31",
+      "id": "biz-largest-airlines",
+      "domain": "business",
+      "obscurity": 2,
+      "difficulty": 4,
+      "prompt": "Largest airlines by passengers carried",
+      "metric": "Passengers carried per year.",
+      "source": {
+        "name": "IATA",
+        "url": "https://www.iata.org/"
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "American Airlines",
+          "value": null,
+          "aliases": [
+            "american"
+          ],
+          "clue": "The largest by several measures"
+        },
+        {
+          "rank": 2,
+          "name": "Delta Air Lines",
+          "value": null,
+          "aliases": [
+            "delta"
+          ],
+          "clue": "Atlanta-based, with hubs across the south and midwest"
+        },
+        {
+          "rank": 3,
+          "name": "Ryanair",
+          "value": null,
+          "aliases": [],
+          "clue": "The largest in Europe, and low-cost"
+        },
+        {
+          "rank": 4,
+          "name": "United Airlines",
+          "value": null,
+          "aliases": [
+            "united"
+          ],
+          "clue": "Chicago-based, with a large Pacific network"
+        },
+        {
+          "rank": 5,
+          "name": "Southwest Airlines",
+          "value": null,
+          "aliases": [
+            "southwest"
+          ],
+          "clue": "Flies only one type of aircraft"
+        },
+        {
+          "rank": 6,
+          "name": "China Southern",
+          "value": null,
+          "aliases": [
+            "china southern airlines"
+          ],
+          "clue": "The largest in Asia"
+        },
+        {
+          "rank": 7,
+          "name": "IndiGo",
+          "value": null,
+          "aliases": [],
+          "clue": "Indian, low-cost, and growing very fast"
+        },
+        {
+          "rank": 8,
+          "name": "Turkish Airlines",
+          "value": null,
+          "aliases": [
+            "turkish"
+          ],
+          "clue": "Flies to more countries than any airline"
+        },
+        {
+          "rank": 9,
+          "name": "Lufthansa",
+          "value": null,
+          "aliases": [],
+          "clue": "German, and a large European group"
+        },
+        {
+          "rank": 10,
+          "name": "China Eastern",
+          "value": null,
+          "aliases": [
+            "china eastern airlines"
+          ],
+          "clue": "Shanghai-based"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "The American carriers lead consistently; the order below them moves annually with capacity, so it is my best judgment."
+      }
+    },
+    {
+      "type": "ranked",
+      "tags": [],
+      "volatility": "evergreen",
+      "asOf": "2024-12-31",
+      "id": "biz-oldest-companies",
+      "domain": "business",
+      "obscurity": 4,
+      "difficulty": 5,
+      "prompt": "Oldest companies still operating",
+      "metric": "Year of founding. Lower year means older.",
+      "source": {
+        "name": "Encyclopaedia Britannica",
+        "url": "https://www.britannica.com/"
+      },
+      "order": "asc",
+      "ambiguity": "Continuity through wars, nationalisations and family sales is what makes these claims arguable; several changed legal form entirely while claiming the same founding date.",
+      "confidence": {
+        "level": "judgment",
+        "note": "Founding dates for medieval businesses rest on the companies' own accounts, and the older claims are impossible to verify. Order is my best judgment."
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Stiftskeller St Peter",
+          "value": 803,
+          "aliases": [
+            "stiftskeller",
+            "st peter stiftskulinarium"
+          ],
+          "clue": "An Austrian restaurant in a monastery"
+        },
+        {
+          "rank": 2,
+          "name": "Staffelter Hof",
+          "value": 862,
+          "aliases": [
+            "staffelter"
+          ],
+          "clue": "A German winery founded by a monastery"
+        },
+        {
+          "rank": 3,
+          "name": "Sean's Bar",
+          "value": 900,
+          "aliases": [
+            "seans bar"
+          ],
+          "clue": "An Irish pub in Athlone"
+        },
+        {
+          "rank": 4,
+          "name": "Chateau de Goulaine",
+          "value": 1000,
+          "aliases": [
+            "goulaine"
+          ],
+          "clue": "A French winery and castle, held by one family"
+        },
+        {
+          "rank": 5,
+          "name": "Marinelli Bell Foundry",
+          "value": 1000,
+          "aliases": [
+            "marinelli"
+          ],
+          "clue": "Italian, and casts bells for the Vatican"
+        },
+        {
+          "rank": 6,
+          "name": "Barone Ricasoli",
+          "value": 1141,
+          "aliases": [
+            "ricasoli"
+          ],
+          "clue": "A Tuscan wine estate"
+        },
+        {
+          "rank": 7,
+          "name": "Barovier and Toso",
+          "value": 1295,
+          "aliases": [
+            "barovier",
+            "barovier toso"
+          ],
+          "clue": "Venetian glassmakers on Murano"
+        },
+        {
+          "rank": 8,
+          "name": "Hotel Pilgrim Haus",
+          "value": 1304,
+          "aliases": [
+            "pilgrim haus"
+          ],
+          "clue": "A German inn in Soest"
+        },
+        {
+          "rank": 9,
+          "name": "Richard de Bas",
+          "value": 1326,
+          "aliases": [
+            "de bas"
+          ],
+          "clue": "A French papermaker still using old methods"
+        },
+        {
+          "rank": 10,
+          "name": "Cambridge University Press",
+          "value": 1534,
+          "aliases": [
+            "cambridge press"
+          ],
+          "clue": "The oldest publishing house in the world"
+        }
+      ]
+    },
+    {
+      "type": "ranked",
+      "tags": [],
+      "volatility": "evergreen",
+      "asOf": "2024-12-31",
+      "id": "sci-brightest-planets",
+      "domain": "science",
+      "obscurity": 3,
+      "difficulty": 5,
+      "prompt": "Brightest objects in the night sky",
+      "metric": "Peak apparent magnitude as seen from Earth, excluding the Sun. Lower magnitude means brighter.",
+      "source": {
+        "name": "NASA",
+        "url": "https://science.nasa.gov/"
+      },
+      "order": "asc",
+      "ambiguity": "Peak brightness, so objects that vary — planets at closest approach, a comet at perihelion — are ranked at their best rather than their average.",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Moon",
+          "value": -12.7,
+          "aliases": [
+            "the moon",
+            "luna"
+          ],
+          "clue": "Full, and by far the brightest thing at night"
+        },
+        {
+          "rank": 2,
+          "name": "International Space Station",
+          "value": -6,
+          "aliases": [
+            "iss",
+            "space station"
+          ],
+          "clue": "Not a natural object, and crosses the sky in minutes"
+        },
+        {
+          "rank": 3,
+          "name": "Venus",
+          "value": -4.9,
+          "aliases": [],
+          "clue": "Visible in daylight if you know where to look"
+        },
+        {
+          "rank": 4,
+          "name": "Jupiter",
+          "value": -2.9,
+          "aliases": [],
+          "clue": "The largest planet, and steady rather than twinkling"
+        },
+        {
+          "rank": 5,
+          "name": "Mars",
+          "value": -2.9,
+          "aliases": [],
+          "clue": "Brightest when closest, and visibly red"
+        },
+        {
+          "rank": 6,
+          "name": "Mercury",
+          "value": -2.5,
+          "aliases": [],
+          "clue": "Bright but always close to the Sun in the sky"
+        },
+        {
+          "rank": 7,
+          "name": "Sirius",
+          "value": -1.5,
+          "aliases": [
+            "dog star"
+          ],
+          "clue": "The brightest star"
+        },
+        {
+          "rank": 8,
+          "name": "Canopus",
+          "value": -0.7,
+          "aliases": [],
+          "clue": "The second brightest star, and southern"
+        },
+        {
+          "rank": 9,
+          "name": "Saturn",
+          "value": -0.5,
+          "aliases": [],
+          "clue": "Rings invisible to the naked eye"
+        },
+        {
+          "rank": 10,
+          "name": "Alpha Centauri",
+          "value": -0.3,
+          "aliases": [
+            "rigil kentaurus"
+          ],
+          "clue": "The closest star system"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "Peak magnitudes are well measured, but including a spacecraft and ranking variable planets at their best makes the list arguable; the order is my best judgment."
+      }
+    },
+    {
+      "type": "ranked",
+      "tags": [],
+      "volatility": "evergreen",
+      "asOf": "2024-12-31",
+      "id": "sci-largest-diamonds",
+      "domain": "science",
+      "obscurity": 4,
+      "difficulty": 5,
+      "prompt": "Largest rough diamonds ever found",
+      "metric": "Weight of the rough stone in carats.",
+      "source": {
+        "name": "Encyclopaedia Britannica",
+        "url": "https://www.britannica.com/"
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Cullinan",
+          "value": 3106,
+          "aliases": [],
+          "clue": "Cut into pieces now in the British crown jewels"
+        },
+        {
+          "rank": 2,
+          "name": "Sewelo",
+          "value": 1758,
+          "aliases": [],
+          "clue": "Found in Botswana in 2019"
+        },
+        {
+          "rank": 3,
+          "name": "Lesedi La Rona",
+          "value": 1109,
+          "aliases": [
+            "lesedi"
+          ],
+          "clue": "Botswanan, and its name means our light"
+        },
+        {
+          "rank": 4,
+          "name": "Excelsior",
+          "value": 995,
+          "aliases": [],
+          "clue": "Found by a worker in a South African mine in 1893"
+        },
+        {
+          "rank": 5,
+          "name": "Star of Sierra Leone",
+          "value": 969,
+          "aliases": [
+            "star of sierra leone diamond"
+          ],
+          "clue": "Found in an alluvial deposit in 1972"
+        },
+        {
+          "rank": 6,
+          "name": "Incomparable",
+          "value": 890,
+          "aliases": [],
+          "clue": "Found by a child on a rubble heap in the Congo"
+        },
+        {
+          "rank": 7,
+          "name": "Great Mogul",
+          "value": 787,
+          "aliases": [
+            "mogul"
+          ],
+          "clue": "Indian, and lost to history"
+        },
+        {
+          "rank": 8,
+          "name": "Woyie River",
+          "value": 770,
+          "aliases": [
+            "woyie"
+          ],
+          "clue": "Found in Sierra Leone in 1945"
+        },
+        {
+          "rank": 9,
+          "name": "Golden Jubilee",
+          "value": 755,
+          "aliases": [
+            "jubilee"
+          ],
+          "clue": "Presented to a Thai king"
+        },
+        {
+          "rank": 10,
+          "name": "Centenary",
+          "value": 599,
+          "aliases": [],
+          "clue": "Found at the same mine as the largest of all"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "The largest is certain. Recent Botswanan finds are still being reported and older Indian stones are poorly documented, so the order is my best judgment."
+      }
+    },
+    {
+      "type": "ranked",
+      "tags": [
+        "economics"
+      ],
+      "volatility": "annual",
+      "asOf": "2025-12-31",
+      "id": "econ-highest-minimum-wage",
+      "domain": "geography",
+      "obscurity": 3,
+      "difficulty": 5,
+      "prompt": "Highest statutory minimum wages",
+      "metric": "Statutory minimum wage per hour, in US dollars at market exchange rates.",
+      "source": {
+        "name": "World Bank - open data",
+        "url": "https://data.worldbank.org/"
+      },
+      "ambiguity": "At market exchange rates rather than adjusted for local prices; adjusted for what the money buys, the order changes substantially.",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Luxembourg",
+          "value": 16,
+          "aliases": [],
+          "clue": "The highest in the world, and a very high cost of living"
+        },
+        {
+          "rank": 2,
+          "name": "Australia",
+          "value": 15.5,
+          "aliases": [],
+          "clue": "Set by an independent commission"
+        },
+        {
+          "rank": 3,
+          "name": "Switzerland",
+          "value": 15,
+          "aliases": [],
+          "clue": "Has no national minimum, but several cantons set high ones"
+        },
+        {
+          "rank": 4,
+          "name": "Netherlands",
+          "value": 14,
+          "aliases": [
+            "holland"
+          ],
+          "clue": "Indexed twice a year"
+        },
+        {
+          "rank": 5,
+          "name": "Ireland",
+          "value": 13.5,
+          "aliases": [],
+          "clue": "Rising towards a living wage target"
+        },
+        {
+          "rank": 6,
+          "name": "Germany",
+          "value": 13.5,
+          "aliases": [
+            "deutschland"
+          ],
+          "clue": "Only introduced a national minimum in 2015"
+        },
+        {
+          "rank": 7,
+          "name": "New Zealand",
+          "value": 13,
+          "aliases": [
+            "nz"
+          ],
+          "clue": "Among the highest relative to median pay"
+        },
+        {
+          "rank": 8,
+          "name": "Belgium",
+          "value": 13,
+          "aliases": [],
+          "clue": "Negotiated between unions and employers"
+        },
+        {
+          "rank": 9,
+          "name": "France",
+          "value": 12.5,
+          "aliases": [],
+          "clue": "Indexed to inflation automatically"
+        },
+        {
+          "rank": 10,
+          "name": "United Kingdom",
+          "value": 12.5,
+          "aliases": [
+            "uk",
+            "britain"
+          ],
+          "clue": "Called the National Living Wage"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "Converting minimum wages across currencies and pay periods gives different answers depending on method, so the order is my best judgment."
+      }
+    },
+    {
+      "type": "ranked",
+      "tags": [
+        "economics"
+      ],
+      "volatility": "annual",
+      "asOf": "2025-12-31",
+      "id": "econ-most-patents",
+      "domain": "geography",
+      "obscurity": 3,
+      "difficulty": 4,
+      "prompt": "Countries filing the most patent applications",
+      "metric": "Resident patent applications filed per year.",
+      "source": {
+        "name": "WIPO",
+        "url": "https://www.wipo.int/ipstats/en/"
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "China",
+          "value": null,
+          "aliases": [
+            "prc"
+          ],
+          "clue": "Files more than the rest of the world combined"
+        },
+        {
+          "rank": 2,
+          "name": "United States",
+          "value": null,
+          "aliases": [
+            "usa",
+            "us",
+            "america"
+          ],
+          "clue": "Second, and leads on patents granted abroad"
+        },
+        {
+          "rank": 3,
+          "name": "Japan",
+          "value": null,
+          "aliases": [],
+          "clue": "Very high relative to its population"
+        },
+        {
+          "rank": 4,
+          "name": "South Korea",
+          "value": null,
+          "aliases": [
+            "korea"
+          ],
+          "clue": "The highest per head of any large country"
+        },
+        {
+          "rank": 5,
+          "name": "Germany",
+          "value": null,
+          "aliases": [
+            "deutschland"
+          ],
+          "clue": "Concentrated in engineering and chemicals"
+        },
+        {
+          "rank": 6,
+          "name": "India",
+          "value": null,
+          "aliases": [
+            "bharat"
+          ],
+          "clue": "Filings rising sharply"
+        },
+        {
+          "rank": 7,
+          "name": "Russia",
+          "value": null,
+          "aliases": [],
+          "clue": "A large domestic filing system"
+        },
+        {
+          "rank": 8,
+          "name": "United Kingdom",
+          "value": null,
+          "aliases": [
+            "uk",
+            "britain"
+          ],
+          "clue": "Strong in pharmaceuticals"
+        },
+        {
+          "rank": 9,
+          "name": "France",
+          "value": null,
+          "aliases": [],
+          "clue": "Aerospace and luxury goods"
+        },
+        {
+          "rank": 10,
+          "name": "Canada",
+          "value": null,
+          "aliases": [],
+          "clue": "Smaller volumes, high quality"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "The top four are firm; below that the order moves annually, so it is my best judgment."
+      }
+    },
+    {
+      "type": "ranked",
+      "tags": [],
+      "volatility": "annual",
+      "asOf": "2025-12-31",
+      "id": "geo-largest-embassies",
+      "domain": "geography",
+      "obscurity": 4,
+      "difficulty": 5,
+      "prompt": "Countries with the most diplomatic missions abroad",
+      "metric": "Number of embassies, high commissions and consulates abroad.",
+      "source": {
+        "name": "Lowy Institute Global Diplomacy Index",
+        "url": "https://globaldiplomacyindex.lowyinstitute.org/"
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "China",
+          "value": 274,
+          "aliases": [
+            "prc"
+          ],
+          "clue": "Overtook the long-standing leader in 2019"
+        },
+        {
+          "rank": 2,
+          "name": "United States",
+          "value": 271,
+          "aliases": [
+            "usa",
+            "us",
+            "america"
+          ],
+          "clue": "Still has the largest individual missions"
+        },
+        {
+          "rank": 3,
+          "name": "France",
+          "value": 267,
+          "aliases": [],
+          "clue": "A legacy of a global empire"
+        },
+        {
+          "rank": 4,
+          "name": "Turkey",
+          "value": 252,
+          "aliases": [
+            "turkiye"
+          ],
+          "clue": "Expanded aggressively across Africa"
+        },
+        {
+          "rank": 5,
+          "name": "Japan",
+          "value": 251,
+          "aliases": [],
+          "clue": "A very wide consular network"
+        },
+        {
+          "rank": 6,
+          "name": "Russia",
+          "value": 242,
+          "aliases": [],
+          "clue": "Extensive across the former Soviet space"
+        },
+        {
+          "rank": 7,
+          "name": "United Kingdom",
+          "value": 225,
+          "aliases": [
+            "uk",
+            "britain"
+          ],
+          "clue": "Rebuilt posts across Europe after leaving the bloc"
+        },
+        {
+          "rank": 8,
+          "name": "Brazil",
+          "value": 222,
+          "aliases": [
+            "brasil"
+          ],
+          "clue": "The widest diplomatic network on its own continent"
+        },
+        {
+          "rank": 9,
+          "name": "Italy",
+          "value": 221,
+          "aliases": [
+            "italia"
+          ],
+          "clue": "Large consular network serving its diaspora"
+        },
+        {
+          "rank": 10,
+          "name": "India",
+          "value": 202,
+          "aliases": [
+            "bharat"
+          ],
+          "clue": "Expanding quickly"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "The leaders are firm but the counts are close and measured biennially, so the order is my best judgment."
+      }
     }
   ]
 }
