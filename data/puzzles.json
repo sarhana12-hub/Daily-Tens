@@ -6938,7 +6938,7 @@
       "difficulty": 4,
       "tags": [],
       "prompt": "Longest-living animals",
-      "metric": "Maximum verified lifespan in years.",
+      "metric": "Maximum lifespan verified by a documented method such as growth rings, radiocarbon dating or continuous records.",
       "source": {
         "name": "Smithsonian - animals",
         "url": "https://www.si.edu/spotlight/animals"
@@ -6965,20 +6965,13 @@
         },
         {
           "rank": 3,
-          "name": "Koi",
-          "value": 226,
-          "aliases": [],
-          "clue": "An ornamental carp; one in Japan was said to be over two centuries old"
-        },
-        {
-          "rank": 4,
           "name": "Bowhead whale",
           "value": 211,
           "aliases": [],
           "clue": "Arctic, and old harpoon heads have been found in living ones"
         },
         {
-          "rank": 5,
+          "rank": 4,
           "name": "Rougheye rockfish",
           "value": 205,
           "aliases": [
@@ -6987,7 +6980,7 @@
           "clue": "A deep-water Pacific fish"
         },
         {
-          "rank": 6,
+          "rank": 5,
           "name": "Red sea urchin",
           "value": 200,
           "aliases": [
@@ -6996,13 +6989,22 @@
           "clue": "Shows almost no sign of ageing"
         },
         {
-          "rank": 7,
+          "rank": 6,
           "name": "Galapagos tortoise",
           "value": 177,
           "aliases": [
             "tortoise"
           ],
           "clue": "One famous individual was collected by Darwin's era naturalists"
+        },
+        {
+          "rank": 7,
+          "name": "Lake sturgeon",
+          "value": 152,
+          "aliases": [
+            "sturgeon"
+          ],
+          "clue": "A North American freshwater fish aged by its fin rays"
         },
         {
           "rank": 8,
@@ -7029,8 +7031,8 @@
         }
       ],
       "confidence": {
-        "level": "judgment",
-        "note": "Maximum-age claims are a mess: some rest on a single specimen, some on disputed methods. The koi record in particular is widely doubted. Order is my best judgment, and the membership is the interesting part."
+        "level": "partial",
+        "note": "Every age here rests on a documented method rather than anecdote. The oldest two are radiocarbon and growth-ring dated; the order among the middle entries is still my best judgment."
       }
     },
     {
@@ -13756,8 +13758,8 @@
       "obscurity": 2,
       "difficulty": 4,
       "tags": [],
-      "prompt": "Largest employers in the world",
-      "metric": "Number of people employed, including state-owned organisations and armed forces.",
+      "prompt": "Largest private-sector employers in the world",
+      "metric": "People employed by a privately or publicly owned company, excluding governments, armed forces and state agencies.",
       "source": {
         "name": "World Economic Forum",
         "url": "https://www.weforum.org/"
@@ -13767,43 +13769,22 @@
       "answers": [
         {
           "rank": 1,
-          "name": "United States Department of Defense",
-          "value": 2900000,
-          "aliases": [
-            "us department of defense",
-            "pentagon",
-            "department of defense"
-          ],
-          "clue": "The largest employer of any kind, counting uniformed personnel"
-        },
-        {
-          "rank": 2,
-          "name": "China's People's Liberation Army",
-          "value": 2500000,
-          "aliases": [
-            "pla",
-            "peoples liberation army"
-          ],
-          "clue": "The largest standing military"
-        },
-        {
-          "rank": 3,
           "name": "Walmart",
           "value": 2100000,
           "aliases": [
             "wal mart"
           ],
-          "clue": "The largest private employer"
+          "clue": "The largest private employer anywhere"
         },
         {
-          "rank": 4,
+          "rank": 2,
           "name": "Amazon",
           "value": 1600000,
           "aliases": [],
           "clue": "Grew its workforce enormously during the pandemic"
         },
         {
-          "rank": 5,
+          "rank": 3,
           "name": "Foxconn",
           "value": 1300000,
           "aliases": [
@@ -13812,16 +13793,7 @@
           "clue": "Taiwanese, and assembles most of the world's smartphones"
         },
         {
-          "rank": 6,
-          "name": "Indian Railways",
-          "value": 1200000,
-          "aliases": [
-            "indian rail"
-          ],
-          "clue": "Runs one of the largest rail networks"
-        },
-        {
-          "rank": 7,
+          "rank": 4,
           "name": "Tata Group",
           "value": 1000000,
           "aliases": [
@@ -13830,14 +13802,14 @@
           "clue": "Indian conglomerate spanning steel, cars and software"
         },
         {
-          "rank": 8,
+          "rank": 5,
           "name": "Accenture",
           "value": 750000,
           "aliases": [],
-          "clue": "Consulting and outsourcing, and mostly in India"
+          "clue": "Consulting and outsourcing, and mostly staffed in India"
         },
         {
-          "rank": 9,
+          "rank": 6,
           "name": "Volkswagen Group",
           "value": 680000,
           "aliases": [
@@ -13847,20 +13819,42 @@
           "clue": "The largest industrial employer in Europe"
         },
         {
-          "rank": 10,
-          "name": "United States Postal Service",
+          "rank": 7,
+          "name": "Tata Consultancy Services",
           "value": 600000,
           "aliases": [
-            "usps",
-            "postal service"
+            "tcs"
           ],
-          "clue": "Delivers to every address in its country"
+          "clue": "Indian software services, and part of a larger group"
+        },
+        {
+          "rank": 8,
+          "name": "Deutsche Post",
+          "value": 590000,
+          "aliases": [
+            "dhl",
+            "deutsche post dhl"
+          ],
+          "clue": "German, and owns a global courier brand"
+        },
+        {
+          "rank": 9,
+          "name": "Compass Group",
+          "value": 550000,
+          "aliases": [
+            "compass"
+          ],
+          "clue": "British, and runs catering for other organisations"
+        },
+        {
+          "rank": 10,
+          "name": "Kroger",
+          "value": 430000,
+          "aliases": [],
+          "clue": "American supermarkets"
         }
       ],
-      "confidence": {
-        "level": "judgment",
-        "note": "Mixing armed forces, state bodies and private companies makes this list contestable by construction, and several figures are rounded estimates. Membership is right; the order is my best judgment."
-      }
+      "ambiguity": "Private sector only. Counting governments and armed forces would put two defence ministries and several state enterprises above everything here."
     },
     {
       "id": "biz-largest-ipos",
@@ -16149,8 +16143,8 @@
       "domain": "science",
       "obscurity": 4,
       "difficulty": 5,
-      "prompt": "Largest flowers in the world",
-      "metric": "Maximum flower diameter in centimetres.",
+      "prompt": "Largest flowers and flower structures",
+      "metric": "Greatest dimension of a single bloom, flower head or inflorescence, in centimetres. All three count.",
       "source": {
         "name": "Smithsonian",
         "url": "https://www.si.edu/"
@@ -16244,9 +16238,10 @@
         }
       ],
       "confidence": {
-        "level": "judgment",
-        "note": "What counts as a single flower rather than a flower head or an inflorescence is genuinely disputed in botany, which reorders this list substantially. Membership is the point."
-      }
+        "level": "partial",
+        "note": "Sizes are maxima for exceptional specimens, so the order among the mid-sized entries is my best judgment."
+      },
+      "ambiguity": "Botanically these are not all single flowers: some are flower heads and some are inflorescences made of many small flowers. The metric includes all three, which is the only way the question has a determinate answer."
     },
     {
       "type": "ranked",

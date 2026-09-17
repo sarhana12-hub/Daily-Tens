@@ -146,3 +146,24 @@ Three defences, all needed:
 A country name appearing *inside* an answer's own name is not this problem:
 "Mount Kenya" should answer to "Kenya". The audit exempts exact aliases for
 that reason.
+
+## A weak puzzle is usually a weak metric
+
+When a list feels unsourceable, the question is rarely the problem. "Fastest
+birds" and "largest employers" are both perfectly good quiz questions. What
+made them bad was my execution: one contained a bat, and the other never said
+whether armies count.
+
+So the repair order is:
+
+1. **Pin the metric harder** until the ten is determinate. "Largest employers"
+   is contestable; "largest private-sector employers" is not. "Largest flowers"
+   is disputed; "largest blooms, flower heads and inflorescences" is answerable.
+2. **Fix the answer set.** Remove anything that is not actually a member of the
+   category, however widely it is quoted in other people's lists.
+3. **Only then** write a confidence note, for whatever genuine imprecision is
+   left.
+
+A confidence note is not a licence to ship a wrong answer. That mistake was
+made twice — coastal islands in a lake-islands list, a bat among the birds —
+and both times the note described the error instead of correcting it.
