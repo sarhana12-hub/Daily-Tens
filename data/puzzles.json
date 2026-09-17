@@ -11624,6 +11624,2458 @@
           "clue": "Kenyan, and ran his best in Milan"
         }
       ]
+    },
+    {
+      "id": "geo-populous-countries",
+      "type": "ranked",
+      "domain": "geography",
+      "obscurity": 1,
+      "difficulty": 3,
+      "tags": [],
+      "prompt": "Most populous countries in the world",
+      "metric": "Resident population, per the UN World Population Prospects.",
+      "source": {
+        "name": "UN - World Population Prospects",
+        "url": "https://population.un.org/wpp/"
+      },
+      "asOf": "2025-12-31",
+      "volatility": "annual",
+      "ambiguity": "The tenth place is genuinely contested: Mexico and Ethiopia are within about one percent of each other and Ethiopia is growing much faster, so the two swap depending on the year and the source. This puzzle follows the UN estimate for the as-of date.",
+      "confidence": {
+        "level": "partial",
+        "note": "The top nine are firm. The tenth place is a coin toss between two countries roughly one percent apart, so if you answered the other one, you were not wrong so much as early."
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "India",
+          "value": null,
+          "aliases": [
+            "bharat"
+          ],
+          "clue": "Overtook the long-time leader in 2023"
+        },
+        {
+          "rank": 2,
+          "name": "China",
+          "value": null,
+          "aliases": [
+            "prc"
+          ],
+          "clue": "Now shrinking, after a one-child policy"
+        },
+        {
+          "rank": 3,
+          "name": "United States",
+          "value": null,
+          "aliases": [
+            "usa",
+            "us",
+            "america"
+          ],
+          "clue": "Growth driven largely by immigration"
+        },
+        {
+          "rank": 4,
+          "name": "Indonesia",
+          "value": null,
+          "aliases": [],
+          "clue": "Spread across thousands of islands"
+        },
+        {
+          "rank": 5,
+          "name": "Pakistan",
+          "value": null,
+          "aliases": [],
+          "clue": "One of the fastest-growing large countries"
+        },
+        {
+          "rank": 6,
+          "name": "Nigeria",
+          "value": null,
+          "aliases": [],
+          "clue": "Projected to be third by 2050"
+        },
+        {
+          "rank": 7,
+          "name": "Brazil",
+          "value": null,
+          "aliases": [
+            "brasil"
+          ],
+          "clue": "The largest in its hemisphere"
+        },
+        {
+          "rank": 8,
+          "name": "Bangladesh",
+          "value": null,
+          "aliases": [],
+          "clue": "Extremely densely populated"
+        },
+        {
+          "rank": 9,
+          "name": "Russia",
+          "value": null,
+          "aliases": [],
+          "clue": "The largest by area, with a declining population"
+        },
+        {
+          "rank": 10,
+          "name": "Mexico",
+          "value": null,
+          "aliases": [],
+          "clue": "The most populous Spanish-speaking country"
+        }
+      ]
+    },
+    {
+      "id": "film-highest-grossing",
+      "type": "ranked",
+      "domain": "film",
+      "obscurity": 1,
+      "difficulty": 3,
+      "tags": [],
+      "prompt": "Highest-grossing films of all time",
+      "metric": "Worldwide box office gross in US dollars, not adjusted for inflation, including re-releases.",
+      "source": {
+        "name": "Box Office Mojo",
+        "url": "https://www.boxofficemojo.com/chart/ww_top_lifetime_gross/"
+      },
+      "asOf": "2026-09",
+      "volatility": "quarterly",
+      "ambiguity": "Not adjusted for inflation or ticket prices, which heavily favours recent releases — by tickets sold, films from the 1930s to 1970s would dominate.",
+      "confidence": {
+        "level": "judgment",
+        "note": "The top four are secure. Below that the list is actively changing: a 2026 release has just entered the top ten and is still climbing, and several films sit within a hundred million dollars of each other. The order from fifth down is my best judgment at the as-of date."
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Avatar",
+          "value": 2923,
+          "aliases": [],
+          "clue": "Blue aliens on a moon called Pandora"
+        },
+        {
+          "rank": 2,
+          "name": "Avengers: Endgame",
+          "value": 2799,
+          "aliases": [
+            "endgame"
+          ],
+          "clue": "Briefly held the top spot before a re-release took it back"
+        },
+        {
+          "rank": 3,
+          "name": "Avatar: The Way of Water",
+          "value": 2320,
+          "aliases": [
+            "way of water"
+          ],
+          "clue": "The sequel, thirteen years later"
+        },
+        {
+          "rank": 4,
+          "name": "Titanic",
+          "value": 2264,
+          "aliases": [],
+          "clue": "By the same director as the first and third here"
+        },
+        {
+          "rank": 5,
+          "name": "Ne Zha 2",
+          "value": 2200,
+          "aliases": [
+            "ne zha"
+          ],
+          "clue": "A Chinese animated sequel that earned most of it domestically"
+        },
+        {
+          "rank": 6,
+          "name": "Star Wars: The Force Awakens",
+          "value": 2071,
+          "aliases": [
+            "force awakens"
+          ],
+          "clue": "Revived a dormant saga in 2015"
+        },
+        {
+          "rank": 7,
+          "name": "Avengers: Infinity War",
+          "value": 2052,
+          "aliases": [
+            "infinity war"
+          ],
+          "clue": "Ends with half of everyone gone"
+        },
+        {
+          "rank": 8,
+          "name": "Spider-Man: No Way Home",
+          "value": 1922,
+          "aliases": [
+            "no way home"
+          ],
+          "clue": "Brought back earlier actors in the role"
+        },
+        {
+          "rank": 9,
+          "name": "Inside Out 2",
+          "value": 1699,
+          "aliases": [
+            "inside out"
+          ],
+          "clue": "Animated, about emotions inside a teenager"
+        },
+        {
+          "rank": 10,
+          "name": "Spider-Man: Brand New Day",
+          "value": 1650,
+          "aliases": [
+            "brand new day"
+          ],
+          "clue": "A 2026 release still adding to its total"
+        }
+      ]
+    },
+    {
+      "id": "nhl-stanley-cup-recent",
+      "type": "recency",
+      "domain": "sports",
+      "obscurity": 3,
+      "difficulty": 3,
+      "tags": [
+        "hockey"
+      ],
+      "prompt": "The ten most recent Stanley Cup champions",
+      "metric": "Winner of the Stanley Cup, by the year the final was played.",
+      "source": {
+        "name": "NHL - Stanley Cup champions",
+        "url": "https://www.nhl.com/news/nhl-stanley-cup-champions-winners-complete-list-287705398"
+      },
+      "asOf": "2026-06",
+      "volatility": "annual",
+      "answers": [
+        {
+          "rank": 1,
+          "label": "2026",
+          "name": "Carolina Hurricanes",
+          "aliases": [
+            "carolina",
+            "canes"
+          ],
+          "clue": "A first title since 2006"
+        },
+        {
+          "rank": 2,
+          "label": "2025",
+          "name": "Florida Panthers",
+          "aliases": [
+            "florida",
+            "panthers"
+          ],
+          "clue": "Retained it in a southern market"
+        },
+        {
+          "rank": 3,
+          "label": "2024",
+          "name": "Florida Panthers",
+          "aliases": [
+            "florida",
+            "panthers"
+          ],
+          "clue": "Won a first title in game seven"
+        },
+        {
+          "rank": 4,
+          "label": "2023",
+          "name": "Vegas Golden Knights",
+          "aliases": [
+            "vegas",
+            "golden knights"
+          ],
+          "clue": "A first title in their sixth season"
+        },
+        {
+          "rank": 5,
+          "label": "2022",
+          "name": "Colorado Avalanche",
+          "aliases": [
+            "colorado",
+            "avalanche",
+            "avs"
+          ],
+          "clue": "Won a third title for the franchise"
+        },
+        {
+          "rank": 6,
+          "label": "2021",
+          "name": "Tampa Bay Lightning",
+          "aliases": [
+            "tampa",
+            "lightning",
+            "bolts"
+          ],
+          "clue": "Back-to-back in a shortened season"
+        },
+        {
+          "rank": 7,
+          "label": "2020",
+          "name": "Tampa Bay Lightning",
+          "aliases": [
+            "tampa",
+            "lightning",
+            "bolts"
+          ],
+          "clue": "Won in a pandemic bubble"
+        },
+        {
+          "rank": 8,
+          "label": "2019",
+          "name": "St. Louis Blues",
+          "aliases": [
+            "st louis",
+            "blues"
+          ],
+          "clue": "Were last in the league in January"
+        },
+        {
+          "rank": 9,
+          "label": "2018",
+          "name": "Washington Capitals",
+          "aliases": [
+            "washington",
+            "capitals",
+            "caps"
+          ],
+          "clue": "A first title after decades of playoff pain"
+        },
+        {
+          "rank": 10,
+          "label": "2017",
+          "name": "Pittsburgh Penguins",
+          "aliases": [
+            "pittsburgh",
+            "penguins",
+            "pens"
+          ],
+          "clue": "Back-to-back titles"
+        }
+      ]
+    },
+    {
+      "id": "running-world-100m-men",
+      "type": "recency",
+      "domain": "sports",
+      "obscurity": 3,
+      "difficulty": 4,
+      "tags": [
+        "running"
+      ],
+      "prompt": "The ten most recent men's world 100m champions",
+      "metric": "Gold medallist in the men's 100 metres at the World Athletics Championships, by edition.",
+      "source": {
+        "name": "World Athletics",
+        "url": "https://worldathletics.org/competitions/world-athletics-championships"
+      },
+      "asOf": "2025-09",
+      "volatility": "annual",
+      "answers": [
+        {
+          "rank": 1,
+          "label": "2025",
+          "name": "Oblique Seville",
+          "aliases": [
+            "seville"
+          ],
+          "clue": "Jamaican, and the first from his country to win it in a decade"
+        },
+        {
+          "rank": 2,
+          "label": "2023",
+          "name": "Noah Lyles",
+          "aliases": [
+            "lyles"
+          ],
+          "clue": "American, and took three golds that year"
+        },
+        {
+          "rank": 3,
+          "label": "2022",
+          "name": "Fred Kerley",
+          "aliases": [
+            "kerley"
+          ],
+          "clue": "American, and led a home clean sweep of the medals"
+        },
+        {
+          "rank": 4,
+          "label": "2019",
+          "name": "Christian Coleman",
+          "aliases": [
+            "coleman"
+          ],
+          "clue": "American, and won in Doha"
+        },
+        {
+          "rank": 5,
+          "label": "2017",
+          "name": "Justin Gatlin",
+          "aliases": [
+            "gatlin"
+          ],
+          "clue": "American, and beat a retiring legend in his last final"
+        },
+        {
+          "rank": 6,
+          "label": "2015",
+          "name": "Usain Bolt",
+          "aliases": [
+            "bolt"
+          ],
+          "clue": "Jamaican, and won in Beijing"
+        },
+        {
+          "rank": 7,
+          "label": "2013",
+          "name": "Usain Bolt",
+          "aliases": [
+            "bolt"
+          ],
+          "clue": "Jamaican, and won in Moscow"
+        },
+        {
+          "rank": 8,
+          "label": "2011",
+          "name": "Yohan Blake",
+          "aliases": [
+            "blake"
+          ],
+          "clue": "Jamaican, and won after the favourite false-started"
+        },
+        {
+          "rank": 9,
+          "label": "2009",
+          "name": "Usain Bolt",
+          "aliases": [
+            "bolt"
+          ],
+          "clue": "Set the world record in this final"
+        },
+        {
+          "rank": 10,
+          "label": "2007",
+          "name": "Tyson Gay",
+          "aliases": [
+            "gay"
+          ],
+          "clue": "American, and won in Osaka"
+        }
+      ]
+    },
+    {
+      "id": "lang-most-spoken-native",
+      "type": "ranked",
+      "domain": "language",
+      "obscurity": 1,
+      "difficulty": 4,
+      "tags": [],
+      "prompt": "Most spoken languages by native speakers",
+      "metric": "First-language speakers, counting macrolanguages as single entries rather than splitting them into their regional varieties.",
+      "source": {
+        "name": "Ethnologue",
+        "url": "https://www.ethnologue.com/faq/ten-largest-languages/"
+      },
+      "asOf": "2025-12-31",
+      "volatility": "annual",
+      "ambiguity": "Counted as macrolanguages. Counting individual languages instead splits Chinese into Mandarin, Yue and others, splits Arabic into its regional varieties, and brings Vietnamese and Javanese into the ten.",
+      "confidence": {
+        "level": "partial",
+        "note": "The top five are firm. Speaker counts are estimates and the language-versus-dialect line is contested, so the lower order is my best judgment."
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Chinese",
+          "value": 1350,
+          "aliases": [
+            "mandarin"
+          ],
+          "clue": "Counted as one language here, though it spans many varieties"
+        },
+        {
+          "rank": 2,
+          "name": "Spanish",
+          "value": 485,
+          "aliases": [
+            "espanol",
+            "castellano"
+          ],
+          "clue": "Official in twenty countries"
+        },
+        {
+          "rank": 3,
+          "name": "English",
+          "value": 380,
+          "aliases": [],
+          "clue": "Far larger as a second language than a first"
+        },
+        {
+          "rank": 4,
+          "name": "Arabic",
+          "value": 373,
+          "aliases": [],
+          "clue": "A formal written standard over many spoken varieties"
+        },
+        {
+          "rank": 5,
+          "name": "Hindi",
+          "value": 345,
+          "aliases": [],
+          "clue": "Shares much of its spoken form with a neighbour's language"
+        },
+        {
+          "rank": 6,
+          "name": "Portuguese",
+          "value": 236,
+          "aliases": [],
+          "clue": "More speakers in South America than in Europe"
+        },
+        {
+          "rank": 7,
+          "name": "Bengali",
+          "value": 234,
+          "aliases": [
+            "bangla"
+          ],
+          "clue": "Spoken in Bangladesh and eastern India"
+        },
+        {
+          "rank": 8,
+          "name": "Russian",
+          "value": 147,
+          "aliases": [],
+          "clue": "Widely used as a second language across Central Asia"
+        },
+        {
+          "rank": 9,
+          "name": "Japanese",
+          "value": 123,
+          "aliases": [],
+          "clue": "Almost entirely confined to one country"
+        },
+        {
+          "rank": 10,
+          "name": "Lahnda",
+          "value": 103,
+          "aliases": [
+            "punjabi",
+            "western punjabi"
+          ],
+          "clue": "A grouping of closely related varieties spoken mainly in Pakistan"
+        }
+      ]
+    },
+    {
+      "id": "lang-most-translated-authors",
+      "type": "ranked",
+      "domain": "language",
+      "obscurity": 3,
+      "difficulty": 4,
+      "tags": [],
+      "prompt": "Most translated authors",
+      "metric": "Number of distinct translations recorded in the UNESCO Index Translationum.",
+      "source": {
+        "name": "UNESCO Index Translationum",
+        "url": "https://www.unesco.org/xtrans/"
+      },
+      "asOf": "2024-12-31",
+      "volatility": "evergreen",
+      "confidence": {
+        "level": "partial",
+        "note": "The leaders are stable in the UNESCO index, but the index is incomplete for recent decades, so the lower half is my best judgment."
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Agatha Christie",
+          "value": null,
+          "aliases": [
+            "christie"
+          ],
+          "clue": "Crime novels, and a Belgian detective"
+        },
+        {
+          "rank": 2,
+          "name": "Jules Verne",
+          "value": null,
+          "aliases": [
+            "verne"
+          ],
+          "clue": "Wrote of a submarine and a balloon voyage"
+        },
+        {
+          "rank": 3,
+          "name": "William Shakespeare",
+          "value": null,
+          "aliases": [
+            "shakespeare"
+          ],
+          "clue": "The plays need no introduction"
+        },
+        {
+          "rank": 4,
+          "name": "Enid Blyton",
+          "value": null,
+          "aliases": [
+            "blyton"
+          ],
+          "clue": "Children's adventure series, hugely popular in Britain"
+        },
+        {
+          "rank": 5,
+          "name": "Barbara Cartland",
+          "value": null,
+          "aliases": [
+            "cartland"
+          ],
+          "clue": "Wrote hundreds of romance novels in pink"
+        },
+        {
+          "rank": 6,
+          "name": "Danielle Steel",
+          "value": null,
+          "aliases": [
+            "steel"
+          ],
+          "clue": "A prolific American romance novelist"
+        },
+        {
+          "rank": 7,
+          "name": "Vladimir Lenin",
+          "value": null,
+          "aliases": [
+            "lenin"
+          ],
+          "clue": "Translated for political rather than literary reasons"
+        },
+        {
+          "rank": 8,
+          "name": "Hans Christian Andersen",
+          "value": null,
+          "aliases": [
+            "andersen"
+          ],
+          "clue": "Danish, and wrote of a mermaid and an ugly duckling"
+        },
+        {
+          "rank": 9,
+          "name": "Stephen King",
+          "value": null,
+          "aliases": [
+            "king"
+          ],
+          "clue": "American, and prolific in horror"
+        },
+        {
+          "rank": 10,
+          "name": "Brothers Grimm",
+          "value": null,
+          "aliases": [
+            "grimm",
+            "the grimms"
+          ],
+          "clue": "German collectors of folk tales"
+        }
+      ]
+    },
+    {
+      "id": "lang-nobel-by-country",
+      "type": "ranked",
+      "domain": "language",
+      "obscurity": 3,
+      "difficulty": 4,
+      "tags": [
+        "prizes"
+      ],
+      "prompt": "Countries with the most Nobel literature laureates",
+      "metric": "Number of Nobel Prizes in Literature awarded to writers of that nationality.",
+      "source": {
+        "name": "NobelPrize.org",
+        "url": "https://www.nobelprize.org/prizes/lists/all-nobel-prizes-in-literature/"
+      },
+      "asOf": "2025-10",
+      "volatility": "annual",
+      "ambiguity": "Laureates are assigned by nationality, which is awkward for writers who emigrated or wrote in a language other than their country's — several could reasonably be counted twice.",
+      "confidence": {
+        "level": "partial",
+        "note": "The leaders are clear; the middle of the table is bunched and depends on how emigres are assigned, so that order is my best judgment."
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "France",
+          "value": 16,
+          "aliases": [],
+          "clue": "More than any other, and the first ever laureate"
+        },
+        {
+          "rank": 2,
+          "name": "United States",
+          "value": 13,
+          "aliases": [
+            "usa",
+            "us",
+            "america"
+          ],
+          "clue": "Includes a songwriter"
+        },
+        {
+          "rank": 3,
+          "name": "United Kingdom",
+          "value": 12,
+          "aliases": [
+            "uk",
+            "britain"
+          ],
+          "clue": "Includes a wartime prime minister"
+        },
+        {
+          "rank": 4,
+          "name": "Germany",
+          "value": 8,
+          "aliases": [
+            "deutschland"
+          ],
+          "clue": "Includes one who wrote of a tin drum"
+        },
+        {
+          "rank": 5,
+          "name": "Sweden",
+          "value": 8,
+          "aliases": [],
+          "clue": "Awards the prize itself, which has drawn comment"
+        },
+        {
+          "rank": 6,
+          "name": "Italy",
+          "value": 6,
+          "aliases": [
+            "italia"
+          ],
+          "clue": "Includes a playwright known for farce"
+        },
+        {
+          "rank": 7,
+          "name": "Spain",
+          "value": 6,
+          "aliases": [
+            "espana"
+          ],
+          "clue": "Includes several poets"
+        },
+        {
+          "rank": 8,
+          "name": "Russia",
+          "value": 5,
+          "aliases": [],
+          "clue": "Includes one forced to decline the prize"
+        },
+        {
+          "rank": 9,
+          "name": "Poland",
+          "value": 5,
+          "aliases": [],
+          "clue": "Four of them poets or novelists writing in Polish"
+        },
+        {
+          "rank": 10,
+          "name": "Ireland",
+          "value": 4,
+          "aliases": [],
+          "clue": "An extraordinary number for its size"
+        }
+      ]
+    },
+    {
+      "id": "lang-official-languages",
+      "type": "ranked",
+      "domain": "language",
+      "obscurity": 2,
+      "difficulty": 4,
+      "tags": [],
+      "prompt": "Languages official in the most countries",
+      "metric": "Number of sovereign states where the language has official or de facto official status.",
+      "source": {
+        "name": "CIA - The World Factbook archive",
+        "url": "https://www.cia.gov/the-world-factbook/"
+      },
+      "asOf": "2024-12-31",
+      "volatility": "evergreen",
+      "confidence": {
+        "level": "partial",
+        "note": "Counts vary with how de facto status and co-official status are treated, so the order below third is my best judgment."
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "English",
+          "value": 58,
+          "aliases": [],
+          "clue": "A legacy of one empire, and now the default second language"
+        },
+        {
+          "rank": 2,
+          "name": "French",
+          "value": 29,
+          "aliases": [],
+          "clue": "Largely a legacy of west and central African colonies"
+        },
+        {
+          "rank": 3,
+          "name": "Arabic",
+          "value": 24,
+          "aliases": [],
+          "clue": "Across north Africa and the Middle East"
+        },
+        {
+          "rank": 4,
+          "name": "Spanish",
+          "value": 21,
+          "aliases": [
+            "espanol"
+          ],
+          "clue": "Almost all of Latin America"
+        },
+        {
+          "rank": 5,
+          "name": "Portuguese",
+          "value": 9,
+          "aliases": [],
+          "clue": "On four continents, from one small European country"
+        },
+        {
+          "rank": 6,
+          "name": "German",
+          "value": 6,
+          "aliases": [
+            "deutsch"
+          ],
+          "clue": "Central Europe, including two small states"
+        },
+        {
+          "rank": 7,
+          "name": "Russian",
+          "value": 5,
+          "aliases": [],
+          "clue": "Retains status across parts of Central Asia"
+        },
+        {
+          "rank": 8,
+          "name": "Swahili",
+          "value": 4,
+          "aliases": [
+            "kiswahili"
+          ],
+          "clue": "A trade language of east Africa"
+        },
+        {
+          "rank": 9,
+          "name": "Italian",
+          "value": 4,
+          "aliases": [
+            "italiano"
+          ],
+          "clue": "Includes two microstates and part of Switzerland"
+        },
+        {
+          "rank": 10,
+          "name": "Dutch",
+          "value": 3,
+          "aliases": [
+            "nederlands"
+          ],
+          "clue": "Europe, the Caribbean and one South American country"
+        }
+      ]
+    },
+    {
+      "id": "lang-longest-broadway",
+      "type": "ranked",
+      "domain": "language",
+      "obscurity": 3,
+      "difficulty": 4,
+      "tags": [],
+      "prompt": "Longest-running Broadway shows",
+      "metric": "Total performances in the original Broadway run.",
+      "source": {
+        "name": "The Broadway League",
+        "url": "https://www.broadwayleague.com/"
+      },
+      "asOf": "2025-12-31",
+      "volatility": "annual",
+      "confidence": {
+        "level": "partial",
+        "note": "The top four are settled. Shows still running keep climbing, so the lower order is my best judgment at the as-of date."
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "The Phantom of the Opera",
+          "value": 13981,
+          "aliases": [
+            "phantom"
+          ],
+          "clue": "Closed in 2023 after 35 years"
+        },
+        {
+          "rank": 2,
+          "name": "Chicago",
+          "value": 11000,
+          "aliases": [],
+          "clue": "A revival that outran the original many times over"
+        },
+        {
+          "rank": 3,
+          "name": "The Lion King",
+          "value": 10500,
+          "aliases": [
+            "lion king"
+          ],
+          "clue": "Puppetry and a famous opening number"
+        },
+        {
+          "rank": 4,
+          "name": "Cats",
+          "value": 7485,
+          "aliases": [],
+          "clue": "Based on a book of poems"
+        },
+        {
+          "rank": 5,
+          "name": "Wicked",
+          "value": 7400,
+          "aliases": [],
+          "clue": "A prequel to a story about Kansas"
+        },
+        {
+          "rank": 6,
+          "name": "Les Miserables",
+          "value": 6680,
+          "aliases": [
+            "les mis",
+            "les miz"
+          ],
+          "clue": "A French novel set to music"
+        },
+        {
+          "rank": 7,
+          "name": "A Chorus Line",
+          "value": 6137,
+          "aliases": [
+            "chorus line"
+          ],
+          "clue": "About dancers auditioning"
+        },
+        {
+          "rank": 8,
+          "name": "Oh! Calcutta!",
+          "value": 5959,
+          "aliases": [
+            "oh calcutta"
+          ],
+          "clue": "A 1970s revue notorious for its nudity"
+        },
+        {
+          "rank": 9,
+          "name": "Mamma Mia!",
+          "value": 5758,
+          "aliases": [
+            "mamma mia"
+          ],
+          "clue": "Built from one Swedish band's songs"
+        },
+        {
+          "rank": 10,
+          "name": "Beauty and the Beast",
+          "value": 5461,
+          "aliases": [
+            "beauty and beast"
+          ],
+          "clue": "The first of a studio's stage adaptations"
+        }
+      ]
+    },
+    {
+      "id": "lang-bestselling-series",
+      "type": "ranked",
+      "domain": "language",
+      "obscurity": 2,
+      "difficulty": 4,
+      "tags": [],
+      "prompt": "Best-selling book series of all time",
+      "metric": "Estimated copies sold across the series, in millions.",
+      "source": {
+        "name": "Publishers Weekly",
+        "url": "https://www.publishersweekly.com/"
+      },
+      "asOf": "2024-12-31",
+      "volatility": "evergreen",
+      "ambiguity": "Series rather than single books, which avoids the unauditable question of individual all-time sales. Publisher figures are still self-reported and rounded.",
+      "confidence": {
+        "level": "judgment",
+        "note": "Nobody audits historical book sales; publishers self-report and the numbers are rounded to the nearest hundred million. The leader is beyond doubt, the rest is my best judgment."
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Harry Potter",
+          "value": 600,
+          "aliases": [
+            "potter"
+          ],
+          "clue": "A boy wizard, seven books"
+        },
+        {
+          "rank": 2,
+          "name": "Goosebumps",
+          "value": 350,
+          "aliases": [],
+          "clue": "Children's horror, published at enormous speed"
+        },
+        {
+          "rank": 3,
+          "name": "Perry Mason",
+          "value": 300,
+          "aliases": [],
+          "clue": "A defence lawyer who always wins"
+        },
+        {
+          "rank": 4,
+          "name": "Diary of a Wimpy Kid",
+          "value": 275,
+          "aliases": [
+            "wimpy kid"
+          ],
+          "clue": "Illustrated middle-school misery"
+        },
+        {
+          "rank": 5,
+          "name": "Berenstain Bears",
+          "value": 260,
+          "aliases": [
+            "berenstain"
+          ],
+          "clue": "A family of bears, for very young readers"
+        },
+        {
+          "rank": 6,
+          "name": "Choose Your Own Adventure",
+          "value": 250,
+          "aliases": [
+            "choose your own"
+          ],
+          "clue": "You decide what happens next"
+        },
+        {
+          "rank": 7,
+          "name": "Nancy Drew",
+          "value": 200,
+          "aliases": [
+            "nancy drew mysteries"
+          ],
+          "clue": "A teenage girl detective"
+        },
+        {
+          "rank": 8,
+          "name": "Noddy",
+          "value": 200,
+          "aliases": [],
+          "clue": "A small figure in a blue hat, by a prolific British author"
+        },
+        {
+          "rank": 9,
+          "name": "Twilight",
+          "value": 160,
+          "aliases": [],
+          "clue": "Vampires in the Pacific Northwest"
+        },
+        {
+          "rank": 10,
+          "name": "Sweet Valley High",
+          "value": 150,
+          "aliases": [
+            "sweet valley"
+          ],
+          "clue": "Californian twins and teenage drama"
+        }
+      ]
+    },
+    {
+      "id": "food-rice-producers",
+      "type": "ranked",
+      "domain": "food",
+      "obscurity": 2,
+      "difficulty": 3,
+      "tags": [],
+      "prompt": "Biggest rice-producing countries",
+      "metric": "Paddy rice production by weight, in tonnes per year.",
+      "source": {
+        "name": "FAO - FAOSTAT",
+        "url": "https://www.fao.org/faostat/en/#data/QCL"
+      },
+      "asOf": "2024-12-31",
+      "volatility": "annual",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "China",
+          "value": null,
+          "aliases": [
+            "prc"
+          ],
+          "clue": "Roughly a quarter of world production"
+        },
+        {
+          "rank": 2,
+          "name": "India",
+          "value": null,
+          "aliases": [
+            "bharat"
+          ],
+          "clue": "The largest exporter, and close behind on output"
+        },
+        {
+          "rank": 3,
+          "name": "Indonesia",
+          "value": null,
+          "aliases": [],
+          "clue": "Rice is the staple across its islands"
+        },
+        {
+          "rank": 4,
+          "name": "Bangladesh",
+          "value": null,
+          "aliases": [],
+          "clue": "Three harvests a year in places"
+        },
+        {
+          "rank": 5,
+          "name": "Vietnam",
+          "value": null,
+          "aliases": [
+            "viet nam"
+          ],
+          "clue": "The Mekong delta is one vast paddy"
+        },
+        {
+          "rank": 6,
+          "name": "Thailand",
+          "value": null,
+          "aliases": [],
+          "clue": "Known for jasmine varieties"
+        },
+        {
+          "rank": 7,
+          "name": "Myanmar",
+          "value": null,
+          "aliases": [
+            "burma"
+          ],
+          "clue": "The Irrawaddy delta"
+        },
+        {
+          "rank": 8,
+          "name": "Philippines",
+          "value": null,
+          "aliases": [],
+          "clue": "Hosts the international rice research institute"
+        },
+        {
+          "rank": 9,
+          "name": "Brazil",
+          "value": null,
+          "aliases": [
+            "brasil"
+          ],
+          "clue": "The largest producer outside Asia"
+        },
+        {
+          "rank": 10,
+          "name": "Japan",
+          "value": null,
+          "aliases": [],
+          "clue": "Highly protected domestically, and short-grain"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "The top five are firm. Places six to ten shift with the monsoon and the order is my best judgment."
+      }
+    },
+    {
+      "id": "food-wheat-producers",
+      "type": "ranked",
+      "domain": "food",
+      "obscurity": 2,
+      "difficulty": 3,
+      "tags": [],
+      "prompt": "Biggest wheat-producing countries",
+      "metric": "Wheat production by weight, in tonnes per year.",
+      "source": {
+        "name": "FAO - FAOSTAT",
+        "url": "https://www.fao.org/faostat/en/#data/QCL"
+      },
+      "asOf": "2024-12-31",
+      "volatility": "annual",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "China",
+          "value": null,
+          "aliases": [
+            "prc"
+          ],
+          "clue": "The largest producer, and also a large importer"
+        },
+        {
+          "rank": 2,
+          "name": "India",
+          "value": null,
+          "aliases": [
+            "bharat"
+          ],
+          "clue": "Mostly consumed domestically"
+        },
+        {
+          "rank": 3,
+          "name": "Russia",
+          "value": null,
+          "aliases": [],
+          "clue": "The largest exporter, from its black-earth belt"
+        },
+        {
+          "rank": 4,
+          "name": "United States",
+          "value": null,
+          "aliases": [
+            "usa",
+            "us",
+            "america"
+          ],
+          "clue": "Grown across the Great Plains"
+        },
+        {
+          "rank": 5,
+          "name": "France",
+          "value": null,
+          "aliases": [],
+          "clue": "The largest producer in Europe"
+        },
+        {
+          "rank": 6,
+          "name": "Canada",
+          "value": null,
+          "aliases": [],
+          "clue": "Prairie provinces, and known for hard varieties"
+        },
+        {
+          "rank": 7,
+          "name": "Ukraine",
+          "value": null,
+          "aliases": [],
+          "clue": "Exports disrupted by war"
+        },
+        {
+          "rank": 8,
+          "name": "Pakistan",
+          "value": null,
+          "aliases": [],
+          "clue": "The Punjab breadbasket"
+        },
+        {
+          "rank": 9,
+          "name": "Germany",
+          "value": null,
+          "aliases": [
+            "deutschland"
+          ],
+          "clue": "High yields per hectare"
+        },
+        {
+          "rank": 10,
+          "name": "Turkey",
+          "value": null,
+          "aliases": [
+            "turkiye"
+          ],
+          "clue": "Where wheat was first domesticated nearby"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "The top four are firm; harvests move the rest around year to year, so that order is my best judgment."
+      }
+    },
+    {
+      "id": "food-beer-producers",
+      "type": "ranked",
+      "domain": "food",
+      "obscurity": 2,
+      "difficulty": 4,
+      "tags": [],
+      "prompt": "Biggest beer-producing countries",
+      "metric": "Beer production by volume, in hectolitres per year.",
+      "source": {
+        "name": "Kirin Beer University Report",
+        "url": "https://www.kirinholdings.com/en/newsroom/"
+      },
+      "asOf": "2024-12-31",
+      "volatility": "annual",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "China",
+          "value": null,
+          "aliases": [
+            "prc"
+          ],
+          "clue": "Produces about a quarter of the world's beer"
+        },
+        {
+          "rank": 2,
+          "name": "United States",
+          "value": null,
+          "aliases": [
+            "usa",
+            "us",
+            "america"
+          ],
+          "clue": "A vast craft sector on top of the big brewers"
+        },
+        {
+          "rank": 3,
+          "name": "Brazil",
+          "value": null,
+          "aliases": [
+            "brasil"
+          ],
+          "clue": "The largest in the southern hemisphere"
+        },
+        {
+          "rank": 4,
+          "name": "Mexico",
+          "value": null,
+          "aliases": [],
+          "clue": "The largest exporter by value"
+        },
+        {
+          "rank": 5,
+          "name": "Germany",
+          "value": null,
+          "aliases": [
+            "deutschland"
+          ],
+          "clue": "A purity law dating from 1516"
+        },
+        {
+          "rank": 6,
+          "name": "Russia",
+          "value": null,
+          "aliases": [],
+          "clue": "A large market with falling consumption"
+        },
+        {
+          "rank": 7,
+          "name": "Japan",
+          "value": null,
+          "aliases": [],
+          "clue": "Also known for a rice-based alternative"
+        },
+        {
+          "rank": 8,
+          "name": "Vietnam",
+          "value": null,
+          "aliases": [
+            "viet nam"
+          ],
+          "clue": "Consumption grew very fast in the 2010s"
+        },
+        {
+          "rank": 9,
+          "name": "United Kingdom",
+          "value": null,
+          "aliases": [
+            "uk",
+            "britain"
+          ],
+          "clue": "Cask ale and a long pub tradition"
+        },
+        {
+          "rank": 10,
+          "name": "Poland",
+          "value": null,
+          "aliases": [],
+          "clue": "The largest producer in central Europe"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "The top five are firm. The lower half is close and the order is my best judgment."
+      }
+    },
+    {
+      "id": "food-olive-oil-producers",
+      "type": "ranked",
+      "domain": "food",
+      "obscurity": 3,
+      "difficulty": 4,
+      "tags": [],
+      "prompt": "Biggest olive oil-producing countries",
+      "metric": "Olive oil production by weight, in tonnes per year.",
+      "source": {
+        "name": "FAO - FAOSTAT",
+        "url": "https://www.fao.org/faostat/en/#data/QCL"
+      },
+      "asOf": "2024-12-31",
+      "volatility": "annual",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Spain",
+          "value": null,
+          "aliases": [
+            "espana"
+          ],
+          "clue": "Around half of world production, mostly from Andalusia"
+        },
+        {
+          "rank": 2,
+          "name": "Italy",
+          "value": null,
+          "aliases": [
+            "italia"
+          ],
+          "clue": "Many regional varieties and protected designations"
+        },
+        {
+          "rank": 3,
+          "name": "Greece",
+          "value": null,
+          "aliases": [
+            "hellas"
+          ],
+          "clue": "The highest consumption per person anywhere"
+        },
+        {
+          "rank": 4,
+          "name": "Turkey",
+          "value": null,
+          "aliases": [
+            "turkiye"
+          ],
+          "clue": "Aegean coast groves"
+        },
+        {
+          "rank": 5,
+          "name": "Tunisia",
+          "value": null,
+          "aliases": [],
+          "clue": "A major exporter of bulk oil"
+        },
+        {
+          "rank": 6,
+          "name": "Morocco",
+          "value": null,
+          "aliases": [],
+          "clue": "Production expanded heavily with irrigation"
+        },
+        {
+          "rank": 7,
+          "name": "Portugal",
+          "value": null,
+          "aliases": [],
+          "clue": "Alentejo, and growing fast"
+        },
+        {
+          "rank": 8,
+          "name": "Syria",
+          "value": null,
+          "aliases": [],
+          "clue": "An ancient growing region, disrupted by war"
+        },
+        {
+          "rank": 9,
+          "name": "Algeria",
+          "value": null,
+          "aliases": [],
+          "clue": "Mostly for domestic use"
+        },
+        {
+          "rank": 10,
+          "name": "Egypt",
+          "value": null,
+          "aliases": [],
+          "clue": "Largely table olives rather than oil"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "Olive harvests swing wildly between years, so only the top three are dependable; the rest is my best judgment."
+      }
+    },
+    {
+      "id": "food-sugar-producers",
+      "type": "ranked",
+      "domain": "food",
+      "obscurity": 3,
+      "difficulty": 4,
+      "tags": [],
+      "prompt": "Biggest sugar-producing countries",
+      "metric": "Centrifugal sugar production by weight, in tonnes per year.",
+      "source": {
+        "name": "FAO - FAOSTAT",
+        "url": "https://www.fao.org/faostat/en/#data/QCL"
+      },
+      "asOf": "2024-12-31",
+      "volatility": "annual",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Brazil",
+          "value": null,
+          "aliases": [
+            "brasil"
+          ],
+          "clue": "Also turns much of its cane into fuel alcohol"
+        },
+        {
+          "rank": 2,
+          "name": "India",
+          "value": null,
+          "aliases": [
+            "bharat"
+          ],
+          "clue": "Consumes almost all of it domestically"
+        },
+        {
+          "rank": 3,
+          "name": "China",
+          "value": null,
+          "aliases": [
+            "prc"
+          ],
+          "clue": "A large producer and a larger importer"
+        },
+        {
+          "rank": 4,
+          "name": "Thailand",
+          "value": null,
+          "aliases": [],
+          "clue": "A major exporter from cane"
+        },
+        {
+          "rank": 5,
+          "name": "United States",
+          "value": null,
+          "aliases": [
+            "usa",
+            "us",
+            "america"
+          ],
+          "clue": "From both cane and beet"
+        },
+        {
+          "rank": 6,
+          "name": "Pakistan",
+          "value": null,
+          "aliases": [],
+          "clue": "Cane grown alongside wheat in the Punjab"
+        },
+        {
+          "rank": 7,
+          "name": "Mexico",
+          "value": null,
+          "aliases": [],
+          "clue": "Cane from the Gulf coast states"
+        },
+        {
+          "rank": 8,
+          "name": "Russia",
+          "value": null,
+          "aliases": [],
+          "clue": "Almost entirely from beet"
+        },
+        {
+          "rank": 9,
+          "name": "France",
+          "value": null,
+          "aliases": [],
+          "clue": "Europe's largest beet producer"
+        },
+        {
+          "rank": 10,
+          "name": "Australia",
+          "value": null,
+          "aliases": [],
+          "clue": "Queensland cane, mostly exported"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "The top four are firm; below that beet and cane producers interleave differently each season, so the order is my best judgment."
+      }
+    },
+    {
+      "id": "food-tea-producers",
+      "type": "ranked",
+      "domain": "food",
+      "obscurity": 2,
+      "difficulty": 3,
+      "tags": [],
+      "prompt": "Biggest tea-producing countries",
+      "metric": "Tea production by weight, in tonnes per year.",
+      "source": {
+        "name": "FAO - FAOSTAT",
+        "url": "https://www.fao.org/faostat/en/#data/QCL"
+      },
+      "asOf": "2024-12-31",
+      "volatility": "annual",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "China",
+          "value": null,
+          "aliases": [
+            "prc"
+          ],
+          "clue": "Where the plant was first cultivated"
+        },
+        {
+          "rank": 2,
+          "name": "India",
+          "value": null,
+          "aliases": [
+            "bharat"
+          ],
+          "clue": "Assam and Darjeeling"
+        },
+        {
+          "rank": 3,
+          "name": "Kenya",
+          "value": null,
+          "aliases": [],
+          "clue": "The largest exporter of black tea"
+        },
+        {
+          "rank": 4,
+          "name": "Sri Lanka",
+          "value": null,
+          "aliases": [
+            "ceylon"
+          ],
+          "clue": "Sold under an older name for the island"
+        },
+        {
+          "rank": 5,
+          "name": "Turkey",
+          "value": null,
+          "aliases": [
+            "turkiye"
+          ],
+          "clue": "Grown on the Black Sea coast, drunk in small glasses"
+        },
+        {
+          "rank": 6,
+          "name": "Vietnam",
+          "value": null,
+          "aliases": [
+            "viet nam"
+          ],
+          "clue": "Both green and black"
+        },
+        {
+          "rank": 7,
+          "name": "Indonesia",
+          "value": null,
+          "aliases": [],
+          "clue": "Java and Sumatra highlands"
+        },
+        {
+          "rank": 8,
+          "name": "Argentina",
+          "value": null,
+          "aliases": [],
+          "clue": "Mostly low-grade tea for iced drinks"
+        },
+        {
+          "rank": 9,
+          "name": "Japan",
+          "value": null,
+          "aliases": [],
+          "clue": "Almost all green, and much of it powdered"
+        },
+        {
+          "rank": 10,
+          "name": "Iran",
+          "value": null,
+          "aliases": [
+            "persia"
+          ],
+          "clue": "Grown in the north, near the Caspian"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "The top five are firm; the rest are close together and the order is my best judgment."
+      }
+    },
+    {
+      "id": "food-coffee-consumers",
+      "type": "ranked",
+      "domain": "food",
+      "obscurity": 2,
+      "difficulty": 4,
+      "tags": [],
+      "prompt": "Biggest coffee consumers per person",
+      "metric": "Coffee consumed per person per year, in kilograms.",
+      "source": {
+        "name": "International Coffee Organization",
+        "url": "https://ico.org/"
+      },
+      "asOf": "2024-12-31",
+      "volatility": "annual",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Finland",
+          "value": 12,
+          "aliases": [],
+          "clue": "By far the heaviest drinkers, and it is written into work breaks"
+        },
+        {
+          "rank": 2,
+          "name": "Norway",
+          "value": 9.9,
+          "aliases": [],
+          "clue": "Filter coffee, drunk black"
+        },
+        {
+          "rank": 3,
+          "name": "Iceland",
+          "value": 9,
+          "aliases": [],
+          "clue": "A café culture despite a tiny population"
+        },
+        {
+          "rank": 4,
+          "name": "Denmark",
+          "value": 8.7,
+          "aliases": [],
+          "clue": "Where the word hygge comes from"
+        },
+        {
+          "rank": 5,
+          "name": "Netherlands",
+          "value": 8.3,
+          "aliases": [
+            "holland"
+          ],
+          "clue": "A long history in the coffee trade"
+        },
+        {
+          "rank": 6,
+          "name": "Sweden",
+          "value": 8.2,
+          "aliases": [],
+          "clue": "Has a word for a coffee-and-cake break"
+        },
+        {
+          "rank": 7,
+          "name": "Switzerland",
+          "value": 7.9,
+          "aliases": [],
+          "clue": "Home of the capsule machine"
+        },
+        {
+          "rank": 8,
+          "name": "Belgium",
+          "value": 6.8,
+          "aliases": [],
+          "clue": "Also known for chocolate to go with it"
+        },
+        {
+          "rank": 9,
+          "name": "Luxembourg",
+          "value": 6.5,
+          "aliases": [],
+          "clue": "Cross-border shopping inflates the figure"
+        },
+        {
+          "rank": 10,
+          "name": "Canada",
+          "value": 6.2,
+          "aliases": [],
+          "clue": "The heaviest drinker outside Europe"
+        }
+      ],
+      "ambiguity": "Per person, not in total — the biggest producers and the biggest total consumers are almost entirely different countries.",
+      "confidence": {
+        "level": "partial",
+        "note": "The Nordic lead is certain. The figures below fifth are close and vary by source, so that order is my best judgment."
+      }
+    },
+    {
+      "id": "food-hottest-peppers",
+      "type": "ranked",
+      "domain": "food",
+      "obscurity": 3,
+      "difficulty": 4,
+      "tags": [],
+      "prompt": "Hottest chilli peppers",
+      "metric": "Scoville heat units, at the peak measured figure.",
+      "source": {
+        "name": "Guinness World Records",
+        "url": "https://www.guinnessworldrecords.com/"
+      },
+      "asOf": "2024-12-31",
+      "volatility": "evergreen",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Pepper X",
+          "value": 2693000,
+          "aliases": [],
+          "clue": "Took the record in 2023 from the previous holder"
+        },
+        {
+          "rank": 2,
+          "name": "Carolina Reaper",
+          "value": 2200000,
+          "aliases": [
+            "reaper"
+          ],
+          "clue": "Held the record for a decade, bred in South Carolina"
+        },
+        {
+          "rank": 3,
+          "name": "Trinidad Moruga Scorpion",
+          "value": 2009000,
+          "aliases": [
+            "moruga",
+            "moruga scorpion"
+          ],
+          "clue": "Briefly the record holder around 2012"
+        },
+        {
+          "rank": 4,
+          "name": "7 Pot Douglah",
+          "value": 1854000,
+          "aliases": [
+            "douglah"
+          ],
+          "clue": "Dark brown, and from Trinidad"
+        },
+        {
+          "rank": 5,
+          "name": "7 Pot Primo",
+          "value": 1469000,
+          "aliases": [
+            "primo"
+          ],
+          "clue": "Bred deliberately for heat, with a long tail"
+        },
+        {
+          "rank": 6,
+          "name": "Trinidad Scorpion Butch T",
+          "value": 1463700,
+          "aliases": [
+            "butch t"
+          ],
+          "clue": "A record holder in 2011"
+        },
+        {
+          "rank": 7,
+          "name": "Naga Viper",
+          "value": 1382118,
+          "aliases": [
+            "naga viper pepper"
+          ],
+          "clue": "A three-way hybrid bred in England"
+        },
+        {
+          "rank": 8,
+          "name": "Ghost Pepper",
+          "value": 1041427,
+          "aliases": [
+            "bhut jolokia",
+            "naga jolokia"
+          ],
+          "clue": "From northeast India, and the first past a million"
+        },
+        {
+          "rank": 9,
+          "name": "7 Pot Barrackpore",
+          "value": 1000000,
+          "aliases": [
+            "barrackpore"
+          ],
+          "clue": "Named for a Trinidadian town"
+        },
+        {
+          "rank": 10,
+          "name": "Red Savina",
+          "value": 577000,
+          "aliases": [
+            "savina"
+          ],
+          "clue": "A habanero cultivar that held the record in the 1990s"
+        }
+      ],
+      "ambiguity": "Scoville figures are peak measurements from individual fruit; the same variety varies enormously with growing conditions."
+    },
+    {
+      "id": "biz-largest-banks",
+      "type": "ranked",
+      "domain": "business",
+      "obscurity": 3,
+      "difficulty": 4,
+      "tags": [],
+      "prompt": "Largest banks in the world by assets",
+      "metric": "Total assets in US dollars.",
+      "source": {
+        "name": "S&P Global Market Intelligence",
+        "url": "https://www.spglobal.com/marketintelligence/"
+      },
+      "asOf": "2025-12-31",
+      "volatility": "annual",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "ICBC",
+          "value": null,
+          "aliases": [
+            "industrial and commercial bank of china"
+          ],
+          "clue": "Chinese, and the largest bank on Earth by assets"
+        },
+        {
+          "rank": 2,
+          "name": "China Construction Bank",
+          "value": null,
+          "aliases": [
+            "ccb"
+          ],
+          "clue": "One of the big four Chinese state banks"
+        },
+        {
+          "rank": 3,
+          "name": "Agricultural Bank of China",
+          "value": null,
+          "aliases": [
+            "abc",
+            "agricultural bank"
+          ],
+          "clue": "Serves an enormous rural customer base"
+        },
+        {
+          "rank": 4,
+          "name": "Bank of China",
+          "value": null,
+          "aliases": [
+            "boc"
+          ],
+          "clue": "The oldest of the Chinese state banks"
+        },
+        {
+          "rank": 5,
+          "name": "JPMorgan Chase",
+          "value": null,
+          "aliases": [
+            "jpmorgan",
+            "jp morgan",
+            "chase"
+          ],
+          "clue": "The largest bank outside China"
+        },
+        {
+          "rank": 6,
+          "name": "Bank of America",
+          "value": null,
+          "aliases": [
+            "bofa"
+          ],
+          "clue": "Headquartered in Charlotte"
+        },
+        {
+          "rank": 7,
+          "name": "HSBC",
+          "value": null,
+          "aliases": [
+            "hongkong and shanghai banking"
+          ],
+          "clue": "Founded in Hong Kong, headquartered in London"
+        },
+        {
+          "rank": 8,
+          "name": "BNP Paribas",
+          "value": null,
+          "aliases": [
+            "bnp"
+          ],
+          "clue": "The largest in the eurozone"
+        },
+        {
+          "rank": 9,
+          "name": "Mitsubishi UFJ",
+          "value": null,
+          "aliases": [
+            "mufg",
+            "mitsubishi"
+          ],
+          "clue": "The largest Japanese bank"
+        },
+        {
+          "rank": 10,
+          "name": "Credit Agricole",
+          "value": null,
+          "aliases": [
+            "credit agricole group"
+          ],
+          "clue": "French, and grew out of farming cooperatives"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "The four Chinese state banks lead and their order is stable; below that exchange-rate moves reorder the list every year, so it is my best judgment."
+      }
+    },
+    {
+      "id": "biz-largest-carmakers",
+      "type": "ranked",
+      "domain": "business",
+      "obscurity": 2,
+      "difficulty": 4,
+      "tags": [],
+      "prompt": "Largest carmakers by vehicles produced",
+      "metric": "Motor vehicles produced per year, counting all group brands together.",
+      "source": {
+        "name": "OICA",
+        "url": "https://www.oica.net/production-statistics/"
+      },
+      "asOf": "2025-12-31",
+      "volatility": "annual",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Toyota",
+          "value": null,
+          "aliases": [],
+          "clue": "Japanese, and has led for most of the last two decades"
+        },
+        {
+          "rank": 2,
+          "name": "Volkswagen Group",
+          "value": null,
+          "aliases": [
+            "volkswagen",
+            "vw"
+          ],
+          "clue": "German, and owns a dozen brands including two supercar marques"
+        },
+        {
+          "rank": 3,
+          "name": "Hyundai",
+          "value": null,
+          "aliases": [
+            "hyundai kia",
+            "kia"
+          ],
+          "clue": "South Korean, counted with its sister marque"
+        },
+        {
+          "rank": 4,
+          "name": "Stellantis",
+          "value": null,
+          "aliases": [],
+          "clue": "Formed from a French and an Italian-American merger"
+        },
+        {
+          "rank": 5,
+          "name": "General Motors",
+          "value": null,
+          "aliases": [
+            "gm"
+          ],
+          "clue": "Detroit, and once the largest in the world"
+        },
+        {
+          "rank": 6,
+          "name": "BYD",
+          "value": null,
+          "aliases": [],
+          "clue": "Chinese, and began as a battery maker"
+        },
+        {
+          "rank": 7,
+          "name": "Ford",
+          "value": null,
+          "aliases": [],
+          "clue": "Invented the moving assembly line"
+        },
+        {
+          "rank": 8,
+          "name": "Nissan",
+          "value": null,
+          "aliases": [],
+          "clue": "Japanese, and part of an alliance with a French marque"
+        },
+        {
+          "rank": 9,
+          "name": "Honda",
+          "value": null,
+          "aliases": [],
+          "clue": "Also the largest engine manufacturer in the world"
+        },
+        {
+          "rank": 10,
+          "name": "Suzuki",
+          "value": null,
+          "aliases": [],
+          "clue": "Dominant in the Indian market through a joint venture"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "The top five are firm. Chinese manufacturers are climbing quickly, so the lower order is my best judgment at the as-of date."
+      }
+    },
+    {
+      "id": "biz-largest-employers",
+      "type": "ranked",
+      "domain": "business",
+      "obscurity": 2,
+      "difficulty": 4,
+      "tags": [],
+      "prompt": "Largest employers in the world",
+      "metric": "Number of people employed, including state-owned organisations and armed forces.",
+      "source": {
+        "name": "World Economic Forum",
+        "url": "https://www.weforum.org/"
+      },
+      "asOf": "2025-12-31",
+      "volatility": "annual",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "United States Department of Defense",
+          "value": 2900000,
+          "aliases": [
+            "us department of defense",
+            "pentagon",
+            "department of defense"
+          ],
+          "clue": "The largest employer of any kind, counting uniformed personnel"
+        },
+        {
+          "rank": 2,
+          "name": "China's People's Liberation Army",
+          "value": 2500000,
+          "aliases": [
+            "pla",
+            "peoples liberation army"
+          ],
+          "clue": "The largest standing military"
+        },
+        {
+          "rank": 3,
+          "name": "Walmart",
+          "value": 2100000,
+          "aliases": [
+            "wal mart"
+          ],
+          "clue": "The largest private employer"
+        },
+        {
+          "rank": 4,
+          "name": "Amazon",
+          "value": 1600000,
+          "aliases": [],
+          "clue": "Grew its workforce enormously during the pandemic"
+        },
+        {
+          "rank": 5,
+          "name": "Foxconn",
+          "value": 1300000,
+          "aliases": [
+            "hon hai"
+          ],
+          "clue": "Taiwanese, and assembles most of the world's smartphones"
+        },
+        {
+          "rank": 6,
+          "name": "Indian Railways",
+          "value": 1200000,
+          "aliases": [
+            "indian rail"
+          ],
+          "clue": "Runs one of the largest rail networks"
+        },
+        {
+          "rank": 7,
+          "name": "Tata Group",
+          "value": 1000000,
+          "aliases": [
+            "tata"
+          ],
+          "clue": "Indian conglomerate spanning steel, cars and software"
+        },
+        {
+          "rank": 8,
+          "name": "Accenture",
+          "value": 750000,
+          "aliases": [],
+          "clue": "Consulting and outsourcing, and mostly in India"
+        },
+        {
+          "rank": 9,
+          "name": "Volkswagen Group",
+          "value": 680000,
+          "aliases": [
+            "volkswagen",
+            "vw"
+          ],
+          "clue": "The largest industrial employer in Europe"
+        },
+        {
+          "rank": 10,
+          "name": "United States Postal Service",
+          "value": 600000,
+          "aliases": [
+            "usps",
+            "postal service"
+          ],
+          "clue": "Delivers to every address in its country"
+        }
+      ],
+      "confidence": {
+        "level": "judgment",
+        "note": "Mixing armed forces, state bodies and private companies makes this list contestable by construction, and several figures are rounded estimates. Membership is right; the order is my best judgment."
+      }
+    },
+    {
+      "id": "biz-largest-ipos",
+      "type": "ranked",
+      "domain": "business",
+      "obscurity": 3,
+      "difficulty": 4,
+      "tags": [],
+      "prompt": "Largest IPOs of all time",
+      "metric": "Capital raised at initial public offering, in billions of US dollars.",
+      "source": {
+        "name": "Reuters",
+        "url": "https://www.reuters.com/markets/"
+      },
+      "asOf": "2025-12-31",
+      "volatility": "annual",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Saudi Aramco",
+          "value": 29.4,
+          "aliases": [
+            "aramco"
+          ],
+          "clue": "Raised more than any listing in history"
+        },
+        {
+          "rank": 2,
+          "name": "Alibaba",
+          "value": 25,
+          "aliases": [],
+          "clue": "Chinese e-commerce, listed in New York"
+        },
+        {
+          "rank": 3,
+          "name": "SoftBank Corp",
+          "value": 23.5,
+          "aliases": [
+            "softbank"
+          ],
+          "clue": "The Japanese telecom arm, not the investment group"
+        },
+        {
+          "rank": 4,
+          "name": "NTT Mobile",
+          "value": 18.4,
+          "aliases": [
+            "ntt docomo",
+            "docomo"
+          ],
+          "clue": "A Japanese mobile operator, listed in 1998"
+        },
+        {
+          "rank": 5,
+          "name": "Visa",
+          "value": 17.9,
+          "aliases": [],
+          "clue": "Listed in 2008, just before the crash"
+        },
+        {
+          "rank": 6,
+          "name": "AIA Group",
+          "value": 17.8,
+          "aliases": [
+            "aia"
+          ],
+          "clue": "An Asian insurer spun out of an American parent"
+        },
+        {
+          "rank": 7,
+          "name": "Enel",
+          "value": 16.5,
+          "aliases": [],
+          "clue": "The Italian electricity utility, privatised in 1999"
+        },
+        {
+          "rank": 8,
+          "name": "Facebook",
+          "value": 16,
+          "aliases": [
+            "meta"
+          ],
+          "clue": "A 2012 listing that fell sharply at first"
+        },
+        {
+          "rank": 9,
+          "name": "General Motors",
+          "value": 15.8,
+          "aliases": [
+            "gm"
+          ],
+          "clue": "Relisted after a government bailout"
+        },
+        {
+          "rank": 10,
+          "name": "Rivian",
+          "value": 13.7,
+          "aliases": [],
+          "clue": "An electric truck maker with almost no revenue at listing"
+        }
+      ]
+    },
+    {
+      "id": "biz-valuable-sports-teams",
+      "type": "ranked",
+      "domain": "business",
+      "obscurity": 2,
+      "difficulty": 4,
+      "tags": [],
+      "prompt": "Most valuable sports teams",
+      "metric": "Estimated franchise or club value in billions of US dollars.",
+      "source": {
+        "name": "Forbes",
+        "url": "https://www.forbes.com/"
+      },
+      "asOf": "2025-12-31",
+      "volatility": "annual",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Dallas Cowboys",
+          "value": 11,
+          "aliases": [
+            "cowboys"
+          ],
+          "clue": "The most valuable in the world, and has not won a title since 1996"
+        },
+        {
+          "rank": 2,
+          "name": "Los Angeles Rams",
+          "value": 8,
+          "aliases": [
+            "rams"
+          ],
+          "clue": "Built an enormous stadium in a huge media market"
+        },
+        {
+          "rank": 3,
+          "name": "New York Knicks",
+          "value": 7.5,
+          "aliases": [
+            "knicks"
+          ],
+          "clue": "Basketball in the biggest American city"
+        },
+        {
+          "rank": 4,
+          "name": "New York Giants",
+          "value": 7.3,
+          "aliases": [
+            "giants"
+          ],
+          "clue": "Shares a stadium with a rival"
+        },
+        {
+          "rank": 5,
+          "name": "Golden State Warriors",
+          "value": 7.3,
+          "aliases": [
+            "warriors"
+          ],
+          "clue": "A run of titles plus a new arena in San Francisco"
+        },
+        {
+          "rank": 6,
+          "name": "New York Yankees",
+          "value": 7.2,
+          "aliases": [
+            "yankees"
+          ],
+          "clue": "Twenty-seven championships in baseball"
+        },
+        {
+          "rank": 7,
+          "name": "New England Patriots",
+          "value": 7,
+          "aliases": [
+            "patriots"
+          ],
+          "clue": "Six titles this century"
+        },
+        {
+          "rank": 8,
+          "name": "Real Madrid",
+          "value": 6.8,
+          "aliases": [
+            "madrid"
+          ],
+          "clue": "The most valuable football club"
+        },
+        {
+          "rank": 9,
+          "name": "Manchester United",
+          "value": 6.2,
+          "aliases": [
+            "man united",
+            "man utd",
+            "united"
+          ],
+          "clue": "English, and listed on the New York stock exchange"
+        },
+        {
+          "rank": 10,
+          "name": "Barcelona",
+          "value": 6,
+          "aliases": [
+            "barca"
+          ],
+          "clue": "Catalan, and long member-owned"
+        }
+      ],
+      "confidence": {
+        "level": "judgment",
+        "note": "Club valuations are private-market estimates that differ substantially between publishers and move with every stadium deal, so this order is my best judgment."
+      }
     }
   ]
 }
