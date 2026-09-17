@@ -295,17 +295,49 @@ function lev(a, b) {
   }
   return rows[a.length][b.length];
 }
-// Roughly one allowed error per five characters, which keeps long names like
-// "Roethlisberger" and "Kangchenjunga" forgiving without letting short names
-// collapse into each other. Anything looser and distinct answers start
-// matching the same guess, which resolveGuess would then have to call
-// ambiguous — worse for the player than a near miss.
+// Roughly one allowed error per four or five characters, and NOTHING on very
+// short strings.
+//
+// Being too generous here is worse than being too strict. "Chile" is two edits
+// from "China", so a two-edit budget on a five-letter word silently swallowed a
+// real, different, entirely reasonable answer into one the player already had.
+// The same trap sits under Niger and Nigeria, Austria and Australia, Slovakia
+// and Slovenia, Iran and Iraq, Mauritania and Mauritius. A rejected typo costs
+// a heart; a typo absorbed into the wrong answer costs the player an answer
+// they actually knew, and tells them nothing.
 function tolerance(n) {
-  if (n <= 4) return 1;
-  if (n <= 8) return 2;
-  if (n <= 13) return 3;
-  return 4;
+  if (n <= 4) return 0;    // Iran/Iraq, Mali/Bali — never bridge these
+  if (n <= 8) return 1;    // Chile/China, Slovakia/Slovenia stay distinct
+  if (n <= 12) return 2;
+  return 3;
 }
+
+/* Real names that must never be "corrected" into something else.
+ *
+ * Fuzzy matching exists to forgive typos, but a typo is a string nobody meant
+ * to type. "Chile" is not a typo — it is a country, two edits from China, and
+ * absorbing it into China robbed a player of an answer they knew. No tolerance
+ * setting fixes this: Gambia and Zambia differ by a single letter.
+ *
+ * So a guess that IS one of these gets exact and alias matching only. Genuine
+ * misspellings are unaffected, because a misspelling is not on this list. */
+const PROTECTED = new Set(`afghanistan albania algeria andorra angola argentina armenia australia austria
+azerbaijan bahamas bahrain bangladesh barbados belarus belgium belize benin bhutan bolivia botswana
+brazil brunei bulgaria burkina faso burundi cambodia cameroon canada chad chile china colombia comoros
+congo costa rica croatia cuba cyprus denmark djibouti dominica dominican republic ecuador egypt
+el salvador eritrea estonia eswatini ethiopia fiji finland france gabon gambia georgia germany ghana
+greece grenada guatemala guinea guyana haiti honduras hungary iceland india indonesia iran iraq ireland
+israel italy jamaica japan jordan kazakhstan kenya kiribati kuwait kyrgyzstan laos latvia lebanon
+lesotho liberia libya liechtenstein lithuania luxembourg madagascar malawi malaysia maldives mali malta
+mauritania mauritius mexico moldova monaco mongolia montenegro morocco mozambique myanmar namibia nauru
+nepal netherlands new zealand nicaragua niger nigeria north korea norway oman pakistan palau panama
+papua new guinea paraguay peru philippines poland portugal qatar romania russia rwanda samoa saudi arabia
+senegal serbia seychelles sierra leone singapore slovakia slovenia somalia south africa south korea
+south sudan spain sri lanka sudan suriname sweden switzerland syria taiwan tajikistan tanzania thailand
+togo tonga tunisia turkey turkmenistan tuvalu uganda ukraine united kingdom united states uruguay
+uzbekistan vanuatu venezuela vietnam yemen zambia zimbabwe`.split('\n').join(' ').split(/\s{2,}|\n/).join(' ')
+  .trim().split(/\s+(?=[a-z])/).join(' ').split(/\s+/).join(' ')
+  .match(/\b(?:burkina faso|costa rica|dominican republic|el salvador|new zealand|north korea|papua new guinea|saudi arabia|sierra leone|south africa|south korea|south sudan|sri lanka|united kingdom|united states|[a-z]+)\b/g) || []);
 
 /* Words that carry no identifying weight on their own. "River" shouldn't
    match the Yellow River and "New" shouldn't match the New York Knicks, but
@@ -343,6 +375,12 @@ function derivedAliases(name) {
   const last = words[words.length - 1];
   if (last.length >= 3 && !WEAK.has(last)) out.add(last);
   out.delete(norm(name));
+  // Deliberately NOT filtering protected names out here. "Mount Kenya" should
+  // answer to "Kenya" and "Peru-Chile Trench" to "Peru" — the country name is
+  // part of the answer's own name, and in such a list that is what the player
+  // means. The protection that matters is that PROTECTED blocks *fuzzy*
+  // matching, so a real name is never bent into a different one, and the
+  // build's country-collision audit catches the cases that would be.
   return [...out];
 }
 
@@ -381,12 +419,18 @@ function resolveGuess(guess, answers) {
     .filter(i => (answers[i].aliases || []).some(x => norm(x) === g));
   if (viaAlias.length) return group(viaAlias.flatMap(bySameName));
 
+  // A guess that is itself a real place name is taken at its word. It was not
+  // a typo, so "correcting" it into a different answer would be wrong.
+  if (PROTECTED.has(g)) return empty;
+
   // Tier 3: fuzzy, nearest wins; genuine ties count as ambiguous.
   let bestD = Infinity, best = [];
   answers.forEach((a, i) => {
     for (const f of [canon[i], ...(a.aliases || []).map(norm)]) {
       const d = lev(g, f);
-      if (d > tolerance(f.length)) continue;
+      // Budget from the SHORTER string: "austria" against "australia" is two
+      // edits, which a nine-character budget would have allowed.
+      if (d > tolerance(Math.min(g.length, f.length))) continue;
       if (d < bestD) { bestD = d; best = [i]; }
       else if (d === bestD && !best.includes(i)) best.push(i);
     }

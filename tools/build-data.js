@@ -40,6 +40,63 @@ function loadMatcher() {
   return api;
 }
 
+/*
+ * Every sovereign country, used to prove that no real country name is ever
+ * absorbed into a *different* country.
+ *
+ * This is the one failure the alias audit could not see: it only tries
+ * shorthands derived from the answers, so it never typed "Chile" at a list
+ * containing China. Fuzzy matching bridged them and swallowed a correct,
+ * distinct answer without telling the player. Being rejected costs a heart;
+ * being silently absorbed costs an answer they knew.
+ */
+const COUNTRIES = `Afghanistan Albania Algeria Andorra Angola Argentina Armenia Australia Austria Azerbaijan
+Bahamas Bahrain Bangladesh Barbados Belarus Belgium Belize Benin Bhutan Bolivia Botswana Brazil Brunei
+Bulgaria Burkina Faso|Burundi Cambodia Cameroon Canada Chad Chile China Colombia Comoros Congo
+Costa Rica|Croatia Cuba Cyprus Denmark Djibouti Dominica Ecuador Egypt El Salvador|Eritrea Estonia
+Eswatini Ethiopia Fiji Finland France Gabon Gambia Georgia Germany Ghana Greece Grenada Guatemala
+Guinea Guyana Haiti Honduras Hungary Iceland India Indonesia Iran Iraq Ireland Israel Italy Jamaica
+Japan Jordan Kazakhstan Kenya Kiribati Kuwait Kyrgyzstan Laos Latvia Lebanon Lesotho Liberia Libya
+Liechtenstein Lithuania Luxembourg Madagascar Malawi Malaysia Maldives Mali Malta Mauritania Mauritius
+Mexico Moldova Monaco Mongolia Montenegro Morocco Mozambique Myanmar Namibia Nauru Nepal Netherlands
+New Zealand|Nicaragua Niger Nigeria Norway Oman Pakistan Palau Panama Paraguay Peru Philippines Poland
+Portugal Qatar Romania Russia Rwanda Samoa Senegal Serbia Seychelles Sierra Leone|Singapore Slovakia
+Slovenia Somalia Spain Sudan Suriname Sweden Switzerland Syria Tajikistan Tanzania Thailand Togo Tonga
+Tunisia Turkey Turkmenistan Tuvalu Uganda Ukraine Uruguay Uzbekistan Vanuatu Venezuela Vietnam Yemen
+Zambia Zimbabwe`.split(/[\s|]+/).filter(Boolean).reduce((acc, w) => {
+  // Re-join the two-word names that were split on whitespace.
+  const TWO = { Burkina: 'Faso', Costa: 'Rica', El: 'Salvador', New: 'Zealand', Sierra: 'Leone' };
+  if (acc.pending) { acc.out.push(acc.pending + ' ' + w); acc.pending = null; return acc; }
+  if (TWO[w]) { acc.pending = w; return acc; }
+  acc.out.push(w);
+  return acc;
+}, { out: [], pending: null }).out;
+
+// No real country may resolve to a different country.
+function auditCountryCollisions(M, puzzles) {
+  const fatal = [];
+  for (const p of puzzles) {
+    const answers = p.answers.map(a => ({ name: a.name, aliases: M.answerAliases(a.name, a.aliases || []) }));
+    const own = new Set(answers.map(a => M.norm(a.name)));
+    // Only meaningful for lists whose answers are countries.
+    const countryish = answers.filter(a => COUNTRIES.some(c => M.norm(c) === M.norm(a.name))).length;
+    if (countryish < 5) continue;
+    for (const c of COUNTRIES) {
+      const r = M.resolveGuess(c, answers);
+      if (!r.names.length) continue;                       // correctly rejected
+      if (own.has(M.norm(c)) && r.names.length === 1 && r.names[0] === M.norm(c)) continue;  // itself
+      if (own.has(M.norm(c))) continue;                    // ambiguity, handled by asking
+      // A deliberate alias is fine: typing "Congo" at a list holding DR Congo
+      // credits the answer that IS there, which gives the player a slot rather
+      // than taking one. Only a fuzzy bridge between distinct names is fatal.
+      const hit = answers.find(a => M.norm(a.name) === r.names[0]);
+      if (hit && [hit.name, ...(hit.aliases || [])].some(f => M.norm(f) === M.norm(c))) continue;
+      fatal.push(`${p.id}: "${c}" is not on this list but resolves to ${r.names.join(' / ')} — a real, different answer would be swallowed`);
+    }
+  }
+  return fatal;
+}
+
 // Every shorthand a player might type for this answer, as the app would see it.
 function candidatesFor(M, a) {
   const cands = new Set([a.name, ...(a.aliases || []), ...M.answerAliases(a.name, a.aliases || [])]);
@@ -184,6 +241,7 @@ const puzzles = src.puzzles.map(p => {
 const M = loadMatcher();
 const audit = auditAliases(M, src.puzzles);
 problems.push(...audit.fatal);
+problems.push(...auditCountryCollisions(M, src.puzzles));
 
 if (problems.length) {
   console.error('Refusing to build:\n  ' + problems.join('\n  '));

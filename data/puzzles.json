@@ -5003,7 +5003,8 @@
           "aliases": [
             "drc",
             "dr congo",
-            "zaire"
+            "zaire",
+            "congo"
           ],
           "clue": "Renamed twice since independence"
         },
@@ -5401,7 +5402,8 @@
           "value": null,
           "aliases": [
             "drc",
-            "dr congo"
+            "dr congo",
+            "congo"
           ],
           "clue": "Francophone, and rich in cobalt"
         },
@@ -5914,7 +5916,8 @@
           "value": 9,
           "aliases": [
             "drc",
-            "dr congo"
+            "dr congo",
+            "congo"
           ],
           "clue": "Central African, and vast"
         },
@@ -10125,6 +10128,1500 @@
             "anthony"
           ],
           "clue": "A prolific scorer who never reached a final"
+        }
+      ]
+    },
+    {
+      "id": "geo-namerica-area",
+      "type": "ranked",
+      "domain": "geography",
+      "obscurity": 2,
+      "difficulty": 3,
+      "tags": [],
+      "prompt": "Largest countries in North America by area",
+      "metric": "Total area in km², counting Central America and the Caribbean as part of the continent.",
+      "source": {
+        "name": "Encyclopaedia Britannica",
+        "url": "https://www.britannica.com/"
+      },
+      "asOf": "2024-12-31",
+      "volatility": "evergreen",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Canada",
+          "value": 9984670,
+          "aliases": [],
+          "clue": "Second largest in the world"
+        },
+        {
+          "rank": 2,
+          "name": "United States",
+          "value": 9833517,
+          "aliases": [
+            "usa",
+            "us",
+            "america"
+          ],
+          "clue": "Fifty states"
+        },
+        {
+          "rank": 3,
+          "name": "Mexico",
+          "value": 1964375,
+          "aliases": [],
+          "clue": "Thirty-one states and a capital district"
+        },
+        {
+          "rank": 4,
+          "name": "Nicaragua",
+          "value": 130373,
+          "aliases": [],
+          "clue": "The largest on the Central American isthmus"
+        },
+        {
+          "rank": 5,
+          "name": "Honduras",
+          "value": 112492,
+          "aliases": [],
+          "clue": "Gave its name to a \"banana republic\""
+        },
+        {
+          "rank": 6,
+          "name": "Cuba",
+          "value": 109884,
+          "aliases": [],
+          "clue": "The largest Caribbean island nation"
+        },
+        {
+          "rank": 7,
+          "name": "Guatemala",
+          "value": 108889,
+          "aliases": [],
+          "clue": "The most populous Central American country"
+        },
+        {
+          "rank": 8,
+          "name": "Panama",
+          "value": 75417,
+          "aliases": [],
+          "clue": "Cut by a famous canal"
+        },
+        {
+          "rank": 9,
+          "name": "Costa Rica",
+          "value": 51100,
+          "aliases": [],
+          "clue": "Abolished its army in 1948"
+        },
+        {
+          "rank": 10,
+          "name": "Dominican Republic",
+          "value": 48671,
+          "aliases": [
+            "dominican"
+          ],
+          "clue": "Shares an island with one neighbour"
+        }
+      ]
+    },
+    {
+      "id": "geo-oceania-area",
+      "type": "ranked",
+      "domain": "geography",
+      "obscurity": 3,
+      "difficulty": 4,
+      "tags": [],
+      "prompt": "Largest countries in Oceania by area",
+      "metric": "Total area in km².",
+      "source": {
+        "name": "Encyclopaedia Britannica",
+        "url": "https://www.britannica.com/"
+      },
+      "asOf": "2024-12-31",
+      "volatility": "evergreen",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Australia",
+          "value": 7692024,
+          "aliases": [],
+          "clue": "A continent in its own right"
+        },
+        {
+          "rank": 2,
+          "name": "Papua New Guinea",
+          "value": 462840,
+          "aliases": [
+            "png"
+          ],
+          "clue": "Over 800 languages spoken"
+        },
+        {
+          "rank": 3,
+          "name": "New Zealand",
+          "value": 268021,
+          "aliases": [
+            "nz"
+          ],
+          "clue": "Two main islands"
+        },
+        {
+          "rank": 4,
+          "name": "Solomon Islands",
+          "value": 28896,
+          "aliases": [
+            "solomons"
+          ],
+          "clue": "Site of fierce Pacific fighting in 1942"
+        },
+        {
+          "rank": 5,
+          "name": "Fiji",
+          "value": 18274,
+          "aliases": [],
+          "clue": "Over 300 islands, and known for rugby"
+        },
+        {
+          "rank": 6,
+          "name": "Vanuatu",
+          "value": 12189,
+          "aliases": [],
+          "clue": "Formerly jointly ruled by Britain and France"
+        },
+        {
+          "rank": 7,
+          "name": "Samoa",
+          "value": 2842,
+          "aliases": [],
+          "clue": "Changed which side of the date line it uses"
+        },
+        {
+          "rank": 8,
+          "name": "Kiribati",
+          "value": 811,
+          "aliases": [],
+          "clue": "Spread across an enormous area of ocean"
+        },
+        {
+          "rank": 9,
+          "name": "Tonga",
+          "value": 747,
+          "aliases": [],
+          "clue": "The only Pacific nation never formally colonised"
+        },
+        {
+          "rank": 10,
+          "name": "Micronesia",
+          "value": 702,
+          "aliases": [
+            "fsm",
+            "federated states of micronesia"
+          ],
+          "clue": "Four states across hundreds of islands"
+        }
+      ]
+    },
+    {
+      "id": "geo-asia-islands",
+      "type": "ranked",
+      "domain": "geography",
+      "obscurity": 3,
+      "difficulty": 4,
+      "tags": [],
+      "prompt": "Largest islands in Asia",
+      "metric": "Island area in km².",
+      "source": {
+        "name": "Encyclopaedia Britannica",
+        "url": "https://www.britannica.com/"
+      },
+      "asOf": "2024-12-31",
+      "volatility": "evergreen",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Borneo",
+          "value": 748168,
+          "aliases": [
+            "kalimantan"
+          ],
+          "clue": "Split between three countries"
+        },
+        {
+          "rank": 2,
+          "name": "Sumatra",
+          "value": 473481,
+          "aliases": [],
+          "clue": "Indonesian, and crossed by the equator"
+        },
+        {
+          "rank": 3,
+          "name": "Honshu",
+          "value": 225800,
+          "aliases": [],
+          "clue": "Holds Tokyo"
+        },
+        {
+          "rank": 4,
+          "name": "Sulawesi",
+          "value": 180681,
+          "aliases": [
+            "celebes"
+          ],
+          "clue": "Shaped like a many-armed starfish"
+        },
+        {
+          "rank": 5,
+          "name": "Java",
+          "value": 138794,
+          "aliases": [
+            "jawa"
+          ],
+          "clue": "The most populous island in the world"
+        },
+        {
+          "rank": 6,
+          "name": "Luzon",
+          "value": 109965,
+          "aliases": [],
+          "clue": "Holds Manila"
+        },
+        {
+          "rank": 7,
+          "name": "Mindanao",
+          "value": 97530,
+          "aliases": [],
+          "clue": "The southernmost large Philippine island"
+        },
+        {
+          "rank": 8,
+          "name": "Hokkaido",
+          "value": 83424,
+          "aliases": [],
+          "clue": "Japan's northernmost main island"
+        },
+        {
+          "rank": 9,
+          "name": "Sakhalin",
+          "value": 72493,
+          "aliases": [],
+          "clue": "Russian, and disputed with Japan for decades"
+        },
+        {
+          "rank": 10,
+          "name": "Sri Lanka",
+          "value": 65610,
+          "aliases": [
+            "ceylon"
+          ],
+          "clue": "An independent country, shaped like a teardrop"
+        }
+      ]
+    },
+    {
+      "id": "geo-namerica-mountains",
+      "type": "ranked",
+      "domain": "geography",
+      "obscurity": 3,
+      "difficulty": 5,
+      "tags": [],
+      "prompt": "Highest mountains in North America",
+      "metric": "Elevation above sea level in metres.",
+      "source": {
+        "name": "Encyclopaedia Britannica",
+        "url": "https://www.britannica.com/"
+      },
+      "asOf": "2024-12-31",
+      "volatility": "evergreen",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Denali",
+          "value": 6190,
+          "aliases": [
+            "mount mckinley",
+            "mckinley"
+          ],
+          "clue": "Alaskan, and renamed back to an indigenous name"
+        },
+        {
+          "rank": 2,
+          "name": "Mount Logan",
+          "value": 5959,
+          "aliases": [
+            "logan"
+          ],
+          "clue": "Canada's highest, in the Yukon"
+        },
+        {
+          "rank": 3,
+          "name": "Pico de Orizaba",
+          "value": 5636,
+          "aliases": [
+            "orizaba",
+            "citlaltepetl"
+          ],
+          "clue": "Mexico's highest, and a volcano"
+        },
+        {
+          "rank": 4,
+          "name": "Mount Saint Elias",
+          "value": 5489,
+          "aliases": [
+            "st elias",
+            "saint elias"
+          ],
+          "clue": "On the Alaska-Yukon border"
+        },
+        {
+          "rank": 5,
+          "name": "Popocatepetl",
+          "value": 5426,
+          "aliases": [
+            "popo"
+          ],
+          "clue": "An active volcano near Mexico City"
+        },
+        {
+          "rank": 6,
+          "name": "Mount Foraker",
+          "value": 5304,
+          "aliases": [
+            "foraker"
+          ],
+          "clue": "A neighbour of the continent's highest peak"
+        },
+        {
+          "rank": 7,
+          "name": "Iztaccihuatl",
+          "value": 5230,
+          "aliases": [
+            "izta"
+          ],
+          "clue": "Mexican, and said to resemble a sleeping woman"
+        },
+        {
+          "rank": 8,
+          "name": "Mount Lucania",
+          "value": 5226,
+          "aliases": [
+            "lucania"
+          ],
+          "clue": "Yukon, and very remote"
+        },
+        {
+          "rank": 9,
+          "name": "King Peak",
+          "value": 5173,
+          "aliases": [
+            "king"
+          ],
+          "clue": "Yukon, beside the continent's second highest"
+        },
+        {
+          "rank": 10,
+          "name": "Mount Steele",
+          "value": 5073,
+          "aliases": [
+            "steele"
+          ],
+          "clue": "Yukon, and part of a great coastal range"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "Below the top five, this is dominated by remote Yukon peaks whose surveyed elevations differ slightly between sources, so their order is my best judgment."
+      }
+    },
+    {
+      "id": "geo-samerica-mountains",
+      "type": "ranked",
+      "domain": "geography",
+      "obscurity": 3,
+      "difficulty": 5,
+      "tags": [],
+      "prompt": "Highest mountains in South America",
+      "metric": "Elevation above sea level in metres.",
+      "source": {
+        "name": "Encyclopaedia Britannica",
+        "url": "https://www.britannica.com/"
+      },
+      "asOf": "2024-12-31",
+      "volatility": "evergreen",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Aconcagua",
+          "value": 6961,
+          "aliases": [],
+          "clue": "The highest outside Asia"
+        },
+        {
+          "rank": 2,
+          "name": "Ojos del Salado",
+          "value": 6893,
+          "aliases": [
+            "ojos"
+          ],
+          "clue": "The highest volcano in the world"
+        },
+        {
+          "rank": 3,
+          "name": "Monte Pissis",
+          "value": 6793,
+          "aliases": [
+            "pissis"
+          ],
+          "clue": "Argentine, and extremely dry"
+        },
+        {
+          "rank": 4,
+          "name": "Huascaran",
+          "value": 6768,
+          "aliases": [],
+          "clue": "Peru's highest, and site of a catastrophic avalanche"
+        },
+        {
+          "rank": 5,
+          "name": "Cerro Bonete",
+          "value": 6759,
+          "aliases": [
+            "bonete"
+          ],
+          "clue": "Argentine, in La Rioja province"
+        },
+        {
+          "rank": 6,
+          "name": "Tres Cruces",
+          "value": 6748,
+          "aliases": [],
+          "clue": "On the Chile-Argentina border"
+        },
+        {
+          "rank": 7,
+          "name": "Llullaillaco",
+          "value": 6739,
+          "aliases": [],
+          "clue": "Holds Inca mummies near its summit"
+        },
+        {
+          "rank": 8,
+          "name": "Mercedario",
+          "value": 6720,
+          "aliases": [],
+          "clue": "Argentine, near the highest of all"
+        },
+        {
+          "rank": 9,
+          "name": "Yerupaja",
+          "value": 6635,
+          "aliases": [],
+          "clue": "Peruvian, and nicknamed the Butcher"
+        },
+        {
+          "rank": 10,
+          "name": "Tupungato",
+          "value": 6570,
+          "aliases": [],
+          "clue": "A volcano near Mendoza"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "The Andean high peaks are within a couple of hundred metres of each other and surveys disagree, so the order below the top two is my best judgment."
+      }
+    },
+    {
+      "id": "geo-africa-mountains",
+      "type": "ranked",
+      "domain": "geography",
+      "obscurity": 3,
+      "difficulty": 5,
+      "tags": [],
+      "prompt": "Highest mountains in Africa",
+      "metric": "Elevation above sea level in metres.",
+      "source": {
+        "name": "Encyclopaedia Britannica",
+        "url": "https://www.britannica.com/"
+      },
+      "asOf": "2024-12-31",
+      "volatility": "evergreen",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Kilimanjaro",
+          "value": 5895,
+          "aliases": [
+            "kili"
+          ],
+          "clue": "A free-standing volcano with a shrinking glacier"
+        },
+        {
+          "rank": 2,
+          "name": "Mount Kenya",
+          "value": 5199,
+          "aliases": [],
+          "clue": "Shares its name with its country"
+        },
+        {
+          "rank": 3,
+          "name": "Mount Stanley",
+          "value": 5109,
+          "aliases": [
+            "stanley",
+            "ngaliema"
+          ],
+          "clue": "The highest of the Rwenzori range"
+        },
+        {
+          "rank": 4,
+          "name": "Mount Speke",
+          "value": 4890,
+          "aliases": [
+            "speke"
+          ],
+          "clue": "Named for a Nile explorer"
+        },
+        {
+          "rank": 5,
+          "name": "Mount Baker",
+          "value": 4844,
+          "aliases": [
+            "baker"
+          ],
+          "clue": "Another Rwenzori peak"
+        },
+        {
+          "rank": 6,
+          "name": "Mount Emin",
+          "value": 4798,
+          "aliases": [
+            "emin"
+          ],
+          "clue": "Rwenzori, named for a colonial governor"
+        },
+        {
+          "rank": 7,
+          "name": "Mount Gessi",
+          "value": 4715,
+          "aliases": [
+            "gessi"
+          ],
+          "clue": "Rwenzori, and rarely climbed"
+        },
+        {
+          "rank": 8,
+          "name": "Mount Luigi di Savoia",
+          "value": 4627,
+          "aliases": [
+            "luigi di savoia"
+          ],
+          "clue": "Named for an Italian duke who explored the range"
+        },
+        {
+          "rank": 9,
+          "name": "Mount Meru",
+          "value": 4562,
+          "aliases": [
+            "meru"
+          ],
+          "clue": "Tanzanian, and visible from the continent's highest"
+        },
+        {
+          "rank": 10,
+          "name": "Ras Dashen",
+          "value": 4550,
+          "aliases": [
+            "ras dejen"
+          ],
+          "clue": "Ethiopia's highest, in the Simien mountains"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "Most of this list is a single Ugandan range whose individual peaks are little known and inconsistently surveyed; membership is right, order is my best judgment."
+      }
+    },
+    {
+      "id": "geo-asia-rivers",
+      "type": "ranked",
+      "domain": "geography",
+      "obscurity": 3,
+      "difficulty": 4,
+      "tags": [],
+      "prompt": "Longest rivers in Asia",
+      "metric": "Length in kilometres from the most distant headstream.",
+      "source": {
+        "name": "Encyclopaedia Britannica",
+        "url": "https://www.britannica.com/"
+      },
+      "asOf": "2024-12-31",
+      "volatility": "evergreen",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Yangtze",
+          "value": 6300,
+          "aliases": [
+            "chang jiang"
+          ],
+          "clue": "The longest in Asia, entirely in one country"
+        },
+        {
+          "rank": 2,
+          "name": "Yenisei",
+          "value": 5539,
+          "aliases": [
+            "yenisey"
+          ],
+          "clue": "Flows north to the Arctic"
+        },
+        {
+          "rank": 3,
+          "name": "Yellow River",
+          "value": 5464,
+          "aliases": [
+            "huang he"
+          ],
+          "clue": "Named for its silt"
+        },
+        {
+          "rank": 4,
+          "name": "Ob",
+          "value": 5410,
+          "aliases": [
+            "ob irtysh"
+          ],
+          "clue": "Siberian, with a long tributary"
+        },
+        {
+          "rank": 5,
+          "name": "Amur",
+          "value": 4444,
+          "aliases": [
+            "heilong jiang"
+          ],
+          "clue": "Forms a long Russia-China border"
+        },
+        {
+          "rank": 6,
+          "name": "Lena",
+          "value": 4400,
+          "aliases": [],
+          "clue": "Siberian, and freezes for much of the year"
+        },
+        {
+          "rank": 7,
+          "name": "Mekong",
+          "value": 4350,
+          "aliases": [],
+          "clue": "Flows through six countries to a rice delta"
+        },
+        {
+          "rank": 8,
+          "name": "Irtysh",
+          "value": 4248,
+          "aliases": [],
+          "clue": "A tributary longer than most rivers"
+        },
+        {
+          "rank": 9,
+          "name": "Brahmaputra",
+          "value": 3848,
+          "aliases": [
+            "tsangpo"
+          ],
+          "clue": "Crosses the Himalaya through a deep gorge"
+        },
+        {
+          "rank": 10,
+          "name": "Indus",
+          "value": 3180,
+          "aliases": [],
+          "clue": "Gave its name to a country and a civilisation"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "River lengths in Asia are measured inconsistently, particularly where tributaries are counted; membership is sound and the order below fourth is my best judgment."
+      }
+    },
+    {
+      "id": "geo-namerica-rivers",
+      "type": "ranked",
+      "domain": "geography",
+      "obscurity": 3,
+      "difficulty": 4,
+      "tags": [],
+      "prompt": "Longest rivers in North America",
+      "metric": "Length in kilometres.",
+      "source": {
+        "name": "Encyclopaedia Britannica",
+        "url": "https://www.britannica.com/"
+      },
+      "asOf": "2024-12-31",
+      "volatility": "evergreen",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Missouri",
+          "value": 3767,
+          "aliases": [],
+          "clue": "The longest, and a tributary of the second"
+        },
+        {
+          "rank": 2,
+          "name": "Mississippi",
+          "value": 3766,
+          "aliases": [],
+          "clue": "Drains most of the continental interior"
+        },
+        {
+          "rank": 3,
+          "name": "Yukon",
+          "value": 3185,
+          "aliases": [],
+          "clue": "Flows through Alaska to the Bering Sea"
+        },
+        {
+          "rank": 4,
+          "name": "Rio Grande",
+          "value": 3057,
+          "aliases": [
+            "rio bravo"
+          ],
+          "clue": "Forms a long international border"
+        },
+        {
+          "rank": 5,
+          "name": "Nelson",
+          "value": 2575,
+          "aliases": [],
+          "clue": "Manitoban, and drains to Hudson Bay"
+        },
+        {
+          "rank": 6,
+          "name": "Arkansas",
+          "value": 2364,
+          "aliases": [],
+          "clue": "Joins the second on this list"
+        },
+        {
+          "rank": 7,
+          "name": "Colorado",
+          "value": 2330,
+          "aliases": [],
+          "clue": "Carved a very large canyon"
+        },
+        {
+          "rank": 8,
+          "name": "Columbia",
+          "value": 2000,
+          "aliases": [],
+          "clue": "Heavily dammed, in the Pacific Northwest"
+        },
+        {
+          "rank": 9,
+          "name": "Mackenzie",
+          "value": 1738,
+          "aliases": [],
+          "clue": "Canada's longest, flowing to the Arctic"
+        },
+        {
+          "rank": 10,
+          "name": "Ohio",
+          "value": 1579,
+          "aliases": [],
+          "clue": "Formed at Pittsburgh, and joins the great river of the interior"
+        }
+      ],
+      "confidence": {
+        "level": "judgment",
+        "note": "North American river lengths are quoted very inconsistently — the Mackenzie is often given as 4,200 km including its headwaters — so this order is my best judgment and the membership is the point."
+      }
+    },
+    {
+      "id": "nfl-career-receptions",
+      "type": "ranked",
+      "domain": "sports",
+      "obscurity": 2,
+      "difficulty": 4,
+      "tags": [
+        "nfl"
+      ],
+      "prompt": "NFL career receptions leaders",
+      "metric": "Regular-season receptions in a career, all time.",
+      "source": {
+        "name": "Pro Football Reference",
+        "url": "https://www.pro-football-reference.com/leaders/"
+      },
+      "asOf": "2026-02",
+      "volatility": "annual",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Jerry Rice",
+          "value": 1549,
+          "aliases": [
+            "rice"
+          ],
+          "clue": "The record by a wide margin"
+        },
+        {
+          "rank": 2,
+          "name": "Larry Fitzgerald",
+          "value": 1432,
+          "aliases": [
+            "fitz"
+          ],
+          "clue": "Seventeen seasons in Arizona"
+        },
+        {
+          "rank": 3,
+          "name": "Tony Gonzalez",
+          "value": 1325,
+          "aliases": [
+            "gonzalez"
+          ],
+          "clue": "A tight end"
+        },
+        {
+          "rank": 4,
+          "name": "Jason Witten",
+          "value": 1228,
+          "aliases": [
+            "witten"
+          ],
+          "clue": "A tight end who spent his career in Dallas"
+        },
+        {
+          "rank": 5,
+          "name": "Marvin Harrison",
+          "value": 1102,
+          "aliases": [
+            "harrison"
+          ],
+          "clue": "Caught 143 in one season"
+        },
+        {
+          "rank": 6,
+          "name": "Terrell Owens",
+          "value": 1078,
+          "aliases": [
+            "owens"
+          ],
+          "clue": "Played for six teams"
+        },
+        {
+          "rank": 7,
+          "name": "Anquan Boldin",
+          "value": 1076,
+          "aliases": [
+            "boldin"
+          ],
+          "clue": "Nicknamed Q, and won a ring in Baltimore"
+        },
+        {
+          "rank": 8,
+          "name": "Reggie Wayne",
+          "value": 1070,
+          "aliases": [
+            "wayne"
+          ],
+          "clue": "Fourteen seasons in Indianapolis"
+        },
+        {
+          "rank": 9,
+          "name": "Steve Smith",
+          "value": 1031,
+          "aliases": [
+            "steve smith sr"
+          ],
+          "clue": "Small, fast and famously combative"
+        },
+        {
+          "rank": 10,
+          "name": "Antonio Gates",
+          "value": 955,
+          "aliases": [
+            "gates"
+          ],
+          "clue": "A tight end who never played college football"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "The top five are settled; several players below are within twenty receptions of each other and active receivers are climbing, so the lower order is my best judgment."
+      }
+    },
+    {
+      "id": "nfl-career-sacks",
+      "type": "ranked",
+      "domain": "sports",
+      "obscurity": 3,
+      "difficulty": 5,
+      "tags": [
+        "nfl"
+      ],
+      "prompt": "NFL career sacks leaders",
+      "metric": "Regular-season sacks in a career, since sacks became an official statistic in 1982.",
+      "source": {
+        "name": "Pro Football Reference",
+        "url": "https://www.pro-football-reference.com/leaders/"
+      },
+      "asOf": "2026-02",
+      "volatility": "annual",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Bruce Smith",
+          "value": 200,
+          "aliases": [],
+          "clue": "Buffalo, and four straight Super Bowl defeats"
+        },
+        {
+          "rank": 2,
+          "name": "Reggie White",
+          "value": 198,
+          "aliases": [
+            "white"
+          ],
+          "clue": "Nicknamed the Minister of Defense"
+        },
+        {
+          "rank": 3,
+          "name": "Kevin Greene",
+          "value": 160,
+          "aliases": [
+            "greene"
+          ],
+          "clue": "Played for four teams over fifteen years"
+        },
+        {
+          "rank": 4,
+          "name": "Julius Peppers",
+          "value": 159.5,
+          "aliases": [
+            "peppers"
+          ],
+          "clue": "Also played college basketball"
+        },
+        {
+          "rank": 5,
+          "name": "Chris Doleman",
+          "value": 150.5,
+          "aliases": [
+            "doleman"
+          ],
+          "clue": "Mostly Minnesota"
+        },
+        {
+          "rank": 6,
+          "name": "Michael Strahan",
+          "value": 141.5,
+          "aliases": [
+            "strahan"
+          ],
+          "clue": "Later a morning television host"
+        },
+        {
+          "rank": 7,
+          "name": "Jason Taylor",
+          "value": 139.5,
+          "aliases": [
+            "taylor"
+          ],
+          "clue": "Miami, for most of his career"
+        },
+        {
+          "rank": 8,
+          "name": "Terrell Suggs",
+          "value": 139,
+          "aliases": [
+            "suggs"
+          ],
+          "clue": "Baltimore, and a Super Bowl winner"
+        },
+        {
+          "rank": 9,
+          "name": "DeMarcus Ware",
+          "value": 138.5,
+          "aliases": [
+            "ware"
+          ],
+          "clue": "Denver and Dallas"
+        },
+        {
+          "rank": 10,
+          "name": "John Randle",
+          "value": 137.5,
+          "aliases": [
+            "randle"
+          ],
+          "clue": "An undrafted interior lineman with war paint"
+        }
+      ],
+      "ambiguity": "Sacks were not official before 1982, so players from earlier eras — some with higher unofficial totals — cannot appear.",
+      "confidence": {
+        "level": "partial",
+        "note": "The top two are certain; the half-sack totals in the middle are close and active players are climbing, so the lower order is my best judgment."
+      }
+    },
+    {
+      "id": "nfl-career-touchdowns",
+      "type": "ranked",
+      "domain": "sports",
+      "obscurity": 2,
+      "difficulty": 4,
+      "tags": [
+        "nfl"
+      ],
+      "prompt": "NFL career touchdowns leaders",
+      "metric": "Total touchdowns scored in a career, rushing, receiving and returns combined.",
+      "source": {
+        "name": "Pro Football Reference",
+        "url": "https://www.pro-football-reference.com/leaders/"
+      },
+      "asOf": "2026-02",
+      "volatility": "annual",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Jerry Rice",
+          "value": 208,
+          "aliases": [
+            "rice"
+          ],
+          "clue": "Nearly all receiving"
+        },
+        {
+          "rank": 2,
+          "name": "Emmitt Smith",
+          "value": 175,
+          "aliases": [
+            "emmitt"
+          ],
+          "clue": "The all-time rushing leader too"
+        },
+        {
+          "rank": 3,
+          "name": "LaDainian Tomlinson",
+          "value": 162,
+          "aliases": [
+            "lt"
+          ],
+          "clue": "Scored 31 in one season"
+        },
+        {
+          "rank": 4,
+          "name": "Randy Moss",
+          "value": 157,
+          "aliases": [
+            "moss"
+          ],
+          "clue": "Caught 23 in one season"
+        },
+        {
+          "rank": 5,
+          "name": "Terrell Owens",
+          "value": 156,
+          "aliases": [
+            "owens"
+          ],
+          "clue": "Six teams, and a famous celebrator"
+        },
+        {
+          "rank": 6,
+          "name": "Marcus Allen",
+          "value": 145,
+          "aliases": [
+            "allen"
+          ],
+          "clue": "A long touchdown run in a Super Bowl"
+        },
+        {
+          "rank": 7,
+          "name": "Marshall Faulk",
+          "value": 136,
+          "aliases": [
+            "faulk"
+          ],
+          "clue": "Part of a very fast St Louis offence"
+        },
+        {
+          "rank": 8,
+          "name": "Cris Carter",
+          "value": 131,
+          "aliases": [
+            "carter"
+          ],
+          "clue": "All he does is catch touchdowns, said his coach"
+        },
+        {
+          "rank": 9,
+          "name": "Marvin Harrison",
+          "value": 128,
+          "aliases": [
+            "harrison"
+          ],
+          "clue": "Indianapolis, with a five-time MVP throwing"
+        },
+        {
+          "rank": 10,
+          "name": "Jim Brown",
+          "value": 126,
+          "aliases": [
+            "brown"
+          ],
+          "clue": "Retired at 29 at the peak of his powers"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "Settled for retired players, but active scorers are approaching the bottom of this list, so the last place is my best judgment."
+      }
+    },
+    {
+      "id": "running-100m-fastest-men",
+      "type": "ranked",
+      "domain": "sports",
+      "obscurity": 2,
+      "difficulty": 4,
+      "tags": [
+        "running"
+      ],
+      "prompt": "Fastest men's 100m runners of all time",
+      "metric": "Best legal wind-assisted-free time in seconds, one entry per athlete. Lower is faster.",
+      "source": {
+        "name": "World Athletics",
+        "url": "https://worldathletics.org/records/all-time-toplists"
+      },
+      "asOf": "2026-09",
+      "volatility": "annual",
+      "order": "asc",
+      "ambiguity": "One entry per athlete, so a sprinter who ran several of the fastest times appears once. Doping annulments remove some historical marks entirely.",
+      "confidence": {
+        "level": "partial",
+        "note": "The record is secure and the leading names are right. Several of these share identical times to the hundredth, so the order among them is my best judgment."
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Usain Bolt",
+          "value": 9.58,
+          "aliases": [
+            "bolt"
+          ],
+          "clue": "The world record, set in Berlin in 2009"
+        },
+        {
+          "rank": 2,
+          "name": "Tyson Gay",
+          "value": 9.69,
+          "aliases": [
+            "gay"
+          ],
+          "clue": "American, and ran his best weeks after the record"
+        },
+        {
+          "rank": 3,
+          "name": "Yohan Blake",
+          "value": 9.69,
+          "aliases": [
+            "blake"
+          ],
+          "clue": "Jamaican, and nicknamed the Beast"
+        },
+        {
+          "rank": 4,
+          "name": "Asafa Powell",
+          "value": 9.72,
+          "aliases": [
+            "powell"
+          ],
+          "clue": "Jamaican, and held the record before the current holder"
+        },
+        {
+          "rank": 5,
+          "name": "Justin Gatlin",
+          "value": 9.74,
+          "aliases": [
+            "gatlin"
+          ],
+          "clue": "An Olympic and world champion who served a ban"
+        },
+        {
+          "rank": 6,
+          "name": "Christian Coleman",
+          "value": 9.76,
+          "aliases": [
+            "coleman"
+          ],
+          "clue": "American, and a world champion indoors and out"
+        },
+        {
+          "rank": 7,
+          "name": "Trayvon Bromell",
+          "value": 9.76,
+          "aliases": [
+            "bromell"
+          ],
+          "clue": "American, and came back from serious injury"
+        },
+        {
+          "rank": 8,
+          "name": "Kishane Thompson",
+          "value": 9.77,
+          "aliases": [
+            "thompson"
+          ],
+          "clue": "Jamaican, and emerged in 2024"
+        },
+        {
+          "rank": 9,
+          "name": "Nesta Carter",
+          "value": 9.78,
+          "aliases": [
+            "carter"
+          ],
+          "clue": "Jamaican, and lost a relay gold to a team-mate's case"
+        },
+        {
+          "rank": 10,
+          "name": "Noah Lyles",
+          "value": 9.79,
+          "aliases": [
+            "lyles"
+          ],
+          "clue": "American, and won the Olympic title in Paris"
+        }
+      ]
+    },
+    {
+      "id": "running-olympic-10000m-men",
+      "type": "recency",
+      "domain": "sports",
+      "obscurity": 3,
+      "difficulty": 5,
+      "tags": [
+        "running"
+      ],
+      "prompt": "The ten most recent men's Olympic 10000m champions",
+      "metric": "Gold medallist in the men's Olympic 10000 metres, by Games.",
+      "source": {
+        "name": "Olympics.com - athletics results",
+        "url": "https://www.olympics.com/en/olympic-games/olympic-results"
+      },
+      "asOf": "2024-08",
+      "volatility": "annual",
+      "answers": [
+        {
+          "rank": 1,
+          "label": "2024",
+          "name": "Joshua Cheptegei",
+          "aliases": [
+            "cheptegei"
+          ],
+          "clue": "Ugandan, and holds the world record"
+        },
+        {
+          "rank": 2,
+          "label": "2020",
+          "name": "Selemon Barega",
+          "aliases": [
+            "barega"
+          ],
+          "clue": "Ethiopian, and won at 21"
+        },
+        {
+          "rank": 3,
+          "label": "2016",
+          "name": "Mo Farah",
+          "aliases": [
+            "farah"
+          ],
+          "clue": "British, and a second double"
+        },
+        {
+          "rank": 4,
+          "label": "2012",
+          "name": "Mo Farah",
+          "aliases": [
+            "farah"
+          ],
+          "clue": "British, at a home Games"
+        },
+        {
+          "rank": 5,
+          "label": "2008",
+          "name": "Kenenisa Bekele",
+          "aliases": [
+            "bekele"
+          ],
+          "clue": "Ethiopian, and also took the shorter distance"
+        },
+        {
+          "rank": 6,
+          "label": "2004",
+          "name": "Kenenisa Bekele",
+          "aliases": [
+            "bekele"
+          ],
+          "clue": "Ethiopian, and a first Olympic title"
+        },
+        {
+          "rank": 7,
+          "label": "2000",
+          "name": "Haile Gebrselassie",
+          "aliases": [
+            "gebrselassie",
+            "haile"
+          ],
+          "clue": "Ethiopian, and won by nine hundredths"
+        },
+        {
+          "rank": 8,
+          "label": "1996",
+          "name": "Haile Gebrselassie",
+          "aliases": [
+            "gebrselassie",
+            "haile"
+          ],
+          "clue": "Ethiopian, and broke 27 world records in his career"
+        },
+        {
+          "rank": 9,
+          "label": "1992",
+          "name": "Khalid Skah",
+          "aliases": [
+            "skah"
+          ],
+          "clue": "Moroccan, and won amid a lapping controversy"
+        },
+        {
+          "rank": 10,
+          "label": "1988",
+          "name": "Brahim Boutayeb",
+          "aliases": [
+            "boutayeb"
+          ],
+          "clue": "Moroccan, and won in Seoul"
+        }
+      ]
+    },
+    {
+      "id": "running-marathon-fastest-men",
+      "type": "ranked",
+      "domain": "sports",
+      "obscurity": 3,
+      "difficulty": 4,
+      "tags": [
+        "running"
+      ],
+      "prompt": "Fastest marathon runners of all time",
+      "metric": "Best time over the classic marathon distance in a record-eligible race, one entry per athlete. Lower is faster; times are minutes past two hours.",
+      "source": {
+        "name": "World Athletics",
+        "url": "https://worldathletics.org/records/all-time-toplists"
+      },
+      "asOf": "2026-09",
+      "volatility": "annual",
+      "order": "asc",
+      "ambiguity": "Record-eligible races only, which excludes exhibition runs staged with rotating pacemakers — including the only sub-two-hour performance.",
+      "confidence": {
+        "level": "judgment",
+        "note": "The marathon list moves fast and several of these times are within seconds of each other. The leading two are secure; the rest is my best judgment at the as-of date."
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Kelvin Kiptum",
+          "value": 0.35,
+          "aliases": [
+            "kiptum"
+          ],
+          "clue": "Set the record in Chicago, and died months later"
+        },
+        {
+          "rank": 2,
+          "name": "Eliud Kipchoge",
+          "value": 1.09,
+          "aliases": [
+            "kipchoge"
+          ],
+          "clue": "Two Olympic titles, and the only man under two hours in an exhibition"
+        },
+        {
+          "rank": 3,
+          "name": "Sabastian Sawe",
+          "value": 1.13,
+          "aliases": [
+            "sawe"
+          ],
+          "clue": "Kenyan, and emerged in 2025"
+        },
+        {
+          "rank": 4,
+          "name": "Kenenisa Bekele",
+          "value": 1.41,
+          "aliases": [
+            "bekele"
+          ],
+          "clue": "Also a great track runner"
+        },
+        {
+          "rank": 5,
+          "name": "Sisay Lemma",
+          "value": 1.48,
+          "aliases": [
+            "lemma"
+          ],
+          "clue": "Ethiopian, and won in Boston"
+        },
+        {
+          "rank": 6,
+          "name": "Birhanu Legese",
+          "value": 2.48,
+          "aliases": [
+            "legese"
+          ],
+          "clue": "Ethiopian, and twice won in Tokyo"
+        },
+        {
+          "rank": 7,
+          "name": "Mosinet Geremew",
+          "value": 2.55,
+          "aliases": [
+            "geremew"
+          ],
+          "clue": "Ethiopian, and second in London"
+        },
+        {
+          "rank": 8,
+          "name": "Dennis Kimetto",
+          "value": 2.57,
+          "aliases": [
+            "kimetto"
+          ],
+          "clue": "Kenyan, and the first under 2:03"
+        },
+        {
+          "rank": 9,
+          "name": "Evans Chebet",
+          "value": 3,
+          "aliases": [
+            "chebet"
+          ],
+          "clue": "Kenyan, and won in Boston and New York"
+        },
+        {
+          "rank": 10,
+          "name": "Titus Ekiru",
+          "value": 3.13,
+          "aliases": [
+            "ekiru"
+          ],
+          "clue": "Kenyan, and ran his best in Milan"
         }
       ]
     }

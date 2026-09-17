@@ -119,3 +119,30 @@ Misspellings are handled by the matcher, not by aliases: optimal string
 alignment (Levenshtein plus transpositions) at roughly one error per five
 characters. "verstapen", "potasium", "ingebrigsten" and "antartic" all resolve.
 Do not add typos as aliases.
+
+## Never bend a real name into a different one
+
+Fuzzy matching forgives typos. A typo is a string nobody meant to type — so a
+guess that is itself a real name is taken at its word and matched only exactly.
+
+The bug this prevents: "Chile" is two edits from "China", and a two-edit budget
+on a five-letter word absorbed it, crediting China and telling the player
+"already got China". They lost an answer they knew and were told nothing. The
+same trap sits under Gambia and Zambia (one letter), Austria and Australia,
+Niger and Nigeria, Slovakia and Slovenia, Iran and Iraq, Dominica and the
+Dominican Republic.
+
+Three defences, all needed:
+
+1. **A protected vocabulary** in the matcher: every sovereign country. A guess
+   matching one gets exact and alias matching only, never fuzzy. No tolerance
+   setting alone can work — Gambia and Zambia differ by a single character.
+2. **Tolerance from the shorter string**, so "austria" is budgeted as seven
+   characters rather than "australia" as nine.
+3. **A build audit** that types every country at every country list and fails
+   the build if one resolves to a different country. It found eleven live
+   instances of this bug the moment it was written.
+
+A country name appearing *inside* an answer's own name is not this problem:
+"Mount Kenya" should answer to "Kenya". The audit exempts exact aliases for
+that reason.
