@@ -199,7 +199,7 @@
         "nfl"
       ],
       "prompt": "The ten most recent Super Bowl champions",
-      "metric": "Winning team of each Super Bowl, by the calendar year the game was played. Three franchises appear more than once.",
+      "metric": "Winning team of each Super Bowl, by the calendar year the game was played.",
       "source": {
         "name": "NFL - Super Bowl History",
         "url": "https://www.nfl.com/super-bowl/history/"
@@ -425,7 +425,7 @@
         "soccer"
       ],
       "prompt": "The ten most recent FIFA World Cup winners",
-      "metric": "Winner of the men's FIFA World Cup, by tournament year. Three nations appear twice.",
+      "metric": "Winner of the men's FIFA World Cup, by tournament year.",
       "source": {
         "name": "FIFA - World Cup",
         "url": "https://www.fifa.com/en/tournaments/mens/worldcup"
@@ -529,7 +529,7 @@
         "basketball"
       ],
       "prompt": "The ten most recent NBA champions",
-      "metric": "Winner of the NBA Finals, by season end year. One franchise appears three times.",
+      "metric": "Winner of the NBA Finals, by the year the season ended.",
       "source": {
         "name": "NBA - NBA Finals history",
         "url": "https://www.nba.com/history/nba-finals"
@@ -647,7 +647,7 @@
         "running"
       ],
       "prompt": "The ten most recent men's Olympic 100m champions",
-      "metric": "Gold medallist in the men's Olympic 100 metres, by Games. One man appears three times.",
+      "metric": "Gold medallist in the men's Olympic 100 metres, by Games.",
       "source": {
         "name": "Olympics.com - Olympic 100m winners",
         "url": "https://www.olympics.com/en/news/olympics-100-metres-winners-list-men-women-gold-medals-champions"
@@ -1121,7 +1121,7 @@
       "obscurity": 1,
       "tags": [],
       "prompt": "The ten most recent US presidents",
-      "metric": "The ten most recent people to hold the office, most recent first. People, not terms - Donald Trump served non-consecutively and counts once.",
+      "metric": "The ten most recent people to hold the office, most recent first. Counted as people rather than terms, so anyone who served non-consecutively appears once.",
       "source": {
         "name": "The White House - Presidents",
         "url": "https://www.whitehouse.gov/about-the-white-house/presidents/"

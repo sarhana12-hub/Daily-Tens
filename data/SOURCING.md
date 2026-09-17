@@ -41,12 +41,29 @@ the entire reason this app exists is that the original ships lists that don't.
      becomes unanswerable. This is the rule that disqualifies most
      "most-streamed" style lists.
 
-6. **Documented ambiguity.** If a well-known competing reading exists, record
-   it in `ambiguity` and surface it in the app's source panel. Players who know
-   the subject well are the ones most likely to be "wrongly" rejected, and they
-   deserve to see why. This is a disclosure requirement, never a disqualifier —
-   and a competing reading worth documenting is usually also worth shipping as
-   its own puzzle under its own pinned metric.
+6. **Documented ambiguity — shown only after the quiz ends.** If a well-known
+   competing reading exists, record it in `ambiguity`. Players who know the
+   subject well are the ones most likely to be "wrongly" rejected, and they
+   deserve to see why. Never a disqualifier — and a competing reading worth
+   documenting is usually also worth shipping as its own puzzle under its own
+   pinned metric.
+
+   **The note is post-game only.** To explain a rejection it has to name
+   answers, so showing it mid-quiz hands over part of the list. The app
+   withholds it until the game is over and says only that one exists.
+
+## Nothing shown before the end may give the game away
+
+`prompt` and `metric` are on screen from the first second, so they must not:
+
+- **Name any answer.** Not even in passing, and not to justify the metric.
+- **Hint at repeated answers.** "One franchise appears three times" is an
+  unasked-for hint: it tells the player a name fills several slots before they
+  have worked anything out, and it narrows the field. Let them discover it.
+
+`tools/build-data.js` enforces both and refuses to build otherwise. The metric
+still has to be pinned precisely — the constraint is to pin it *without*
+leaking, which is always possible: define the measure, never the members.
 
 ## Answer matching
 

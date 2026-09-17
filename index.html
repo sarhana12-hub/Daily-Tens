@@ -600,11 +600,16 @@ function viewSheet() {
   let inner = '';
   if (sheet === 'source') {
     const p = game.puzzle;
+    // The disagreement note explains why a defensible answer was rejected, and
+    // to do that it has to name answers — so it is strictly post-game. Showing
+    // it mid-quiz would hand over part of the list.
+    const over = !!(game && game.over);
     inner = `<h3>Metric &amp; source</h3>
       <div class="kv"><b>Question means</b><span>${esc(p.metric)}</span></div>
       <div class="kv"><b>Source</b><span>${esc(p.source.name)}<br><a href="${esc(p.source.url)}" target="_blank" rel="noopener">${esc(p.source.url)}</a></span></div>
       <div class="kv"><b>Data as of</b><span>${esc(fmtDate(p.asOf))}</span></div>
-      ${p.ambiguity ? `<div class="kv"><b>Known disagreement</b><span>${esc(p.ambiguity)}</span></div>` : ''}`;
+      ${p.ambiguity && over ? `<div class="kv"><b>Known disagreement</b><span>${esc(p.ambiguity)}</span></div>` : ''}
+      ${p.ambiguity && !over ? `<div class="kv"><b>Known disagreement</b><span style="color:var(--ink-dim)">There is one for this list. It names answers, so it's shown when the quiz ends.</span></div>` : ''}`;
   } else if (sheet === 'pick') {
     inner = `<h3>Pick a category</h3>
       <p class="helper">Starts a quiz in that category, whatever your rotation filters say. Your obscurity cap still applies.</p>

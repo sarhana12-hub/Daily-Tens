@@ -41,6 +41,24 @@ const puzzles = src.puzzles.map(p => {
     problems.push(`${p.id}: volatile list with only ${p.margin.gapPct}% tail margin (rule 5 needs >5%)`);
   }
 
+  // Anything shown before the quiz ends must not give the game away. The
+  // `ambiguity` note is exempt because the app withholds it until the end.
+  const preGame = [p.prompt, p.metric].join(' ');
+  const flat = s => ' ' + String(s).toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim() + ' ';
+  const hay = flat(preGame);
+  for (const a of p.answers) {
+    const needle = flat(a.name);
+    if (needle.trim().length >= 2 && hay.includes(needle)) {
+      problems.push(`${p.id}: the prompt or metric names the answer "${a.name}" — that is a spoiler`);
+    }
+  }
+  // Repeat-count phrasing is an unasked-for hint: it tells the player a name
+  // fills more than one slot before they have worked anything out.
+  const hint = /appears?\s+(twice|three times|more than once)|appear\s+(twice|three times|more than once)|\b(two|three|four)\s+(men|women|teams?|franchises?|nations?|countries|players?|people)\s+appear/i;
+  if (hint.test(preGame)) {
+    problems.push(`${p.id}: the prompt or metric hints at repeated answers — drop that clause`);
+  }
+
   return Object.assign({}, p, {
     margin: undefined,          // authoring metadata, not needed at runtime
     answers: p.answers.map(a => ({
