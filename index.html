@@ -274,24 +274,38 @@ function norm(s) {
     .replace(/\s+/g, ' ')
     .trim();
 }
+// Optimal string alignment: Levenshtein plus adjacent transpositions, because
+// swapping two letters is the most common typo there is and plain Levenshtein
+// charges two edits for it. "Yagntze" should cost one, not two.
 function lev(a, b) {
   if (a === b) return 0;
   if (!a.length || !b.length) return Math.max(a.length, b.length);
-  let prev = Array.from({ length: b.length + 1 }, (_, i) => i);
+  const rows = [];
+  for (let i = 0; i <= a.length; i++) rows.push([i, ...Array(b.length).fill(0)]);
+  for (let j = 0; j <= b.length; j++) rows[0][j] = j;
   for (let i = 1; i <= a.length; i++) {
-    const cur = [i];
     for (let j = 1; j <= b.length; j++) {
-      cur[j] = Math.min(
-        prev[j] + 1,
-        cur[j - 1] + 1,
-        prev[j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1)
-      );
+      const cost = a[i - 1] === b[j - 1] ? 0 : 1;
+      let v = Math.min(rows[i - 1][j] + 1, rows[i][j - 1] + 1, rows[i - 1][j - 1] + cost);
+      if (i > 1 && j > 1 && a[i - 1] === b[j - 2] && a[i - 2] === b[j - 1]) {
+        v = Math.min(v, rows[i - 2][j - 2] + 1);   // transposition
+      }
+      rows[i][j] = v;
     }
-    prev = cur;
   }
-  return prev[b.length];
+  return rows[a.length][b.length];
 }
-function tolerance(n) { return n <= 6 ? 1 : n <= 12 ? 2 : 3; }
+// Roughly one allowed error per five characters, which keeps long names like
+// "Roethlisberger" and "Kangchenjunga" forgiving without letting short names
+// collapse into each other. Anything looser and distinct answers start
+// matching the same guess, which resolveGuess would then have to call
+// ambiguous — worse for the player than a near miss.
+function tolerance(n) {
+  if (n <= 4) return 1;
+  if (n <= 8) return 2;
+  if (n <= 13) return 3;
+  return 4;
+}
 
 /* Words that carry no identifying weight on their own. "River" shouldn't
    match the Yellow River and "New" shouldn't match the New York Knicks, but
@@ -301,6 +315,7 @@ const WEAK = new Set([
   'island', 'islands', 'city', 'state', 'states', 'united', 'republic',
   'democratic', 'people', 'peoples', 'new', 'old', 'saint', 'north', 'south',
   'east', 'west', 'national', 'university', 'football', 'club', 'the',
+  'desert', 'deserts', 'great',
   'after', 'with', 'from', 'into', 'over', 'under', 'once', 'all', 'and',
   'for', 'that', 'this', 'when', 'what', 'which', 'battle',
 ]);
@@ -317,9 +332,11 @@ function derivedAliases(name) {
   for (const w of words) if (w.length >= 4 && !WEAK.has(w)) out.add(w);
   const strong = words.filter(w => !WEAK.has(w));
   if (strong.length && strong.length < words.length) out.add(strong.join(' '));
-  // The last word regardless of length — surnames and team nicknames.
+  // The last word down to three letters — surnames and team nicknames like
+  // "Oyu" that the four-letter rule misses. Weak words are still excluded:
+  // "Baffin Island" must not claim "island", or every island answers to it.
   const last = words[words.length - 1];
-  if (last.length >= 3) out.add(last);
+  if (last.length >= 3 && !WEAK.has(last)) out.add(last);
   out.delete(norm(name));
   return [...out];
 }

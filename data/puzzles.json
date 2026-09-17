@@ -282,7 +282,10 @@
           "name": "Los Angeles Rams",
           "aliases": [
             "rams",
-            "la rams"
+            "la rams",
+            "la",
+            "los angeles",
+            "st louis rams"
           ],
           "clue": "Won 23-20 in their own stadium"
         },
@@ -368,7 +371,8 @@
           "name": "Tom Brady",
           "value": null,
           "aliases": [
-            "brady"
+            "brady",
+            "tom"
           ],
           "clue": "Seven rings, and drafted 199th overall"
         },
@@ -425,7 +429,8 @@
           "value": null,
           "aliases": [
             "roethlisberger",
-            "big ben"
+            "big ben",
+            "ben"
           ],
           "clue": "Pittsburgh for eighteen seasons"
         },
@@ -603,7 +608,9 @@
           "aliases": [
             "knicks",
             "new york",
-            "ny knicks"
+            "ny knicks",
+            "ny",
+            "nyk"
           ],
           "clue": "A first title since 1973"
         },
@@ -614,7 +621,8 @@
           "aliases": [
             "thunder",
             "okc",
-            "oklahoma city"
+            "oklahoma city",
+            "oklahoma"
           ],
           "clue": "Seven games, and Gilgeous-Alexander was MVP"
         },
@@ -624,7 +632,8 @@
           "name": "Boston Celtics",
           "aliases": [
             "celtics",
-            "boston"
+            "boston",
+            "cs"
           ],
           "clue": "A record eighteenth banner"
         },
@@ -645,7 +654,9 @@
           "aliases": [
             "warriors",
             "golden state",
-            "gsw"
+            "gsw",
+            "dubs",
+            "gs"
           ],
           "clue": "Curry took Finals MVP for the first time"
         },
@@ -665,7 +676,10 @@
           "name": "Los Angeles Lakers",
           "aliases": [
             "lakers",
-            "la lakers"
+            "la lakers",
+            "la",
+            "los angeles",
+            "lal"
           ],
           "clue": "Won in the Florida bubble"
         },
@@ -686,7 +700,9 @@
           "aliases": [
             "warriors",
             "golden state",
-            "gsw"
+            "gsw",
+            "dubs",
+            "gs"
           ],
           "clue": "A sweep, with Durant as Finals MVP"
         },
@@ -697,7 +713,9 @@
           "aliases": [
             "warriors",
             "golden state",
-            "gsw"
+            "gsw",
+            "dubs",
+            "gs"
           ],
           "clue": "Durant s first season with the team"
         }
@@ -1351,6 +1369,1523 @@
         }
       ],
       "difficulty": 1
+    },
+    {
+      "id": "nfl-superbowl-titles",
+      "type": "ranked",
+      "domain": "sports",
+      "obscurity": 1,
+      "difficulty": 3,
+      "tags": [
+        "nfl"
+      ],
+      "prompt": "Most Super Bowl titles by franchise",
+      "metric": "Super Bowl wins, all time. A franchise keeps its wins across relocations and renamings.",
+      "source": {
+        "name": "NFL - Super Bowl History",
+        "url": "https://www.nfl.com/super-bowl/history/"
+      },
+      "asOf": "2026-02",
+      "volatility": "annual",
+      "ambiguity": "Several franchises are tied on wins, so the order within a tie is arbitrary; the ten clubs are what matters. NFL championships won before the Super Bowl era are not counted.",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "New England Patriots",
+          "value": 6,
+          "aliases": [
+            "patriots",
+            "pats",
+            "new england"
+          ],
+          "clue": "Six titles, all between 2002 and 2019"
+        },
+        {
+          "rank": 2,
+          "name": "Pittsburgh Steelers",
+          "value": 6,
+          "aliases": [
+            "steelers"
+          ],
+          "clue": "Four titles in the 1970s alone"
+        },
+        {
+          "rank": 3,
+          "name": "San Francisco 49ers",
+          "value": 5,
+          "aliases": [
+            "49ers",
+            "niners",
+            "san francisco",
+            "sf"
+          ],
+          "clue": "Five titles and five defeats, and never a loss in the 1980s"
+        },
+        {
+          "rank": 4,
+          "name": "Dallas Cowboys",
+          "value": 5,
+          "aliases": [
+            "cowboys"
+          ],
+          "clue": "Three titles in four years in the 1990s"
+        },
+        {
+          "rank": 5,
+          "name": "Green Bay Packers",
+          "value": 4,
+          "aliases": [
+            "packers",
+            "green bay",
+            "pack"
+          ],
+          "clue": "Won the first two ever played"
+        },
+        {
+          "rank": 6,
+          "name": "New York Giants",
+          "value": 4,
+          "aliases": [
+            "giants",
+            "new york",
+            "nyg"
+          ],
+          "clue": "Twice beat an unbeaten or near-unbeaten favourite"
+        },
+        {
+          "rank": 7,
+          "name": "Kansas City Chiefs",
+          "value": 4,
+          "aliases": [
+            "chiefs",
+            "kc",
+            "kansas city"
+          ],
+          "clue": "One title in 1970, then three in five years"
+        },
+        {
+          "rank": 8,
+          "name": "Denver Broncos",
+          "value": 3,
+          "aliases": [
+            "broncos"
+          ],
+          "clue": "Lost four before winning any"
+        },
+        {
+          "rank": 9,
+          "name": "Las Vegas Raiders",
+          "value": 3,
+          "aliases": [
+            "raiders",
+            "oakland raiders",
+            "las vegas",
+            "oakland",
+            "la raiders"
+          ],
+          "clue": "Won in three different home cities across its history"
+        },
+        {
+          "rank": 10,
+          "name": "Washington Commanders",
+          "value": 3,
+          "aliases": [
+            "redskins",
+            "washington football team",
+            "washington",
+            "commanders",
+            "wft"
+          ],
+          "clue": "Three titles under one coach in the 1980s and 90s"
+        }
+      ]
+    },
+    {
+      "id": "nfl-mvp-recent",
+      "type": "recency",
+      "domain": "sports",
+      "obscurity": 2,
+      "difficulty": 3,
+      "tags": [
+        "nfl"
+      ],
+      "prompt": "The ten most recent NFL MVPs",
+      "metric": "The Associated Press NFL Most Valuable Player, by season.",
+      "source": {
+        "name": "ESPN - NFL MVP winners by year",
+        "url": "https://www.espn.com/nfl/story/_/id/43691267/who-won-nfl-mvp-all-winners-list-year"
+      },
+      "asOf": "2026-02",
+      "volatility": "annual",
+      "generator": {
+        "template": "recent-winners",
+        "entity": "NFL MVP"
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "label": "2025",
+          "name": "Matthew Stafford",
+          "aliases": [
+            "stafford"
+          ],
+          "clue": "Won it at 37, in his fifth season with a Los Angeles club"
+        },
+        {
+          "rank": 2,
+          "label": "2024",
+          "name": "Josh Allen",
+          "aliases": [
+            "allen"
+          ],
+          "clue": "A Buffalo quarterback, at last"
+        },
+        {
+          "rank": 3,
+          "label": "2023",
+          "name": "Lamar Jackson",
+          "aliases": [
+            "jackson"
+          ],
+          "clue": "A Baltimore quarterback, his second award"
+        },
+        {
+          "rank": 4,
+          "label": "2022",
+          "name": "Patrick Mahomes",
+          "aliases": [
+            "mahomes"
+          ],
+          "clue": "Led the league in yards and touchdowns the same year he won a ring"
+        },
+        {
+          "rank": 5,
+          "label": "2021",
+          "name": "Aaron Rodgers",
+          "aliases": [
+            "rodgers"
+          ],
+          "clue": "Back-to-back awards in Green Bay"
+        },
+        {
+          "rank": 6,
+          "label": "2020",
+          "name": "Aaron Rodgers",
+          "aliases": [
+            "rodgers"
+          ],
+          "clue": "A 48-touchdown, five-interception season"
+        },
+        {
+          "rank": 7,
+          "label": "2019",
+          "name": "Lamar Jackson",
+          "aliases": [
+            "jackson"
+          ],
+          "clue": "Unanimous, at 22, after rushing for 1,206 yards"
+        },
+        {
+          "rank": 8,
+          "label": "2018",
+          "name": "Patrick Mahomes",
+          "aliases": [
+            "mahomes"
+          ],
+          "clue": "Fifty touchdown passes in his first year as a starter"
+        },
+        {
+          "rank": 9,
+          "label": "2017",
+          "name": "Tom Brady",
+          "aliases": [
+            "brady",
+            "tom"
+          ],
+          "clue": "Won it at 40"
+        },
+        {
+          "rank": 10,
+          "label": "2016",
+          "name": "Matt Ryan",
+          "aliases": [
+            "ryan",
+            "matty ice"
+          ],
+          "clue": "An Atlanta quarterback, the year of a famous collapse"
+        }
+      ]
+    },
+    {
+      "id": "running-olympic-marathon-men",
+      "type": "recency",
+      "domain": "sports",
+      "obscurity": 3,
+      "difficulty": 4,
+      "tags": [
+        "running"
+      ],
+      "prompt": "The ten most recent men's Olympic marathon champions",
+      "metric": "Gold medallist in the men's Olympic marathon, by Games.",
+      "source": {
+        "name": "Olympics.com - athletics results",
+        "url": "https://www.olympics.com/en/olympic-games/olympic-results"
+      },
+      "asOf": "2024-08",
+      "volatility": "annual",
+      "generator": {
+        "template": "recent-winners",
+        "entity": "Olympic men's marathon"
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "label": "2024",
+          "name": "Tamirat Tola",
+          "aliases": [
+            "tola"
+          ],
+          "clue": "Ethiopian, and set an Olympic record over the hills of Paris"
+        },
+        {
+          "rank": 2,
+          "label": "2020",
+          "name": "Eliud Kipchoge",
+          "aliases": [
+            "kipchoge"
+          ],
+          "clue": "Kenyan, and the first man to retain the title in 44 years"
+        },
+        {
+          "rank": 3,
+          "label": "2016",
+          "name": "Eliud Kipchoge",
+          "aliases": [
+            "kipchoge"
+          ],
+          "clue": "Kenyan, and later the first man under two hours in an exhibition"
+        },
+        {
+          "rank": 4,
+          "label": "2012",
+          "name": "Stephen Kiprotich",
+          "aliases": [
+            "kiprotich"
+          ],
+          "clue": "Ugandan, and his country's only athletics gold since 1972"
+        },
+        {
+          "rank": 5,
+          "label": "2008",
+          "name": "Samuel Wanjiru",
+          "aliases": [
+            "wanjiru"
+          ],
+          "clue": "Kenyan, won at 21 in Beijing heat, and died three years later"
+        },
+        {
+          "rank": 6,
+          "label": "2004",
+          "name": "Stefano Baldini",
+          "aliases": [
+            "baldini"
+          ],
+          "clue": "Italian, and won the year a spectator shoved the leader"
+        },
+        {
+          "rank": 7,
+          "label": "2000",
+          "name": "Gezahegne Abera",
+          "aliases": [
+            "abera"
+          ],
+          "clue": "Ethiopian, and won the world title two years later"
+        },
+        {
+          "rank": 8,
+          "label": "1996",
+          "name": "Josia Thugwane",
+          "aliases": [
+            "thugwane"
+          ],
+          "clue": "South African, the first Black South African Olympic champion"
+        },
+        {
+          "rank": 9,
+          "label": "1992",
+          "name": "Hwang Young-cho",
+          "aliases": [
+            "hwang",
+            "young cho",
+            "hwang young cho"
+          ],
+          "clue": "South Korean, won in Barcelona"
+        },
+        {
+          "rank": 10,
+          "label": "1988",
+          "name": "Gelindo Bordin",
+          "aliases": [
+            "bordin"
+          ],
+          "clue": "Italian, the first Italian to win the event"
+        }
+      ]
+    },
+    {
+      "id": "running-olympic-1500m-men",
+      "type": "recency",
+      "domain": "sports",
+      "obscurity": 3,
+      "difficulty": 5,
+      "tags": [
+        "running"
+      ],
+      "prompt": "The ten most recent men's Olympic 1500m champions",
+      "metric": "Gold medallist in the men's Olympic 1500 metres, by Games.",
+      "source": {
+        "name": "Olympics.com - athletics results",
+        "url": "https://www.olympics.com/en/olympic-games/olympic-results"
+      },
+      "asOf": "2024-08",
+      "volatility": "annual",
+      "ambiguity": "The 2008 race was won on the day by Rashid Ramzi, who was disqualified for doping; the gold went to the runner-up, which is what this puzzle uses.",
+      "generator": {
+        "template": "recent-winners",
+        "entity": "Olympic men's 1500 metres"
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "label": "2024",
+          "name": "Cole Hocker",
+          "aliases": [
+            "hocker"
+          ],
+          "clue": "American, and a stunning upset in an Olympic record"
+        },
+        {
+          "rank": 2,
+          "label": "2020",
+          "name": "Jakob Ingebrigtsen",
+          "aliases": [
+            "ingebrigtsen"
+          ],
+          "clue": "Norwegian, the youngest of three racing brothers"
+        },
+        {
+          "rank": 3,
+          "label": "2016",
+          "name": "Matthew Centrowitz",
+          "aliases": [
+            "centrowitz"
+          ],
+          "clue": "American, the first from his country to win it since 1908"
+        },
+        {
+          "rank": 4,
+          "label": "2012",
+          "name": "Taoufik Makhloufi",
+          "aliases": [
+            "makhloufi"
+          ],
+          "clue": "Algerian, nearly expelled from the Games days earlier"
+        },
+        {
+          "rank": 5,
+          "label": "2008",
+          "name": "Asbel Kiprop",
+          "aliases": [
+            "kiprop"
+          ],
+          "clue": "Kenyan, and was promoted to gold a year later"
+        },
+        {
+          "rank": 6,
+          "label": "2004",
+          "name": "Hicham El Guerrouj",
+          "aliases": [
+            "el guerrouj",
+            "guerrouj",
+            "elguerrouj"
+          ],
+          "clue": "Moroccan, and still holds the world record"
+        },
+        {
+          "rank": 7,
+          "label": "2000",
+          "name": "Noah Ngeny",
+          "aliases": [
+            "ngeny"
+          ],
+          "clue": "Kenyan, and beat the favourite who had lost the previous final too"
+        },
+        {
+          "rank": 8,
+          "label": "1996",
+          "name": "Noureddine Morceli",
+          "aliases": [
+            "morceli"
+          ],
+          "clue": "Algerian, and had held the world record for years"
+        },
+        {
+          "rank": 9,
+          "label": "1992",
+          "name": "Fermin Cacho",
+          "aliases": [
+            "cacho"
+          ],
+          "clue": "Spanish, and won at home in Barcelona"
+        },
+        {
+          "rank": 10,
+          "label": "1988",
+          "name": "Peter Rono",
+          "aliases": [
+            "rono"
+          ],
+          "clue": "Kenyan, and a surprise winner in Seoul"
+        }
+      ]
+    },
+    {
+      "id": "soccer-ucl-recent",
+      "type": "recency",
+      "domain": "sports",
+      "obscurity": 2,
+      "difficulty": 2,
+      "tags": [
+        "soccer"
+      ],
+      "prompt": "The ten most recent Champions League winners",
+      "metric": "Winner of the UEFA Champions League, by the year of the final.",
+      "source": {
+        "name": "UEFA - Champions League history",
+        "url": "https://www.uefa.com/uefachampionsleague/history/"
+      },
+      "asOf": "2026-06",
+      "volatility": "annual",
+      "generator": {
+        "template": "recent-winners",
+        "entity": "UEFA Champions League"
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "label": "2026",
+          "name": "Paris Saint-Germain",
+          "aliases": [
+            "psg",
+            "paris",
+            "paris sg"
+          ],
+          "clue": "Won on penalties in Budapest after a 1-1 draw"
+        },
+        {
+          "rank": 2,
+          "label": "2025",
+          "name": "Paris Saint-Germain",
+          "aliases": [
+            "psg",
+            "paris",
+            "paris sg"
+          ],
+          "clue": "Won the final 5-0, the competition's biggest winning margin"
+        },
+        {
+          "rank": 3,
+          "label": "2024",
+          "name": "Real Madrid",
+          "aliases": [
+            "madrid",
+            "real"
+          ],
+          "clue": "A fifteenth European crown, won at Wembley"
+        },
+        {
+          "rank": 4,
+          "label": "2023",
+          "name": "Manchester City",
+          "aliases": [
+            "man city",
+            "mcfc",
+            "city",
+            "manchester"
+          ],
+          "clue": "Completed a treble with a 1-0 win in Istanbul"
+        },
+        {
+          "rank": 5,
+          "label": "2022",
+          "name": "Real Madrid",
+          "aliases": [
+            "madrid",
+            "real"
+          ],
+          "clue": "Three knockout comebacks, then Courtois made nine saves in a 1-0 final"
+        },
+        {
+          "rank": 6,
+          "label": "2021",
+          "name": "Chelsea",
+          "aliases": [
+            "cfc"
+          ],
+          "clue": "Won 1-0 in Porto in an all-English final"
+        },
+        {
+          "rank": 7,
+          "label": "2020",
+          "name": "Bayern Munich",
+          "aliases": [
+            "bayern",
+            "munich",
+            "fc bayern"
+          ],
+          "clue": "The only final played behind closed doors, in Lisbon"
+        },
+        {
+          "rank": 8,
+          "label": "2019",
+          "name": "Liverpool",
+          "aliases": [
+            "lfc"
+          ],
+          "clue": "Won 2-0 in an all-English final, months after a famous semi-final comeback"
+        },
+        {
+          "rank": 9,
+          "label": "2018",
+          "name": "Real Madrid",
+          "aliases": [
+            "madrid",
+            "real"
+          ],
+          "clue": "A third in a row, and an overhead kick in Kyiv"
+        },
+        {
+          "rank": 10,
+          "label": "2017",
+          "name": "Real Madrid",
+          "aliases": [
+            "madrid",
+            "real"
+          ],
+          "clue": "The first club to retain the trophy in the modern format"
+        }
+      ]
+    },
+    {
+      "id": "soccer-premier-league-recent",
+      "type": "recency",
+      "domain": "sports",
+      "obscurity": 2,
+      "difficulty": 2,
+      "tags": [
+        "soccer"
+      ],
+      "prompt": "The ten most recent Premier League champions",
+      "metric": "Champion of the English Premier League, by the year the season ended.",
+      "source": {
+        "name": "Premier League - history",
+        "url": "https://www.premierleague.com/en/premier-league-explained"
+      },
+      "asOf": "2026-05",
+      "volatility": "annual",
+      "generator": {
+        "template": "recent-winners",
+        "entity": "Premier League"
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "label": "2026",
+          "name": "Arsenal",
+          "aliases": [
+            "gunners",
+            "afc"
+          ],
+          "clue": "A first title in over two decades"
+        },
+        {
+          "rank": 2,
+          "label": "2025",
+          "name": "Liverpool",
+          "aliases": [
+            "lfc"
+          ],
+          "clue": "A twentieth English title, in a new manager's first season"
+        },
+        {
+          "rank": 3,
+          "label": "2024",
+          "name": "Manchester City",
+          "aliases": [
+            "man city",
+            "mcfc",
+            "city",
+            "manchester"
+          ],
+          "clue": "A fourth in a row, the first time any club had done it"
+        },
+        {
+          "rank": 4,
+          "label": "2023",
+          "name": "Manchester City",
+          "aliases": [
+            "man city",
+            "mcfc",
+            "city",
+            "manchester"
+          ],
+          "clue": "Part of a treble"
+        },
+        {
+          "rank": 5,
+          "label": "2022",
+          "name": "Manchester City",
+          "aliases": [
+            "man city",
+            "mcfc",
+            "city",
+            "manchester"
+          ],
+          "clue": "Came from two down on the final day to win by a point"
+        },
+        {
+          "rank": 6,
+          "label": "2021",
+          "name": "Manchester City",
+          "aliases": [
+            "man city",
+            "mcfc",
+            "city",
+            "manchester"
+          ],
+          "clue": "Won by twelve points in a season played in empty stadiums"
+        },
+        {
+          "rank": 7,
+          "label": "2020",
+          "name": "Liverpool",
+          "aliases": [
+            "lfc"
+          ],
+          "clue": "A thirty-year wait ended, with the season interrupted by a pandemic"
+        },
+        {
+          "rank": 8,
+          "label": "2019",
+          "name": "Manchester City",
+          "aliases": [
+            "man city",
+            "mcfc",
+            "city",
+            "manchester"
+          ],
+          "clue": "Ninety-eight points, and won by a single point"
+        },
+        {
+          "rank": 9,
+          "label": "2018",
+          "name": "Manchester City",
+          "aliases": [
+            "man city",
+            "mcfc",
+            "city",
+            "manchester"
+          ],
+          "clue": "A hundred points, the only club ever to manage it"
+        },
+        {
+          "rank": 10,
+          "label": "2017",
+          "name": "Chelsea",
+          "aliases": [
+            "cfc"
+          ],
+          "clue": "Thirty wins in a season, under an Italian manager"
+        }
+      ]
+    },
+    {
+      "id": "f1-champions-recent",
+      "type": "recency",
+      "domain": "sports",
+      "obscurity": 2,
+      "difficulty": 2,
+      "tags": [
+        "f1"
+      ],
+      "prompt": "The ten most recent Formula 1 world champions",
+      "metric": "Winner of the Formula 1 World Drivers' Championship, by season.",
+      "source": {
+        "name": "Formula 1 - results archive",
+        "url": "https://www.formula1.com/en/results"
+      },
+      "asOf": "2025-12",
+      "volatility": "annual",
+      "generator": {
+        "template": "recent-winners",
+        "entity": "Formula 1 World Drivers Championship"
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "label": "2025",
+          "name": "Lando Norris",
+          "aliases": [
+            "norris"
+          ],
+          "clue": "British, and a first title in his seventh season"
+        },
+        {
+          "rank": 2,
+          "label": "2024",
+          "name": "Max Verstappen",
+          "aliases": [
+            "verstappen",
+            "max"
+          ],
+          "clue": "A fourth straight, clinched in Las Vegas"
+        },
+        {
+          "rank": 3,
+          "label": "2023",
+          "name": "Max Verstappen",
+          "aliases": [
+            "verstappen",
+            "max"
+          ],
+          "clue": "Nineteen wins in a single season"
+        },
+        {
+          "rank": 4,
+          "label": "2022",
+          "name": "Max Verstappen",
+          "aliases": [
+            "verstappen",
+            "max"
+          ],
+          "clue": "Won by more than 140 points"
+        },
+        {
+          "rank": 5,
+          "label": "2021",
+          "name": "Max Verstappen",
+          "aliases": [
+            "verstappen",
+            "max"
+          ],
+          "clue": "Decided on the last lap of the last race in Abu Dhabi"
+        },
+        {
+          "rank": 6,
+          "label": "2020",
+          "name": "Lewis Hamilton",
+          "aliases": [
+            "hamilton"
+          ],
+          "clue": "A seventh title, equalling Schumacher's record"
+        },
+        {
+          "rank": 7,
+          "label": "2019",
+          "name": "Lewis Hamilton",
+          "aliases": [
+            "hamilton"
+          ],
+          "clue": "A sixth title, and eleven wins"
+        },
+        {
+          "rank": 8,
+          "label": "2018",
+          "name": "Lewis Hamilton",
+          "aliases": [
+            "hamilton"
+          ],
+          "clue": "Beat a Ferrari challenge that faded after the summer"
+        },
+        {
+          "rank": 9,
+          "label": "2017",
+          "name": "Lewis Hamilton",
+          "aliases": [
+            "hamilton"
+          ],
+          "clue": "A first title in the new wider-car era"
+        },
+        {
+          "rank": 10,
+          "label": "2016",
+          "name": "Nico Rosberg",
+          "aliases": [
+            "rosberg"
+          ],
+          "clue": "Retired five days after winning his only title"
+        }
+      ]
+    },
+    {
+      "id": "mlb-worldseries-recent",
+      "type": "recency",
+      "domain": "sports",
+      "obscurity": 2,
+      "difficulty": 3,
+      "tags": [
+        "baseball"
+      ],
+      "prompt": "The ten most recent World Series champions",
+      "metric": "Winner of the World Series, by season.",
+      "source": {
+        "name": "MLB - World Series history",
+        "url": "https://www.mlb.com/postseason/history/world-series"
+      },
+      "asOf": "2025-11",
+      "volatility": "annual",
+      "generator": {
+        "template": "recent-winners",
+        "entity": "World Series"
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "label": "2025",
+          "name": "Los Angeles Dodgers",
+          "aliases": [
+            "dodgers",
+            "la dodgers",
+            "la",
+            "los angeles"
+          ],
+          "clue": "The first repeat champion in twenty-five years"
+        },
+        {
+          "rank": 2,
+          "label": "2024",
+          "name": "Los Angeles Dodgers",
+          "aliases": [
+            "dodgers",
+            "la dodgers",
+            "la",
+            "los angeles"
+          ],
+          "clue": "Won in five, after a grand slam in the opener"
+        },
+        {
+          "rank": 3,
+          "label": "2023",
+          "name": "Texas Rangers",
+          "aliases": [
+            "rangers"
+          ],
+          "clue": "A first title in the franchise's sixty-third season"
+        },
+        {
+          "rank": 4,
+          "label": "2022",
+          "name": "Houston Astros",
+          "aliases": [
+            "astros"
+          ],
+          "clue": "Beat a team that had gone 87-75 in the regular season"
+        },
+        {
+          "rank": 5,
+          "label": "2021",
+          "name": "Atlanta Braves",
+          "aliases": [
+            "braves"
+          ],
+          "clue": "A first title since 1995"
+        },
+        {
+          "rank": 6,
+          "label": "2020",
+          "name": "Los Angeles Dodgers",
+          "aliases": [
+            "dodgers",
+            "la dodgers",
+            "la",
+            "los angeles"
+          ],
+          "clue": "Won a sixty-game season decided in a neutral-site bubble"
+        },
+        {
+          "rank": 7,
+          "label": "2019",
+          "name": "Washington Nationals",
+          "aliases": [
+            "nationals",
+            "nats",
+            "washington"
+          ],
+          "clue": "Won all four games on the road"
+        },
+        {
+          "rank": 8,
+          "label": "2018",
+          "name": "Boston Red Sox",
+          "aliases": [
+            "red sox",
+            "sox",
+            "boston"
+          ],
+          "clue": "A hundred and eight regular-season wins"
+        },
+        {
+          "rank": 9,
+          "label": "2017",
+          "name": "Houston Astros",
+          "aliases": [
+            "astros"
+          ],
+          "clue": "A seven-game series later tainted by a cheating scandal"
+        },
+        {
+          "rank": 10,
+          "label": "2016",
+          "name": "Chicago Cubs",
+          "aliases": [
+            "cubs"
+          ],
+          "clue": "Ended a hundred-and-eight-year wait in extra innings"
+        }
+      ]
+    },
+    {
+      "id": "tennis-wimbledon-men-recent",
+      "type": "recency",
+      "domain": "sports",
+      "obscurity": 2,
+      "difficulty": 2,
+      "tags": [
+        "tennis"
+      ],
+      "prompt": "The ten most recent Wimbledon men's singles champions",
+      "metric": "Winner of the Wimbledon men's singles title. The 1936 to 2026 sequence skips 2020, when the championships were cancelled.",
+      "source": {
+        "name": "Wimbledon - past champions",
+        "url": "https://www.wimbledon.com/en_GB/draws_archive/"
+      },
+      "asOf": "2026-07",
+      "volatility": "annual",
+      "generator": {
+        "template": "recent-winners",
+        "entity": "Wimbledon men's singles"
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "label": "2026",
+          "name": "Jannik Sinner",
+          "aliases": [
+            "sinner"
+          ],
+          "clue": "Italian, and retained the title"
+        },
+        {
+          "rank": 2,
+          "label": "2025",
+          "name": "Jannik Sinner",
+          "aliases": [
+            "sinner"
+          ],
+          "clue": "Italian, and a first title on the grass"
+        },
+        {
+          "rank": 3,
+          "label": "2024",
+          "name": "Carlos Alcaraz",
+          "aliases": [
+            "alcaraz"
+          ],
+          "clue": "Spanish, and won the final in straight sets"
+        },
+        {
+          "rank": 4,
+          "label": "2023",
+          "name": "Carlos Alcaraz",
+          "aliases": [
+            "alcaraz"
+          ],
+          "clue": "Spanish, and ended a long unbeaten run on the Centre Court"
+        },
+        {
+          "rank": 5,
+          "label": "2022",
+          "name": "Novak Djokovic",
+          "aliases": [
+            "djokovic",
+            "nole"
+          ],
+          "clue": "Serbian, a fourth in a row"
+        },
+        {
+          "rank": 6,
+          "label": "2021",
+          "name": "Novak Djokovic",
+          "aliases": [
+            "djokovic",
+            "nole"
+          ],
+          "clue": "Serbian, and a twentieth major"
+        },
+        {
+          "rank": 7,
+          "label": "2019",
+          "name": "Novak Djokovic",
+          "aliases": [
+            "djokovic",
+            "nole"
+          ],
+          "clue": "Serbian, and saved two match points in a final tiebreak"
+        },
+        {
+          "rank": 8,
+          "label": "2018",
+          "name": "Novak Djokovic",
+          "aliases": [
+            "djokovic",
+            "nole"
+          ],
+          "clue": "Serbian, after a semi-final lasting over five hours"
+        },
+        {
+          "rank": 9,
+          "label": "2017",
+          "name": "Roger Federer",
+          "aliases": [
+            "federer"
+          ],
+          "clue": "Swiss, and won without losing a set, at 35"
+        },
+        {
+          "rank": 10,
+          "label": "2016",
+          "name": "Andy Murray",
+          "aliases": [
+            "murray"
+          ],
+          "clue": "British, and his second title here"
+        }
+      ]
+    },
+    {
+      "id": "lit-nobel-recent",
+      "type": "recency",
+      "domain": "language",
+      "obscurity": 3,
+      "difficulty": 4,
+      "tags": [
+        "prizes"
+      ],
+      "prompt": "The ten most recent Nobel laureates in Literature",
+      "metric": "Winner of the Nobel Prize in Literature, by year of award.",
+      "source": {
+        "name": "NobelPrize.org - all Nobel Prizes in Literature",
+        "url": "https://www.nobelprize.org/prizes/lists/all-nobel-prizes-in-literature/"
+      },
+      "asOf": "2025-10",
+      "volatility": "annual",
+      "generator": {
+        "template": "recent-winners",
+        "entity": "Nobel Prize in Literature"
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "label": "2025",
+          "name": "Laszlo Krasznahorkai",
+          "aliases": [
+            "krasznahorkai",
+            "laszlo"
+          ],
+          "clue": "Hungarian, known for very long sentences"
+        },
+        {
+          "rank": 2,
+          "label": "2024",
+          "name": "Han Kang",
+          "aliases": [
+            "han"
+          ],
+          "clue": "South Korean, and wrote a novel about a woman who stops eating meat"
+        },
+        {
+          "rank": 3,
+          "label": "2023",
+          "name": "Jon Fosse",
+          "aliases": [
+            "fosse"
+          ],
+          "clue": "Norwegian playwright, widely performed in Europe"
+        },
+        {
+          "rank": 4,
+          "label": "2022",
+          "name": "Annie Ernaux",
+          "aliases": [
+            "ernaux"
+          ],
+          "clue": "French, and writes autobiography as social history"
+        },
+        {
+          "rank": 5,
+          "label": "2021",
+          "name": "Abdulrazak Gurnah",
+          "aliases": [
+            "gurnah"
+          ],
+          "clue": "Tanzanian-born, and writes about colonialism and refugees"
+        },
+        {
+          "rank": 6,
+          "label": "2020",
+          "name": "Louise Gluck",
+          "aliases": [
+            "gluck",
+            "glueck"
+          ],
+          "clue": "American poet"
+        },
+        {
+          "rank": 7,
+          "label": "2019",
+          "name": "Peter Handke",
+          "aliases": [
+            "handke"
+          ],
+          "clue": "Austrian, and the award was politically contentious"
+        },
+        {
+          "rank": 8,
+          "label": "2018",
+          "name": "Olga Tokarczuk",
+          "aliases": [
+            "tokarczuk"
+          ],
+          "clue": "Polish, and her award was announced a year late after a scandal at the academy"
+        },
+        {
+          "rank": 9,
+          "label": "2017",
+          "name": "Kazuo Ishiguro",
+          "aliases": [
+            "ishiguro"
+          ],
+          "clue": "British-Japanese, and wrote about a butler looking back"
+        },
+        {
+          "rank": 10,
+          "label": "2016",
+          "name": "Bob Dylan",
+          "aliases": [
+            "dylan"
+          ],
+          "clue": "A songwriter, and took months to acknowledge the prize"
+        }
+      ]
+    },
+    {
+      "id": "geo-largest-islands",
+      "type": "ranked",
+      "domain": "geography",
+      "obscurity": 2,
+      "difficulty": 4,
+      "tags": [],
+      "prompt": "Largest islands in the world",
+      "metric": "Island area in km². Continental landmasses are not counted as islands.",
+      "source": {
+        "name": "Encyclopaedia Britannica - largest islands",
+        "url": "https://www.britannica.com/topic/list-of-the-largest-islands-in-the-world-2069439"
+      },
+      "asOf": "2024-12-31",
+      "volatility": "evergreen",
+      "ambiguity": "Australia is excluded as a continental landmass rather than an island; including it would put it first by a wide margin.",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Greenland",
+          "value": 2166086,
+          "aliases": [
+            "kalaallit nunaat"
+          ],
+          "clue": "Politically part of a European kingdom, geographically North American"
+        },
+        {
+          "rank": 2,
+          "name": "New Guinea",
+          "value": 785753,
+          "aliases": [
+            "papua"
+          ],
+          "clue": "Split between two countries"
+        },
+        {
+          "rank": 3,
+          "name": "Borneo",
+          "value": 748168,
+          "aliases": [
+            "kalimantan"
+          ],
+          "clue": "Split between three countries"
+        },
+        {
+          "rank": 4,
+          "name": "Madagascar",
+          "value": 587041,
+          "aliases": [],
+          "clue": "Its wildlife is mostly found nowhere else"
+        },
+        {
+          "rank": 5,
+          "name": "Baffin Island",
+          "value": 507451,
+          "aliases": [
+            "baffin"
+          ],
+          "clue": "Canadian Arctic, and larger than Spain"
+        },
+        {
+          "rank": 6,
+          "name": "Sumatra",
+          "value": 473481,
+          "aliases": [],
+          "clue": "Indonesian, and struck by the 2004 tsunami"
+        },
+        {
+          "rank": 7,
+          "name": "Honshu",
+          "value": 225800,
+          "aliases": [],
+          "clue": "Holds most of a G7 nation's population"
+        },
+        {
+          "rank": 8,
+          "name": "Victoria Island",
+          "value": 217291,
+          "aliases": [
+            "victoria"
+          ],
+          "clue": "Canadian Arctic, named for a queen"
+        },
+        {
+          "rank": 9,
+          "name": "Great Britain",
+          "value": 209331,
+          "aliases": [
+            "britain"
+          ],
+          "clue": "Holds three countries"
+        },
+        {
+          "rank": 10,
+          "name": "Ellesmere Island",
+          "value": 196236,
+          "aliases": [
+            "ellesmere"
+          ],
+          "clue": "The most northerly large island, in the Canadian Arctic"
+        }
+      ]
+    },
+    {
+      "id": "geo-largest-deserts",
+      "type": "ranked",
+      "domain": "geography",
+      "obscurity": 2,
+      "difficulty": 4,
+      "tags": [],
+      "prompt": "Largest deserts in the world",
+      "metric": "Desert area in km², where a desert is defined by low precipitation rather than by heat. Polar deserts count.",
+      "source": {
+        "name": "Encyclopaedia Britannica - deserts",
+        "url": "https://www.britannica.com/science/desert"
+      },
+      "asOf": "2024-12-31",
+      "volatility": "evergreen",
+      "ambiguity": "Defining deserts by aridity rather than temperature puts the two polar deserts at the top. Lists that only count hot deserts begin with the Sahara and produce a different ten.",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Antarctic Desert",
+          "value": 14000000,
+          "aliases": [
+            "antarctica",
+            "antarctic"
+          ],
+          "clue": "The largest, and also the coldest and windiest place on Earth"
+        },
+        {
+          "rank": 2,
+          "name": "Arctic Desert",
+          "value": 13900000,
+          "aliases": [
+            "arctic"
+          ],
+          "clue": "Spans the far north of three continents"
+        },
+        {
+          "rank": 3,
+          "name": "Sahara",
+          "value": 9200000,
+          "aliases": [],
+          "clue": "Roughly the size of a large country, across northern Africa"
+        },
+        {
+          "rank": 4,
+          "name": "Arabian Desert",
+          "value": 2330000,
+          "aliases": [
+            "arabian"
+          ],
+          "clue": "Contains the Empty Quarter"
+        },
+        {
+          "rank": 5,
+          "name": "Gobi",
+          "value": 1295000,
+          "aliases": [],
+          "clue": "Between two Asian giants, and full of dinosaur fossils"
+        },
+        {
+          "rank": 6,
+          "name": "Kalahari",
+          "value": 900000,
+          "aliases": [],
+          "clue": "Southern African, and home to the San people"
+        },
+        {
+          "rank": 7,
+          "name": "Patagonian Desert",
+          "value": 620000,
+          "aliases": [
+            "patagonia",
+            "patagonian"
+          ],
+          "clue": "South American, in the rain shadow of a great range"
+        },
+        {
+          "rank": 8,
+          "name": "Syrian Desert",
+          "value": 500000,
+          "aliases": [
+            "syrian"
+          ],
+          "clue": "Middle Eastern, crossed by ancient caravan routes"
+        },
+        {
+          "rank": 9,
+          "name": "Great Basin Desert",
+          "value": 492000,
+          "aliases": [
+            "great basin"
+          ],
+          "clue": "North American, between two mountain ranges"
+        },
+        {
+          "rank": 10,
+          "name": "Great Victoria Desert",
+          "value": 424400,
+          "aliases": [
+            "great victoria"
+          ],
+          "clue": "The largest in its country, named for a 19th-century monarch"
+        }
+      ]
+    },
+    {
+      "id": "sci-crust-elements",
+      "type": "ranked",
+      "domain": "science",
+      "obscurity": 2,
+      "difficulty": 4,
+      "tags": [],
+      "prompt": "Most abundant elements in Earth's crust",
+      "metric": "Share of the Earth's crust by mass, as a percentage.",
+      "source": {
+        "name": "CRC Handbook of Chemistry and Physics - abundance of elements",
+        "url": "https://hbcp.chemnetbase.com/"
+      },
+      "asOf": "2024-12-31",
+      "volatility": "evergreen",
+      "ambiguity": "By mass, and for the crust only. The Earth as a whole is mostly iron, and by number of atoms rather than mass the order shifts.",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Oxygen",
+          "value": 46.6,
+          "aliases": [],
+          "clue": "Almost half the crust by mass, and bound up in nearly every rock"
+        },
+        {
+          "rank": 2,
+          "name": "Silicon",
+          "value": 27.7,
+          "aliases": [],
+          "clue": "The basis of sand, glass and most rock-forming minerals"
+        },
+        {
+          "rank": 3,
+          "name": "Aluminium",
+          "value": 8.1,
+          "aliases": [
+            "aluminum"
+          ],
+          "clue": "The most abundant metal, and hard to smelt until the 1880s"
+        },
+        {
+          "rank": 4,
+          "name": "Iron",
+          "value": 5,
+          "aliases": [],
+          "clue": "Gives rock and soil its red-brown colours"
+        },
+        {
+          "rank": 5,
+          "name": "Calcium",
+          "value": 3.6,
+          "aliases": [],
+          "clue": "Limestone, chalk and bones"
+        },
+        {
+          "rank": 6,
+          "name": "Sodium",
+          "value": 2.8,
+          "aliases": [],
+          "clue": "Half of common salt"
+        },
+        {
+          "rank": 7,
+          "name": "Potassium",
+          "value": 2.6,
+          "aliases": [],
+          "clue": "Symbol K, and essential to plants"
+        },
+        {
+          "rank": 8,
+          "name": "Magnesium",
+          "value": 2.1,
+          "aliases": [],
+          "clue": "A light structural metal, and the centre of chlorophyll"
+        },
+        {
+          "rank": 9,
+          "name": "Titanium",
+          "value": 0.44,
+          "aliases": [],
+          "clue": "Strong and corrosion-resistant, used in aircraft and implants"
+        },
+        {
+          "rank": 10,
+          "name": "Hydrogen",
+          "value": 0.14,
+          "aliases": [],
+          "clue": "The most abundant element in the universe, but scarce in the crust"
+        }
+      ]
     }
   ]
 }

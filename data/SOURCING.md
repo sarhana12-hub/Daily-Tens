@@ -91,3 +91,31 @@ filter. "Highest mountains in the world" is obscurity 2 and difficulty 5 —
 everybody knows what a mountain is, almost nobody can name the eighth highest.
 "The ten most recent US presidents" is obscurity 1 and difficulty 1. A low
 obscurity cap makes the rotation *more relevant*, not easier.
+
+## The alias audit and its blind spot
+
+`tools/build-data.js` extracts the app's real matcher from `index.html` and
+tries, for every answer, the full name, every listed alias, every derived
+alias and every identifying word in the name. The build **fails** if any is
+rejected or resolves to a different answer. Verified non-vacuous by sabotaging
+the derivation: it caught five rejections immediately.
+
+It can only test shorthands **derivable from the answer itself**. It cannot
+know that "Huang He" means the Yellow River, that "EEAAO" means that film, or
+that "Oakland" means a franchise now in Las Vegas. Those must be written down,
+and a missing one will not fail the build.
+
+So when authoring, add by hand:
+
+- **City or region forms** for teams — "new england", "kansas city", "la".
+- **Former names and cities** — "redskins", "oakland", "st louis rams".
+- **Initialisms** — "psg", "kc", "nyg", "wft", "gsw".
+- **First names** where they're used alone — "max", "lamar", "nole".
+- **Bare nicknames** — "gunners", "dubs", "niners", "pack".
+- **Non-English or alternative names** — "huang he", "kalaallit nunaat".
+- **Both spellings** where they differ — "aluminium" and "aluminum".
+
+Misspellings are handled by the matcher, not by aliases: optimal string
+alignment (Levenshtein plus transpositions) at roughly one error per five
+characters. "verstapen", "potasium", "ingebrigsten" and "antartic" all resolve.
+Do not add typos as aliases.
