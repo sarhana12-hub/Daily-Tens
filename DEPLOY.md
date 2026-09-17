@@ -46,3 +46,20 @@ Two separate delays, often confused:
 | Update lands mid-quiz | Deferred; score and progress kept |
 | Player leaves game screen | Held update applies |
 | App left open and idle | Stays put until foregrounded — by design |
+
+## Authoring tools
+
+```
+node tools/sort-ranks.js     # derive rank order from the values
+node tools/build-data.js     # validate everything, then build
+node tools/bump.js           # bump the sw cache version
+```
+
+`sort-ranks.js` exists because authoring by hand, I repeatedly wrote correct
+values and then ordered the list by reputation rather than by the number — the
+rank-order guard caught over forty of these. Deriving the order from the data
+removes the whole class. Run it before building.
+
+It has one consequence: a clue that points at another slot by position ("the
+same event as the third here") can be silently invalidated by a resort. The
+build now refuses those, so clues must stand alone.

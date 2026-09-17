@@ -214,6 +214,16 @@ const puzzles = src.puzzles.map(p => {
     });
   });
 
+  // A clue must not point at another slot by position. tools/sort-ranks.js can
+  // reorder a list from its values at any time, which silently invalidates
+  // "the same event as the third here" — and the reference was fragile anyway.
+  const POSITIONAL = /\bthe (first|second|third|fourth|fifth|sixth|seventh|eighth|ninth|tenth) (here|on this list)\b|\b(man|woman|material|one|entry|name) (above|below)\b|\bjust (above|below) it\b|\btributary of the (first|second|third)\b/i;
+  p.answers.forEach(a => {
+    if (a.clue && POSITIONAL.test(a.clue)) {
+      problems.push(`${p.id} #${a.rank}: clue points at another slot by position — rewrite it to stand alone`);
+    }
+  });
+
   // Repeat-count phrasing is an unasked-for hint: it tells the player a name
   // fills more than one slot before they have worked anything out.
   const hint = /appears?\s+(twice|three times|more than once)|appear\s+(twice|three times|more than once)|\b(two|three|four)\s+(men|women|teams?|franchises?|nations?|countries|players?|people)\s+appear/i;

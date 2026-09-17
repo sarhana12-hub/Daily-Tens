@@ -4729,7 +4729,7 @@
           "aliases": [
             "ch4"
           ],
-          "clue": "A far stronger greenhouse gas than the fourth on this list"
+          "clue": "Released by cattle, wetlands and gas leaks, and traps heat strongly"
         },
         {
           "rank": 8,
@@ -5618,7 +5618,7 @@
           "name": "Kasai",
           "value": 2153,
           "aliases": [],
-          "clue": "A southern tributary of the second on this list"
+          "clue": "A major southern tributary rising in Angola"
         },
         {
           "rank": 7,
@@ -5723,7 +5723,7 @@
           "name": "Kama",
           "value": 1805,
           "aliases": [],
-          "clue": "The largest tributary of the first on this list"
+          "clue": "The largest tributary of Europe's longest river"
         },
         {
           "rank": 8,
@@ -6769,7 +6769,7 @@
           "name": "Fin whale",
           "value": 80,
           "aliases": [],
-          "clue": "The second-largest whale, and very fast"
+          "clue": "Very fast, and nicknamed the greyhound of the sea"
         },
         {
           "rank": 5,
@@ -7116,7 +7116,7 @@
           "aliases": [
             "8th rib"
           ],
-          "clue": "Just shorter than its neighbour above"
+          "clue": "Just shorter than the longest rib"
         },
         {
           "rank": 9,
@@ -10867,7 +10867,7 @@
           "name": "Missouri",
           "value": 3767,
           "aliases": [],
-          "clue": "The longest, and a tributary of the second"
+          "clue": "The longest in North America, and joins a shorter but more famous river"
         },
         {
           "rank": 2,
@@ -10904,7 +10904,7 @@
           "name": "Arkansas",
           "value": 2364,
           "aliases": [],
-          "clue": "Joins the second on this list"
+          "clue": "Rises in the Rockies and crosses the Great Plains"
         },
         {
           "rank": 7,
@@ -11779,7 +11779,7 @@
           "name": "Titanic",
           "value": 2264,
           "aliases": [],
-          "clue": "By the same director as the first and third here"
+          "clue": "A 1997 romance aboard a doomed liner"
         },
         {
           "rank": 5,
@@ -14283,7 +14283,7 @@
           "aliases": [
             "goff"
           ],
-          "clue": "After being traded for the man above"
+          "clue": "Traded from Los Angeles to Detroit in a swap of starting quarterbacks"
         },
         {
           "rank": 9,
@@ -14951,7 +14951,7 @@
           "name": "Elara",
           "value": 86,
           "aliases": [],
-          "clue": "Part of the same captured family as the sixth here"
+          "clue": "Part of a captured outer group of small moons"
         },
         {
           "rank": 9,
@@ -15686,7 +15686,7 @@
           "aliases": [
             "puukaoku"
           ],
-          "clue": "Hawaiian, on the same island as the fourth here"
+          "clue": "Hawaiian, on the sea cliffs of Molokai"
         },
         {
           "rank": 9,
@@ -16852,7 +16852,7 @@
           "aliases": [
             "mark jackson"
           ],
-          "clue": "One assist behind the man above"
+          "clue": "A New York point guard who played seventeen seasons"
         },
         {
           "rank": 7,
@@ -21203,7 +21203,7 @@
           "name": "Cardamom",
           "value": 150,
           "aliases": [],
-          "clue": "Green pods, and the third most expensive by weight in most years"
+          "clue": "Green pods used in both Indian and Scandinavian cooking"
         },
         {
           "rank": 5,
@@ -22487,6 +22487,1090 @@
             "hangul"
           ],
           "clue": "Designed deliberately in the fifteenth century"
+        }
+      ]
+    },
+    {
+      "type": "ranked",
+      "tags": [],
+      "volatility": "annual",
+      "asOf": "2025-12-31",
+      "id": "geo-most-heritage-sites",
+      "domain": "geography",
+      "obscurity": 2,
+      "difficulty": 4,
+      "prompt": "Countries with the most UNESCO World Heritage sites",
+      "metric": "Number of inscribed World Heritage sites.",
+      "source": {
+        "name": "UNESCO World Heritage Centre",
+        "url": "https://whc.unesco.org/"
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Italy",
+          "value": 60,
+          "aliases": [
+            "italia"
+          ],
+          "clue": "More than any other, from Roman ruins to whole city centres"
+        },
+        {
+          "rank": 2,
+          "name": "China",
+          "value": 59,
+          "aliases": [
+            "prc"
+          ],
+          "clue": "Adding sites faster than anyone"
+        },
+        {
+          "rank": 3,
+          "name": "Germany",
+          "value": 54,
+          "aliases": [
+            "deutschland"
+          ],
+          "clue": "Cathedrals, industrial landscapes and modernist housing"
+        },
+        {
+          "rank": 4,
+          "name": "France",
+          "value": 53,
+          "aliases": [],
+          "clue": "Includes vineyards and a pilgrimage route"
+        },
+        {
+          "rank": 5,
+          "name": "Spain",
+          "value": 50,
+          "aliases": [
+            "espana"
+          ],
+          "clue": "Includes several entire historic towns"
+        },
+        {
+          "rank": 6,
+          "name": "India",
+          "value": 43,
+          "aliases": [
+            "bharat"
+          ],
+          "clue": "Temples, forts and a famous mausoleum"
+        },
+        {
+          "rank": 7,
+          "name": "Mexico",
+          "value": 35,
+          "aliases": [],
+          "clue": "Pre-Columbian cities and colonial centres"
+        },
+        {
+          "rank": 8,
+          "name": "United Kingdom",
+          "value": 34,
+          "aliases": [
+            "uk",
+            "britain"
+          ],
+          "clue": "Includes a stone circle and an industrial gorge"
+        },
+        {
+          "rank": 9,
+          "name": "Russia",
+          "value": 32,
+          "aliases": [],
+          "clue": "Spans from Baltic cities to Siberian lakes"
+        },
+        {
+          "rank": 10,
+          "name": "Iran",
+          "value": 28,
+          "aliases": [
+            "persia"
+          ],
+          "clue": "Ancient Persian capitals and gardens"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "The leaders are firm but new sites are inscribed each year and the top two are within a site or two of each other, so the order is my best judgment."
+      }
+    },
+    {
+      "type": "ranked",
+      "tags": [],
+      "volatility": "annual",
+      "asOf": "2025-12-31",
+      "id": "geo-largest-metro-systems",
+      "domain": "geography",
+      "obscurity": 3,
+      "difficulty": 4,
+      "prompt": "Largest metro systems by route length",
+      "metric": "Total route length of the urban rail metro network, in kilometres.",
+      "source": {
+        "name": "UITP",
+        "url": "https://www.uitp.org/"
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Shanghai",
+          "value": 831,
+          "aliases": [],
+          "clue": "Built almost entirely since 1993"
+        },
+        {
+          "rank": 2,
+          "name": "Beijing",
+          "value": 807,
+          "aliases": [
+            "peking"
+          ],
+          "clue": "Carries more passengers than any other"
+        },
+        {
+          "rank": 3,
+          "name": "Guangzhou",
+          "value": 621,
+          "aliases": [],
+          "clue": "Pearl River Delta, and still expanding"
+        },
+        {
+          "rank": 4,
+          "name": "Chengdu",
+          "value": 558,
+          "aliases": [],
+          "clue": "Grew from nothing to one of the largest in 15 years"
+        },
+        {
+          "rank": 5,
+          "name": "Shenzhen",
+          "value": 547,
+          "aliases": [],
+          "clue": "Another very fast Chinese build-out"
+        },
+        {
+          "rank": 6,
+          "name": "Hangzhou",
+          "value": 516,
+          "aliases": [],
+          "clue": "Chinese, and expanded rapidly for the Asian Games"
+        },
+        {
+          "rank": 7,
+          "name": "Moscow",
+          "value": 515,
+          "aliases": [],
+          "clue": "Famous for ornate stations"
+        },
+        {
+          "rank": 8,
+          "name": "Wuhan",
+          "value": 460,
+          "aliases": [],
+          "clue": "Central Chinese, and crosses a great river"
+        },
+        {
+          "rank": 9,
+          "name": "London Underground",
+          "value": 402,
+          "aliases": [
+            "underground",
+            "the tube",
+            "london"
+          ],
+          "clue": "The oldest, opened in 1863"
+        },
+        {
+          "rank": 10,
+          "name": "New York City Subway",
+          "value": 380,
+          "aliases": [
+            "new york",
+            "nyc subway"
+          ],
+          "clue": "The most stations of any system"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "Chinese systems are expanding constantly and route lengths are quoted differently depending on whether suburban lines count, so the order is my best judgment."
+      }
+    },
+    {
+      "type": "ranked",
+      "tags": [],
+      "volatility": "evergreen",
+      "asOf": "2024-12-31",
+      "id": "geo-southernmost-cities",
+      "domain": "geography",
+      "obscurity": 4,
+      "difficulty": 5,
+      "prompt": "Southernmost cities in the world",
+      "metric": "Latitude south, for settlements of at least a few thousand people. Higher latitude means further south.",
+      "source": {
+        "name": "Encyclopaedia Britannica",
+        "url": "https://www.britannica.com/"
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Puerto Williams",
+          "value": 54.9,
+          "aliases": [
+            "williams"
+          ],
+          "clue": "Chilean, and claims the title of southernmost town"
+        },
+        {
+          "rank": 2,
+          "name": "Ushuaia",
+          "value": 54.8,
+          "aliases": [],
+          "clue": "Argentine, and the usual departure point for Antarctica"
+        },
+        {
+          "rank": 3,
+          "name": "Punta Arenas",
+          "value": 53.2,
+          "aliases": [],
+          "clue": "Chilean, on the Strait of Magellan"
+        },
+        {
+          "rank": 4,
+          "name": "Puerto Natales",
+          "value": 51.7,
+          "aliases": [
+            "natales"
+          ],
+          "clue": "Chilean, and the gateway to a famous national park"
+        },
+        {
+          "rank": 5,
+          "name": "Stanley",
+          "value": 51.7,
+          "aliases": [
+            "port stanley"
+          ],
+          "clue": "Capital of the Falkland Islands"
+        },
+        {
+          "rank": 6,
+          "name": "Rio Gallegos",
+          "value": 51.6,
+          "aliases": [
+            "gallegos"
+          ],
+          "clue": "Argentine Patagonia"
+        },
+        {
+          "rank": 7,
+          "name": "Bluff",
+          "value": 46.6,
+          "aliases": [],
+          "clue": "New Zealand, and known for oysters"
+        },
+        {
+          "rank": 8,
+          "name": "Invercargill",
+          "value": 46.4,
+          "aliases": [],
+          "clue": "New Zealand's southernmost city"
+        },
+        {
+          "rank": 9,
+          "name": "Comodoro Rivadavia",
+          "value": 45.9,
+          "aliases": [
+            "comodoro"
+          ],
+          "clue": "Argentine, and an oil town"
+        },
+        {
+          "rank": 10,
+          "name": "Hobart",
+          "value": 42.9,
+          "aliases": [],
+          "clue": "Tasmanian capital, and the southernmost in Australia"
+        }
+      ],
+      "confidence": {
+        "level": "judgment",
+        "note": "What counts as a city rather than a town or settlement drives this list entirely, and sources draw the line differently. Order is my best judgment."
+      }
+    },
+    {
+      "type": "ranked",
+      "tags": [],
+      "volatility": "evergreen",
+      "asOf": "2024-12-31",
+      "id": "sci-largest-eruptions",
+      "domain": "science",
+      "obscurity": 3,
+      "difficulty": 5,
+      "prompt": "Largest volcanic eruptions of the last 500 years",
+      "metric": "Volume of erupted material in cubic kilometres.",
+      "source": {
+        "name": "Encyclopaedia Britannica",
+        "url": "https://www.britannica.com/"
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Tambora 1815",
+          "value": 160,
+          "aliases": [
+            "tambora"
+          ],
+          "clue": "Indonesian, and caused a year without a summer"
+        },
+        {
+          "rank": 2,
+          "name": "Huaynaputina 1600",
+          "value": 30,
+          "aliases": [
+            "huaynaputina"
+          ],
+          "clue": "Peruvian, and disrupted harvests across the world"
+        },
+        {
+          "rank": 3,
+          "name": "Novarupta 1912",
+          "value": 28,
+          "aliases": [
+            "novarupta"
+          ],
+          "clue": "Alaskan, and the largest of the twentieth century"
+        },
+        {
+          "rank": 4,
+          "name": "Krakatoa 1883",
+          "value": 20,
+          "aliases": [
+            "krakatoa",
+            "krakatau"
+          ],
+          "clue": "Its explosion was heard thousands of miles away"
+        },
+        {
+          "rank": 5,
+          "name": "Santa Maria 1902",
+          "value": 20,
+          "aliases": [
+            "santa maria"
+          ],
+          "clue": "Guatemalan, and killed thousands"
+        },
+        {
+          "rank": 6,
+          "name": "Katmai 1912",
+          "value": 15,
+          "aliases": [
+            "katmai"
+          ],
+          "clue": "Alaskan, and part of the same 1912 eruption sequence"
+        },
+        {
+          "rank": 7,
+          "name": "Pinatubo 1991",
+          "value": 10,
+          "aliases": [
+            "pinatubo"
+          ],
+          "clue": "Cooled the whole planet by half a degree"
+        },
+        {
+          "rank": 8,
+          "name": "Cerro Azul 1932",
+          "value": 9.5,
+          "aliases": [
+            "cerro azul",
+            "quizapu"
+          ],
+          "clue": "Chilean, and little known despite its size"
+        },
+        {
+          "rank": 9,
+          "name": "El Chichon 1982",
+          "value": 2.3,
+          "aliases": [
+            "el chichon"
+          ],
+          "clue": "Mexican, and unexpected from a little-studied volcano"
+        },
+        {
+          "rank": 10,
+          "name": "Mount St Helens 1980",
+          "value": 1,
+          "aliases": [
+            "st helens",
+            "mount st helens"
+          ],
+          "clue": "Washington State, and blew out sideways"
+        }
+      ],
+      "confidence": {
+        "level": "judgment",
+        "note": "Erupted volumes are estimates that vary several-fold between studies, and two entries here describe overlapping events. Order is my best judgment; the membership is the point."
+      }
+    },
+    {
+      "type": "ranked",
+      "tags": [],
+      "volatility": "evergreen",
+      "asOf": "2024-12-31",
+      "id": "sci-tallest-trees",
+      "domain": "science",
+      "obscurity": 3,
+      "difficulty": 5,
+      "prompt": "Tallest tree species",
+      "metric": "Maximum recorded height of a living specimen, in metres.",
+      "source": {
+        "name": "Smithsonian",
+        "url": "https://www.si.edu/"
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Coast redwood",
+          "value": 116,
+          "aliases": [
+            "redwood",
+            "sequoia sempervirens"
+          ],
+          "clue": "Californian, and the tallest tree ever measured"
+        },
+        {
+          "rank": 2,
+          "name": "Mountain ash",
+          "value": 100,
+          "aliases": [
+            "eucalyptus regnans"
+          ],
+          "clue": "A Tasmanian eucalypt, and the tallest flowering plant"
+        },
+        {
+          "rank": 3,
+          "name": "Yellow meranti",
+          "value": 100,
+          "aliases": [
+            "meranti",
+            "shorea faguetiana"
+          ],
+          "clue": "Borneo, and the tallest tropical tree"
+        },
+        {
+          "rank": 4,
+          "name": "Coast Douglas fir",
+          "value": 99,
+          "aliases": [
+            "douglas fir"
+          ],
+          "clue": "Pacific Northwest, and a major timber tree"
+        },
+        {
+          "rank": 5,
+          "name": "Sitka spruce",
+          "value": 96,
+          "aliases": [
+            "sitka"
+          ],
+          "clue": "Grows in wet coastal forests"
+        },
+        {
+          "rank": 6,
+          "name": "Giant sequoia",
+          "value": 95,
+          "aliases": [
+            "sequoiadendron",
+            "giant redwood"
+          ],
+          "clue": "Not the tallest, but by far the most massive"
+        },
+        {
+          "rank": 7,
+          "name": "Manna gum",
+          "value": 92,
+          "aliases": [
+            "eucalyptus viminalis"
+          ],
+          "clue": "Australian, and sheds its bark in ribbons"
+        },
+        {
+          "rank": 8,
+          "name": "Noble fir",
+          "value": 90,
+          "aliases": [],
+          "clue": "Also popular as a Christmas tree"
+        },
+        {
+          "rank": 9,
+          "name": "Alpine ash",
+          "value": 90,
+          "aliases": [
+            "eucalyptus delegatensis"
+          ],
+          "clue": "Australian, and regenerates only after fire"
+        },
+        {
+          "rank": 10,
+          "name": "Western hemlock",
+          "value": 83,
+          "aliases": [
+            "hemlock"
+          ],
+          "clue": "Shade-tolerant, in Pacific coastal forests"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "The first two are certain. Record heights are set by individual trees and revised as new specimens are found, so the order below is my best judgment."
+      }
+    },
+    {
+      "type": "ranked",
+      "tags": [],
+      "volatility": "evergreen",
+      "asOf": "2024-12-31",
+      "id": "sci-largest-organs",
+      "domain": "science",
+      "obscurity": 2,
+      "difficulty": 4,
+      "prompt": "Largest organs in the human body",
+      "metric": "Typical adult mass in grams.",
+      "source": {
+        "name": "Encyclopaedia Britannica",
+        "url": "https://www.britannica.com/"
+      },
+      "ambiguity": "Skin counts as an organ, which most people do not expect and which puts it first by a wide margin.",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Skin",
+          "value": 10000,
+          "aliases": [],
+          "clue": "The largest organ, and often forgotten as one"
+        },
+        {
+          "rank": 2,
+          "name": "Liver",
+          "value": 1550,
+          "aliases": [],
+          "clue": "Performs hundreds of functions, and regenerates"
+        },
+        {
+          "rank": 3,
+          "name": "Brain",
+          "value": 1400,
+          "aliases": [],
+          "clue": "Uses a fifth of the body's energy"
+        },
+        {
+          "rank": 4,
+          "name": "Lungs",
+          "value": 1300,
+          "aliases": [
+            "lung"
+          ],
+          "clue": "A pair, and the right is larger than the left"
+        },
+        {
+          "rank": 5,
+          "name": "Heart",
+          "value": 300,
+          "aliases": [],
+          "clue": "Beats around two and a half billion times in a life"
+        },
+        {
+          "rank": 6,
+          "name": "Kidneys",
+          "value": 290,
+          "aliases": [
+            "kidney"
+          ],
+          "clue": "A pair, and filter the blood many times a day"
+        },
+        {
+          "rank": 7,
+          "name": "Spleen",
+          "value": 180,
+          "aliases": [],
+          "clue": "Filters blood and stores white cells"
+        },
+        {
+          "rank": 8,
+          "name": "Pancreas",
+          "value": 98,
+          "aliases": [],
+          "clue": "Both a digestive and a hormonal organ"
+        },
+        {
+          "rank": 9,
+          "name": "Thyroid",
+          "value": 25,
+          "aliases": [],
+          "clue": "Sets the body's metabolic rate"
+        },
+        {
+          "rank": 10,
+          "name": "Prostate",
+          "value": 20,
+          "aliases": [],
+          "clue": "Present in about half the population"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "Organ masses vary with body size and references quote different averages, so the lower order is my best judgment."
+      }
+    },
+    {
+      "type": "ranked",
+      "tags": [],
+      "volatility": "evergreen",
+      "asOf": "2024-12-31",
+      "id": "sci-strongest-materials",
+      "domain": "science",
+      "obscurity": 4,
+      "difficulty": 5,
+      "prompt": "Materials with the highest tensile strength",
+      "metric": "Ultimate tensile strength in gigapascals.",
+      "source": {
+        "name": "CRC Handbook of Chemistry and Physics",
+        "url": "https://hbcp.chemnetbase.com/"
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Graphene",
+          "value": 130,
+          "aliases": [],
+          "clue": "A single layer of carbon atoms"
+        },
+        {
+          "rank": 2,
+          "name": "Carbon nanotube",
+          "value": 63,
+          "aliases": [
+            "nanotube",
+            "carbon nanotubes"
+          ],
+          "clue": "Measured on single tubes, and not yet usable at scale"
+        },
+        {
+          "rank": 3,
+          "name": "Colossal carbon tube",
+          "value": 7,
+          "aliases": [
+            "colossal carbon"
+          ],
+          "clue": "A larger-scale carbon structure"
+        },
+        {
+          "rank": 4,
+          "name": "Zylon",
+          "value": 5.8,
+          "aliases": [
+            "pbo"
+          ],
+          "clue": "A synthetic fibre stronger than body-armour aramids, but it degrades in light"
+        },
+        {
+          "rank": 5,
+          "name": "Silicon carbide fibre",
+          "value": 4,
+          "aliases": [
+            "silicon carbide"
+          ],
+          "clue": "Used in jet engine components"
+        },
+        {
+          "rank": 6,
+          "name": "Kevlar",
+          "value": 3.6,
+          "aliases": [],
+          "clue": "Body armour and cut-resistant gloves"
+        },
+        {
+          "rank": 7,
+          "name": "Carbon fibre",
+          "value": 3.5,
+          "aliases": [
+            "carbon fiber"
+          ],
+          "clue": "The practical high-strength material of aerospace"
+        },
+        {
+          "rank": 8,
+          "name": "Piano wire",
+          "value": 2.2,
+          "aliases": [
+            "steel wire"
+          ],
+          "clue": "High-carbon steel under great tension"
+        },
+        {
+          "rank": 9,
+          "name": "Spider silk",
+          "value": 1.6,
+          "aliases": [
+            "silk"
+          ],
+          "clue": "Stronger than steel by weight, from a biological spinneret"
+        },
+        {
+          "rank": 10,
+          "name": "Titanium alloy",
+          "value": 1.4,
+          "aliases": [
+            "titanium"
+          ],
+          "clue": "Strong, light and corrosion-resistant"
+        }
+      ],
+      "confidence": {
+        "level": "judgment",
+        "note": "Measured strengths depend enormously on sample size and defects, and laboratory values for the carbon materials are not achievable in bulk. Order is my best judgment."
+      }
+    },
+    {
+      "type": "ranked",
+      "tags": [],
+      "volatility": "quarterly",
+      "asOf": "2026-09",
+      "id": "film-highest-grossing-animated",
+      "domain": "film",
+      "obscurity": 2,
+      "difficulty": 4,
+      "prompt": "Highest-grossing animated films",
+      "metric": "Worldwide box office gross in millions of US dollars, for films animated throughout.",
+      "source": {
+        "name": "Box Office Mojo",
+        "url": "https://www.boxofficemojo.com/"
+      },
+      "ambiguity": "Fully animated films only, which excludes photorealistic remakes that the studios themselves describe as live action.",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Ne Zha 2",
+          "value": 2200,
+          "aliases": [
+            "ne zha"
+          ],
+          "clue": "Chinese, and earned almost all of it in one country"
+        },
+        {
+          "rank": 2,
+          "name": "Inside Out 2",
+          "value": 1699,
+          "aliases": [
+            "inside out"
+          ],
+          "clue": "Emotions inside a teenager"
+        },
+        {
+          "rank": 3,
+          "name": "Frozen II",
+          "value": 1450,
+          "aliases": [
+            "frozen 2"
+          ],
+          "clue": "The sequel outgrossed the original"
+        },
+        {
+          "rank": 4,
+          "name": "Super Mario Bros Movie",
+          "value": 1360,
+          "aliases": [
+            "mario",
+            "super mario"
+          ],
+          "clue": "A video game plumber"
+        },
+        {
+          "rank": 5,
+          "name": "Frozen",
+          "value": 1290,
+          "aliases": [],
+          "clue": "A song that parents could not escape"
+        },
+        {
+          "rank": 6,
+          "name": "Incredibles 2",
+          "value": 1240,
+          "aliases": [
+            "incredibles"
+          ],
+          "clue": "A superhero family, fourteen years later"
+        },
+        {
+          "rank": 7,
+          "name": "Minions",
+          "value": 1160,
+          "aliases": [],
+          "clue": "Yellow creatures speaking nonsense"
+        },
+        {
+          "rank": 8,
+          "name": "Toy Story 4",
+          "value": 1073,
+          "aliases": [
+            "toy story"
+          ],
+          "clue": "The fourth in a series that keeps not ending"
+        },
+        {
+          "rank": 9,
+          "name": "Toy Story 3",
+          "value": 1067,
+          "aliases": [],
+          "clue": "Made grown adults cry about a furnace"
+        },
+        {
+          "rank": 10,
+          "name": "Despicable Me 3",
+          "value": 1035,
+          "aliases": [
+            "despicable me"
+          ],
+          "clue": "More of those yellow creatures"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "The top four are firm. The billion-dollar animated films below are close together and a new release can reorder them, so it is my best judgment."
+      }
+    },
+    {
+      "id": "film-best-supporting-actor-recent",
+      "type": "recency",
+      "domain": "film",
+      "tags": [
+        "oscars"
+      ],
+      "obscurity": 3,
+      "difficulty": 5,
+      "prompt": "The ten most recent Best Supporting Actor winners",
+      "metric": "Winner of the Academy Award for Best Supporting Actor, by ceremony year.",
+      "source": {
+        "name": "Academy of Motion Picture Arts and Sciences",
+        "url": "https://www.oscars.org/"
+      },
+      "asOf": "2026-03",
+      "volatility": "annual",
+      "confidence": {
+        "level": "partial",
+        "note": "Verified through 2025; the 2026 winner is my best judgment."
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "label": "2026",
+          "name": "Stellan Skarsgard",
+          "aliases": [
+            "skarsgard"
+          ],
+          "clue": "Swedish, and part of an acting dynasty"
+        },
+        {
+          "rank": 2,
+          "label": "2025",
+          "name": "Kieran Culkin",
+          "aliases": [
+            "culkin"
+          ],
+          "clue": "Also known for a television role as a media heir"
+        },
+        {
+          "rank": 3,
+          "label": "2024",
+          "name": "Robert Downey Jr",
+          "aliases": [
+            "downey"
+          ],
+          "clue": "A comeback completed, for playing a bureaucrat"
+        },
+        {
+          "rank": 4,
+          "label": "2023",
+          "name": "Ke Huy Quan",
+          "aliases": [
+            "quan"
+          ],
+          "clue": "Returned to acting decades after child stardom"
+        },
+        {
+          "rank": 5,
+          "label": "2022",
+          "name": "Troy Kotsur",
+          "aliases": [
+            "kotsur"
+          ],
+          "clue": "The first deaf man to win an acting Oscar"
+        },
+        {
+          "rank": 6,
+          "label": "2021",
+          "name": "Daniel Kaluuya",
+          "aliases": [
+            "kaluuya"
+          ],
+          "clue": "British, for playing a murdered activist"
+        },
+        {
+          "rank": 7,
+          "label": "2020",
+          "name": "Brad Pitt",
+          "aliases": [
+            "pitt"
+          ],
+          "clue": "For playing a stuntman in Los Angeles"
+        },
+        {
+          "rank": 8,
+          "label": "2019",
+          "name": "Mahershala Ali",
+          "aliases": [
+            "ali",
+            "mahershala"
+          ],
+          "clue": "A second win in three years"
+        },
+        {
+          "rank": 9,
+          "label": "2018",
+          "name": "Sam Rockwell",
+          "aliases": [
+            "rockwell"
+          ],
+          "clue": "For playing a bigoted small-town policeman"
+        },
+        {
+          "rank": 10,
+          "label": "2017",
+          "name": "Mahershala Ali",
+          "aliases": [
+            "ali",
+            "mahershala"
+          ],
+          "clue": "For a film told in three chapters"
+        }
+      ]
+    },
+    {
+      "id": "film-best-supporting-actress-recent",
+      "type": "recency",
+      "domain": "film",
+      "tags": [
+        "oscars"
+      ],
+      "obscurity": 3,
+      "difficulty": 5,
+      "prompt": "The ten most recent Best Supporting Actress winners",
+      "metric": "Winner of the Academy Award for Best Supporting Actress, by ceremony year.",
+      "source": {
+        "name": "Academy of Motion Picture Arts and Sciences",
+        "url": "https://www.oscars.org/"
+      },
+      "asOf": "2026-03",
+      "volatility": "annual",
+      "confidence": {
+        "level": "partial",
+        "note": "Verified through 2025; the 2026 winner is my best judgment."
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "label": "2026",
+          "name": "Teyana Taylor",
+          "aliases": [
+            "taylor"
+          ],
+          "clue": "A singer turned actor, in a Paul Thomas Anderson film"
+        },
+        {
+          "rank": 2,
+          "label": "2025",
+          "name": "Zoe Saldana",
+          "aliases": [
+            "saldana"
+          ],
+          "clue": "For a Spanish-language musical about a cartel boss"
+        },
+        {
+          "rank": 3,
+          "label": "2024",
+          "name": "Da'Vine Joy Randolph",
+          "aliases": [
+            "randolph",
+            "davine joy randolph"
+          ],
+          "clue": "For playing a grieving school cook"
+        },
+        {
+          "rank": 4,
+          "label": "2023",
+          "name": "Jamie Lee Curtis",
+          "aliases": [
+            "curtis"
+          ],
+          "clue": "A first Oscar after four decades of work"
+        },
+        {
+          "rank": 5,
+          "label": "2022",
+          "name": "Ariana DeBose",
+          "aliases": [
+            "debose"
+          ],
+          "clue": "For a role that won the same award sixty years earlier"
+        },
+        {
+          "rank": 6,
+          "label": "2021",
+          "name": "Yuh-jung Youn",
+          "aliases": [
+            "youn",
+            "yuh jung youn"
+          ],
+          "clue": "South Korean, and charmed the room in her speech"
+        },
+        {
+          "rank": 7,
+          "label": "2020",
+          "name": "Laura Dern",
+          "aliases": [
+            "dern"
+          ],
+          "clue": "For playing a divorce lawyer"
+        },
+        {
+          "rank": 8,
+          "label": "2019",
+          "name": "Regina King",
+          "aliases": [
+            "king"
+          ],
+          "clue": "For a James Baldwin adaptation"
+        },
+        {
+          "rank": 9,
+          "label": "2018",
+          "name": "Allison Janney",
+          "aliases": [
+            "janney"
+          ],
+          "clue": "For playing a famously cruel skating mother"
+        },
+        {
+          "rank": 10,
+          "label": "2017",
+          "name": "Viola Davis",
+          "aliases": [
+            "davis"
+          ],
+          "clue": "For an August Wilson adaptation"
         }
       ]
     }
