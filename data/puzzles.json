@@ -2886,6 +2886,2091 @@
           "clue": "The most abundant element in the universe, but scarce in the crust"
         }
       ]
+    },
+    {
+      "id": "biz-market-cap",
+      "type": "ranked",
+      "domain": "business",
+      "obscurity": 1,
+      "difficulty": 3,
+      "tags": [],
+      "prompt": "Most valuable companies by market capitalisation",
+      "metric": "Market capitalisation in US dollars — share price times shares outstanding — for publicly listed companies.",
+      "source": {
+        "name": "Companies ranked by market capitalisation",
+        "url": "https://companiesmarketcap.com/"
+      },
+      "asOf": "2026-09",
+      "volatility": "quarterly",
+      "confidence": {
+        "level": "judgment",
+        "note": "The top eight are confirmed; the ninth and tenth places move week to week and are my best judgment at the as-of date."
+      },
+      "ambiguity": "State-owned companies without a full public listing are ranked by estimated valuation, which some lists exclude entirely.",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Nvidia",
+          "value": 5.58,
+          "aliases": [
+            "nvda"
+          ],
+          "clue": "Makes the chips the AI boom runs on"
+        },
+        {
+          "rank": 2,
+          "name": "Apple",
+          "value": 4.7,
+          "aliases": [
+            "aapl"
+          ],
+          "clue": "Cupertino, and the first to reach three trillion"
+        },
+        {
+          "rank": 3,
+          "name": "Alphabet",
+          "value": 4.1,
+          "aliases": [
+            "google",
+            "googl"
+          ],
+          "clue": "Search, and the parent company name is not the product name"
+        },
+        {
+          "rank": 4,
+          "name": "Microsoft",
+          "value": 3.71,
+          "aliases": [
+            "msft"
+          ],
+          "clue": "Redmond, and Windows"
+        },
+        {
+          "rank": 5,
+          "name": "Amazon",
+          "value": 2.78,
+          "aliases": [
+            "amzn"
+          ],
+          "clue": "Retail plus the largest cloud business"
+        },
+        {
+          "rank": 6,
+          "name": "TSMC",
+          "value": null,
+          "aliases": [
+            "taiwan semiconductor",
+            "tsm"
+          ],
+          "clue": "Taiwanese, and makes chips designed by others"
+        },
+        {
+          "rank": 7,
+          "name": "Saudi Aramco",
+          "value": null,
+          "aliases": [
+            "aramco"
+          ],
+          "clue": "State oil, and briefly the most valuable company on Earth"
+        },
+        {
+          "rank": 8,
+          "name": "Broadcom",
+          "value": null,
+          "aliases": [
+            "avgo"
+          ],
+          "clue": "Semiconductors and infrastructure software, grown by acquisitions"
+        },
+        {
+          "rank": 9,
+          "name": "Meta Platforms",
+          "value": null,
+          "aliases": [
+            "meta",
+            "facebook"
+          ],
+          "clue": "Renamed itself after a virtual world that did not catch on"
+        },
+        {
+          "rank": 10,
+          "name": "Tesla",
+          "value": null,
+          "aliases": [
+            "tsla"
+          ],
+          "clue": "Electric cars, and the most valuable carmaker by far"
+        }
+      ]
+    },
+    {
+      "id": "biz-revenue",
+      "type": "ranked",
+      "domain": "business",
+      "obscurity": 2,
+      "difficulty": 4,
+      "tags": [],
+      "prompt": "Largest companies in the world by revenue",
+      "metric": "Annual revenue in US dollars, Fortune Global 500 methodology, which includes state-owned enterprises.",
+      "source": {
+        "name": "Fortune Global 500",
+        "url": "https://fortune.com/ranking/global500/"
+      },
+      "asOf": "2026-08",
+      "volatility": "annual",
+      "confidence": {
+        "level": "judgment",
+        "note": "The top two and the presence of the US health and tech giants are confirmed. The Chinese state-owned entrants and the exact order below fifth are my best judgment — the published list ranks by revenue, not the market value most other rankings use."
+      },
+      "ambiguity": "Ranking by revenue rather than profit or market value puts retailers and state energy firms far above more valuable technology companies.",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Amazon",
+          "value": 715,
+          "aliases": [
+            "amzn"
+          ],
+          "clue": "Ended a twelve-year run at the top by another company"
+        },
+        {
+          "rank": 2,
+          "name": "Walmart",
+          "value": 713,
+          "aliases": [
+            "wal mart"
+          ],
+          "clue": "Arkansas, and the biggest employer in the world"
+        },
+        {
+          "rank": 3,
+          "name": "State Grid",
+          "value": null,
+          "aliases": [
+            "state grid corporation of china"
+          ],
+          "clue": "Chinese, and distributes electricity to over a billion people"
+        },
+        {
+          "rank": 4,
+          "name": "UnitedHealth Group",
+          "value": null,
+          "aliases": [
+            "unitedhealth",
+            "united health"
+          ],
+          "clue": "American health insurance and care delivery"
+        },
+        {
+          "rank": 5,
+          "name": "Apple",
+          "value": 416,
+          "aliases": [
+            "aapl"
+          ],
+          "clue": "Hardware margins, not volume"
+        },
+        {
+          "rank": 6,
+          "name": "Alphabet",
+          "value": 403,
+          "aliases": [
+            "google"
+          ],
+          "clue": "Advertising pays for nearly all of it"
+        },
+        {
+          "rank": 7,
+          "name": "Saudi Aramco",
+          "value": null,
+          "aliases": [
+            "aramco"
+          ],
+          "clue": "State oil"
+        },
+        {
+          "rank": 8,
+          "name": "Sinopec",
+          "value": null,
+          "aliases": [
+            "china petroleum",
+            "sinopec group"
+          ],
+          "clue": "Chinese refining and petrochemicals"
+        },
+        {
+          "rank": 9,
+          "name": "CVS Health",
+          "value": null,
+          "aliases": [
+            "cvs"
+          ],
+          "clue": "American pharmacies plus an insurer"
+        },
+        {
+          "rank": 10,
+          "name": "McKesson",
+          "value": null,
+          "aliases": [],
+          "clue": "Distributes pharmaceuticals, and has been on the list since 1995"
+        }
+      ]
+    },
+    {
+      "id": "biz-brands",
+      "type": "ranked",
+      "domain": "business",
+      "obscurity": 2,
+      "difficulty": 3,
+      "tags": [],
+      "prompt": "Most valuable brands in the world",
+      "metric": "Brand value in US dollars — what the name itself is worth, separate from the company's assets — by Interbrand methodology.",
+      "source": {
+        "name": "Interbrand - Best Global Brands",
+        "url": "https://interbrand.com/best-global-brands/"
+      },
+      "asOf": "2025-10",
+      "volatility": "annual",
+      "confidence": {
+        "level": "partial",
+        "note": "The leading names are stable year to year, but the order below fourth and the exact tenth place shift between annual reports and between rival methodologies."
+      },
+      "ambiguity": "Brand valuation is a modelled estimate, and the major agencies publish materially different rankings from the same year.",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Apple",
+          "value": null,
+          "aliases": [],
+          "clue": "Has led this ranking for over a decade"
+        },
+        {
+          "rank": 2,
+          "name": "Microsoft",
+          "value": null,
+          "aliases": [],
+          "clue": "Enterprise software, and a brand rebuilt on the cloud"
+        },
+        {
+          "rank": 3,
+          "name": "Amazon",
+          "value": null,
+          "aliases": [],
+          "clue": "A river, then a bookshop"
+        },
+        {
+          "rank": 4,
+          "name": "Google",
+          "value": null,
+          "aliases": [],
+          "clue": "A misspelled very large number"
+        },
+        {
+          "rank": 5,
+          "name": "Samsung",
+          "value": null,
+          "aliases": [],
+          "clue": "South Korean, and makes everything from phones to ships"
+        },
+        {
+          "rank": 6,
+          "name": "Toyota",
+          "value": null,
+          "aliases": [],
+          "clue": "The most valuable carmaker brand, from Aichi"
+        },
+        {
+          "rank": 7,
+          "name": "Coca-Cola",
+          "value": null,
+          "aliases": [
+            "coke",
+            "coca cola"
+          ],
+          "clue": "Atlanta, 1886, and a secret formula"
+        },
+        {
+          "rank": 8,
+          "name": "Mercedes-Benz",
+          "value": null,
+          "aliases": [
+            "mercedes",
+            "benz"
+          ],
+          "clue": "A three-pointed star from Stuttgart"
+        },
+        {
+          "rank": 9,
+          "name": "McDonald's",
+          "value": null,
+          "aliases": [
+            "mcdonalds",
+            "mcdonald"
+          ],
+          "clue": "Golden arches"
+        },
+        {
+          "rank": 10,
+          "name": "BMW",
+          "value": null,
+          "aliases": [
+            "bayerische motoren werke"
+          ],
+          "clue": "Bavarian, and a blue-and-white roundel"
+        }
+      ]
+    },
+    {
+      "id": "food-coffee-producers",
+      "type": "ranked",
+      "domain": "food",
+      "obscurity": 2,
+      "difficulty": 3,
+      "tags": [],
+      "prompt": "Biggest coffee-producing countries",
+      "metric": "Green coffee production by weight, in tonnes per year.",
+      "source": {
+        "name": "FAO - coffee",
+        "url": "https://www.fao.org/markets-and-trade/commodities-overview/beverages/coffee/en"
+      },
+      "asOf": "2024-12-31",
+      "volatility": "annual",
+      "confidence": {
+        "level": "partial",
+        "note": "The top five are confirmed. Places six to ten are close together and reorder with the harvest, so their membership is my best judgment — Guatemala and Nicaragua are near misses."
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Brazil",
+          "value": 3390000,
+          "aliases": [],
+          "clue": "A third of the world supply, from Minas Gerais and São Paulo"
+        },
+        {
+          "rank": 2,
+          "name": "Vietnam",
+          "value": 2020000,
+          "aliases": [
+            "viet nam"
+          ],
+          "clue": "Mostly robusta, and grown at scale only since the 1990s"
+        },
+        {
+          "rank": 3,
+          "name": "Colombia",
+          "value": 840000,
+          "aliases": [],
+          "clue": "Washed arabica, and a fictional farmer as its mascot"
+        },
+        {
+          "rank": 4,
+          "name": "Indonesia",
+          "value": null,
+          "aliases": [],
+          "clue": "Sumatra, Java and Sulawesi"
+        },
+        {
+          "rank": 5,
+          "name": "Ethiopia",
+          "value": null,
+          "aliases": [],
+          "clue": "Where the plant originated"
+        },
+        {
+          "rank": 6,
+          "name": "Uganda",
+          "value": null,
+          "aliases": [],
+          "clue": "East African, and coffee is its biggest export"
+        },
+        {
+          "rank": 7,
+          "name": "India",
+          "value": null,
+          "aliases": [],
+          "clue": "Grown in the hills of Karnataka, often under shade"
+        },
+        {
+          "rank": 8,
+          "name": "Honduras",
+          "value": null,
+          "aliases": [],
+          "clue": "The largest Central American producer"
+        },
+        {
+          "rank": 9,
+          "name": "Peru",
+          "value": null,
+          "aliases": [],
+          "clue": "Andean, and much of it certified organic"
+        },
+        {
+          "rank": 10,
+          "name": "Mexico",
+          "value": null,
+          "aliases": [],
+          "clue": "Chiapas and Veracruz"
+        }
+      ]
+    },
+    {
+      "id": "food-wine-producers",
+      "type": "ranked",
+      "domain": "food",
+      "obscurity": 2,
+      "difficulty": 3,
+      "tags": [],
+      "prompt": "Biggest wine-producing countries",
+      "metric": "Wine production by volume, in hectolitres per year.",
+      "source": {
+        "name": "OIV - State of the world vine and wine sector",
+        "url": "https://www.oiv.int/what-we-do/statistics"
+      },
+      "asOf": "2024-12-31",
+      "volatility": "annual",
+      "confidence": {
+        "level": "partial",
+        "note": "The top four are firm. The rest swap places with the vintage — a bad harvest moves a country several spots — and the tenth place is my best judgment."
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Italy",
+          "value": null,
+          "aliases": [
+            "italia"
+          ],
+          "clue": "More native grape varieties than any other country"
+        },
+        {
+          "rank": 2,
+          "name": "France",
+          "value": null,
+          "aliases": [],
+          "clue": "Bordeaux and Burgundy"
+        },
+        {
+          "rank": 3,
+          "name": "Spain",
+          "value": null,
+          "aliases": [
+            "espana"
+          ],
+          "clue": "The largest vineyard area in the world, in Castilla-La Mancha"
+        },
+        {
+          "rank": 4,
+          "name": "United States",
+          "value": null,
+          "aliases": [
+            "usa",
+            "us",
+            "america"
+          ],
+          "clue": "Nine tenths of it from one state"
+        },
+        {
+          "rank": 5,
+          "name": "Chile",
+          "value": null,
+          "aliases": [],
+          "clue": "Long, thin, and protected from pests by desert and mountains"
+        },
+        {
+          "rank": 6,
+          "name": "Australia",
+          "value": null,
+          "aliases": [],
+          "clue": "Shiraz, and the Barossa Valley"
+        },
+        {
+          "rank": 7,
+          "name": "Argentina",
+          "value": null,
+          "aliases": [],
+          "clue": "Malbec at altitude in Mendoza"
+        },
+        {
+          "rank": 8,
+          "name": "South Africa",
+          "value": null,
+          "aliases": [],
+          "clue": "Stellenbosch, and Chenin Blanc"
+        },
+        {
+          "rank": 9,
+          "name": "Germany",
+          "value": null,
+          "aliases": [
+            "deutschland"
+          ],
+          "clue": "Riesling on steep river slopes"
+        },
+        {
+          "rank": 10,
+          "name": "Portugal",
+          "value": null,
+          "aliases": [],
+          "clue": "Port, and the Douro valley"
+        }
+      ]
+    },
+    {
+      "id": "food-cocoa-producers",
+      "type": "ranked",
+      "domain": "food",
+      "obscurity": 3,
+      "difficulty": 4,
+      "tags": [],
+      "prompt": "Biggest cocoa-producing countries",
+      "metric": "Cocoa bean production by weight, in tonnes per year.",
+      "source": {
+        "name": "FAO - FAOSTAT crop production",
+        "url": "https://www.fao.org/faostat/en/#data/QCL"
+      },
+      "asOf": "2024-12-31",
+      "volatility": "annual",
+      "confidence": {
+        "level": "partial",
+        "note": "The West African leaders are certain and dominate the total. The lower half is closely bunched and my best judgment."
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Ivory Coast",
+          "value": null,
+          "aliases": [
+            "cote d'ivoire",
+            "cote divoire",
+            "ivory"
+          ],
+          "clue": "Around 40% of world production"
+        },
+        {
+          "rank": 2,
+          "name": "Ghana",
+          "value": null,
+          "aliases": [],
+          "clue": "The other half of the West African duopoly"
+        },
+        {
+          "rank": 3,
+          "name": "Indonesia",
+          "value": null,
+          "aliases": [],
+          "clue": "Mostly Sulawesi, and much of it for local processing"
+        },
+        {
+          "rank": 4,
+          "name": "Ecuador",
+          "value": null,
+          "aliases": [],
+          "clue": "Known for fine-flavour Nacional beans"
+        },
+        {
+          "rank": 5,
+          "name": "Nigeria",
+          "value": null,
+          "aliases": [],
+          "clue": "Africa's most populous country"
+        },
+        {
+          "rank": 6,
+          "name": "Cameroon",
+          "value": null,
+          "aliases": [],
+          "clue": "Central African, and beans often dried over wood smoke"
+        },
+        {
+          "rank": 7,
+          "name": "Brazil",
+          "value": null,
+          "aliases": [
+            "brasil"
+          ],
+          "clue": "Bahia, and recovering from a fungal blight"
+        },
+        {
+          "rank": 8,
+          "name": "Peru",
+          "value": null,
+          "aliases": [],
+          "clue": "Amazonian, and grown partly to replace coca"
+        },
+        {
+          "rank": 9,
+          "name": "Dominican Republic",
+          "value": null,
+          "aliases": [
+            "dominican"
+          ],
+          "clue": "The largest organic producer"
+        },
+        {
+          "rank": 10,
+          "name": "Colombia",
+          "value": null,
+          "aliases": [],
+          "clue": "Andean, and also known for fine-flavour beans"
+        }
+      ]
+    },
+    {
+      "id": "nfl-passing-tds",
+      "type": "ranked",
+      "domain": "sports",
+      "obscurity": 2,
+      "difficulty": 3,
+      "tags": [
+        "nfl"
+      ],
+      "prompt": "NFL career passing touchdowns leaders",
+      "metric": "Regular-season passing touchdowns in a career, all time.",
+      "source": {
+        "name": "Pro Football Reference - career passing touchdowns",
+        "url": "https://www.pro-football-reference.com/leaders/pass_td_career.htm"
+      },
+      "asOf": "2026-02",
+      "volatility": "annual",
+      "confidence": {
+        "level": "partial",
+        "note": "The top five are settled. Places six to ten are within a few touchdowns of each other and still moving while active quarterbacks play, so the order is my best judgment."
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Tom Brady",
+          "value": 649,
+          "aliases": [
+            "brady",
+            "tom"
+          ],
+          "clue": "Seven rings"
+        },
+        {
+          "rank": 2,
+          "name": "Drew Brees",
+          "value": 571,
+          "aliases": [
+            "brees"
+          ],
+          "clue": "A New Orleans institution"
+        },
+        {
+          "rank": 3,
+          "name": "Peyton Manning",
+          "value": 539,
+          "aliases": [
+            "peyton"
+          ],
+          "clue": "Five MVPs, more than anyone"
+        },
+        {
+          "rank": 4,
+          "name": "Brett Favre",
+          "value": 508,
+          "aliases": [
+            "favre"
+          ],
+          "clue": "Started 297 consecutive games"
+        },
+        {
+          "rank": 5,
+          "name": "Aaron Rodgers",
+          "value": null,
+          "aliases": [
+            "rodgers"
+          ],
+          "clue": "The best career touchdown-to-interception ratio of the group"
+        },
+        {
+          "rank": 6,
+          "name": "Philip Rivers",
+          "value": 421,
+          "aliases": [
+            "rivers"
+          ],
+          "clue": "Nine children, and never a Super Bowl"
+        },
+        {
+          "rank": 7,
+          "name": "Dan Marino",
+          "value": 420,
+          "aliases": [
+            "marino"
+          ],
+          "clue": "Miami, and the first to throw for 5,000 yards"
+        },
+        {
+          "rank": 8,
+          "name": "Ben Roethlisberger",
+          "value": 418,
+          "aliases": [
+            "big ben",
+            "ben"
+          ],
+          "clue": "Two rings in Pittsburgh"
+        },
+        {
+          "rank": 9,
+          "name": "Matt Ryan",
+          "value": 381,
+          "aliases": [
+            "matty ice"
+          ],
+          "clue": "Atlanta, and an MVP season"
+        },
+        {
+          "rank": 10,
+          "name": "Matthew Stafford",
+          "value": null,
+          "aliases": [
+            "stafford"
+          ],
+          "clue": "Detroit for a decade, then a ring in Los Angeles"
+        }
+      ]
+    },
+    {
+      "id": "nfl-rushing-yards",
+      "type": "ranked",
+      "domain": "sports",
+      "obscurity": 2,
+      "difficulty": 3,
+      "tags": [
+        "nfl"
+      ],
+      "prompt": "NFL career rushing yards leaders",
+      "metric": "Regular-season rushing yards in a career, all time.",
+      "source": {
+        "name": "Pro Football Reference - career rushing yards",
+        "url": "https://www.pro-football-reference.com/leaders/rush_yds_career.htm"
+      },
+      "asOf": "2026-02",
+      "volatility": "annual",
+      "confidence": {
+        "level": "partial",
+        "note": "Nine of these are retired and fixed. An active back is closing on the bottom of the list, so the tenth place is my best judgment at the as-of date."
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Emmitt Smith",
+          "value": 18355,
+          "aliases": [
+            "emmitt"
+          ],
+          "clue": "Three rings in Dallas, and the all-time leader"
+        },
+        {
+          "rank": 2,
+          "name": "Walter Payton",
+          "value": 16726,
+          "aliases": [
+            "payton",
+            "sweetness"
+          ],
+          "clue": "Chicago, and the league names an award for him"
+        },
+        {
+          "rank": 3,
+          "name": "Frank Gore",
+          "value": 16000,
+          "aliases": [
+            "gore"
+          ],
+          "clue": "Played sixteen seasons for five teams and never led the league"
+        },
+        {
+          "rank": 4,
+          "name": "Barry Sanders",
+          "value": 15269,
+          "aliases": [
+            "barry"
+          ],
+          "clue": "Retired at 31 still in his prime"
+        },
+        {
+          "rank": 5,
+          "name": "Adrian Peterson",
+          "value": 14918,
+          "aliases": [
+            "ap"
+          ],
+          "clue": "Came back from a torn ACL to rush for 2,097 yards"
+        },
+        {
+          "rank": 6,
+          "name": "Curtis Martin",
+          "value": 14101,
+          "aliases": [
+            "martin"
+          ],
+          "clue": "New England then New York, and led the league at 31"
+        },
+        {
+          "rank": 7,
+          "name": "LaDainian Tomlinson",
+          "value": 13684,
+          "aliases": [
+            "ladainian",
+            "lt"
+          ],
+          "clue": "Scored 28 rushing touchdowns in one season"
+        },
+        {
+          "rank": 8,
+          "name": "Jerome Bettis",
+          "value": 13662,
+          "aliases": [
+            "bettis",
+            "the bus"
+          ],
+          "clue": "Nicknamed for a large vehicle, and won a ring at home"
+        },
+        {
+          "rank": 9,
+          "name": "Eric Dickerson",
+          "value": 13259,
+          "aliases": [
+            "dickerson"
+          ],
+          "clue": "Still holds the single-season rushing record"
+        },
+        {
+          "rank": 10,
+          "name": "Tony Dorsett",
+          "value": 12739,
+          "aliases": [
+            "dorsett"
+          ],
+          "clue": "A Heisman winner who won a title in Dallas"
+        }
+      ]
+    },
+    {
+      "id": "nfl-receiving-yards",
+      "type": "ranked",
+      "domain": "sports",
+      "obscurity": 2,
+      "difficulty": 4,
+      "tags": [
+        "nfl"
+      ],
+      "prompt": "NFL career receiving yards leaders",
+      "metric": "Regular-season receiving yards in a career, all time.",
+      "source": {
+        "name": "Pro Football Reference - career receiving yards",
+        "url": "https://www.pro-football-reference.com/leaders/rec_yds_career.htm"
+      },
+      "asOf": "2026-02",
+      "volatility": "annual",
+      "confidence": {
+        "level": "partial",
+        "note": "The leader is untouchable and the rest are retired, but active receivers are approaching the bottom of the list, so the last place or two is my best judgment."
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Jerry Rice",
+          "value": 22895,
+          "aliases": [
+            "rice"
+          ],
+          "clue": "Nearly 5,000 yards clear of anyone else"
+        },
+        {
+          "rank": 2,
+          "name": "Larry Fitzgerald",
+          "value": 17492,
+          "aliases": [
+            "fitzgerald",
+            "fitz"
+          ],
+          "clue": "Seventeen seasons in the desert"
+        },
+        {
+          "rank": 3,
+          "name": "Terrell Owens",
+          "value": 15934,
+          "aliases": [
+            "owens",
+            "to"
+          ],
+          "clue": "Six teams, and celebrated on a star at midfield"
+        },
+        {
+          "rank": 4,
+          "name": "Randy Moss",
+          "value": 15292,
+          "aliases": [
+            "moss"
+          ],
+          "clue": "Caught 23 touchdowns in an undefeated regular season"
+        },
+        {
+          "rank": 5,
+          "name": "Isaac Bruce",
+          "value": 15208,
+          "aliases": [
+            "bruce"
+          ],
+          "clue": "The long touchdown that won a Super Bowl for a fast offence"
+        },
+        {
+          "rank": 6,
+          "name": "Tony Gonzalez",
+          "value": 15127,
+          "aliases": [
+            "gonzalez"
+          ],
+          "clue": "A tight end, and the only one this high"
+        },
+        {
+          "rank": 7,
+          "name": "Steve Smith",
+          "value": 14731,
+          "aliases": [
+            "steve smith sr"
+          ],
+          "clue": "Carolina, and small, fast and famously combative"
+        },
+        {
+          "rank": 8,
+          "name": "Marvin Harrison",
+          "value": 14580,
+          "aliases": [
+            "harrison"
+          ],
+          "clue": "Caught 143 passes in a season from a five-time MVP"
+        },
+        {
+          "rank": 9,
+          "name": "Reggie Wayne",
+          "value": 14345,
+          "aliases": [
+            "wayne"
+          ],
+          "clue": "The other half of that Indianapolis receiving pair"
+        },
+        {
+          "rank": 10,
+          "name": "James Lofton",
+          "value": 14004,
+          "aliases": [
+            "lofton"
+          ],
+          "clue": "Sixteen seasons starting in the 1970s, mostly in Green Bay"
+        }
+      ]
+    },
+    {
+      "id": "running-olympic-100m-women",
+      "type": "recency",
+      "domain": "sports",
+      "obscurity": 2,
+      "difficulty": 4,
+      "tags": [
+        "running"
+      ],
+      "prompt": "The ten most recent women's Olympic 100m champions",
+      "metric": "Gold medallist in the women's Olympic 100 metres, by Games.",
+      "source": {
+        "name": "Olympics.com - athletics results",
+        "url": "https://www.olympics.com/en/olympic-games/olympic-results"
+      },
+      "asOf": "2024-08",
+      "volatility": "annual",
+      "ambiguity": "No gold was awarded for 2000: the winner was stripped for doping and the medal was not reassigned, so the sequence skips that year and reaches back to 1984 instead.",
+      "generator": {
+        "template": "recent-winners",
+        "entity": "Olympic women's 100 metres"
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "label": "2024",
+          "name": "Julien Alfred",
+          "aliases": [
+            "alfred"
+          ],
+          "clue": "Saint Lucia's first Olympic medal of any colour"
+        },
+        {
+          "rank": 2,
+          "label": "2020",
+          "name": "Elaine Thompson-Herah",
+          "aliases": [
+            "thompson",
+            "thompson herah"
+          ],
+          "clue": "Jamaican, and retained the title in an Olympic record"
+        },
+        {
+          "rank": 3,
+          "label": "2016",
+          "name": "Elaine Thompson-Herah",
+          "aliases": [
+            "thompson",
+            "thompson herah"
+          ],
+          "clue": "Jamaican, and took the 200m as well"
+        },
+        {
+          "rank": 4,
+          "label": "2012",
+          "name": "Shelly-Ann Fraser-Pryce",
+          "aliases": [
+            "fraser",
+            "fraser pryce"
+          ],
+          "clue": "Jamaican, and retained the title in London"
+        },
+        {
+          "rank": 5,
+          "label": "2008",
+          "name": "Shelly-Ann Fraser-Pryce",
+          "aliases": [
+            "fraser",
+            "fraser pryce"
+          ],
+          "clue": "Jamaican, and won as a 21-year-old outsider"
+        },
+        {
+          "rank": 6,
+          "label": "2004",
+          "name": "Yuliya Nesterenko",
+          "aliases": [
+            "nesterenko"
+          ],
+          "clue": "Belarusian, and a complete surprise in Athens"
+        },
+        {
+          "rank": 7,
+          "label": "1996",
+          "name": "Gail Devers",
+          "aliases": [
+            "devers"
+          ],
+          "clue": "American, and retained the title by a hundredth"
+        },
+        {
+          "rank": 8,
+          "label": "1992",
+          "name": "Gail Devers",
+          "aliases": [
+            "devers"
+          ],
+          "clue": "American, and had nearly lost her feet to illness"
+        },
+        {
+          "rank": 9,
+          "label": "1988",
+          "name": "Florence Griffith-Joyner",
+          "aliases": [
+            "flo jo",
+            "griffith joyner",
+            "joyner"
+          ],
+          "clue": "American, and still holds the world record"
+        },
+        {
+          "rank": 10,
+          "label": "1984",
+          "name": "Evelyn Ashford",
+          "aliases": [
+            "ashford"
+          ],
+          "clue": "American, and won in Los Angeles"
+        }
+      ]
+    },
+    {
+      "id": "running-olympic-marathon-women",
+      "type": "recency",
+      "domain": "sports",
+      "obscurity": 3,
+      "difficulty": 4,
+      "tags": [
+        "running"
+      ],
+      "prompt": "The ten most recent women's Olympic marathon champions",
+      "metric": "Gold medallist in the women's Olympic marathon, by Games.",
+      "source": {
+        "name": "Olympics.com - athletics results",
+        "url": "https://www.olympics.com/en/olympic-games/olympic-results"
+      },
+      "asOf": "2024-08",
+      "volatility": "annual",
+      "generator": {
+        "template": "recent-winners",
+        "entity": "Olympic women's marathon"
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "label": "2024",
+          "name": "Sifan Hassan",
+          "aliases": [
+            "hassan"
+          ],
+          "clue": "Dutch, and also medalled in both the 5000m and 10000m at the same Games"
+        },
+        {
+          "rank": 2,
+          "label": "2020",
+          "name": "Peres Jepchirchir",
+          "aliases": [
+            "jepchirchir"
+          ],
+          "clue": "Kenyan, and later won in Boston and London"
+        },
+        {
+          "rank": 3,
+          "label": "2016",
+          "name": "Jemima Sumgong",
+          "aliases": [
+            "sumgong"
+          ],
+          "clue": "Kenyan, and served a doping ban the following year"
+        },
+        {
+          "rank": 4,
+          "label": "2012",
+          "name": "Tiki Gelana",
+          "aliases": [
+            "gelana"
+          ],
+          "clue": "Ethiopian, in an Olympic record in the London rain"
+        },
+        {
+          "rank": 5,
+          "label": "2008",
+          "name": "Constantina Dita",
+          "aliases": [
+            "dita"
+          ],
+          "clue": "Romanian, and won at 38 after breaking away early"
+        },
+        {
+          "rank": 6,
+          "label": "2004",
+          "name": "Mizuki Noguchi",
+          "aliases": [
+            "noguchi"
+          ],
+          "clue": "Japanese, and won on the classic route into Athens"
+        },
+        {
+          "rank": 7,
+          "label": "2000",
+          "name": "Naoko Takahashi",
+          "aliases": [
+            "takahashi"
+          ],
+          "clue": "Japanese, the first woman under 2:20 a year later"
+        },
+        {
+          "rank": 8,
+          "label": "1996",
+          "name": "Fatuma Roba",
+          "aliases": [
+            "roba"
+          ],
+          "clue": "Ethiopian, and went on to win Boston three times"
+        },
+        {
+          "rank": 9,
+          "label": "1992",
+          "name": "Valentina Yegorova",
+          "aliases": [
+            "yegorova"
+          ],
+          "clue": "Competed for a unified team after the Soviet collapse"
+        },
+        {
+          "rank": 10,
+          "label": "1988",
+          "name": "Rosa Mota",
+          "aliases": [
+            "mota"
+          ],
+          "clue": "Portuguese, and also won three European titles"
+        }
+      ]
+    },
+    {
+      "id": "running-olympic-5000m-men",
+      "type": "recency",
+      "domain": "sports",
+      "obscurity": 3,
+      "difficulty": 5,
+      "tags": [
+        "running"
+      ],
+      "prompt": "The ten most recent men's Olympic 5000m champions",
+      "metric": "Gold medallist in the men's Olympic 5000 metres, by Games.",
+      "source": {
+        "name": "Olympics.com - athletics results",
+        "url": "https://www.olympics.com/en/olympic-games/olympic-results"
+      },
+      "asOf": "2024-08",
+      "volatility": "annual",
+      "generator": {
+        "template": "recent-winners",
+        "entity": "Olympic men's 5000 metres"
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "label": "2024",
+          "name": "Jakob Ingebrigtsen",
+          "aliases": [
+            "ingebrigtsen"
+          ],
+          "clue": "Norwegian, and took this after missing out over a shorter distance"
+        },
+        {
+          "rank": 2,
+          "label": "2020",
+          "name": "Joshua Cheptegei",
+          "aliases": [
+            "cheptegei"
+          ],
+          "clue": "Ugandan, and holds world records at 5000m and 10000m"
+        },
+        {
+          "rank": 3,
+          "label": "2016",
+          "name": "Mo Farah",
+          "aliases": [
+            "farah",
+            "mohamed farah"
+          ],
+          "clue": "British, and completed a second double in Rio"
+        },
+        {
+          "rank": 4,
+          "label": "2012",
+          "name": "Mo Farah",
+          "aliases": [
+            "farah",
+            "mohamed farah"
+          ],
+          "clue": "British, and won both distances at a home Games"
+        },
+        {
+          "rank": 5,
+          "label": "2008",
+          "name": "Kenenisa Bekele",
+          "aliases": [
+            "bekele"
+          ],
+          "clue": "Ethiopian, and held both world records for over a decade"
+        },
+        {
+          "rank": 6,
+          "label": "2004",
+          "name": "Hicham El Guerrouj",
+          "aliases": [
+            "el guerrouj",
+            "guerrouj"
+          ],
+          "clue": "Moroccan, and the last man to win a 1500m-5000m double"
+        },
+        {
+          "rank": 7,
+          "label": "2000",
+          "name": "Millon Wolde",
+          "aliases": [
+            "wolde"
+          ],
+          "clue": "Ethiopian, and won in Sydney"
+        },
+        {
+          "rank": 8,
+          "label": "1996",
+          "name": "Venuste Niyongabo",
+          "aliases": [
+            "niyongabo"
+          ],
+          "clue": "Burundi's first Olympic champion, in his first serious race at the distance"
+        },
+        {
+          "rank": 9,
+          "label": "1992",
+          "name": "Dieter Baumann",
+          "aliases": [
+            "baumann"
+          ],
+          "clue": "German, and outkicked the field in the final metres"
+        },
+        {
+          "rank": 10,
+          "label": "1988",
+          "name": "John Ngugi",
+          "aliases": [
+            "ngugi"
+          ],
+          "clue": "Kenyan, and a five-time world cross country champion"
+        }
+      ]
+    },
+    {
+      "id": "geo-tallest-buildings",
+      "type": "ranked",
+      "domain": "geography",
+      "obscurity": 2,
+      "difficulty": 4,
+      "tags": [],
+      "prompt": "Tallest buildings in the world",
+      "metric": "Architectural height in metres, counting spires but not antennas, for completed buildings.",
+      "source": {
+        "name": "CTBUH - The Skyscraper Center",
+        "url": "https://www.skyscrapercenter.com/buildings"
+      },
+      "asOf": "2026-01",
+      "volatility": "annual",
+      "confidence": {
+        "level": "partial",
+        "note": "The top five are confirmed. The rest are from the standard CTBUH ordering and are tightly bunched — two of them are within two metres of each other."
+      },
+      "ambiguity": "Counting spires but not antennas is what puts some towers above others; measured to the highest occupied floor, the order changes.",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Burj Khalifa",
+          "value": 828,
+          "aliases": [
+            "burj"
+          ],
+          "clue": "Dubai, and has held the record since 2010"
+        },
+        {
+          "rank": 2,
+          "name": "Merdeka 118",
+          "value": 679,
+          "aliases": [
+            "merdeka"
+          ],
+          "clue": "Kuala Lumpur, and named for a declaration of independence"
+        },
+        {
+          "rank": 3,
+          "name": "Shanghai Tower",
+          "value": 632,
+          "aliases": [],
+          "clue": "The tallest twisting building in the world"
+        },
+        {
+          "rank": 4,
+          "name": "Abraj Al Bait",
+          "value": 601,
+          "aliases": [
+            "makkah royal clock tower",
+            "clock tower"
+          ],
+          "clue": "Mecca, and carries an enormous clock face"
+        },
+        {
+          "rank": 5,
+          "name": "Ping An Finance Centre",
+          "value": 599,
+          "aliases": [
+            "ping an"
+          ],
+          "clue": "Shenzhen, and a bank headquarters"
+        },
+        {
+          "rank": 6,
+          "name": "Lotte World Tower",
+          "value": 555,
+          "aliases": [
+            "lotte"
+          ],
+          "clue": "Seoul, and tapers to a point"
+        },
+        {
+          "rank": 7,
+          "name": "One World Trade Center",
+          "value": 541,
+          "aliases": [
+            "1 wtc",
+            "freedom tower",
+            "wtc"
+          ],
+          "clue": "Its height in feet is a deliberate reference to 1776"
+        },
+        {
+          "rank": 8,
+          "name": "Guangzhou CTF Finance Centre",
+          "value": 530,
+          "aliases": [
+            "guangzhou ctf"
+          ],
+          "clue": "One of two near-identical towers in different Chinese cities"
+        },
+        {
+          "rank": 9,
+          "name": "Tianjin CTF Finance Centre",
+          "value": 530,
+          "aliases": [
+            "tianjin ctf"
+          ],
+          "clue": "The other of that pair, by the same developer"
+        },
+        {
+          "rank": 10,
+          "name": "CITIC Tower",
+          "value": 528,
+          "aliases": [
+            "citic",
+            "china zun"
+          ],
+          "clue": "Beijing, and shaped like an ancient ritual vessel"
+        }
+      ]
+    },
+    {
+      "id": "geo-busiest-airports",
+      "type": "ranked",
+      "domain": "geography",
+      "obscurity": 2,
+      "difficulty": 3,
+      "tags": [],
+      "prompt": "Busiest airports in the world by passengers",
+      "metric": "Total passengers handled in a calendar year, arrivals plus departures plus transfers.",
+      "source": {
+        "name": "ACI World - busiest airports",
+        "url": "https://aci.aero/resources/busiest-airports-in-the-world/"
+      },
+      "asOf": "2025-12-31",
+      "volatility": "annual",
+      "confidence": {
+        "level": "partial",
+        "note": "All ten are confirmed for the as-of year; one figure in the middle of the order is estimated from its neighbours."
+      },
+      "ambiguity": "Ranked by total passengers, which counts transfers. By international passengers only, the Gulf and European hubs rise and the American ones fall away.",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Atlanta",
+          "value": 106.3,
+          "aliases": [
+            "hartsfield",
+            "hartsfield jackson",
+            "atl"
+          ],
+          "clue": "The only airport to pass a hundred million, and a hub for one huge carrier"
+        },
+        {
+          "rank": 2,
+          "name": "Dubai",
+          "value": 95.2,
+          "aliases": [
+            "dxb"
+          ],
+          "clue": "Almost entirely international traffic"
+        },
+        {
+          "rank": 3,
+          "name": "Tokyo Haneda",
+          "value": 91.7,
+          "aliases": [
+            "haneda",
+            "hnd"
+          ],
+          "clue": "The closer of two airports serving its city"
+        },
+        {
+          "rank": 4,
+          "name": "Dallas Fort Worth",
+          "value": 85.7,
+          "aliases": [
+            "dallas",
+            "dfw"
+          ],
+          "clue": "Larger in area than the island of Manhattan"
+        },
+        {
+          "rank": 5,
+          "name": "Shanghai Pudong",
+          "value": 85,
+          "aliases": [
+            "pudong",
+            "pvg"
+          ],
+          "clue": "Rose five places in a single year"
+        },
+        {
+          "rank": 6,
+          "name": "Chicago O'Hare",
+          "value": 84.8,
+          "aliases": [
+            "ohare",
+            "chicago",
+            "ord"
+          ],
+          "clue": "Named for a naval aviator, and once the busiest in the world"
+        },
+        {
+          "rank": 7,
+          "name": "London Heathrow",
+          "value": 84.5,
+          "aliases": [
+            "heathrow",
+            "lhr"
+          ],
+          "clue": "Two runways only, and running at near capacity"
+        },
+        {
+          "rank": 8,
+          "name": "Istanbul",
+          "value": 84.4,
+          "aliases": [
+            "ist"
+          ],
+          "clue": "Opened in 2018 to replace an older airport"
+        },
+        {
+          "rank": 9,
+          "name": "Guangzhou Baiyun",
+          "value": 83.6,
+          "aliases": [
+            "baiyun",
+            "guangzhou",
+            "can"
+          ],
+          "clue": "The main gateway to the Pearl River Delta"
+        },
+        {
+          "rank": 10,
+          "name": "Denver",
+          "value": 82.4,
+          "aliases": [
+            "den"
+          ],
+          "clue": "A white peaked roof echoing the mountains behind it"
+        }
+      ]
+    },
+    {
+      "id": "geo-largest-lakes",
+      "type": "ranked",
+      "domain": "geography",
+      "obscurity": 2,
+      "difficulty": 4,
+      "tags": [],
+      "prompt": "Largest lakes in the world by area",
+      "metric": "Surface area in km².",
+      "source": {
+        "name": "Encyclopaedia Britannica - lakes",
+        "url": "https://www.britannica.com/science/lake"
+      },
+      "asOf": "2024-12-31",
+      "volatility": "evergreen",
+      "ambiguity": "The largest is called a sea and is saline, but is landlocked and counted as a lake here. Two of the Great Lakes are hydrologically one body and are sometimes merged into a single entry, which would change the order.",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Caspian Sea",
+          "value": 371000,
+          "aliases": [
+            "caspian"
+          ],
+          "clue": "Landlocked, salty, and bordered by five countries"
+        },
+        {
+          "rank": 2,
+          "name": "Lake Superior",
+          "value": 82100,
+          "aliases": [
+            "superior"
+          ],
+          "clue": "The largest freshwater lake by area"
+        },
+        {
+          "rank": 3,
+          "name": "Lake Victoria",
+          "value": 68870,
+          "aliases": [
+            "victoria"
+          ],
+          "clue": "African, and named for a British queen"
+        },
+        {
+          "rank": 4,
+          "name": "Lake Huron",
+          "value": 59600,
+          "aliases": [
+            "huron"
+          ],
+          "clue": "Holds the largest island in any lake"
+        },
+        {
+          "rank": 5,
+          "name": "Lake Michigan",
+          "value": 57800,
+          "aliases": [
+            "michigan"
+          ],
+          "clue": "The only Great Lake entirely within one country"
+        },
+        {
+          "rank": 6,
+          "name": "Lake Tanganyika",
+          "value": 32900,
+          "aliases": [
+            "tanganyika"
+          ],
+          "clue": "The longest freshwater lake, in the African Rift"
+        },
+        {
+          "rank": 7,
+          "name": "Lake Baikal",
+          "value": 31500,
+          "aliases": [
+            "baikal"
+          ],
+          "clue": "Siberian, and holds a fifth of the world's unfrozen fresh water"
+        },
+        {
+          "rank": 8,
+          "name": "Great Bear Lake",
+          "value": 31328,
+          "aliases": [
+            "great bear"
+          ],
+          "clue": "The largest lake entirely within Canada"
+        },
+        {
+          "rank": 9,
+          "name": "Lake Malawi",
+          "value": 29600,
+          "aliases": [
+            "malawi",
+            "nyasa"
+          ],
+          "clue": "Has more fish species than any other lake"
+        },
+        {
+          "rank": 10,
+          "name": "Great Slave Lake",
+          "value": 28568,
+          "aliases": [
+            "great slave"
+          ],
+          "clue": "The deepest lake in North America"
+        }
+      ]
+    },
+    {
+      "id": "sci-brightest-stars",
+      "type": "ranked",
+      "domain": "science",
+      "obscurity": 3,
+      "difficulty": 4,
+      "tags": [],
+      "prompt": "Brightest stars in the night sky",
+      "metric": "Apparent magnitude as seen from Earth, excluding the Sun. Lower magnitude means brighter.",
+      "source": {
+        "name": "NASA - stars",
+        "url": "https://science.nasa.gov/universe/stars/"
+      },
+      "asOf": "2024-12-31",
+      "volatility": "evergreen",
+      "ambiguity": "Apparent brightness from Earth, not actual luminosity — several of these only look bright because they are close. Multiple-star systems are ranked on their combined light.",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Sirius",
+          "value": -1.46,
+          "aliases": [
+            "dog star",
+            "alpha canis majoris"
+          ],
+          "clue": "Only 8.6 light years away, and the brightest in the whole sky"
+        },
+        {
+          "rank": 2,
+          "name": "Canopus",
+          "value": -0.74,
+          "aliases": [],
+          "clue": "Long used for spacecraft navigation, and invisible from most of Europe"
+        },
+        {
+          "rank": 3,
+          "name": "Alpha Centauri",
+          "value": -0.27,
+          "aliases": [
+            "rigil kentaurus",
+            "alpha cen"
+          ],
+          "clue": "The closest star system to our own"
+        },
+        {
+          "rank": 4,
+          "name": "Arcturus",
+          "value": -0.05,
+          "aliases": [],
+          "clue": "Orange, and the brightest in the northern sky"
+        },
+        {
+          "rank": 5,
+          "name": "Vega",
+          "value": 0.03,
+          "aliases": [],
+          "clue": "Was the zero point of the magnitude scale"
+        },
+        {
+          "rank": 6,
+          "name": "Capella",
+          "value": 0.08,
+          "aliases": [],
+          "clue": "Actually four stars, in the constellation of the charioteer"
+        },
+        {
+          "rank": 7,
+          "name": "Rigel",
+          "value": 0.13,
+          "aliases": [],
+          "clue": "A blue supergiant marking a hunter's foot"
+        },
+        {
+          "rank": 8,
+          "name": "Procyon",
+          "value": 0.34,
+          "aliases": [],
+          "clue": "Eleven light years away, and rises just before a brighter neighbour each winter"
+        },
+        {
+          "rank": 9,
+          "name": "Achernar",
+          "value": 0.46,
+          "aliases": [],
+          "clue": "Spins so fast it is visibly flattened"
+        },
+        {
+          "rank": 10,
+          "name": "Betelgeuse",
+          "value": 0.5,
+          "aliases": [],
+          "clue": "A red supergiant that dimmed dramatically in 2019"
+        }
+      ]
+    },
+    {
+      "id": "sci-atmosphere-gases",
+      "type": "ranked",
+      "domain": "science",
+      "obscurity": 2,
+      "difficulty": 4,
+      "tags": [],
+      "prompt": "Most abundant gases in Earth's atmosphere",
+      "metric": "Share of dry air by volume, as a percentage.",
+      "source": {
+        "name": "NOAA - composition of the atmosphere",
+        "url": "https://www.noaa.gov/"
+      },
+      "asOf": "2024-12-31",
+      "volatility": "evergreen",
+      "ambiguity": "Measured for dry air. Water vapour varies from almost nothing to about 4% by volume and would rank third where it is abundant, so it is excluded by convention.",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Nitrogen",
+          "value": 78.08,
+          "aliases": [],
+          "clue": "Nearly four fifths of the air, and mostly unreactive"
+        },
+        {
+          "rank": 2,
+          "name": "Oxygen",
+          "value": 20.95,
+          "aliases": [],
+          "clue": "Produced by photosynthesis, and absent before life"
+        },
+        {
+          "rank": 3,
+          "name": "Argon",
+          "value": 0.93,
+          "aliases": [],
+          "clue": "A noble gas, and used to fill light bulbs"
+        },
+        {
+          "rank": 4,
+          "name": "Carbon dioxide",
+          "value": 0.042,
+          "aliases": [
+            "co2"
+          ],
+          "clue": "Traps heat, and rising every year"
+        },
+        {
+          "rank": 5,
+          "name": "Neon",
+          "value": 0.0018,
+          "aliases": [],
+          "clue": "Glows orange-red in a discharge tube"
+        },
+        {
+          "rank": 6,
+          "name": "Helium",
+          "value": 0.00052,
+          "aliases": [],
+          "clue": "Escapes to space, and was found in the Sun before on Earth"
+        },
+        {
+          "rank": 7,
+          "name": "Methane",
+          "value": 0.00019,
+          "aliases": [
+            "ch4"
+          ],
+          "clue": "A far stronger greenhouse gas than the fourth on this list"
+        },
+        {
+          "rank": 8,
+          "name": "Krypton",
+          "value": 0.00011,
+          "aliases": [],
+          "clue": "A noble gas that shares its name with a fictional planet"
+        },
+        {
+          "rank": 9,
+          "name": "Hydrogen",
+          "value": 0.000055,
+          "aliases": [],
+          "clue": "The lightest element, and too light to stay in the atmosphere"
+        },
+        {
+          "rank": 10,
+          "name": "Nitrous oxide",
+          "value": 0.000033,
+          "aliases": [
+            "n2o",
+            "laughing gas"
+          ],
+          "clue": "An anaesthetic, and also a greenhouse gas"
+        }
+      ]
+    },
+    {
+      "id": "hist-uk-pms-recent",
+      "type": "recency",
+      "domain": "history",
+      "obscurity": 2,
+      "difficulty": 3,
+      "tags": [],
+      "prompt": "The ten most recent British prime ministers",
+      "metric": "The ten most recent people to hold the office, most recent first. People, not ministries.",
+      "source": {
+        "name": "GOV.UK - past prime ministers",
+        "url": "https://www.gov.uk/government/history/past-prime-ministers"
+      },
+      "asOf": "2026-07",
+      "volatility": "annual",
+      "generator": {
+        "template": "recent-holders",
+        "entity": "Prime Minister of the United Kingdom"
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "label": "2026",
+          "name": "Andy Burnham",
+          "aliases": [
+            "burnham"
+          ],
+          "clue": "Came to the office from a metropolitan mayoralty"
+        },
+        {
+          "rank": 2,
+          "label": "2024",
+          "name": "Keir Starmer",
+          "aliases": [
+            "starmer"
+          ],
+          "clue": "A former director of public prosecutions"
+        },
+        {
+          "rank": 3,
+          "label": "2022",
+          "name": "Rishi Sunak",
+          "aliases": [
+            "sunak"
+          ],
+          "clue": "A former chancellor, and the first British Asian to hold the office"
+        },
+        {
+          "rank": 4,
+          "label": "2022",
+          "name": "Liz Truss",
+          "aliases": [
+            "truss"
+          ],
+          "clue": "Lasted forty-nine days"
+        },
+        {
+          "rank": 5,
+          "label": "2019",
+          "name": "Boris Johnson",
+          "aliases": [
+            "boris"
+          ],
+          "clue": "A former mayor of London"
+        },
+        {
+          "rank": 6,
+          "label": "2016",
+          "name": "Theresa May",
+          "aliases": [
+            "may"
+          ],
+          "clue": "A former home secretary, and took office after a referendum"
+        },
+        {
+          "rank": 7,
+          "label": "2010",
+          "name": "David Cameron",
+          "aliases": [
+            "cameron"
+          ],
+          "clue": "Led a coalition government, and called that referendum"
+        },
+        {
+          "rank": 8,
+          "label": "2007",
+          "name": "Gordon Brown",
+          "aliases": [
+            "brown"
+          ],
+          "clue": "Chancellor for ten years first"
+        },
+        {
+          "rank": 9,
+          "label": "1997",
+          "name": "Tony Blair",
+          "aliases": [
+            "blair"
+          ],
+          "clue": "Won three general elections"
+        },
+        {
+          "rank": 10,
+          "label": "1990",
+          "name": "John Major",
+          "aliases": [
+            "major"
+          ],
+          "clue": "Took over from Britain's first woman prime minister"
+        }
+      ]
+    },
+    {
+      "id": "geo-populous-cities",
+      "type": "ranked",
+      "domain": "geography",
+      "obscurity": 1,
+      "difficulty": 4,
+      "tags": [],
+      "prompt": "Most populous cities in the world",
+      "metric": "Population of the urban agglomeration — the built-up area and its suburbs, regardless of municipal boundaries.",
+      "source": {
+        "name": "UN - World Urbanization Prospects",
+        "url": "https://population.un.org/wup/"
+      },
+      "asOf": "2025-12-31",
+      "volatility": "annual",
+      "confidence": {
+        "level": "partial",
+        "note": "The leading cities are firm. Places seven to ten are close and depend on where the agglomeration boundary is drawn, so their order is my best judgment."
+      },
+      "ambiguity": "By urban agglomeration. Ranked by city proper — the municipality alone — a very different ten appears, led by Chinese cities with vast administrative areas.",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Tokyo",
+          "value": null,
+          "aliases": [],
+          "clue": "Has led this ranking for decades, and is now shrinking"
+        },
+        {
+          "rank": 2,
+          "name": "Delhi",
+          "value": null,
+          "aliases": [
+            "new delhi"
+          ],
+          "clue": "Likely to take first place within a decade"
+        },
+        {
+          "rank": 3,
+          "name": "Shanghai",
+          "value": null,
+          "aliases": [],
+          "clue": "A port at the mouth of a great river"
+        },
+        {
+          "rank": 4,
+          "name": "Dhaka",
+          "value": null,
+          "aliases": [],
+          "clue": "One of the densest large cities on Earth"
+        },
+        {
+          "rank": 5,
+          "name": "Sao Paulo",
+          "value": null,
+          "aliases": [
+            "sao paolo"
+          ],
+          "clue": "The largest in the southern hemisphere"
+        },
+        {
+          "rank": 6,
+          "name": "Cairo",
+          "value": null,
+          "aliases": [],
+          "clue": "On a river, beside ancient tombs"
+        },
+        {
+          "rank": 7,
+          "name": "Mexico City",
+          "value": null,
+          "aliases": [
+            "ciudad de mexico",
+            "cdmx"
+          ],
+          "clue": "Built on a drained lake bed, and sinking"
+        },
+        {
+          "rank": 8,
+          "name": "Beijing",
+          "value": null,
+          "aliases": [
+            "peking"
+          ],
+          "clue": "A capital with a forbidden palace at its centre"
+        },
+        {
+          "rank": 9,
+          "name": "Mumbai",
+          "value": null,
+          "aliases": [
+            "bombay"
+          ],
+          "clue": "Built on what were seven islands"
+        },
+        {
+          "rank": 10,
+          "name": "Osaka",
+          "value": null,
+          "aliases": [],
+          "clue": "Second city of an island nation, and known for food"
+        }
+      ]
     }
   ]
 }

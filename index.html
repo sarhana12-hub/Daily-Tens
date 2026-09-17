@@ -316,6 +316,10 @@ const WEAK = new Set([
   'democratic', 'people', 'peoples', 'new', 'old', 'saint', 'north', 'south',
   'east', 'west', 'national', 'university', 'football', 'club', 'the',
   'desert', 'deserts', 'great',
+  // Generic components of building, company and place names.
+  'tower', 'towers', 'centre', 'center', 'finance', 'financial', 'world',
+  'trade', 'royal', 'international', 'building', 'group', 'holdings',
+  'company', 'corporation', 'platforms', 'health',
   'after', 'with', 'from', 'into', 'over', 'under', 'once', 'all', 'and',
   'for', 'that', 'this', 'when', 'what', 'which', 'battle',
 ]);
@@ -515,6 +519,14 @@ const HINT_BUDGET = 5;
 // can name the tenth largest.
 const OBSCURITY = { 1: 'common knowledge', 2: 'follows the news', 3: 'knows the field', 4: 'enthusiast', 5: 'specialist' };
 const DIFFICULTY = { 1: 'gentle', 2: 'straightforward', 3: 'testing', 4: 'hard', 5: 'brutal' };
+
+// Not every list can be nailed down from a source that publishes the exact
+// ten. Where judgment was used, the player is told so after the quiz — the
+// alternative was shipping nothing, or shipping a guess and hiding it.
+const CONFIDENCE = {
+  partial: 'Mostly confirmed, with some judgment at the edges.',
+  judgment: 'Assembled with judgment rather than from a single published ten.',
+};
 
 function startGame(puzzle, challenge) {
   game = {
@@ -839,6 +851,9 @@ function viewResult() {
       <span style="color:${score > ch.score ? 'var(--mint)' : score < ch.score ? 'var(--coral)' : 'var(--gold)'};font-weight:700">
         ${score > ch.score ? 'You win' : score < ch.score ? 'They win' : 'Tie'}</span>
     </div>` : ''}
+    ${p.confidence ? `<div class="note" style="background:var(--gold-soft);border-color:rgba(228,185,94,.25);margin-top:16px">
+      <b>Sourcing note.</b> ${esc(CONFIDENCE[p.confidence.level] || '')}${p.confidence.note ? ' ' + esc(p.confidence.note) : ''}
+    </div>` : ''}
     <h2 class="sec">The full ten</h2>
     ${slotsHtml(p, game.found, true, game.hinted, false)}
     <button class="btn btn-ghost btn-block btn-sm" id="open-source">ⓘ Metric &amp; source</button>
@@ -868,7 +883,8 @@ function viewSheet() {
       <div class="kv"><b>Source</b><span>${esc(p.source.name)}<br><a href="${esc(p.source.url)}" target="_blank" rel="noopener">${esc(p.source.url)}</a></span></div>
       <div class="kv"><b>Data as of</b><span>${esc(fmtDate(p.asOf))}</span></div>
       ${p.ambiguity && over ? `<div class="kv"><b>Known disagreement</b><span>${esc(p.ambiguity)}</span></div>` : ''}
-      ${p.ambiguity && !over ? `<div class="kv"><b>Known disagreement</b><span style="color:var(--ink-dim)">There is one for this list. It names answers, so it's shown when the quiz ends.</span></div>` : ''}`;
+      ${p.ambiguity && !over ? `<div class="kv"><b>Known disagreement</b><span style="color:var(--ink-dim)">There is one for this list. It names answers, so it's shown when the quiz ends.</span></div>` : ''}
+      ${p.confidence && over ? `<div class="kv"><b>How solid is this list</b><span>${esc(CONFIDENCE[p.confidence.level] || p.confidence.level)}${p.confidence.note ? '<br>' + esc(p.confidence.note) : ''}</span></div>` : ''}`;
   } else if (sheet === 'pick') {
     // No counts anywhere, and categories with nothing in them are simply
     // absent rather than shown greyed out. The catalogue should feel
