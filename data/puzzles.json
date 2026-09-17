@@ -16081,15 +16081,6 @@
         },
         {
           "rank": 5,
-          "name": "Mexican free-tailed bat",
-          "value": 160,
-          "aliases": [
-            "free tailed bat"
-          ],
-          "clue": "Not a bird at all, and often cited in these lists by mistake"
-        },
-        {
-          "rank": 6,
           "name": "Frigatebird",
           "value": 153,
           "aliases": [
@@ -16098,7 +16089,7 @@
           "clue": "Steals food from other seabirds in mid-air"
         },
         {
-          "rank": 7,
+          "rank": 6,
           "name": "Rock dove",
           "value": 148,
           "aliases": [
@@ -16108,7 +16099,7 @@
           "clue": "The ordinary city bird, and faster than it looks"
         },
         {
-          "rank": 8,
+          "rank": 7,
           "name": "Spur-winged goose",
           "value": 142,
           "aliases": [
@@ -16117,7 +16108,7 @@
           "clue": "African, and carries spurs on its wings"
         },
         {
-          "rank": 9,
+          "rank": 8,
           "name": "Red-breasted merganser",
           "value": 129,
           "aliases": [
@@ -16126,18 +16117,27 @@
           "clue": "A diving duck with a ragged crest"
         },
         {
-          "rank": 10,
+          "rank": 9,
           "name": "Grey-headed albatross",
           "value": 127,
           "aliases": [
             "albatross"
           ],
           "clue": "Recorded in a storm in the Southern Ocean"
+        },
+        {
+          "rank": 10,
+          "name": "Canvasback",
+          "value": 116,
+          "aliases": [
+            "canvasback duck"
+          ],
+          "clue": "A North American diving duck, and very fast in level flight"
         }
       ],
       "confidence": {
-        "level": "judgment",
-        "note": "Bird speed records mix dives, level flight and storm-assisted flight, and one widely-quoted entry is not a bird. Treat the order as indicative."
+        "level": "partial",
+        "note": "Bird speed records mix dives with level flight and are unevenly measured, so the order is my best judgment. Every entry is now actually a bird."
       }
     },
     {
