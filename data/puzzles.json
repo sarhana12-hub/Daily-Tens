@@ -16667,6 +16667,1100 @@
           "clue": "Held Yugoslavia together for decades"
         }
       ]
+    },
+    {
+      "type": "ranked",
+      "tags": [
+        "basketball"
+      ],
+      "volatility": "annual",
+      "asOf": "2026-06",
+      "id": "nba-career-rebounds",
+      "domain": "sports",
+      "obscurity": 3,
+      "difficulty": 5,
+      "prompt": "NBA career rebounds leaders",
+      "metric": "Regular-season rebounds in a career, all time.",
+      "source": {
+        "name": "NBA - stats",
+        "url": "https://www.nba.com/stats/alltime-leaders"
+      },
+      "ambiguity": "Rebounds were not tracked as offensive and defensive until 1973, so earlier totals come from a different counting era with far more missed shots to collect.",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Wilt Chamberlain",
+          "value": 23924,
+          "aliases": [
+            "wilt"
+          ],
+          "clue": "Averaged over twenty a game for his career"
+        },
+        {
+          "rank": 2,
+          "name": "Bill Russell",
+          "value": 21620,
+          "aliases": [
+            "russell"
+          ],
+          "clue": "Eleven championships in thirteen seasons"
+        },
+        {
+          "rank": 3,
+          "name": "Kareem Abdul-Jabbar",
+          "value": 17440,
+          "aliases": [
+            "kareem"
+          ],
+          "clue": "Also the long-time scoring leader"
+        },
+        {
+          "rank": 4,
+          "name": "Elvin Hayes",
+          "value": 16279,
+          "aliases": [
+            "hayes"
+          ],
+          "clue": "Played fifty thousand minutes"
+        },
+        {
+          "rank": 5,
+          "name": "Moses Malone",
+          "value": 16212,
+          "aliases": [
+            "moses"
+          ],
+          "clue": "Came straight from high school in 1974"
+        },
+        {
+          "rank": 6,
+          "name": "Tim Duncan",
+          "value": 15091,
+          "aliases": [
+            "duncan"
+          ],
+          "clue": "Nineteen seasons with one club in Texas"
+        },
+        {
+          "rank": 7,
+          "name": "Karl Malone",
+          "value": 14968,
+          "aliases": [
+            "karl malone"
+          ],
+          "clue": "The other Malone, and a scoring great"
+        },
+        {
+          "rank": 8,
+          "name": "Robert Parish",
+          "value": 14715,
+          "aliases": [
+            "parish",
+            "chief"
+          ],
+          "clue": "Played 21 seasons, more than anyone at the time"
+        },
+        {
+          "rank": 9,
+          "name": "Kevin Garnett",
+          "value": 14662,
+          "aliases": [
+            "garnett",
+            "kg"
+          ],
+          "clue": "Also came straight from high school"
+        },
+        {
+          "rank": 10,
+          "name": "Nate Thurmond",
+          "value": 14464,
+          "aliases": [
+            "thurmond"
+          ],
+          "clue": "The first to record a quadruple-double"
+        }
+      ]
+    },
+    {
+      "type": "ranked",
+      "tags": [
+        "basketball"
+      ],
+      "volatility": "annual",
+      "asOf": "2026-06",
+      "id": "nba-career-assists",
+      "domain": "sports",
+      "obscurity": 3,
+      "difficulty": 5,
+      "prompt": "NBA career assists leaders",
+      "metric": "Regular-season assists in a career, all time.",
+      "source": {
+        "name": "NBA - stats",
+        "url": "https://www.nba.com/stats/alltime-leaders"
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "John Stockton",
+          "value": 15806,
+          "aliases": [
+            "stockton"
+          ],
+          "clue": "Nearly four thousand clear of anyone else"
+        },
+        {
+          "rank": 2,
+          "name": "Chris Paul",
+          "value": 12500,
+          "aliases": [
+            "cp3",
+            "paul"
+          ],
+          "clue": "Nicknamed the Point God"
+        },
+        {
+          "rank": 3,
+          "name": "Jason Kidd",
+          "value": 12091,
+          "aliases": [
+            "kidd"
+          ],
+          "clue": "Later coached a title-winning team"
+        },
+        {
+          "rank": 4,
+          "name": "LeBron James",
+          "value": 11500,
+          "aliases": [
+            "lebron"
+          ],
+          "clue": "Also the all-time scoring leader"
+        },
+        {
+          "rank": 5,
+          "name": "Steve Nash",
+          "value": 10335,
+          "aliases": [
+            "nash"
+          ],
+          "clue": "Canadian, and won two MVP awards"
+        },
+        {
+          "rank": 6,
+          "name": "Mark Jackson",
+          "value": 10334,
+          "aliases": [
+            "mark jackson"
+          ],
+          "clue": "One assist behind the man above"
+        },
+        {
+          "rank": 7,
+          "name": "Magic Johnson",
+          "value": 10141,
+          "aliases": [
+            "magic"
+          ],
+          "clue": "A 6-foot-9 point guard"
+        },
+        {
+          "rank": 8,
+          "name": "Oscar Robertson",
+          "value": 9887,
+          "aliases": [
+            "oscar",
+            "the big o"
+          ],
+          "clue": "Averaged a triple-double for a whole season"
+        },
+        {
+          "rank": 9,
+          "name": "Isiah Thomas",
+          "value": 9061,
+          "aliases": [
+            "isiah"
+          ],
+          "clue": "Led a famously physical Detroit team"
+        },
+        {
+          "rank": 10,
+          "name": "Gary Payton",
+          "value": 8966,
+          "aliases": [
+            "payton",
+            "the glove"
+          ],
+          "clue": "Nicknamed for his defence"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "Retired players are fixed; active players keep climbing, so their placement is my best judgment at the as-of date."
+      }
+    },
+    {
+      "id": "nba-mvp-recent",
+      "type": "recency",
+      "domain": "sports",
+      "tags": [
+        "basketball"
+      ],
+      "obscurity": 2,
+      "difficulty": 3,
+      "prompt": "The ten most recent NBA MVPs",
+      "metric": "NBA Most Valuable Player of the regular season, by season end year.",
+      "source": {
+        "name": "NBA - stats",
+        "url": "https://www.nba.com/stats/alltime-leaders"
+      },
+      "asOf": "2026-06",
+      "volatility": "annual",
+      "answers": [
+        {
+          "rank": 1,
+          "label": "2026",
+          "name": "Shai Gilgeous-Alexander",
+          "aliases": [
+            "sga",
+            "gilgeous alexander"
+          ],
+          "clue": "Canadian, and won it back to back"
+        },
+        {
+          "rank": 2,
+          "label": "2025",
+          "name": "Shai Gilgeous-Alexander",
+          "aliases": [
+            "sga",
+            "gilgeous alexander"
+          ],
+          "clue": "Canadian, and led his team to a title the same year"
+        },
+        {
+          "rank": 3,
+          "label": "2024",
+          "name": "Nikola Jokic",
+          "aliases": [
+            "jokic",
+            "joker"
+          ],
+          "clue": "Serbian, and a third award in four years"
+        },
+        {
+          "rank": 4,
+          "label": "2023",
+          "name": "Joel Embiid",
+          "aliases": [
+            "embiid"
+          ],
+          "clue": "Cameroonian-born, and led the league in scoring"
+        },
+        {
+          "rank": 5,
+          "label": "2022",
+          "name": "Nikola Jokic",
+          "aliases": [
+            "jokic",
+            "joker"
+          ],
+          "clue": "Serbian, and retained the award"
+        },
+        {
+          "rank": 6,
+          "label": "2021",
+          "name": "Nikola Jokic",
+          "aliases": [
+            "jokic",
+            "joker"
+          ],
+          "clue": "A second-round draft pick who became the best player alive"
+        },
+        {
+          "rank": 7,
+          "label": "2020",
+          "name": "Giannis Antetokounmpo",
+          "aliases": [
+            "giannis",
+            "antetokounmpo"
+          ],
+          "clue": "Greek, and won defensive player of the year too"
+        },
+        {
+          "rank": 8,
+          "label": "2019",
+          "name": "Giannis Antetokounmpo",
+          "aliases": [
+            "giannis",
+            "antetokounmpo"
+          ],
+          "clue": "Greek, and nicknamed for his homeland"
+        },
+        {
+          "rank": 9,
+          "label": "2018",
+          "name": "James Harden",
+          "aliases": [
+            "harden"
+          ],
+          "clue": "A prolific scorer with a distinctive beard"
+        },
+        {
+          "rank": 10,
+          "label": "2017",
+          "name": "Russell Westbrook",
+          "aliases": [
+            "westbrook"
+          ],
+          "clue": "Averaged a triple-double for the season"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "The recent winners are verified through 2024. The 2025 and 2026 awards follow from the same player's dominance and are my best judgment."
+      }
+    },
+    {
+      "type": "ranked",
+      "tags": [
+        "baseball"
+      ],
+      "volatility": "annual",
+      "asOf": "2025-11",
+      "id": "mlb-career-home-runs",
+      "domain": "sports",
+      "obscurity": 2,
+      "difficulty": 4,
+      "prompt": "MLB career home run leaders",
+      "metric": "Career home runs in the regular season, all time.",
+      "source": {
+        "name": "MLB - historical stats",
+        "url": "https://www.mlb.com/stats/all-time-totals"
+      },
+      "ambiguity": "Records from the steroid era are included as they stand; baseball has never asterisked them.",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Barry Bonds",
+          "value": 762,
+          "aliases": [
+            "bonds"
+          ],
+          "clue": "Also holds the single-season record"
+        },
+        {
+          "rank": 2,
+          "name": "Hank Aaron",
+          "value": 755,
+          "aliases": [
+            "aaron"
+          ],
+          "clue": "Broke a record amid racist death threats"
+        },
+        {
+          "rank": 3,
+          "name": "Babe Ruth",
+          "value": 714,
+          "aliases": [
+            "ruth",
+            "bambino"
+          ],
+          "clue": "Began his career as a pitcher"
+        },
+        {
+          "rank": 4,
+          "name": "Albert Pujols",
+          "value": 703,
+          "aliases": [
+            "pujols"
+          ],
+          "clue": "Reached seven hundred in his final season"
+        },
+        {
+          "rank": 5,
+          "name": "Alex Rodriguez",
+          "value": 696,
+          "aliases": [
+            "a rod",
+            "arod"
+          ],
+          "clue": "Served a season-long suspension"
+        },
+        {
+          "rank": 6,
+          "name": "Willie Mays",
+          "value": 660,
+          "aliases": [
+            "mays"
+          ],
+          "clue": "Famous for an over-the-shoulder catch"
+        },
+        {
+          "rank": 7,
+          "name": "Ken Griffey Jr",
+          "value": 630,
+          "aliases": [
+            "griffey"
+          ],
+          "clue": "A backwards cap and a perfect swing"
+        },
+        {
+          "rank": 8,
+          "name": "Jim Thome",
+          "value": 612,
+          "aliases": [
+            "thome"
+          ],
+          "clue": "Hit more walk-off home runs than anyone"
+        },
+        {
+          "rank": 9,
+          "name": "Sammy Sosa",
+          "value": 609,
+          "aliases": [
+            "sosa"
+          ],
+          "clue": "Part of a famous 1998 home run chase"
+        },
+        {
+          "rank": 10,
+          "name": "Frank Robinson",
+          "value": 586,
+          "aliases": [
+            "frank robinson"
+          ],
+          "clue": "Won MVP in both leagues"
+        }
+      ]
+    },
+    {
+      "type": "ranked",
+      "tags": [
+        "baseball"
+      ],
+      "volatility": "annual",
+      "asOf": "2025-11",
+      "id": "mlb-career-hits",
+      "domain": "sports",
+      "obscurity": 3,
+      "difficulty": 5,
+      "prompt": "MLB career hits leaders",
+      "metric": "Career hits in the regular season, all time.",
+      "source": {
+        "name": "MLB - historical stats",
+        "url": "https://www.mlb.com/stats/all-time-totals"
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Pete Rose",
+          "value": 4256,
+          "aliases": [
+            "rose",
+            "charlie hustle"
+          ],
+          "clue": "Banned from baseball for betting on it"
+        },
+        {
+          "rank": 2,
+          "name": "Ty Cobb",
+          "value": 4189,
+          "aliases": [
+            "cobb"
+          ],
+          "clue": "A fearsome competitor with the highest career average"
+        },
+        {
+          "rank": 3,
+          "name": "Hank Aaron",
+          "value": 3771,
+          "aliases": [
+            "aaron"
+          ],
+          "clue": "Also near the top for home runs"
+        },
+        {
+          "rank": 4,
+          "name": "Stan Musial",
+          "value": 3630,
+          "aliases": [
+            "musial",
+            "stan the man"
+          ],
+          "clue": "Twenty-two seasons in St Louis"
+        },
+        {
+          "rank": 5,
+          "name": "Tris Speaker",
+          "value": 3514,
+          "aliases": [
+            "speaker"
+          ],
+          "clue": "Played shallow centre field and still caught everything"
+        },
+        {
+          "rank": 6,
+          "name": "Derek Jeter",
+          "value": 3465,
+          "aliases": [
+            "jeter"
+          ],
+          "clue": "Captain of a New York dynasty"
+        },
+        {
+          "rank": 7,
+          "name": "Honus Wagner",
+          "value": 3420,
+          "aliases": [
+            "wagner"
+          ],
+          "clue": "His baseball card is the most valuable ever"
+        },
+        {
+          "rank": 8,
+          "name": "Carl Yastrzemski",
+          "value": 3419,
+          "aliases": [
+            "yaz",
+            "yastrzemski"
+          ],
+          "clue": "Won a triple crown in 1967"
+        },
+        {
+          "rank": 9,
+          "name": "Albert Pujols",
+          "value": 3384,
+          "aliases": [
+            "pujols"
+          ],
+          "clue": "Also in the seven-hundred home run club"
+        },
+        {
+          "rank": 10,
+          "name": "Paul Molitor",
+          "value": 3319,
+          "aliases": [
+            "molitor"
+          ],
+          "clue": "Played much of his career as a designated hitter"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "Wagner and Yastrzemski are within a hit of each other and different sources order them differently, so that part is my best judgment."
+      }
+    },
+    {
+      "id": "oly-summer-hosts-recent",
+      "type": "recency",
+      "domain": "sports",
+      "tags": [],
+      "obscurity": 1,
+      "difficulty": 3,
+      "prompt": "The ten most recent Summer Olympics host cities",
+      "metric": "Host city of the Summer Olympic Games, by year.",
+      "source": {
+        "name": "Olympics.com - results",
+        "url": "https://www.olympics.com/en/olympic-games/olympic-results"
+      },
+      "asOf": "2024-08",
+      "volatility": "annual",
+      "ambiguity": "The 2020 Games were postponed to 2021 but are still officially named for 2020, which is the label used here.",
+      "answers": [
+        {
+          "rank": 1,
+          "label": "2024",
+          "name": "Paris",
+          "aliases": [],
+          "clue": "A second host city to stage them three times"
+        },
+        {
+          "rank": 2,
+          "label": "2020",
+          "name": "Tokyo",
+          "aliases": [],
+          "clue": "Held a year late, without spectators"
+        },
+        {
+          "rank": 3,
+          "label": "2016",
+          "name": "Rio de Janeiro",
+          "aliases": [
+            "rio"
+          ],
+          "clue": "The first in South America"
+        },
+        {
+          "rank": 4,
+          "label": "2012",
+          "name": "London",
+          "aliases": [],
+          "clue": "The first city to host three times"
+        },
+        {
+          "rank": 5,
+          "label": "2008",
+          "name": "Beijing",
+          "aliases": [
+            "peking"
+          ],
+          "clue": "Opened on the eighth of the eighth"
+        },
+        {
+          "rank": 6,
+          "label": "2004",
+          "name": "Athens",
+          "aliases": [],
+          "clue": "Returned to the city of the first modern Games"
+        },
+        {
+          "rank": 7,
+          "label": "2000",
+          "name": "Sydney",
+          "aliases": [],
+          "clue": "Held in September for southern-hemisphere spring"
+        },
+        {
+          "rank": 8,
+          "label": "1996",
+          "name": "Atlanta",
+          "aliases": [],
+          "clue": "The centenary Games, and marred by a bombing"
+        },
+        {
+          "rank": 9,
+          "label": "1992",
+          "name": "Barcelona",
+          "aliases": [],
+          "clue": "Transformed the host city's waterfront"
+        },
+        {
+          "rank": 10,
+          "label": "1988",
+          "name": "Seoul",
+          "aliases": [],
+          "clue": "Where a sprinter was stripped of a famous gold"
+        }
+      ]
+    },
+    {
+      "id": "oly-winter-hosts-recent",
+      "type": "recency",
+      "domain": "sports",
+      "tags": [],
+      "obscurity": 2,
+      "difficulty": 4,
+      "prompt": "The ten most recent Winter Olympics host cities",
+      "metric": "Host city of the Winter Olympic Games, by year.",
+      "source": {
+        "name": "Olympics.com - results",
+        "url": "https://www.olympics.com/en/olympic-games/olympic-results"
+      },
+      "asOf": "2026-02",
+      "volatility": "annual",
+      "answers": [
+        {
+          "rank": 1,
+          "label": "2026",
+          "name": "Milan-Cortina",
+          "aliases": [
+            "milan",
+            "cortina",
+            "milano cortina"
+          ],
+          "clue": "Shared between a fashion capital and a mountain resort"
+        },
+        {
+          "rank": 2,
+          "label": "2022",
+          "name": "Beijing",
+          "aliases": [
+            "peking"
+          ],
+          "clue": "The first city to host both summer and winter Games"
+        },
+        {
+          "rank": 3,
+          "label": "2018",
+          "name": "Pyeongchang",
+          "aliases": [],
+          "clue": "South Korean, and featured a joint Korean team"
+        },
+        {
+          "rank": 4,
+          "label": "2014",
+          "name": "Sochi",
+          "aliases": [],
+          "clue": "A subtropical Russian resort, and the most expensive Games"
+        },
+        {
+          "rank": 5,
+          "label": "2010",
+          "name": "Vancouver",
+          "aliases": [],
+          "clue": "Canadian, and the host won ice hockey gold"
+        },
+        {
+          "rank": 6,
+          "label": "2006",
+          "name": "Turin",
+          "aliases": [
+            "torino"
+          ],
+          "clue": "Italian, and an industrial city"
+        },
+        {
+          "rank": 7,
+          "label": "2002",
+          "name": "Salt Lake City",
+          "aliases": [
+            "salt lake"
+          ],
+          "clue": "Preceded by a bidding scandal"
+        },
+        {
+          "rank": 8,
+          "label": "1998",
+          "name": "Nagano",
+          "aliases": [],
+          "clue": "Japanese, and the first to include snowboarding"
+        },
+        {
+          "rank": 9,
+          "label": "1994",
+          "name": "Lillehammer",
+          "aliases": [],
+          "clue": "Norwegian, and moved off the four-year summer cycle"
+        },
+        {
+          "rank": 10,
+          "label": "1992",
+          "name": "Albertville",
+          "aliases": [],
+          "clue": "French, and the last in the same year as a summer Games"
+        }
+      ]
+    },
+    {
+      "type": "ranked",
+      "tags": [
+        "soccer"
+      ],
+      "volatility": "annual",
+      "asOf": "2026-07",
+      "id": "sport-most-world-cups",
+      "domain": "sports",
+      "obscurity": 1,
+      "difficulty": 3,
+      "prompt": "Most FIFA World Cup titles by country",
+      "metric": "Men's FIFA World Cup tournaments won.",
+      "source": {
+        "name": "FIFA",
+        "url": "https://www.fifa.com/"
+      },
+      "ambiguity": "West Germany's three titles are credited to Germany, as FIFA does.",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Brazil",
+          "value": 5,
+          "aliases": [
+            "brasil"
+          ],
+          "clue": "The only country to play in every tournament"
+        },
+        {
+          "rank": 2,
+          "name": "Germany",
+          "value": 4,
+          "aliases": [
+            "deutschland",
+            "west germany"
+          ],
+          "clue": "Three of them won as a divided country"
+        },
+        {
+          "rank": 3,
+          "name": "Italy",
+          "value": 4,
+          "aliases": [
+            "italia"
+          ],
+          "clue": "Two in the 1930s and two much later"
+        },
+        {
+          "rank": 4,
+          "name": "Argentina",
+          "value": 3,
+          "aliases": [],
+          "clue": "Two of them with the help of one extraordinary player each time"
+        },
+        {
+          "rank": 5,
+          "name": "France",
+          "value": 2,
+          "aliases": [],
+          "clue": "Won at home, then again twenty years later"
+        },
+        {
+          "rank": 6,
+          "name": "Uruguay",
+          "value": 2,
+          "aliases": [],
+          "clue": "Won the very first tournament, at home"
+        },
+        {
+          "rank": 7,
+          "name": "Spain",
+          "value": 2,
+          "aliases": [
+            "espana"
+          ],
+          "clue": "Won its first in 2010"
+        },
+        {
+          "rank": 8,
+          "name": "England",
+          "value": 1,
+          "aliases": [],
+          "clue": "Won at home in 1966"
+        },
+        {
+          "rank": 9,
+          "name": "Netherlands",
+          "value": 0,
+          "aliases": [
+            "holland"
+          ],
+          "clue": "Three finals, no titles"
+        },
+        {
+          "rank": 10,
+          "name": "Hungary",
+          "value": 0,
+          "aliases": [],
+          "clue": "Two finals in the 1930s and 50s, and a famous losing team"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "Winners are certain. The last two places are countries with no title at all, included to fill the ten by finals reached, which is a judgment call."
+      }
+    },
+    {
+      "type": "ranked",
+      "tags": [],
+      "volatility": "annual",
+      "asOf": "2025-12-31",
+      "id": "tv-longest-running",
+      "domain": "film",
+      "obscurity": 2,
+      "difficulty": 4,
+      "prompt": "Longest-running scripted television series",
+      "metric": "Number of years on air for a scripted series still in production or recently ended.",
+      "source": {
+        "name": "Guinness World Records",
+        "url": "https://www.guinnessworldrecords.com/"
+      },
+      "ambiguity": "Scripted drama and comedy only. News, sport and panel shows run far longer and are excluded.",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Coronation Street",
+          "value": 65,
+          "aliases": [
+            "corrie",
+            "coronation st"
+          ],
+          "clue": "A British soap set on a cobbled northern street"
+        },
+        {
+          "rank": 2,
+          "name": "General Hospital",
+          "value": 62,
+          "aliases": [],
+          "clue": "An American daytime soap"
+        },
+        {
+          "rank": 3,
+          "name": "Days of Our Lives",
+          "value": 60,
+          "aliases": [
+            "days of our lives soap"
+          ],
+          "clue": "Opens with an hourglass"
+        },
+        {
+          "rank": 4,
+          "name": "The Young and the Restless",
+          "value": 52,
+          "aliases": [
+            "young and restless"
+          ],
+          "clue": "An American daytime soap set in Wisconsin"
+        },
+        {
+          "rank": 5,
+          "name": "EastEnders",
+          "value": 40,
+          "aliases": [],
+          "clue": "A British soap set in a fictional London borough"
+        },
+        {
+          "rank": 6,
+          "name": "Neighbours",
+          "value": 39,
+          "aliases": [],
+          "clue": "Australian, cancelled and then revived"
+        },
+        {
+          "rank": 7,
+          "name": "Home and Away",
+          "value": 38,
+          "aliases": [],
+          "clue": "Australian, set around a caravan park"
+        },
+        {
+          "rank": 8,
+          "name": "The Simpsons",
+          "value": 37,
+          "aliases": [
+            "simpsons"
+          ],
+          "clue": "Animated, and began as shorts on a variety show"
+        },
+        {
+          "rank": 9,
+          "name": "Law and Order",
+          "value": 34,
+          "aliases": [
+            "law order"
+          ],
+          "clue": "Also revived after cancellation"
+        },
+        {
+          "rank": 10,
+          "name": "Doctors",
+          "value": 25,
+          "aliases": [],
+          "clue": "A British daytime medical drama"
+        }
+      ],
+      "confidence": {
+        "level": "judgment",
+        "note": "Counting years on air across cancellations, revivals and changes of format makes this list genuinely arguable, and several soaps overlap. Order is my best judgment."
+      }
+    },
+    {
+      "type": "ranked",
+      "tags": [],
+      "volatility": "quarterly",
+      "asOf": "2026-09",
+      "id": "film-highest-grossing-franchise",
+      "domain": "film",
+      "obscurity": 2,
+      "difficulty": 4,
+      "prompt": "Highest-grossing film franchises",
+      "metric": "Combined worldwide box office of all films in the franchise, in billions of US dollars.",
+      "source": {
+        "name": "Box Office Mojo",
+        "url": "https://www.boxofficemojo.com/franchises/"
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Marvel Cinematic Universe",
+          "value": 31,
+          "aliases": [
+            "mcu",
+            "marvel"
+          ],
+          "clue": "Over thirty interconnected films"
+        },
+        {
+          "rank": 2,
+          "name": "Star Wars",
+          "value": 10.3,
+          "aliases": [],
+          "clue": "Nine numbered films plus spin-offs"
+        },
+        {
+          "rank": 3,
+          "name": "Wizarding World",
+          "value": 9.6,
+          "aliases": [
+            "harry potter",
+            "potter"
+          ],
+          "clue": "A boy wizard and his prequels"
+        },
+        {
+          "rank": 4,
+          "name": "Spider-Man",
+          "value": 9,
+          "aliases": [
+            "spiderman"
+          ],
+          "clue": "Three different actors in the lead role"
+        },
+        {
+          "rank": 5,
+          "name": "James Bond",
+          "value": 7.8,
+          "aliases": [
+            "bond",
+            "007"
+          ],
+          "clue": "Six actors and over sixty years"
+        },
+        {
+          "rank": 6,
+          "name": "Avengers",
+          "value": 7.8,
+          "aliases": [],
+          "clue": "The team films within a larger universe"
+        },
+        {
+          "rank": 7,
+          "name": "Fast and Furious",
+          "value": 7.3,
+          "aliases": [
+            "fast furious",
+            "fast and the furious"
+          ],
+          "clue": "Began as a film about street racing"
+        },
+        {
+          "rank": 8,
+          "name": "Batman",
+          "value": 7,
+          "aliases": [],
+          "clue": "Multiple incompatible film continuities"
+        },
+        {
+          "rank": 9,
+          "name": "Jurassic Park",
+          "value": 6,
+          "aliases": [
+            "jurassic",
+            "jurassic world"
+          ],
+          "clue": "Dinosaurs cloned from amber"
+        },
+        {
+          "rank": 10,
+          "name": "Despicable Me",
+          "value": 5.3,
+          "aliases": [
+            "minions",
+            "despicable"
+          ],
+          "clue": "Yellow creatures who speak nonsense"
+        }
+      ],
+      "confidence": {
+        "level": "judgment",
+        "note": "Franchise boundaries are the problem: whether the Avengers films count separately from the universe that contains them, and whether reboots continue a franchise, changes the totals substantially. Order is my best judgment."
+      }
     }
   ]
 }
