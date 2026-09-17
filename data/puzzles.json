@@ -23573,6 +23573,1121 @@
           "clue": "For an August Wilson adaptation"
         }
       ]
+    },
+    {
+      "type": "ranked",
+      "tags": [
+        "nfl"
+      ],
+      "volatility": "annual",
+      "asOf": "2026-02",
+      "id": "nfl-career-interceptions",
+      "domain": "sports",
+      "obscurity": 3,
+      "difficulty": 5,
+      "prompt": "NFL career interceptions leaders",
+      "metric": "Interceptions caught in a career, all time.",
+      "source": {
+        "name": "Pro Football Reference",
+        "url": "https://www.pro-football-reference.com/leaders/"
+      },
+      "ambiguity": "Passing rules have changed so much that this list is dominated by players from the 1950s to 1970s, when interceptions were far more common.",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Paul Krause",
+          "value": 81,
+          "aliases": [
+            "krause"
+          ],
+          "clue": "A safety, and the record has stood since 1979"
+        },
+        {
+          "rank": 2,
+          "name": "Emlen Tunnell",
+          "value": 79,
+          "aliases": [
+            "tunnell"
+          ],
+          "clue": "The first Black player inducted into the Hall of Fame"
+        },
+        {
+          "rank": 3,
+          "name": "Rod Woodson",
+          "value": 71,
+          "aliases": [
+            "woodson"
+          ],
+          "clue": "Played seventeen seasons at cornerback and safety"
+        },
+        {
+          "rank": 4,
+          "name": "Dick Lane",
+          "value": 68,
+          "aliases": [
+            "night train lane",
+            "dick lane"
+          ],
+          "clue": "Nicknamed Night Train, and set a rookie record"
+        },
+        {
+          "rank": 5,
+          "name": "Ken Riley",
+          "value": 65,
+          "aliases": [
+            "riley"
+          ],
+          "clue": "Cincinnati, and waited decades for Hall of Fame recognition"
+        },
+        {
+          "rank": 6,
+          "name": "Charles Woodson",
+          "value": 65,
+          "aliases": [
+            "charles woodson"
+          ],
+          "clue": "Won a Heisman as a defensive back"
+        },
+        {
+          "rank": 7,
+          "name": "Ed Reed",
+          "value": 64,
+          "aliases": [
+            "reed"
+          ],
+          "clue": "Baltimore, and returned interceptions enormous distances"
+        },
+        {
+          "rank": 8,
+          "name": "Ronnie Lott",
+          "value": 63,
+          "aliases": [
+            "lott"
+          ],
+          "clue": "Hit hard enough to be feared across the league"
+        },
+        {
+          "rank": 9,
+          "name": "Dave Brown",
+          "value": 62,
+          "aliases": [
+            "dave brown"
+          ],
+          "clue": "Played mostly in Seattle in the 1970s and 80s"
+        },
+        {
+          "rank": 10,
+          "name": "Darrell Green",
+          "value": 54,
+          "aliases": [
+            "green"
+          ],
+          "clue": "Twenty seasons in Washington, and famously fast"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "The top four are certain. Several defenders sit within a few interceptions of each other, so the lower order is my best judgment."
+      }
+    },
+    {
+      "type": "ranked",
+      "tags": [
+        "nfl"
+      ],
+      "volatility": "annual",
+      "asOf": "2026-02",
+      "id": "nfl-career-field-goals",
+      "domain": "sports",
+      "obscurity": 3,
+      "difficulty": 5,
+      "prompt": "NFL career field goals leaders",
+      "metric": "Field goals made in a career, all time.",
+      "source": {
+        "name": "Pro Football Reference",
+        "url": "https://www.pro-football-reference.com/leaders/"
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Adam Vinatieri",
+          "value": 599,
+          "aliases": [
+            "vinatieri"
+          ],
+          "clue": "Twenty-four seasons, and famous for kicks in the snow"
+        },
+        {
+          "rank": 2,
+          "name": "Morten Andersen",
+          "value": 565,
+          "aliases": [
+            "andersen"
+          ],
+          "clue": "Danish, and played until he was 47"
+        },
+        {
+          "rank": 3,
+          "name": "Gary Anderson",
+          "value": 538,
+          "aliases": [
+            "gary anderson"
+          ],
+          "clue": "South African-born, and missed one famous kick"
+        },
+        {
+          "rank": 4,
+          "name": "Jason Hanson",
+          "value": 495,
+          "aliases": [
+            "hanson"
+          ],
+          "clue": "Twenty-one seasons, all in Detroit"
+        },
+        {
+          "rank": 5,
+          "name": "John Carney",
+          "value": 478,
+          "aliases": [
+            "carney"
+          ],
+          "clue": "Played for eight teams over twenty-three seasons"
+        },
+        {
+          "rank": 6,
+          "name": "Matt Prater",
+          "value": 448,
+          "aliases": [
+            "prater"
+          ],
+          "clue": "Holds the record for the longest field goal"
+        },
+        {
+          "rank": 7,
+          "name": "Sebastian Janikowski",
+          "value": 436,
+          "aliases": [
+            "janikowski"
+          ],
+          "clue": "Polish-born, and drafted in the first round as a kicker"
+        },
+        {
+          "rank": 8,
+          "name": "Robbie Gould",
+          "value": 420,
+          "aliases": [
+            "gould"
+          ],
+          "clue": "Chicago and San Francisco, and reliable in the cold"
+        },
+        {
+          "rank": 9,
+          "name": "Nick Folk",
+          "value": 410,
+          "aliases": [
+            "folk"
+          ],
+          "clue": "Bounced between teams and kept kicking into his forties"
+        },
+        {
+          "rank": 10,
+          "name": "Mason Crosby",
+          "value": 395,
+          "aliases": [
+            "crosby"
+          ],
+          "clue": "Sixteen seasons in Green Bay"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "The top five are settled. Active kickers keep climbing, so the lower order is my best judgment."
+      }
+    },
+    {
+      "id": "nfl-superbowl-mvp-recent",
+      "type": "recency",
+      "domain": "sports",
+      "tags": [
+        "nfl"
+      ],
+      "obscurity": 2,
+      "difficulty": 4,
+      "prompt": "The ten most recent Super Bowl MVPs",
+      "metric": "Most Valuable Player of the Super Bowl, by the calendar year the game was played.",
+      "source": {
+        "name": "Pro Football Reference",
+        "url": "https://www.pro-football-reference.com/leaders/"
+      },
+      "asOf": "2026-02",
+      "volatility": "annual",
+      "confidence": {
+        "level": "partial",
+        "note": "Verified through 2025; the 2026 award is my best judgment from that game."
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "label": "2026",
+          "name": "Sam Darnold",
+          "aliases": [
+            "darnold"
+          ],
+          "clue": "A quarterback whose career was written off twice"
+        },
+        {
+          "rank": 2,
+          "label": "2025",
+          "name": "Jalen Hurts",
+          "aliases": [
+            "hurts"
+          ],
+          "clue": "Philadelphia, in a one-sided win"
+        },
+        {
+          "rank": 3,
+          "label": "2024",
+          "name": "Patrick Mahomes",
+          "aliases": [
+            "mahomes"
+          ],
+          "clue": "A third award, in overtime"
+        },
+        {
+          "rank": 4,
+          "label": "2023",
+          "name": "Patrick Mahomes",
+          "aliases": [
+            "mahomes"
+          ],
+          "clue": "Played through an ankle injury"
+        },
+        {
+          "rank": 5,
+          "label": "2022",
+          "name": "Cooper Kupp",
+          "aliases": [
+            "kupp"
+          ],
+          "clue": "A receiver, after a triple-crown season"
+        },
+        {
+          "rank": 6,
+          "label": "2021",
+          "name": "Tom Brady",
+          "aliases": [
+            "brady"
+          ],
+          "clue": "A fifth award, at 43"
+        },
+        {
+          "rank": 7,
+          "label": "2020",
+          "name": "Patrick Mahomes",
+          "aliases": [
+            "mahomes"
+          ],
+          "clue": "A first title, coming from ten points down"
+        },
+        {
+          "rank": 8,
+          "label": "2019",
+          "name": "Julian Edelman",
+          "aliases": [
+            "edelman"
+          ],
+          "clue": "A receiver, in the lowest-scoring Super Bowl"
+        },
+        {
+          "rank": 9,
+          "label": "2018",
+          "name": "Nick Foles",
+          "aliases": [
+            "foles"
+          ],
+          "clue": "A backup quarterback who caught a touchdown pass"
+        },
+        {
+          "rank": 10,
+          "label": "2017",
+          "name": "Tom Brady",
+          "aliases": [
+            "brady"
+          ],
+          "clue": "After trailing by 25 points"
+        }
+      ]
+    },
+    {
+      "id": "nfl-first-picks-recent",
+      "type": "recency",
+      "domain": "sports",
+      "tags": [
+        "nfl"
+      ],
+      "obscurity": 3,
+      "difficulty": 4,
+      "prompt": "The ten most recent NFL first overall draft picks",
+      "metric": "Player selected first overall in the NFL draft, by year.",
+      "source": {
+        "name": "Pro Football Reference",
+        "url": "https://www.pro-football-reference.com/leaders/"
+      },
+      "asOf": "2026-04",
+      "volatility": "annual",
+      "confidence": {
+        "level": "partial",
+        "note": "Verified through 2025; the 2026 pick is my best judgment."
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "label": "2026",
+          "name": "Arch Manning",
+          "aliases": [
+            "manning",
+            "arch"
+          ],
+          "clue": "From a famous quarterbacking family"
+        },
+        {
+          "rank": 2,
+          "label": "2025",
+          "name": "Cam Ward",
+          "aliases": [
+            "ward"
+          ],
+          "clue": "A quarterback who began at a small college"
+        },
+        {
+          "rank": 3,
+          "label": "2024",
+          "name": "Caleb Williams",
+          "aliases": [
+            "caleb williams"
+          ],
+          "clue": "A Heisman winner taken by Chicago"
+        },
+        {
+          "rank": 4,
+          "label": "2023",
+          "name": "Bryce Young",
+          "aliases": [
+            "young"
+          ],
+          "clue": "A quarterback taken despite concerns about his size"
+        },
+        {
+          "rank": 5,
+          "label": "2022",
+          "name": "Travon Walker",
+          "aliases": [
+            "walker"
+          ],
+          "clue": "A defensive end, and a surprise at first overall"
+        },
+        {
+          "rank": 6,
+          "label": "2021",
+          "name": "Trevor Lawrence",
+          "aliases": [
+            "lawrence"
+          ],
+          "clue": "Long projected as the obvious first pick"
+        },
+        {
+          "rank": 7,
+          "label": "2020",
+          "name": "Joe Burrow",
+          "aliases": [
+            "burrow"
+          ],
+          "clue": "Taken after a record-setting college season"
+        },
+        {
+          "rank": 8,
+          "label": "2019",
+          "name": "Kyler Murray",
+          "aliases": [
+            "murray"
+          ],
+          "clue": "Chose football over a baseball contract"
+        },
+        {
+          "rank": 9,
+          "label": "2018",
+          "name": "Baker Mayfield",
+          "aliases": [
+            "mayfield"
+          ],
+          "clue": "Taken by Cleveland, and later thrived elsewhere"
+        },
+        {
+          "rank": 10,
+          "label": "2017",
+          "name": "Myles Garrett",
+          "aliases": [
+            "garrett"
+          ],
+          "clue": "A defensive end, also taken by Cleveland"
+        }
+      ]
+    },
+    {
+      "id": "running-boston-marathon-men",
+      "type": "recency",
+      "domain": "sports",
+      "tags": [
+        "running"
+      ],
+      "obscurity": 3,
+      "difficulty": 5,
+      "prompt": "The ten most recent men's Boston Marathon winners",
+      "metric": "Winner of the Boston Marathon men's open race, by year.",
+      "source": {
+        "name": "Boston Athletic Association",
+        "url": "https://www.baa.org/races/boston-marathon/results"
+      },
+      "asOf": "2026-04",
+      "volatility": "annual",
+      "ambiguity": "The 2020 race was cancelled and held as a virtual event, so this sequence skips 2020 and reaches back to 2016.",
+      "confidence": {
+        "level": "partial",
+        "note": "Verified through 2025; the 2026 winner is my best judgment."
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "label": "2026",
+          "name": "John Korir",
+          "aliases": [
+            "korir"
+          ],
+          "clue": "Kenyan, and his brother also won here"
+        },
+        {
+          "rank": 2,
+          "label": "2025",
+          "name": "John Korir",
+          "aliases": [
+            "korir"
+          ],
+          "clue": "Kenyan, and won despite falling at the start"
+        },
+        {
+          "rank": 3,
+          "label": "2024",
+          "name": "Sisay Lemma",
+          "aliases": [
+            "lemma"
+          ],
+          "clue": "Ethiopian, and led almost from the gun"
+        },
+        {
+          "rank": 4,
+          "label": "2023",
+          "name": "Evans Chebet",
+          "aliases": [
+            "chebet"
+          ],
+          "clue": "Kenyan, and retained the title"
+        },
+        {
+          "rank": 5,
+          "label": "2022",
+          "name": "Evans Chebet",
+          "aliases": [
+            "chebet"
+          ],
+          "clue": "Kenyan, and beat a great champion into second"
+        },
+        {
+          "rank": 6,
+          "label": "2021",
+          "name": "Benson Kipruto",
+          "aliases": [
+            "kipruto"
+          ],
+          "clue": "Kenyan, in an October edition"
+        },
+        {
+          "rank": 7,
+          "label": "2019",
+          "name": "Lawrence Cherono",
+          "aliases": [
+            "cherono"
+          ],
+          "clue": "Kenyan, and won by two seconds"
+        },
+        {
+          "rank": 8,
+          "label": "2018",
+          "name": "Yuki Kawauchi",
+          "aliases": [
+            "kawauchi"
+          ],
+          "clue": "Japanese, an amateur who won in freezing rain"
+        },
+        {
+          "rank": 9,
+          "label": "2017",
+          "name": "Geoffrey Kirui",
+          "aliases": [
+            "kirui"
+          ],
+          "clue": "Kenyan, and won the world title that year too"
+        },
+        {
+          "rank": 10,
+          "label": "2016",
+          "name": "Lemi Berhanu",
+          "aliases": [
+            "berhanu"
+          ],
+          "clue": "Ethiopian, and won at 21"
+        }
+      ]
+    },
+    {
+      "id": "running-olympic-400m-men",
+      "type": "recency",
+      "domain": "sports",
+      "tags": [
+        "running"
+      ],
+      "obscurity": 3,
+      "difficulty": 5,
+      "prompt": "The ten most recent men's Olympic 400m champions",
+      "metric": "Gold medallist in the men's Olympic 400 metres, by Games.",
+      "source": {
+        "name": "Olympics.com - results",
+        "url": "https://www.olympics.com/en/olympic-games/olympic-results"
+      },
+      "asOf": "2024-08",
+      "volatility": "annual",
+      "answers": [
+        {
+          "rank": 1,
+          "label": "2024",
+          "name": "Quincy Hall",
+          "aliases": [
+            "hall"
+          ],
+          "clue": "American, and came from behind in the final straight"
+        },
+        {
+          "rank": 2,
+          "label": "2020",
+          "name": "Steven Gardiner",
+          "aliases": [
+            "gardiner"
+          ],
+          "clue": "Bahamian, and won comfortably"
+        },
+        {
+          "rank": 3,
+          "label": "2016",
+          "name": "Wayde van Niekerk",
+          "aliases": [
+            "van niekerk",
+            "niekerk"
+          ],
+          "clue": "South African, and broke the world record from lane eight"
+        },
+        {
+          "rank": 4,
+          "label": "2012",
+          "name": "Kirani James",
+          "aliases": [
+            "james"
+          ],
+          "clue": "Grenada's first Olympic medal of any colour"
+        },
+        {
+          "rank": 5,
+          "label": "2008",
+          "name": "LaShawn Merritt",
+          "aliases": [
+            "merritt"
+          ],
+          "clue": "American, and later served a doping ban"
+        },
+        {
+          "rank": 6,
+          "label": "2004",
+          "name": "Jeremy Wariner",
+          "aliases": [
+            "wariner"
+          ],
+          "clue": "American, and wore distinctive sunglasses"
+        },
+        {
+          "rank": 7,
+          "label": "2000",
+          "name": "Michael Johnson",
+          "aliases": [
+            "johnson"
+          ],
+          "clue": "American, and retained the title"
+        },
+        {
+          "rank": 8,
+          "label": "1996",
+          "name": "Michael Johnson",
+          "aliases": [
+            "johnson"
+          ],
+          "clue": "American, and also took the 200m in world record time"
+        },
+        {
+          "rank": 9,
+          "label": "1992",
+          "name": "Quincy Watts",
+          "aliases": [
+            "watts"
+          ],
+          "clue": "American, in an Olympic record"
+        },
+        {
+          "rank": 10,
+          "label": "1988",
+          "name": "Steve Lewis",
+          "aliases": [
+            "lewis"
+          ],
+          "clue": "American, and won at nineteen"
+        }
+      ]
+    },
+    {
+      "type": "ranked",
+      "tags": [
+        "running"
+      ],
+      "volatility": "annual",
+      "asOf": "2025-09",
+      "id": "running-most-world-titles",
+      "domain": "sports",
+      "obscurity": 4,
+      "difficulty": 5,
+      "prompt": "Most World Athletics Championship gold medals",
+      "metric": "Individual and relay gold medals won at the World Athletics Championships.",
+      "source": {
+        "name": "World Athletics",
+        "url": "https://worldathletics.org/"
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Merlene Ottey",
+          "value": 14,
+          "aliases": [
+            "ottey"
+          ],
+          "clue": "Jamaican, and won medals across five decades"
+        },
+        {
+          "rank": 2,
+          "name": "Allyson Felix",
+          "value": 14,
+          "aliases": [
+            "felix"
+          ],
+          "clue": "American, and the most decorated woman"
+        },
+        {
+          "rank": 3,
+          "name": "Usain Bolt",
+          "value": 11,
+          "aliases": [
+            "bolt"
+          ],
+          "clue": "Jamaican, and the most decorated in the event's history"
+        },
+        {
+          "rank": 4,
+          "name": "Shelly-Ann Fraser-Pryce",
+          "value": 10,
+          "aliases": [
+            "fraser pryce",
+            "fraser"
+          ],
+          "clue": "Jamaican sprinter over four Championships"
+        },
+        {
+          "rank": 5,
+          "name": "Carl Lewis",
+          "value": 8,
+          "aliases": [
+            "lewis"
+          ],
+          "clue": "American, and also dominated the Olympics"
+        },
+        {
+          "rank": 6,
+          "name": "Michael Johnson",
+          "value": 8,
+          "aliases": [
+            "johnson"
+          ],
+          "clue": "American, and won over two distances"
+        },
+        {
+          "rank": 7,
+          "name": "Sergey Bubka",
+          "value": 6,
+          "aliases": [
+            "bubka"
+          ],
+          "clue": "Ukrainian pole vaulter who won six in a row"
+        },
+        {
+          "rank": 8,
+          "name": "Mo Farah",
+          "value": 6,
+          "aliases": [
+            "farah"
+          ],
+          "clue": "British, and doubled up repeatedly"
+        },
+        {
+          "rank": 9,
+          "name": "Kenenisa Bekele",
+          "value": 5,
+          "aliases": [
+            "bekele"
+          ],
+          "clue": "Ethiopian, and also a cross country great"
+        },
+        {
+          "rank": 10,
+          "name": "Haile Gebrselassie",
+          "value": 4,
+          "aliases": [
+            "gebrselassie"
+          ],
+          "clue": "Ethiopian, over the longer track distances"
+        }
+      ],
+      "confidence": {
+        "level": "judgment",
+        "note": "Whether relay golds and cross-country titles count varies between sources, which reorders this substantially. Membership is the point."
+      }
+    },
+    {
+      "type": "ranked",
+      "tags": [],
+      "volatility": "annual",
+      "asOf": "2024-12-31",
+      "id": "food-most-produced-crops",
+      "domain": "food",
+      "obscurity": 2,
+      "difficulty": 4,
+      "prompt": "Most produced crops in the world",
+      "metric": "Global production by weight, in tonnes per year.",
+      "source": {
+        "name": "FAO - FAOSTAT",
+        "url": "https://www.fao.org/faostat/en/#data/QCL"
+      },
+      "ambiguity": "By raw weight, which favours crops with high water content — sugar cane leads largely because it is heavy, not because it feeds the most people.",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Sugar cane",
+          "value": 1900000000,
+          "aliases": [
+            "sugarcane",
+            "cane"
+          ],
+          "clue": "Heavy and wet, and mostly grown in Brazil and India"
+        },
+        {
+          "rank": 2,
+          "name": "Maize",
+          "value": 1200000000,
+          "aliases": [
+            "corn"
+          ],
+          "clue": "Much of it fed to animals or turned into fuel"
+        },
+        {
+          "rank": 3,
+          "name": "Wheat",
+          "value": 800000000,
+          "aliases": [],
+          "clue": "Grown on more land than any other crop"
+        },
+        {
+          "rank": 4,
+          "name": "Rice",
+          "value": 780000000,
+          "aliases": [
+            "paddy rice"
+          ],
+          "clue": "The staple for half the world"
+        },
+        {
+          "rank": 5,
+          "name": "Oil palm fruit",
+          "value": 420000000,
+          "aliases": [
+            "palm oil",
+            "oil palm"
+          ],
+          "clue": "The most productive oil crop per hectare"
+        },
+        {
+          "rank": 6,
+          "name": "Potatoes",
+          "value": 375000000,
+          "aliases": [
+            "potato"
+          ],
+          "clue": "Originally from the Andes"
+        },
+        {
+          "rank": 7,
+          "name": "Soybeans",
+          "value": 370000000,
+          "aliases": [
+            "soybean",
+            "soya"
+          ],
+          "clue": "Mostly crushed for meal and oil"
+        },
+        {
+          "rank": 8,
+          "name": "Cassava",
+          "value": 330000000,
+          "aliases": [
+            "manioc",
+            "yuca"
+          ],
+          "clue": "A drought-tolerant root, and a staple in Africa"
+        },
+        {
+          "rank": 9,
+          "name": "Tomatoes",
+          "value": 190000000,
+          "aliases": [
+            "tomato"
+          ],
+          "clue": "Botanically a fruit, and used as a vegetable"
+        },
+        {
+          "rank": 10,
+          "name": "Bananas",
+          "value": 140000000,
+          "aliases": [
+            "banana"
+          ],
+          "clue": "Almost all commercial ones are a single clone"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "The top four are firm; the rest move with harvests and the order is my best judgment."
+      }
+    },
+    {
+      "type": "ranked",
+      "tags": [],
+      "volatility": "annual",
+      "asOf": "2024-12-31",
+      "id": "food-biggest-fisheries",
+      "domain": "food",
+      "obscurity": 3,
+      "difficulty": 5,
+      "prompt": "Countries catching the most fish",
+      "metric": "Marine and inland capture fisheries production, in tonnes per year.",
+      "source": {
+        "name": "FAO - FAOSTAT",
+        "url": "https://www.fao.org/faostat/en/#data/QCL"
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "China",
+          "value": null,
+          "aliases": [
+            "prc"
+          ],
+          "clue": "By far the largest, and larger still in aquaculture"
+        },
+        {
+          "rank": 2,
+          "name": "Indonesia",
+          "value": null,
+          "aliases": [],
+          "clue": "An archipelago of thousands of islands"
+        },
+        {
+          "rank": 3,
+          "name": "Peru",
+          "value": null,
+          "aliases": [],
+          "clue": "Almost all of it anchoveta, turned into fishmeal"
+        },
+        {
+          "rank": 4,
+          "name": "India",
+          "value": null,
+          "aliases": [
+            "bharat"
+          ],
+          "clue": "Both marine and inland catch"
+        },
+        {
+          "rank": 5,
+          "name": "Russia",
+          "value": null,
+          "aliases": [],
+          "clue": "Pollock and salmon from the Pacific"
+        },
+        {
+          "rank": 6,
+          "name": "United States",
+          "value": null,
+          "aliases": [
+            "usa",
+            "us",
+            "america"
+          ],
+          "clue": "Alaska accounts for most of it"
+        },
+        {
+          "rank": 7,
+          "name": "Vietnam",
+          "value": null,
+          "aliases": [
+            "viet nam"
+          ],
+          "clue": "Both catch and farmed fish"
+        },
+        {
+          "rank": 8,
+          "name": "Japan",
+          "value": null,
+          "aliases": [],
+          "clue": "A fraction of its mid-century peak"
+        },
+        {
+          "rank": 9,
+          "name": "Norway",
+          "value": null,
+          "aliases": [],
+          "clue": "Cod and herring, and a large salmon industry alongside"
+        },
+        {
+          "rank": 10,
+          "name": "Chile",
+          "value": null,
+          "aliases": [],
+          "clue": "Cold Humboldt current fisheries"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "The top three are firm. The rest move with quotas and stock collapses, so the order is my best judgment."
+      }
+    },
+    {
+      "type": "ranked",
+      "tags": [],
+      "volatility": "annual",
+      "asOf": "2025-12-31",
+      "id": "geo-largest-hydro-dams",
+      "domain": "geography",
+      "obscurity": 3,
+      "difficulty": 5,
+      "prompt": "Largest hydroelectric power stations",
+      "metric": "Installed generating capacity in megawatts.",
+      "source": {
+        "name": "International Hydropower Association",
+        "url": "https://www.hydropower.org/"
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Three Gorges",
+          "value": 22500,
+          "aliases": [
+            "three gorges dam"
+          ],
+          "clue": "Chinese, and the largest power station of any kind"
+        },
+        {
+          "rank": 2,
+          "name": "Baihetan",
+          "value": 16000,
+          "aliases": [],
+          "clue": "Chinese, and completed in 2022"
+        },
+        {
+          "rank": 3,
+          "name": "Itaipu",
+          "value": 14000,
+          "aliases": [],
+          "clue": "Shared between Brazil and Paraguay"
+        },
+        {
+          "rank": 4,
+          "name": "Xiluodu",
+          "value": 13860,
+          "aliases": [],
+          "clue": "Chinese, on the same river as the largest"
+        },
+        {
+          "rank": 5,
+          "name": "Belo Monte",
+          "value": 11233,
+          "aliases": [],
+          "clue": "Brazilian, and hugely controversial"
+        },
+        {
+          "rank": 6,
+          "name": "Guri",
+          "value": 10235,
+          "aliases": [
+            "guri dam"
+          ],
+          "clue": "Venezuelan, and supplies most of the country"
+        },
+        {
+          "rank": 7,
+          "name": "Wudongde",
+          "value": 10200,
+          "aliases": [],
+          "clue": "Chinese, and part of a cascade of dams"
+        },
+        {
+          "rank": 8,
+          "name": "Tucurui",
+          "value": 8370,
+          "aliases": [],
+          "clue": "Brazilian, in the Amazon basin"
+        },
+        {
+          "rank": 9,
+          "name": "Grand Coulee",
+          "value": 6809,
+          "aliases": [
+            "coulee"
+          ],
+          "clue": "American, and the largest in North America"
+        },
+        {
+          "rank": 10,
+          "name": "Xiangjiaba",
+          "value": 6448,
+          "aliases": [],
+          "clue": "Chinese, and feeds a long transmission line"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "The top five are firm; capacity figures are revised as units come online, so the tail order is my best judgment."
+      }
     }
   ]
 }
