@@ -56,7 +56,7 @@
   /* chrome */
   .topbar{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:14px 18px 6px;min-height:52px;}
   .topbar h1{font-size:19px;margin:0;font-weight:700;letter-spacing:-.2px;}
-  .body{flex:1;padding:0 18px 32px;}
+  .body{flex:1;padding:0 18px 44px;}
   .footbar{position:sticky;bottom:0;background:linear-gradient(to top,var(--bg) 62%,rgba(16,20,24,0));padding:14px 18px calc(14px + env(safe-area-inset-bottom));margin-top:auto;}
 
   /* cards & type */
@@ -93,6 +93,11 @@
   .slot.got .n{color:var(--mint);}
   .slot.shown{background:var(--card-2);border-color:var(--border);}
   .slot.shown .nm{color:var(--ink-soft);font-style:italic;}
+  .slot.hint{background:var(--gold-soft);border-color:rgba(228,185,94,.28);}
+  .slot.hint .nm{color:var(--gold);font-family:ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.5px;}
+  .slot.hint .n{color:var(--gold);}
+  .slot[data-hint]{cursor:pointer;}
+  .slot[data-hint]:active{background:var(--card-2);}
 
   /* input */
   .guessrow{display:flex;gap:8px;}
@@ -275,14 +280,18 @@ function normalizePuzzle(p, obfuscated) {
 }
 
 /* ---------- selection ---------- */
-function eligible() {
+// With no domain argument this is the random rotation, which obeys the user's
+// saved domain filters. Naming a domain overrides those filters — an explicit
+// pick beats a standing preference — but still respects the obscurity cap.
+function eligible(domain) {
   const s = store.settings;
   return PUZZLES.filter(p =>
-    s.domains.includes(p.domain) && (p.obscurity || 1) <= s.maxObscurity
+    (domain ? p.domain === domain : s.domains.includes(p.domain)) &&
+    (p.obscurity || 1) <= s.maxObscurity
   );
 }
-function pickPuzzle() {
-  const pool = eligible();
+function pickPuzzle(domain) {
+  const pool = eligible(domain);
   if (!pool.length) return null;
   // Unplayed first; otherwise whatever was played longest ago. No daily lock —
   // a new quiz is always available.
@@ -321,8 +330,14 @@ let game = null;        // { puzzle, found:Set, misses, over, challenge }
 let sheet = null;       // null | 'source' | 'settings' | 'history'
 let flash = { msg: '', kind: '' };
 
+const HINT_BUDGET = 3;
+
 function startGame(puzzle, challenge) {
-  game = { puzzle, found: new Set(), misses: 0, over: false, challenge: challenge || null };
+  game = {
+    puzzle, found: new Set(), misses: 0, over: false,
+    hinted: new Set(), hintsLeft: HINT_BUDGET,
+    challenge: challenge || null,
+  };
   flash = { msg: '', kind: '' };
   view = 'game';
   render();
@@ -335,6 +350,7 @@ function endGame() {
     prompt: game.puzzle.prompt,
     score: game.found.size,
     misses: game.misses,
+    hints: HINT_BUDGET - game.hintsLeft,
     ts: Date.now(),
   });
   store.history = store.history.slice(0, 200);
@@ -342,6 +358,16 @@ function endGame() {
   view = 'result';
   render();
 }
+const hintsUsed = () => HINT_BUDGET - game.hintsLeft;
+
+function spendHint(i) {
+  if (game.over || game.hintsLeft <= 0 || game.found.has(i) || game.hinted.has(i)) return;
+  game.hintsLeft--;
+  game.hinted.add(i);
+  flash = { msg: '', kind: '' };
+  render();
+}
+
 function submitGuess() {
   const input = document.getElementById('guess');
   if (!input) return;
@@ -403,24 +429,39 @@ function viewHome() {
       <div class="stat"><b>${avg.toFixed(1)}</b><span>Avg last 10</span></div>
       <div class="stat"><b>${perfect}</b><span>Perfect</span></div>
     </div>` : ''}
-    ${pool ? '' : `<div class="note">No puzzles match your filters. Widen them in Settings.</div>`}
-    <button class="btn btn-primary btn-block" id="play" ${pool ? '' : 'disabled'}>Play a quiz</button>
+    ${pool ? '' : `<div class="note">Nothing matches your rotation filters. Widen them, or pick a category directly.</div>`}
+    <button class="btn btn-primary btn-block" id="play" ${pool ? '' : 'disabled'}>Random quiz</button>
+    <button class="btn btn-secondary btn-block" id="open-pick" style="margin-top:8px">Pick a category</button>
     <div style="display:flex;gap:8px;margin-top:10px;">
-      <button class="btn btn-ghost btn-sm" id="open-settings" style="flex:1">Categories</button>
+      <button class="btn btn-ghost btn-sm" id="open-settings" style="flex:1">Rotation filters</button>
       <button class="btn btn-ghost btn-sm" id="open-history" style="flex:1" ${h.length ? '' : 'disabled'}>History</button>
     </div>
-    <p class="helper" style="text-align:center;margin:16px 0 0;font-size:12.5px;color:var(--ink-dim)">${pool} quiz${pool === 1 ? '' : 'zes'} in rotation</p>
+    <p class="helper" style="text-align:center;margin:16px 0 0;font-size:12.5px;color:var(--ink-dim)">${pool} quiz${pool === 1 ? '' : 'zes'} in the random rotation</p>
   </div>`;
 }
 
-function slotsHtml(p, found, reveal) {
+// A hint shows the first letter of each word and the shape of the rest, which
+// is enough to jog a name you half-know without simply handing it over.
+function mask(name) {
+  return String(name).split(/\s+/)
+    .map(w => w.charAt(0) + '·'.repeat(Math.max(0, w.length - 1)))
+    .join(' ');
+}
+
+function slotsHtml(p, found, reveal, hinted, canHint) {
+  hinted = hinted || new Set();
   return `<div class="slots">` + p.answers.map((a, i) => {
     const got = found.has(i);
     const show = !got && reveal;
+    const hint = !got && !show && hinted.has(i);
     const label = p.type === 'recency' ? (a.label || a.rank) : a.rank + '.';
-    const name = got || show ? esc(a.name) : '???';
-    const val = (got || show) && a.value != null ? fmtNum(a.value) : '';
-    return `<div class="slot ${got ? 'got' : show ? 'shown' : ''}">
+    const name = got || show ? esc(a.name) : hint ? esc(mask(a.name)) : '???';
+    // A hinted ranked slot also gives up its value — on a list of areas or
+    // totals the magnitude is itself a clue.
+    const val = (got || show || hint) && a.value != null ? fmtNum(a.value) : '';
+    const tappable = !got && !show && !hint && canHint;
+    return `<div class="slot ${got ? 'got' : show ? 'shown' : hint ? 'hint' : ''}"
+      ${tappable ? `data-hint="${i}" role="button" tabindex="0"` : ''}>
       <span class="n">${esc(label)}</span>
       <span class="nm">${name}</span>
       <span class="vl">${val}</span>
@@ -446,7 +487,12 @@ function viewGame() {
         <button id="open-source">ⓘ Metric &amp; source</button>
       </div>
     </div>
-    ${slotsHtml(p, game.found, false)}
+    ${slotsHtml(p, game.found, false, game.hinted, game.hintsLeft > 0)}
+    <p class="helper" style="text-align:center;font-size:12.5px;color:var(--ink-dim);margin:2px 0 0">
+      ${game.hintsLeft > 0
+        ? `Tap any locked slot for a hint · <b style="color:var(--ink-soft)">${game.hintsLeft}</b> left`
+        : 'No hints left'}
+    </p>
   </div>
   <div class="footbar">
     <div class="guessrow">
@@ -470,7 +516,7 @@ function viewResult() {
   <div class="body">
     <div class="score">
       <b>${score}<em>/10</em></b>
-      <p>${game.misses} miss${game.misses === 1 ? '' : 'es'} · ${esc(p.prompt)}</p>
+      <p>${game.misses} miss${game.misses === 1 ? '' : 'es'}${hintsUsed() ? ` · ${hintsUsed()} hint${hintsUsed() === 1 ? '' : 's'}` : ''} · ${esc(p.prompt)}</p>
     </div>
     <div class="pips">${p.answers.map((_, i) => `<i class="${game.found.has(i) ? 'on' : ''}"></i>`).join('')}</div>
     ${ch ? `<div class="versus" style="margin-top:16px">
@@ -479,7 +525,7 @@ function viewResult() {
         ${score > ch.score ? 'You win' : score < ch.score ? 'They win' : 'Tie'}</span>
     </div>` : ''}
     <h2 class="sec">The full ten</h2>
-    ${slotsHtml(p, game.found, true)}
+    ${slotsHtml(p, game.found, true, game.hinted, false)}
     <button class="btn btn-ghost btn-block btn-sm" id="open-source">ⓘ Metric &amp; source</button>
   </div>
   <div class="footbar">
@@ -501,10 +547,21 @@ function viewSheet() {
       <div class="kv"><b>Source</b><span>${esc(p.source.name)}<br><a href="${esc(p.source.url)}" target="_blank" rel="noopener">${esc(p.source.url)}</a></span></div>
       <div class="kv"><b>Data as of</b><span>${esc(fmtDate(p.asOf))}</span></div>
       ${p.ambiguity ? `<div class="kv"><b>Known disagreement</b><span>${esc(p.ambiguity)}</span></div>` : ''}`;
+  } else if (sheet === 'pick') {
+    inner = `<h3>Pick a category</h3>
+      <p class="helper">Starts a quiz in that category, whatever your rotation filters say. Your obscurity cap still applies.</p>
+      <div class="hist">${DOMAINS.map(([k, label]) => {
+        const n = eligible(k).length;
+        return `<button class="hrow" style="cursor:pointer;text-align:left;width:100%"
+          ${n ? `data-pick="${k}"` : 'disabled style="opacity:.4;cursor:default;text-align:left;width:100%"'}>
+          <span class="hp" style="color:var(--ink)">${label}</span>
+          <span class="hs" style="color:var(--ink-dim);font-weight:600">${n}</span></button>`;
+      }).join('')}</div>
+      <button class="btn btn-primary btn-block btn-sm" id="pick-random" style="margin-top:12px">Surprise me instead</button>`;
   } else if (sheet === 'settings') {
     const s = store.settings;
-    inner = `<h3>Categories</h3>
-      <p class="helper">Pick what you want to see. Obscurity caps how deep the catalogue goes — there are thousands of perfectly-sourced lists nobody wants to play.</p>
+    inner = `<h3>Rotation filters</h3>
+      <p class="helper">What “Random quiz” is allowed to serve. Obscurity caps how deep the catalogue goes — there are thousands of perfectly-sourced lists nobody wants to play.</p>
       <div class="chips">${DOMAINS.map(([k, label]) =>
         `<button class="chip ${s.domains.includes(k) ? 'on' : ''}" data-dom="${k}">${label}</button>`).join('')}</div>
       <h2 class="sec">Obscurity cap</h2>
@@ -524,7 +581,8 @@ function viewSheet() {
 async function doShare() {
   const p = game.puzzle, score = game.found.size;
   const pips = p.answers.map((_, i) => game.found.has(i) ? '●' : '○').join('');
-  const text = `Daily Tens — ${p.prompt}\n${score}/10  ${pips}\nCan you beat it?`;
+  const extra = hintsUsed() ? `  ·  ${hintsUsed()} hint${hintsUsed() === 1 ? '' : 's'}` : '';
+  const text = `Daily Tens — ${p.prompt}\n${score}/10  ${pips}${extra}\nCan you beat it?`;
   const url = shareUrl(p.id, score);
   try {
     if (navigator.share) { await navigator.share({ text, url }); return; }
@@ -543,6 +601,8 @@ function on(id, fn, ev) {
 }
 function wire() {
   on('play', () => { const p = pickPuzzle(); if (p) startGame(p); });
+  on('open-pick', () => { sheet = 'pick'; render(); });
+  on('pick-random', () => { sheet = null; const p = pickPuzzle(); if (p) startGame(p); });
   on('open-settings', () => { sheet = 'settings'; render(); });
   on('open-history', () => { sheet = 'history'; render(); });
   on('open-source', () => { sheet = 'source'; render(); });
@@ -565,6 +625,15 @@ function wire() {
   document.querySelectorAll('[data-obs]').forEach(b => b.addEventListener('click', () => {
     store.settings.maxObscurity = +b.dataset.obs; save(); render();
   }));
+  document.querySelectorAll('[data-pick]').forEach(b => b.addEventListener('click', () => {
+    const p = pickPuzzle(b.dataset.pick);
+    if (p) { sheet = null; startGame(p); }
+  }));
+  document.querySelectorAll('[data-hint]').forEach(el => {
+    const go = () => spendHint(+el.dataset.hint);
+    el.addEventListener('click', go);
+    el.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); go(); } });
+  });
 }
 
 /* ---------- boot ---------- */
