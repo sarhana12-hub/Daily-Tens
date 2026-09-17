@@ -120,3 +120,39 @@ Film & TV 10 · Science & nature 10 · History & politics 8 · Food & drink 7 ·
 Language & literature 4 · Business 4.
 
 Skewed to obscurity 1–2 so the default rotation has substance on day one.
+
+---
+
+## Repair, don't discard
+
+When a puzzle fails a check, fix the puzzle. Dropping it is the lazy option and
+it throws away a quiz that was nearly always salvageable — usually by pinning
+the metric more tightly, dating it honestly, or disclosing the soft part in a
+confidence note. The guards exist to force a repair, not to cull content.
+
+Most failures have a standard repair:
+
+| Failure | Repair |
+|---|---|
+| Tail margin too thin on a volatile list | Ship it with the as-of date and a confidence note naming the near-miss, rather than dropping the category |
+| Can't confirm the exact order | Ship it with `confidence: judgment` and say which part is judged |
+| Latest edition of a recency list unverified | Verify it. Never publish a stale recency list — it rejects correct answers |
+| Prompt, metric or clue leaks an answer | Reword it. The metric can always be pinned without naming members |
+| Rank order doesn't descend | Correct the values, then reorder |
+| Alias hole or a real name bent into another | Add the alias, or protect the name |
+
+### Dropped earlier — recover these
+
+- **Most populous countries.** Dropped over the tail margin: Mexico and Ethiopia
+  sit ~1% apart on a list that moves yearly. Repair: ship it with the UN figures,
+  an as-of date, and a note that the tenth place is contested.
+- **Highest-grossing films of all time.** Dropped because the top ten changed
+  and I could not confirm the order from search snippets. Repair: read the source
+  properly, or ship with a judgment note.
+- **Ten most recent Stanley Cup champions.** Dropped because the 2026 winner
+  was unverified. Repair: verify it — do not date it backwards.
+- **World Championship 100m, and the Boston, London and New York marathons.**
+  Same cause, same repair.
+- **Best-selling books.** Struck on sourcing grounds, and I'd still strike the
+  all-time sales version — but a pinned alternative works: best-selling book
+  *series*, or a single publisher's published list.
