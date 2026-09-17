@@ -79,7 +79,9 @@
   .prompt{margin:6px 0 7px;}
   .prompt .dom{color:var(--mint);font-size:11px;text-transform:uppercase;letter-spacing:.7px;font-weight:700;}
   .prompt h2{font-size:16px;line-height:1.2;margin:0 0 3px;font-weight:700;letter-spacing:-.25px;}
-  .prompt .meta{color:var(--ink-dim);font-size:11.5px;display:flex;align-items:center;gap:5px;flex-wrap:wrap;}
+  .prompt .meta{color:var(--ink-dim);font-size:11.5px;display:flex;align-items:center;gap:4px 7px;flex-wrap:wrap;}
+  .prompt .meta .lvl{background:var(--card);border:1px solid var(--border-soft);border-radius:999px;padding:1px 7px;}
+  .prompt .meta .lvl b{color:var(--ink-soft);font-weight:700;}
   .prompt .meta button{background:none;border:1px solid var(--border);color:var(--ink-soft);border-radius:999px;padding:3px 10px;font-size:11.5px;cursor:pointer;}
 
   /* slots */
@@ -390,6 +392,13 @@ let flash = { msg: '', kind: '' };
 
 const HINT_BUDGET = 3;
 
+// Two independent axes. Obscurity is whether you care about the subject;
+// difficulty is whether you can actually finish the list once you do. A puzzle
+// can be obscurity 1 and difficulty 5 — everyone knows what a country is, few
+// can name the tenth largest.
+const OBSCURITY = { 1: 'common knowledge', 2: 'follows the news', 3: 'knows the field', 4: 'enthusiast', 5: 'specialist' };
+const DIFFICULTY = { 1: 'gentle', 2: 'straightforward', 3: 'testing', 4: 'hard', 5: 'brutal' };
+
 function startGame(puzzle, challenge) {
   game = {
     puzzle, found: new Set(), misses: 0, over: false,
@@ -567,7 +576,9 @@ function viewGame() {
       <h2>${esc(p.prompt)}</h2>
       <div class="meta">
         <span class="dom">${esc(dom)}</span>
-        <span>· as of ${esc(fmtDate(p.asOf))} ·</span>
+        <span class="lvl">obscurity <b>${p.obscurity}</b></span>
+        ${p.difficulty ? `<span class="lvl">difficulty <b>${p.difficulty}</b></span>` : ''}
+        <span>as of ${esc(fmtDate(p.asOf))}</span>
         <button id="open-source">ⓘ source</button>
       </div>
     </div>
@@ -616,6 +627,8 @@ function viewSheet() {
     const over = !!(game && game.over);
     inner = `<h3>Metric &amp; source</h3>
       <div class="kv"><b>Question means</b><span>${esc(p.metric)}</span></div>
+      <div class="kv"><b>Obscurity</b><span>${p.obscurity} of 5 — ${esc(OBSCURITY[p.obscurity] || '')}<br><span style="color:var(--ink-dim);font-size:12.5px">How likely you are to care about the subject at all.</span></span></div>
+      ${p.difficulty ? `<div class="kv"><b>Difficulty</b><span>${p.difficulty} of 5 — ${esc(DIFFICULTY[p.difficulty] || '')}<br><span style="color:var(--ink-dim);font-size:12.5px">How hard the ten are to complete if you do. Estimated, not measured.</span></span></div>` : ''}
       <div class="kv"><b>Source</b><span>${esc(p.source.name)}<br><a href="${esc(p.source.url)}" target="_blank" rel="noopener">${esc(p.source.url)}</a></span></div>
       <div class="kv"><b>Data as of</b><span>${esc(fmtDate(p.asOf))}</span></div>
       ${p.ambiguity && over ? `<div class="kv"><b>Known disagreement</b><span>${esc(p.ambiguity)}</span></div>` : ''}

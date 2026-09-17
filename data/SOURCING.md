@@ -72,3 +72,22 @@ is the single most infuriating failure mode. Cover: short forms, common
 nicknames, official vs. colloquial names, and the obvious misspellings.
 Matching is case-insensitive, punctuation- and diacritic-insensitive, and
 fuzzy to a small edit distance — near-misses count.
+
+## Difficulty is not obscurity
+
+Two independent fields, both 1–5, both shown when a quiz opens.
+
+**`obscurity`** — how likely a player is to care about the subject at all.
+Required. Drives the rotation filters.
+
+**`difficulty`** — how hard the ten are to complete *given* you follow the
+subject. Optional, and an author estimate rather than a measurement: there is
+no backend collecting scores, so it cannot be derived from play.
+
+1 gentle · 2 straightforward · 3 testing · 4 hard · 5 brutal
+
+They genuinely come apart, and conflating them is how you end up mis-setting a
+filter. "Highest mountains in the world" is obscurity 2 and difficulty 5 —
+everybody knows what a mountain is, almost nobody can name the eighth highest.
+"The ten most recent US presidents" is obscurity 1 and difficulty 1. A low
+obscurity cap makes the rotation *more relevant*, not easier.

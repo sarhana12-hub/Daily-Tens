@@ -96,7 +96,8 @@
           "aliases": []
         }
       ],
-      "tags": []
+      "tags": [],
+      "difficulty": 3
     },
     {
       "id": "film-bestpicture-recent",
@@ -188,7 +189,8 @@
       ],
       "tags": [
         "oscars"
-      ]
+      ],
+      "difficulty": 3
     },
     {
       "id": "nfl-superbowl-recent",
@@ -310,7 +312,8 @@
             "pats"
           ]
         }
-      ]
+      ],
+      "difficulty": 2
     },
     {
       "id": "nfl-passing-yards-career",
@@ -414,7 +417,8 @@
             "marino"
           ]
         }
-      ]
+      ],
+      "difficulty": 3
     },
     {
       "id": "soccer-worldcup-recent",
@@ -518,7 +522,8 @@
             "west german"
           ]
         }
-      ]
+      ],
+      "difficulty": 2
     },
     {
       "id": "nba-champions-recent",
@@ -636,7 +641,8 @@
             "gsw"
           ]
         }
-      ]
+      ],
+      "difficulty": 2
     },
     {
       "id": "running-olympic-100m-men",
@@ -741,7 +747,8 @@
             "lewis"
           ]
         }
-      ]
+      ],
+      "difficulty": 4
     },
     {
       "id": "econ-gdp-nominal",
@@ -841,7 +848,8 @@
           "value": null,
           "aliases": []
         }
-      ]
+      ],
+      "difficulty": 2
     },
     {
       "id": "geo-highest-mountains",
@@ -932,7 +940,8 @@
             "annapurna i"
           ]
         }
-      ]
+      ],
+      "difficulty": 5
     },
     {
       "id": "geo-longest-rivers",
@@ -1031,7 +1040,8 @@
             "heilong jiang"
           ]
         }
-      ]
+      ],
+      "difficulty": 4
     },
     {
       "id": "sci-largest-moons",
@@ -1112,7 +1122,8 @@
           "value": 1523,
           "aliases": []
         }
-      ]
+      ],
+      "difficulty": 4
     },
     {
       "id": "hist-us-presidents-recent",
@@ -1218,7 +1229,8 @@
             "nixon"
           ]
         }
-      ]
+      ],
+      "difficulty": 1
     }
   ]
 }
