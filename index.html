@@ -442,6 +442,9 @@ const fmtDate = iso => {
 const fmtNum = n => n == null ? '' : n.toLocaleString();
 
 function render() {
+  // A deferred update lands here: the moment the player is off the game screen
+  // there is nothing to lose, so apply it.
+  if (pendingReload && view !== 'game') return applyReload();
   const app = document.getElementById('app');
   app.innerHTML = (view === 'home' ? viewHome() : view === 'game' ? viewGame() : viewResult())
     + (sheet ? viewSheet() : '');
@@ -685,6 +688,13 @@ function wire() {
 }
 
 /* ---------- boot ---------- */
+let pendingReload = false, reloaded = false;
+function applyReload() {
+  if (reloaded) return;
+  reloaded = true;
+  location.reload();
+}
+
 function registerSW() {
   if (!('serviceWorker' in navigator)) return;
   window.addEventListener('load', function () {
@@ -694,11 +704,19 @@ function registerSW() {
     // it activates, instead of requiring a manual reopen.
     navigator.serviceWorker.register('./sw.js', { updateViaCache: 'none' }).then(function (reg) {
       reg.update();
-      var reloaded = false;
+
+      // Returning to a backgrounded home-screen app is not a page load, so
+      // nothing would otherwise check for a new version — an app resumed from
+      // the switcher could stay stale indefinitely. Check on every foreground.
+      document.addEventListener('visibilitychange', function () {
+        if (!document.hidden) reg.update().catch(function () {});
+      });
+
       navigator.serviceWorker.addEventListener('controllerchange', function () {
-        if (reloaded) return;
-        reloaded = true;
-        location.reload();
+        // Never yank the page out from under a quiz in progress — that would
+        // lose the run. Defer to the next moment the player isn't mid-game.
+        if (view === 'game' && game && !game.over) { pendingReload = true; return; }
+        applyReload();
       });
     }).catch(function () {});
   });
