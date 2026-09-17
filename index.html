@@ -122,9 +122,10 @@
   /* One status line: misses, what's left, and feedback. Every row saved here
      is a row of the list you can still see with the keyboard up. */
   .statusline{display:flex;align-items:center;gap:8px;margin-top:6px;min-height:17px;}
-  .misses{display:flex;align-items:center;gap:4px;}
-  .misses i{width:7px;height:7px;border-radius:50%;background:var(--border);display:block;}
-  .misses i.x{background:var(--coral);}
+  .misses{display:flex;align-items:center;gap:3px;}
+  .heart{display:block;line-height:0;color:var(--coral);}
+  .heart.gone{color:var(--border);}
+  .heart svg{width:13px;height:13px;display:block;fill:currentColor;}
   .sl-count{color:var(--ink-dim);font-size:11.5px;white-space:nowrap;}
   .statusline .flash{flex:1;text-align:right;margin:0;font-size:11.5px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
   .flash{text-align:center;font-size:13px;min-height:18px;margin-top:8px;color:var(--ink-soft);}
@@ -179,6 +180,7 @@
    ============================================================ */
 
 const KEY = 'dailytens.v1';
+const HEART = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>';
 const DOMAINS = [
   ['geography','Geography & economics'], ['sports','Sports'], ['science','Science & nature'],
   ['history','History & politics'], ['film','Film & TV'], ['business','Business'],
@@ -392,6 +394,7 @@ function startGame(puzzle, challenge) {
   game = {
     puzzle, found: new Set(), misses: 0, over: false,
     hinted: new Set(), hintsLeft: HINT_BUDGET,
+    tried: new Set(),
     challenge: challenge || null,
   };
   flash = { msg: '', kind: '' };
@@ -430,6 +433,19 @@ function submitGuess() {
   const raw = input.value.trim();
   if (!raw) return;
   input.value = '';
+  // Repeating a guess never costs a heart. Forgetting what you already tried
+  // is not the kind of mistake this game should punish — it punishes not
+  // knowing the list, which is a different thing.
+  const key = norm(raw);
+  if (game.tried.has(key)) {
+    game.just = new Set();
+    flash = { msg: 'Already tried “' + raw + '”', kind: 'dup' };
+    render();
+    const i0 = document.getElementById('guess'); if (i0) i0.focus();
+    return;
+  }
+  game.tried.add(key);
+
   const hits = matchGuesses(raw, game.puzzle.answers);
   const fresh = hits.filter(i => !game.found.has(i));
   game.just = new Set(fresh);          // highlighted on this render only
@@ -475,21 +491,15 @@ function render() {
 
 function viewHome() {
   const h = store.history;
-  const last10 = h.slice(0, 10);
-  const avg = last10.length ? (last10.reduce((a, b) => a + b.score, 0) / last10.length) : 0;
-  const perfect = h.filter(x => x.score === 10).length;
   const pool = eligible().length;
+  // No scoreboard. Running totals turn a game you play on a whim into
+  // something with a record to protect.
   return `
   <div class="body">
     <div class="hero">
       <p class="mark">Daily<em>Tens</em></p>
       <p>Name the top ten. Five misses and you're out.<br>Every list carries its source.</p>
     </div>
-    ${h.length ? `<div class="statrow">
-      <div class="stat"><b>${h.length}</b><span>Played</span></div>
-      <div class="stat"><b>${avg.toFixed(1)}</b><span>Avg last 10</span></div>
-      <div class="stat"><b>${perfect}</b><span>Perfect</span></div>
-    </div>` : ''}
     ${pool ? '' : `<div class="note">Nothing matches your rotation filters. Widen them, or pick a category directly.</div>`}
     <button class="btn btn-primary btn-block" id="play" ${pool ? '' : 'disabled'}>Random quiz</button>
     <button class="btn btn-secondary btn-block" id="open-pick" style="margin-top:8px">Pick a category</button>
@@ -545,8 +555,9 @@ function viewGame() {
       <button class="btn btn-primary" id="submit">Go</button>
     </div>
     <div class="statusline">
-      <span class="misses">${[0, 1, 2, 3, 4].map(i => `<i class="${i < game.misses ? 'x' : ''}"></i>`).join('')}</span>
-      <span class="sl-count">${5 - game.misses} left${game.hintsLeft ? ` · ${game.hintsLeft} hint${game.hintsLeft === 1 ? '' : 's'}` : ''}</span>
+      <span class="misses">${[0, 1, 2, 3, 4].map(i =>
+        `<span class="heart${i >= 5 - game.misses ? ' gone' : ''}">${HEART}</span>`).join('')}</span>
+      <span class="sl-count">${game.hintsLeft ? `${game.hintsLeft} hint${game.hintsLeft === 1 ? '' : 's'}` : 'no hints'}</span>
       <span class="flash ${flash.kind}">${esc(flash.msg)}</span>
     </div>
   </div>
