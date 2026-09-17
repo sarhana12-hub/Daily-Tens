@@ -43,6 +43,11 @@ An entity qualifies only if:
 - Editions are **uninterrupted enough** to be fair. Gaps (wartime, 2020 COVID
   postponements, boycotts) are fine but must be reflected in the slot labels,
   since a player counting back by fours will otherwise be misled.
+- Slot labels must not contain a gap that reads as a missing row. Labelling the
+  presidents by presidency number produced "47th, 46th, 44th" — the 45th is
+  absent because the list counts people and one man held both, but on screen it
+  looks like the app dropped a slot. Inauguration years have no such gap. Pick
+  a label whose sequence is self-explanatory.
 - The winner is **a single unambiguous name**. Team events need a stated
   convention (country? club? both?) recorded in `metric`.
 
