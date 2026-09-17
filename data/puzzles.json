@@ -25823,6 +25823,1112 @@
         "level": "partial",
         "note": "The leaders are well documented; the counts in the middle are close and depend on how shared nominations are credited, so the order is my best judgment."
       }
+    },
+    {
+      "id": "nba-finals-mvp-recent",
+      "type": "recency",
+      "domain": "sports",
+      "tags": [
+        "basketball"
+      ],
+      "obscurity": 2,
+      "difficulty": 4,
+      "prompt": "The ten most recent NBA Finals MVPs",
+      "metric": "Most Valuable Player of the NBA Finals, by season end year.",
+      "source": {
+        "name": "NBA - stats",
+        "url": "https://www.nba.com/stats/alltime-leaders"
+      },
+      "asOf": "2026-06",
+      "volatility": "annual",
+      "confidence": {
+        "level": "partial",
+        "note": "Verified through 2025; the 2026 award is my best judgment."
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "label": "2026",
+          "name": "Jalen Brunson",
+          "aliases": [
+            "brunson"
+          ],
+          "clue": "A New York guard, in a first title since 1973"
+        },
+        {
+          "rank": 2,
+          "label": "2025",
+          "name": "Shai Gilgeous-Alexander",
+          "aliases": [
+            "sga"
+          ],
+          "clue": "Canadian, and won the regular season award too"
+        },
+        {
+          "rank": 3,
+          "label": "2024",
+          "name": "Jaylen Brown",
+          "aliases": [
+            "brown"
+          ],
+          "clue": "Boston, and won ahead of a more famous team-mate"
+        },
+        {
+          "rank": 4,
+          "label": "2023",
+          "name": "Nikola Jokic",
+          "aliases": [
+            "jokic"
+          ],
+          "clue": "Serbian, and averaged a near triple-double"
+        },
+        {
+          "rank": 5,
+          "label": "2022",
+          "name": "Stephen Curry",
+          "aliases": [
+            "curry"
+          ],
+          "clue": "A first Finals award after four titles"
+        },
+        {
+          "rank": 6,
+          "label": "2021",
+          "name": "Giannis Antetokounmpo",
+          "aliases": [
+            "giannis"
+          ],
+          "clue": "Scored 50 in the closeout game"
+        },
+        {
+          "rank": 7,
+          "label": "2020",
+          "name": "LeBron James",
+          "aliases": [
+            "lebron"
+          ],
+          "clue": "A fourth award, with a third franchise"
+        },
+        {
+          "rank": 8,
+          "label": "2019",
+          "name": "Kawhi Leonard",
+          "aliases": [
+            "kawhi",
+            "leonard"
+          ],
+          "clue": "Won with two different teams"
+        },
+        {
+          "rank": 9,
+          "label": "2018",
+          "name": "Kevin Durant",
+          "aliases": [
+            "durant"
+          ],
+          "clue": "Back-to-back awards"
+        },
+        {
+          "rank": 10,
+          "label": "2017",
+          "name": "Kevin Durant",
+          "aliases": [
+            "durant"
+          ],
+          "clue": "In his first season with the club"
+        }
+      ]
+    },
+    {
+      "type": "ranked",
+      "tags": [
+        "basketball"
+      ],
+      "volatility": "annual",
+      "asOf": "2026-06",
+      "id": "nba-most-championships-player",
+      "domain": "sports",
+      "obscurity": 3,
+      "difficulty": 5,
+      "prompt": "Most NBA championships won as a player",
+      "metric": "NBA titles won as a player.",
+      "source": {
+        "name": "NBA - stats",
+        "url": "https://www.nba.com/stats/alltime-leaders"
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Bill Russell",
+          "value": 11,
+          "aliases": [
+            "russell"
+          ],
+          "clue": "Eleven in thirteen seasons, and player-coach for two"
+        },
+        {
+          "rank": 2,
+          "name": "Sam Jones",
+          "value": 10,
+          "aliases": [
+            "sam jones"
+          ],
+          "clue": "A team-mate of the leader through the dynasty"
+        },
+        {
+          "rank": 3,
+          "name": "Tom Heinsohn",
+          "value": 8,
+          "aliases": [
+            "heinsohn"
+          ],
+          "clue": "Won eight as a player and two more coaching"
+        },
+        {
+          "rank": 4,
+          "name": "K.C. Jones",
+          "value": 8,
+          "aliases": [
+            "kc jones"
+          ],
+          "clue": "Another of that Boston dynasty"
+        },
+        {
+          "rank": 5,
+          "name": "Satch Sanders",
+          "value": 8,
+          "aliases": [
+            "sanders"
+          ],
+          "clue": "A defensive forward on those teams"
+        },
+        {
+          "rank": 6,
+          "name": "John Havlicek",
+          "value": 8,
+          "aliases": [
+            "havlicek",
+            "hondo"
+          ],
+          "clue": "Famous for stealing the ball in a playoff game"
+        },
+        {
+          "rank": 7,
+          "name": "Jim Loscutoff",
+          "value": 7,
+          "aliases": [
+            "loscutoff"
+          ],
+          "clue": "An enforcer on the same dynasty"
+        },
+        {
+          "rank": 8,
+          "name": "Frank Ramsey",
+          "value": 7,
+          "aliases": [
+            "ramsey"
+          ],
+          "clue": "Considered the first great sixth man"
+        },
+        {
+          "rank": 9,
+          "name": "Robert Horry",
+          "value": 7,
+          "aliases": [
+            "horry",
+            "big shot bob"
+          ],
+          "clue": "Won with three different franchises"
+        },
+        {
+          "rank": 10,
+          "name": "Bob Cousy",
+          "value": 6,
+          "aliases": [
+            "cousy"
+          ],
+          "clue": "A pioneering passer of the 1950s"
+        }
+      ],
+      "ambiguity": "Almost all of this list comes from one club's run between 1957 and 1969, which is why the names are unfamiliar to modern fans.",
+      "confidence": {
+        "level": "partial",
+        "note": "The leader is certain. Several members of that dynasty tie on eight and seven titles, so the order within those ties is my best judgment."
+      }
+    },
+    {
+      "type": "ranked",
+      "tags": [
+        "baseball"
+      ],
+      "volatility": "annual",
+      "asOf": "2025-11",
+      "id": "mlb-career-strikeouts",
+      "domain": "sports",
+      "obscurity": 3,
+      "difficulty": 5,
+      "prompt": "MLB career strikeout leaders as a pitcher",
+      "metric": "Batters struck out in a career, all time.",
+      "source": {
+        "name": "MLB - historical stats",
+        "url": "https://www.mlb.com/stats/all-time-totals"
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Nolan Ryan",
+          "value": 5714,
+          "aliases": [
+            "ryan"
+          ],
+          "clue": "Nearly a thousand clear, and pitched until he was 46"
+        },
+        {
+          "rank": 2,
+          "name": "Randy Johnson",
+          "value": 4875,
+          "aliases": [
+            "johnson",
+            "big unit"
+          ],
+          "clue": "Six foot ten, and terrifying left-handed"
+        },
+        {
+          "rank": 3,
+          "name": "Roger Clemens",
+          "value": 4672,
+          "aliases": [
+            "clemens"
+          ],
+          "clue": "Won seven Cy Young awards"
+        },
+        {
+          "rank": 4,
+          "name": "Steve Carlton",
+          "value": 4136,
+          "aliases": [
+            "carlton"
+          ],
+          "clue": "Won 27 games for a team that won only 59"
+        },
+        {
+          "rank": 5,
+          "name": "Bert Blyleven",
+          "value": 3701,
+          "aliases": [
+            "blyleven"
+          ],
+          "clue": "Dutch-born, and famous for his curveball"
+        },
+        {
+          "rank": 6,
+          "name": "Tom Seaver",
+          "value": 3640,
+          "aliases": [
+            "seaver"
+          ],
+          "clue": "Led a miracle team to a title in 1969"
+        },
+        {
+          "rank": 7,
+          "name": "Don Sutton",
+          "value": 3574,
+          "aliases": [
+            "sutton"
+          ],
+          "clue": "Pitched 23 seasons without ever going on the disabled list"
+        },
+        {
+          "rank": 8,
+          "name": "Gaylord Perry",
+          "value": 3534,
+          "aliases": [
+            "perry"
+          ],
+          "clue": "Admitted throwing an illegal spitball"
+        },
+        {
+          "rank": 9,
+          "name": "Walter Johnson",
+          "value": 3509,
+          "aliases": [
+            "walter johnson"
+          ],
+          "clue": "Set the record in 1927 and held it for 56 years"
+        },
+        {
+          "rank": 10,
+          "name": "Greg Maddux",
+          "value": 3371,
+          "aliases": [
+            "maddux"
+          ],
+          "clue": "Won with control rather than speed"
+        }
+      ]
+    },
+    {
+      "type": "ranked",
+      "tags": [
+        "baseball"
+      ],
+      "volatility": "annual",
+      "asOf": "2025-11",
+      "id": "mlb-most-world-series",
+      "domain": "sports",
+      "obscurity": 2,
+      "difficulty": 4,
+      "prompt": "Most World Series titles by franchise",
+      "metric": "World Series championships won, all time.",
+      "source": {
+        "name": "MLB - historical stats",
+        "url": "https://www.mlb.com/stats/all-time-totals"
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "New York Yankees",
+          "value": 27,
+          "aliases": [
+            "yankees"
+          ],
+          "clue": "More than twice as many as anyone else"
+        },
+        {
+          "rank": 2,
+          "name": "St. Louis Cardinals",
+          "value": 11,
+          "aliases": [
+            "cardinals",
+            "cards"
+          ],
+          "clue": "The most in the National League"
+        },
+        {
+          "rank": 3,
+          "name": "Boston Red Sox",
+          "value": 9,
+          "aliases": [
+            "red sox"
+          ],
+          "clue": "Ended an 86-year drought in 2004"
+        },
+        {
+          "rank": 4,
+          "name": "Oakland Athletics",
+          "value": 9,
+          "aliases": [
+            "athletics",
+            "as",
+            "oakland"
+          ],
+          "clue": "Won in three different cities"
+        },
+        {
+          "rank": 5,
+          "name": "Los Angeles Dodgers",
+          "value": 8,
+          "aliases": [
+            "dodgers"
+          ],
+          "clue": "Moved from Brooklyn in 1958"
+        },
+        {
+          "rank": 6,
+          "name": "San Francisco Giants",
+          "value": 8,
+          "aliases": [
+            "giants"
+          ],
+          "clue": "Three titles in five years in the 2010s"
+        },
+        {
+          "rank": 7,
+          "name": "Pittsburgh Pirates",
+          "value": 5,
+          "aliases": [
+            "pirates"
+          ],
+          "clue": "Last won in 1979"
+        },
+        {
+          "rank": 8,
+          "name": "Cincinnati Reds",
+          "value": 5,
+          "aliases": [
+            "reds"
+          ],
+          "clue": "The Big Red Machine of the 1970s"
+        },
+        {
+          "rank": 9,
+          "name": "Detroit Tigers",
+          "value": 4,
+          "aliases": [
+            "tigers"
+          ],
+          "clue": "Last won in 1984"
+        },
+        {
+          "rank": 10,
+          "name": "Chicago White Sox",
+          "value": 3,
+          "aliases": [
+            "white sox"
+          ],
+          "clue": "Ended an 88-year wait in 2005"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "The leader is certain. Several franchises tie on nine, eight and five titles, so the order within ties is my best judgment."
+      }
+    },
+    {
+      "type": "ranked",
+      "tags": [],
+      "volatility": "annual",
+      "asOf": "2024-08",
+      "id": "oly-most-golds-single-games",
+      "domain": "sports",
+      "obscurity": 3,
+      "difficulty": 5,
+      "prompt": "Most gold medals won at a single Olympic Games",
+      "metric": "Gold medals won by one athlete at one Games.",
+      "source": {
+        "name": "Olympics.com - results",
+        "url": "https://www.olympics.com/en/olympic-games/olympic-results"
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Michael Phelps",
+          "value": 8,
+          "aliases": [
+            "phelps"
+          ],
+          "clue": "Eight in Beijing, one of them by a hundredth of a second"
+        },
+        {
+          "rank": 2,
+          "name": "Mark Spitz",
+          "value": 7,
+          "aliases": [
+            "spitz"
+          ],
+          "clue": "Seven in Munich, all in world record time"
+        },
+        {
+          "rank": 3,
+          "name": "Vitaly Scherbo",
+          "value": 6,
+          "aliases": [
+            "scherbo"
+          ],
+          "clue": "Six gymnastics golds for a unified team in 1992"
+        },
+        {
+          "rank": 4,
+          "name": "Kristin Otto",
+          "value": 6,
+          "aliases": [
+            "otto"
+          ],
+          "clue": "Six swimming golds for East Germany in 1988"
+        },
+        {
+          "rank": 5,
+          "name": "Eric Heiden",
+          "value": 5,
+          "aliases": [
+            "heiden"
+          ],
+          "clue": "Five speed skating golds at one Winter Games"
+        },
+        {
+          "rank": 6,
+          "name": "Anton Heida",
+          "value": 5,
+          "aliases": [
+            "heida"
+          ],
+          "clue": "Five gymnastics golds in 1904"
+        },
+        {
+          "rank": 7,
+          "name": "Willis Lee",
+          "value": 5,
+          "aliases": [
+            "lee"
+          ],
+          "clue": "Five shooting golds in 1920"
+        },
+        {
+          "rank": 8,
+          "name": "Nedo Nadi",
+          "value": 5,
+          "aliases": [
+            "nadi"
+          ],
+          "clue": "Five fencing golds in 1920"
+        },
+        {
+          "rank": 9,
+          "name": "Paavo Nurmi",
+          "value": 5,
+          "aliases": [
+            "nurmi"
+          ],
+          "clue": "Five distance running golds in 1924"
+        },
+        {
+          "rank": 10,
+          "name": "Caeleb Dressel",
+          "value": 5,
+          "aliases": [
+            "dressel"
+          ],
+          "clue": "Five swimming golds in Tokyo"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "The top two are certain. A group of athletes tie on five and six golds, so the order within those ties is my best judgment."
+      }
+    },
+    {
+      "id": "oly-high-jump-women-recent",
+      "type": "recency",
+      "domain": "sports",
+      "tags": [],
+      "obscurity": 3,
+      "difficulty": 5,
+      "prompt": "The ten most recent women's Olympic high jump champions",
+      "metric": "Gold medallist in the women's Olympic high jump, by Games.",
+      "source": {
+        "name": "Olympics.com - results",
+        "url": "https://www.olympics.com/en/olympic-games/olympic-results"
+      },
+      "asOf": "2024-08",
+      "volatility": "annual",
+      "answers": [
+        {
+          "rank": 1,
+          "label": "2024",
+          "name": "Yaroslava Mahuchikh",
+          "aliases": [
+            "mahuchikh"
+          ],
+          "clue": "Ukrainian, and holds the world record"
+        },
+        {
+          "rank": 2,
+          "label": "2020",
+          "name": "Mariya Lasitskene",
+          "aliases": [
+            "lasitskene"
+          ],
+          "clue": "Competed as a neutral athlete"
+        },
+        {
+          "rank": 3,
+          "label": "2016",
+          "name": "Ruth Beitia",
+          "aliases": [
+            "beitia"
+          ],
+          "clue": "Spanish, and won at 37"
+        },
+        {
+          "rank": 4,
+          "label": "2012",
+          "name": "Anna Chicherova",
+          "aliases": [
+            "chicherova"
+          ],
+          "clue": "Russian, and later nearly lost the medal to a doping case"
+        },
+        {
+          "rank": 5,
+          "label": "2008",
+          "name": "Tia Hellebaut",
+          "aliases": [
+            "hellebaut"
+          ],
+          "clue": "Belgian, and a chemist by training"
+        },
+        {
+          "rank": 6,
+          "label": "2004",
+          "name": "Yelena Slesarenko",
+          "aliases": [
+            "slesarenko"
+          ],
+          "clue": "Russian, in an Olympic record"
+        },
+        {
+          "rank": 7,
+          "label": "2000",
+          "name": "Yelena Yelesina",
+          "aliases": [
+            "yelesina"
+          ],
+          "clue": "Russian, and returned after years away"
+        },
+        {
+          "rank": 8,
+          "label": "1996",
+          "name": "Stefka Kostadinova",
+          "aliases": [
+            "kostadinova"
+          ],
+          "clue": "Bulgarian, and held the world record for 37 years"
+        },
+        {
+          "rank": 9,
+          "label": "1992",
+          "name": "Heike Henkel",
+          "aliases": [
+            "henkel"
+          ],
+          "clue": "German, and won at a home continental championship too"
+        },
+        {
+          "rank": 10,
+          "label": "1988",
+          "name": "Louise Ritter",
+          "aliases": [
+            "ritter"
+          ],
+          "clue": "American, and beat the world record holder in a jump-off"
+        }
+      ]
+    },
+    {
+      "type": "ranked",
+      "tags": [],
+      "volatility": "evergreen",
+      "asOf": "2024-12-31",
+      "id": "geo-largest-urban-parks",
+      "domain": "geography",
+      "obscurity": 4,
+      "difficulty": 5,
+      "prompt": "Largest urban parks in the world",
+      "metric": "Park area in hectares, for parks within a city boundary.",
+      "source": {
+        "name": "Encyclopaedia Britannica",
+        "url": "https://www.britannica.com/"
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Chugach State Park",
+          "value": 200000,
+          "aliases": [
+            "chugach"
+          ],
+          "clue": "Within the boundary of Anchorage, Alaska"
+        },
+        {
+          "rank": 2,
+          "name": "Table Mountain National Park",
+          "value": 22000,
+          "aliases": [
+            "table mountain"
+          ],
+          "clue": "Rises directly above Cape Town"
+        },
+        {
+          "rank": 3,
+          "name": "Pedra Branca State Park",
+          "value": 12500,
+          "aliases": [
+            "pedra branca"
+          ],
+          "clue": "In Rio de Janeiro"
+        },
+        {
+          "rank": 4,
+          "name": "Nairobi National Park",
+          "value": 11700,
+          "aliases": [
+            "nairobi national park"
+          ],
+          "clue": "Has rhinos within sight of the skyline"
+        },
+        {
+          "rank": 5,
+          "name": "Losiny Ostrov",
+          "value": 11600,
+          "aliases": [
+            "losiny ostrov",
+            "elk island"
+          ],
+          "clue": "A Moscow national park with wild elk"
+        },
+        {
+          "rank": 6,
+          "name": "Sanjay Gandhi National Park",
+          "value": 10400,
+          "aliases": [
+            "sanjay gandhi"
+          ],
+          "clue": "In Mumbai, and has resident leopards"
+        },
+        {
+          "rank": 7,
+          "name": "Bukhansan National Park",
+          "value": 7900,
+          "aliases": [
+            "bukhansan"
+          ],
+          "clue": "Mountains inside Seoul"
+        },
+        {
+          "rank": 8,
+          "name": "McDowell Sonoran Preserve",
+          "value": 6500,
+          "aliases": [
+            "mcdowell sonoran"
+          ],
+          "clue": "Desert preserve in Scottsdale, Arizona"
+        },
+        {
+          "rank": 9,
+          "name": "Tijuca National Park",
+          "value": 3900,
+          "aliases": [
+            "tijuca"
+          ],
+          "clue": "Also in Rio, and largely replanted by hand"
+        },
+        {
+          "rank": 10,
+          "name": "Griffith Park",
+          "value": 1700,
+          "aliases": [
+            "griffith"
+          ],
+          "clue": "Los Angeles, and holds an observatory"
+        }
+      ],
+      "confidence": {
+        "level": "judgment",
+        "note": "What counts as urban and as a single park varies wildly between sources, which reorders this list entirely. Membership is the point."
+      }
+    },
+    {
+      "type": "ranked",
+      "tags": [],
+      "volatility": "evergreen",
+      "asOf": "2024-12-31",
+      "id": "geo-largest-islands-lakes",
+      "domain": "geography",
+      "obscurity": 4,
+      "difficulty": 5,
+      "prompt": "Largest islands in lakes",
+      "metric": "Island area in km², for islands entirely within a lake.",
+      "source": {
+        "name": "Encyclopaedia Britannica",
+        "url": "https://www.britannica.com/"
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Manitoulin Island",
+          "value": 2766,
+          "aliases": [
+            "manitoulin"
+          ],
+          "clue": "In Lake Huron, and the largest lake island in the world"
+        },
+        {
+          "rank": 2,
+          "name": "Rene-Levasseur Island",
+          "value": 2020,
+          "aliases": [
+            "rene levasseur",
+            "levasseur"
+          ],
+          "clue": "Created when a reservoir flooded an impact crater"
+        },
+        {
+          "rank": 3,
+          "name": "Olkhon",
+          "value": 730,
+          "aliases": [],
+          "clue": "In Siberia's deepest lake, and sacred to local shamans"
+        },
+        {
+          "rank": 4,
+          "name": "Samosir",
+          "value": 630,
+          "aliases": [],
+          "clue": "In an Indonesian volcanic crater lake"
+        },
+        {
+          "rank": 5,
+          "name": "Isle Royale",
+          "value": 535,
+          "aliases": [
+            "isle royale island"
+          ],
+          "clue": "In Lake Superior, and a national park with wolves"
+        },
+        {
+          "rank": 6,
+          "name": "Ukerewe",
+          "value": 530,
+          "aliases": [],
+          "clue": "In Africa's largest lake"
+        },
+        {
+          "rank": 7,
+          "name": "Saint Joseph Island",
+          "value": 365,
+          "aliases": [
+            "st joseph island"
+          ],
+          "clue": "In Lake Huron, near the largest of all"
+        },
+        {
+          "rank": 8,
+          "name": "Drummond Island",
+          "value": 347,
+          "aliases": [
+            "drummond"
+          ],
+          "clue": "Also in Lake Huron, and reachable by ferry"
+        },
+        {
+          "rank": 9,
+          "name": "Idjwi",
+          "value": 285,
+          "aliases": [
+            "idjwi island"
+          ],
+          "clue": "In Lake Kivu, between two central African countries"
+        },
+        {
+          "rank": 10,
+          "name": "Ometepe",
+          "value": 276,
+          "aliases": [],
+          "clue": "Two volcanoes joined by an isthmus, in a Nicaraguan lake"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "The top six are well documented. The smaller lake islands below are measured inconsistently, so their order is my best judgment."
+      }
+    },
+    {
+      "type": "ranked",
+      "tags": [],
+      "volatility": "annual",
+      "asOf": "2024-12-31",
+      "id": "food-meat-consumption",
+      "domain": "food",
+      "obscurity": 2,
+      "difficulty": 4,
+      "prompt": "Highest meat consumption per person",
+      "metric": "Meat consumed per person per year, in kilograms, carcass weight equivalent.",
+      "source": {
+        "name": "FAO - FAOSTAT",
+        "url": "https://www.fao.org/faostat/en/#data/QCL"
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "United States",
+          "value": 127,
+          "aliases": [
+            "usa",
+            "us",
+            "america"
+          ],
+          "clue": "Among the highest anywhere, and heavy on poultry"
+        },
+        {
+          "rank": 2,
+          "name": "Australia",
+          "value": 122,
+          "aliases": [],
+          "clue": "Beef and lamb, and a barbecue culture"
+        },
+        {
+          "rank": 3,
+          "name": "Argentina",
+          "value": 110,
+          "aliases": [],
+          "clue": "Beef above all, and a famous grill tradition"
+        },
+        {
+          "rank": 4,
+          "name": "Israel",
+          "value": 105,
+          "aliases": [],
+          "clue": "Very high poultry consumption"
+        },
+        {
+          "rank": 5,
+          "name": "Spain",
+          "value": 100,
+          "aliases": [
+            "espana"
+          ],
+          "clue": "Pork, and a large cured ham industry"
+        },
+        {
+          "rank": 6,
+          "name": "Brazil",
+          "value": 99,
+          "aliases": [
+            "brasil"
+          ],
+          "clue": "A major producer as well as consumer"
+        },
+        {
+          "rank": 7,
+          "name": "New Zealand",
+          "value": 95,
+          "aliases": [
+            "nz"
+          ],
+          "clue": "Lamb and beef from a pastoral economy"
+        },
+        {
+          "rank": 8,
+          "name": "Canada",
+          "value": 94,
+          "aliases": [],
+          "clue": "Similar diet to its southern neighbour"
+        },
+        {
+          "rank": 9,
+          "name": "Portugal",
+          "value": 93,
+          "aliases": [],
+          "clue": "High pork and fish consumption"
+        },
+        {
+          "rank": 10,
+          "name": "Chile",
+          "value": 90,
+          "aliases": [],
+          "clue": "Rising with incomes over recent decades"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "The top four are firm; the rest are close together and reported on slightly different bases, so the order is my best judgment."
+      }
+    },
+    {
+      "type": "ranked",
+      "tags": [],
+      "volatility": "annual",
+      "asOf": "2024-12-31",
+      "id": "food-biggest-honey-producers",
+      "domain": "food",
+      "obscurity": 4,
+      "difficulty": 5,
+      "prompt": "Biggest honey-producing countries",
+      "metric": "Natural honey production by weight, in tonnes per year.",
+      "source": {
+        "name": "FAO - FAOSTAT",
+        "url": "https://www.fao.org/faostat/en/#data/QCL"
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "China",
+          "value": null,
+          "aliases": [
+            "prc"
+          ],
+          "clue": "Roughly a quarter of world production"
+        },
+        {
+          "rank": 2,
+          "name": "Turkey",
+          "value": null,
+          "aliases": [
+            "turkiye"
+          ],
+          "clue": "Famous for pine honey from the Aegean"
+        },
+        {
+          "rank": 3,
+          "name": "Iran",
+          "value": null,
+          "aliases": [
+            "persia"
+          ],
+          "clue": "A large and growing producer"
+        },
+        {
+          "rank": 4,
+          "name": "Argentina",
+          "value": null,
+          "aliases": [],
+          "clue": "A major exporter to Europe"
+        },
+        {
+          "rank": 5,
+          "name": "Ukraine",
+          "value": null,
+          "aliases": [],
+          "clue": "Europe's largest producer"
+        },
+        {
+          "rank": 6,
+          "name": "India",
+          "value": null,
+          "aliases": [
+            "bharat"
+          ],
+          "clue": "Both wild-harvested and farmed"
+        },
+        {
+          "rank": 7,
+          "name": "United States",
+          "value": null,
+          "aliases": [
+            "usa",
+            "us",
+            "america"
+          ],
+          "clue": "Production has fallen with bee colony losses"
+        },
+        {
+          "rank": 8,
+          "name": "Russia",
+          "value": null,
+          "aliases": [],
+          "clue": "Long tradition of forest beekeeping"
+        },
+        {
+          "rank": 9,
+          "name": "Mexico",
+          "value": null,
+          "aliases": [],
+          "clue": "Yucatan honey is prized in Europe"
+        },
+        {
+          "rank": 10,
+          "name": "Brazil",
+          "value": null,
+          "aliases": [
+            "brasil"
+          ],
+          "clue": "Including organic honey from the interior"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "The leader is certain and far ahead. The rest are close and reporting is uneven, so the order is my best judgment."
+      }
     }
   ]
 }
