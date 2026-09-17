@@ -24688,6 +24688,1141 @@
         "level": "partial",
         "note": "The top five are firm; capacity figures are revised as units come online, so the tail order is my best judgment."
       }
+    },
+    {
+      "type": "ranked",
+      "tags": [],
+      "volatility": "evergreen",
+      "asOf": "2024-12-31",
+      "id": "geo-oldest-currencies",
+      "domain": "geography",
+      "obscurity": 4,
+      "difficulty": 5,
+      "prompt": "Oldest currencies still in use",
+      "metric": "Approximate year the currency was first introduced under its current name. Lower year means older.",
+      "source": {
+        "name": "Encyclopaedia Britannica",
+        "url": "https://www.britannica.com/"
+      },
+      "order": "asc",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Pound sterling",
+          "value": 775,
+          "aliases": [
+            "pound",
+            "sterling",
+            "british pound"
+          ],
+          "clue": "The oldest still in use, from Anglo-Saxon silver pennies"
+        },
+        {
+          "rank": 2,
+          "name": "Serbian dinar",
+          "value": 1214,
+          "aliases": [
+            "dinar"
+          ],
+          "clue": "Revived in the modern era after medieval use"
+        },
+        {
+          "rank": 3,
+          "name": "Dutch guilder era florin",
+          "value": 1252,
+          "aliases": [
+            "florin"
+          ],
+          "clue": "Originally a Florentine gold coin"
+        },
+        {
+          "rank": 4,
+          "name": "Russian rouble",
+          "value": 1316,
+          "aliases": [
+            "rouble",
+            "ruble"
+          ],
+          "clue": "Named from a word meaning to chop"
+        },
+        {
+          "rank": 5,
+          "name": "United States dollar",
+          "value": 1792,
+          "aliases": [
+            "dollar",
+            "us dollar"
+          ],
+          "clue": "The world's main reserve currency"
+        },
+        {
+          "rank": 6,
+          "name": "Swiss franc",
+          "value": 1798,
+          "aliases": [
+            "franc"
+          ],
+          "clue": "Also a safe-haven currency today"
+        },
+        {
+          "rank": 7,
+          "name": "Haitian gourde",
+          "value": 1813,
+          "aliases": [
+            "gourde"
+          ],
+          "clue": "Named after a dried fruit shell used in barter"
+        },
+        {
+          "rank": 8,
+          "name": "Dominican peso",
+          "value": 1844,
+          "aliases": [
+            "peso"
+          ],
+          "clue": "Introduced at independence"
+        },
+        {
+          "rank": 9,
+          "name": "Canadian dollar",
+          "value": 1858,
+          "aliases": [
+            "loonie",
+            "canadian dollar"
+          ],
+          "clue": "Nicknamed for the bird on its coin"
+        },
+        {
+          "rank": 10,
+          "name": "Japanese yen",
+          "value": 1871,
+          "aliases": [
+            "yen"
+          ],
+          "clue": "Introduced during a period of rapid modernisation"
+        }
+      ],
+      "confidence": {
+        "level": "judgment",
+        "note": "Currency continuity across revaluations, occupations and redenominations is genuinely arguable, so this list and its order are my best judgment."
+      }
+    },
+    {
+      "type": "ranked",
+      "tags": [],
+      "volatility": "evergreen",
+      "asOf": "2024-12-31",
+      "id": "geo-longest-borders",
+      "domain": "geography",
+      "obscurity": 3,
+      "difficulty": 5,
+      "prompt": "Longest international borders between two countries",
+      "metric": "Length of the shared border in kilometres.",
+      "source": {
+        "name": "Encyclopaedia Britannica",
+        "url": "https://www.britannica.com/"
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Canada and United States",
+          "value": 8891,
+          "aliases": [
+            "canada us",
+            "us canada",
+            "canada united states"
+          ],
+          "clue": "The longest in the world, and largely undefended"
+        },
+        {
+          "rank": 2,
+          "name": "Kazakhstan and Russia",
+          "value": 7644,
+          "aliases": [
+            "kazakhstan russia",
+            "russia kazakhstan"
+          ],
+          "clue": "The longest continuous land border"
+        },
+        {
+          "rank": 3,
+          "name": "Argentina and Chile",
+          "value": 5308,
+          "aliases": [
+            "argentina chile",
+            "chile argentina"
+          ],
+          "clue": "Runs along the spine of the Andes"
+        },
+        {
+          "rank": 4,
+          "name": "China and Mongolia",
+          "value": 4677,
+          "aliases": [
+            "china mongolia",
+            "mongolia china"
+          ],
+          "clue": "Crosses the Gobi"
+        },
+        {
+          "rank": 5,
+          "name": "Bangladesh and India",
+          "value": 4142,
+          "aliases": [
+            "bangladesh india",
+            "india bangladesh"
+          ],
+          "clue": "Includes some of the most complex enclaves ever untangled"
+        },
+        {
+          "rank": 6,
+          "name": "China and Russia",
+          "value": 4133,
+          "aliases": [
+            "china russia",
+            "russia china"
+          ],
+          "clue": "Follows two great rivers for much of its length"
+        },
+        {
+          "rank": 7,
+          "name": "India and China",
+          "value": 3488,
+          "aliases": [
+            "india china",
+            "china india"
+          ],
+          "clue": "Disputed along much of its length"
+        },
+        {
+          "rank": 8,
+          "name": "Mongolia and Russia",
+          "value": 3452,
+          "aliases": [
+            "mongolia russia",
+            "russia mongolia"
+          ],
+          "clue": "Across steppe and Siberian forest"
+        },
+        {
+          "rank": 9,
+          "name": "Brazil and Bolivia",
+          "value": 3423,
+          "aliases": [
+            "brazil bolivia",
+            "bolivia brazil"
+          ],
+          "clue": "Mostly through Amazon and wetland"
+        },
+        {
+          "rank": 10,
+          "name": "Peru and Brazil",
+          "value": 2995,
+          "aliases": [
+            "peru brazil",
+            "brazil peru"
+          ],
+          "clue": "Almost entirely rainforest"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "Border lengths are quoted differently by the two countries either side, especially where disputed, so the order is my best judgment."
+      }
+    },
+    {
+      "type": "ranked",
+      "tags": [],
+      "volatility": "evergreen",
+      "asOf": "2024-12-31",
+      "id": "sci-solar-volcanoes",
+      "domain": "science",
+      "obscurity": 4,
+      "difficulty": 5,
+      "prompt": "Largest volcanoes in the solar system",
+      "metric": "Height above surrounding terrain in kilometres.",
+      "source": {
+        "name": "NASA",
+        "url": "https://science.nasa.gov/"
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Olympus Mons",
+          "value": 22,
+          "aliases": [
+            "olympus"
+          ],
+          "clue": "Martian, and roughly the size of a large country"
+        },
+        {
+          "rank": 2,
+          "name": "Rheasilvia",
+          "value": 22,
+          "aliases": [],
+          "clue": "A central peak on the asteroid Vesta"
+        },
+        {
+          "rank": 3,
+          "name": "Ascraeus Mons",
+          "value": 18,
+          "aliases": [
+            "ascraeus"
+          ],
+          "clue": "Martian, on a great volcanic bulge"
+        },
+        {
+          "rank": 4,
+          "name": "Boosaule Montes",
+          "value": 17,
+          "aliases": [
+            "boosaule"
+          ],
+          "clue": "On Jupiter's volcanic moon"
+        },
+        {
+          "rank": 5,
+          "name": "Arsia Mons",
+          "value": 16,
+          "aliases": [
+            "arsia"
+          ],
+          "clue": "Martian, and its summit caldera is enormous"
+        },
+        {
+          "rank": 6,
+          "name": "Pavonis Mons",
+          "value": 14,
+          "aliases": [
+            "pavonis"
+          ],
+          "clue": "Martian, and sits almost exactly on the equator"
+        },
+        {
+          "rank": 7,
+          "name": "Elysium Mons",
+          "value": 13,
+          "aliases": [
+            "elysium"
+          ],
+          "clue": "Martian, and in a separate volcanic province"
+        },
+        {
+          "rank": 8,
+          "name": "Maxwell Montes",
+          "value": 11,
+          "aliases": [
+            "maxwell"
+          ],
+          "clue": "The highest point on Venus"
+        },
+        {
+          "rank": 9,
+          "name": "Euboea Montes",
+          "value": 10.5,
+          "aliases": [
+            "euboea"
+          ],
+          "clue": "Another peak on that same volcanic moon"
+        },
+        {
+          "rank": 10,
+          "name": "Mauna Kea",
+          "value": 10,
+          "aliases": [
+            "mauna"
+          ],
+          "clue": "Measured from the sea floor, the tallest on Earth"
+        }
+      ],
+      "confidence": {
+        "level": "judgment",
+        "note": "Heights on other worlds are measured from different reference surfaces and revised by new missions, so the order is my best judgment."
+      }
+    },
+    {
+      "type": "ranked",
+      "tags": [],
+      "volatility": "evergreen",
+      "asOf": "2024-12-31",
+      "id": "sci-most-venomous",
+      "domain": "science",
+      "obscurity": 3,
+      "difficulty": 5,
+      "prompt": "Most venomous animals by toxicity",
+      "metric": "Median lethal dose of venom in laboratory testing. Lower dose means more toxic.",
+      "source": {
+        "name": "Smithsonian",
+        "url": "https://www.si.edu/"
+      },
+      "order": "asc",
+      "ambiguity": "Ranked by laboratory toxicity, not by danger to people. Several of the most toxic almost never bite a human, while far less toxic snakes kill thousands each year.",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Inland taipan",
+          "value": 0.025,
+          "aliases": [
+            "taipan",
+            "fierce snake"
+          ],
+          "clue": "Australian, and the most toxic snake venom measured"
+        },
+        {
+          "rank": 2,
+          "name": "Dubois sea snake",
+          "value": 0.044,
+          "aliases": [
+            "dubois"
+          ],
+          "clue": "A sea snake of the Coral Sea"
+        },
+        {
+          "rank": 3,
+          "name": "Eastern brown snake",
+          "value": 0.053,
+          "aliases": [
+            "brown snake"
+          ],
+          "clue": "Australian, and causes most snakebite deaths there"
+        },
+        {
+          "rank": 4,
+          "name": "Yellow-bellied sea snake",
+          "value": 0.067,
+          "aliases": [
+            "yellow bellied sea snake"
+          ],
+          "clue": "The most widely distributed snake in the world"
+        },
+        {
+          "rank": 5,
+          "name": "Peron sea snake",
+          "value": 0.079,
+          "aliases": [
+            "peron"
+          ],
+          "clue": "Has spines on its head"
+        },
+        {
+          "rank": 6,
+          "name": "Black tiger snake",
+          "value": 0.099,
+          "aliases": [
+            "tiger snake"
+          ],
+          "clue": "Australian, and found on offshore islands"
+        },
+        {
+          "rank": 7,
+          "name": "Coastal taipan",
+          "value": 0.106,
+          "aliases": [
+            "coastal taipan snake"
+          ],
+          "clue": "Australian, and very fast-striking"
+        },
+        {
+          "rank": 8,
+          "name": "Many-banded krait",
+          "value": 0.108,
+          "aliases": [
+            "krait"
+          ],
+          "clue": "Nocturnal, and its bite is often painless at first"
+        },
+        {
+          "rank": 9,
+          "name": "Beaked sea snake",
+          "value": 0.113,
+          "aliases": [
+            "beaked"
+          ],
+          "clue": "Responsible for many sea snake bites in Asia"
+        },
+        {
+          "rank": 10,
+          "name": "Russell viper",
+          "value": 0.133,
+          "aliases": [
+            "russells viper",
+            "russell"
+          ],
+          "clue": "Kills more people in Asia than almost any snake"
+        }
+      ],
+      "confidence": {
+        "level": "judgment",
+        "note": "Median lethal dose figures depend on the test animal and the injection route, so published values differ several-fold. Order is my best judgment."
+      }
+    },
+    {
+      "type": "ranked",
+      "tags": [],
+      "volatility": "evergreen",
+      "asOf": "2024-12-31",
+      "id": "sci-longest-migrations",
+      "domain": "science",
+      "obscurity": 3,
+      "difficulty": 5,
+      "prompt": "Animals with the longest migrations",
+      "metric": "Maximum annual round-trip migration distance in kilometres.",
+      "source": {
+        "name": "Smithsonian",
+        "url": "https://www.si.edu/"
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Arctic tern",
+          "value": 90000,
+          "aliases": [
+            "tern"
+          ],
+          "clue": "Flies pole to pole and sees two summers a year"
+        },
+        {
+          "rank": 2,
+          "name": "Sooty shearwater",
+          "value": 64000,
+          "aliases": [
+            "shearwater"
+          ],
+          "clue": "Traces a figure of eight across the Pacific"
+        },
+        {
+          "rank": 3,
+          "name": "Bar-tailed godwit",
+          "value": 30000,
+          "aliases": [
+            "godwit"
+          ],
+          "clue": "Flies from Alaska to New Zealand without landing"
+        },
+        {
+          "rank": 4,
+          "name": "Grey whale",
+          "value": 22000,
+          "aliases": [
+            "gray whale"
+          ],
+          "clue": "Baja California to the Arctic and back"
+        },
+        {
+          "rank": 5,
+          "name": "Northern elephant seal",
+          "value": 21000,
+          "aliases": [
+            "elephant seal"
+          ],
+          "clue": "Males and females take entirely different routes"
+        },
+        {
+          "rank": 6,
+          "name": "Leatherback turtle",
+          "value": 20000,
+          "aliases": [
+            "leatherback"
+          ],
+          "clue": "Crosses whole oceans between nesting beaches"
+        },
+        {
+          "rank": 7,
+          "name": "Humpback whale",
+          "value": 18000,
+          "aliases": [
+            "humpback"
+          ],
+          "clue": "Tropical breeding grounds to polar feeding grounds"
+        },
+        {
+          "rank": 8,
+          "name": "Globe skimmer dragonfly",
+          "value": 18000,
+          "aliases": [
+            "globe skimmer",
+            "dragonfly"
+          ],
+          "clue": "An insect that crosses the Indian Ocean"
+        },
+        {
+          "rank": 9,
+          "name": "Monarch butterfly",
+          "value": 8000,
+          "aliases": [
+            "monarch"
+          ],
+          "clue": "Takes several generations to complete the round trip"
+        },
+        {
+          "rank": 10,
+          "name": "Caribou",
+          "value": 5000,
+          "aliases": [
+            "reindeer"
+          ],
+          "clue": "The longest land migration of any mammal"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "Tracking data keeps extending these records and round-trip versus one-way figures are quoted inconsistently, so the order is my best judgment."
+      }
+    },
+    {
+      "type": "ranked",
+      "tags": [],
+      "volatility": "evergreen",
+      "asOf": "2024-12-31",
+      "id": "hist-oldest-countries",
+      "domain": "history",
+      "obscurity": 3,
+      "difficulty": 5,
+      "prompt": "Oldest continuously sovereign states",
+      "metric": "Approximate order of establishment as a continuously sovereign state, oldest first. No single year is given, because the claims rest on different kinds of evidence.",
+      "source": {
+        "name": "Encyclopaedia Britannica",
+        "url": "https://www.britannica.com/"
+      },
+      "order": "asc",
+      "ambiguity": "Continuity is doing all the work here: most old states were conquered, partitioned or refounded, and historians disagree on whether that breaks the thread.",
+      "confidence": {
+        "level": "judgment",
+        "note": "Every list of oldest countries is contested, and national claims tend to be generous. Order is my best judgment."
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Japan",
+          "value": null,
+          "aliases": [],
+          "clue": "Its imperial line claims an unbroken descent"
+        },
+        {
+          "rank": 2,
+          "name": "San Marino",
+          "value": null,
+          "aliases": [],
+          "clue": "Claims foundation by a stonemason fleeing persecution"
+        },
+        {
+          "rank": 3,
+          "name": "Ethiopia",
+          "value": null,
+          "aliases": [],
+          "clue": "Never colonised, and traces its monarchy to antiquity"
+        },
+        {
+          "rank": 4,
+          "name": "France",
+          "value": null,
+          "aliases": [],
+          "clue": "Traces itself to the partition of a Frankish empire"
+        },
+        {
+          "rank": 5,
+          "name": "Denmark",
+          "value": null,
+          "aliases": [],
+          "clue": "Its monarchy is among the oldest in Europe"
+        },
+        {
+          "rank": 6,
+          "name": "Portugal",
+          "value": null,
+          "aliases": [],
+          "clue": "Its mainland borders have barely changed since"
+        },
+        {
+          "rank": 7,
+          "name": "Andorra",
+          "value": null,
+          "aliases": [],
+          "clue": "Ruled jointly by a French official and a Spanish bishop"
+        },
+        {
+          "rank": 8,
+          "name": "Switzerland",
+          "value": null,
+          "aliases": [],
+          "clue": "Founded by a pact between three valleys"
+        },
+        {
+          "rank": 9,
+          "name": "Iran",
+          "value": null,
+          "aliases": [
+            "persia"
+          ],
+          "clue": "Its modern state dates from a Safavid foundation"
+        },
+        {
+          "rank": 10,
+          "name": "Netherlands",
+          "value": null,
+          "aliases": [
+            "holland"
+          ],
+          "clue": "Declared independence from a Spanish king"
+        }
+      ]
+    },
+    {
+      "id": "hist-un-secretaries",
+      "type": "recency",
+      "domain": "history",
+      "tags": [],
+      "obscurity": 3,
+      "difficulty": 4,
+      "prompt": "The UN Secretaries-General, most recent first",
+      "metric": "Holders of the office of United Nations Secretary-General, most recent first, labelled by the year each took office.",
+      "source": {
+        "name": "United Nations",
+        "url": "https://www.un.org/sg/en/content/former-secretaries-general"
+      },
+      "asOf": "2025-12-31",
+      "volatility": "annual",
+      "ambiguity": "Nine people have held the office, plus one acting holder in 1945-46, which is how this reaches ten.",
+      "answers": [
+        {
+          "rank": 1,
+          "label": "2017",
+          "name": "Antonio Guterres",
+          "aliases": [
+            "guterres"
+          ],
+          "clue": "Portuguese, and a former prime minister"
+        },
+        {
+          "rank": 2,
+          "label": "2007",
+          "name": "Ban Ki-moon",
+          "aliases": [
+            "ban",
+            "ban ki moon"
+          ],
+          "clue": "South Korean, and focused on climate"
+        },
+        {
+          "rank": 3,
+          "label": "1997",
+          "name": "Kofi Annan",
+          "aliases": [
+            "annan"
+          ],
+          "clue": "Ghanaian, and won a Nobel Peace Prize in office"
+        },
+        {
+          "rank": 4,
+          "label": "1992",
+          "name": "Boutros Boutros-Ghali",
+          "aliases": [
+            "boutros ghali",
+            "boutros"
+          ],
+          "clue": "Egyptian, and served only one term"
+        },
+        {
+          "rank": 5,
+          "label": "1982",
+          "name": "Javier Perez de Cuellar",
+          "aliases": [
+            "perez de cuellar",
+            "cuellar"
+          ],
+          "clue": "Peruvian, and mediated an end to the Iran-Iraq war"
+        },
+        {
+          "rank": 6,
+          "label": "1972",
+          "name": "Kurt Waldheim",
+          "aliases": [
+            "waldheim"
+          ],
+          "clue": "Austrian, and his wartime past emerged later"
+        },
+        {
+          "rank": 7,
+          "label": "1961",
+          "name": "U Thant",
+          "aliases": [
+            "thant"
+          ],
+          "clue": "Burmese, and handled the Cuban missile crisis"
+        },
+        {
+          "rank": 8,
+          "label": "1953",
+          "name": "Dag Hammarskjold",
+          "aliases": [
+            "hammarskjold"
+          ],
+          "clue": "Swedish, and died in a plane crash in office"
+        },
+        {
+          "rank": 9,
+          "label": "1946",
+          "name": "Trygve Lie",
+          "aliases": [
+            "lie"
+          ],
+          "clue": "Norwegian, and the first to hold the office"
+        },
+        {
+          "rank": 10,
+          "label": "1945",
+          "name": "Gladwyn Jebb",
+          "aliases": [
+            "jebb"
+          ],
+          "clue": "British, and served as acting head before the first appointment"
+        }
+      ]
+    },
+    {
+      "type": "ranked",
+      "tags": [],
+      "volatility": "annual",
+      "asOf": "2025-12-31",
+      "id": "lang-most-pulitzers",
+      "domain": "language",
+      "obscurity": 4,
+      "difficulty": 5,
+      "prompt": "Most Pulitzer Prizes won by a news organisation",
+      "metric": "Pulitzer Prizes won, all categories, all time.",
+      "source": {
+        "name": "The Pulitzer Prizes",
+        "url": "https://www.pulitzer.org/"
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "The New York Times",
+          "value": 140,
+          "aliases": [
+            "new york times",
+            "nyt",
+            "the times"
+          ],
+          "clue": "Far more than any other organisation"
+        },
+        {
+          "rank": 2,
+          "name": "The Washington Post",
+          "value": 76,
+          "aliases": [
+            "washington post",
+            "wapo"
+          ],
+          "clue": "Including the Watergate reporting"
+        },
+        {
+          "rank": 3,
+          "name": "The Associated Press",
+          "value": 59,
+          "aliases": [
+            "ap",
+            "associated press"
+          ],
+          "clue": "A wire service rather than a newspaper"
+        },
+        {
+          "rank": 4,
+          "name": "Los Angeles Times",
+          "value": 50,
+          "aliases": [
+            "la times"
+          ],
+          "clue": "Including coverage of riots and wildfires"
+        },
+        {
+          "rank": 5,
+          "name": "The Wall Street Journal",
+          "value": 42,
+          "aliases": [
+            "wall street journal",
+            "wsj"
+          ],
+          "clue": "Business reporting, and now general news"
+        },
+        {
+          "rank": 6,
+          "name": "Chicago Tribune",
+          "value": 28,
+          "aliases": [
+            "tribune"
+          ],
+          "clue": "Once called itself the world's greatest newspaper"
+        },
+        {
+          "rank": 7,
+          "name": "The Boston Globe",
+          "value": 27,
+          "aliases": [
+            "boston globe",
+            "globe"
+          ],
+          "clue": "Including the church abuse investigation"
+        },
+        {
+          "rank": 8,
+          "name": "Reuters",
+          "value": 12,
+          "aliases": [],
+          "clue": "A British-founded wire service"
+        },
+        {
+          "rank": 9,
+          "name": "ProPublica",
+          "value": 8,
+          "aliases": [],
+          "clue": "A non-profit newsroom founded in 2007"
+        },
+        {
+          "rank": 10,
+          "name": "The New Yorker",
+          "value": 8,
+          "aliases": [
+            "new yorker"
+          ],
+          "clue": "A magazine rather than a newspaper"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "The top five are firm; the counts below are close and depend on whether staff and individual prizes are combined, so the order is my best judgment."
+      }
+    },
+    {
+      "type": "ranked",
+      "tags": [],
+      "volatility": "evergreen",
+      "asOf": "2024-12-31",
+      "id": "lang-most-widely-read-books",
+      "domain": "language",
+      "obscurity": 2,
+      "difficulty": 4,
+      "prompt": "Best-selling single books of all time",
+      "metric": "Estimated copies sold or distributed, in millions, for a single title rather than a series.",
+      "source": {
+        "name": "Guinness World Records",
+        "url": "https://www.guinnessworldrecords.com/"
+      },
+      "ambiguity": "Religious and political texts distributed rather than sold are included, which is why the top of the list is not commercial fiction.",
+      "confidence": {
+        "level": "judgment",
+        "note": "Nobody audits these numbers and distribution is not the same as sales. The first two are beyond dispute; the rest is my best judgment."
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "The Bible",
+          "value": 5000,
+          "aliases": [
+            "bible"
+          ],
+          "clue": "Distributed more widely than any other text"
+        },
+        {
+          "rank": 2,
+          "name": "Quotations from Chairman Mao",
+          "value": 900,
+          "aliases": [
+            "little red book",
+            "mao"
+          ],
+          "clue": "Printed in vast numbers and often required"
+        },
+        {
+          "rank": 3,
+          "name": "The Quran",
+          "value": 800,
+          "aliases": [
+            "quran",
+            "koran"
+          ],
+          "clue": "Central text of Islam"
+        },
+        {
+          "rank": 4,
+          "name": "Don Quixote",
+          "value": 500,
+          "aliases": [
+            "quixote"
+          ],
+          "clue": "Often called the first modern novel"
+        },
+        {
+          "rank": 5,
+          "name": "A Tale of Two Cities",
+          "value": 200,
+          "aliases": [
+            "tale of two cities"
+          ],
+          "clue": "Opens with a famous pair of clauses"
+        },
+        {
+          "rank": 6,
+          "name": "The Little Prince",
+          "value": 200,
+          "aliases": [
+            "little prince"
+          ],
+          "clue": "A French novella about a pilot and a boy"
+        },
+        {
+          "rank": 7,
+          "name": "Harry Potter and the Philosopher's Stone",
+          "value": 120,
+          "aliases": [
+            "philosophers stone",
+            "sorcerers stone"
+          ],
+          "clue": "The first of seven"
+        },
+        {
+          "rank": 8,
+          "name": "And Then There Were None",
+          "value": 100,
+          "aliases": [
+            "and then there were none"
+          ],
+          "clue": "The best-selling crime novel ever written"
+        },
+        {
+          "rank": 9,
+          "name": "Dream of the Red Chamber",
+          "value": 100,
+          "aliases": [
+            "red chamber"
+          ],
+          "clue": "One of the four great Chinese classic novels"
+        },
+        {
+          "rank": 10,
+          "name": "The Hobbit",
+          "value": 100,
+          "aliases": [
+            "hobbit"
+          ],
+          "clue": "A prelude to a much longer work"
+        }
+      ]
+    },
+    {
+      "type": "ranked",
+      "tags": [
+        "oscars"
+      ],
+      "volatility": "annual",
+      "asOf": "2026-03",
+      "id": "film-most-nominations-person",
+      "domain": "film",
+      "obscurity": 3,
+      "difficulty": 5,
+      "prompt": "Most Academy Award nominations received by one person",
+      "metric": "Total competitive Academy Award nominations in a career.",
+      "source": {
+        "name": "Academy of Motion Picture Arts and Sciences",
+        "url": "https://www.oscars.org/"
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Walt Disney",
+          "value": 59,
+          "aliases": [
+            "disney"
+          ],
+          "clue": "Also holds the record for wins"
+        },
+        {
+          "rank": 2,
+          "name": "John Williams",
+          "value": 54,
+          "aliases": [
+            "williams"
+          ],
+          "clue": "A composer, and still being nominated in his nineties"
+        },
+        {
+          "rank": 3,
+          "name": "Alfred Newman",
+          "value": 43,
+          "aliases": [
+            "newman"
+          ],
+          "clue": "A composer who led a studio music department"
+        },
+        {
+          "rank": 4,
+          "name": "Cedric Gibbons",
+          "value": 39,
+          "aliases": [
+            "gibbons"
+          ],
+          "clue": "An art director who designed the statuette"
+        },
+        {
+          "rank": 5,
+          "name": "Edith Head",
+          "value": 35,
+          "aliases": [
+            "head"
+          ],
+          "clue": "A costume designer"
+        },
+        {
+          "rank": 6,
+          "name": "Max Steiner",
+          "value": 24,
+          "aliases": [
+            "steiner"
+          ],
+          "clue": "A composer of the studio era"
+        },
+        {
+          "rank": 7,
+          "name": "Woody Allen",
+          "value": 24,
+          "aliases": [
+            "allen"
+          ],
+          "clue": "Mostly for writing"
+        },
+        {
+          "rank": 8,
+          "name": "Randy Newman",
+          "value": 22,
+          "aliases": [
+            "randy newman"
+          ],
+          "clue": "A songwriter, and related to another name here"
+        },
+        {
+          "rank": 9,
+          "name": "Meryl Streep",
+          "value": 21,
+          "aliases": [
+            "streep"
+          ],
+          "clue": "More acting nominations than anyone"
+        },
+        {
+          "rank": 10,
+          "name": "Kevin OConnell",
+          "value": 21,
+          "aliases": [
+            "oconnell",
+            "o connell"
+          ],
+          "clue": "A sound mixer who lost twenty times before winning"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "The leaders are well documented; the counts in the middle are close and depend on how shared nominations are credited, so the order is my best judgment."
+      }
     }
   ]
 }
