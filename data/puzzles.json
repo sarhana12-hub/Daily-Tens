@@ -7139,6 +7139,2994 @@
         "level": "partial",
         "note": "Bone lengths vary with body size and references quote different averages; the top six are firmly ordered, the rest are my best judgment."
       }
+    },
+    {
+      "id": "soccer-laliga-recent",
+      "type": "recency",
+      "domain": "sports",
+      "obscurity": 3,
+      "difficulty": 3,
+      "tags": [
+        "soccer"
+      ],
+      "prompt": "The ten most recent La Liga champions",
+      "metric": "Champion of the Spanish top division, by the year the season ended.",
+      "source": {
+        "name": "LaLiga",
+        "url": "https://www.laliga.com/en-GB"
+      },
+      "asOf": "2026-05",
+      "volatility": "annual",
+      "answers": [
+        {
+          "rank": 1,
+          "label": "2026",
+          "name": "Barcelona",
+          "aliases": [
+            "barca",
+            "fc barcelona"
+          ],
+          "clue": "Sealed it with a win over their great rivals at home"
+        },
+        {
+          "rank": 2,
+          "label": "2025",
+          "name": "Barcelona",
+          "aliases": [
+            "barca",
+            "fc barcelona"
+          ],
+          "clue": "Catalan, under a German coach"
+        },
+        {
+          "rank": 3,
+          "label": "2024",
+          "name": "Real Madrid",
+          "aliases": [
+            "madrid",
+            "real"
+          ],
+          "clue": "Won by ten points"
+        },
+        {
+          "rank": 4,
+          "label": "2023",
+          "name": "Barcelona",
+          "aliases": [
+            "barca",
+            "fc barcelona"
+          ],
+          "clue": "Conceded only 20 goals all season"
+        },
+        {
+          "rank": 5,
+          "label": "2022",
+          "name": "Real Madrid",
+          "aliases": [
+            "madrid",
+            "real"
+          ],
+          "clue": "Won the double with a European trophy"
+        },
+        {
+          "rank": 6,
+          "label": "2021",
+          "name": "Atletico Madrid",
+          "aliases": [
+            "atletico",
+            "atleti"
+          ],
+          "clue": "The only club outside the big two on this list"
+        },
+        {
+          "rank": 7,
+          "label": "2020",
+          "name": "Real Madrid",
+          "aliases": [
+            "madrid",
+            "real"
+          ],
+          "clue": "Clinched after the pandemic restart"
+        },
+        {
+          "rank": 8,
+          "label": "2019",
+          "name": "Barcelona",
+          "aliases": [
+            "barca",
+            "fc barcelona"
+          ],
+          "clue": "A front three that scored 60 between them"
+        },
+        {
+          "rank": 9,
+          "label": "2018",
+          "name": "Barcelona",
+          "aliases": [
+            "barca",
+            "fc barcelona"
+          ],
+          "clue": "Went the whole league season unbeaten"
+        },
+        {
+          "rank": 10,
+          "label": "2017",
+          "name": "Real Madrid",
+          "aliases": [
+            "madrid",
+            "real"
+          ],
+          "clue": "A first league title in five years"
+        }
+      ]
+    },
+    {
+      "id": "soccer-seriea-recent",
+      "type": "recency",
+      "domain": "sports",
+      "obscurity": 3,
+      "difficulty": 3,
+      "tags": [
+        "soccer"
+      ],
+      "prompt": "The ten most recent Serie A champions",
+      "metric": "Winner of the Italian top division, by the year the season ended.",
+      "source": {
+        "name": "Lega Serie A",
+        "url": "https://www.legaseriea.it/en"
+      },
+      "asOf": "2026-05",
+      "volatility": "annual",
+      "answers": [
+        {
+          "rank": 1,
+          "label": "2026",
+          "name": "Inter Milan",
+          "aliases": [
+            "inter",
+            "internazionale"
+          ],
+          "clue": "Both traditional rivals missed Europe entirely that year"
+        },
+        {
+          "rank": 2,
+          "label": "2025",
+          "name": "Napoli",
+          "aliases": [],
+          "clue": "Southern Italian, and a second title in three years"
+        },
+        {
+          "rank": 3,
+          "label": "2024",
+          "name": "Inter Milan",
+          "aliases": [
+            "inter",
+            "internazionale"
+          ],
+          "clue": "Clinched with five games to spare"
+        },
+        {
+          "rank": 4,
+          "label": "2023",
+          "name": "Napoli",
+          "aliases": [],
+          "clue": "A first title in 33 years"
+        },
+        {
+          "rank": 5,
+          "label": "2022",
+          "name": "AC Milan",
+          "aliases": [
+            "milan"
+          ],
+          "clue": "A first title in 11 years"
+        },
+        {
+          "rank": 6,
+          "label": "2021",
+          "name": "Inter Milan",
+          "aliases": [
+            "inter",
+            "internazionale"
+          ],
+          "clue": "Ended a nine-year run by one club"
+        },
+        {
+          "rank": 7,
+          "label": "2020",
+          "name": "Juventus",
+          "aliases": [
+            "juve"
+          ],
+          "clue": "The last of nine in a row"
+        },
+        {
+          "rank": 8,
+          "label": "2019",
+          "name": "Juventus",
+          "aliases": [
+            "juve"
+          ],
+          "clue": "The season a Portuguese superstar arrived"
+        },
+        {
+          "rank": 9,
+          "label": "2018",
+          "name": "Juventus",
+          "aliases": [
+            "juve"
+          ],
+          "clue": "A seventh straight title"
+        },
+        {
+          "rank": 10,
+          "label": "2017",
+          "name": "Juventus",
+          "aliases": [
+            "juve"
+          ],
+          "clue": "Also reached a European final that year"
+        }
+      ]
+    },
+    {
+      "id": "soccer-bundesliga-recent",
+      "type": "recency",
+      "domain": "sports",
+      "obscurity": 3,
+      "difficulty": 2,
+      "tags": [
+        "soccer"
+      ],
+      "prompt": "The ten most recent Bundesliga champions",
+      "metric": "Champion of the German top division, by the year the season ended.",
+      "source": {
+        "name": "Bundesliga",
+        "url": "https://www.bundesliga.com/en/bundesliga"
+      },
+      "asOf": "2026-05",
+      "volatility": "annual",
+      "answers": [
+        {
+          "rank": 1,
+          "label": "2026",
+          "name": "Bayern Munich",
+          "aliases": [
+            "bayern",
+            "munich",
+            "fc bayern"
+          ],
+          "clue": "Broke a string of records on the way"
+        },
+        {
+          "rank": 2,
+          "label": "2025",
+          "name": "Bayern Munich",
+          "aliases": [
+            "bayern",
+            "munich",
+            "fc bayern"
+          ],
+          "clue": "Reclaimed the title immediately"
+        },
+        {
+          "rank": 3,
+          "label": "2024",
+          "name": "Bayer Leverkusen",
+          "aliases": [
+            "leverkusen",
+            "bayer"
+          ],
+          "clue": "Went unbeaten, and the only interruption on this list"
+        },
+        {
+          "rank": 4,
+          "label": "2023",
+          "name": "Bayern Munich",
+          "aliases": [
+            "bayern",
+            "munich",
+            "fc bayern"
+          ],
+          "clue": "Won it on the final day on goal difference"
+        },
+        {
+          "rank": 5,
+          "label": "2022",
+          "name": "Bayern Munich",
+          "aliases": [
+            "bayern",
+            "munich",
+            "fc bayern"
+          ],
+          "clue": "A tenth in a row"
+        },
+        {
+          "rank": 6,
+          "label": "2021",
+          "name": "Bayern Munich",
+          "aliases": [
+            "bayern",
+            "munich",
+            "fc bayern"
+          ],
+          "clue": "Won a sextuple of trophies across that period"
+        },
+        {
+          "rank": 7,
+          "label": "2020",
+          "name": "Bayern Munich",
+          "aliases": [
+            "bayern",
+            "munich",
+            "fc bayern"
+          ],
+          "clue": "Also won Europe behind closed doors"
+        },
+        {
+          "rank": 8,
+          "label": "2019",
+          "name": "Bayern Munich",
+          "aliases": [
+            "bayern",
+            "munich",
+            "fc bayern"
+          ],
+          "clue": "Caught a rival who led for most of the season"
+        },
+        {
+          "rank": 9,
+          "label": "2018",
+          "name": "Bayern Munich",
+          "aliases": [
+            "bayern",
+            "munich",
+            "fc bayern"
+          ],
+          "clue": "Clinched in March"
+        },
+        {
+          "rank": 10,
+          "label": "2017",
+          "name": "Bayern Munich",
+          "aliases": [
+            "bayern",
+            "munich",
+            "fc bayern"
+          ],
+          "clue": "A fifth straight title"
+        }
+      ]
+    },
+    {
+      "id": "soccer-ligue1-recent",
+      "type": "recency",
+      "domain": "sports",
+      "obscurity": 3,
+      "difficulty": 2,
+      "tags": [
+        "soccer"
+      ],
+      "prompt": "The ten most recent Ligue 1 champions",
+      "metric": "Champion of the French top division, by the year the season ended.",
+      "source": {
+        "name": "Ligue 1",
+        "url": "https://www.ligue1.com/"
+      },
+      "asOf": "2026-05",
+      "volatility": "annual",
+      "answers": [
+        {
+          "rank": 1,
+          "label": "2026",
+          "name": "Paris Saint-Germain",
+          "aliases": [
+            "psg",
+            "paris"
+          ],
+          "clue": "Domestic and European glory in the same season"
+        },
+        {
+          "rank": 2,
+          "label": "2025",
+          "name": "Paris Saint-Germain",
+          "aliases": [
+            "psg",
+            "paris"
+          ],
+          "clue": "Ran away with it by a huge margin"
+        },
+        {
+          "rank": 3,
+          "label": "2024",
+          "name": "Paris Saint-Germain",
+          "aliases": [
+            "psg",
+            "paris"
+          ],
+          "clue": "The last season of a Kylian at the club"
+        },
+        {
+          "rank": 4,
+          "label": "2023",
+          "name": "Paris Saint-Germain",
+          "aliases": [
+            "psg",
+            "paris"
+          ],
+          "clue": "Had three of the world's most famous forwards"
+        },
+        {
+          "rank": 5,
+          "label": "2022",
+          "name": "Paris Saint-Germain",
+          "aliases": [
+            "psg",
+            "paris"
+          ],
+          "clue": "An Argentine arrived on a free transfer"
+        },
+        {
+          "rank": 6,
+          "label": "2021",
+          "name": "Lille",
+          "aliases": [
+            "losc"
+          ],
+          "clue": "A northern club, and one of two interruptions here"
+        },
+        {
+          "rank": 7,
+          "label": "2020",
+          "name": "Paris Saint-Germain",
+          "aliases": [
+            "psg",
+            "paris"
+          ],
+          "clue": "Awarded after the season was abandoned"
+        },
+        {
+          "rank": 8,
+          "label": "2019",
+          "name": "Paris Saint-Germain",
+          "aliases": [
+            "psg",
+            "paris"
+          ],
+          "clue": "Won by 16 points"
+        },
+        {
+          "rank": 9,
+          "label": "2018",
+          "name": "Paris Saint-Germain",
+          "aliases": [
+            "psg",
+            "paris"
+          ],
+          "clue": "Scored 108 league goals"
+        },
+        {
+          "rank": 10,
+          "label": "2017",
+          "name": "Monaco",
+          "aliases": [
+            "as monaco"
+          ],
+          "clue": "A principality club with a teenage sensation up front"
+        }
+      ]
+    },
+    {
+      "id": "soccer-eredivisie-recent",
+      "type": "recency",
+      "domain": "sports",
+      "obscurity": 4,
+      "difficulty": 4,
+      "tags": [
+        "soccer"
+      ],
+      "prompt": "The ten most recent Eredivisie champions",
+      "metric": "Champion of the Dutch top division, by the year the season ended.",
+      "source": {
+        "name": "Eredivisie",
+        "url": "https://eredivisie.nl/"
+      },
+      "asOf": "2026-04",
+      "volatility": "annual",
+      "answers": [
+        {
+          "rank": 1,
+          "label": "2026",
+          "name": "PSV Eindhoven",
+          "aliases": [
+            "psv"
+          ],
+          "clue": "A 27th title, clinched in early April"
+        },
+        {
+          "rank": 2,
+          "label": "2025",
+          "name": "PSV Eindhoven",
+          "aliases": [
+            "psv"
+          ],
+          "clue": "Retained it from a southern city"
+        },
+        {
+          "rank": 3,
+          "label": "2024",
+          "name": "PSV Eindhoven",
+          "aliases": [
+            "psv"
+          ],
+          "clue": "Won 28 of 34 league games"
+        },
+        {
+          "rank": 4,
+          "label": "2023",
+          "name": "Feyenoord",
+          "aliases": [],
+          "clue": "Rotterdam, and a first title in six years"
+        },
+        {
+          "rank": 5,
+          "label": "2022",
+          "name": "Ajax",
+          "aliases": [
+            "afc ajax"
+          ],
+          "clue": "Amsterdam, and known for its academy"
+        },
+        {
+          "rank": 6,
+          "label": "2021",
+          "name": "Ajax",
+          "aliases": [
+            "afc ajax"
+          ],
+          "clue": "Won by 16 points"
+        },
+        {
+          "rank": 7,
+          "label": "2019",
+          "name": "Ajax",
+          "aliases": [
+            "afc ajax"
+          ],
+          "clue": "Also reached a European semi-final that season"
+        },
+        {
+          "rank": 8,
+          "label": "2018",
+          "name": "PSV Eindhoven",
+          "aliases": [
+            "psv"
+          ],
+          "clue": "A 24th title"
+        },
+        {
+          "rank": 9,
+          "label": "2017",
+          "name": "Feyenoord",
+          "aliases": [],
+          "clue": "A first title in 18 years"
+        },
+        {
+          "rank": 10,
+          "label": "2016",
+          "name": "PSV Eindhoven",
+          "aliases": [
+            "psv"
+          ],
+          "clue": "Won on goal difference on the final day"
+        }
+      ],
+      "ambiguity": "The 2019-20 season was abandoned during the pandemic with no champion declared, so this sequence skips 2020 and reaches back to 2016."
+    },
+    {
+      "id": "tennis-ausopen-men-recent",
+      "type": "recency",
+      "domain": "sports",
+      "obscurity": 2,
+      "difficulty": 3,
+      "tags": [
+        "tennis"
+      ],
+      "prompt": "The ten most recent Australian Open men's singles champions",
+      "metric": "Winner of the Australian Open men's singles title, by year.",
+      "source": {
+        "name": "Australian Open",
+        "url": "https://ausopen.com/history"
+      },
+      "asOf": "2026-01",
+      "volatility": "annual",
+      "answers": [
+        {
+          "rank": 1,
+          "label": "2026",
+          "name": "Carlos Alcaraz",
+          "aliases": [
+            "alcaraz"
+          ],
+          "clue": "Came from a set down against a 38-year-old"
+        },
+        {
+          "rank": 2,
+          "label": "2025",
+          "name": "Jannik Sinner",
+          "aliases": [
+            "sinner"
+          ],
+          "clue": "Italian, and retained the title"
+        },
+        {
+          "rank": 3,
+          "label": "2024",
+          "name": "Jannik Sinner",
+          "aliases": [
+            "sinner"
+          ],
+          "clue": "Italian, and a first major"
+        },
+        {
+          "rank": 4,
+          "label": "2023",
+          "name": "Novak Djokovic",
+          "aliases": [
+            "djokovic",
+            "nole"
+          ],
+          "clue": "A tenth title at this event"
+        },
+        {
+          "rank": 5,
+          "label": "2022",
+          "name": "Rafael Nadal",
+          "aliases": [
+            "nadal",
+            "rafa"
+          ],
+          "clue": "Came from two sets down in the final"
+        },
+        {
+          "rank": 6,
+          "label": "2021",
+          "name": "Novak Djokovic",
+          "aliases": [
+            "djokovic",
+            "nole"
+          ],
+          "clue": "Played in a quarantine-affected edition"
+        },
+        {
+          "rank": 7,
+          "label": "2020",
+          "name": "Novak Djokovic",
+          "aliases": [
+            "djokovic",
+            "nole"
+          ],
+          "clue": "An eighth title here"
+        },
+        {
+          "rank": 8,
+          "label": "2019",
+          "name": "Novak Djokovic",
+          "aliases": [
+            "djokovic",
+            "nole"
+          ],
+          "clue": "Lost only one set all tournament"
+        },
+        {
+          "rank": 9,
+          "label": "2018",
+          "name": "Roger Federer",
+          "aliases": [
+            "federer"
+          ],
+          "clue": "Swiss, and a twentieth major"
+        },
+        {
+          "rank": 10,
+          "label": "2017",
+          "name": "Roger Federer",
+          "aliases": [
+            "federer"
+          ],
+          "clue": "Swiss, after six months out injured"
+        }
+      ]
+    },
+    {
+      "id": "tennis-frenchopen-men-recent",
+      "type": "recency",
+      "domain": "sports",
+      "obscurity": 2,
+      "difficulty": 3,
+      "tags": [
+        "tennis"
+      ],
+      "prompt": "The ten most recent French Open men's singles champions",
+      "metric": "Winner of the French Open men's singles title, by year.",
+      "source": {
+        "name": "Roland-Garros",
+        "url": "https://www.rolandgarros.com/en-us/"
+      },
+      "asOf": "2026-06",
+      "volatility": "annual",
+      "answers": [
+        {
+          "rank": 1,
+          "label": "2026",
+          "name": "Alexander Zverev",
+          "aliases": [
+            "zverev",
+            "sascha"
+          ],
+          "clue": "German, and a first major at last"
+        },
+        {
+          "rank": 2,
+          "label": "2025",
+          "name": "Carlos Alcaraz",
+          "aliases": [
+            "alcaraz"
+          ],
+          "clue": "Saved match points in a five-and-a-half-hour final"
+        },
+        {
+          "rank": 3,
+          "label": "2024",
+          "name": "Carlos Alcaraz",
+          "aliases": [
+            "alcaraz"
+          ],
+          "clue": "Spanish, and a first title on the clay here"
+        },
+        {
+          "rank": 4,
+          "label": "2023",
+          "name": "Novak Djokovic",
+          "aliases": [
+            "djokovic",
+            "nole"
+          ],
+          "clue": "A record 23rd major at the time"
+        },
+        {
+          "rank": 5,
+          "label": "2022",
+          "name": "Rafael Nadal",
+          "aliases": [
+            "nadal",
+            "rafa"
+          ],
+          "clue": "A fourteenth title at this one event"
+        },
+        {
+          "rank": 6,
+          "label": "2021",
+          "name": "Novak Djokovic",
+          "aliases": [
+            "djokovic",
+            "nole"
+          ],
+          "clue": "Beat the king of the clay in the semi-final"
+        },
+        {
+          "rank": 7,
+          "label": "2020",
+          "name": "Rafael Nadal",
+          "aliases": [
+            "nadal",
+            "rafa"
+          ],
+          "clue": "Played in October in the cold"
+        },
+        {
+          "rank": 8,
+          "label": "2019",
+          "name": "Rafael Nadal",
+          "aliases": [
+            "nadal",
+            "rafa"
+          ],
+          "clue": "A twelfth title here"
+        },
+        {
+          "rank": 9,
+          "label": "2018",
+          "name": "Rafael Nadal",
+          "aliases": [
+            "nadal",
+            "rafa"
+          ],
+          "clue": "An eleventh title here"
+        },
+        {
+          "rank": 10,
+          "label": "2017",
+          "name": "Rafael Nadal",
+          "aliases": [
+            "nadal",
+            "rafa"
+          ],
+          "clue": "Lost only 35 games in the whole tournament"
+        }
+      ]
+    },
+    {
+      "id": "tennis-usopen-men-recent",
+      "type": "recency",
+      "domain": "sports",
+      "obscurity": 2,
+      "difficulty": 3,
+      "tags": [
+        "tennis"
+      ],
+      "prompt": "The ten most recent US Open men's singles champions",
+      "metric": "Winner of the US Open men's singles title, by year.",
+      "source": {
+        "name": "US Open",
+        "url": "https://www.usopen.org/en_US/index.html"
+      },
+      "asOf": "2026-09",
+      "volatility": "annual",
+      "answers": [
+        {
+          "rank": 1,
+          "label": "2026",
+          "name": "Alexander Zverev",
+          "aliases": [
+            "zverev",
+            "sascha"
+          ],
+          "clue": "A second major in one season"
+        },
+        {
+          "rank": 2,
+          "label": "2025",
+          "name": "Carlos Alcaraz",
+          "aliases": [
+            "alcaraz"
+          ],
+          "clue": "Spanish, and a second title here"
+        },
+        {
+          "rank": 3,
+          "label": "2024",
+          "name": "Jannik Sinner",
+          "aliases": [
+            "sinner"
+          ],
+          "clue": "Italian, and won weeks after a doping case was cleared"
+        },
+        {
+          "rank": 4,
+          "label": "2023",
+          "name": "Novak Djokovic",
+          "aliases": [
+            "djokovic",
+            "nole"
+          ],
+          "clue": "A 24th major"
+        },
+        {
+          "rank": 5,
+          "label": "2022",
+          "name": "Carlos Alcaraz",
+          "aliases": [
+            "alcaraz"
+          ],
+          "clue": "Became world number one at 19"
+        },
+        {
+          "rank": 6,
+          "label": "2021",
+          "name": "Daniil Medvedev",
+          "aliases": [
+            "medvedev"
+          ],
+          "clue": "Denied an opponent the calendar Grand Slam"
+        },
+        {
+          "rank": 7,
+          "label": "2020",
+          "name": "Dominic Thiem",
+          "aliases": [
+            "thiem"
+          ],
+          "clue": "Austrian, and won in an empty stadium"
+        },
+        {
+          "rank": 8,
+          "label": "2019",
+          "name": "Rafael Nadal",
+          "aliases": [
+            "nadal",
+            "rafa"
+          ],
+          "clue": "Won a five-set final from two sets up"
+        },
+        {
+          "rank": 9,
+          "label": "2018",
+          "name": "Novak Djokovic",
+          "aliases": [
+            "djokovic",
+            "nole"
+          ],
+          "clue": "Won in extreme heat"
+        },
+        {
+          "rank": 10,
+          "label": "2017",
+          "name": "Rafael Nadal",
+          "aliases": [
+            "nadal",
+            "rafa"
+          ],
+          "clue": "A third title here"
+        }
+      ]
+    },
+    {
+      "id": "cfb-national-champions-recent",
+      "type": "recency",
+      "domain": "sports",
+      "obscurity": 3,
+      "difficulty": 3,
+      "tags": [
+        "college"
+      ],
+      "prompt": "The ten most recent college football national champions",
+      "metric": "Winner of the College Football Playoff national championship game, by season.",
+      "source": {
+        "name": "ESPN - college football champions",
+        "url": "https://www.espn.com/college-football/story/_/id/39192677/who-won-college-football-championship-winners-list"
+      },
+      "asOf": "2026-01",
+      "volatility": "annual",
+      "answers": [
+        {
+          "rank": 1,
+          "label": "2026",
+          "name": "Indiana",
+          "aliases": [
+            "hoosiers"
+          ],
+          "clue": "A first national title, beating a Florida team 27-21"
+        },
+        {
+          "rank": 2,
+          "label": "2025",
+          "name": "Ohio State",
+          "aliases": [
+            "buckeyes",
+            "osu"
+          ],
+          "clue": "Won the first expanded twelve-team playoff"
+        },
+        {
+          "rank": 3,
+          "label": "2024",
+          "name": "Michigan",
+          "aliases": [
+            "wolverines"
+          ],
+          "clue": "Went undefeated through fifteen games"
+        },
+        {
+          "rank": 4,
+          "label": "2023",
+          "name": "Georgia",
+          "aliases": [
+            "bulldogs",
+            "uga"
+          ],
+          "clue": "Won 65-7 in the title game"
+        },
+        {
+          "rank": 5,
+          "label": "2022",
+          "name": "Georgia",
+          "aliases": [
+            "bulldogs",
+            "uga"
+          ],
+          "clue": "A first title in 41 years"
+        },
+        {
+          "rank": 6,
+          "label": "2021",
+          "name": "Alabama",
+          "aliases": [
+            "crimson tide",
+            "bama"
+          ],
+          "clue": "Under a coach with six titles at the school"
+        },
+        {
+          "rank": 7,
+          "label": "2020",
+          "name": "LSU",
+          "aliases": [
+            "tigers",
+            "louisiana state"
+          ],
+          "clue": "A 15-0 season with a Heisman quarterback"
+        },
+        {
+          "rank": 8,
+          "label": "2019",
+          "name": "Clemson",
+          "aliases": [
+            "tigers"
+          ],
+          "clue": "Won 44-16 in the title game"
+        },
+        {
+          "rank": 9,
+          "label": "2018",
+          "name": "Alabama",
+          "aliases": [
+            "crimson tide",
+            "bama"
+          ],
+          "clue": "A freshman quarterback came off the bench to win it"
+        },
+        {
+          "rank": 10,
+          "label": "2017",
+          "name": "Clemson",
+          "aliases": [
+            "tigers"
+          ],
+          "clue": "Won with a touchdown with one second left"
+        }
+      ]
+    },
+    {
+      "id": "ncaa-mens-basketball-recent",
+      "type": "recency",
+      "domain": "sports",
+      "obscurity": 3,
+      "difficulty": 3,
+      "tags": [
+        "college",
+        "basketball"
+      ],
+      "prompt": "The ten most recent NCAA men's basketball champions",
+      "metric": "Winner of the NCAA Division I men's basketball tournament, by year.",
+      "source": {
+        "name": "NCAA",
+        "url": "https://www.ncaa.com/history/basketball-men/d1"
+      },
+      "asOf": "2026-04",
+      "volatility": "annual",
+      "answers": [
+        {
+          "rank": 1,
+          "label": "2026",
+          "name": "Michigan",
+          "aliases": [
+            "wolverines"
+          ],
+          "clue": "A first title since 1989"
+        },
+        {
+          "rank": 2,
+          "label": "2025",
+          "name": "Florida",
+          "aliases": [
+            "gators"
+          ],
+          "clue": "A third title for the programme"
+        },
+        {
+          "rank": 3,
+          "label": "2024",
+          "name": "UConn",
+          "aliases": [
+            "connecticut",
+            "huskies"
+          ],
+          "clue": "Retained it, winning every game by double digits"
+        },
+        {
+          "rank": 4,
+          "label": "2023",
+          "name": "UConn",
+          "aliases": [
+            "connecticut",
+            "huskies"
+          ],
+          "clue": "Entered as a four seed"
+        },
+        {
+          "rank": 5,
+          "label": "2022",
+          "name": "Kansas",
+          "aliases": [
+            "jayhawks",
+            "ku"
+          ],
+          "clue": "Came from 15 down at half-time in the final"
+        },
+        {
+          "rank": 6,
+          "label": "2021",
+          "name": "Baylor",
+          "aliases": [
+            "bears"
+          ],
+          "clue": "A first title, in a tournament held in one state"
+        },
+        {
+          "rank": 7,
+          "label": "2019",
+          "name": "Virginia",
+          "aliases": [
+            "cavaliers",
+            "uva"
+          ],
+          "clue": "Won a year after losing to a sixteen seed"
+        },
+        {
+          "rank": 8,
+          "label": "2018",
+          "name": "Villanova",
+          "aliases": [
+            "wildcats",
+            "nova"
+          ],
+          "clue": "A second title in three years"
+        },
+        {
+          "rank": 9,
+          "label": "2017",
+          "name": "North Carolina",
+          "aliases": [
+            "unc",
+            "tar heels"
+          ],
+          "clue": "Won a year after losing on a buzzer-beater"
+        },
+        {
+          "rank": 10,
+          "label": "2016",
+          "name": "Villanova",
+          "aliases": [
+            "wildcats",
+            "nova"
+          ],
+          "clue": "Won on a buzzer-beater"
+        }
+      ],
+      "ambiguity": "The 2020 tournament was cancelled before it began, so this sequence skips 2020 and reaches back to 2016."
+    },
+    {
+      "id": "film-best-director-recent",
+      "type": "recency",
+      "domain": "film",
+      "obscurity": 2,
+      "difficulty": 4,
+      "tags": [
+        "oscars"
+      ],
+      "prompt": "The ten most recent Best Director winners",
+      "metric": "Winner of the Academy Award for Best Director, by ceremony year.",
+      "source": {
+        "name": "Academy of Motion Picture Arts and Sciences",
+        "url": "https://www.oscars.org/oscars/ceremonies/2026"
+      },
+      "asOf": "2026-03",
+      "volatility": "annual",
+      "answers": [
+        {
+          "rank": 1,
+          "label": "2026",
+          "name": "Paul Thomas Anderson",
+          "aliases": [
+            "pta",
+            "anderson"
+          ],
+          "clue": "Won for a film that also took Best Picture"
+        },
+        {
+          "rank": 2,
+          "label": "2025",
+          "name": "Sean Baker",
+          "aliases": [
+            "baker"
+          ],
+          "clue": "Won four Oscars in one night for one film"
+        },
+        {
+          "rank": 3,
+          "label": "2024",
+          "name": "Christopher Nolan",
+          "aliases": [
+            "nolan"
+          ],
+          "clue": "A first win, for a biopic of a physicist"
+        },
+        {
+          "rank": 4,
+          "label": "2023",
+          "name": "Daniel Kwan and Daniel Scheinert",
+          "aliases": [
+            "the daniels",
+            "daniels",
+            "kwan",
+            "scheinert"
+          ],
+          "clue": "A directing duo who share a first name"
+        },
+        {
+          "rank": 5,
+          "label": "2022",
+          "name": "Jane Campion",
+          "aliases": [
+            "campion"
+          ],
+          "clue": "A New Zealander, for a western"
+        },
+        {
+          "rank": 6,
+          "label": "2021",
+          "name": "Chloe Zhao",
+          "aliases": [
+            "zhao"
+          ],
+          "clue": "For a film about people living in vans"
+        },
+        {
+          "rank": 7,
+          "label": "2020",
+          "name": "Bong Joon-ho",
+          "aliases": [
+            "bong",
+            "joon ho"
+          ],
+          "clue": "South Korean, and won four awards that night"
+        },
+        {
+          "rank": 8,
+          "label": "2019",
+          "name": "Alfonso Cuaron",
+          "aliases": [
+            "cuaron"
+          ],
+          "clue": "Mexican, for a black-and-white memoir of his childhood"
+        },
+        {
+          "rank": 9,
+          "label": "2018",
+          "name": "Guillermo del Toro",
+          "aliases": [
+            "del toro",
+            "guillermo"
+          ],
+          "clue": "Mexican, for a monster romance"
+        },
+        {
+          "rank": 10,
+          "label": "2017",
+          "name": "Damien Chazelle",
+          "aliases": [
+            "chazelle"
+          ],
+          "clue": "The youngest ever winner, for a musical"
+        }
+      ]
+    },
+    {
+      "id": "film-best-actor-recent",
+      "type": "recency",
+      "domain": "film",
+      "obscurity": 2,
+      "difficulty": 4,
+      "tags": [
+        "oscars"
+      ],
+      "prompt": "The ten most recent Best Actor winners",
+      "metric": "Winner of the Academy Award for Best Actor, by ceremony year.",
+      "source": {
+        "name": "Academy of Motion Picture Arts and Sciences",
+        "url": "https://www.oscars.org/oscars/ceremonies/2026"
+      },
+      "asOf": "2026-03",
+      "volatility": "annual",
+      "answers": [
+        {
+          "rank": 1,
+          "label": "2026",
+          "name": "Michael B. Jordan",
+          "aliases": [
+            "michael b jordan",
+            "jordan"
+          ],
+          "clue": "Won for a vampire film set in the Mississippi Delta"
+        },
+        {
+          "rank": 2,
+          "label": "2025",
+          "name": "Adrien Brody",
+          "aliases": [
+            "brody"
+          ],
+          "clue": "A second win, for playing an architect"
+        },
+        {
+          "rank": 3,
+          "label": "2024",
+          "name": "Cillian Murphy",
+          "aliases": [
+            "murphy"
+          ],
+          "clue": "Irish, for playing a physicist"
+        },
+        {
+          "rank": 4,
+          "label": "2023",
+          "name": "Brendan Fraser",
+          "aliases": [
+            "fraser"
+          ],
+          "clue": "A comeback, for playing a reclusive teacher"
+        },
+        {
+          "rank": 5,
+          "label": "2022",
+          "name": "Will Smith",
+          "aliases": [
+            "smith"
+          ],
+          "clue": "Won minutes after an incident on stage"
+        },
+        {
+          "rank": 6,
+          "label": "2021",
+          "name": "Anthony Hopkins",
+          "aliases": [
+            "hopkins"
+          ],
+          "clue": "The oldest winner, for playing a man with dementia"
+        },
+        {
+          "rank": 7,
+          "label": "2020",
+          "name": "Joaquin Phoenix",
+          "aliases": [
+            "phoenix"
+          ],
+          "clue": "For playing a comic-book villain"
+        },
+        {
+          "rank": 8,
+          "label": "2019",
+          "name": "Rami Malek",
+          "aliases": [
+            "malek"
+          ],
+          "clue": "For playing a rock frontman"
+        },
+        {
+          "rank": 9,
+          "label": "2018",
+          "name": "Gary Oldman",
+          "aliases": [
+            "oldman"
+          ],
+          "clue": "For playing a wartime prime minister"
+        },
+        {
+          "rank": 10,
+          "label": "2017",
+          "name": "Casey Affleck",
+          "aliases": [
+            "affleck"
+          ],
+          "clue": "For a film set on the Massachusetts coast"
+        }
+      ]
+    },
+    {
+      "id": "film-best-actress-recent",
+      "type": "recency",
+      "domain": "film",
+      "obscurity": 2,
+      "difficulty": 4,
+      "tags": [
+        "oscars"
+      ],
+      "prompt": "The ten most recent Best Actress winners",
+      "metric": "Winner of the Academy Award for Best Actress, by ceremony year.",
+      "source": {
+        "name": "Academy of Motion Picture Arts and Sciences",
+        "url": "https://www.oscars.org/oscars/ceremonies/2026"
+      },
+      "asOf": "2026-03",
+      "volatility": "annual",
+      "answers": [
+        {
+          "rank": 1,
+          "label": "2026",
+          "name": "Jessie Buckley",
+          "aliases": [
+            "buckley"
+          ],
+          "clue": "Irish, for a film about Shakespeare's wife"
+        },
+        {
+          "rank": 2,
+          "label": "2025",
+          "name": "Mikey Madison",
+          "aliases": [
+            "madison"
+          ],
+          "clue": "For playing a stripper who marries badly"
+        },
+        {
+          "rank": 3,
+          "label": "2024",
+          "name": "Emma Stone",
+          "aliases": [
+            "stone"
+          ],
+          "clue": "A second win, for a reanimated woman in a fable"
+        },
+        {
+          "rank": 4,
+          "label": "2023",
+          "name": "Michelle Yeoh",
+          "aliases": [
+            "yeoh"
+          ],
+          "clue": "Malaysian, and the first Asian winner of this award"
+        },
+        {
+          "rank": 5,
+          "label": "2022",
+          "name": "Jessica Chastain",
+          "aliases": [
+            "chastain"
+          ],
+          "clue": "For playing a televangelist"
+        },
+        {
+          "rank": 6,
+          "label": "2021",
+          "name": "Frances McDormand",
+          "aliases": [
+            "mcdormand"
+          ],
+          "clue": "A third win, for the film she also produced"
+        },
+        {
+          "rank": 7,
+          "label": "2020",
+          "name": "Renee Zellweger",
+          "aliases": [
+            "zellweger"
+          ],
+          "clue": "For playing Judy Garland"
+        },
+        {
+          "rank": 8,
+          "label": "2019",
+          "name": "Olivia Colman",
+          "aliases": [
+            "colman"
+          ],
+          "clue": "British, for playing Queen Anne"
+        },
+        {
+          "rank": 9,
+          "label": "2018",
+          "name": "Frances McDormand",
+          "aliases": [
+            "mcdormand"
+          ],
+          "clue": "For a film about billboards in Missouri"
+        },
+        {
+          "rank": 10,
+          "label": "2017",
+          "name": "Emma Stone",
+          "aliases": [
+            "stone"
+          ],
+          "clue": "For a musical set in Los Angeles"
+        }
+      ]
+    },
+    {
+      "id": "nhl-stanley-cups",
+      "type": "ranked",
+      "domain": "sports",
+      "obscurity": 3,
+      "difficulty": 4,
+      "tags": [
+        "hockey"
+      ],
+      "prompt": "Most Stanley Cup titles by franchise",
+      "metric": "Stanley Cup championships won, all time.",
+      "source": {
+        "name": "NHL - Stanley Cup champions",
+        "url": "https://www.nhl.com/news/stanley-cup-winners-by-year-complete-list-296012106"
+      },
+      "asOf": "2025-06",
+      "volatility": "annual",
+      "confidence": {
+        "level": "partial",
+        "note": "The top four are certain. Below that several franchises tie on five or four, so which of them makes the ten and in what order is my best judgment."
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Montreal Canadiens",
+          "value": 24,
+          "aliases": [
+            "montreal",
+            "habs",
+            "canadiens"
+          ],
+          "clue": "Nearly twice as many as anyone else"
+        },
+        {
+          "rank": 2,
+          "name": "Toronto Maple Leafs",
+          "value": 13,
+          "aliases": [
+            "toronto",
+            "leafs"
+          ],
+          "clue": "None since 1967, despite the total"
+        },
+        {
+          "rank": 3,
+          "name": "Detroit Red Wings",
+          "value": 11,
+          "aliases": [
+            "detroit",
+            "red wings"
+          ],
+          "clue": "Nicknamed for a motor city"
+        },
+        {
+          "rank": 4,
+          "name": "Boston Bruins",
+          "value": 6,
+          "aliases": [
+            "boston",
+            "bruins"
+          ],
+          "clue": "One of the Original Six"
+        },
+        {
+          "rank": 5,
+          "name": "Chicago Blackhawks",
+          "value": 6,
+          "aliases": [
+            "chicago",
+            "blackhawks"
+          ],
+          "clue": "Three titles in six years in the 2010s"
+        },
+        {
+          "rank": 6,
+          "name": "Edmonton Oilers",
+          "value": 5,
+          "aliases": [
+            "edmonton",
+            "oilers"
+          ],
+          "clue": "Four titles in five years in the 1980s"
+        },
+        {
+          "rank": 7,
+          "name": "Pittsburgh Penguins",
+          "value": 5,
+          "aliases": [
+            "pittsburgh",
+            "penguins"
+          ],
+          "clue": "Back-to-back titles in 2016 and 2017"
+        },
+        {
+          "rank": 8,
+          "name": "New York Rangers",
+          "value": 4,
+          "aliases": [
+            "rangers"
+          ],
+          "clue": "Ended a 54-year drought in 1994"
+        },
+        {
+          "rank": 9,
+          "name": "New York Islanders",
+          "value": 4,
+          "aliases": [
+            "islanders"
+          ],
+          "clue": "Four in a row in the early 1980s"
+        },
+        {
+          "rank": 10,
+          "name": "New Jersey Devils",
+          "value": 3,
+          "aliases": [
+            "new jersey",
+            "devils"
+          ],
+          "clue": "Three titles between 1995 and 2003"
+        }
+      ]
+    },
+    {
+      "id": "hist-popes-recent",
+      "type": "recency",
+      "domain": "history",
+      "obscurity": 2,
+      "difficulty": 4,
+      "tags": [],
+      "prompt": "The ten most recent popes",
+      "metric": "The ten most recent holders of the papacy, most recent first, labelled by the year each was elected.",
+      "source": {
+        "name": "The Holy See",
+        "url": "https://www.vatican.va/content/vatican/en/holy-father.html"
+      },
+      "asOf": "2025-05",
+      "volatility": "annual",
+      "answers": [
+        {
+          "rank": 1,
+          "label": "2025",
+          "name": "Leo XIV",
+          "aliases": [
+            "leo"
+          ],
+          "clue": "The first from the United States"
+        },
+        {
+          "rank": 2,
+          "label": "2013",
+          "name": "Francis",
+          "aliases": [],
+          "clue": "The first from the Americas, and a Jesuit"
+        },
+        {
+          "rank": 3,
+          "label": "2005",
+          "name": "Benedict XVI",
+          "aliases": [
+            "benedict"
+          ],
+          "clue": "German, and resigned in 2013"
+        },
+        {
+          "rank": 4,
+          "label": "1978",
+          "name": "John Paul II",
+          "aliases": [
+            "john paul 2",
+            "jp2",
+            "wojtyla"
+          ],
+          "clue": "Polish, and served 26 years"
+        },
+        {
+          "rank": 5,
+          "label": "1978",
+          "name": "John Paul I",
+          "aliases": [
+            "john paul 1"
+          ],
+          "clue": "Died after 33 days"
+        },
+        {
+          "rank": 6,
+          "label": "1963",
+          "name": "Paul VI",
+          "aliases": [
+            "paul 6"
+          ],
+          "clue": "Closed the Second Vatican Council"
+        },
+        {
+          "rank": 7,
+          "label": "1958",
+          "name": "John XXIII",
+          "aliases": [
+            "john 23"
+          ],
+          "clue": "Called that council"
+        },
+        {
+          "rank": 8,
+          "label": "1939",
+          "name": "Pius XII",
+          "aliases": [
+            "pius 12"
+          ],
+          "clue": "Led through the Second World War"
+        },
+        {
+          "rank": 9,
+          "label": "1922",
+          "name": "Pius XI",
+          "aliases": [
+            "pius 11"
+          ],
+          "clue": "Signed the treaty creating the Vatican state"
+        },
+        {
+          "rank": 10,
+          "label": "1914",
+          "name": "Benedict XV",
+          "aliases": [
+            "benedict 15"
+          ],
+          "clue": "Elected weeks into the First World War"
+        }
+      ]
+    },
+    {
+      "id": "hist-german-chancellors-recent",
+      "type": "recency",
+      "domain": "history",
+      "obscurity": 3,
+      "difficulty": 4,
+      "tags": [],
+      "prompt": "The ten most recent German chancellors",
+      "metric": "Chancellors of the Federal Republic of Germany, most recent first, labelled by the year each took office.",
+      "source": {
+        "name": "Bundesregierung",
+        "url": "https://www.bundesregierung.de/breg-en"
+      },
+      "asOf": "2025-05",
+      "volatility": "annual",
+      "ambiguity": "The Federal Republic has had exactly ten chancellors, so this is the complete list rather than a window.",
+      "answers": [
+        {
+          "rank": 1,
+          "label": "2025",
+          "name": "Friedrich Merz",
+          "aliases": [
+            "merz"
+          ],
+          "clue": "A former rival of his party's long-serving leader"
+        },
+        {
+          "rank": 2,
+          "label": "2021",
+          "name": "Olaf Scholz",
+          "aliases": [
+            "scholz"
+          ],
+          "clue": "Led a three-party coalition"
+        },
+        {
+          "rank": 3,
+          "label": "2005",
+          "name": "Angela Merkel",
+          "aliases": [
+            "merkel"
+          ],
+          "clue": "Sixteen years in office, and a trained physicist"
+        },
+        {
+          "rank": 4,
+          "label": "1998",
+          "name": "Gerhard Schroder",
+          "aliases": [
+            "schroder",
+            "schroeder"
+          ],
+          "clue": "Later took a role with a Russian energy firm"
+        },
+        {
+          "rank": 5,
+          "label": "1982",
+          "name": "Helmut Kohl",
+          "aliases": [
+            "kohl"
+          ],
+          "clue": "Oversaw reunification"
+        },
+        {
+          "rank": 6,
+          "label": "1974",
+          "name": "Helmut Schmidt",
+          "aliases": [
+            "schmidt"
+          ],
+          "clue": "A chain-smoker who handled a terrorist crisis"
+        },
+        {
+          "rank": 7,
+          "label": "1969",
+          "name": "Willy Brandt",
+          "aliases": [
+            "brandt"
+          ],
+          "clue": "Knelt in Warsaw, and won a Nobel Peace Prize"
+        },
+        {
+          "rank": 8,
+          "label": "1966",
+          "name": "Kurt Georg Kiesinger",
+          "aliases": [
+            "kiesinger"
+          ],
+          "clue": "Led a grand coalition"
+        },
+        {
+          "rank": 9,
+          "label": "1963",
+          "name": "Ludwig Erhard",
+          "aliases": [
+            "erhard"
+          ],
+          "clue": "Architect of the postwar economic miracle"
+        },
+        {
+          "rank": 10,
+          "label": "1949",
+          "name": "Konrad Adenauer",
+          "aliases": [
+            "adenauer"
+          ],
+          "clue": "The first, and served fourteen years"
+        }
+      ]
+    },
+    {
+      "id": "hist-longest-reigns",
+      "type": "ranked",
+      "domain": "history",
+      "obscurity": 3,
+      "difficulty": 5,
+      "tags": [],
+      "prompt": "Longest-reigning monarchs in history",
+      "metric": "Length of verifiable reign in years, for sovereign monarchs of recognised states.",
+      "source": {
+        "name": "Encyclopaedia Britannica",
+        "url": "https://www.britannica.com/"
+      },
+      "asOf": "2024-12-31",
+      "volatility": "evergreen",
+      "confidence": {
+        "level": "judgment",
+        "note": "Ancient and disputed reigns make any such list arguable, and several claimants have reigns recorded only in later chronicles. The modern entries are firm; the order among the longest is my best judgment."
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Louis XIV",
+          "value": 72,
+          "aliases": [
+            "louis 14",
+            "sun king"
+          ],
+          "clue": "Came to the French throne at four and reigned for 72 years"
+        },
+        {
+          "rank": 2,
+          "name": "Elizabeth II",
+          "value": 70,
+          "aliases": [
+            "elizabeth 2"
+          ],
+          "clue": "Seventy years, and fifteen British prime ministers"
+        },
+        {
+          "rank": 3,
+          "name": "Bhumibol Adulyadej",
+          "value": 70,
+          "aliases": [
+            "bhumibol",
+            "rama ix"
+          ],
+          "clue": "Thai, and the world's longest-reigning monarch when he died"
+        },
+        {
+          "rank": 4,
+          "name": "Johann II",
+          "value": 70,
+          "aliases": [
+            "johann 2"
+          ],
+          "clue": "Ruled a tiny Alpine principality for seven decades"
+        },
+        {
+          "rank": 5,
+          "name": "K'inich Janaab' Pakal",
+          "value": 68,
+          "aliases": [
+            "pakal",
+            "pacal"
+          ],
+          "clue": "A Maya ruler of Palenque, buried in a jade mask"
+        },
+        {
+          "rank": 6,
+          "name": "Franz Joseph I",
+          "value": 67,
+          "aliases": [
+            "franz joseph",
+            "francis joseph"
+          ],
+          "clue": "Austro-Hungarian, and reigned into the First World War"
+        },
+        {
+          "rank": 7,
+          "name": "Constantine VIII",
+          "value": 66,
+          "aliases": [
+            "constantine 8"
+          ],
+          "clue": "Byzantine, and co-emperor for almost all of it"
+        },
+        {
+          "rank": 8,
+          "name": "Ferdinand III of Sicily",
+          "value": 65,
+          "aliases": [
+            "ferdinand 3"
+          ],
+          "clue": "Also ruled Naples under a different number"
+        },
+        {
+          "rank": 9,
+          "name": "Victoria",
+          "value": 63,
+          "aliases": [
+            "queen victoria"
+          ],
+          "clue": "Gave her name to an era and an age of empire"
+        },
+        {
+          "rank": 10,
+          "name": "James I of Aragon",
+          "value": 62,
+          "aliases": [
+            "james 1 of aragon",
+            "jaume"
+          ],
+          "clue": "Medieval Iberian, and called the Conqueror"
+        }
+      ]
+    },
+    {
+      "id": "hist-largest-empires",
+      "type": "ranked",
+      "domain": "history",
+      "obscurity": 3,
+      "difficulty": 4,
+      "tags": [],
+      "prompt": "Largest empires in history by land area",
+      "metric": "Peak land area controlled, in millions of km².",
+      "source": {
+        "name": "Encyclopaedia Britannica",
+        "url": "https://www.britannica.com/"
+      },
+      "asOf": "2024-12-31",
+      "volatility": "evergreen",
+      "confidence": {
+        "level": "judgment",
+        "note": "Peak areas are scholarly estimates that vary by millions of square kilometres, and what counts as an empire is itself contested. The leaders are secure; the middle of the order is my best judgment."
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "British Empire",
+          "value": 35.5,
+          "aliases": [
+            "britain",
+            "british"
+          ],
+          "clue": "The sun never set on it, at least in the slogan"
+        },
+        {
+          "rank": 2,
+          "name": "Mongol Empire",
+          "value": 24,
+          "aliases": [
+            "mongol",
+            "mongolia"
+          ],
+          "clue": "The largest contiguous land empire ever"
+        },
+        {
+          "rank": 3,
+          "name": "Russian Empire",
+          "value": 22.8,
+          "aliases": [
+            "russia"
+          ],
+          "clue": "Stretched from Poland to the Pacific"
+        },
+        {
+          "rank": 4,
+          "name": "Qing dynasty",
+          "value": 14.7,
+          "aliases": [
+            "qing",
+            "manchu"
+          ],
+          "clue": "The last imperial dynasty of China"
+        },
+        {
+          "rank": 5,
+          "name": "Spanish Empire",
+          "value": 13.7,
+          "aliases": [
+            "spain",
+            "spanish"
+          ],
+          "clue": "Silver from the Americas funded it"
+        },
+        {
+          "rank": 6,
+          "name": "Second French Colonial Empire",
+          "value": 11.5,
+          "aliases": [
+            "french empire",
+            "france",
+            "french"
+          ],
+          "clue": "Concentrated in Africa and Indochina"
+        },
+        {
+          "rank": 7,
+          "name": "Abbasid Caliphate",
+          "value": 11.1,
+          "aliases": [
+            "abbasid"
+          ],
+          "clue": "Ruled from Baghdad in a golden age of science"
+        },
+        {
+          "rank": 8,
+          "name": "Umayyad Caliphate",
+          "value": 11.1,
+          "aliases": [
+            "umayyad"
+          ],
+          "clue": "Reached from Iberia to the Indus"
+        },
+        {
+          "rank": 9,
+          "name": "Yuan dynasty",
+          "value": 11,
+          "aliases": [
+            "yuan"
+          ],
+          "clue": "Founded by a grandson of a great conqueror"
+        },
+        {
+          "rank": 10,
+          "name": "Portuguese Empire",
+          "value": 10.4,
+          "aliases": [
+            "portugal",
+            "portuguese"
+          ],
+          "clue": "The longest-lived of the European seaborne empires"
+        }
+      ]
+    },
+    {
+      "id": "hist-oldest-universities",
+      "type": "ranked",
+      "domain": "history",
+      "obscurity": 3,
+      "difficulty": 5,
+      "tags": [],
+      "prompt": "Oldest universities still operating",
+      "metric": "Year of foundation, for institutions in continuous operation as universities. Lower year means older.",
+      "source": {
+        "name": "Encyclopaedia Britannica",
+        "url": "https://www.britannica.com/"
+      },
+      "asOf": "2024-12-31",
+      "volatility": "evergreen",
+      "order": "asc",
+      "confidence": {
+        "level": "partial",
+        "note": "The first four are conventional. Below that, foundation dates depend on what counts as continuous operation and several Italian institutions have competing claims, so the order is my best judgment."
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Bologna",
+          "value": 1088,
+          "aliases": [
+            "university of bologna"
+          ],
+          "clue": "Italian, and usually called the oldest in the world"
+        },
+        {
+          "rank": 2,
+          "name": "Oxford",
+          "value": 1096,
+          "aliases": [
+            "university of oxford"
+          ],
+          "clue": "English, with a college system and no founding charter"
+        },
+        {
+          "rank": 3,
+          "name": "Salamanca",
+          "value": 1134,
+          "aliases": [
+            "university of salamanca"
+          ],
+          "clue": "The oldest in the Spanish-speaking world"
+        },
+        {
+          "rank": 4,
+          "name": "Cambridge",
+          "value": 1209,
+          "aliases": [
+            "university of cambridge"
+          ],
+          "clue": "Founded by scholars who left another English town"
+        },
+        {
+          "rank": 5,
+          "name": "Padua",
+          "value": 1222,
+          "aliases": [
+            "padova",
+            "university of padua"
+          ],
+          "clue": "Founded by scholars leaving the oldest of all; Galileo taught here"
+        },
+        {
+          "rank": 6,
+          "name": "Naples Federico II",
+          "value": 1224,
+          "aliases": [
+            "naples",
+            "napoli"
+          ],
+          "clue": "The oldest founded by a specific state charter"
+        },
+        {
+          "rank": 7,
+          "name": "Siena",
+          "value": 1240,
+          "aliases": [
+            "university of siena"
+          ],
+          "clue": "Tuscan, in a city famous for a horse race"
+        },
+        {
+          "rank": 8,
+          "name": "Coimbra",
+          "value": 1290,
+          "aliases": [
+            "university of coimbra"
+          ],
+          "clue": "Portuguese, and its library is a baroque landmark"
+        },
+        {
+          "rank": 9,
+          "name": "Macerata",
+          "value": 1290,
+          "aliases": [],
+          "clue": "A small institution in the Italian Marche"
+        },
+        {
+          "rank": 10,
+          "name": "Complutense",
+          "value": 1293,
+          "aliases": [
+            "madrid",
+            "complutense madrid"
+          ],
+          "clue": "Spanish, and now one of Europe's largest"
+        }
+      ]
+    },
+    {
+      "id": "geo-most-visited-countries",
+      "type": "ranked",
+      "domain": "geography",
+      "obscurity": 1,
+      "difficulty": 3,
+      "tags": [],
+      "prompt": "Most visited countries by international tourist arrivals",
+      "metric": "International tourist arrivals per year.",
+      "source": {
+        "name": "UN Tourism",
+        "url": "https://www.unwto.org/tourism-statistics"
+      },
+      "asOf": "2025-12-31",
+      "volatility": "annual",
+      "confidence": {
+        "level": "partial",
+        "note": "The top five are stable. Below that the order moves year to year and the ninth and tenth places are my best judgment."
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "France",
+          "value": null,
+          "aliases": [],
+          "clue": "Has led this ranking for decades"
+        },
+        {
+          "rank": 2,
+          "name": "Spain",
+          "value": null,
+          "aliases": [
+            "espana"
+          ],
+          "clue": "Beaches, and the most visited in terms of spending per head"
+        },
+        {
+          "rank": 3,
+          "name": "United States",
+          "value": null,
+          "aliases": [
+            "usa",
+            "us",
+            "america"
+          ],
+          "clue": "Earns more from tourism than anyone"
+        },
+        {
+          "rank": 4,
+          "name": "Italy",
+          "value": null,
+          "aliases": [
+            "italia"
+          ],
+          "clue": "More UNESCO sites than any other country"
+        },
+        {
+          "rank": 5,
+          "name": "Turkey",
+          "value": null,
+          "aliases": [
+            "turkiye"
+          ],
+          "clue": "Rose sharply over the last decade"
+        },
+        {
+          "rank": 6,
+          "name": "Mexico",
+          "value": null,
+          "aliases": [],
+          "clue": "Caribbean resorts and Maya ruins"
+        },
+        {
+          "rank": 7,
+          "name": "United Kingdom",
+          "value": null,
+          "aliases": [
+            "uk",
+            "britain"
+          ],
+          "clue": "Most arrivals come through one city"
+        },
+        {
+          "rank": 8,
+          "name": "Germany",
+          "value": null,
+          "aliases": [
+            "deutschland"
+          ],
+          "clue": "Business travel makes up an unusually large share"
+        },
+        {
+          "rank": 9,
+          "name": "Greece",
+          "value": null,
+          "aliases": [
+            "hellas"
+          ],
+          "clue": "Islands, and ancient ruins"
+        },
+        {
+          "rank": 10,
+          "name": "Austria",
+          "value": null,
+          "aliases": [],
+          "clue": "Alpine skiing and one imperial capital"
+        }
+      ]
+    },
+    {
+      "id": "econ-gdp-per-capita",
+      "type": "ranked",
+      "domain": "geography",
+      "obscurity": 2,
+      "difficulty": 4,
+      "tags": [
+        "economics"
+      ],
+      "prompt": "Highest GDP per capita",
+      "metric": "Nominal gross domestic product per person in US dollars, for countries with a population over 100,000.",
+      "source": {
+        "name": "IMF - World Economic Outlook",
+        "url": "https://www.imf.org/en/Publications/WEO"
+      },
+      "asOf": "2026-04",
+      "volatility": "annual",
+      "ambiguity": "Nominal GDP per person flatters financial centres where output is booked but not consumed. Adjusted for purchasing power, a different set of countries leads.",
+      "confidence": {
+        "level": "partial",
+        "note": "The leaders are stable, but this list reorders every year and excluding microstates changes it substantially; places five to ten are my best judgment."
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Luxembourg",
+          "value": null,
+          "aliases": [],
+          "clue": "A tiny grand duchy that is a banking centre"
+        },
+        {
+          "rank": 2,
+          "name": "Ireland",
+          "value": null,
+          "aliases": [],
+          "clue": "Multinational profits booked there inflate the figure"
+        },
+        {
+          "rank": 3,
+          "name": "Switzerland",
+          "value": null,
+          "aliases": [],
+          "clue": "Banking, pharmaceuticals and watches"
+        },
+        {
+          "rank": 4,
+          "name": "Singapore",
+          "value": null,
+          "aliases": [],
+          "clue": "A city-state and the busiest transshipment port"
+        },
+        {
+          "rank": 5,
+          "name": "Norway",
+          "value": null,
+          "aliases": [],
+          "clue": "A sovereign wealth fund built on North Sea oil"
+        },
+        {
+          "rank": 6,
+          "name": "Iceland",
+          "value": null,
+          "aliases": [],
+          "clue": "Geothermal power and a population under 400,000"
+        },
+        {
+          "rank": 7,
+          "name": "Qatar",
+          "value": null,
+          "aliases": [],
+          "clue": "Natural gas, and hosted a World Cup"
+        },
+        {
+          "rank": 8,
+          "name": "United States",
+          "value": null,
+          "aliases": [
+            "usa",
+            "us",
+            "america"
+          ],
+          "clue": "By far the largest economy in this group"
+        },
+        {
+          "rank": 9,
+          "name": "Denmark",
+          "value": null,
+          "aliases": [],
+          "clue": "Pharmaceuticals, shipping and wind turbines"
+        },
+        {
+          "rank": 10,
+          "name": "Netherlands",
+          "value": null,
+          "aliases": [
+            "holland"
+          ],
+          "clue": "A trading economy with Europe's largest port"
+        }
+      ]
+    },
+    {
+      "id": "sport-olympic-golds-country",
+      "type": "ranked",
+      "domain": "sports",
+      "obscurity": 2,
+      "difficulty": 4,
+      "tags": [],
+      "prompt": "Most Summer Olympic gold medals by country",
+      "metric": "Total gold medals at the Summer Olympic Games, all time, counting former states separately.",
+      "source": {
+        "name": "Olympics.com - medal tables",
+        "url": "https://www.olympics.com/en/olympic-games"
+      },
+      "asOf": "2024-08",
+      "volatility": "annual",
+      "ambiguity": "Former states are counted separately, so the Soviet Union and East Germany appear in their own right rather than being folded into their successors.",
+      "confidence": {
+        "level": "partial",
+        "note": "The top four are certain. Below that the European totals are close together and the order is my best judgment."
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "United States",
+          "value": 1100,
+          "aliases": [
+            "usa",
+            "us",
+            "america"
+          ],
+          "clue": "More than double anyone else"
+        },
+        {
+          "rank": 2,
+          "name": "Soviet Union",
+          "value": 395,
+          "aliases": [
+            "ussr",
+            "soviet"
+          ],
+          "clue": "Competed only from 1952 to 1988"
+        },
+        {
+          "rank": 3,
+          "name": "Great Britain",
+          "value": 300,
+          "aliases": [
+            "britain",
+            "uk",
+            "team gb"
+          ],
+          "clue": "Has competed at every modern Games"
+        },
+        {
+          "rank": 4,
+          "name": "China",
+          "value": 300,
+          "aliases": [
+            "prc"
+          ],
+          "clue": "Almost all of it since 1984"
+        },
+        {
+          "rank": 5,
+          "name": "France",
+          "value": 230,
+          "aliases": [],
+          "clue": "Hosted the Games three times"
+        },
+        {
+          "rank": 6,
+          "name": "Italy",
+          "value": 220,
+          "aliases": [
+            "italia"
+          ],
+          "clue": "Strong in fencing and cycling"
+        },
+        {
+          "rank": 7,
+          "name": "Germany",
+          "value": 200,
+          "aliases": [
+            "deutschland"
+          ],
+          "clue": "Counted separately from its former eastern state"
+        },
+        {
+          "rank": 8,
+          "name": "Hungary",
+          "value": 185,
+          "aliases": [],
+          "clue": "An extraordinary total for its size, much of it in water"
+        },
+        {
+          "rank": 9,
+          "name": "Japan",
+          "value": 170,
+          "aliases": [],
+          "clue": "Judo, gymnastics and swimming"
+        },
+        {
+          "rank": 10,
+          "name": "East Germany",
+          "value": 155,
+          "aliases": [
+            "gdr",
+            "ddr"
+          ],
+          "clue": "Existed for only twenty years of competition"
+        }
+      ]
+    },
+    {
+      "id": "sport-most-olympic-medals-person",
+      "type": "ranked",
+      "domain": "sports",
+      "obscurity": 2,
+      "difficulty": 4,
+      "tags": [],
+      "prompt": "Most Olympic medals won by one person",
+      "metric": "Total Olympic medals of any colour, Summer and Winter combined.",
+      "source": {
+        "name": "Olympics.com - athletes",
+        "url": "https://www.olympics.com/en/athletes"
+      },
+      "asOf": "2024-08",
+      "volatility": "annual",
+      "confidence": {
+        "level": "partial",
+        "note": "The leader is untouchable and the top four are firm. Below that a cluster of athletes sit on thirteen and twelve medals, so which of them makes the ten is my best judgment."
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Michael Phelps",
+          "value": 28,
+          "aliases": [
+            "phelps"
+          ],
+          "clue": "Twenty-three of them gold, all in the pool"
+        },
+        {
+          "rank": 2,
+          "name": "Larisa Latynina",
+          "value": 18,
+          "aliases": [
+            "latynina"
+          ],
+          "clue": "Soviet gymnast whose record stood for 48 years"
+        },
+        {
+          "rank": 3,
+          "name": "Marit Bjorgen",
+          "value": 15,
+          "aliases": [
+            "bjorgen"
+          ],
+          "clue": "Norwegian cross-country skier, and the most decorated Winter Olympian"
+        },
+        {
+          "rank": 4,
+          "name": "Nikolai Andrianov",
+          "value": 15,
+          "aliases": [
+            "andrianov"
+          ],
+          "clue": "Soviet gymnast of the 1970s"
+        },
+        {
+          "rank": 5,
+          "name": "Ole Einar Bjorndalen",
+          "value": 13,
+          "aliases": [
+            "bjorndalen"
+          ],
+          "clue": "Norwegian biathlete nicknamed the King of Biathlon"
+        },
+        {
+          "rank": 6,
+          "name": "Edoardo Mangiarotti",
+          "value": 13,
+          "aliases": [
+            "mangiarotti"
+          ],
+          "clue": "Italian fencer who competed across two decades"
+        },
+        {
+          "rank": 7,
+          "name": "Takashi Ono",
+          "value": 13,
+          "aliases": [
+            "ono"
+          ],
+          "clue": "Japanese gymnast of the 1950s and 60s"
+        },
+        {
+          "rank": 8,
+          "name": "Boris Shakhlin",
+          "value": 13,
+          "aliases": [
+            "shakhlin"
+          ],
+          "clue": "Soviet gymnast who won across three Games"
+        },
+        {
+          "rank": 9,
+          "name": "Paavo Nurmi",
+          "value": 12,
+          "aliases": [
+            "nurmi"
+          ],
+          "clue": "The Flying Finn, a distance runner of the 1920s"
+        },
+        {
+          "rank": 10,
+          "name": "Birgit Fischer",
+          "value": 12,
+          "aliases": [
+            "fischer"
+          ],
+          "clue": "German canoeist who won medals 24 years apart"
+        }
+      ]
+    },
+    {
+      "id": "tennis-most-slams-men",
+      "type": "ranked",
+      "domain": "sports",
+      "obscurity": 2,
+      "difficulty": 3,
+      "tags": [
+        "tennis"
+      ],
+      "prompt": "Most men's Grand Slam singles titles",
+      "metric": "Grand Slam singles titles won, all time, in the men's game.",
+      "source": {
+        "name": "ATP Tour",
+        "url": "https://www.atptour.com/"
+      },
+      "asOf": "2026-09",
+      "volatility": "annual",
+      "confidence": {
+        "level": "partial",
+        "note": "The top three are certain. The historical entries below them are settled, but an active player is climbing the lower half, so the last places are my best judgment."
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Novak Djokovic",
+          "value": 24,
+          "aliases": [
+            "djokovic",
+            "nole"
+          ],
+          "clue": "Serbian, and won all four at least three times"
+        },
+        {
+          "rank": 2,
+          "name": "Rafael Nadal",
+          "value": 22,
+          "aliases": [
+            "nadal",
+            "rafa"
+          ],
+          "clue": "Fourteen of them at one tournament"
+        },
+        {
+          "rank": 3,
+          "name": "Roger Federer",
+          "value": 20,
+          "aliases": [
+            "federer"
+          ],
+          "clue": "Swiss, and eight of them on grass"
+        },
+        {
+          "rank": 4,
+          "name": "Pete Sampras",
+          "value": 14,
+          "aliases": [
+            "sampras"
+          ],
+          "clue": "American, and never won on the Paris clay"
+        },
+        {
+          "rank": 5,
+          "name": "Roy Emerson",
+          "value": 12,
+          "aliases": [
+            "emerson"
+          ],
+          "clue": "Australian, and won all of his before the open era"
+        },
+        {
+          "rank": 6,
+          "name": "Bjorn Borg",
+          "value": 11,
+          "aliases": [
+            "borg"
+          ],
+          "clue": "Swedish, and retired at 26"
+        },
+        {
+          "rank": 7,
+          "name": "Rod Laver",
+          "value": 11,
+          "aliases": [
+            "laver"
+          ],
+          "clue": "Won the calendar Grand Slam twice"
+        },
+        {
+          "rank": 8,
+          "name": "Bill Tilden",
+          "value": 10,
+          "aliases": [
+            "tilden"
+          ],
+          "clue": "American star of the 1920s"
+        },
+        {
+          "rank": 9,
+          "name": "Fred Perry",
+          "value": 8,
+          "aliases": [
+            "perry"
+          ],
+          "clue": "British, and later a clothing brand"
+        },
+        {
+          "rank": 10,
+          "name": "Ken Rosewall",
+          "value": 8,
+          "aliases": [
+            "rosewall"
+          ],
+          "clue": "Australian, and won majors 19 years apart"
+        }
+      ]
+    },
+    {
+      "id": "tennis-most-slams-women",
+      "type": "ranked",
+      "domain": "sports",
+      "obscurity": 2,
+      "difficulty": 4,
+      "tags": [
+        "tennis"
+      ],
+      "prompt": "Most women's Grand Slam singles titles",
+      "metric": "Grand Slam singles titles won, all time, in the women's game.",
+      "source": {
+        "name": "WTA Tour",
+        "url": "https://www.wtatennis.com/"
+      },
+      "asOf": "2026-09",
+      "volatility": "annual",
+      "confidence": {
+        "level": "partial",
+        "note": "The top three are certain. The pre-open-era entries below them are counted differently by some sources, so the lower order is my best judgment."
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Margaret Court",
+          "value": 24,
+          "aliases": [
+            "court"
+          ],
+          "clue": "Australian, and thirteen came before the open era"
+        },
+        {
+          "rank": 2,
+          "name": "Serena Williams",
+          "value": 23,
+          "aliases": [
+            "serena"
+          ],
+          "clue": "American, and won one while pregnant"
+        },
+        {
+          "rank": 3,
+          "name": "Steffi Graf",
+          "value": 22,
+          "aliases": [
+            "graf"
+          ],
+          "clue": "German, and won all four plus Olympic gold in one year"
+        },
+        {
+          "rank": 4,
+          "name": "Helen Wills",
+          "value": 19,
+          "aliases": [
+            "wills",
+            "helen wills moody"
+          ],
+          "clue": "American star of the 1920s and 30s"
+        },
+        {
+          "rank": 5,
+          "name": "Chris Evert",
+          "value": 18,
+          "aliases": [
+            "evert"
+          ],
+          "clue": "American, and reached 34 major finals"
+        },
+        {
+          "rank": 6,
+          "name": "Martina Navratilova",
+          "value": 18,
+          "aliases": [
+            "navratilova"
+          ],
+          "clue": "Czech-American, and dominant on grass"
+        },
+        {
+          "rank": 7,
+          "name": "Billie Jean King",
+          "value": 12,
+          "aliases": [
+            "king",
+            "bjk"
+          ],
+          "clue": "Also won a famous exhibition match against a man"
+        },
+        {
+          "rank": 8,
+          "name": "Monica Seles",
+          "value": 9,
+          "aliases": [
+            "seles"
+          ],
+          "clue": "Her career was interrupted when she was stabbed during a match"
+        },
+        {
+          "rank": 9,
+          "name": "Maureen Connolly",
+          "value": 9,
+          "aliases": [
+            "connolly",
+            "little mo"
+          ],
+          "clue": "Won the calendar Grand Slam in 1953 at 18"
+        },
+        {
+          "rank": 10,
+          "name": "Suzanne Lenglen",
+          "value": 8,
+          "aliases": [
+            "lenglen"
+          ],
+          "clue": "French, and a superstar of the 1920s"
+        }
+      ]
+    },
+    {
+      "id": "nba-career-points",
+      "type": "ranked",
+      "domain": "sports",
+      "obscurity": 2,
+      "difficulty": 3,
+      "tags": [
+        "basketball"
+      ],
+      "prompt": "NBA career points leaders",
+      "metric": "Regular-season points scored in a career, all time.",
+      "source": {
+        "name": "NBA - career leaders",
+        "url": "https://www.nba.com/stats/alltime-leaders"
+      },
+      "asOf": "2026-06",
+      "volatility": "annual",
+      "confidence": {
+        "level": "partial",
+        "note": "The top eight are settled. Active players are still climbing into the lower half, so the last places are my best judgment at the as-of date."
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "LeBron James",
+          "value": 42000,
+          "aliases": [
+            "lebron",
+            "james"
+          ],
+          "clue": "Passed the previous record in 2023"
+        },
+        {
+          "rank": 2,
+          "name": "Kareem Abdul-Jabbar",
+          "value": 38387,
+          "aliases": [
+            "kareem",
+            "abdul jabbar"
+          ],
+          "clue": "Held the record for 39 years, and the skyhook"
+        },
+        {
+          "rank": 3,
+          "name": "Karl Malone",
+          "value": 36928,
+          "aliases": [
+            "malone",
+            "the mailman"
+          ],
+          "clue": "Nicknamed for always delivering, and never won a title"
+        },
+        {
+          "rank": 4,
+          "name": "Kobe Bryant",
+          "value": 33643,
+          "aliases": [
+            "kobe",
+            "bryant"
+          ],
+          "clue": "Scored 81 in one game, and 60 in his last"
+        },
+        {
+          "rank": 5,
+          "name": "Michael Jordan",
+          "value": 32292,
+          "aliases": [
+            "jordan",
+            "mj"
+          ],
+          "clue": "Six titles, and the highest career scoring average"
+        },
+        {
+          "rank": 6,
+          "name": "Dirk Nowitzki",
+          "value": 31560,
+          "aliases": [
+            "dirk",
+            "nowitzki"
+          ],
+          "clue": "German, and twenty-one seasons with one club"
+        },
+        {
+          "rank": 7,
+          "name": "Wilt Chamberlain",
+          "value": 31419,
+          "aliases": [
+            "wilt",
+            "chamberlain"
+          ],
+          "clue": "Scored 100 in a single game"
+        },
+        {
+          "rank": 8,
+          "name": "Kevin Durant",
+          "value": 30000,
+          "aliases": [
+            "durant",
+            "kd"
+          ],
+          "clue": "Won titles with two different clubs"
+        },
+        {
+          "rank": 9,
+          "name": "Shaquille ONeal",
+          "value": 28596,
+          "aliases": [
+            "shaq",
+            "oneal",
+            "o neal"
+          ],
+          "clue": "Broke backboards, and missed a lot of free throws"
+        },
+        {
+          "rank": 10,
+          "name": "Carmelo Anthony",
+          "value": 28289,
+          "aliases": [
+            "carmelo",
+            "melo",
+            "anthony"
+          ],
+          "clue": "A prolific scorer who never reached a final"
+        }
+      ]
     }
   ]
 }

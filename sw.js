@@ -1,4 +1,4 @@
-const CACHE = 'daily-tens-v18';
+const CACHE = 'daily-tens-v19';
 const SHELL = ['./', './index.html', './manifest.json', './data/puzzles.min.json', './icons/icon-192.png', './icons/icon-512.png'];
 
 // GitHub Pages serves everything with Cache-Control: max-age=600, which we
