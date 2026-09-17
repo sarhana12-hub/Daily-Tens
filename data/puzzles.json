@@ -14076,6 +14076,2597 @@
         "level": "judgment",
         "note": "Club valuations are private-market estimates that differ substantially between publishers and move with every stadium deal, so this order is my best judgment."
       }
+    },
+    {
+      "type": "ranked",
+      "tags": [
+        "nfl"
+      ],
+      "volatility": "annual",
+      "asOf": "2026-02",
+      "id": "nfl-most-mvps",
+      "domain": "sports",
+      "obscurity": 2,
+      "difficulty": 4,
+      "prompt": "Most NFL MVP awards won",
+      "metric": "Associated Press NFL Most Valuable Player awards won in a career.",
+      "source": {
+        "name": "Pro Football Reference",
+        "url": "https://www.pro-football-reference.com/leaders/"
+      },
+      "ambiguity": "Several players tie on two or one award, so the order within a tie is arbitrary and the ten names are the point.",
+      "confidence": {
+        "level": "partial",
+        "note": "The top three are certain; below that a long list of players tie on two, so which of them appears is my best judgment."
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Peyton Manning",
+          "value": 5,
+          "aliases": [
+            "peyton"
+          ],
+          "clue": "Five, more than anyone"
+        },
+        {
+          "rank": 2,
+          "name": "Aaron Rodgers",
+          "value": 4,
+          "aliases": [
+            "rodgers"
+          ],
+          "clue": "Four, two of them back to back"
+        },
+        {
+          "rank": 3,
+          "name": "Tom Brady",
+          "value": 3,
+          "aliases": [
+            "brady"
+          ],
+          "clue": "Three, and seven rings"
+        },
+        {
+          "rank": 4,
+          "name": "Jim Brown",
+          "value": 3,
+          "aliases": [],
+          "clue": "Three in the 1950s and 60s, as a runner"
+        },
+        {
+          "rank": 5,
+          "name": "Johnny Unitas",
+          "value": 3,
+          "aliases": [
+            "unitas"
+          ],
+          "clue": "Three, in a crew cut and high-top boots"
+        },
+        {
+          "rank": 6,
+          "name": "Brett Favre",
+          "value": 3,
+          "aliases": [
+            "favre"
+          ],
+          "clue": "Three in a row in the 1990s"
+        },
+        {
+          "rank": 7,
+          "name": "Patrick Mahomes",
+          "value": 2,
+          "aliases": [
+            "mahomes"
+          ],
+          "clue": "Two so far, with more likely"
+        },
+        {
+          "rank": 8,
+          "name": "Lamar Jackson",
+          "value": 2,
+          "aliases": [
+            "lamar"
+          ],
+          "clue": "Two, both unanimous or near it"
+        },
+        {
+          "rank": 9,
+          "name": "Joe Montana",
+          "value": 2,
+          "aliases": [
+            "montana"
+          ],
+          "clue": "Two, and four Super Bowl wins"
+        },
+        {
+          "rank": 10,
+          "name": "Kurt Warner",
+          "value": 2,
+          "aliases": [
+            "warner"
+          ],
+          "clue": "Two, after being stacked on a supermarket shelf"
+        }
+      ]
+    },
+    {
+      "type": "ranked",
+      "tags": [
+        "nfl"
+      ],
+      "volatility": "annual",
+      "asOf": "2026-02",
+      "id": "nfl-most-passing-season",
+      "domain": "sports",
+      "obscurity": 3,
+      "difficulty": 5,
+      "prompt": "Most passing yards in a single NFL season",
+      "metric": "Passing yards in one regular season, one entry per player at their best season.",
+      "source": {
+        "name": "Pro Football Reference",
+        "url": "https://www.pro-football-reference.com/leaders/"
+      },
+      "ambiguity": "One entry per player, so a quarterback with several 5,000-yard seasons appears once at his best.",
+      "confidence": {
+        "level": "partial",
+        "note": "The top two are separated by a single yard and are certain. The rest are close together and active players keep intruding, so that order is my best judgment."
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Peyton Manning",
+          "value": 5477,
+          "aliases": [
+            "peyton"
+          ],
+          "clue": "Beat the record by one yard"
+        },
+        {
+          "rank": 2,
+          "name": "Drew Brees",
+          "value": 5476,
+          "aliases": [
+            "brees"
+          ],
+          "clue": "Held the record until it went by a yard"
+        },
+        {
+          "rank": 3,
+          "name": "Patrick Mahomes",
+          "value": 5250,
+          "aliases": [
+            "mahomes"
+          ],
+          "clue": "In his first full season as a starter"
+        },
+        {
+          "rank": 4,
+          "name": "Tom Brady",
+          "value": 5235,
+          "aliases": [
+            "brady"
+          ],
+          "clue": "At 44 years old"
+        },
+        {
+          "rank": 5,
+          "name": "Ben Roethlisberger",
+          "value": 5129,
+          "aliases": [
+            "big ben"
+          ],
+          "clue": "In a season his team missed the playoffs"
+        },
+        {
+          "rank": 6,
+          "name": "Dan Marino",
+          "value": 5084,
+          "aliases": [
+            "marino"
+          ],
+          "clue": "In 1984, decades ahead of the passing era"
+        },
+        {
+          "rank": 7,
+          "name": "Matthew Stafford",
+          "value": 5038,
+          "aliases": [
+            "stafford"
+          ],
+          "clue": "In Detroit, before his move west"
+        },
+        {
+          "rank": 8,
+          "name": "Jared Goff",
+          "value": 4950,
+          "aliases": [
+            "goff"
+          ],
+          "clue": "After being traded for the man above"
+        },
+        {
+          "rank": 9,
+          "name": "Justin Herbert",
+          "value": 4739,
+          "aliases": [
+            "herbert"
+          ],
+          "clue": "In his second season"
+        },
+        {
+          "rank": 10,
+          "name": "Kirk Cousins",
+          "value": 4547,
+          "aliases": [
+            "cousins"
+          ],
+          "clue": "A quarterback defined by very large contracts"
+        }
+      ]
+    },
+    {
+      "type": "ranked",
+      "tags": [
+        "nfl"
+      ],
+      "volatility": "annual",
+      "asOf": "2026-02",
+      "id": "nfl-most-superbowl-appearances",
+      "domain": "sports",
+      "obscurity": 2,
+      "difficulty": 4,
+      "prompt": "Most Super Bowl appearances by franchise",
+      "metric": "Super Bowls played, won or lost.",
+      "source": {
+        "name": "Pro Football Reference",
+        "url": "https://www.pro-football-reference.com/leaders/"
+      },
+      "confidence": {
+        "level": "partial",
+        "note": "The leader is certain; several franchises tie on five and six appearances, so their order is my best judgment."
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "New England Patriots",
+          "value": 11,
+          "aliases": [
+            "pats",
+            "new england"
+          ],
+          "clue": "Eleven appearances, six wins"
+        },
+        {
+          "rank": 2,
+          "name": "Pittsburgh Steelers",
+          "value": 8,
+          "aliases": [
+            "steelers"
+          ],
+          "clue": "Eight appearances, six wins"
+        },
+        {
+          "rank": 3,
+          "name": "Dallas Cowboys",
+          "value": 8,
+          "aliases": [
+            "cowboys"
+          ],
+          "clue": "Eight appearances, five wins"
+        },
+        {
+          "rank": 4,
+          "name": "Denver Broncos",
+          "value": 8,
+          "aliases": [
+            "broncos"
+          ],
+          "clue": "Eight appearances, but five defeats"
+        },
+        {
+          "rank": 5,
+          "name": "San Francisco 49ers",
+          "value": 8,
+          "aliases": [
+            "niners",
+            "49ers"
+          ],
+          "clue": "Eight appearances, five wins"
+        },
+        {
+          "rank": 6,
+          "name": "Kansas City Chiefs",
+          "value": 7,
+          "aliases": [
+            "chiefs",
+            "kc"
+          ],
+          "clue": "Five of them since 2020"
+        },
+        {
+          "rank": 7,
+          "name": "Green Bay Packers",
+          "value": 5,
+          "aliases": [
+            "packers"
+          ],
+          "clue": "Won the first two ever played"
+        },
+        {
+          "rank": 8,
+          "name": "Miami Dolphins",
+          "value": 5,
+          "aliases": [
+            "dolphins"
+          ],
+          "clue": "Includes the only perfect season"
+        },
+        {
+          "rank": 9,
+          "name": "Philadelphia Eagles",
+          "value": 5,
+          "aliases": [
+            "eagles",
+            "philly"
+          ],
+          "clue": "Two wins, both this century"
+        },
+        {
+          "rank": 10,
+          "name": "Washington Commanders",
+          "value": 5,
+          "aliases": [
+            "redskins",
+            "washington"
+          ],
+          "clue": "Three wins in the 1980s and 90s"
+        }
+      ]
+    },
+    {
+      "type": "ranked",
+      "tags": [
+        "nfl"
+      ],
+      "volatility": "annual",
+      "asOf": "2026-02",
+      "id": "nfl-most-rushing-season",
+      "domain": "sports",
+      "obscurity": 3,
+      "difficulty": 5,
+      "prompt": "Most rushing yards in a single NFL season",
+      "metric": "Rushing yards in one regular season, one entry per player at their best season.",
+      "source": {
+        "name": "Pro Football Reference",
+        "url": "https://www.pro-football-reference.com/leaders/"
+      },
+      "confidence": {
+        "level": "partial",
+        "note": "The top three are certain and long-standing. The rest are within a hundred yards of each other, so that order is my best judgment."
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Eric Dickerson",
+          "value": 2105,
+          "aliases": [
+            "dickerson"
+          ],
+          "clue": "Set it in 1984 and it still stands"
+        },
+        {
+          "rank": 2,
+          "name": "Adrian Peterson",
+          "value": 2097,
+          "aliases": [
+            "ap"
+          ],
+          "clue": "Came within nine yards, a year after knee surgery"
+        },
+        {
+          "rank": 3,
+          "name": "Jamal Lewis",
+          "value": 2066,
+          "aliases": [
+            "jamal lewis"
+          ],
+          "clue": "In Baltimore, in 2003"
+        },
+        {
+          "rank": 4,
+          "name": "Barry Sanders",
+          "value": 2053,
+          "aliases": [
+            "barry"
+          ],
+          "clue": "Then retired two seasons later"
+        },
+        {
+          "rank": 5,
+          "name": "Derrick Henry",
+          "value": 2027,
+          "aliases": [
+            "henry",
+            "king henry"
+          ],
+          "clue": "In 2020, at 247 pounds"
+        },
+        {
+          "rank": 6,
+          "name": "Terrell Davis",
+          "value": 2008,
+          "aliases": [
+            "davis"
+          ],
+          "clue": "In a Super Bowl-winning season in Denver"
+        },
+        {
+          "rank": 7,
+          "name": "Chris Johnson",
+          "value": 2006,
+          "aliases": [
+            "cj2k"
+          ],
+          "clue": "Nicknamed for the round number he hit"
+        },
+        {
+          "rank": 8,
+          "name": "Saquon Barkley",
+          "value": 2005,
+          "aliases": [
+            "barkley",
+            "saquon"
+          ],
+          "clue": "In his first season with a new team"
+        },
+        {
+          "rank": 9,
+          "name": "O.J. Simpson",
+          "value": 2003,
+          "aliases": [
+            "oj simpson",
+            "simpson"
+          ],
+          "clue": "The first past two thousand, in a fourteen-game season"
+        },
+        {
+          "rank": 10,
+          "name": "Earl Campbell",
+          "value": 1934,
+          "aliases": [
+            "campbell"
+          ],
+          "clue": "A punishing runner for Houston"
+        }
+      ]
+    },
+    {
+      "id": "running-olympic-800m-men",
+      "type": "recency",
+      "domain": "sports",
+      "tags": [
+        "running"
+      ],
+      "obscurity": 3,
+      "difficulty": 5,
+      "prompt": "The ten most recent men's Olympic 800m champions",
+      "metric": "Gold medallist in the men's Olympic 800 metres, by Games.",
+      "source": {
+        "name": "Olympics.com - results",
+        "url": "https://www.olympics.com/en/olympic-games/olympic-results"
+      },
+      "asOf": "2024-08",
+      "volatility": "annual",
+      "answers": [
+        {
+          "rank": 1,
+          "label": "2024",
+          "name": "Emmanuel Wanyonyi",
+          "aliases": [
+            "wanyonyi"
+          ],
+          "clue": "Kenyan, and won by a hundredth of a second"
+        },
+        {
+          "rank": 2,
+          "label": "2020",
+          "name": "Emmanuel Korir",
+          "aliases": [
+            "korir"
+          ],
+          "clue": "Kenyan, and led a one-two for his country"
+        },
+        {
+          "rank": 3,
+          "label": "2016",
+          "name": "David Rudisha",
+          "aliases": [
+            "rudisha"
+          ],
+          "clue": "Kenyan, and retained the title"
+        },
+        {
+          "rank": 4,
+          "label": "2012",
+          "name": "David Rudisha",
+          "aliases": [
+            "rudisha"
+          ],
+          "clue": "Set a world record that stood for over a decade"
+        },
+        {
+          "rank": 5,
+          "label": "2008",
+          "name": "Wilfred Bungei",
+          "aliases": [
+            "bungei"
+          ],
+          "clue": "Kenyan, and won in Beijing"
+        },
+        {
+          "rank": 6,
+          "label": "2004",
+          "name": "Yuriy Borzakovskiy",
+          "aliases": [
+            "borzakovskiy"
+          ],
+          "clue": "Russian, and famous for a huge final-lap kick"
+        },
+        {
+          "rank": 7,
+          "label": "2000",
+          "name": "Nils Schumann",
+          "aliases": [
+            "schumann"
+          ],
+          "clue": "German, and a surprise winner in Sydney"
+        },
+        {
+          "rank": 8,
+          "label": "1996",
+          "name": "Vebjorn Rodal",
+          "aliases": [
+            "rodal"
+          ],
+          "clue": "Norwegian, in an Olympic record"
+        },
+        {
+          "rank": 9,
+          "label": "1992",
+          "name": "William Tanui",
+          "aliases": [
+            "tanui"
+          ],
+          "clue": "Kenyan, and led a one-two in Barcelona"
+        },
+        {
+          "rank": 10,
+          "label": "1988",
+          "name": "Paul Ereng",
+          "aliases": [
+            "ereng"
+          ],
+          "clue": "Kenyan, and had only recently taken up the event"
+        }
+      ]
+    },
+    {
+      "id": "running-olympic-steeplechase-men",
+      "type": "recency",
+      "domain": "sports",
+      "tags": [
+        "running"
+      ],
+      "obscurity": 4,
+      "difficulty": 5,
+      "prompt": "The ten most recent men's Olympic 3000m steeplechase champions",
+      "metric": "Gold medallist in the men's Olympic 3000 metres steeplechase, by Games.",
+      "source": {
+        "name": "Olympics.com - results",
+        "url": "https://www.olympics.com/en/olympic-games/olympic-results"
+      },
+      "asOf": "2024-08",
+      "volatility": "annual",
+      "ambiguity": "Kenya won this event at every Games from 1984 to 2016, so the list is dominated by one country.",
+      "answers": [
+        {
+          "rank": 1,
+          "label": "2024",
+          "name": "Soufiane El Bakkali",
+          "aliases": [
+            "el bakkali",
+            "bakkali"
+          ],
+          "clue": "Moroccan, and retained the title"
+        },
+        {
+          "rank": 2,
+          "label": "2020",
+          "name": "Soufiane El Bakkali",
+          "aliases": [
+            "el bakkali",
+            "bakkali"
+          ],
+          "clue": "Moroccan, and ended a long Kenyan run"
+        },
+        {
+          "rank": 3,
+          "label": "2016",
+          "name": "Conseslus Kipruto",
+          "aliases": [
+            "kipruto"
+          ],
+          "clue": "Kenyan, in an Olympic record"
+        },
+        {
+          "rank": 4,
+          "label": "2012",
+          "name": "Ezekiel Kemboi",
+          "aliases": [
+            "kemboi"
+          ],
+          "clue": "Kenyan, and known for dancing after winning"
+        },
+        {
+          "rank": 5,
+          "label": "2008",
+          "name": "Brimin Kipruto",
+          "aliases": [
+            "brimin"
+          ],
+          "clue": "Kenyan, and won in Beijing"
+        },
+        {
+          "rank": 6,
+          "label": "2004",
+          "name": "Ezekiel Kemboi",
+          "aliases": [
+            "kemboi"
+          ],
+          "clue": "Kenyan, and a first Olympic title"
+        },
+        {
+          "rank": 7,
+          "label": "2000",
+          "name": "Reuben Kosgei",
+          "aliases": [
+            "kosgei"
+          ],
+          "clue": "Kenyan, and won at 21"
+        },
+        {
+          "rank": 8,
+          "label": "1996",
+          "name": "Joseph Keter",
+          "aliases": [
+            "keter"
+          ],
+          "clue": "Kenyan, and beat the favourite"
+        },
+        {
+          "rank": 9,
+          "label": "1992",
+          "name": "Matthew Birir",
+          "aliases": [
+            "birir"
+          ],
+          "clue": "Kenyan, and led a clean sweep of the medals"
+        },
+        {
+          "rank": 10,
+          "label": "1988",
+          "name": "Julius Kariuki",
+          "aliases": [
+            "kariuki"
+          ],
+          "clue": "Kenyan, in an Olympic record in Seoul"
+        }
+      ]
+    },
+    {
+      "id": "running-marathon-majors",
+      "type": "ranked",
+      "domain": "sports",
+      "tags": [
+        "running"
+      ],
+      "obscurity": 3,
+      "difficulty": 4,
+      "prompt": "Oldest annual marathons still run",
+      "metric": "Year of first running, for marathons held continuously since. Lower year means older.",
+      "source": {
+        "name": "World Marathon Majors",
+        "url": "https://www.worldmarathonmajors.com/"
+      },
+      "asOf": "2024-12-31",
+      "volatility": "evergreen",
+      "order": "asc",
+      "confidence": {
+        "level": "partial",
+        "note": "The first three are certain. Below that, several races claim continuity through interruptions, so the order is my best judgment."
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Around the Bay Road Race",
+          "value": 1894,
+          "aliases": [
+            "around the bay"
+          ],
+          "clue": "Canadian, and predates every other race here, though not at the full distance"
+        },
+        {
+          "rank": 2,
+          "name": "Boston Marathon",
+          "value": 1897,
+          "aliases": [
+            "boston"
+          ],
+          "clue": "Run every April in Massachusetts, and the oldest true marathon"
+        },
+        {
+          "rank": 3,
+          "name": "Yonkers Marathon",
+          "value": 1907,
+          "aliases": [
+            "yonkers"
+          ],
+          "clue": "A hilly race in Westchester County"
+        },
+        {
+          "rank": 4,
+          "name": "Kosice Peace Marathon",
+          "value": 1924,
+          "aliases": [
+            "kosice"
+          ],
+          "clue": "Slovakian, and the oldest in Europe"
+        },
+        {
+          "rank": 5,
+          "name": "Fukuoka Marathon",
+          "value": 1947,
+          "aliases": [
+            "fukuoka"
+          ],
+          "clue": "Japanese, and long an elite-only race"
+        },
+        {
+          "rank": 6,
+          "name": "Enschede Marathon",
+          "value": 1947,
+          "aliases": [
+            "enschede"
+          ],
+          "clue": "Dutch, and once a major international fixture"
+        },
+        {
+          "rank": 7,
+          "name": "Beppu-Oita Marathon",
+          "value": 1952,
+          "aliases": [
+            "beppu",
+            "beppu oita"
+          ],
+          "clue": "Japanese, and known for strict qualifying times"
+        },
+        {
+          "rank": 8,
+          "name": "Athens Classic Marathon",
+          "value": 1955,
+          "aliases": [
+            "athens"
+          ],
+          "clue": "Follows the original legendary route"
+        },
+        {
+          "rank": 9,
+          "name": "New York City Marathon",
+          "value": 1970,
+          "aliases": [
+            "new york",
+            "nyc"
+          ],
+          "clue": "Began as laps of a park"
+        },
+        {
+          "rank": 10,
+          "name": "Berlin Marathon",
+          "value": 1974,
+          "aliases": [
+            "berlin"
+          ],
+          "clue": "Now the fastest course in the world"
+        }
+      ]
+    },
+    {
+      "type": "ranked",
+      "tags": [],
+      "volatility": "evergreen",
+      "asOf": "2024-12-31",
+      "id": "sci-jupiter-moons",
+      "domain": "science",
+      "obscurity": 4,
+      "difficulty": 5,
+      "prompt": "Largest moons of Jupiter",
+      "metric": "Mean diameter in kilometres.",
+      "source": {
+        "name": "NASA",
+        "url": "https://science.nasa.gov/"
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Ganymede",
+          "value": 5268,
+          "aliases": [],
+          "clue": "The largest moon in the solar system"
+        },
+        {
+          "rank": 2,
+          "name": "Callisto",
+          "value": 4821,
+          "aliases": [],
+          "clue": "The most heavily cratered object known"
+        },
+        {
+          "rank": 3,
+          "name": "Io",
+          "value": 3643,
+          "aliases": [],
+          "clue": "Constant volcanic eruptions from tidal heating"
+        },
+        {
+          "rank": 4,
+          "name": "Europa",
+          "value": 3122,
+          "aliases": [],
+          "clue": "A cracked ice shell over a salt ocean"
+        },
+        {
+          "rank": 5,
+          "name": "Amalthea",
+          "value": 167,
+          "aliases": [],
+          "clue": "Irregular, reddish, and close in"
+        },
+        {
+          "rank": 6,
+          "name": "Himalia",
+          "value": 140,
+          "aliases": [],
+          "clue": "The largest of the captured outer group"
+        },
+        {
+          "rank": 7,
+          "name": "Thebe",
+          "value": 98,
+          "aliases": [],
+          "clue": "Small and inside the orbit of the innermost large moon"
+        },
+        {
+          "rank": 8,
+          "name": "Elara",
+          "value": 86,
+          "aliases": [],
+          "clue": "Part of the same captured family as the sixth here"
+        },
+        {
+          "rank": 9,
+          "name": "Pasiphae",
+          "value": 60,
+          "aliases": [],
+          "clue": "Orbits backwards, far from the planet"
+        },
+        {
+          "rank": 10,
+          "name": "Carme",
+          "value": 46,
+          "aliases": [],
+          "clue": "Gives its name to a retrograde group of moons"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "The four large moons are exact. The small outer moons are irregular lumps whose quoted diameters are approximations, so their order is my best judgment."
+      }
+    },
+    {
+      "type": "ranked",
+      "tags": [],
+      "volatility": "evergreen",
+      "asOf": "2024-12-31",
+      "id": "sci-deepest-lakes",
+      "domain": "science",
+      "obscurity": 3,
+      "difficulty": 5,
+      "prompt": "Deepest lakes in the world",
+      "metric": "Maximum depth in metres.",
+      "source": {
+        "name": "Encyclopaedia Britannica",
+        "url": "https://www.britannica.com/"
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Lake Baikal",
+          "value": 1642,
+          "aliases": [
+            "baikal"
+          ],
+          "clue": "Siberian, and holds a fifth of the world's unfrozen fresh water"
+        },
+        {
+          "rank": 2,
+          "name": "Lake Tanganyika",
+          "value": 1470,
+          "aliases": [
+            "tanganyika"
+          ],
+          "clue": "The longest freshwater lake, in the African Rift"
+        },
+        {
+          "rank": 3,
+          "name": "Caspian Sea",
+          "value": 1025,
+          "aliases": [
+            "caspian"
+          ],
+          "clue": "Landlocked and saline, but the largest lake by area"
+        },
+        {
+          "rank": 4,
+          "name": "Lake Vostok",
+          "value": 1000,
+          "aliases": [
+            "vostok"
+          ],
+          "clue": "Buried under nearly four kilometres of Antarctic ice"
+        },
+        {
+          "rank": 5,
+          "name": "O'Higgins-San Martin",
+          "value": 836,
+          "aliases": [
+            "ohiggins",
+            "san martin"
+          ],
+          "clue": "Patagonian, and shared by two countries under two names"
+        },
+        {
+          "rank": 6,
+          "name": "Lake Malawi",
+          "value": 706,
+          "aliases": [
+            "malawi",
+            "nyasa"
+          ],
+          "clue": "Has more fish species than any other lake"
+        },
+        {
+          "rank": 7,
+          "name": "Issyk-Kul",
+          "value": 668,
+          "aliases": [
+            "issyk kul"
+          ],
+          "clue": "Kyrgyz, high in the mountains, and never freezes"
+        },
+        {
+          "rank": 8,
+          "name": "Great Slave Lake",
+          "value": 614,
+          "aliases": [
+            "great slave"
+          ],
+          "clue": "The deepest in North America"
+        },
+        {
+          "rank": 9,
+          "name": "Crater Lake",
+          "value": 594,
+          "aliases": [
+            "crater"
+          ],
+          "clue": "Fills a collapsed volcano in Oregon"
+        },
+        {
+          "rank": 10,
+          "name": "Lake Matano",
+          "value": 590,
+          "aliases": [
+            "matano"
+          ],
+          "clue": "Indonesian, on Sulawesi"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "The top three are certain. Subglacial and remote lakes are surveyed with varying precision, so the lower order is my best judgment."
+      }
+    },
+    {
+      "type": "ranked",
+      "tags": [],
+      "volatility": "evergreen",
+      "asOf": "2024-12-31",
+      "id": "sci-most-electronegative",
+      "domain": "science",
+      "obscurity": 4,
+      "difficulty": 5,
+      "prompt": "Most electronegative elements",
+      "metric": "Electronegativity on the Pauling scale.",
+      "source": {
+        "name": "CRC Handbook of Chemistry and Physics",
+        "url": "https://hbcp.chemnetbase.com/"
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Fluorine",
+          "value": 3.98,
+          "aliases": [],
+          "clue": "The most electronegative of all, and violently reactive"
+        },
+        {
+          "rank": 2,
+          "name": "Oxygen",
+          "value": 3.44,
+          "aliases": [],
+          "clue": "The second, and most of what makes things burn"
+        },
+        {
+          "rank": 3,
+          "name": "Chlorine",
+          "value": 3.16,
+          "aliases": [],
+          "clue": "A green-yellow gas used to purify water"
+        },
+        {
+          "rank": 4,
+          "name": "Nitrogen",
+          "value": 3.04,
+          "aliases": [],
+          "clue": "Most of the air, yet very unreactive as a molecule"
+        },
+        {
+          "rank": 5,
+          "name": "Bromine",
+          "value": 2.96,
+          "aliases": [],
+          "clue": "A dark red liquid at room temperature"
+        },
+        {
+          "rank": 6,
+          "name": "Iodine",
+          "value": 2.66,
+          "aliases": [],
+          "clue": "A purple-black solid, and added to salt"
+        },
+        {
+          "rank": 7,
+          "name": "Xenon",
+          "value": 2.6,
+          "aliases": [],
+          "clue": "A noble gas that does form some compounds"
+        },
+        {
+          "rank": 8,
+          "name": "Carbon",
+          "value": 2.55,
+          "aliases": [],
+          "clue": "The backbone of organic chemistry"
+        },
+        {
+          "rank": 9,
+          "name": "Selenium",
+          "value": 2.55,
+          "aliases": [],
+          "clue": "Used in photocopiers, and essential in trace amounts"
+        },
+        {
+          "rank": 10,
+          "name": "Gold",
+          "value": 2.54,
+          "aliases": [
+            "au"
+          ],
+          "clue": "Unusually electronegative for a metal, which is why it resists corrosion"
+        }
+      ]
+    },
+    {
+      "type": "ranked",
+      "tags": [],
+      "volatility": "evergreen",
+      "asOf": "2024-12-31",
+      "id": "sci-seawater-elements",
+      "domain": "science",
+      "obscurity": 3,
+      "difficulty": 4,
+      "prompt": "Most abundant elements in seawater",
+      "metric": "Concentration by mass, excluding the hydrogen and oxygen of the water itself.",
+      "source": {
+        "name": "NOAA",
+        "url": "https://www.noaa.gov/"
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Chlorine",
+          "value": 19.4,
+          "aliases": [
+            "chloride"
+          ],
+          "clue": "Over half the dissolved solids by mass"
+        },
+        {
+          "rank": 2,
+          "name": "Sodium",
+          "value": 10.8,
+          "aliases": [],
+          "clue": "The other half of what makes the sea salty"
+        },
+        {
+          "rank": 3,
+          "name": "Magnesium",
+          "value": 1.29,
+          "aliases": [],
+          "clue": "Commercially extracted from seawater"
+        },
+        {
+          "rank": 4,
+          "name": "Sulfur",
+          "value": 0.9,
+          "aliases": [
+            "sulphur",
+            "sulfate"
+          ],
+          "clue": "Present as a compound with four oxygens attached"
+        },
+        {
+          "rank": 5,
+          "name": "Calcium",
+          "value": 0.41,
+          "aliases": [],
+          "clue": "Used by shellfish and corals to build shells"
+        },
+        {
+          "rank": 6,
+          "name": "Potassium",
+          "value": 0.39,
+          "aliases": [],
+          "clue": "Symbol K"
+        },
+        {
+          "rank": 7,
+          "name": "Bromine",
+          "value": 0.067,
+          "aliases": [],
+          "clue": "Much more abundant in the sea than on land"
+        },
+        {
+          "rank": 8,
+          "name": "Carbon",
+          "value": 0.028,
+          "aliases": [],
+          "clue": "As dissolved carbonate, and the ocean absorbs more each year"
+        },
+        {
+          "rank": 9,
+          "name": "Strontium",
+          "value": 0.008,
+          "aliases": [],
+          "clue": "Taken up by some plankton skeletons"
+        },
+        {
+          "rank": 10,
+          "name": "Boron",
+          "value": 0.004,
+          "aliases": [],
+          "clue": "Its isotope ratio records ancient ocean acidity"
+        }
+      ]
+    },
+    {
+      "id": "film-most-oscars-person",
+      "type": "ranked",
+      "domain": "film",
+      "tags": [
+        "oscars"
+      ],
+      "obscurity": 3,
+      "difficulty": 5,
+      "prompt": "Most Academy Awards won by one person",
+      "metric": "Competitive Academy Awards won in a career, excluding honorary awards.",
+      "source": {
+        "name": "Academy of Motion Picture Arts and Sciences",
+        "url": "https://www.oscars.org/"
+      },
+      "asOf": "2026-03",
+      "volatility": "annual",
+      "ambiguity": "Competitive wins only. Counting honorary and special awards changes the order, and one animator's total is often quoted differently for that reason.",
+      "confidence": {
+        "level": "partial",
+        "note": "The leader is certain. Below that several people tie on eight, and the counts depend on whether special awards are included, so the order is my best judgment."
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Walt Disney",
+          "value": 22,
+          "aliases": [
+            "disney"
+          ],
+          "clue": "Twenty-two, mostly for animated shorts"
+        },
+        {
+          "rank": 2,
+          "name": "Cedric Gibbons",
+          "value": 11,
+          "aliases": [
+            "gibbons"
+          ],
+          "clue": "An art director who also designed the statuette"
+        },
+        {
+          "rank": 3,
+          "name": "Alfred Newman",
+          "value": 9,
+          "aliases": [
+            "newman"
+          ],
+          "clue": "A composer who led a studio music department"
+        },
+        {
+          "rank": 4,
+          "name": "Edith Head",
+          "value": 8,
+          "aliases": [
+            "head"
+          ],
+          "clue": "A costume designer, and the most decorated woman"
+        },
+        {
+          "rank": 5,
+          "name": "Alan Menken",
+          "value": 8,
+          "aliases": [
+            "menken"
+          ],
+          "clue": "A composer of animated musicals"
+        },
+        {
+          "rank": 6,
+          "name": "Dennis Muren",
+          "value": 8,
+          "aliases": [
+            "muren"
+          ],
+          "clue": "A visual effects artist"
+        },
+        {
+          "rank": 7,
+          "name": "Billy Wilder",
+          "value": 6,
+          "aliases": [
+            "wilder"
+          ],
+          "clue": "Writer, director and producer"
+        },
+        {
+          "rank": 8,
+          "name": "Francis Ford Coppola",
+          "value": 6,
+          "aliases": [
+            "coppola"
+          ],
+          "clue": "Won for writing, directing and producing"
+        },
+        {
+          "rank": 9,
+          "name": "Katharine Hepburn",
+          "value": 4,
+          "aliases": [
+            "hepburn"
+          ],
+          "clue": "Four Best Actress awards, more than any performer"
+        },
+        {
+          "rank": 10,
+          "name": "Frank Capra",
+          "value": 3,
+          "aliases": [
+            "capra"
+          ],
+          "clue": "Three directing awards in the 1930s"
+        }
+      ]
+    },
+    {
+      "id": "film-most-oscars-film",
+      "type": "ranked",
+      "domain": "film",
+      "tags": [
+        "oscars"
+      ],
+      "obscurity": 2,
+      "difficulty": 4,
+      "prompt": "Films that won the most Academy Awards",
+      "metric": "Academy Awards won by a single film.",
+      "source": {
+        "name": "Academy of Motion Picture Arts and Sciences",
+        "url": "https://www.oscars.org/"
+      },
+      "asOf": "2026-03",
+      "volatility": "annual",
+      "ambiguity": "Three films tie on eleven awards, so the order at the top is arbitrary; the ten titles are what matters.",
+      "confidence": {
+        "level": "partial",
+        "note": "The eleven-award and ten-award films are certain. Several films tie on eight, so which of them appears is my best judgment."
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Ben-Hur",
+          "value": 11,
+          "aliases": [
+            "ben hur"
+          ],
+          "clue": "A chariot race, and the first to win eleven"
+        },
+        {
+          "rank": 2,
+          "name": "Titanic",
+          "value": 11,
+          "aliases": [],
+          "clue": "Tied the record in 1998"
+        },
+        {
+          "rank": 3,
+          "name": "The Lord of the Rings: The Return of the King",
+          "value": 11,
+          "aliases": [
+            "return of the king",
+            "lord of the rings"
+          ],
+          "clue": "Won every award it was nominated for"
+        },
+        {
+          "rank": 4,
+          "name": "West Side Story",
+          "value": 10,
+          "aliases": [],
+          "clue": "The 1961 original, not the remake"
+        },
+        {
+          "rank": 5,
+          "name": "The Last Emperor",
+          "value": 9,
+          "aliases": [
+            "last emperor"
+          ],
+          "clue": "Also won every nomination it had"
+        },
+        {
+          "rank": 6,
+          "name": "The English Patient",
+          "value": 9,
+          "aliases": [
+            "english patient"
+          ],
+          "clue": "A wartime romance in the desert"
+        },
+        {
+          "rank": 7,
+          "name": "Gigi",
+          "value": 9,
+          "aliases": [],
+          "clue": "A 1958 musical set in Paris"
+        },
+        {
+          "rank": 8,
+          "name": "Gone with the Wind",
+          "value": 8,
+          "aliases": [
+            "gone with wind"
+          ],
+          "clue": "Included the first Oscar for a Black performer"
+        },
+        {
+          "rank": 9,
+          "name": "From Here to Eternity",
+          "value": 8,
+          "aliases": [
+            "from here to eternity"
+          ],
+          "clue": "Set in Hawaii before Pearl Harbor"
+        },
+        {
+          "rank": 10,
+          "name": "On the Waterfront",
+          "value": 8,
+          "aliases": [
+            "on waterfront"
+          ],
+          "clue": "A dockworker who coulda been a contender"
+        }
+      ]
+    },
+    {
+      "type": "ranked",
+      "tags": [],
+      "volatility": "evergreen",
+      "asOf": "2024-12-31",
+      "id": "geo-europe-islands",
+      "domain": "geography",
+      "obscurity": 3,
+      "difficulty": 5,
+      "prompt": "Largest islands in Europe",
+      "metric": "Island area in km².",
+      "source": {
+        "name": "Encyclopaedia Britannica",
+        "url": "https://www.britannica.com/"
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Great Britain",
+          "value": 209331,
+          "aliases": [
+            "britain"
+          ],
+          "clue": "Holds three countries"
+        },
+        {
+          "rank": 2,
+          "name": "Iceland",
+          "value": 103000,
+          "aliases": [],
+          "clue": "A country in its own right, on a mid-ocean ridge"
+        },
+        {
+          "rank": 3,
+          "name": "Ireland",
+          "value": 84421,
+          "aliases": [],
+          "clue": "Divided between two jurisdictions"
+        },
+        {
+          "rank": 4,
+          "name": "Severny Island",
+          "value": 48904,
+          "aliases": [
+            "severny"
+          ],
+          "clue": "The northern half of a Russian Arctic pair used for nuclear tests"
+        },
+        {
+          "rank": 5,
+          "name": "Spitsbergen",
+          "value": 39044,
+          "aliases": [
+            "svalbard"
+          ],
+          "clue": "Norwegian Arctic, with a seed vault"
+        },
+        {
+          "rank": 6,
+          "name": "Yuzhny Island",
+          "value": 33275,
+          "aliases": [
+            "yuzhny"
+          ],
+          "clue": "The southern half of that same Arctic pair"
+        },
+        {
+          "rank": 7,
+          "name": "Sicily",
+          "value": 25711,
+          "aliases": [
+            "sicilia"
+          ],
+          "clue": "Mediterranean, with an active volcano"
+        },
+        {
+          "rank": 8,
+          "name": "Sardinia",
+          "value": 24090,
+          "aliases": [
+            "sardegna"
+          ],
+          "clue": "Mediterranean, and known for very long-lived residents"
+        },
+        {
+          "rank": 9,
+          "name": "Nordaustlandet",
+          "value": 14443,
+          "aliases": [],
+          "clue": "The second largest in the Norwegian Arctic archipelago"
+        },
+        {
+          "rank": 10,
+          "name": "Cyprus",
+          "value": 9251,
+          "aliases": [],
+          "clue": "Divided since 1974"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "The top three are certain. Russian and Norwegian Arctic islands make up much of the rest and their areas are quoted inconsistently, so the order is my best judgment."
+      }
+    },
+    {
+      "type": "ranked",
+      "tags": [],
+      "volatility": "evergreen",
+      "asOf": "2024-12-31",
+      "id": "geo-highest-waterfalls",
+      "domain": "geography",
+      "obscurity": 3,
+      "difficulty": 5,
+      "prompt": "Highest waterfalls in the world",
+      "metric": "Total height of drop in metres.",
+      "source": {
+        "name": "Encyclopaedia Britannica",
+        "url": "https://www.britannica.com/"
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Angel Falls",
+          "value": 979,
+          "aliases": [
+            "salto angel",
+            "angel"
+          ],
+          "clue": "Venezuelan, and falls from a flat-topped mountain"
+        },
+        {
+          "rank": 2,
+          "name": "Tugela Falls",
+          "value": 948,
+          "aliases": [
+            "tugela"
+          ],
+          "clue": "South African, in the Drakensberg"
+        },
+        {
+          "rank": 3,
+          "name": "Tres Hermanas",
+          "value": 914,
+          "aliases": [
+            "three sisters"
+          ],
+          "clue": "Peruvian, and hidden in dense rainforest"
+        },
+        {
+          "rank": 4,
+          "name": "Oloupena Falls",
+          "value": 900,
+          "aliases": [
+            "oloupena"
+          ],
+          "clue": "Hawaiian, on a sea cliff"
+        },
+        {
+          "rank": 5,
+          "name": "Yumbilla Falls",
+          "value": 896,
+          "aliases": [
+            "yumbilla"
+          ],
+          "clue": "Peruvian, and only surveyed in 2007"
+        },
+        {
+          "rank": 6,
+          "name": "Vinnufossen",
+          "value": 860,
+          "aliases": [
+            "vinnu"
+          ],
+          "clue": "Norwegian, and fed by a glacier"
+        },
+        {
+          "rank": 7,
+          "name": "Balaifossen",
+          "value": 850,
+          "aliases": [
+            "balai"
+          ],
+          "clue": "Norwegian, and only flows strongly in spring"
+        },
+        {
+          "rank": 8,
+          "name": "Puukaoku Falls",
+          "value": 840,
+          "aliases": [
+            "puukaoku"
+          ],
+          "clue": "Hawaiian, on the same island as the fourth here"
+        },
+        {
+          "rank": 9,
+          "name": "James Bruce Falls",
+          "value": 840,
+          "aliases": [
+            "james bruce"
+          ],
+          "clue": "Canadian, and the highest in North America"
+        },
+        {
+          "rank": 10,
+          "name": "Browne Falls",
+          "value": 836,
+          "aliases": [
+            "browne"
+          ],
+          "clue": "In a New Zealand fjord"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "Waterfall heights depend on whether cascades and tiers are counted as one drop, and several of these are within a few metres; order is my best judgment."
+      }
+    },
+    {
+      "type": "ranked",
+      "tags": [],
+      "volatility": "evergreen",
+      "asOf": "2024-12-31",
+      "id": "geo-largest-volcanoes",
+      "domain": "geography",
+      "obscurity": 3,
+      "difficulty": 5,
+      "prompt": "Highest volcanoes in the world",
+      "metric": "Summit elevation above sea level in metres.",
+      "source": {
+        "name": "Encyclopaedia Britannica",
+        "url": "https://www.britannica.com/"
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Ojos del Salado",
+          "value": 6893,
+          "aliases": [
+            "ojos"
+          ],
+          "clue": "The highest volcano, on a South American border"
+        },
+        {
+          "rank": 2,
+          "name": "Llullaillaco",
+          "value": 6739,
+          "aliases": [],
+          "clue": "Holds Inca mummies near its summit"
+        },
+        {
+          "rank": 3,
+          "name": "Tipas",
+          "value": 6660,
+          "aliases": [],
+          "clue": "Argentine, and a complex of several craters"
+        },
+        {
+          "rank": 4,
+          "name": "Nevado de Incahuasi",
+          "value": 6621,
+          "aliases": [
+            "incahuasi"
+          ],
+          "clue": "On the Chile-Argentina border"
+        },
+        {
+          "rank": 5,
+          "name": "Cerro el Condor",
+          "value": 6532,
+          "aliases": [
+            "el condor"
+          ],
+          "clue": "Argentine, and very remote"
+        },
+        {
+          "rank": 6,
+          "name": "Coropuna",
+          "value": 6377,
+          "aliases": [],
+          "clue": "Peruvian, and ice-capped"
+        },
+        {
+          "rank": 7,
+          "name": "Parinacota",
+          "value": 6348,
+          "aliases": [],
+          "clue": "A near-perfect cone shared by two countries"
+        },
+        {
+          "rank": 8,
+          "name": "Chimborazo",
+          "value": 6263,
+          "aliases": [],
+          "clue": "Its summit is the furthest point from Earth's centre"
+        },
+        {
+          "rank": 9,
+          "name": "Cotopaxi",
+          "value": 5897,
+          "aliases": [],
+          "clue": "Ecuadorian, and one of the world's highest active volcanoes"
+        },
+        {
+          "rank": 10,
+          "name": "Kilimanjaro",
+          "value": 5895,
+          "aliases": [
+            "kili"
+          ],
+          "clue": "The highest in Africa, and a dormant volcano"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "The Andean volcanic summits are surveyed inconsistently and several are within fifty metres, so the order below second is my best judgment."
+      }
+    },
+    {
+      "type": "ranked",
+      "tags": [],
+      "volatility": "annual",
+      "asOf": "2025-12-31",
+      "id": "geo-longest-bridges",
+      "domain": "geography",
+      "obscurity": 3,
+      "difficulty": 5,
+      "prompt": "Longest bridges in the world",
+      "metric": "Total continuous bridge length in kilometres, including approach viaducts.",
+      "source": {
+        "name": "Guinness World Records",
+        "url": "https://www.guinnessworldrecords.com/"
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Danyang-Kunshan Grand Bridge",
+          "value": 164.8,
+          "aliases": [
+            "danyang kunshan",
+            "danyang"
+          ],
+          "clue": "Chinese, and carries a high-speed railway"
+        },
+        {
+          "rank": 2,
+          "name": "Changhua-Kaohsiung Viaduct",
+          "value": 157.3,
+          "aliases": [
+            "changhua kaohsiung",
+            "changhua"
+          ],
+          "clue": "Taiwanese, and also a rail viaduct"
+        },
+        {
+          "rank": 3,
+          "name": "Cangde Grand Bridge",
+          "value": 116,
+          "aliases": [
+            "cangde"
+          ],
+          "clue": "Part of a Chinese high-speed line"
+        },
+        {
+          "rank": 4,
+          "name": "Tianjin Grand Bridge",
+          "value": 113.7,
+          "aliases": [
+            "tianjin"
+          ],
+          "clue": "Another Chinese rail viaduct"
+        },
+        {
+          "rank": 5,
+          "name": "Weinan Weihe Grand Bridge",
+          "value": 79.7,
+          "aliases": [
+            "weinan",
+            "weihe"
+          ],
+          "clue": "Crosses a river twice in Shaanxi"
+        },
+        {
+          "rank": 6,
+          "name": "Hong Kong-Zhuhai-Macau Bridge",
+          "value": 55,
+          "aliases": [
+            "hzmb",
+            "hong kong zhuhai macau"
+          ],
+          "clue": "Crosses a delta and dips into a tunnel"
+        },
+        {
+          "rank": 7,
+          "name": "Bang Na Expressway",
+          "value": 54,
+          "aliases": [
+            "bang na"
+          ],
+          "clue": "Thai, and carries road rather than rail"
+        },
+        {
+          "rank": 8,
+          "name": "Beijing Grand Bridge",
+          "value": 48.2,
+          "aliases": [
+            "beijing"
+          ],
+          "clue": "On the line between two Chinese megacities"
+        },
+        {
+          "rank": 9,
+          "name": "Metro Manila Skyway",
+          "value": 39.2,
+          "aliases": [
+            "skyway"
+          ],
+          "clue": "An elevated Philippine expressway"
+        },
+        {
+          "rank": 10,
+          "name": "Lake Pontchartrain Causeway",
+          "value": 38.4,
+          "aliases": [
+            "pontchartrain",
+            "causeway"
+          ],
+          "clue": "Louisiana, and the longest continuous bridge over water"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "Dominated by Chinese rail viaducts whose quoted lengths vary with what counts as one structure; the top four are firm and the rest is my best judgment."
+      }
+    },
+    {
+      "type": "ranked",
+      "tags": [],
+      "volatility": "evergreen",
+      "asOf": "2024-12-31",
+      "id": "geo-driest-places",
+      "domain": "geography",
+      "obscurity": 3,
+      "difficulty": 5,
+      "prompt": "Driest inhabited places on Earth",
+      "metric": "Mean annual precipitation in millimetres. Lower is drier.",
+      "source": {
+        "name": "Encyclopaedia Britannica",
+        "url": "https://www.britannica.com/"
+      },
+      "order": "asc",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Arica",
+          "value": 0.8,
+          "aliases": [],
+          "clue": "Chilean, on the edge of a hyper-arid desert"
+        },
+        {
+          "rank": 2,
+          "name": "Al-Kufrah",
+          "value": 0.9,
+          "aliases": [
+            "kufra"
+          ],
+          "clue": "A Libyan oasis deep in the Sahara"
+        },
+        {
+          "rank": 3,
+          "name": "Aswan",
+          "value": 1,
+          "aliases": [],
+          "clue": "Egyptian, beside a great dam"
+        },
+        {
+          "rank": 4,
+          "name": "Luxor",
+          "value": 1,
+          "aliases": [],
+          "clue": "Egyptian, and full of pharaonic tombs"
+        },
+        {
+          "rank": 5,
+          "name": "Ica",
+          "value": 2.3,
+          "aliases": [],
+          "clue": "Peruvian, and known for sand dunes"
+        },
+        {
+          "rank": 6,
+          "name": "Wadi Halfa",
+          "value": 2.5,
+          "aliases": [
+            "wadi halfa sudan"
+          ],
+          "clue": "Sudanese, on the Nubian border"
+        },
+        {
+          "rank": 7,
+          "name": "Iquique",
+          "value": 5.1,
+          "aliases": [],
+          "clue": "A Chilean port with a desert behind it"
+        },
+        {
+          "rank": 8,
+          "name": "Pelican Point",
+          "value": 8,
+          "aliases": [
+            "pelican"
+          ],
+          "clue": "Namibian, on a fog-bound coast"
+        },
+        {
+          "rank": 9,
+          "name": "Callao",
+          "value": 12,
+          "aliases": [],
+          "clue": "Peruvian, and the port serving the capital"
+        },
+        {
+          "rank": 10,
+          "name": "Aoulef",
+          "value": 12.2,
+          "aliases": [],
+          "clue": "Algerian, in the central Sahara"
+        }
+      ],
+      "confidence": {
+        "level": "judgment",
+        "note": "Long-run averages for remote weather stations are sparse and sources disagree on which settlements qualify as inhabited; order is my best judgment."
+      }
+    },
+    {
+      "type": "ranked",
+      "tags": [],
+      "volatility": "evergreen",
+      "asOf": "2024-12-31",
+      "id": "sci-fastest-birds",
+      "domain": "science",
+      "obscurity": 2,
+      "difficulty": 4,
+      "prompt": "Fastest birds",
+      "metric": "Maximum recorded speed in km/h, including dives.",
+      "source": {
+        "name": "Smithsonian",
+        "url": "https://www.si.edu/"
+      },
+      "ambiguity": "Diving speeds are included, which is why a bird that is not the fastest in level flight leads the list.",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Peregrine falcon",
+          "value": 389,
+          "aliases": [
+            "peregrine"
+          ],
+          "clue": "Reaches its speed in a near-vertical stoop"
+        },
+        {
+          "rank": 2,
+          "name": "Golden eagle",
+          "value": 320,
+          "aliases": [],
+          "clue": "Also a diving speed, and a national symbol in several countries"
+        },
+        {
+          "rank": 3,
+          "name": "White-throated needletail",
+          "value": 169,
+          "aliases": [
+            "needletail"
+          ],
+          "clue": "The fastest in level flight"
+        },
+        {
+          "rank": 4,
+          "name": "Eurasian hobby",
+          "value": 160,
+          "aliases": [
+            "hobby"
+          ],
+          "clue": "A small falcon that hunts dragonflies on the wing"
+        },
+        {
+          "rank": 5,
+          "name": "Mexican free-tailed bat",
+          "value": 160,
+          "aliases": [
+            "free tailed bat"
+          ],
+          "clue": "Not a bird at all, and often cited in these lists by mistake"
+        },
+        {
+          "rank": 6,
+          "name": "Frigatebird",
+          "value": 153,
+          "aliases": [
+            "frigate bird"
+          ],
+          "clue": "Steals food from other seabirds in mid-air"
+        },
+        {
+          "rank": 7,
+          "name": "Rock dove",
+          "value": 148,
+          "aliases": [
+            "pigeon",
+            "rock pigeon"
+          ],
+          "clue": "The ordinary city bird, and faster than it looks"
+        },
+        {
+          "rank": 8,
+          "name": "Spur-winged goose",
+          "value": 142,
+          "aliases": [
+            "spur winged goose"
+          ],
+          "clue": "African, and carries spurs on its wings"
+        },
+        {
+          "rank": 9,
+          "name": "Red-breasted merganser",
+          "value": 129,
+          "aliases": [
+            "merganser"
+          ],
+          "clue": "A diving duck with a ragged crest"
+        },
+        {
+          "rank": 10,
+          "name": "Grey-headed albatross",
+          "value": 127,
+          "aliases": [
+            "albatross"
+          ],
+          "clue": "Recorded in a storm in the Southern Ocean"
+        }
+      ],
+      "confidence": {
+        "level": "judgment",
+        "note": "Bird speed records mix dives, level flight and storm-assisted flight, and one widely-quoted entry is not a bird. Treat the order as indicative."
+      }
+    },
+    {
+      "type": "ranked",
+      "tags": [],
+      "volatility": "evergreen",
+      "asOf": "2024-12-31",
+      "id": "sci-largest-flowers",
+      "domain": "science",
+      "obscurity": 4,
+      "difficulty": 5,
+      "prompt": "Largest flowers in the world",
+      "metric": "Maximum flower diameter in centimetres.",
+      "source": {
+        "name": "Smithsonian",
+        "url": "https://www.si.edu/"
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Rafflesia arnoldii",
+          "value": 106,
+          "aliases": [
+            "rafflesia"
+          ],
+          "clue": "Smells of rotting meat, and has no leaves or stem"
+        },
+        {
+          "rank": 2,
+          "name": "Rafflesia kerrii",
+          "value": 90,
+          "aliases": [
+            "kerrii"
+          ],
+          "clue": "A smaller relative of the largest, in Thailand"
+        },
+        {
+          "rank": 3,
+          "name": "Talipot palm",
+          "value": 80,
+          "aliases": [
+            "talipot"
+          ],
+          "clue": "Flowers once, spectacularly, then dies"
+        },
+        {
+          "rank": 4,
+          "name": "Titan arum",
+          "value": 70,
+          "aliases": [
+            "corpse flower",
+            "amorphophallus"
+          ],
+          "clue": "A towering spike that also smells of decay"
+        },
+        {
+          "rank": 5,
+          "name": "Sunflower",
+          "value": 60,
+          "aliases": [],
+          "clue": "Its head is many small flowers, not one"
+        },
+        {
+          "rank": 6,
+          "name": "Puya raimondii",
+          "value": 50,
+          "aliases": [
+            "puya"
+          ],
+          "clue": "An Andean bromeliad with an enormous flower spike"
+        },
+        {
+          "rank": 7,
+          "name": "Magnolia grandiflora",
+          "value": 30,
+          "aliases": [
+            "magnolia"
+          ],
+          "clue": "Southern United States, with waxy white blooms"
+        },
+        {
+          "rank": 8,
+          "name": "Lotus",
+          "value": 30,
+          "aliases": [],
+          "clue": "Sacred in several religions, and rises from muddy water"
+        },
+        {
+          "rank": 9,
+          "name": "Protea cynaroides",
+          "value": 30,
+          "aliases": [
+            "king protea",
+            "protea"
+          ],
+          "clue": "South Africa's national flower"
+        },
+        {
+          "rank": 10,
+          "name": "Hibiscus",
+          "value": 25,
+          "aliases": [],
+          "clue": "Tropical, and used for a tart red tea"
+        }
+      ],
+      "confidence": {
+        "level": "judgment",
+        "note": "What counts as a single flower rather than a flower head or an inflorescence is genuinely disputed in botany, which reorders this list substantially. Membership is the point."
+      }
+    },
+    {
+      "type": "ranked",
+      "tags": [],
+      "volatility": "annual",
+      "asOf": "2025-12-31",
+      "id": "sci-planets-moons",
+      "domain": "science",
+      "obscurity": 2,
+      "difficulty": 3,
+      "prompt": "Solar system bodies with the most moons",
+      "metric": "Number of confirmed natural satellites.",
+      "source": {
+        "name": "NASA",
+        "url": "https://science.nasa.gov/"
+      },
+      "ambiguity": "Confirmed moons only. The count for the giant planets rises every few years as surveys find more small irregular satellites.",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Saturn",
+          "value": 274,
+          "aliases": [],
+          "clue": "Overtook its larger neighbour after a 2023 survey"
+        },
+        {
+          "rank": 2,
+          "name": "Jupiter",
+          "value": 95,
+          "aliases": [],
+          "clue": "The largest planet, and four moons visible in binoculars"
+        },
+        {
+          "rank": 3,
+          "name": "Uranus",
+          "value": 28,
+          "aliases": [],
+          "clue": "Its moons are named after Shakespearean characters"
+        },
+        {
+          "rank": 4,
+          "name": "Neptune",
+          "value": 16,
+          "aliases": [],
+          "clue": "One of its moons orbits backwards"
+        },
+        {
+          "rank": 5,
+          "name": "Pluto",
+          "value": 5,
+          "aliases": [],
+          "clue": "No longer a planet, and one moon is half its size"
+        },
+        {
+          "rank": 6,
+          "name": "Mars",
+          "value": 2,
+          "aliases": [],
+          "clue": "Two small captured lumps"
+        },
+        {
+          "rank": 7,
+          "name": "Haumea",
+          "value": 2,
+          "aliases": [],
+          "clue": "A dwarf planet shaped like a rugby ball"
+        },
+        {
+          "rank": 8,
+          "name": "Eris",
+          "value": 1,
+          "aliases": [],
+          "clue": "The dwarf planet whose discovery demoted another"
+        },
+        {
+          "rank": 9,
+          "name": "Earth",
+          "value": 1,
+          "aliases": [],
+          "clue": "One, and unusually large relative to its planet"
+        },
+        {
+          "rank": 10,
+          "name": "Makemake",
+          "value": 1,
+          "aliases": [],
+          "clue": "A dwarf planet in the Kuiper belt"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "The planets are certain. The dwarf planets all have one or two moons, so their order is arbitrary and my best judgment."
+      }
+    },
+    {
+      "type": "ranked",
+      "tags": [],
+      "volatility": "evergreen",
+      "asOf": "2024-12-31",
+      "id": "hist-deadliest-wars",
+      "domain": "history",
+      "obscurity": 2,
+      "difficulty": 4,
+      "prompt": "Deadliest wars in history",
+      "metric": "Estimated total deaths, military and civilian, in millions.",
+      "source": {
+        "name": "Encyclopaedia Britannica",
+        "url": "https://www.britannica.com/"
+      },
+      "ambiguity": "Death tolls for pre-modern conflicts are estimates spanning tens of millions, and some historians fold famine and disease deaths in while others do not.",
+      "confidence": {
+        "level": "judgment",
+        "note": "Estimates for the pre-modern entries vary by a factor of two or more between historians, so the order below the first two is my best judgment."
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Second World War",
+          "value": 75,
+          "aliases": [
+            "world war 2",
+            "ww2",
+            "wwii"
+          ],
+          "clue": "The deadliest conflict in human history"
+        },
+        {
+          "rank": 2,
+          "name": "Mongol conquests",
+          "value": 40,
+          "aliases": [
+            "mongol invasions"
+          ],
+          "clue": "Thirteenth-century campaigns across Asia and Europe"
+        },
+        {
+          "rank": 3,
+          "name": "Three Kingdoms War",
+          "value": 38,
+          "aliases": [
+            "three kingdoms"
+          ],
+          "clue": "Third-century China, and the basis of a famous novel"
+        },
+        {
+          "rank": 4,
+          "name": "Taiping Rebellion",
+          "value": 25,
+          "aliases": [
+            "taiping"
+          ],
+          "clue": "A mid-nineteenth-century revolt led by a self-declared prophet"
+        },
+        {
+          "rank": 5,
+          "name": "Qing conquest of the Ming",
+          "value": 25,
+          "aliases": [
+            "qing conquest"
+          ],
+          "clue": "A dynastic change in seventeenth-century China"
+        },
+        {
+          "rank": 6,
+          "name": "First World War",
+          "value": 20,
+          "aliases": [
+            "world war 1",
+            "ww1",
+            "wwi"
+          ],
+          "clue": "Trenches, and a flu pandemic in its wake"
+        },
+        {
+          "rank": 7,
+          "name": "An Lushan Rebellion",
+          "value": 13,
+          "aliases": [
+            "an lushan"
+          ],
+          "clue": "An eighth-century revolt against the Tang"
+        },
+        {
+          "rank": 8,
+          "name": "Thirty Years War",
+          "value": 8,
+          "aliases": [
+            "thirty years"
+          ],
+          "clue": "Devastated central Europe over religion and power"
+        },
+        {
+          "rank": 9,
+          "name": "Chinese Civil War",
+          "value": 8,
+          "aliases": [
+            "chinese civil"
+          ],
+          "clue": "Ended with a retreat to an island"
+        },
+        {
+          "rank": 10,
+          "name": "Napoleonic Wars",
+          "value": 6,
+          "aliases": [
+            "napoleonic"
+          ],
+          "clue": "Two decades of European fighting after a revolution"
+        }
+      ]
+    },
+    {
+      "type": "ranked",
+      "tags": [],
+      "volatility": "evergreen",
+      "asOf": "2024-12-31",
+      "id": "hist-oldest-cities",
+      "domain": "history",
+      "obscurity": 3,
+      "difficulty": 5,
+      "prompt": "Oldest continuously inhabited cities",
+      "metric": "Approximate year of earliest continuous settlement, BCE. Higher number means older.",
+      "source": {
+        "name": "Encyclopaedia Britannica",
+        "url": "https://www.britannica.com/"
+      },
+      "ambiguity": "Continuity is the contested part: several of these were abandoned for periods, and rival claims depend on whether a nearby ancient site counts as the same city.",
+      "confidence": {
+        "level": "judgment",
+        "note": "Every list of this kind is disputed, and the ordering rests on archaeological estimates rather than records. Membership is the interesting part."
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Jericho",
+          "value": 9000,
+          "aliases": [],
+          "clue": "West Bank, and has one of the oldest known walls"
+        },
+        {
+          "rank": 2,
+          "name": "Byblos",
+          "value": 5000,
+          "aliases": [],
+          "clue": "Lebanese, and gave its name to the Bible"
+        },
+        {
+          "rank": 3,
+          "name": "Aleppo",
+          "value": 5000,
+          "aliases": [],
+          "clue": "Syrian, and heavily damaged in recent war"
+        },
+        {
+          "rank": 4,
+          "name": "Damascus",
+          "value": 4500,
+          "aliases": [],
+          "clue": "Syrian capital, and often called the oldest capital city"
+        },
+        {
+          "rank": 5,
+          "name": "Susa",
+          "value": 4200,
+          "aliases": [],
+          "clue": "Iranian, and a capital of an ancient empire"
+        },
+        {
+          "rank": 6,
+          "name": "Faiyum",
+          "value": 4000,
+          "aliases": [
+            "fayum"
+          ],
+          "clue": "Egyptian, in an oasis depression"
+        },
+        {
+          "rank": 7,
+          "name": "Sidon",
+          "value": 4000,
+          "aliases": [],
+          "clue": "Lebanese, and a Phoenician port"
+        },
+        {
+          "rank": 8,
+          "name": "Plovdiv",
+          "value": 4000,
+          "aliases": [],
+          "clue": "Bulgarian, and Europe's oldest continuously inhabited city"
+        },
+        {
+          "rank": 9,
+          "name": "Varanasi",
+          "value": 3000,
+          "aliases": [
+            "benares"
+          ],
+          "clue": "Indian, and sacred on the Ganges"
+        },
+        {
+          "rank": 10,
+          "name": "Athens",
+          "value": 3000,
+          "aliases": [],
+          "clue": "Greek, and the cradle of one political idea"
+        }
+      ]
+    },
+    {
+      "type": "ranked",
+      "tags": [],
+      "volatility": "annual",
+      "asOf": "2025-12-31",
+      "id": "hist-longest-serving-leaders",
+      "domain": "history",
+      "obscurity": 3,
+      "difficulty": 5,
+      "prompt": "Longest-serving non-royal national leaders",
+      "metric": "Years in power as head of state or government, excluding hereditary monarchs.",
+      "source": {
+        "name": "Encyclopaedia Britannica",
+        "url": "https://www.britannica.com/"
+      },
+      "confidence": {
+        "level": "partial",
+        "note": "The leaders are well documented. Several figures held overlapping titles, so what counts as the start of their rule is arguable and the order is my best judgment."
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Fidel Castro",
+          "value": 49,
+          "aliases": [
+            "castro"
+          ],
+          "clue": "Cuban, and outlasted ten American presidents"
+        },
+        {
+          "rank": 2,
+          "name": "Chiang Kai-shek",
+          "value": 46,
+          "aliases": [
+            "chiang"
+          ],
+          "clue": "Led a government that retreated to an island"
+        },
+        {
+          "rank": 3,
+          "name": "Kim Il-sung",
+          "value": 46,
+          "aliases": [
+            "kim il sung"
+          ],
+          "clue": "North Korean, and founded a dynasty"
+        },
+        {
+          "rank": 4,
+          "name": "Teodoro Obiang",
+          "value": 46,
+          "aliases": [
+            "obiang"
+          ],
+          "clue": "Equatorial Guinea, and still in office"
+        },
+        {
+          "rank": 5,
+          "name": "Paul Biya",
+          "value": 43,
+          "aliases": [
+            "biya"
+          ],
+          "clue": "Cameroonian, and among the oldest serving leaders"
+        },
+        {
+          "rank": 6,
+          "name": "Omar Bongo",
+          "value": 42,
+          "aliases": [
+            "bongo"
+          ],
+          "clue": "Gabonese, and one of Africa's longest rulers"
+        },
+        {
+          "rank": 7,
+          "name": "Muammar Gaddafi",
+          "value": 42,
+          "aliases": [
+            "gaddafi",
+            "qaddafi"
+          ],
+          "clue": "Libyan, and never took the title of president"
+        },
+        {
+          "rank": 8,
+          "name": "Gnassingbe Eyadema",
+          "value": 38,
+          "aliases": [
+            "eyadema"
+          ],
+          "clue": "Togolese, and succeeded by his son"
+        },
+        {
+          "rank": 9,
+          "name": "Francisco Franco",
+          "value": 36,
+          "aliases": [
+            "franco"
+          ],
+          "clue": "Spanish, and ruled until his death in 1975"
+        },
+        {
+          "rank": 10,
+          "name": "Josip Broz Tito",
+          "value": 35,
+          "aliases": [
+            "tito"
+          ],
+          "clue": "Held Yugoslavia together for decades"
+        }
+      ]
     }
   ]
 }
