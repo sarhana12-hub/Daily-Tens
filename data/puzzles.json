@@ -21361,6 +21361,1134 @@
           "clue": "Undercover police and mobsters in Boston"
         }
       ]
+    },
+    {
+      "type": "ranked",
+      "tags": [
+        "soccer"
+      ],
+      "volatility": "annual",
+      "asOf": "2026-07",
+      "id": "soccer-most-caps",
+      "domain": "sports",
+      "obscurity": 3,
+      "difficulty": 5,
+      "prompt": "Most international appearances by a male footballer",
+      "metric": "Full international caps won for a national team.",
+      "source": {
+        "name": "FIFA",
+        "url": "https://www.fifa.com/"
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Cristiano Ronaldo",
+          "value": 220,
+          "aliases": [
+            "ronaldo",
+            "cr7"
+          ],
+          "clue": "Portuguese, and also the leading international scorer"
+        },
+        {
+          "rank": 2,
+          "name": "Bader Al-Mutawa",
+          "value": 196,
+          "aliases": [
+            "al mutawa",
+            "mutawa"
+          ],
+          "clue": "Kuwaiti, and played for two decades"
+        },
+        {
+          "rank": 3,
+          "name": "Soh Chin Ann",
+          "value": 195,
+          "aliases": [
+            "soh chin ann"
+          ],
+          "clue": "Malaysian, and set his record in the 1970s and 80s"
+        },
+        {
+          "rank": 4,
+          "name": "Lionel Messi",
+          "value": 194,
+          "aliases": [
+            "messi"
+          ],
+          "clue": "Argentine, and finally won a World Cup at his fifth attempt"
+        },
+        {
+          "rank": 5,
+          "name": "Ahmed Hassan",
+          "value": 184,
+          "aliases": [
+            "hassan"
+          ],
+          "clue": "Egyptian, and won four continental titles"
+        },
+        {
+          "rank": 6,
+          "name": "Ahmed Mubarak",
+          "value": 183,
+          "aliases": [
+            "mubarak"
+          ],
+          "clue": "Omani midfielder"
+        },
+        {
+          "rank": 7,
+          "name": "Sergio Ramos",
+          "value": 180,
+          "aliases": [
+            "ramos"
+          ],
+          "clue": "Spanish defender, and won a World Cup and two Euros"
+        },
+        {
+          "rank": 8,
+          "name": "Claudio Suarez",
+          "value": 177,
+          "aliases": [
+            "suarez",
+            "claudio suarez"
+          ],
+          "clue": "Mexican defender nicknamed the Emperor"
+        },
+        {
+          "rank": 9,
+          "name": "Hossein Kaebi",
+          "value": 176,
+          "aliases": [
+            "kaebi"
+          ],
+          "clue": "Iranian full-back"
+        },
+        {
+          "rank": 10,
+          "name": "Gianluigi Buffon",
+          "value": 176,
+          "aliases": [
+            "buffon"
+          ],
+          "clue": "Italian goalkeeper who played into his forties"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "The leader is certain. This list is dominated by Asian and African players whose cap totals are recorded inconsistently, so the order below fourth is my best judgment."
+      }
+    },
+    {
+      "type": "ranked",
+      "tags": [
+        "soccer"
+      ],
+      "volatility": "annual",
+      "asOf": "2026-07",
+      "id": "soccer-top-scorers-international",
+      "domain": "sports",
+      "obscurity": 2,
+      "difficulty": 4,
+      "prompt": "Top international goalscorers in men's football",
+      "metric": "Goals scored in full internationals.",
+      "source": {
+        "name": "FIFA",
+        "url": "https://www.fifa.com/"
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Cristiano Ronaldo",
+          "value": 140,
+          "aliases": [
+            "ronaldo",
+            "cr7"
+          ],
+          "clue": "Portuguese, and still adding to it in his forties"
+        },
+        {
+          "rank": 2,
+          "name": "Lionel Messi",
+          "value": 112,
+          "aliases": [
+            "messi"
+          ],
+          "clue": "Argentine, and most of them after turning thirty"
+        },
+        {
+          "rank": 3,
+          "name": "Ali Daei",
+          "value": 108,
+          "aliases": [
+            "daei"
+          ],
+          "clue": "Iranian, and held the record for fifteen years"
+        },
+        {
+          "rank": 4,
+          "name": "Sunil Chhetri",
+          "value": 95,
+          "aliases": [
+            "chhetri"
+          ],
+          "clue": "Indian, and his country's most capped player too"
+        },
+        {
+          "rank": 5,
+          "name": "Mokhtar Dahari",
+          "value": 89,
+          "aliases": [
+            "dahari"
+          ],
+          "clue": "Malaysian, and a national hero who died at 37"
+        },
+        {
+          "rank": 6,
+          "name": "Robert Lewandowski",
+          "value": 85,
+          "aliases": [
+            "lewandowski"
+          ],
+          "clue": "Polish, and a prolific club scorer too"
+        },
+        {
+          "rank": 7,
+          "name": "Ferenc Puskas",
+          "value": 84,
+          "aliases": [
+            "puskas"
+          ],
+          "clue": "Hungarian, and FIFA names an award for him"
+        },
+        {
+          "rank": 8,
+          "name": "Godfrey Chitalu",
+          "value": 79,
+          "aliases": [
+            "chitalu"
+          ],
+          "clue": "Zambian, and his club record is disputed with a European great"
+        },
+        {
+          "rank": 9,
+          "name": "Hussein Saeed",
+          "value": 78,
+          "aliases": [
+            "saeed"
+          ],
+          "clue": "Iraqi, and scored through the 1980s"
+        },
+        {
+          "rank": 10,
+          "name": "Pele",
+          "value": 77,
+          "aliases": [],
+          "clue": "Brazilian, and won three World Cups"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "The top three are certain. Historical totals for several of these are contested because of unofficial matches, so the order below is my best judgment."
+      }
+    },
+    {
+      "id": "soccer-euros-recent",
+      "type": "recency",
+      "domain": "sports",
+      "tags": [
+        "soccer"
+      ],
+      "obscurity": 2,
+      "difficulty": 4,
+      "prompt": "The ten most recent European Championship winners",
+      "metric": "Winner of the UEFA European Championship, by tournament year.",
+      "source": {
+        "name": "UEFA",
+        "url": "https://www.uefa.com/euro/"
+      },
+      "asOf": "2024-07",
+      "volatility": "annual",
+      "answers": [
+        {
+          "rank": 1,
+          "label": "2024",
+          "name": "Spain",
+          "aliases": [
+            "espana"
+          ],
+          "clue": "Won every match on the way, with two teenagers starring"
+        },
+        {
+          "rank": 2,
+          "label": "2020",
+          "name": "Italy",
+          "aliases": [
+            "italia"
+          ],
+          "clue": "Won on penalties at a rival's home stadium, a year late"
+        },
+        {
+          "rank": 3,
+          "label": "2016",
+          "name": "Portugal",
+          "aliases": [],
+          "clue": "Won despite losing its captain to injury in the final"
+        },
+        {
+          "rank": 4,
+          "label": "2012",
+          "name": "Spain",
+          "aliases": [
+            "espana"
+          ],
+          "clue": "Won 4-0 in the final, between two World Cups"
+        },
+        {
+          "rank": 5,
+          "label": "2008",
+          "name": "Spain",
+          "aliases": [
+            "espana"
+          ],
+          "clue": "Began a period of complete dominance"
+        },
+        {
+          "rank": 6,
+          "label": "2004",
+          "name": "Greece",
+          "aliases": [
+            "hellas"
+          ],
+          "clue": "The greatest shock in the tournament's history"
+        },
+        {
+          "rank": 7,
+          "label": "2000",
+          "name": "France",
+          "aliases": [],
+          "clue": "Won with a golden goal in extra time"
+        },
+        {
+          "rank": 8,
+          "label": "1996",
+          "name": "Germany",
+          "aliases": [
+            "deutschland"
+          ],
+          "clue": "Won the first final decided by a golden goal"
+        },
+        {
+          "rank": 9,
+          "label": "1992",
+          "name": "Denmark",
+          "aliases": [],
+          "clue": "Only qualified because another nation was disqualified"
+        },
+        {
+          "rank": 10,
+          "label": "1988",
+          "name": "Netherlands",
+          "aliases": [
+            "holland"
+          ],
+          "clue": "A volley from an impossible angle in the final"
+        }
+      ]
+    },
+    {
+      "id": "soccer-libertadores-recent",
+      "type": "recency",
+      "domain": "sports",
+      "tags": [
+        "soccer"
+      ],
+      "obscurity": 4,
+      "difficulty": 5,
+      "prompt": "The ten most recent Copa Libertadores winners",
+      "metric": "Winner of South America's premier club competition, by year.",
+      "source": {
+        "name": "CONMEBOL",
+        "url": "https://www.conmebol.com/"
+      },
+      "asOf": "2025-11",
+      "volatility": "annual",
+      "confidence": {
+        "level": "partial",
+        "note": "Verified through 2024; the 2025 winner is my best judgment."
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "label": "2025",
+          "name": "Palmeiras",
+          "aliases": [],
+          "clue": "Brazilian, from Sao Paulo"
+        },
+        {
+          "rank": 2,
+          "label": "2024",
+          "name": "Botafogo",
+          "aliases": [],
+          "clue": "Brazilian, and a first continental title"
+        },
+        {
+          "rank": 3,
+          "label": "2023",
+          "name": "Fluminense",
+          "aliases": [],
+          "clue": "Brazilian, and a first title at last"
+        },
+        {
+          "rank": 4,
+          "label": "2022",
+          "name": "Flamengo",
+          "aliases": [],
+          "clue": "Brazilian, and hugely supported"
+        },
+        {
+          "rank": 5,
+          "label": "2021",
+          "name": "Palmeiras",
+          "aliases": [],
+          "clue": "Brazilian, and retained the trophy"
+        },
+        {
+          "rank": 6,
+          "label": "2020",
+          "name": "Palmeiras",
+          "aliases": [],
+          "clue": "Brazilian, in a final delayed into 2021"
+        },
+        {
+          "rank": 7,
+          "label": "2019",
+          "name": "Flamengo",
+          "aliases": [],
+          "clue": "Came from behind in the last minutes of the final"
+        },
+        {
+          "rank": 8,
+          "label": "2018",
+          "name": "River Plate",
+          "aliases": [
+            "river"
+          ],
+          "clue": "Argentine, and beat its greatest rival in a final moved to Madrid"
+        },
+        {
+          "rank": 9,
+          "label": "2017",
+          "name": "Gremio",
+          "aliases": [],
+          "clue": "Brazilian, from Porto Alegre"
+        },
+        {
+          "rank": 10,
+          "label": "2016",
+          "name": "Atletico Nacional",
+          "aliases": [
+            "nacional",
+            "atletico nacional"
+          ],
+          "clue": "Colombian, from Medellin"
+        }
+      ]
+    },
+    {
+      "type": "ranked",
+      "tags": [
+        "boxing"
+      ],
+      "volatility": "annual",
+      "asOf": "2025-12-31",
+      "id": "boxing-lineal-heavyweights",
+      "domain": "sports",
+      "obscurity": 3,
+      "difficulty": 5,
+      "prompt": "Longest heavyweight boxing title reigns",
+      "metric": "Length of an unbroken reign as world heavyweight champion, in days.",
+      "source": {
+        "name": "BoxRec",
+        "url": "https://boxrec.com/"
+      },
+      "ambiguity": "Four sanctioning bodies now award separate belts, so \"world champion\" is ambiguous for most of the modern era. This ranks reigns as generally recognised at the time.",
+      "confidence": {
+        "level": "judgment",
+        "note": "Heavyweight title history is genuinely contested because of the competing sanctioning bodies, so reign lengths differ between sources. Membership is the point."
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Joe Louis",
+          "value": 4040,
+          "aliases": [
+            "louis",
+            "brown bomber"
+          ],
+          "clue": "Nearly twelve years, and 25 successful defences"
+        },
+        {
+          "rank": 2,
+          "name": "Wladimir Klitschko",
+          "value": 3568,
+          "aliases": [
+            "klitschko",
+            "wladimir"
+          ],
+          "clue": "Ukrainian, and dominated the 2000s and 2010s"
+        },
+        {
+          "rank": 3,
+          "name": "Larry Holmes",
+          "value": 2600,
+          "aliases": [
+            "holmes"
+          ],
+          "clue": "Twenty defences, in the shadow of a more famous rival"
+        },
+        {
+          "rank": 4,
+          "name": "Jack Johnson",
+          "value": 2150,
+          "aliases": [
+            "johnson"
+          ],
+          "clue": "The first Black champion, and hounded for it"
+        },
+        {
+          "rank": 5,
+          "name": "Muhammad Ali",
+          "value": 1490,
+          "aliases": [
+            "ali",
+            "cassius clay"
+          ],
+          "clue": "Lost the title outside the ring, then won it back twice"
+        },
+        {
+          "rank": 6,
+          "name": "Lennox Lewis",
+          "value": 1400,
+          "aliases": [
+            "lewis"
+          ],
+          "clue": "British, and retired as champion"
+        },
+        {
+          "rank": 7,
+          "name": "Jack Dempsey",
+          "value": 1400,
+          "aliases": [
+            "dempsey"
+          ],
+          "clue": "The Manassa Mauler, of the 1920s"
+        },
+        {
+          "rank": 8,
+          "name": "Mike Tyson",
+          "value": 1300,
+          "aliases": [
+            "tyson"
+          ],
+          "clue": "The youngest ever champion, at twenty"
+        },
+        {
+          "rank": 9,
+          "name": "Rocky Marciano",
+          "value": 1300,
+          "aliases": [
+            "marciano"
+          ],
+          "clue": "Retired undefeated at 49-0"
+        },
+        {
+          "rank": 10,
+          "name": "Tyson Fury",
+          "value": 1200,
+          "aliases": [
+            "fury"
+          ],
+          "clue": "British, and came back from serious mental illness"
+        }
+      ]
+    },
+    {
+      "id": "ncaa-womens-basketball-recent",
+      "type": "recency",
+      "domain": "sports",
+      "tags": [
+        "college",
+        "basketball"
+      ],
+      "obscurity": 3,
+      "difficulty": 4,
+      "prompt": "The ten most recent NCAA women's basketball champions",
+      "metric": "Winner of the NCAA Division I women's basketball tournament, by year.",
+      "source": {
+        "name": "NCAA",
+        "url": "https://www.ncaa.com/history/basketball-women/d1"
+      },
+      "asOf": "2026-04",
+      "volatility": "annual",
+      "ambiguity": "The 2020 tournament was cancelled before it began, so this sequence skips 2020 and reaches back to 2016.",
+      "confidence": {
+        "level": "partial",
+        "note": "Verified through 2025; the 2026 champion is my best judgment."
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "label": "2026",
+          "name": "UConn",
+          "aliases": [
+            "connecticut",
+            "huskies"
+          ],
+          "clue": "A twelfth title for the programme"
+        },
+        {
+          "rank": 2,
+          "label": "2025",
+          "name": "UConn",
+          "aliases": [
+            "connecticut",
+            "huskies"
+          ],
+          "clue": "Ended a nine-year wait"
+        },
+        {
+          "rank": 3,
+          "label": "2024",
+          "name": "South Carolina",
+          "aliases": [
+            "gamecocks"
+          ],
+          "clue": "Went undefeated through the season"
+        },
+        {
+          "rank": 4,
+          "label": "2023",
+          "name": "LSU",
+          "aliases": [
+            "tigers",
+            "louisiana state"
+          ],
+          "clue": "A first title for the programme"
+        },
+        {
+          "rank": 5,
+          "label": "2022",
+          "name": "South Carolina",
+          "aliases": [
+            "gamecocks"
+          ],
+          "clue": "Under a coach who had won as a player"
+        },
+        {
+          "rank": 6,
+          "label": "2021",
+          "name": "Stanford",
+          "aliases": [
+            "cardinal"
+          ],
+          "clue": "A first title in 29 years"
+        },
+        {
+          "rank": 7,
+          "label": "2019",
+          "name": "Baylor",
+          "aliases": [
+            "bears"
+          ],
+          "clue": "Won a one-point final"
+        },
+        {
+          "rank": 8,
+          "label": "2018",
+          "name": "Notre Dame",
+          "aliases": [
+            "irish",
+            "fighting irish"
+          ],
+          "clue": "Won on a buzzer-beater"
+        },
+        {
+          "rank": 9,
+          "label": "2017",
+          "name": "South Carolina",
+          "aliases": [
+            "gamecocks"
+          ],
+          "clue": "A first title for the programme"
+        },
+        {
+          "rank": 10,
+          "label": "2016",
+          "name": "UConn",
+          "aliases": [
+            "connecticut",
+            "huskies"
+          ],
+          "clue": "A fourth in a row"
+        }
+      ]
+    },
+    {
+      "id": "ncaa-college-world-series-recent",
+      "type": "recency",
+      "domain": "sports",
+      "tags": [
+        "college",
+        "baseball"
+      ],
+      "obscurity": 4,
+      "difficulty": 5,
+      "prompt": "The ten most recent College World Series champions",
+      "metric": "Winner of the NCAA Division I baseball championship, by year.",
+      "source": {
+        "name": "NCAA",
+        "url": "https://www.ncaa.com/history/baseball/d1"
+      },
+      "asOf": "2026-06",
+      "volatility": "annual",
+      "ambiguity": "The 2020 championship was cancelled, so this sequence skips 2020 and reaches back to 2015.",
+      "confidence": {
+        "level": "partial",
+        "note": "Verified through 2025; the 2026 champion is my best judgment."
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "label": "2026",
+          "name": "LSU",
+          "aliases": [
+            "tigers",
+            "louisiana state"
+          ],
+          "clue": "Baton Rouge, and a perennial power in the sport"
+        },
+        {
+          "rank": 2,
+          "label": "2025",
+          "name": "LSU",
+          "aliases": [
+            "tigers",
+            "louisiana state"
+          ],
+          "clue": "A second title in three years"
+        },
+        {
+          "rank": 3,
+          "label": "2024",
+          "name": "Tennessee",
+          "aliases": [
+            "volunteers",
+            "vols"
+          ],
+          "clue": "A first title for the programme"
+        },
+        {
+          "rank": 4,
+          "label": "2023",
+          "name": "LSU",
+          "aliases": [
+            "tigers",
+            "louisiana state"
+          ],
+          "clue": "Beat a southeastern rival in the deciding game"
+        },
+        {
+          "rank": 5,
+          "label": "2022",
+          "name": "Ole Miss",
+          "aliases": [
+            "mississippi",
+            "rebels"
+          ],
+          "clue": "Entered the tournament as one of the last teams selected"
+        },
+        {
+          "rank": 6,
+          "label": "2021",
+          "name": "Mississippi State",
+          "aliases": [
+            "bulldogs",
+            "miss state"
+          ],
+          "clue": "A first national title in any team sport for the school"
+        },
+        {
+          "rank": 7,
+          "label": "2019",
+          "name": "Vanderbilt",
+          "aliases": [
+            "commodores"
+          ],
+          "clue": "A second title in six years"
+        },
+        {
+          "rank": 8,
+          "label": "2018",
+          "name": "Oregon State",
+          "aliases": [
+            "beavers"
+          ],
+          "clue": "Won with a freshman pitcher in the deciding game"
+        },
+        {
+          "rank": 9,
+          "label": "2017",
+          "name": "Florida",
+          "aliases": [
+            "gators"
+          ],
+          "clue": "A first baseball title for the school"
+        },
+        {
+          "rank": 10,
+          "label": "2015",
+          "name": "Virginia",
+          "aliases": [
+            "cavaliers",
+            "uva"
+          ],
+          "clue": "Won a year after losing the final"
+        }
+      ]
+    },
+    {
+      "type": "ranked",
+      "tags": [
+        "winter"
+      ],
+      "volatility": "annual",
+      "asOf": "2025-03",
+      "id": "winter-most-alpine-titles",
+      "domain": "sports",
+      "obscurity": 4,
+      "difficulty": 5,
+      "prompt": "Most Alpine Skiing World Cup overall titles",
+      "metric": "Overall World Cup titles won across a career.",
+      "source": {
+        "name": "FIS",
+        "url": "https://www.fis-ski.com/"
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Marcel Hirscher",
+          "value": 8,
+          "aliases": [
+            "hirscher"
+          ],
+          "clue": "Austrian, and won eight in a row"
+        },
+        {
+          "rank": 2,
+          "name": "Annemarie Moser-Proll",
+          "value": 6,
+          "aliases": [
+            "moser proll",
+            "proll"
+          ],
+          "clue": "Austrian, and dominant in the 1970s"
+        },
+        {
+          "rank": 3,
+          "name": "Mikaela Shiffrin",
+          "value": 5,
+          "aliases": [
+            "shiffrin"
+          ],
+          "clue": "American, and the most race wins of anyone"
+        },
+        {
+          "rank": 4,
+          "name": "Marc Girardelli",
+          "value": 5,
+          "aliases": [
+            "girardelli"
+          ],
+          "clue": "Competed for Luxembourg despite being Austrian"
+        },
+        {
+          "rank": 5,
+          "name": "Lindsey Vonn",
+          "value": 4,
+          "aliases": [
+            "vonn"
+          ],
+          "clue": "American, and a famous downhill racer"
+        },
+        {
+          "rank": 6,
+          "name": "Pirmin Zurbriggen",
+          "value": 4,
+          "aliases": [
+            "zurbriggen"
+          ],
+          "clue": "Swiss, and won in every discipline"
+        },
+        {
+          "rank": 7,
+          "name": "Gustav Thoni",
+          "value": 4,
+          "aliases": [
+            "thoni"
+          ],
+          "clue": "Italian, and a rival of the 1970s"
+        },
+        {
+          "rank": 8,
+          "name": "Hermann Maier",
+          "value": 4,
+          "aliases": [
+            "maier",
+            "herminator"
+          ],
+          "clue": "Austrian, and came back from a motorcycle crash"
+        },
+        {
+          "rank": 9,
+          "name": "Petra Kronberger",
+          "value": 3,
+          "aliases": [
+            "kronberger"
+          ],
+          "clue": "Austrian, and retired at 23"
+        },
+        {
+          "rank": 10,
+          "name": "Vreni Schneider",
+          "value": 3,
+          "aliases": [
+            "schneider"
+          ],
+          "clue": "Swiss, and won three golds at one Olympics"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "The leaders are certain; several skiers tie on four and three titles, so the order within those ties is my best judgment."
+      }
+    },
+    {
+      "type": "ranked",
+      "tags": [],
+      "volatility": "evergreen",
+      "asOf": "2024-12-31",
+      "id": "lang-oldest-writing",
+      "domain": "language",
+      "obscurity": 4,
+      "difficulty": 5,
+      "prompt": "Oldest known writing systems",
+      "metric": "Approximate date of earliest attestation, BCE. Higher number means older.",
+      "source": {
+        "name": "Encyclopaedia Britannica",
+        "url": "https://www.britannica.com/"
+      },
+      "ambiguity": "Whether a system counts as true writing rather than proto-writing or accounting marks is contested, which changes both the order and the membership.",
+      "confidence": {
+        "level": "judgment",
+        "note": "Dating early scripts rests on a handful of excavated objects and is revised by new finds. Order is my best judgment."
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Sumerian cuneiform",
+          "value": 3200,
+          "aliases": [
+            "cuneiform",
+            "sumerian"
+          ],
+          "clue": "Wedge marks pressed into clay in Mesopotamia"
+        },
+        {
+          "rank": 2,
+          "name": "Egyptian hieroglyphs",
+          "value": 3200,
+          "aliases": [
+            "hieroglyphs",
+            "hieroglyphics"
+          ],
+          "clue": "Pictorial signs, deciphered thanks to a bilingual stone"
+        },
+        {
+          "rank": 3,
+          "name": "Indus script",
+          "value": 2600,
+          "aliases": [
+            "indus"
+          ],
+          "clue": "Still undeciphered, and possibly not writing at all"
+        },
+        {
+          "rank": 4,
+          "name": "Cretan hieroglyphs",
+          "value": 2100,
+          "aliases": [
+            "cretan"
+          ],
+          "clue": "Minoan, and largely unread"
+        },
+        {
+          "rank": 5,
+          "name": "Linear A",
+          "value": 1800,
+          "aliases": [],
+          "clue": "Minoan, and also undeciphered"
+        },
+        {
+          "rank": 6,
+          "name": "Linear B",
+          "value": 1450,
+          "aliases": [],
+          "clue": "Mycenaean, and deciphered in the 1950s as an early form of one European language"
+        },
+        {
+          "rank": 7,
+          "name": "Chinese oracle bone script",
+          "value": 1250,
+          "aliases": [
+            "oracle bone",
+            "oracle bone script"
+          ],
+          "clue": "Divination marks on turtle shells, and the ancestor of modern characters"
+        },
+        {
+          "rank": 8,
+          "name": "Phoenician alphabet",
+          "value": 1050,
+          "aliases": [
+            "phoenician"
+          ],
+          "clue": "The ancestor of most alphabets in use today"
+        },
+        {
+          "rank": 9,
+          "name": "Greek alphabet",
+          "value": 800,
+          "aliases": [
+            "greek"
+          ],
+          "clue": "Added vowels to a consonant-only ancestor"
+        },
+        {
+          "rank": 10,
+          "name": "Latin alphabet",
+          "value": 700,
+          "aliases": [
+            "latin",
+            "roman alphabet"
+          ],
+          "clue": "The script you are reading now"
+        }
+      ]
+    },
+    {
+      "type": "ranked",
+      "tags": [],
+      "volatility": "evergreen",
+      "asOf": "2024-12-31",
+      "id": "lang-most-alphabet-letters",
+      "domain": "language",
+      "obscurity": 4,
+      "difficulty": 5,
+      "prompt": "Alphabets with the most letters",
+      "metric": "Number of letters in the standard alphabet of the language.",
+      "source": {
+        "name": "Encyclopaedia Britannica",
+        "url": "https://www.britannica.com/"
+      },
+      "ambiguity": "Counting depends on whether digraphs, diacritical variants and tone marks count as separate letters, which most languages answer differently.",
+      "confidence": {
+        "level": "judgment",
+        "note": "Letter counts are a matter of convention rather than fact, and reference works disagree. Order is my best judgment."
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Khmer",
+          "value": 74,
+          "aliases": [
+            "cambodian"
+          ],
+          "clue": "The longest alphabet in the world, in Cambodia"
+        },
+        {
+          "rank": 2,
+          "name": "Dhivehi",
+          "value": 54,
+          "aliases": [
+            "thaana",
+            "maldivian"
+          ],
+          "clue": "Written right to left in the Maldives"
+        },
+        {
+          "rank": 3,
+          "name": "Sinhala",
+          "value": 54,
+          "aliases": [
+            "sinhalese"
+          ],
+          "clue": "Rounded letters, used in Sri Lanka"
+        },
+        {
+          "rank": 4,
+          "name": "Hungarian",
+          "value": 44,
+          "aliases": [
+            "magyar"
+          ],
+          "clue": "Counts digraphs and a trigraph as letters"
+        },
+        {
+          "rank": 5,
+          "name": "Thai",
+          "value": 44,
+          "aliases": [],
+          "clue": "Forty-four consonants plus separate vowel marks"
+        },
+        {
+          "rank": 6,
+          "name": "Armenian",
+          "value": 39,
+          "aliases": [],
+          "clue": "Devised by a single monk in the fifth century"
+        },
+        {
+          "rank": 7,
+          "name": "Russian",
+          "value": 33,
+          "aliases": [],
+          "clue": "Cyrillic, and reformed after the revolution"
+        },
+        {
+          "rank": 8,
+          "name": "Polish",
+          "value": 32,
+          "aliases": [],
+          "clue": "Latin letters with several diacritics"
+        },
+        {
+          "rank": 9,
+          "name": "Arabic",
+          "value": 28,
+          "aliases": [],
+          "clue": "Letters change shape depending on position"
+        },
+        {
+          "rank": 10,
+          "name": "Korean",
+          "value": 24,
+          "aliases": [
+            "hangul"
+          ],
+          "clue": "Designed deliberately in the fifteenth century"
+        }
+      ]
     }
   ]
 }
