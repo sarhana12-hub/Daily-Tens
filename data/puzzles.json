@@ -29,13 +29,15 @@
           "value": 17098246,
           "aliases": [
             "russian federation"
-          ]
+          ],
+          "clue": "Eleven time zones"
         },
         {
           "rank": 2,
           "name": "Canada",
           "value": 9984670,
-          "aliases": []
+          "aliases": [],
+          "clue": "Two official languages, and more lake area than any country"
         },
         {
           "rank": 3,
@@ -46,7 +48,8 @@
             "us",
             "united states of america",
             "america"
-          ]
+          ],
+          "clue": "Fifty states"
         },
         {
           "rank": 4,
@@ -55,19 +58,22 @@
           "aliases": [
             "prc",
             "peoples republic of china"
-          ]
+          ],
+          "clue": "Four times the size of its own arable land, and one time zone by decree"
         },
         {
           "rank": 5,
           "name": "Brazil",
           "value": 8515767,
-          "aliases": []
+          "aliases": [],
+          "clue": "The only Portuguese-speaking country in its hemisphere"
         },
         {
           "rank": 6,
           "name": "Australia",
           "value": 7692024,
-          "aliases": []
+          "aliases": [],
+          "clue": "An entire continent"
         },
         {
           "rank": 7,
@@ -75,25 +81,29 @@
           "value": 3287263,
           "aliases": [
             "bharat"
-          ]
+          ],
+          "clue": "Second most populous, and a subcontinent of its own"
         },
         {
           "rank": 8,
           "name": "Argentina",
           "value": 2780400,
-          "aliases": []
+          "aliases": [],
+          "clue": "Long and thin, down the far side of a continent"
         },
         {
           "rank": 9,
           "name": "Kazakhstan",
           "value": 2724900,
-          "aliases": []
+          "aliases": [],
+          "clue": "The largest landlocked country on Earth"
         },
         {
           "rank": 10,
           "name": "Algeria",
           "value": 2381741,
-          "aliases": []
+          "aliases": [],
+          "clue": "The largest country in Africa, mostly Sahara"
         }
       ],
       "tags": [],
@@ -123,19 +133,22 @@
           "name": "One Battle After Another",
           "aliases": [
             "one battle"
-          ]
+          ],
+          "clue": "Paul Thomas Anderson, and six Oscars in one night"
         },
         {
           "rank": 2,
           "label": "2025",
           "name": "Anora",
-          "aliases": []
+          "aliases": [],
+          "clue": "Sean Baker, and a Best Actress win for Mikey Madison"
         },
         {
           "rank": 3,
           "label": "2024",
           "name": "Oppenheimer",
-          "aliases": []
+          "aliases": [],
+          "clue": "Cillian Murphy as the man who built the bomb"
         },
         {
           "rank": 4,
@@ -144,19 +157,22 @@
           "aliases": [
             "eeaao",
             "everything everywhere"
-          ]
+          ],
+          "clue": "A multiverse, a laundromat and a tax audit"
         },
         {
           "rank": 5,
           "label": "2022",
           "name": "CODA",
-          "aliases": []
+          "aliases": [],
+          "clue": "A deaf family and a hearing daughter who can sing"
         },
         {
           "rank": 6,
           "label": "2021",
           "name": "Nomadland",
-          "aliases": []
+          "aliases": [],
+          "clue": "Frances McDormand living in a van"
         },
         {
           "rank": 7,
@@ -164,13 +180,15 @@
           "name": "Parasite",
           "aliases": [
             "gisaengchung"
-          ]
+          ],
+          "clue": "A Korean basement, and the first subtitled winner"
         },
         {
           "rank": 8,
           "label": "2019",
           "name": "Green Book",
-          "aliases": []
+          "aliases": [],
+          "clue": "A road trip through the segregated South"
         },
         {
           "rank": 9,
@@ -178,13 +196,15 @@
           "name": "The Shape of Water",
           "aliases": [
             "shape of water"
-          ]
+          ],
+          "clue": "A mute cleaner and an amphibian man"
         },
         {
           "rank": 10,
           "label": "2017",
           "name": "Moonlight",
-          "aliases": []
+          "aliases": [],
+          "clue": "Three chapters in the life of one Miami boy"
         }
       ],
       "tags": [
@@ -220,7 +240,8 @@
           "aliases": [
             "seahawks",
             "seattle"
-          ]
+          ],
+          "clue": "A Pacific Northwest franchise, 29-13"
         },
         {
           "rank": 2,
@@ -230,7 +251,8 @@
             "eagles",
             "philadelphia",
             "philly"
-          ]
+          ],
+          "clue": "A 40-22 rout, and Jalen Hurts took the MVP"
         },
         {
           "rank": 3,
@@ -240,7 +262,8 @@
             "chiefs",
             "kansas city",
             "kc"
-          ]
+          ],
+          "clue": "Won 25-22 in overtime"
         },
         {
           "rank": 4,
@@ -250,7 +273,8 @@
             "chiefs",
             "kansas city",
             "kc"
-          ]
+          ],
+          "clue": "Won 38-35 in Glendale"
         },
         {
           "rank": 5,
@@ -259,7 +283,8 @@
           "aliases": [
             "rams",
             "la rams"
-          ]
+          ],
+          "clue": "Won 23-20 in their own stadium"
         },
         {
           "rank": 6,
@@ -270,7 +295,8 @@
             "bucs",
             "tampa bay",
             "tampa"
-          ]
+          ],
+          "clue": "Brady won his seventh ring, the first at a home stadium"
         },
         {
           "rank": 7,
@@ -280,7 +306,8 @@
             "chiefs",
             "kansas city",
             "kc"
-          ]
+          ],
+          "clue": "Won 31-20, fifty years after their only previous title"
         },
         {
           "rank": 8,
@@ -290,7 +317,8 @@
             "patriots",
             "new england",
             "pats"
-          ]
+          ],
+          "clue": "The lowest-scoring Super Bowl ever, 13-3"
         },
         {
           "rank": 9,
@@ -300,7 +328,8 @@
             "eagles",
             "philadelphia",
             "philly"
-          ]
+          ],
+          "clue": "A backup quarterback, Nick Foles, won it 41-33"
         },
         {
           "rank": 10,
@@ -310,7 +339,8 @@
             "patriots",
             "new england",
             "pats"
-          ]
+          ],
+          "clue": "Came back from 28-3"
         }
       ],
       "difficulty": 2
@@ -339,7 +369,8 @@
           "value": null,
           "aliases": [
             "brady"
-          ]
+          ],
+          "clue": "Seven rings, and drafted 199th overall"
         },
         {
           "rank": 2,
@@ -347,7 +378,8 @@
           "value": null,
           "aliases": [
             "brees"
-          ]
+          ],
+          "clue": "A New Orleans institution, and once held the single-season record"
         },
         {
           "rank": 3,
@@ -356,7 +388,8 @@
           "aliases": [
             "peyton",
             "peyton manning"
-          ]
+          ],
+          "clue": "Two rings with two different teams, twenty years apart"
         },
         {
           "rank": 4,
@@ -364,7 +397,8 @@
           "value": null,
           "aliases": [
             "favre"
-          ]
+          ],
+          "clue": "An iron man from Mississippi, with three straight MVPs in the 1990s"
         },
         {
           "rank": 5,
@@ -372,7 +406,8 @@
           "value": null,
           "aliases": [
             "rodgers"
-          ]
+          ],
+          "clue": "A Super Bowl in Green Bay, then a trade to New York"
         },
         {
           "rank": 6,
@@ -381,7 +416,8 @@
           "aliases": [
             "stafford",
             "matt stafford"
-          ]
+          ],
+          "clue": "Detroit for a decade, then a ring in Los Angeles"
         },
         {
           "rank": 7,
@@ -390,7 +426,8 @@
           "aliases": [
             "roethlisberger",
             "big ben"
-          ]
+          ],
+          "clue": "Pittsburgh for eighteen seasons"
         },
         {
           "rank": 8,
@@ -398,7 +435,8 @@
           "value": null,
           "aliases": [
             "rivers"
-          ]
+          ],
+          "clue": "San Diego and then Los Angeles, never a Super Bowl"
         },
         {
           "rank": 9,
@@ -407,7 +445,8 @@
           "aliases": [
             "ryan",
             "matty ice"
-          ]
+          ],
+          "clue": "Atlanta, and the 28-3 game"
         },
         {
           "rank": 10,
@@ -415,7 +454,8 @@
           "value": null,
           "aliases": [
             "marino"
-          ]
+          ],
+          "clue": "Miami in the 1980s, and never won a Super Bowl"
         }
       ],
       "difficulty": 3
@@ -448,13 +488,15 @@
           "aliases": [
             "espana",
             "la roja"
-          ]
+          ],
+          "clue": "Ferran Torres scored the winner in extra time"
         },
         {
           "rank": 2,
           "label": "2022",
           "name": "Argentina",
-          "aliases": []
+          "aliases": [],
+          "clue": "Messi finally got his, on penalties in Qatar"
         },
         {
           "rank": 3,
@@ -462,7 +504,8 @@
           "name": "France",
           "aliases": [
             "les bleus"
-          ]
+          ],
+          "clue": "Mbappe at nineteen, and a 4-2 final in Moscow"
         },
         {
           "rank": 4,
@@ -470,7 +513,8 @@
           "name": "Germany",
           "aliases": [
             "deutschland"
-          ]
+          ],
+          "clue": "Gotze volleyed the winner in extra time at the Maracana"
         },
         {
           "rank": 5,
@@ -479,7 +523,8 @@
           "aliases": [
             "espana",
             "la roja"
-          ]
+          ],
+          "clue": "Iniesta scored in the 116th minute in Johannesburg"
         },
         {
           "rank": 6,
@@ -488,7 +533,8 @@
           "aliases": [
             "italia",
             "azzurri"
-          ]
+          ],
+          "clue": "Won on penalties after Zidane was sent off for a headbutt"
         },
         {
           "rank": 7,
@@ -496,7 +542,8 @@
           "name": "Brazil",
           "aliases": [
             "brasil"
-          ]
+          ],
+          "clue": "Ronaldo scored twice in Yokohama"
         },
         {
           "rank": 8,
@@ -504,7 +551,8 @@
           "name": "France",
           "aliases": [
             "les bleus"
-          ]
+          ],
+          "clue": "Zidane scored twice in the final, on home soil"
         },
         {
           "rank": 9,
@@ -512,7 +560,8 @@
           "name": "Brazil",
           "aliases": [
             "brasil"
-          ]
+          ],
+          "clue": "A shootout in Pasadena, decided when Baggio skied his kick"
         },
         {
           "rank": 10,
@@ -520,7 +569,8 @@
           "name": "West Germany",
           "aliases": [
             "west german"
-          ]
+          ],
+          "clue": "Brehme converted a penalty in the 85th minute in Rome"
         }
       ],
       "difficulty": 2
@@ -554,7 +604,8 @@
             "knicks",
             "new york",
             "ny knicks"
-          ]
+          ],
+          "clue": "A first title since 1973"
         },
         {
           "rank": 2,
@@ -564,7 +615,8 @@
             "thunder",
             "okc",
             "oklahoma city"
-          ]
+          ],
+          "clue": "Seven games, and Gilgeous-Alexander was MVP"
         },
         {
           "rank": 3,
@@ -573,7 +625,8 @@
           "aliases": [
             "celtics",
             "boston"
-          ]
+          ],
+          "clue": "A record eighteenth banner"
         },
         {
           "rank": 4,
@@ -582,7 +635,8 @@
           "aliases": [
             "nuggets",
             "denver"
-          ]
+          ],
+          "clue": "Jokic dominated, and a first title for the franchise"
         },
         {
           "rank": 5,
@@ -592,7 +646,8 @@
             "warriors",
             "golden state",
             "gsw"
-          ]
+          ],
+          "clue": "Curry took Finals MVP for the first time"
         },
         {
           "rank": 6,
@@ -601,7 +656,8 @@
           "aliases": [
             "bucks",
             "milwaukee"
-          ]
+          ],
+          "clue": "Antetokounmpo scored 50 in the closeout game"
         },
         {
           "rank": 7,
@@ -610,7 +666,8 @@
           "aliases": [
             "lakers",
             "la lakers"
-          ]
+          ],
+          "clue": "Won in the Florida bubble"
         },
         {
           "rank": 8,
@@ -619,7 +676,8 @@
           "aliases": [
             "raptors",
             "toronto"
-          ]
+          ],
+          "clue": "The first title won outside the United States"
         },
         {
           "rank": 9,
@@ -629,7 +687,8 @@
             "warriors",
             "golden state",
             "gsw"
-          ]
+          ],
+          "clue": "A sweep, with Durant as Finals MVP"
         },
         {
           "rank": 10,
@@ -639,7 +698,8 @@
             "warriors",
             "golden state",
             "gsw"
-          ]
+          ],
+          "clue": "Durant s first season with the team"
         }
       ],
       "difficulty": 2
@@ -672,7 +732,8 @@
           "name": "Noah Lyles",
           "aliases": [
             "lyles"
-          ]
+          ],
+          "clue": "An American who also took the 200m in Paris"
         },
         {
           "rank": 2,
@@ -681,7 +742,8 @@
           "aliases": [
             "jacobs",
             "lamont marcell jacobs"
-          ]
+          ],
+          "clue": "An Italian, and nobody saw it coming in Tokyo"
         },
         {
           "rank": 3,
@@ -689,7 +751,8 @@
           "name": "Usain Bolt",
           "aliases": [
             "bolt"
-          ]
+          ],
+          "clue": "A third straight title in Rio"
         },
         {
           "rank": 4,
@@ -697,7 +760,8 @@
           "name": "Usain Bolt",
           "aliases": [
             "bolt"
-          ]
+          ],
+          "clue": "A world record of 9.63 in London"
         },
         {
           "rank": 5,
@@ -705,7 +769,8 @@
           "name": "Usain Bolt",
           "aliases": [
             "bolt"
-          ]
+          ],
+          "clue": "A world record of 9.69 in Beijing, easing up"
         },
         {
           "rank": 6,
@@ -713,7 +778,8 @@
           "name": "Justin Gatlin",
           "aliases": [
             "gatlin"
-          ]
+          ],
+          "clue": "An American who later served a doping ban and came back"
         },
         {
           "rank": 7,
@@ -721,7 +787,8 @@
           "name": "Maurice Greene",
           "aliases": [
             "greene"
-          ]
+          ],
+          "clue": "An American who won five straight world titles indoors and out"
         },
         {
           "rank": 8,
@@ -729,7 +796,8 @@
           "name": "Donovan Bailey",
           "aliases": [
             "bailey"
-          ]
+          ],
+          "clue": "A Canadian, in a then-world-record 9.84"
         },
         {
           "rank": 9,
@@ -737,7 +805,8 @@
           "name": "Linford Christie",
           "aliases": [
             "christie"
-          ]
+          ],
+          "clue": "A Briton who won at 32, the oldest champion"
         },
         {
           "rank": 10,
@@ -745,7 +814,8 @@
           "name": "Carl Lewis",
           "aliases": [
             "lewis"
-          ]
+          ],
+          "clue": "An American awarded gold after the winner was disqualified"
         }
       ],
       "difficulty": 4
@@ -777,7 +847,8 @@
             "us",
             "america",
             "united states of america"
-          ]
+          ],
+          "clue": "About a quarter of world output"
         },
         {
           "rank": 2,
@@ -785,7 +856,8 @@
           "value": null,
           "aliases": [
             "prc"
-          ]
+          ],
+          "clue": "The second largest, and the largest by purchasing power"
         },
         {
           "rank": 3,
@@ -793,7 +865,8 @@
           "value": null,
           "aliases": [
             "deutschland"
-          ]
+          ],
+          "clue": "The largest economy in Europe"
         },
         {
           "rank": 4,
@@ -801,13 +874,15 @@
           "value": null,
           "aliases": [
             "bharat"
-          ]
+          ],
+          "clue": "The most populous country, and the fastest-growing large economy"
         },
         {
           "rank": 5,
           "name": "Japan",
           "value": null,
-          "aliases": []
+          "aliases": [],
+          "clue": "Three decades of near-zero inflation until recently"
         },
         {
           "rank": 6,
@@ -818,13 +893,15 @@
             "britain",
             "great britain",
             "england"
-          ]
+          ],
+          "clue": "Left the European Union in 2020"
         },
         {
           "rank": 7,
           "name": "France",
           "value": null,
-          "aliases": []
+          "aliases": [],
+          "clue": "The eurozone's second largest"
         },
         {
           "rank": 8,
@@ -832,7 +909,8 @@
           "value": null,
           "aliases": [
             "italia"
-          ]
+          ],
+          "clue": "The eurozone's third largest"
         },
         {
           "rank": 9,
@@ -840,13 +918,15 @@
           "value": null,
           "aliases": [
             "brasil"
-          ]
+          ],
+          "clue": "The largest economy in the southern hemisphere"
         },
         {
           "rank": 10,
           "name": "Canada",
           "value": null,
-          "aliases": []
+          "aliases": [],
+          "clue": "The G7 member with the smallest population"
         }
       ],
       "difficulty": 2
@@ -875,7 +955,8 @@
             "mount everest",
             "sagarmatha",
             "chomolungma"
-          ]
+          ],
+          "clue": "On the Nepal-Tibet border; the Tibetan name means Goddess Mother of the World"
         },
         {
           "rank": 2,
@@ -884,7 +965,8 @@
           "aliases": [
             "chhogori",
             "mount godwin austen"
-          ]
+          ],
+          "clue": "In the Karakoram, and nicknamed the Savage Mountain"
         },
         {
           "rank": 3,
@@ -892,25 +974,29 @@
           "value": 8586,
           "aliases": [
             "kanchenjunga"
-          ]
+          ],
+          "clue": "Third highest, on the Nepal-Sikkim border, and sacred enough that climbers stop short of the true summit"
         },
         {
           "rank": 4,
           "name": "Lhotse",
           "value": 8516,
-          "aliases": []
+          "aliases": [],
+          "clue": "Shares a base camp with the highest of them all"
         },
         {
           "rank": 5,
           "name": "Makalu",
           "value": 8485,
-          "aliases": []
+          "aliases": [],
+          "clue": "The fifth highest, with a distinctive four-sided summit"
         },
         {
           "rank": 6,
           "name": "Cho Oyu",
           "value": 8188,
-          "aliases": []
+          "aliases": [],
+          "clue": "Sixth highest, and the easiest eight-thousander"
         },
         {
           "rank": 7,
@@ -918,19 +1004,22 @@
           "value": 8167,
           "aliases": [
             "dhaulagiri i"
-          ]
+          ],
+          "clue": "Seventh highest; its name means White Mountain"
         },
         {
           "rank": 8,
           "name": "Manaslu",
           "value": 8163,
-          "aliases": []
+          "aliases": [],
+          "clue": "Eighth highest; the name means Mountain of the Spirit"
         },
         {
           "rank": 9,
           "name": "Nanga Parbat",
           "value": 8126,
-          "aliases": []
+          "aliases": [],
+          "clue": "Ninth highest; the Killer Mountain, in Pakistan"
         },
         {
           "rank": 10,
@@ -938,7 +1027,8 @@
           "value": 8091,
           "aliases": [
             "annapurna i"
-          ]
+          ],
+          "clue": "Tenth highest, and statistically the deadliest to climb"
         }
       ],
       "difficulty": 5
@@ -963,7 +1053,8 @@
           "rank": 1,
           "name": "Nile",
           "value": 6650,
-          "aliases": []
+          "aliases": [],
+          "clue": "Flows north through Cairo to a delta"
         },
         {
           "rank": 2,
@@ -971,7 +1062,8 @@
           "value": 6400,
           "aliases": [
             "amazonas"
-          ]
+          ],
+          "clue": "Carries more water than the next six rivers combined"
         },
         {
           "rank": 3,
@@ -980,7 +1072,8 @@
           "aliases": [
             "chang jiang",
             "changjiang"
-          ]
+          ],
+          "clue": "The longest river entirely within one country"
         },
         {
           "rank": 4,
@@ -989,7 +1082,8 @@
           "aliases": [
             "mississippi",
             "missouri"
-          ]
+          ],
+          "clue": "A system named for two rivers that meet at St Louis"
         },
         {
           "rank": 5,
@@ -998,7 +1092,8 @@
           "aliases": [
             "yenisey",
             "yenisei angara"
-          ]
+          ],
+          "clue": "Divides western from eastern Siberia, flowing north to the Arctic"
         },
         {
           "rank": 6,
@@ -1007,7 +1102,8 @@
           "aliases": [
             "huang he",
             "hwang ho"
-          ]
+          ],
+          "clue": "China's second longest, and the silt gives it its name"
         },
         {
           "rank": 7,
@@ -1016,13 +1112,15 @@
           "aliases": [
             "ob irtysh",
             "irtysh"
-          ]
+          ],
+          "clue": "Empties into a long gulf of the Kara Sea, in western Siberia"
         },
         {
           "rank": 8,
           "name": "Parana",
           "value": 4880,
-          "aliases": []
+          "aliases": [],
+          "clue": "Forms much of the Argentina-Paraguay border"
         },
         {
           "rank": 9,
@@ -1030,7 +1128,8 @@
           "value": 4700,
           "aliases": [
             "zaire"
-          ]
+          ],
+          "clue": "The deepest river in the world"
         },
         {
           "rank": 10,
@@ -1038,7 +1137,8 @@
           "value": 4444,
           "aliases": [
             "heilong jiang"
-          ]
+          ],
+          "clue": "Forms the Russia-China border for much of its length"
         }
       ],
       "difficulty": 4
@@ -1062,25 +1162,29 @@
           "rank": 1,
           "name": "Ganymede",
           "value": 5268,
-          "aliases": []
+          "aliases": [],
+          "clue": "Bigger than Mercury, and the only satellite known to have its own magnetic field"
         },
         {
           "rank": 2,
           "name": "Titan",
           "value": 5149,
-          "aliases": []
+          "aliases": [],
+          "clue": "A thick nitrogen atmosphere and lakes of liquid methane"
         },
         {
           "rank": 3,
           "name": "Callisto",
           "value": 4821,
-          "aliases": []
+          "aliases": [],
+          "clue": "The most heavily cratered object known, orbiting Jupiter"
         },
         {
           "rank": 4,
           "name": "Io",
           "value": 3643,
-          "aliases": []
+          "aliases": [],
+          "clue": "The most volcanically active body in the solar system"
         },
         {
           "rank": 5,
@@ -1090,37 +1194,43 @@
             "luna",
             "earths moon",
             "our moon"
-          ]
+          ],
+          "clue": "The only one humans have walked on"
         },
         {
           "rank": 6,
           "name": "Europa",
           "value": 3122,
-          "aliases": []
+          "aliases": [],
+          "clue": "An ice shell over a saltwater ocean, orbiting Jupiter"
         },
         {
           "rank": 7,
           "name": "Triton",
           "value": 2707,
-          "aliases": []
+          "aliases": [],
+          "clue": "Orbits Neptune backwards, and is probably a captured Kuiper belt object"
         },
         {
           "rank": 8,
           "name": "Titania",
           "value": 1578,
-          "aliases": []
+          "aliases": [],
+          "clue": "Uranus's largest, named for a fairy queen"
         },
         {
           "rank": 9,
           "name": "Rhea",
           "value": 1528,
-          "aliases": []
+          "aliases": [],
+          "clue": "Saturn's second largest, and possibly has rings of its own"
         },
         {
           "rank": 10,
           "name": "Oberon",
           "value": 1523,
-          "aliases": []
+          "aliases": [],
+          "clue": "Uranus's second largest, named for a fairy king"
         }
       ],
       "difficulty": 4
@@ -1150,7 +1260,8 @@
           "name": "Donald Trump",
           "aliases": [
             "trump"
-          ]
+          ],
+          "clue": "The only president to serve non-consecutive terms in over a century"
         },
         {
           "rank": 2,
@@ -1158,7 +1269,8 @@
           "name": "Joe Biden",
           "aliases": [
             "biden"
-          ]
+          ],
+          "clue": "Served eight years as vice president first"
         },
         {
           "rank": 3,
@@ -1166,7 +1278,8 @@
           "name": "Barack Obama",
           "aliases": [
             "obama"
-          ]
+          ],
+          "clue": "The first Black president, and won a Nobel Peace Prize in his first year"
         },
         {
           "rank": 4,
@@ -1177,7 +1290,8 @@
             "gw bush",
             "bush jr",
             "dubya"
-          ]
+          ],
+          "clue": "Governor of Texas, and the son of a president"
         },
         {
           "rank": 5,
@@ -1185,7 +1299,8 @@
           "name": "Bill Clinton",
           "aliases": [
             "clinton"
-          ]
+          ],
+          "clue": "Governor of Arkansas, and impeached but acquitted"
         },
         {
           "rank": 6,
@@ -1195,7 +1310,8 @@
             "george hw bush",
             "ghw bush",
             "bush sr"
-          ]
+          ],
+          "clue": "A former CIA director, and the father of a president"
         },
         {
           "rank": 7,
@@ -1203,7 +1319,8 @@
           "name": "Ronald Reagan",
           "aliases": [
             "reagan"
-          ]
+          ],
+          "clue": "A film actor and governor of California"
         },
         {
           "rank": 8,
@@ -1211,7 +1328,8 @@
           "name": "Jimmy Carter",
           "aliases": [
             "carter"
-          ]
+          ],
+          "clue": "A peanut farmer from Georgia, and later a Nobel laureate"
         },
         {
           "rank": 9,
@@ -1219,7 +1337,8 @@
           "name": "Gerald Ford",
           "aliases": [
             "ford"
-          ]
+          ],
+          "clue": "The only president never elected to either office"
         },
         {
           "rank": 10,
@@ -1227,7 +1346,8 @@
           "name": "Richard Nixon",
           "aliases": [
             "nixon"
-          ]
+          ],
+          "clue": "Resigned in 1974"
         }
       ],
       "difficulty": 1

@@ -109,6 +109,12 @@
   .slot.shown .nm{color:var(--ink-soft);font-style:italic;}
   .slot.hint{background:var(--gold-soft);border-color:rgba(228,185,94,.28);}
   .slot.hint .nm{color:var(--gold);font-family:ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.5px;}
+  /* A slot showing only its clue points down at the strip. */
+  .slot.clue .nm{font-family:inherit;letter-spacing:0;font-size:11px;opacity:.8;}
+  .clues{display:flex;flex-direction:column;gap:4px;margin:2px 0 0;}
+  .cluerow{display:flex;gap:8px;align-items:baseline;background:var(--gold-soft);border:1px solid rgba(228,185,94,.22);border-radius:8px;padding:5px 9px;}
+  .cluerow b{color:var(--gold);font-size:11px;font-weight:700;min-width:26px;font-variant-numeric:tabular-nums;flex-shrink:0;}
+  .cluerow span{font-size:12px;line-height:1.3;color:var(--ink-soft);font-style:italic;}
   .slot.hint .n{color:var(--gold);}
   .slot[data-hint]{cursor:pointer;}
   .slot[data-hint]:active{background:var(--card-2);}
@@ -274,28 +280,53 @@ function lev(a, b) {
 }
 function tolerance(n) { return n <= 6 ? 1 : n <= 12 ? 2 : 3; }
 
-// Returns EVERY answer index the guess satisfies, or [].
-// Recency lists repeat winners — Scheffler took the 2022 and 2024 Masters — so
-// one name can own several slots. Naming him once must fill both, otherwise a
-// player who knew the list perfectly would be capped below 10.
-function matchGuesses(guess, answers) {
+// Resolves a guess to the distinct answers it could mean.
+//   { names: [canonical, ...], slots: { canonical: [index, ...] } }
+//
+// Two different situations have to be told apart:
+//   - One answer occupying several slots (the Chiefs won three of the last ten
+//     Super Bowls). Naming it once must fill all of them.
+//   - One guess matching several different answers ("Bush" is two presidents).
+//     That is ambiguity, and rejecting it would be wrong — the player isn't
+//     mistaken, just imprecise.
+//
+// Matching runs in tiers so a guess that is exactly someone's full name is
+// never treated as ambiguous with a different answer's nickname: "Germany" is
+// Germany, even though "germany" is also shorthand for West Germany.
+function resolveGuess(guess, answers) {
   const g = norm(guess);
-  if (!g) return [];
-  const forms = answers.map(a => [norm(a.name), ...(a.aliases || []).map(norm)]);
-  let hit = -1;
-  for (let i = 0; i < forms.length && hit < 0; i++) if (forms[i].includes(g)) hit = i;
-  if (hit < 0) {
-    let bestD = Infinity;
-    for (let i = 0; i < forms.length; i++) {
-      for (const f of forms[i]) {
-        const d = lev(g, f);
-        if (d <= tolerance(f.length) && d < bestD) { bestD = d; hit = i; }
-      }
+  const empty = { names: [], slots: {} };
+  if (!g) return empty;
+
+  const canon = answers.map(a => norm(a.name));
+  const group = idxs => {
+    const slots = {};
+    for (const i of idxs) (slots[canon[i]] = slots[canon[i]] || []).push(i);
+    return { names: Object.keys(slots), slots };
+  };
+  const bySameName = i => answers.map((_, j) => j).filter(j => canon[j] === canon[i]);
+
+  // Tier 1: exact match on the canonical name.
+  const exact = answers.map((_, i) => i).filter(i => canon[i] === g);
+  if (exact.length) return group(exact);
+
+  // Tier 2: exact match on an alias.
+  const viaAlias = answers.map((_, i) => i)
+    .filter(i => (answers[i].aliases || []).some(x => norm(x) === g));
+  if (viaAlias.length) return group(viaAlias.flatMap(bySameName));
+
+  // Tier 3: fuzzy, nearest wins; genuine ties count as ambiguous.
+  let bestD = Infinity, best = [];
+  answers.forEach((a, i) => {
+    for (const f of [canon[i], ...(a.aliases || []).map(norm)]) {
+      const d = lev(g, f);
+      if (d > tolerance(f.length)) continue;
+      if (d < bestD) { bestD = d; best = [i]; }
+      else if (d === bestD && !best.includes(i)) best.push(i);
     }
-  }
-  if (hit < 0) return [];
-  const target = norm(answers[hit].name);
-  return answers.map((a, i) => (norm(a.name) === target ? i : -1)).filter(i => i >= 0);
+  });
+  if (!best.length) return empty;
+  return group(best.flatMap(bySameName));
 }
 
 /* ---------- puzzle data ---------- */
@@ -314,13 +345,29 @@ async function loadPuzzles() {
   }
 }
 function normalizePuzzle(p, obfuscated) {
-  const answers = (p.answers || []).map(a => ({
-    rank: a.rank,
-    label: a.label || null,
-    value: a.value != null ? a.value : null,
-    name: obfuscated ? deob(a.name) : a.name,
-    aliases: (a.aliases || []).map(x => (obfuscated ? deob(x) : x)),
-  }));
+  const answers = (p.answers || []).map(a => {
+    const name = obfuscated ? deob(a.name) : a.name;
+    const aliases = (a.aliases || []).map(x => (obfuscated ? deob(x) : x));
+
+    // Derive the last word as an alias: the surname for a person, the nickname
+    // for a team. Typing "Manning" or "Eagles" is how people actually answer,
+    // and a hand-written alias list will always have holes. Where this creates
+    // a genuine collision ("Bush" is two presidents) resolveGuess asks the
+    // player to be more specific rather than penalising them.
+    const words = String(name).trim().split(/\s+/);
+    if (words.length > 1) {
+      const last = words[words.length - 1].replace(/[^A-Za-z'’-]/g, '');
+      if (last.length >= 3 && !aliases.some(x => norm(x) === norm(last))) aliases.push(last);
+    }
+
+    return {
+      rank: a.rank,
+      label: a.label || null,
+      value: a.value != null ? a.value : null,
+      clue: a.clue ? (obfuscated ? deob(a.clue) : a.clue) : null,
+      name, aliases,
+    };
+  });
   return Object.assign({}, p, { type: p.type || 'ranked', answers });
 }
 
@@ -390,7 +437,10 @@ let game = null;        // { puzzle, found:Set, misses, over, challenge }
 let sheet = null;       // null | 'source' | 'settings' | 'history'
 let flash = { msg: '', kind: '' };
 
-const HINT_BUDGET = 3;
+// Five steps, not three, now that a single slot can absorb up to three of
+// them. Spending your whole allowance prising open one answer is a real
+// choice, but it shouldn't be the only one available.
+const HINT_BUDGET = 5;
 
 // Two independent axes. Obscurity is whether you care about the subject;
 // difficulty is whether you can actually finish the list once you do. A puzzle
@@ -402,7 +452,8 @@ const DIFFICULTY = { 1: 'gentle', 2: 'straightforward', 3: 'testing', 4: 'hard',
 function startGame(puzzle, challenge) {
   game = {
     puzzle, found: new Set(), misses: 0, over: false,
-    hinted: new Set(), hintsLeft: HINT_BUDGET,
+    hinted: new Map(),               // slot index -> how many steps revealed
+    hintsLeft: HINT_BUDGET,
     tried: new Set(),
     challenge: challenge || null,
   };
@@ -428,10 +479,19 @@ function endGame() {
 }
 const hintsUsed = () => HINT_BUDGET - game.hintsLeft;
 
+// Tapping a slot again buys the next step on its ladder, until that slot is
+// exhausted. Never charges for a tap that reveals nothing.
 function spendHint(i) {
-  if (game.over || game.hintsLeft <= 0 || game.found.has(i) || game.hinted.has(i)) return;
+  if (game.over || game.hintsLeft <= 0 || game.found.has(i)) return;
+  const max = hintLadder(game.puzzle.answers[i]).length;
+  const at = game.hinted.get(i) || 0;
+  if (at >= max) {
+    flash = { msg: 'No more hints for that one', kind: 'dup' };
+    render();
+    return;
+  }
   game.hintsLeft--;
-  game.hinted.add(i);
+  game.hinted.set(i, at + 1);
   flash = { msg: '', kind: '' };
   render();
 }
@@ -455,7 +515,26 @@ function submitGuess() {
   }
   game.tried.add(key);
 
-  const hits = matchGuesses(raw, game.puzzle.answers);
+  const res = resolveGuess(raw, game.puzzle.answers);
+
+  // An ambiguous guess is narrowed where possible: if all but one candidate is
+  // already filled, the player clearly means the remaining one. Otherwise ask
+  // for more — without naming the candidates, which would hand over answers.
+  let names = res.names;
+  if (names.length > 1) {
+    const open = names.filter(n => res.slots[n].some(i => !game.found.has(i)));
+    if (open.length === 1) names = open;
+    else if (open.length > 1) {
+      game.tried.delete(key);          // let them retry, more specifically
+      game.just = new Set();
+      flash = { msg: 'More than one answer matches — be more specific', kind: 'dup' };
+      render();
+      const i1 = document.getElementById('guess'); if (i1) i1.focus();
+      return;
+    }
+  }
+
+  const hits = names.length ? res.slots[names[0]] : [];
   const fresh = hits.filter(i => !game.found.has(i));
   game.just = new Set(fresh);          // highlighted on this render only
   if (!hits.length) {
@@ -519,12 +598,33 @@ function viewHome() {
   </div>`;
 }
 
-// A hint shows the first letter of each word and the shape of the rest, which
-// is enough to jog a name you half-know without simply handing it over.
-function mask(name) {
+/* ---------- hints ----------
+   Three steps per slot, tapped one at a time, each costing one from the
+   budget. A clue first, because letters are a crossword mechanic and don't
+   teach you anything; then the shape of the name; then most of it. A slot
+   with no authored clue starts at the initials instead. */
+function maskInitials(name) {
   return String(name).split(/\s+/)
     .map(w => w.charAt(0) + '·'.repeat(Math.max(0, w.length - 1)))
     .join(' ');
+}
+function maskHalf(name) {
+  return String(name).split(/\s+/)
+    .map(w => {
+      const keep = Math.max(1, Math.ceil(w.length * 0.55));
+      return w.slice(0, keep) + '·'.repeat(Math.max(0, w.length - keep));
+    })
+    .join(' ');
+}
+// The ladder for one answer: [{kind, text}, ...]. Steps are only as many as
+// the answer can support, so maxTier varies per slot.
+function hintLadder(a) {
+  const steps = [];
+  if (a.clue) steps.push({ kind: 'clue', text: a.clue });
+  steps.push({ kind: 'mask', text: maskInitials(a.name) });
+  const half = maskHalf(a.name);
+  if (half !== maskInitials(a.name)) steps.push({ kind: 'mask', text: half });
+  return steps;
 }
 
 function slotsHtml(p, found, reveal, hinted, canHint, just) {
@@ -533,14 +633,22 @@ function slotsHtml(p, found, reveal, hinted, canHint, just) {
   return `<div class="slots">` + p.answers.map((a, i) => {
     const got = found.has(i);
     const show = !got && reveal;
-    const hint = !got && !show && hinted.has(i);
+    const tier = !got && !show ? (hinted.get(i) || 0) : 0;
+    // Reveals are cumulative: buying the letters doesn't take the clue away.
+    // The clue itself is prose and lives in a full-width strip below the grid,
+    // because wrapping a sentence inside a half-width slot destroys the layout.
+    const maskTier = a.clue ? tier - 1 : tier;
+    const hint = tier > 0;
     const label = p.type === 'recency' ? (a.label || a.rank) : a.rank + '.';
-    const name = got || show ? esc(a.name) : hint ? esc(mask(a.name)) : '???';
+    const name = got || show ? esc(a.name)
+      : maskTier >= 2 ? esc(maskHalf(a.name))
+      : maskTier === 1 ? esc(maskInitials(a.name))
+      : hint ? 'clue ↓' : '???';
     // A hinted ranked slot also gives up its value — on a list of areas or
     // totals the magnitude is itself a clue.
     const val = (got || show || hint) && a.value != null ? fmtNum(a.value) : '';
-    const tappable = !got && !show && !hint && canHint;
-    return `<div class="slot ${got ? 'got' : show ? 'shown' : hint ? 'hint' : ''}${just.has(i) ? ' just' : ''}"
+    const tappable = !got && !show && canHint && tier < hintLadder(a).length;
+    return `<div class="slot ${got ? 'got' : show ? 'shown' : hint ? 'hint' : ''}${hint && maskTier < 1 ? ' clue' : ''}${just.has(i) ? ' just' : ''}"
       ${just.has(i) ? 'data-just="1"' : ''}
       ${tappable ? `data-hint="${i}" role="button" tabindex="0"` : ''}>
       <span class="n">${esc(label)}</span>
@@ -548,6 +656,15 @@ function slotsHtml(p, found, reveal, hinted, canHint, just) {
       <span class="vl">${val}</span>
     </div>`;
   }).join('') + `</div>`;
+}
+
+// Clues bought so far, full width beneath the grid and keyed to their slot.
+function cluesHtml(p, found, hinted) {
+  const rows = p.answers
+    .map((a, i) => ({ a, i }))
+    .filter(({ a, i }) => a.clue && (hinted.get(i) || 0) > 0 && !found.has(i))
+    .map(({ a }) => `<div class="cluerow"><b>${esc(p.type === 'recency' ? (a.label || a.rank) : a.rank)}</b><span>${esc(a.clue)}</span></div>`);
+  return rows.length ? `<div class="clues">${rows.join('')}</div>` : '';
 }
 
 function viewGame() {
@@ -583,6 +700,7 @@ function viewGame() {
       </div>
     </div>
     ${slotsHtml(p, game.found, false, game.hinted, game.hintsLeft > 0, game.just)}
+    ${cluesHtml(p, game.found, game.hinted)}
   </div>`;
 }
 

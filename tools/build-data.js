@@ -52,6 +52,30 @@ const puzzles = src.puzzles.map(p => {
       problems.push(`${p.id}: the prompt or metric names the answer "${a.name}" — that is a spoiler`);
     }
   }
+  // A clue has to point at its answer without containing it, and without
+  // giving away a different answer in the same list.
+  const names = p.answers.map(a => flat(a.name));
+  p.answers.forEach((a, ai) => {
+    if (!a.clue) return;
+    const c = flat(a.clue);
+    const own = [a.name, ...(a.aliases || [])].filter(s => String(s).length >= 4);
+    for (const s of own) {
+      if (c.includes(flat(s))) problems.push(`${p.id} #${a.rank}: clue contains its own answer ("${s}")`);
+    }
+    // Other answers count by nickname too: "beat New England 29-13" gives away
+    // the Patriots just as surely as spelling out the full franchise name.
+    p.answers.forEach((other, ni) => {
+      if (flat(other.name) === flat(a.name)) return;
+      for (const form of [other.name, ...(other.aliases || [])]) {
+        if (String(form).length < 4) continue;
+        if (c.includes(flat(form))) {
+          problems.push(`${p.id} #${a.rank}: clue names another answer ("${form}")`);
+          return;
+        }
+      }
+    });
+  });
+
   // Repeat-count phrasing is an unasked-for hint: it tells the player a name
   // fills more than one slot before they have worked anything out.
   const hint = /appears?\s+(twice|three times|more than once)|appear\s+(twice|three times|more than once)|\b(two|three|four)\s+(men|women|teams?|franchises?|nations?|countries|players?|people)\s+appear/i;
@@ -66,6 +90,10 @@ const puzzles = src.puzzles.map(p => {
       label: a.label,
       value: a.value,
       name: ob(a.name),
+      // Obfuscated like the answers: a clue is hint content, and reading the
+      // whole ladder out of the network response defeats the point of paying
+      // for it a step at a time.
+      clue: a.clue ? ob(a.clue) : undefined,
       aliases: (a.aliases || []).map(ob),
     })),
   });
