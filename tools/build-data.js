@@ -16,6 +16,72 @@ const path = require('path');
 const XKEY = 'tens';
 const SRC = path.join(__dirname, '..', 'data', 'puzzles.json');
 const OUT = path.join(__dirname, '..', 'data', 'puzzles.min.json');
+const APP = path.join(__dirname, '..', 'index.html');
+
+/*
+ * Load the app's real matching code, rather than a copy of it.
+ *
+ * An alias hole is the failure mode this project keeps hitting — "Manning"
+ * and "Yellow" were both rejected mid-game — and it will recur with every
+ * batch of content. So the audit has to run at build time, and it has to run
+ * against the code that actually ships. Re-implementing the matcher here
+ * would drift within a week and start passing guesses the app rejects, which
+ * is worse than no audit at all.
+ */
+function loadMatcher() {
+  const src = fs.readFileSync(APP, 'utf8');
+  const m = src.match(/=== MATCHER START[\s\S]*?===\s*\*\/([\s\S]*?)\/\* === MATCHER END/);
+  if (!m) {
+    console.error('Could not find the MATCHER markers in index.html. The audit cannot run against stale code, so this is fatal.');
+    process.exit(1);
+  }
+  const api = {};
+  new Function('exports', m[1] + '\nexports.norm = norm; exports.resolveGuess = resolveGuess; exports.answerAliases = answerAliases; exports.derivedAliases = derivedAliases; exports.WEAK = WEAK;')(api);
+  return api;
+}
+
+// Every shorthand a player might type for this answer, as the app would see it.
+function candidatesFor(M, a) {
+  const cands = new Set([a.name, ...(a.aliases || []), ...M.answerAliases(a.name, a.aliases || [])]);
+  for (const w of M.norm(a.name).split(' ')) {
+    if (w.length >= 4 && !M.WEAK.has(w)) cands.add(w);
+  }
+  return [...cands].filter(Boolean);
+}
+
+// Returns { fatal: [...], notes: [...] }.
+function auditAliases(M, puzzles) {
+  const fatal = [], notes = [];
+  for (const p of puzzles) {
+    const answers = p.answers.map(a => ({
+      name: a.name,
+      aliases: M.answerAliases(a.name, a.aliases || []),
+    }));
+    p.answers.forEach((a, ai) => {
+      for (const guess of candidatesFor(M, a)) {
+        const r = M.resolveGuess(guess, answers);
+        if (!r.names.length) {
+          fatal.push(`${p.id} / ${a.name}: "${guess}" is REJECTED — a player typing it loses a heart`);
+        } else if (r.names.length > 1) {
+          notes.push(`${p.id}: "${guess}" matches ${r.names.length} answers — the app will ask which`);
+        } else if (M.norm(r.names[0]) !== M.norm(a.name)) {
+          const other = answers.find(x => M.norm(x.name) === r.names[0]);
+          const otherName = other ? other.name : r.names[0];
+          // A guess that IS another answer's exact name belongs to that answer.
+          // "germany" is West Germany's derived shorthand but Germany's actual
+          // name, and giving the player Germany is right: it's on the list, so
+          // nothing is lost. Only a genuine misdirection is fatal.
+          if (M.norm(otherName) === M.norm(guess)) {
+            notes.push(`${p.id}: "${guess}" is shorthand for ${a.name} but the exact name of ${otherName} — resolves to ${otherName}`);
+          } else {
+            fatal.push(`${p.id} / ${a.name}: "${guess}" resolves to the WRONG answer (${otherName})`);
+          }
+        }
+      }
+    });
+  }
+  return { fatal, notes: [...new Set(notes)] };
+}
 
 function ob(str) {
   const utf8 = Buffer.from(String(str), 'utf8').toString('binary');
@@ -99,9 +165,19 @@ const puzzles = src.puzzles.map(p => {
   });
 });
 
+// Alias audit, against the app's own matching code.
+const M = loadMatcher();
+const audit = auditAliases(M, src.puzzles);
+problems.push(...audit.fatal);
+
 if (problems.length) {
   console.error('Refusing to build:\n  ' + problems.join('\n  '));
   process.exit(1);
+}
+
+if (audit.notes.length) {
+  console.log('Ambiguous guesses (handled — the app asks the player to be specific):');
+  for (const n of audit.notes) console.log('  ' + n);
 }
 
 fs.writeFileSync(OUT, JSON.stringify({ schemaVersion: src.schemaVersion, obfuscated: true, puzzles }));

@@ -252,6 +252,14 @@ function deob(s) {
   } catch { return s; }
 }
 
+/* === MATCHER START — extracted verbatim by tools/build-data.js ===============
+   Everything between these markers is read out of this file and evaluated by
+   the build, which then audits every answer in the catalogue against the real
+   matching code. Do not duplicate any of it elsewhere: the whole point is that
+   there is one copy, so the audit can never drift from what ships. Keep this
+   region free of DOM and app-state references.
+   ========================================================================== */
+
 /* ---------- answer matching ----------
    A correct answer rejected on a technicality is the worst thing this kind of
    game does, so matching is generous: diacritics and punctuation stripped,
@@ -365,6 +373,19 @@ function resolveGuess(guess, answers) {
   return group(best.flatMap(bySameName));
 }
 
+// The full alias set for one answer: what was written down, plus what can be
+// derived. normalizePuzzle and the build's audit both call this, so the guesses
+// the audit tries are exactly the ones the app will accept.
+function answerAliases(name, explicit) {
+  const aliases = (explicit || []).slice();
+  for (const x of derivedAliases(name)) {
+    if (!aliases.some(y => norm(y) === x)) aliases.push(x);
+  }
+  return aliases;
+}
+
+/* === MATCHER END ========================================================== */
+
 /* ---------- puzzle data ---------- */
 let PUZZLES = [];
 async function loadPuzzles() {
@@ -383,11 +404,7 @@ async function loadPuzzles() {
 function normalizePuzzle(p, obfuscated) {
   const answers = (p.answers || []).map(a => {
     const name = obfuscated ? deob(a.name) : a.name;
-    const aliases = (a.aliases || []).map(x => (obfuscated ? deob(x) : x));
-
-    for (const x of derivedAliases(name)) {
-      if (!aliases.some(y => norm(y) === x)) aliases.push(x);
-    }
+    const aliases = answerAliases(name, (a.aliases || []).map(x => (obfuscated ? deob(x) : x)));
 
     return {
       rank: a.rank,
@@ -506,11 +523,59 @@ function endGame() {
     ts: Date.now(),
   });
   store.history = store.history.slice(0, 200);
+  clearActive();                     // finished or given up: nothing to resume
   save();
   view = 'result';
   render();
 }
 const hintsUsed = () => HINT_BUDGET - game.hintsLeft;
+
+/* ---------- an interrupted quiz survives ----------
+   Closing Safari, switching apps or being evicted from memory must not cost a
+   game in progress. Only finishing it or affirmatively giving up clears it. */
+function sigOf(p) {
+  const s = p.answers.map(a => a.name).join('|');
+  let h = 0;
+  for (let i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) | 0;
+  return h;
+}
+function saveActive() {
+  if (!game || game.over) return;
+  store.active = {
+    id: game.puzzle.id,
+    sig: sigOf(game.puzzle),
+    found: [...game.found],
+    misses: game.misses,
+    hinted: [...game.hinted],
+    hintsLeft: game.hintsLeft,
+    tried: [...game.tried],
+    challenge: game.challenge,
+  };
+  save();
+}
+function clearActive() {
+  if (store.active) { store.active = null; save(); }
+}
+// Rebuilds the saved game, or returns null if it can't be trusted.
+function resumeGame() {
+  const a = store.active;
+  if (!a) return null;
+  const p = PUZZLES.find(x => x.id === a.id);
+  // The puzzle was retired, or its answers were edited since — a stale index
+  // would restore the wrong slots, so drop it rather than restore it wrong.
+  if (!p || sigOf(p) !== a.sig) { clearActive(); return null; }
+  return {
+    puzzle: p,
+    found: new Set(a.found || []),
+    misses: a.misses || 0,
+    over: false,
+    hinted: new Map(a.hinted || []),
+    hintsLeft: a.hintsLeft == null ? HINT_BUDGET : a.hintsLeft,
+    tried: new Set(a.tried || []),
+    challenge: a.challenge || null,
+    just: new Set(),
+  };
+}
 
 // Tapping a slot again buys the next step on its ladder, until that slot is
 // exhausted. Never charges for a tap that reveals nothing.
@@ -604,6 +669,9 @@ function render() {
   // A deferred update lands here: the moment the player is off the game screen
   // there is nothing to lose, so apply it.
   if (pendingReload && view !== 'game') return applyReload();
+  // One hook covers every mutation: any change that redraws the game screen is
+  // persisted, so there's no path that changes state without saving it.
+  if (view === 'game') saveActive();
   const app = document.getElementById('app');
   app.innerHTML = (view === 'home' ? viewHome() : view === 'game' ? viewGame() : viewResult())
     + (sheet ? viewSheet() : '');
@@ -613,6 +681,8 @@ function render() {
 function viewHome() {
   const h = store.history;
   const pool = eligible().length;
+  // Backing out to home doesn't abandon a quiz either — it's offered back.
+  const resumable = !!(store.active && PUZZLES.some(p => p.id === store.active.id));
   // No scoreboard. Running totals turn a game you play on a whim into
   // something with a record to protect.
   return `
@@ -622,7 +692,8 @@ function viewHome() {
       <p>Name the top ten. Five misses and you're out.<br>Every list carries its source.</p>
     </div>
     ${pool ? '' : `<div class="note">Nothing matches your rotation filters. Widen them, or pick a category directly.</div>`}
-    <button class="btn btn-primary btn-block" id="play" ${pool ? '' : 'disabled'}>Random quiz</button>
+    ${resumable ? `<button class="btn btn-primary btn-block" id="resume">Resume quiz</button>` : ''}
+    <button class="btn ${resumable ? 'btn-secondary' : 'btn-primary'} btn-block" id="play" ${pool ? '' : 'disabled'} ${resumable ? 'style="margin-top:8px"' : ''}>Random quiz</button>
     <button class="btn btn-secondary btn-block" id="open-pick" style="margin-top:8px">Pick a category</button>
     <div style="display:flex;gap:8px;margin-top:10px;">
       <button class="btn btn-ghost btn-sm" id="open-settings" style="flex:1">Rotation filters</button>
@@ -852,6 +923,11 @@ function on(id, fn, ev) {
 }
 function wire() {
   on('play', () => { const p = pickPuzzle(); if (p) startGame(p); });
+  on('resume', () => {
+    const saved = resumeGame();
+    if (saved) { game = saved; view = 'game'; flash = { msg: '', kind: '' }; render(); }
+    else render();
+  });
   on('open-pick', () => { sheet = 'pick'; render(); });
   on('pick-random', () => { sheet = null; const p = pickPuzzle(); if (p) startGame(p); });
   on('open-settings', () => { sheet = 'settings'; render(); });
@@ -947,12 +1023,36 @@ function registerSW() {
   registerSW();            // before any early return, so a shared link still registers
   await loadPuzzles();
   const link = readHash();
+
   if (link) {
     const p = PUZZLES.find(x => x.id === link.id);
     // A shared puzzle bypasses the domain and obscurity filters on purpose —
     // it was chosen by a person, not the rotation.
-    if (p) { startGame(p, link.score != null ? { score: link.score } : null); return; }
+    if (p) {
+      // If the interrupted game IS this quiz, pick it up where it stopped
+      // instead of restarting it from scratch.
+      // Consume the fragment immediately. Otherwise it sits in the URL and
+      // every relaunch restarts the shared quiz instead of resuming whatever
+      // was in progress — and the challenge score survives anyway, because
+      // it's persisted with the game.
+      const saved = store.active && store.active.id === p.id ? resumeGame() : null;
+      clearHash();
+      if (saved) {
+        game = saved;
+        if (link.score != null) game.challenge = { score: link.score };
+        view = 'game';
+        render();
+        return;
+      }
+      startGame(p, link.score != null ? { score: link.score } : null);
+      return;
+    }
   }
+
+  // Straight back into an unfinished quiz. Leaving the app isn't giving up.
+  const saved = resumeGame();
+  if (saved) { game = saved; view = 'game'; render(); return; }
+
   render();
 })();
 </script>
