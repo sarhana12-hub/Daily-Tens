@@ -189,6 +189,1036 @@
       "tags": [
         "oscars"
       ]
+    },
+    {
+      "id": "nfl-superbowl-recent",
+      "type": "recency",
+      "domain": "sports",
+      "obscurity": 1,
+      "tags": [
+        "nfl"
+      ],
+      "prompt": "The ten most recent Super Bowl champions",
+      "metric": "Winning team of each Super Bowl, by the calendar year the game was played. Three franchises appear more than once.",
+      "source": {
+        "name": "NFL - Super Bowl History",
+        "url": "https://www.nfl.com/super-bowl/history/"
+      },
+      "asOf": "2026-02",
+      "volatility": "annual",
+      "generator": {
+        "template": "recent-winners",
+        "entity": "Super Bowl"
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "label": "2026",
+          "name": "Seattle Seahawks",
+          "aliases": [
+            "seahawks",
+            "seattle"
+          ]
+        },
+        {
+          "rank": 2,
+          "label": "2025",
+          "name": "Philadelphia Eagles",
+          "aliases": [
+            "eagles",
+            "philadelphia",
+            "philly"
+          ]
+        },
+        {
+          "rank": 3,
+          "label": "2024",
+          "name": "Kansas City Chiefs",
+          "aliases": [
+            "chiefs",
+            "kansas city",
+            "kc"
+          ]
+        },
+        {
+          "rank": 4,
+          "label": "2023",
+          "name": "Kansas City Chiefs",
+          "aliases": [
+            "chiefs",
+            "kansas city",
+            "kc"
+          ]
+        },
+        {
+          "rank": 5,
+          "label": "2022",
+          "name": "Los Angeles Rams",
+          "aliases": [
+            "rams",
+            "la rams"
+          ]
+        },
+        {
+          "rank": 6,
+          "label": "2021",
+          "name": "Tampa Bay Buccaneers",
+          "aliases": [
+            "buccaneers",
+            "bucs",
+            "tampa bay",
+            "tampa"
+          ]
+        },
+        {
+          "rank": 7,
+          "label": "2020",
+          "name": "Kansas City Chiefs",
+          "aliases": [
+            "chiefs",
+            "kansas city",
+            "kc"
+          ]
+        },
+        {
+          "rank": 8,
+          "label": "2019",
+          "name": "New England Patriots",
+          "aliases": [
+            "patriots",
+            "new england",
+            "pats"
+          ]
+        },
+        {
+          "rank": 9,
+          "label": "2018",
+          "name": "Philadelphia Eagles",
+          "aliases": [
+            "eagles",
+            "philadelphia",
+            "philly"
+          ]
+        },
+        {
+          "rank": 10,
+          "label": "2017",
+          "name": "New England Patriots",
+          "aliases": [
+            "patriots",
+            "new england",
+            "pats"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nfl-passing-yards-career",
+      "type": "ranked",
+      "domain": "sports",
+      "obscurity": 2,
+      "tags": [
+        "nfl"
+      ],
+      "prompt": "NFL career passing yards leaders",
+      "metric": "Most regular-season passing yards in a career, all time. Active players included.",
+      "source": {
+        "name": "Pro Football Reference - Career Passing Yards",
+        "url": "https://www.pro-football-reference.com/leaders/pass_yds_career.htm"
+      },
+      "asOf": "2026-02",
+      "volatility": "annual",
+      "ambiguity": "The ten names are stable, but their order shifts while active quarterbacks keep playing. Order here is as of the 2026 season.",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Tom Brady",
+          "value": null,
+          "aliases": [
+            "brady"
+          ]
+        },
+        {
+          "rank": 2,
+          "name": "Drew Brees",
+          "value": null,
+          "aliases": [
+            "brees"
+          ]
+        },
+        {
+          "rank": 3,
+          "name": "Peyton Manning",
+          "value": null,
+          "aliases": [
+            "peyton",
+            "peyton manning"
+          ]
+        },
+        {
+          "rank": 4,
+          "name": "Brett Favre",
+          "value": null,
+          "aliases": [
+            "favre"
+          ]
+        },
+        {
+          "rank": 5,
+          "name": "Aaron Rodgers",
+          "value": null,
+          "aliases": [
+            "rodgers"
+          ]
+        },
+        {
+          "rank": 6,
+          "name": "Matthew Stafford",
+          "value": null,
+          "aliases": [
+            "stafford",
+            "matt stafford"
+          ]
+        },
+        {
+          "rank": 7,
+          "name": "Ben Roethlisberger",
+          "value": null,
+          "aliases": [
+            "roethlisberger",
+            "big ben"
+          ]
+        },
+        {
+          "rank": 8,
+          "name": "Philip Rivers",
+          "value": null,
+          "aliases": [
+            "rivers"
+          ]
+        },
+        {
+          "rank": 9,
+          "name": "Matt Ryan",
+          "value": null,
+          "aliases": [
+            "ryan",
+            "matty ice"
+          ]
+        },
+        {
+          "rank": 10,
+          "name": "Dan Marino",
+          "value": null,
+          "aliases": [
+            "marino"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "soccer-worldcup-recent",
+      "type": "recency",
+      "domain": "sports",
+      "obscurity": 1,
+      "tags": [
+        "soccer"
+      ],
+      "prompt": "The ten most recent FIFA World Cup winners",
+      "metric": "Winner of the men's FIFA World Cup, by tournament year. Three nations appear twice.",
+      "source": {
+        "name": "FIFA - World Cup",
+        "url": "https://www.fifa.com/en/tournaments/mens/worldcup"
+      },
+      "asOf": "2026-07",
+      "volatility": "annual",
+      "generator": {
+        "template": "recent-winners",
+        "entity": "FIFA World Cup"
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "label": "2026",
+          "name": "Spain",
+          "aliases": [
+            "espana",
+            "la roja"
+          ]
+        },
+        {
+          "rank": 2,
+          "label": "2022",
+          "name": "Argentina",
+          "aliases": []
+        },
+        {
+          "rank": 3,
+          "label": "2018",
+          "name": "France",
+          "aliases": [
+            "les bleus"
+          ]
+        },
+        {
+          "rank": 4,
+          "label": "2014",
+          "name": "Germany",
+          "aliases": [
+            "deutschland"
+          ]
+        },
+        {
+          "rank": 5,
+          "label": "2010",
+          "name": "Spain",
+          "aliases": [
+            "espana",
+            "la roja"
+          ]
+        },
+        {
+          "rank": 6,
+          "label": "2006",
+          "name": "Italy",
+          "aliases": [
+            "italia",
+            "azzurri"
+          ]
+        },
+        {
+          "rank": 7,
+          "label": "2002",
+          "name": "Brazil",
+          "aliases": [
+            "brasil"
+          ]
+        },
+        {
+          "rank": 8,
+          "label": "1998",
+          "name": "France",
+          "aliases": [
+            "les bleus"
+          ]
+        },
+        {
+          "rank": 9,
+          "label": "1994",
+          "name": "Brazil",
+          "aliases": [
+            "brasil"
+          ]
+        },
+        {
+          "rank": 10,
+          "label": "1990",
+          "name": "West Germany",
+          "aliases": [
+            "west german"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nba-champions-recent",
+      "type": "recency",
+      "domain": "sports",
+      "obscurity": 1,
+      "tags": [
+        "basketball"
+      ],
+      "prompt": "The ten most recent NBA champions",
+      "metric": "Winner of the NBA Finals, by season end year. One franchise appears three times.",
+      "source": {
+        "name": "NBA - NBA Finals history",
+        "url": "https://www.nba.com/history/nba-finals"
+      },
+      "asOf": "2026-06",
+      "volatility": "annual",
+      "generator": {
+        "template": "recent-winners",
+        "entity": "NBA Finals"
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "label": "2026",
+          "name": "New York Knicks",
+          "aliases": [
+            "knicks",
+            "new york",
+            "ny knicks"
+          ]
+        },
+        {
+          "rank": 2,
+          "label": "2025",
+          "name": "Oklahoma City Thunder",
+          "aliases": [
+            "thunder",
+            "okc",
+            "oklahoma city"
+          ]
+        },
+        {
+          "rank": 3,
+          "label": "2024",
+          "name": "Boston Celtics",
+          "aliases": [
+            "celtics",
+            "boston"
+          ]
+        },
+        {
+          "rank": 4,
+          "label": "2023",
+          "name": "Denver Nuggets",
+          "aliases": [
+            "nuggets",
+            "denver"
+          ]
+        },
+        {
+          "rank": 5,
+          "label": "2022",
+          "name": "Golden State Warriors",
+          "aliases": [
+            "warriors",
+            "golden state",
+            "gsw"
+          ]
+        },
+        {
+          "rank": 6,
+          "label": "2021",
+          "name": "Milwaukee Bucks",
+          "aliases": [
+            "bucks",
+            "milwaukee"
+          ]
+        },
+        {
+          "rank": 7,
+          "label": "2020",
+          "name": "Los Angeles Lakers",
+          "aliases": [
+            "lakers",
+            "la lakers"
+          ]
+        },
+        {
+          "rank": 8,
+          "label": "2019",
+          "name": "Toronto Raptors",
+          "aliases": [
+            "raptors",
+            "toronto"
+          ]
+        },
+        {
+          "rank": 9,
+          "label": "2018",
+          "name": "Golden State Warriors",
+          "aliases": [
+            "warriors",
+            "golden state",
+            "gsw"
+          ]
+        },
+        {
+          "rank": 10,
+          "label": "2017",
+          "name": "Golden State Warriors",
+          "aliases": [
+            "warriors",
+            "golden state",
+            "gsw"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "running-olympic-100m-men",
+      "type": "recency",
+      "domain": "sports",
+      "obscurity": 2,
+      "tags": [
+        "running"
+      ],
+      "prompt": "The ten most recent men's Olympic 100m champions",
+      "metric": "Gold medallist in the men's Olympic 100 metres, by Games. One man appears three times.",
+      "source": {
+        "name": "Olympics.com - Olympic 100m winners",
+        "url": "https://www.olympics.com/en/news/olympics-100-metres-winners-list-men-women-gold-medals-champions"
+      },
+      "asOf": "2024-08",
+      "volatility": "annual",
+      "generator": {
+        "template": "recent-winners",
+        "entity": "Olympic men's 100 metres"
+      },
+      "ambiguity": "Ben Johnson crossed first in 1988 but was disqualified for doping and the gold reassigned to Carl Lewis, which is what this puzzle uses.",
+      "answers": [
+        {
+          "rank": 1,
+          "label": "2024",
+          "name": "Noah Lyles",
+          "aliases": [
+            "lyles"
+          ]
+        },
+        {
+          "rank": 2,
+          "label": "2020",
+          "name": "Marcell Jacobs",
+          "aliases": [
+            "jacobs",
+            "lamont marcell jacobs"
+          ]
+        },
+        {
+          "rank": 3,
+          "label": "2016",
+          "name": "Usain Bolt",
+          "aliases": [
+            "bolt"
+          ]
+        },
+        {
+          "rank": 4,
+          "label": "2012",
+          "name": "Usain Bolt",
+          "aliases": [
+            "bolt"
+          ]
+        },
+        {
+          "rank": 5,
+          "label": "2008",
+          "name": "Usain Bolt",
+          "aliases": [
+            "bolt"
+          ]
+        },
+        {
+          "rank": 6,
+          "label": "2004",
+          "name": "Justin Gatlin",
+          "aliases": [
+            "gatlin"
+          ]
+        },
+        {
+          "rank": 7,
+          "label": "2000",
+          "name": "Maurice Greene",
+          "aliases": [
+            "greene"
+          ]
+        },
+        {
+          "rank": 8,
+          "label": "1996",
+          "name": "Donovan Bailey",
+          "aliases": [
+            "bailey"
+          ]
+        },
+        {
+          "rank": 9,
+          "label": "1992",
+          "name": "Linford Christie",
+          "aliases": [
+            "christie"
+          ]
+        },
+        {
+          "rank": 10,
+          "label": "1988",
+          "name": "Carl Lewis",
+          "aliases": [
+            "lewis"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "econ-gdp-nominal",
+      "type": "ranked",
+      "domain": "geography",
+      "obscurity": 1,
+      "tags": [
+        "economics"
+      ],
+      "prompt": "Largest economies by nominal GDP",
+      "metric": "Gross domestic product at current prices in US dollars, IMF projection for 2026",
+      "source": {
+        "name": "IMF - World Economic Outlook",
+        "url": "https://www.imf.org/en/Publications/WEO"
+      },
+      "asOf": "2026-04",
+      "volatility": "annual",
+      "ambiguity": "Ranked by NOMINAL GDP. Measured at purchasing power parity the order differs sharply - China ranks first and India third.",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "United States",
+          "value": null,
+          "aliases": [
+            "usa",
+            "us",
+            "america",
+            "united states of america"
+          ]
+        },
+        {
+          "rank": 2,
+          "name": "China",
+          "value": null,
+          "aliases": [
+            "prc"
+          ]
+        },
+        {
+          "rank": 3,
+          "name": "Germany",
+          "value": null,
+          "aliases": [
+            "deutschland"
+          ]
+        },
+        {
+          "rank": 4,
+          "name": "India",
+          "value": null,
+          "aliases": [
+            "bharat"
+          ]
+        },
+        {
+          "rank": 5,
+          "name": "Japan",
+          "value": null,
+          "aliases": []
+        },
+        {
+          "rank": 6,
+          "name": "United Kingdom",
+          "value": null,
+          "aliases": [
+            "uk",
+            "britain",
+            "great britain",
+            "england"
+          ]
+        },
+        {
+          "rank": 7,
+          "name": "France",
+          "value": null,
+          "aliases": []
+        },
+        {
+          "rank": 8,
+          "name": "Italy",
+          "value": null,
+          "aliases": [
+            "italia"
+          ]
+        },
+        {
+          "rank": 9,
+          "name": "Brazil",
+          "value": null,
+          "aliases": [
+            "brasil"
+          ]
+        },
+        {
+          "rank": 10,
+          "name": "Canada",
+          "value": null,
+          "aliases": []
+        }
+      ]
+    },
+    {
+      "id": "geo-highest-mountains",
+      "type": "ranked",
+      "domain": "geography",
+      "obscurity": 2,
+      "tags": [],
+      "prompt": "Highest mountains in the world",
+      "metric": "Elevation above sea level, in metres. Distinct peaks only, not subsidiary summits.",
+      "source": {
+        "name": "Encyclopaedia Britannica - highest mountains",
+        "url": "https://www.britannica.com/topic/list-of-the-highest-mountains-in-the-world-2225986"
+      },
+      "asOf": "2024-12-31",
+      "volatility": "evergreen",
+      "ambiguity": "Ranked by elevation above sea level. By prominence, or by height above base, a very different ten appears.",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Everest",
+          "value": 8849,
+          "aliases": [
+            "mount everest",
+            "sagarmatha",
+            "chomolungma"
+          ]
+        },
+        {
+          "rank": 2,
+          "name": "K2",
+          "value": 8611,
+          "aliases": [
+            "chhogori",
+            "mount godwin austen"
+          ]
+        },
+        {
+          "rank": 3,
+          "name": "Kangchenjunga",
+          "value": 8586,
+          "aliases": [
+            "kanchenjunga"
+          ]
+        },
+        {
+          "rank": 4,
+          "name": "Lhotse",
+          "value": 8516,
+          "aliases": []
+        },
+        {
+          "rank": 5,
+          "name": "Makalu",
+          "value": 8485,
+          "aliases": []
+        },
+        {
+          "rank": 6,
+          "name": "Cho Oyu",
+          "value": 8188,
+          "aliases": []
+        },
+        {
+          "rank": 7,
+          "name": "Dhaulagiri",
+          "value": 8167,
+          "aliases": [
+            "dhaulagiri i"
+          ]
+        },
+        {
+          "rank": 8,
+          "name": "Manaslu",
+          "value": 8163,
+          "aliases": []
+        },
+        {
+          "rank": 9,
+          "name": "Nanga Parbat",
+          "value": 8126,
+          "aliases": []
+        },
+        {
+          "rank": 10,
+          "name": "Annapurna",
+          "value": 8091,
+          "aliases": [
+            "annapurna i"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "geo-longest-rivers",
+      "type": "ranked",
+      "domain": "geography",
+      "obscurity": 2,
+      "tags": [],
+      "prompt": "Longest rivers in the world",
+      "metric": "Length in kilometres from the most distant headstream to the mouth, including named tributary systems",
+      "source": {
+        "name": "Encyclopaedia Britannica - longest rivers",
+        "url": "https://www.britannica.com/topic/list-of-the-longest-rivers-on-Earth-2225894"
+      },
+      "asOf": "2024-12-31",
+      "volatility": "evergreen",
+      "ambiguity": "Whether the Nile or the Amazon is longest is genuinely contested and turns on which Amazon headstream you accept. This puzzle follows Britannica in placing the Nile first.",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Nile",
+          "value": 6650,
+          "aliases": []
+        },
+        {
+          "rank": 2,
+          "name": "Amazon",
+          "value": 6400,
+          "aliases": [
+            "amazonas"
+          ]
+        },
+        {
+          "rank": 3,
+          "name": "Yangtze",
+          "value": 6300,
+          "aliases": [
+            "chang jiang",
+            "changjiang"
+          ]
+        },
+        {
+          "rank": 4,
+          "name": "Mississippi-Missouri",
+          "value": 6275,
+          "aliases": [
+            "mississippi",
+            "missouri"
+          ]
+        },
+        {
+          "rank": 5,
+          "name": "Yenisei",
+          "value": 5539,
+          "aliases": [
+            "yenisey",
+            "yenisei angara"
+          ]
+        },
+        {
+          "rank": 6,
+          "name": "Yellow River",
+          "value": 5464,
+          "aliases": [
+            "huang he",
+            "hwang ho"
+          ]
+        },
+        {
+          "rank": 7,
+          "name": "Ob",
+          "value": 5410,
+          "aliases": [
+            "ob irtysh",
+            "irtysh"
+          ]
+        },
+        {
+          "rank": 8,
+          "name": "Parana",
+          "value": 4880,
+          "aliases": []
+        },
+        {
+          "rank": 9,
+          "name": "Congo",
+          "value": 4700,
+          "aliases": [
+            "zaire"
+          ]
+        },
+        {
+          "rank": 10,
+          "name": "Amur",
+          "value": 4444,
+          "aliases": [
+            "heilong jiang"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sci-largest-moons",
+      "type": "ranked",
+      "domain": "science",
+      "obscurity": 2,
+      "tags": [],
+      "prompt": "Largest moons in the solar system",
+      "metric": "Mean diameter in kilometres",
+      "source": {
+        "name": "NASA - Moons",
+        "url": "https://science.nasa.gov/solar-system/moons/"
+      },
+      "asOf": "2024-12-31",
+      "volatility": "evergreen",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Ganymede",
+          "value": 5268,
+          "aliases": []
+        },
+        {
+          "rank": 2,
+          "name": "Titan",
+          "value": 5149,
+          "aliases": []
+        },
+        {
+          "rank": 3,
+          "name": "Callisto",
+          "value": 4821,
+          "aliases": []
+        },
+        {
+          "rank": 4,
+          "name": "Io",
+          "value": 3643,
+          "aliases": []
+        },
+        {
+          "rank": 5,
+          "name": "Moon",
+          "value": 3475,
+          "aliases": [
+            "luna",
+            "earths moon",
+            "our moon"
+          ]
+        },
+        {
+          "rank": 6,
+          "name": "Europa",
+          "value": 3122,
+          "aliases": []
+        },
+        {
+          "rank": 7,
+          "name": "Triton",
+          "value": 2707,
+          "aliases": []
+        },
+        {
+          "rank": 8,
+          "name": "Titania",
+          "value": 1578,
+          "aliases": []
+        },
+        {
+          "rank": 9,
+          "name": "Rhea",
+          "value": 1528,
+          "aliases": []
+        },
+        {
+          "rank": 10,
+          "name": "Oberon",
+          "value": 1523,
+          "aliases": []
+        }
+      ]
+    },
+    {
+      "id": "hist-us-presidents-recent",
+      "type": "recency",
+      "domain": "history",
+      "obscurity": 1,
+      "tags": [],
+      "prompt": "The ten most recent US presidents",
+      "metric": "The ten most recent people to hold the office, most recent first. People, not terms - Donald Trump served non-consecutively and counts once.",
+      "source": {
+        "name": "The White House - Presidents",
+        "url": "https://www.whitehouse.gov/about-the-white-house/presidents/"
+      },
+      "asOf": "2026-01",
+      "volatility": "annual",
+      "generator": {
+        "template": "recent-holders",
+        "entity": "President of the United States"
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "label": "47th",
+          "name": "Donald Trump",
+          "aliases": [
+            "trump"
+          ]
+        },
+        {
+          "rank": 2,
+          "label": "46th",
+          "name": "Joe Biden",
+          "aliases": [
+            "biden"
+          ]
+        },
+        {
+          "rank": 3,
+          "label": "44th",
+          "name": "Barack Obama",
+          "aliases": [
+            "obama"
+          ]
+        },
+        {
+          "rank": 4,
+          "label": "43rd",
+          "name": "George W. Bush",
+          "aliases": [
+            "george w bush",
+            "gw bush",
+            "bush jr",
+            "dubya"
+          ]
+        },
+        {
+          "rank": 5,
+          "label": "42nd",
+          "name": "Bill Clinton",
+          "aliases": [
+            "clinton"
+          ]
+        },
+        {
+          "rank": 6,
+          "label": "41st",
+          "name": "George H. W. Bush",
+          "aliases": [
+            "george hw bush",
+            "ghw bush",
+            "bush sr"
+          ]
+        },
+        {
+          "rank": 7,
+          "label": "40th",
+          "name": "Ronald Reagan",
+          "aliases": [
+            "reagan"
+          ]
+        },
+        {
+          "rank": 8,
+          "label": "39th",
+          "name": "Jimmy Carter",
+          "aliases": [
+            "carter"
+          ]
+        },
+        {
+          "rank": 9,
+          "label": "38th",
+          "name": "Gerald Ford",
+          "aliases": [
+            "ford"
+          ]
+        },
+        {
+          "rank": 10,
+          "label": "37th",
+          "name": "Richard Nixon",
+          "aliases": [
+            "nixon"
+          ]
+        }
+      ]
     }
   ]
 }

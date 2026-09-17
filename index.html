@@ -54,16 +54,16 @@
   .icon-btn:active{background:var(--card-2);}
 
   /* chrome */
-  .topbar{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:14px 18px 6px;min-height:52px;}
+  .topbar{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:8px 18px 2px;min-height:38px;}
   .topbar h1{font-size:19px;margin:0;font-weight:700;letter-spacing:-.2px;}
-  .body{flex:1;padding:0 18px 44px;}
+  .body{flex:1;padding:0 18px 20px;}
   .footbar{position:sticky;bottom:0;background:linear-gradient(to top,var(--bg) 62%,rgba(16,20,24,0));padding:14px 18px calc(14px + env(safe-area-inset-bottom));margin-top:auto;}
 
   /* cards & type */
   .card{background:var(--card);border:1px solid var(--border-soft);border-radius:var(--radius);padding:16px;margin-bottom:12px;}
   h2.sec{font-size:13px;text-transform:uppercase;letter-spacing:.7px;color:var(--ink-dim);margin:22px 0 10px;font-weight:700;}
   .helper{color:var(--ink-soft);font-size:14px;line-height:1.5;margin:0 0 18px;}
-  .note{background:var(--mint-soft);border:1px solid rgba(95,211,168,.22);color:var(--ink);padding:12px 14px;border-radius:12px;font-size:13.5px;line-height:1.5;margin-bottom:14px;}
+  .note{background:var(--mint-soft);border:1px solid rgba(95,211,168,.22);color:var(--ink);padding:7px 11px;border-radius:9px;font-size:12px;line-height:1.35;margin-bottom:8px;}
 
   /* home */
   .hero{text-align:center;padding:36px 8px 26px;}
@@ -76,18 +76,30 @@
   .stat span{display:block;color:var(--ink-dim);font-size:11px;text-transform:uppercase;letter-spacing:.6px;margin-top:3px;}
 
   /* prompt */
-  .prompt{margin:4px 0 14px;}
-  .prompt .dom{color:var(--mint);font-size:11.5px;text-transform:uppercase;letter-spacing:.8px;font-weight:700;}
-  .prompt h2{font-size:22px;line-height:1.25;margin:6px 0 8px;font-weight:700;letter-spacing:-.4px;}
-  .prompt .meta{color:var(--ink-dim);font-size:12.5px;display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
+  .prompt{margin:6px 0 7px;}
+  .prompt .dom{color:var(--mint);font-size:11px;text-transform:uppercase;letter-spacing:.7px;font-weight:700;}
+  .prompt h2{font-size:16px;line-height:1.2;margin:0 0 3px;font-weight:700;letter-spacing:-.25px;}
+  .prompt .meta{color:var(--ink-dim);font-size:11.5px;display:flex;align-items:center;gap:5px;flex-wrap:wrap;}
   .prompt .meta button{background:none;border:1px solid var(--border);color:var(--ink-soft);border-radius:999px;padding:3px 10px;font-size:11.5px;cursor:pointer;}
 
   /* slots */
-  .slots{display:flex;flex-direction:column;gap:6px;margin:0 0 14px;}
-  .slot{display:flex;align-items:center;gap:10px;background:var(--card);border:1px solid var(--border-soft);border-radius:11px;padding:10px 12px;min-height:44px;}
-  .slot .n{color:var(--ink-dim);font-size:12px;font-weight:700;min-width:26px;font-variant-numeric:tabular-nums;}
-  .slot .nm{flex:1;font-size:14.5px;color:var(--ink-dim);}
-  .slot .vl{color:var(--ink-dim);font-size:12px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;}
+  /* Compact by design: all ten slots plus the answer bar have to stay on
+     screen with the keyboard up, or you lose track of what's left. */
+  /* Two columns of five, filled top-to-bottom then across, so 1-5 sit in the
+     left column and 6-10 in the right. One column of ten is ~320px tall, which
+     cannot coexist with a phone keyboard; this halves it, so the whole list
+     stays visible while you type. */
+  .slots{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:repeat(5,auto);grid-auto-flow:column;gap:3px 6px;margin:0 0 6px;}
+  .slot{display:flex;align-items:center;gap:7px;background:var(--card);border:1px solid var(--border-soft);border-radius:8px;padding:4px 8px;min-height:29px;}
+  .slot .n{color:var(--ink-dim);font-size:11px;font-weight:700;min-width:22px;font-variant-numeric:tabular-nums;flex-shrink:0;}
+  .slot .nm{flex:1;font-size:12.5px;color:var(--ink-dim);line-height:1.2;min-width:0;overflow-wrap:break-word;}
+  .slot .vl{color:var(--ink-dim);font-size:10px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;flex-shrink:0;}
+  /* The slot just filled pulses, so you see where your answer landed. */
+  @keyframes landed{0%{background:var(--mint);transform:scale(1.015);}100%{background:var(--mint-soft);transform:none;}}
+  .slot.just{animation:landed .5s ease-out;}
+  .slot.just .nm{color:var(--ink);font-weight:700;}
+  @keyframes rejected{0%,100%{transform:none;}25%{transform:translateX(-5px);}75%{transform:translateX(5px);}}
+  .guessrow.bad{animation:rejected .28s ease-in-out;}
   .slot.got{background:var(--mint-soft);border-color:rgba(95,211,168,.3);}
   .slot.got .nm{color:var(--ink);font-weight:600;}
   .slot.got .n{color:var(--mint);}
@@ -100,13 +112,21 @@
   .slot[data-hint]:active{background:var(--card-2);}
 
   /* input */
+  /* The answer bar sits at the top, above the quiz name and the list, and
+     sticks there — on a phone it stays under your thumb and out of the way of
+     the keyboard, instead of being shoved around at the bottom of the page. */
+  .inputbar{position:sticky;top:0;z-index:20;background:var(--bg);padding:4px 18px 10px;border-bottom:1px solid var(--border-soft);}
   .guessrow{display:flex;gap:8px;}
-  .guessrow input{flex:1;background:var(--bg-lift);border:1px solid var(--border);border-radius:12px;padding:14px 14px;font-size:16px;outline:none;}
+  .guessrow input{flex:1;background:var(--bg-lift);border:1px solid var(--border);border-radius:11px;padding:11px 13px;font-size:16px;outline:none;}
   .guessrow input:focus{border-color:var(--mint-deep);}
-  .misses{display:flex;align-items:center;gap:6px;justify-content:center;margin-top:10px;}
-  .misses i{width:9px;height:9px;border-radius:50%;background:var(--border);display:block;}
+  /* One status line: misses, what's left, and feedback. Every row saved here
+     is a row of the list you can still see with the keyboard up. */
+  .statusline{display:flex;align-items:center;gap:8px;margin-top:6px;min-height:17px;}
+  .misses{display:flex;align-items:center;gap:4px;}
+  .misses i{width:7px;height:7px;border-radius:50%;background:var(--border);display:block;}
   .misses i.x{background:var(--coral);}
-  .misses span{color:var(--ink-dim);font-size:12px;margin-left:4px;}
+  .sl-count{color:var(--ink-dim);font-size:11.5px;white-space:nowrap;}
+  .statusline .flash{flex:1;text-align:right;margin:0;font-size:11.5px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
   .flash{text-align:center;font-size:13px;min-height:18px;margin-top:8px;color:var(--ink-soft);}
   .flash.bad{color:var(--coral);}
   .flash.dup{color:var(--gold);}
@@ -412,8 +432,10 @@ function submitGuess() {
   input.value = '';
   const hits = matchGuesses(raw, game.puzzle.answers);
   const fresh = hits.filter(i => !game.found.has(i));
+  game.just = new Set(fresh);          // highlighted on this render only
   if (!hits.length) {
     game.misses++;
+    game.rejected = true;
     flash = { msg: '“' + raw + '” isn’t on the list', kind: 'bad' };
     if (game.misses >= 5) return endGame();
   } else if (!fresh.length) {
@@ -487,8 +509,9 @@ function mask(name) {
     .join(' ');
 }
 
-function slotsHtml(p, found, reveal, hinted, canHint) {
+function slotsHtml(p, found, reveal, hinted, canHint, just) {
   hinted = hinted || new Set();
+  just = just || new Set();
   return `<div class="slots">` + p.answers.map((a, i) => {
     const got = found.has(i);
     const show = !got && reveal;
@@ -499,7 +522,8 @@ function slotsHtml(p, found, reveal, hinted, canHint) {
     // totals the magnitude is itself a clue.
     const val = (got || show || hint) && a.value != null ? fmtNum(a.value) : '';
     const tappable = !got && !show && !hint && canHint;
-    return `<div class="slot ${got ? 'got' : show ? 'shown' : hint ? 'hint' : ''}"
+    return `<div class="slot ${got ? 'got' : show ? 'shown' : hint ? 'hint' : ''}${just.has(i) ? ' just' : ''}"
+      ${just.has(i) ? 'data-just="1"' : ''}
       ${tappable ? `data-hint="${i}" role="button" tabindex="0"` : ''}>
       <span class="n">${esc(label)}</span>
       <span class="nm">${name}</span>
@@ -516,33 +540,28 @@ function viewGame() {
     <button class="icon-btn" id="back">‹ Back</button>
     <button class="icon-btn" id="give-up">Give up</button>
   </div>
-  <div class="body">
-    ${game.challenge ? `<div class="note">You were sent this quiz. They scored <b>${game.challenge.score}/10</b>.</div>` : ''}
-    <div class="prompt">
-      <span class="dom">${esc(dom)}</span>
-      <h2>${esc(p.prompt)}</h2>
-      <div class="meta">
-        <span>as of ${esc(fmtDate(p.asOf))}</span>
-        <button id="open-source">ⓘ Metric &amp; source</button>
-      </div>
-    </div>
-    ${slotsHtml(p, game.found, false, game.hinted, game.hintsLeft > 0)}
-    <p class="helper" style="text-align:center;font-size:12.5px;color:var(--ink-dim);margin:2px 0 0">
-      ${game.hintsLeft > 0
-        ? `Tap any locked slot for a hint · <b style="color:var(--ink-soft)">${game.hintsLeft}</b> left`
-        : 'No hints left'}
-    </p>
-  </div>
-  <div class="footbar">
+  <div class="inputbar">
     <div class="guessrow">
       <input id="guess" placeholder="Type an answer" autocomplete="off" autocapitalize="words" spellcheck="false" enterkeyhint="go">
       <button class="btn btn-primary" id="submit">Go</button>
     </div>
-    <div class="misses">
-      ${[0, 1, 2, 3, 4].map(i => `<i class="${i < game.misses ? 'x' : ''}"></i>`).join('')}
-      <span>${5 - game.misses} left</span>
+    <div class="statusline">
+      <span class="misses">${[0, 1, 2, 3, 4].map(i => `<i class="${i < game.misses ? 'x' : ''}"></i>`).join('')}</span>
+      <span class="sl-count">${5 - game.misses} left${game.hintsLeft ? ` · ${game.hintsLeft} hint${game.hintsLeft === 1 ? '' : 's'}` : ''}</span>
+      <span class="flash ${flash.kind}">${esc(flash.msg)}</span>
     </div>
-    <div class="flash ${flash.kind}">${esc(flash.msg)}</div>
+  </div>
+  <div class="body">
+    ${game.challenge ? `<div class="note">You were sent this quiz. They scored <b>${game.challenge.score}/10</b>.</div>` : ''}
+    <div class="prompt">
+      <h2>${esc(p.prompt)}</h2>
+      <div class="meta">
+        <span class="dom">${esc(dom)}</span>
+        <span>· as of ${esc(fmtDate(p.asOf))} ·</span>
+        <button id="open-source">ⓘ source</button>
+      </div>
+    </div>
+    ${slotsHtml(p, game.found, false, game.hinted, game.hintsLeft > 0, game.just)}
   </div>`;
 }
 
@@ -663,6 +682,17 @@ function wire() {
   on('again', () => { clearHash(); const p = pickPuzzle(); if (p) startGame(p); });
   const g = document.getElementById('guess');
   if (g) g.addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); submitGuess(); } });
+
+  // Bring the slot that just filled into view, so an answer landing far down a
+  // long list is never invisible. 'nearest' means no scrolling if it's already
+  // on screen, which is the common case now that the list is compact.
+  const landed = document.querySelector('[data-just]');
+  if (landed) landed.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+  if (game && game.rejected) {
+    const row = document.querySelector('.guessrow');
+    if (row) { row.classList.add('bad'); setTimeout(() => row.classList.remove('bad'), 300); }
+    game.rejected = false;
+  }
   document.querySelectorAll('[data-cap]').forEach(b => b.addEventListener('click', () => {
     const [k, n] = b.dataset.cap.split(':');
     const s = store.settings;
