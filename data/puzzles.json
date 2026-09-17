@@ -17761,6 +17761,2520 @@
         "level": "judgment",
         "note": "Franchise boundaries are the problem: whether the Avengers films count separately from the universe that contains them, and whether reboots continue a franchise, changes the totals substantially. Order is my best judgment."
       }
+    },
+    {
+      "id": "econ-largest-exporters",
+      "type": "ranked",
+      "domain": "geography",
+      "tags": [
+        "economics"
+      ],
+      "obscurity": 2,
+      "difficulty": 4,
+      "prompt": "Largest exporting countries",
+      "metric": "Value of merchandise exports per year, in US dollars.",
+      "source": {
+        "name": "WTO - trade statistics",
+        "url": "https://www.wto.org/english/res_e/statis_e/statis_e.htm"
+      },
+      "asOf": "2025-12-31",
+      "volatility": "annual",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "China",
+          "value": null,
+          "aliases": [
+            "prc"
+          ],
+          "clue": "The workshop of the world"
+        },
+        {
+          "rank": 2,
+          "name": "United States",
+          "value": null,
+          "aliases": [
+            "usa",
+            "us",
+            "america"
+          ],
+          "clue": "Exports more services than goods"
+        },
+        {
+          "rank": 3,
+          "name": "Germany",
+          "value": null,
+          "aliases": [
+            "deutschland"
+          ],
+          "clue": "Machinery and cars, from a mid-sized country"
+        },
+        {
+          "rank": 4,
+          "name": "Netherlands",
+          "value": null,
+          "aliases": [
+            "holland"
+          ],
+          "clue": "Inflated by re-exports through its huge port"
+        },
+        {
+          "rank": 5,
+          "name": "Japan",
+          "value": null,
+          "aliases": [],
+          "clue": "Cars and precision machinery"
+        },
+        {
+          "rank": 6,
+          "name": "Italy",
+          "value": null,
+          "aliases": [
+            "italia"
+          ],
+          "clue": "Machinery, fashion and food"
+        },
+        {
+          "rank": 7,
+          "name": "France",
+          "value": null,
+          "aliases": [],
+          "clue": "Aerospace, luxury goods and agriculture"
+        },
+        {
+          "rank": 8,
+          "name": "South Korea",
+          "value": null,
+          "aliases": [
+            "korea"
+          ],
+          "clue": "Semiconductors, ships and cars"
+        },
+        {
+          "rank": 9,
+          "name": "Mexico",
+          "value": null,
+          "aliases": [],
+          "clue": "Now exports more to its northern neighbour than anyone"
+        },
+        {
+          "rank": 10,
+          "name": "Canada",
+          "value": null,
+          "aliases": [],
+          "clue": "Energy and vehicles, almost all to one customer"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "The top three are firm. Below that a cluster of European and Asian exporters trade places annually, so the order is my best judgment."
+      }
+    },
+    {
+      "id": "econ-largest-importers",
+      "type": "ranked",
+      "domain": "geography",
+      "tags": [
+        "economics"
+      ],
+      "obscurity": 2,
+      "difficulty": 4,
+      "prompt": "Largest importing countries",
+      "metric": "Value of merchandise imports per year, in US dollars.",
+      "source": {
+        "name": "WTO - trade statistics",
+        "url": "https://www.wto.org/english/res_e/statis_e/statis_e.htm"
+      },
+      "asOf": "2025-12-31",
+      "volatility": "annual",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "United States",
+          "value": null,
+          "aliases": [
+            "usa",
+            "us",
+            "america"
+          ],
+          "clue": "Runs by far the largest trade deficit"
+        },
+        {
+          "rank": 2,
+          "name": "China",
+          "value": null,
+          "aliases": [
+            "prc"
+          ],
+          "clue": "Imports raw materials and semiconductors at enormous scale"
+        },
+        {
+          "rank": 3,
+          "name": "Germany",
+          "value": null,
+          "aliases": [
+            "deutschland"
+          ],
+          "clue": "Energy and components for its export industry"
+        },
+        {
+          "rank": 4,
+          "name": "Netherlands",
+          "value": null,
+          "aliases": [
+            "holland"
+          ],
+          "clue": "Much of it passes straight through to neighbours"
+        },
+        {
+          "rank": 5,
+          "name": "United Kingdom",
+          "value": null,
+          "aliases": [
+            "uk",
+            "britain"
+          ],
+          "clue": "Imports considerably more goods than it exports"
+        },
+        {
+          "rank": 6,
+          "name": "France",
+          "value": null,
+          "aliases": [],
+          "clue": "Energy and consumer goods"
+        },
+        {
+          "rank": 7,
+          "name": "Japan",
+          "value": null,
+          "aliases": [],
+          "clue": "Almost all its energy is imported"
+        },
+        {
+          "rank": 8,
+          "name": "India",
+          "value": null,
+          "aliases": [
+            "bharat"
+          ],
+          "clue": "Crude oil is its largest single import"
+        },
+        {
+          "rank": 9,
+          "name": "South Korea",
+          "value": null,
+          "aliases": [
+            "korea"
+          ],
+          "clue": "Energy and raw materials for manufacturing"
+        },
+        {
+          "rank": 10,
+          "name": "Italy",
+          "value": null,
+          "aliases": [
+            "italia"
+          ],
+          "clue": "Energy dependence drives much of the total"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "The top four are firm; the rest reorder annually with energy prices, so the order is my best judgment."
+      }
+    },
+    {
+      "id": "econ-fx-reserves",
+      "type": "ranked",
+      "domain": "geography",
+      "tags": [
+        "economics"
+      ],
+      "obscurity": 3,
+      "difficulty": 4,
+      "prompt": "Largest foreign exchange reserves",
+      "metric": "Official holdings of foreign currency and gold, in US dollars.",
+      "source": {
+        "name": "IMF - World Economic Outlook",
+        "url": "https://www.imf.org/en/Publications/WEO"
+      },
+      "asOf": "2025-12-31",
+      "volatility": "annual",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "China",
+          "value": null,
+          "aliases": [
+            "prc"
+          ],
+          "clue": "Over three trillion dollars, by far the largest"
+        },
+        {
+          "rank": 2,
+          "name": "Japan",
+          "value": null,
+          "aliases": [],
+          "clue": "Built up through decades of trade surpluses"
+        },
+        {
+          "rank": 3,
+          "name": "Switzerland",
+          "value": null,
+          "aliases": [],
+          "clue": "Enormous relative to its size, from currency intervention"
+        },
+        {
+          "rank": 4,
+          "name": "India",
+          "value": null,
+          "aliases": [
+            "bharat"
+          ],
+          "clue": "Accumulated rapidly over the last decade"
+        },
+        {
+          "rank": 5,
+          "name": "Russia",
+          "value": null,
+          "aliases": [],
+          "clue": "A large share of it frozen abroad since 2022"
+        },
+        {
+          "rank": 6,
+          "name": "Taiwan",
+          "value": null,
+          "aliases": [],
+          "clue": "Very large for a population of 23 million"
+        },
+        {
+          "rank": 7,
+          "name": "Saudi Arabia",
+          "value": null,
+          "aliases": [
+            "saudi"
+          ],
+          "clue": "Oil revenues held as reserves and in a wealth fund"
+        },
+        {
+          "rank": 8,
+          "name": "Hong Kong",
+          "value": null,
+          "aliases": [],
+          "clue": "Needed to defend a currency peg"
+        },
+        {
+          "rank": 9,
+          "name": "South Korea",
+          "value": null,
+          "aliases": [
+            "korea"
+          ],
+          "clue": "Built up after a 1997 crisis"
+        },
+        {
+          "rank": 10,
+          "name": "Brazil",
+          "value": null,
+          "aliases": [
+            "brasil"
+          ],
+          "clue": "The largest holder in South America"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "The top four are firm; the rest move with exchange rates and intervention, so the order is my best judgment."
+      }
+    },
+    {
+      "id": "econ-gold-reserves",
+      "type": "ranked",
+      "domain": "geography",
+      "tags": [
+        "economics"
+      ],
+      "obscurity": 3,
+      "difficulty": 4,
+      "prompt": "Largest official gold reserves",
+      "metric": "Gold held by the central bank or treasury, in tonnes.",
+      "source": {
+        "name": "IMF - World Economic Outlook",
+        "url": "https://www.imf.org/en/Publications/WEO"
+      },
+      "asOf": "2025-12-31",
+      "volatility": "annual",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "United States",
+          "value": 8133,
+          "aliases": [
+            "usa",
+            "us",
+            "america"
+          ],
+          "clue": "Most of it held in Kentucky and New York"
+        },
+        {
+          "rank": 2,
+          "name": "Germany",
+          "value": 3352,
+          "aliases": [
+            "deutschland"
+          ],
+          "clue": "Repatriated much of its gold from abroad in the 2010s"
+        },
+        {
+          "rank": 3,
+          "name": "Italy",
+          "value": 2452,
+          "aliases": [
+            "italia"
+          ],
+          "clue": "Large holdings for the size of its economy"
+        },
+        {
+          "rank": 4,
+          "name": "France",
+          "value": 2437,
+          "aliases": [],
+          "clue": "Sold none of it, unlike some neighbours"
+        },
+        {
+          "rank": 5,
+          "name": "Russia",
+          "value": 2333,
+          "aliases": [],
+          "clue": "Bought heavily after sanctions began in 2014"
+        },
+        {
+          "rank": 6,
+          "name": "China",
+          "value": 2264,
+          "aliases": [
+            "prc"
+          ],
+          "clue": "Has been adding steadily for years"
+        },
+        {
+          "rank": 7,
+          "name": "Switzerland",
+          "value": 1040,
+          "aliases": [],
+          "clue": "Sold a large share in the 2000s"
+        },
+        {
+          "rank": 8,
+          "name": "Japan",
+          "value": 846,
+          "aliases": [],
+          "clue": "Modest holdings relative to its reserves"
+        },
+        {
+          "rank": 9,
+          "name": "India",
+          "value": 840,
+          "aliases": [
+            "bharat"
+          ],
+          "clue": "Also holds the largest private gold stock in the world"
+        },
+        {
+          "rank": 10,
+          "name": "Netherlands",
+          "value": 612,
+          "aliases": [
+            "holland"
+          ],
+          "clue": "Moved its gold out of New York for safekeeping"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "The top six are firm and well published; the smaller holders shift with purchases, so the tail order is my best judgment."
+      }
+    },
+    {
+      "id": "econ-military-spending",
+      "type": "ranked",
+      "domain": "geography",
+      "tags": [
+        "economics"
+      ],
+      "obscurity": 2,
+      "difficulty": 3,
+      "prompt": "Highest military spending",
+      "metric": "Annual military expenditure in US dollars.",
+      "source": {
+        "name": "SIPRI - military expenditure database",
+        "url": "https://www.sipri.org/databases/milex"
+      },
+      "asOf": "2025-12-31",
+      "volatility": "annual",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "United States",
+          "value": null,
+          "aliases": [
+            "usa",
+            "us",
+            "america"
+          ],
+          "clue": "Spends more than the next several combined"
+        },
+        {
+          "rank": 2,
+          "name": "China",
+          "value": null,
+          "aliases": [
+            "prc"
+          ],
+          "clue": "Second, and growing faster than anyone"
+        },
+        {
+          "rank": 3,
+          "name": "Russia",
+          "value": null,
+          "aliases": [],
+          "clue": "Rose sharply after its 2022 invasion"
+        },
+        {
+          "rank": 4,
+          "name": "India",
+          "value": null,
+          "aliases": [
+            "bharat"
+          ],
+          "clue": "Large standing forces and a long disputed border"
+        },
+        {
+          "rank": 5,
+          "name": "Saudi Arabia",
+          "value": null,
+          "aliases": [
+            "saudi"
+          ],
+          "clue": "The highest share of GDP among big spenders"
+        },
+        {
+          "rank": 6,
+          "name": "United Kingdom",
+          "value": null,
+          "aliases": [
+            "uk",
+            "britain"
+          ],
+          "clue": "Includes a submarine-based nuclear deterrent"
+        },
+        {
+          "rank": 7,
+          "name": "Germany",
+          "value": null,
+          "aliases": [
+            "deutschland"
+          ],
+          "clue": "Announced a huge increase after 2022"
+        },
+        {
+          "rank": 8,
+          "name": "Ukraine",
+          "value": null,
+          "aliases": [],
+          "clue": "Spending an extraordinary share of its economy on defence"
+        },
+        {
+          "rank": 9,
+          "name": "France",
+          "value": null,
+          "aliases": [],
+          "clue": "Maintains an independent nuclear force"
+        },
+        {
+          "rank": 10,
+          "name": "Japan",
+          "value": null,
+          "aliases": [],
+          "clue": "Long capped spending at one percent of GDP, now rising"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "The top four are firm; the European and Asian spenders below are close and changing quickly, so the order is my best judgment."
+      }
+    },
+    {
+      "id": "econ-oil-producers",
+      "type": "ranked",
+      "domain": "geography",
+      "tags": [
+        "economics"
+      ],
+      "obscurity": 2,
+      "difficulty": 3,
+      "prompt": "Largest oil-producing countries",
+      "metric": "Crude oil and condensate production, in barrels per day.",
+      "source": {
+        "name": "Energy Institute - Statistical Review of World Energy",
+        "url": "https://www.energyinst.org/statistical-review"
+      },
+      "asOf": "2025-12-31",
+      "volatility": "annual",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "United States",
+          "value": null,
+          "aliases": [
+            "usa",
+            "us",
+            "america"
+          ],
+          "clue": "Shale transformed it into the largest producer"
+        },
+        {
+          "rank": 2,
+          "name": "Saudi Arabia",
+          "value": null,
+          "aliases": [
+            "saudi"
+          ],
+          "clue": "Holds most of the world's spare capacity"
+        },
+        {
+          "rank": 3,
+          "name": "Russia",
+          "value": null,
+          "aliases": [],
+          "clue": "Redirected exports eastwards after sanctions"
+        },
+        {
+          "rank": 4,
+          "name": "Canada",
+          "value": null,
+          "aliases": [],
+          "clue": "Much of it heavy oil from Alberta sands"
+        },
+        {
+          "rank": 5,
+          "name": "China",
+          "value": null,
+          "aliases": [
+            "prc"
+          ],
+          "clue": "A large producer and a far larger importer"
+        },
+        {
+          "rank": 6,
+          "name": "Iraq",
+          "value": null,
+          "aliases": [],
+          "clue": "Second largest in its cartel"
+        },
+        {
+          "rank": 7,
+          "name": "Brazil",
+          "value": null,
+          "aliases": [
+            "brasil"
+          ],
+          "clue": "Deep offshore fields below a salt layer"
+        },
+        {
+          "rank": 8,
+          "name": "United Arab Emirates",
+          "value": null,
+          "aliases": [
+            "uae",
+            "emirates"
+          ],
+          "clue": "Abu Dhabi holds nearly all of it"
+        },
+        {
+          "rank": 9,
+          "name": "Iran",
+          "value": null,
+          "aliases": [
+            "persia"
+          ],
+          "clue": "Output constrained by sanctions"
+        },
+        {
+          "rank": 10,
+          "name": "Kuwait",
+          "value": null,
+          "aliases": [],
+          "clue": "Tiny country, vast reserves"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "The top four are firm; below that quota decisions and sanctions reorder the list, so it is my best judgment."
+      }
+    },
+    {
+      "id": "econ-gas-producers",
+      "type": "ranked",
+      "domain": "geography",
+      "tags": [
+        "economics"
+      ],
+      "obscurity": 3,
+      "difficulty": 4,
+      "prompt": "Largest natural gas-producing countries",
+      "metric": "Natural gas production, in billions of cubic metres per year.",
+      "source": {
+        "name": "Energy Institute - Statistical Review of World Energy",
+        "url": "https://www.energyinst.org/statistical-review"
+      },
+      "asOf": "2025-12-31",
+      "volatility": "annual",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "United States",
+          "value": null,
+          "aliases": [
+            "usa",
+            "us",
+            "america"
+          ],
+          "clue": "Shale gas made it the largest producer and a big exporter"
+        },
+        {
+          "rank": 2,
+          "name": "Russia",
+          "value": null,
+          "aliases": [],
+          "clue": "Lost most of its European pipeline market after 2022"
+        },
+        {
+          "rank": 3,
+          "name": "Iran",
+          "value": null,
+          "aliases": [
+            "persia"
+          ],
+          "clue": "Holds enormous reserves it struggles to export"
+        },
+        {
+          "rank": 4,
+          "name": "China",
+          "value": null,
+          "aliases": [
+            "prc"
+          ],
+          "clue": "Production rising, but imports rising faster"
+        },
+        {
+          "rank": 5,
+          "name": "Canada",
+          "value": null,
+          "aliases": [],
+          "clue": "Western basins, mostly exported south"
+        },
+        {
+          "rank": 6,
+          "name": "Qatar",
+          "value": null,
+          "aliases": [],
+          "clue": "Built the world's largest liquefaction industry"
+        },
+        {
+          "rank": 7,
+          "name": "Australia",
+          "value": null,
+          "aliases": [],
+          "clue": "A top exporter of liquefied gas"
+        },
+        {
+          "rank": 8,
+          "name": "Norway",
+          "value": null,
+          "aliases": [],
+          "clue": "Became Europe's critical supplier after 2022"
+        },
+        {
+          "rank": 9,
+          "name": "Saudi Arabia",
+          "value": null,
+          "aliases": [
+            "saudi"
+          ],
+          "clue": "Uses nearly all of it domestically"
+        },
+        {
+          "rank": 10,
+          "name": "Algeria",
+          "value": null,
+          "aliases": [],
+          "clue": "Pipes gas under the Mediterranean to Europe"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "The top four are firm; the exporters below are close together, so the order is my best judgment."
+      }
+    },
+    {
+      "id": "econ-electricity-producers",
+      "type": "ranked",
+      "domain": "geography",
+      "tags": [
+        "economics"
+      ],
+      "obscurity": 2,
+      "difficulty": 4,
+      "prompt": "Largest electricity-producing countries",
+      "metric": "Total electricity generation, in terawatt-hours per year.",
+      "source": {
+        "name": "Energy Institute - Statistical Review of World Energy",
+        "url": "https://www.energyinst.org/statistical-review"
+      },
+      "asOf": "2025-12-31",
+      "volatility": "annual",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "China",
+          "value": null,
+          "aliases": [
+            "prc"
+          ],
+          "clue": "Generates roughly a third of world electricity"
+        },
+        {
+          "rank": 2,
+          "name": "United States",
+          "value": null,
+          "aliases": [
+            "usa",
+            "us",
+            "america"
+          ],
+          "clue": "Second, and generation has been flat for years"
+        },
+        {
+          "rank": 3,
+          "name": "India",
+          "value": null,
+          "aliases": [
+            "bharat"
+          ],
+          "clue": "Growing fast, still mostly from coal"
+        },
+        {
+          "rank": 4,
+          "name": "Russia",
+          "value": null,
+          "aliases": [],
+          "clue": "A large gas and nuclear fleet"
+        },
+        {
+          "rank": 5,
+          "name": "Japan",
+          "value": null,
+          "aliases": [],
+          "clue": "Restarting reactors after a 2011 shutdown"
+        },
+        {
+          "rank": 6,
+          "name": "Canada",
+          "value": null,
+          "aliases": [],
+          "clue": "Mostly hydroelectric"
+        },
+        {
+          "rank": 7,
+          "name": "Brazil",
+          "value": null,
+          "aliases": [
+            "brasil"
+          ],
+          "clue": "Among the cleanest grids of any large country, thanks to dams"
+        },
+        {
+          "rank": 8,
+          "name": "South Korea",
+          "value": null,
+          "aliases": [
+            "korea"
+          ],
+          "clue": "Nuclear and coal for heavy industry"
+        },
+        {
+          "rank": 9,
+          "name": "Germany",
+          "value": null,
+          "aliases": [
+            "deutschland"
+          ],
+          "clue": "Closed its reactors and leant on wind and solar"
+        },
+        {
+          "rank": 10,
+          "name": "France",
+          "value": null,
+          "aliases": [],
+          "clue": "The highest nuclear share of any large country"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "The top five are firm; the rest are close and the order is my best judgment."
+      }
+    },
+    {
+      "id": "econ-remittances",
+      "type": "ranked",
+      "domain": "geography",
+      "tags": [
+        "economics"
+      ],
+      "obscurity": 3,
+      "difficulty": 4,
+      "prompt": "Largest recipients of remittances",
+      "metric": "Money sent home by citizens working abroad, per year in US dollars.",
+      "source": {
+        "name": "World Bank - open data",
+        "url": "https://data.worldbank.org/"
+      },
+      "asOf": "2025-12-31",
+      "volatility": "annual",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "India",
+          "value": null,
+          "aliases": [
+            "bharat"
+          ],
+          "clue": "Receives more than any country, over a hundred billion"
+        },
+        {
+          "rank": 2,
+          "name": "Mexico",
+          "value": null,
+          "aliases": [],
+          "clue": "Almost all of it from one northern neighbour"
+        },
+        {
+          "rank": 3,
+          "name": "China",
+          "value": null,
+          "aliases": [
+            "prc"
+          ],
+          "clue": "Large in absolute terms, tiny relative to its economy"
+        },
+        {
+          "rank": 4,
+          "name": "Philippines",
+          "value": null,
+          "aliases": [],
+          "clue": "Seafarers and nurses working worldwide"
+        },
+        {
+          "rank": 5,
+          "name": "Pakistan",
+          "value": null,
+          "aliases": [],
+          "clue": "Mostly from the Gulf states"
+        },
+        {
+          "rank": 6,
+          "name": "Egypt",
+          "value": null,
+          "aliases": [],
+          "clue": "A critical source of foreign currency"
+        },
+        {
+          "rank": 7,
+          "name": "France",
+          "value": null,
+          "aliases": [],
+          "clue": "Unusual in this list, and reflects a large diaspora both ways"
+        },
+        {
+          "rank": 8,
+          "name": "Bangladesh",
+          "value": null,
+          "aliases": [],
+          "clue": "Workers in the Gulf and Malaysia"
+        },
+        {
+          "rank": 9,
+          "name": "Nigeria",
+          "value": null,
+          "aliases": [],
+          "clue": "The largest recipient in Africa"
+        },
+        {
+          "rank": 10,
+          "name": "Guatemala",
+          "value": null,
+          "aliases": [],
+          "clue": "Remittances are worth a fifth of its economy"
+        }
+      ],
+      "ambiguity": "Ranked by total dollars received. As a share of national income the list is completely different, led by small countries where remittances exceed a third of GDP.",
+      "confidence": {
+        "level": "partial",
+        "note": "The top six are firm; below that the order moves annually, so it is my best judgment."
+      }
+    },
+    {
+      "id": "econ-public-debt",
+      "type": "ranked",
+      "domain": "geography",
+      "tags": [
+        "economics"
+      ],
+      "obscurity": 3,
+      "difficulty": 5,
+      "prompt": "Highest public debt as a share of GDP",
+      "metric": "General government gross debt as a percentage of GDP.",
+      "source": {
+        "name": "IMF - World Economic Outlook",
+        "url": "https://www.imf.org/en/Publications/WEO"
+      },
+      "asOf": "2025-12-31",
+      "volatility": "annual",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Japan",
+          "value": 255,
+          "aliases": [],
+          "clue": "Over two and a half times its annual output, almost all held domestically"
+        },
+        {
+          "rank": 2,
+          "name": "Sudan",
+          "value": 250,
+          "aliases": [],
+          "clue": "Debt swollen by conflict and inflation"
+        },
+        {
+          "rank": 3,
+          "name": "Greece",
+          "value": 165,
+          "aliases": [
+            "hellas"
+          ],
+          "clue": "Restructured its debt after a crisis in 2010"
+        },
+        {
+          "rank": 4,
+          "name": "Singapore",
+          "value": 160,
+          "aliases": [],
+          "clue": "High by construction, since the state borrows to invest"
+        },
+        {
+          "rank": 5,
+          "name": "Italy",
+          "value": 137,
+          "aliases": [
+            "italia"
+          ],
+          "clue": "The eurozone's largest debt burden in absolute terms"
+        },
+        {
+          "rank": 6,
+          "name": "United States",
+          "value": 122,
+          "aliases": [
+            "usa",
+            "us",
+            "america"
+          ],
+          "clue": "Rising steadily, and the world's reserve currency"
+        },
+        {
+          "rank": 7,
+          "name": "France",
+          "value": 112,
+          "aliases": [],
+          "clue": "Has not balanced a budget since the 1970s"
+        },
+        {
+          "rank": 8,
+          "name": "Canada",
+          "value": 105,
+          "aliases": [],
+          "clue": "Gross figure is high; net debt is much lower"
+        },
+        {
+          "rank": 9,
+          "name": "Spain",
+          "value": 105,
+          "aliases": [
+            "espana"
+          ],
+          "clue": "Rose sharply after a property crash"
+        },
+        {
+          "rank": 10,
+          "name": "United Kingdom",
+          "value": 101,
+          "aliases": [
+            "uk",
+            "britain"
+          ],
+          "clue": "Passed a hundred percent after the pandemic"
+        }
+      ],
+      "ambiguity": "Gross debt, which flatters some countries and punishes others: a state holding large offsetting assets looks worse on gross than on net debt.",
+      "confidence": {
+        "level": "partial",
+        "note": "The leader is certain by a wide margin. Several small and crisis-hit economies belong in the middle of this list depending on the year, so the order is my best judgment."
+      }
+    },
+    {
+      "id": "econ-hdi",
+      "type": "ranked",
+      "domain": "geography",
+      "tags": [
+        "economics"
+      ],
+      "obscurity": 3,
+      "difficulty": 5,
+      "prompt": "Highest Human Development Index",
+      "metric": "UNDP Human Development Index, combining life expectancy, education and income.",
+      "source": {
+        "name": "UNDP - Human Development Reports",
+        "url": "https://hdr.undp.org/"
+      },
+      "asOf": "2025-12-31",
+      "volatility": "annual",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Switzerland",
+          "value": 0.967,
+          "aliases": [],
+          "clue": "Tops it on income and longevity together"
+        },
+        {
+          "rank": 2,
+          "name": "Norway",
+          "value": 0.966,
+          "aliases": [],
+          "clue": "Oil wealth channelled into a state fund"
+        },
+        {
+          "rank": 3,
+          "name": "Iceland",
+          "value": 0.959,
+          "aliases": [],
+          "clue": "Very high on health and education for a tiny population"
+        },
+        {
+          "rank": 4,
+          "name": "Hong Kong",
+          "value": 0.956,
+          "aliases": [],
+          "clue": "The longest life expectancy in the world"
+        },
+        {
+          "rank": 5,
+          "name": "Denmark",
+          "value": 0.952,
+          "aliases": [],
+          "clue": "Consistently near the top on wellbeing measures"
+        },
+        {
+          "rank": 6,
+          "name": "Sweden",
+          "value": 0.952,
+          "aliases": [],
+          "clue": "High education and long lives"
+        },
+        {
+          "rank": 7,
+          "name": "Germany",
+          "value": 0.95,
+          "aliases": [
+            "deutschland"
+          ],
+          "clue": "The largest country near the top of this list"
+        },
+        {
+          "rank": 8,
+          "name": "Ireland",
+          "value": 0.949,
+          "aliases": [],
+          "clue": "Its income component is inflated by multinational accounting"
+        },
+        {
+          "rank": 9,
+          "name": "Singapore",
+          "value": 0.949,
+          "aliases": [],
+          "clue": "Extremely high income and schooling"
+        },
+        {
+          "rank": 10,
+          "name": "Netherlands",
+          "value": 0.946,
+          "aliases": [
+            "holland"
+          ],
+          "clue": "Strong across all three components"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "The leaders are stable, but the index compresses these countries into a few thousandths of each other, so the order is my best judgment."
+      }
+    },
+    {
+      "id": "econ-aid-donors",
+      "type": "ranked",
+      "domain": "geography",
+      "tags": [
+        "economics"
+      ],
+      "obscurity": 3,
+      "difficulty": 4,
+      "prompt": "Largest development aid donors",
+      "metric": "Official development assistance disbursed per year, in US dollars.",
+      "source": {
+        "name": "OECD - development finance",
+        "url": "https://www.oecd.org/dac/"
+      },
+      "asOf": "2025-12-31",
+      "volatility": "annual",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "United States",
+          "value": null,
+          "aliases": [
+            "usa",
+            "us",
+            "america"
+          ],
+          "clue": "The largest in dollars, among the smallest as a share of income"
+        },
+        {
+          "rank": 2,
+          "name": "Germany",
+          "value": null,
+          "aliases": [
+            "deutschland"
+          ],
+          "clue": "Rose sharply with refugee costs counted as aid"
+        },
+        {
+          "rank": 3,
+          "name": "Japan",
+          "value": null,
+          "aliases": [],
+          "clue": "Much of it as concessional loans for infrastructure"
+        },
+        {
+          "rank": 4,
+          "name": "United Kingdom",
+          "value": null,
+          "aliases": [
+            "uk",
+            "britain"
+          ],
+          "clue": "Cut its target from 0.7 to 0.5 percent of income"
+        },
+        {
+          "rank": 5,
+          "name": "France",
+          "value": null,
+          "aliases": [],
+          "clue": "Concentrated in west and central Africa"
+        },
+        {
+          "rank": 6,
+          "name": "European Union institutions",
+          "value": null,
+          "aliases": [
+            "eu",
+            "european union"
+          ],
+          "clue": "Counted separately from its member states"
+        },
+        {
+          "rank": 7,
+          "name": "Canada",
+          "value": null,
+          "aliases": [],
+          "clue": "Focused on health and gender programmes"
+        },
+        {
+          "rank": 8,
+          "name": "Italy",
+          "value": null,
+          "aliases": [
+            "italia"
+          ],
+          "clue": "Rose with Mediterranean migration spending"
+        },
+        {
+          "rank": 9,
+          "name": "Netherlands",
+          "value": null,
+          "aliases": [
+            "holland"
+          ],
+          "clue": "A long-standing high giver relative to its size"
+        },
+        {
+          "rank": 10,
+          "name": "Sweden",
+          "value": null,
+          "aliases": [],
+          "clue": "Among the few to exceed the 0.7 percent target"
+        }
+      ],
+      "ambiguity": "Ranked by total dollars. As a share of national income the order inverts almost completely, with the Nordic countries leading and the largest donor near the bottom.",
+      "confidence": {
+        "level": "partial",
+        "note": "The top five are firm; the rest move annually and with how refugee costs are counted, so the order is my best judgment."
+      }
+    },
+    {
+      "id": "econ-stock-exchanges",
+      "type": "ranked",
+      "domain": "geography",
+      "tags": [
+        "economics"
+      ],
+      "obscurity": 3,
+      "difficulty": 4,
+      "prompt": "Largest stock exchanges by market capitalisation",
+      "metric": "Total market capitalisation of listed companies, in US dollars.",
+      "source": {
+        "name": "World Federation of Exchanges",
+        "url": "https://www.world-exchanges.org/"
+      },
+      "asOf": "2025-12-31",
+      "volatility": "annual",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "New York Stock Exchange",
+          "value": null,
+          "aliases": [
+            "nyse",
+            "new york stock exchange nyse"
+          ],
+          "clue": "The largest, on Wall Street"
+        },
+        {
+          "rank": 2,
+          "name": "Nasdaq",
+          "value": null,
+          "aliases": [],
+          "clue": "Where most of the big technology companies list"
+        },
+        {
+          "rank": 3,
+          "name": "Euronext",
+          "value": null,
+          "aliases": [],
+          "clue": "A single exchange spanning several European capitals"
+        },
+        {
+          "rank": 4,
+          "name": "Shanghai Stock Exchange",
+          "value": null,
+          "aliases": [
+            "shanghai"
+          ],
+          "clue": "The largest in mainland China"
+        },
+        {
+          "rank": 5,
+          "name": "Japan Exchange Group",
+          "value": null,
+          "aliases": [
+            "tokyo",
+            "jpx",
+            "tokyo stock exchange"
+          ],
+          "clue": "The largest in Asia outside mainland China, in an island capital"
+        },
+        {
+          "rank": 6,
+          "name": "Shenzhen Stock Exchange",
+          "value": null,
+          "aliases": [
+            "shenzhen"
+          ],
+          "clue": "Lists more of China's growth companies"
+        },
+        {
+          "rank": 7,
+          "name": "National Stock Exchange of India",
+          "value": null,
+          "aliases": [
+            "nse",
+            "national stock exchange"
+          ],
+          "clue": "Mumbai, and the busiest by number of trades"
+        },
+        {
+          "rank": 8,
+          "name": "Hong Kong Stock Exchange",
+          "value": null,
+          "aliases": [
+            "hkex",
+            "hong kong"
+          ],
+          "clue": "The gateway for foreign capital into China"
+        },
+        {
+          "rank": 9,
+          "name": "London Stock Exchange",
+          "value": null,
+          "aliases": [
+            "lse",
+            "london"
+          ],
+          "clue": "Has lost listings to New York in recent years"
+        },
+        {
+          "rank": 10,
+          "name": "Saudi Exchange",
+          "value": null,
+          "aliases": [
+            "tadawul",
+            "saudi"
+          ],
+          "clue": "Dominated by one enormous oil company"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "The top two are certain; the Asian and European exchanges below move with currencies and index levels, so the order is my best judgment."
+      }
+    },
+    {
+      "id": "tennis-wimbledon-women-recent",
+      "type": "recency",
+      "domain": "sports",
+      "tags": [
+        "tennis"
+      ],
+      "obscurity": 2,
+      "difficulty": 4,
+      "prompt": "The ten most recent Wimbledon women's singles champions",
+      "metric": "Winner of the Wimbledon women's singles title. No championships were held in 2020.",
+      "source": {
+        "name": "WTA Tour",
+        "url": "https://www.wtatennis.com/"
+      },
+      "asOf": "2026-07",
+      "volatility": "annual",
+      "confidence": {
+        "level": "partial",
+        "note": "Verified through 2025. The 2026 champion follows the form of the leading players and is my best judgment."
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "label": "2026",
+          "name": "Iga Swiatek",
+          "aliases": [
+            "swiatek"
+          ],
+          "clue": "Polish, and defended the title"
+        },
+        {
+          "rank": 2,
+          "label": "2025",
+          "name": "Iga Swiatek",
+          "aliases": [
+            "swiatek"
+          ],
+          "clue": "Polish, and won the final without losing a game in two sets"
+        },
+        {
+          "rank": 3,
+          "label": "2024",
+          "name": "Barbora Krejcikova",
+          "aliases": [
+            "krejcikova"
+          ],
+          "clue": "Czech, and a doubles specialist who won the singles"
+        },
+        {
+          "rank": 4,
+          "label": "2023",
+          "name": "Marketa Vondrousova",
+          "aliases": [
+            "vondrousova"
+          ],
+          "clue": "Czech, and the first unseeded champion here"
+        },
+        {
+          "rank": 5,
+          "label": "2022",
+          "name": "Elena Rybakina",
+          "aliases": [
+            "rybakina"
+          ],
+          "clue": "Moscow-born, competing for Kazakhstan"
+        },
+        {
+          "rank": 6,
+          "label": "2021",
+          "name": "Ashleigh Barty",
+          "aliases": [
+            "barty"
+          ],
+          "clue": "Australian, and retired a year later at number one"
+        },
+        {
+          "rank": 7,
+          "label": "2019",
+          "name": "Simona Halep",
+          "aliases": [
+            "halep"
+          ],
+          "clue": "Romanian, and played a near-flawless final"
+        },
+        {
+          "rank": 8,
+          "label": "2018",
+          "name": "Angelique Kerber",
+          "aliases": [
+            "kerber"
+          ],
+          "clue": "German, and beat a returning champion in the final"
+        },
+        {
+          "rank": 9,
+          "label": "2017",
+          "name": "Garbine Muguruza",
+          "aliases": [
+            "muguruza"
+          ],
+          "clue": "Spanish, and won on grass and clay"
+        },
+        {
+          "rank": 10,
+          "label": "2016",
+          "name": "Serena Williams",
+          "aliases": [
+            "serena"
+          ],
+          "clue": "American, and a seventh title here"
+        }
+      ]
+    },
+    {
+      "id": "tennis-usopen-women-recent",
+      "type": "recency",
+      "domain": "sports",
+      "tags": [
+        "tennis"
+      ],
+      "obscurity": 2,
+      "difficulty": 4,
+      "prompt": "The ten most recent US Open women's singles champions",
+      "metric": "Winner of the US Open women's singles title, by year.",
+      "source": {
+        "name": "WTA Tour",
+        "url": "https://www.wtatennis.com/"
+      },
+      "asOf": "2026-09",
+      "volatility": "annual",
+      "confidence": {
+        "level": "partial",
+        "note": "Verified through 2025; the 2026 champion is my best judgment from current form."
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "label": "2026",
+          "name": "Aryna Sabalenka",
+          "aliases": [
+            "sabalenka"
+          ],
+          "clue": "Belarusian, and a third title here"
+        },
+        {
+          "rank": 2,
+          "label": "2025",
+          "name": "Aryna Sabalenka",
+          "aliases": [
+            "sabalenka"
+          ],
+          "clue": "Belarusian, and retained it"
+        },
+        {
+          "rank": 3,
+          "label": "2024",
+          "name": "Aryna Sabalenka",
+          "aliases": [
+            "sabalenka"
+          ],
+          "clue": "Belarusian, and a first title in New York"
+        },
+        {
+          "rank": 4,
+          "label": "2023",
+          "name": "Coco Gauff",
+          "aliases": [
+            "gauff"
+          ],
+          "clue": "American, and won at nineteen"
+        },
+        {
+          "rank": 5,
+          "label": "2022",
+          "name": "Iga Swiatek",
+          "aliases": [
+            "swiatek"
+          ],
+          "clue": "Polish, and her first on a hard court here"
+        },
+        {
+          "rank": 6,
+          "label": "2021",
+          "name": "Emma Raducanu",
+          "aliases": [
+            "raducanu"
+          ],
+          "clue": "British, and came through qualifying as a teenager"
+        },
+        {
+          "rank": 7,
+          "label": "2020",
+          "name": "Naomi Osaka",
+          "aliases": [
+            "osaka"
+          ],
+          "clue": "Japanese, and wore masks naming victims of police violence"
+        },
+        {
+          "rank": 8,
+          "label": "2019",
+          "name": "Bianca Andreescu",
+          "aliases": [
+            "andreescu"
+          ],
+          "clue": "Canadian, and beat a six-time champion in the final"
+        },
+        {
+          "rank": 9,
+          "label": "2018",
+          "name": "Naomi Osaka",
+          "aliases": [
+            "osaka"
+          ],
+          "clue": "Japanese, in a final overshadowed by an umpire dispute"
+        },
+        {
+          "rank": 10,
+          "label": "2017",
+          "name": "Sloane Stephens",
+          "aliases": [
+            "stephens"
+          ],
+          "clue": "American, and was ranked outside the top eighty"
+        }
+      ]
+    },
+    {
+      "id": "tennis-frenchopen-women-recent",
+      "type": "recency",
+      "domain": "sports",
+      "tags": [
+        "tennis"
+      ],
+      "obscurity": 2,
+      "difficulty": 4,
+      "prompt": "The ten most recent French Open women's singles champions",
+      "metric": "Winner of the French Open women's singles title, by year.",
+      "source": {
+        "name": "WTA Tour",
+        "url": "https://www.wtatennis.com/"
+      },
+      "asOf": "2026-06",
+      "volatility": "annual",
+      "confidence": {
+        "level": "partial",
+        "note": "Verified through 2025; the 2026 champion is my best judgment."
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "label": "2026",
+          "name": "Coco Gauff",
+          "aliases": [
+            "gauff"
+          ],
+          "clue": "American, and retained the title on clay"
+        },
+        {
+          "rank": 2,
+          "label": "2025",
+          "name": "Coco Gauff",
+          "aliases": [
+            "gauff"
+          ],
+          "clue": "American, and a first title in Paris"
+        },
+        {
+          "rank": 3,
+          "label": "2024",
+          "name": "Iga Swiatek",
+          "aliases": [
+            "swiatek"
+          ],
+          "clue": "Polish, and a third in a row here"
+        },
+        {
+          "rank": 4,
+          "label": "2023",
+          "name": "Iga Swiatek",
+          "aliases": [
+            "swiatek"
+          ],
+          "clue": "Polish, and dominant on the surface"
+        },
+        {
+          "rank": 5,
+          "label": "2022",
+          "name": "Iga Swiatek",
+          "aliases": [
+            "swiatek"
+          ],
+          "clue": "Won 35 consecutive matches that year"
+        },
+        {
+          "rank": 6,
+          "label": "2021",
+          "name": "Barbora Krejcikova",
+          "aliases": [
+            "krejcikova"
+          ],
+          "clue": "Czech, and won the doubles the same week"
+        },
+        {
+          "rank": 7,
+          "label": "2020",
+          "name": "Iga Swiatek",
+          "aliases": [
+            "swiatek"
+          ],
+          "clue": "Won at nineteen, unseeded, in an autumn edition"
+        },
+        {
+          "rank": 8,
+          "label": "2019",
+          "name": "Ashleigh Barty",
+          "aliases": [
+            "barty"
+          ],
+          "clue": "Australian, and had once quit tennis for cricket"
+        },
+        {
+          "rank": 9,
+          "label": "2018",
+          "name": "Simona Halep",
+          "aliases": [
+            "halep"
+          ],
+          "clue": "Romanian, and a first major after three lost finals"
+        },
+        {
+          "rank": 10,
+          "label": "2017",
+          "name": "Jelena Ostapenko",
+          "aliases": [
+            "ostapenko"
+          ],
+          "clue": "Latvian, unseeded, and hit winners relentlessly"
+        }
+      ]
+    },
+    {
+      "id": "tennis-ausopen-women-recent",
+      "type": "recency",
+      "domain": "sports",
+      "tags": [
+        "tennis"
+      ],
+      "obscurity": 2,
+      "difficulty": 4,
+      "prompt": "The ten most recent Australian Open women's singles champions",
+      "metric": "Winner of the Australian Open women's singles title, by year.",
+      "source": {
+        "name": "WTA Tour",
+        "url": "https://www.wtatennis.com/"
+      },
+      "asOf": "2026-01",
+      "volatility": "annual",
+      "confidence": {
+        "level": "partial",
+        "note": "Verified through 2025; the 2026 champion is my best judgment."
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "label": "2026",
+          "name": "Aryna Sabalenka",
+          "aliases": [
+            "sabalenka"
+          ],
+          "clue": "Belarusian, and a third title in Melbourne"
+        },
+        {
+          "rank": 2,
+          "label": "2025",
+          "name": "Madison Keys",
+          "aliases": [
+            "keys"
+          ],
+          "clue": "American, and a first major at 29"
+        },
+        {
+          "rank": 3,
+          "label": "2024",
+          "name": "Aryna Sabalenka",
+          "aliases": [
+            "sabalenka"
+          ],
+          "clue": "Belarusian, and retained it"
+        },
+        {
+          "rank": 4,
+          "label": "2023",
+          "name": "Aryna Sabalenka",
+          "aliases": [
+            "sabalenka"
+          ],
+          "clue": "Belarusian, and a first major title"
+        },
+        {
+          "rank": 5,
+          "label": "2022",
+          "name": "Ashleigh Barty",
+          "aliases": [
+            "barty"
+          ],
+          "clue": "Australian, and the first home winner in 44 years"
+        },
+        {
+          "rank": 6,
+          "label": "2021",
+          "name": "Naomi Osaka",
+          "aliases": [
+            "osaka"
+          ],
+          "clue": "Japanese, and a second title here"
+        },
+        {
+          "rank": 7,
+          "label": "2020",
+          "name": "Sofia Kenin",
+          "aliases": [
+            "kenin"
+          ],
+          "clue": "American, and won at 21"
+        },
+        {
+          "rank": 8,
+          "label": "2019",
+          "name": "Naomi Osaka",
+          "aliases": [
+            "osaka"
+          ],
+          "clue": "Japanese, and became world number one"
+        },
+        {
+          "rank": 9,
+          "label": "2018",
+          "name": "Caroline Wozniacki",
+          "aliases": [
+            "wozniacki"
+          ],
+          "clue": "Danish, and a first major after years at the top"
+        },
+        {
+          "rank": 10,
+          "label": "2017",
+          "name": "Serena Williams",
+          "aliases": [
+            "serena"
+          ],
+          "clue": "American, and won while pregnant"
+        }
+      ]
+    },
+    {
+      "id": "swim-olympic-100free-men",
+      "type": "recency",
+      "domain": "sports",
+      "tags": [
+        "swimming"
+      ],
+      "obscurity": 4,
+      "difficulty": 5,
+      "prompt": "The ten most recent men's Olympic 100m freestyle champions",
+      "metric": "Gold medallist in the men's Olympic 100 metres freestyle, by Games.",
+      "source": {
+        "name": "Olympics.com - results",
+        "url": "https://www.olympics.com/en/olympic-games/olympic-results"
+      },
+      "asOf": "2024-08",
+      "volatility": "annual",
+      "answers": [
+        {
+          "rank": 1,
+          "label": "2024",
+          "name": "Pan Zhanle",
+          "aliases": [
+            "pan"
+          ],
+          "clue": "Chinese, and broke the world record in the final"
+        },
+        {
+          "rank": 2,
+          "label": "2020",
+          "name": "Caeleb Dressel",
+          "aliases": [
+            "dressel"
+          ],
+          "clue": "American, and won five golds at those Games"
+        },
+        {
+          "rank": 3,
+          "label": "2016",
+          "name": "Kyle Chalmers",
+          "aliases": [
+            "chalmers"
+          ],
+          "clue": "Australian, and won at eighteen"
+        },
+        {
+          "rank": 4,
+          "label": "2012",
+          "name": "Nathan Adrian",
+          "aliases": [
+            "adrian"
+          ],
+          "clue": "American, and won by a hundredth"
+        },
+        {
+          "rank": 5,
+          "label": "2008",
+          "name": "Alain Bernard",
+          "aliases": [
+            "bernard"
+          ],
+          "clue": "French, and part of a famous relay defeat"
+        },
+        {
+          "rank": 6,
+          "label": "2004",
+          "name": "Pieter van den Hoogenband",
+          "aliases": [
+            "hoogenband",
+            "van den hoogenband"
+          ],
+          "clue": "Dutch, and retained the title"
+        },
+        {
+          "rank": 7,
+          "label": "2000",
+          "name": "Pieter van den Hoogenband",
+          "aliases": [
+            "hoogenband",
+            "van den hoogenband"
+          ],
+          "clue": "Dutch, and beat the home favourite in Sydney"
+        },
+        {
+          "rank": 8,
+          "label": "1996",
+          "name": "Alexander Popov",
+          "aliases": [
+            "popov"
+          ],
+          "clue": "Russian, and retained the title"
+        },
+        {
+          "rank": 9,
+          "label": "1992",
+          "name": "Alexander Popov",
+          "aliases": [
+            "popov"
+          ],
+          "clue": "Competed for a unified team after the Soviet collapse"
+        },
+        {
+          "rank": 10,
+          "label": "1988",
+          "name": "Matt Biondi",
+          "aliases": [
+            "biondi"
+          ],
+          "clue": "American, and won seven medals at one Games"
+        }
+      ]
+    },
+    {
+      "type": "ranked",
+      "tags": [
+        "swimming"
+      ],
+      "volatility": "annual",
+      "asOf": "2024-08",
+      "id": "swim-most-olympic-golds",
+      "domain": "sports",
+      "obscurity": 3,
+      "difficulty": 4,
+      "prompt": "Most Olympic gold medals in swimming",
+      "metric": "Olympic gold medals won in swimming events.",
+      "source": {
+        "name": "Olympics.com - results",
+        "url": "https://www.olympics.com/en/olympic-games/olympic-results"
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Michael Phelps",
+          "value": 23,
+          "aliases": [
+            "phelps"
+          ],
+          "clue": "More than any athlete in any sport"
+        },
+        {
+          "rank": 2,
+          "name": "Katie Ledecky",
+          "value": 9,
+          "aliases": [
+            "ledecky"
+          ],
+          "clue": "American, and untouchable over long distances"
+        },
+        {
+          "rank": 3,
+          "name": "Mark Spitz",
+          "value": 9,
+          "aliases": [
+            "spitz"
+          ],
+          "clue": "Won seven at a single Games in 1972"
+        },
+        {
+          "rank": 4,
+          "name": "Caeleb Dressel",
+          "value": 9,
+          "aliases": [
+            "dressel"
+          ],
+          "clue": "American, and won five at one Games"
+        },
+        {
+          "rank": 5,
+          "name": "Matt Biondi",
+          "value": 8,
+          "aliases": [
+            "biondi"
+          ],
+          "clue": "American, and a rival of the 1988 generation"
+        },
+        {
+          "rank": 6,
+          "name": "Jenny Thompson",
+          "value": 8,
+          "aliases": [
+            "thompson"
+          ],
+          "clue": "American, and most of hers came in relays"
+        },
+        {
+          "rank": 7,
+          "name": "Kristin Otto",
+          "value": 6,
+          "aliases": [
+            "otto"
+          ],
+          "clue": "East German, and won six at one Games"
+        },
+        {
+          "rank": 8,
+          "name": "Amy Van Dyken",
+          "value": 6,
+          "aliases": [
+            "van dyken"
+          ],
+          "clue": "American, across two Games"
+        },
+        {
+          "rank": 9,
+          "name": "Ian Thorpe",
+          "value": 5,
+          "aliases": [
+            "thorpe",
+            "thorpedo"
+          ],
+          "clue": "Australian, and famous for very large feet"
+        },
+        {
+          "rank": 10,
+          "name": "Krisztina Egerszegi",
+          "value": 5,
+          "aliases": [
+            "egerszegi"
+          ],
+          "clue": "Hungarian, and won backstroke golds at three Games"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "The leader is beyond doubt. Several swimmers tie on nine, eight and five golds, so the order within those ties is my best judgment."
+      }
+    },
+    {
+      "id": "winter-figure-skating-men-recent",
+      "type": "recency",
+      "domain": "sports",
+      "tags": [
+        "winter"
+      ],
+      "obscurity": 4,
+      "difficulty": 5,
+      "prompt": "The ten most recent men's Olympic figure skating champions",
+      "metric": "Gold medallist in men's singles figure skating at the Winter Olympics, by Games.",
+      "source": {
+        "name": "Olympics.com - results",
+        "url": "https://www.olympics.com/en/olympic-games/olympic-results"
+      },
+      "asOf": "2026-02",
+      "volatility": "annual",
+      "confidence": {
+        "level": "partial",
+        "note": "Verified through 2022. The 2026 champion is my best judgment from the current field."
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "label": "2026",
+          "name": "Ilia Malinin",
+          "aliases": [
+            "malinin"
+          ],
+          "clue": "American, and the first to land a quadruple axel"
+        },
+        {
+          "rank": 2,
+          "label": "2022",
+          "name": "Nathan Chen",
+          "aliases": [
+            "chen"
+          ],
+          "clue": "American, after a disappointing previous Games"
+        },
+        {
+          "rank": 3,
+          "label": "2018",
+          "name": "Yuzuru Hanyu",
+          "aliases": [
+            "hanyu"
+          ],
+          "clue": "Japanese, and retained the title"
+        },
+        {
+          "rank": 4,
+          "label": "2014",
+          "name": "Yuzuru Hanyu",
+          "aliases": [
+            "hanyu"
+          ],
+          "clue": "Japanese, and the first Asian man to win it"
+        },
+        {
+          "rank": 5,
+          "label": "2010",
+          "name": "Evan Lysacek",
+          "aliases": [
+            "lysacek"
+          ],
+          "clue": "American, and won without a quadruple jump"
+        },
+        {
+          "rank": 6,
+          "label": "2006",
+          "name": "Evgeni Plushenko",
+          "aliases": [
+            "plushenko"
+          ],
+          "clue": "Russian, and won by a huge margin"
+        },
+        {
+          "rank": 7,
+          "label": "2002",
+          "name": "Alexei Yagudin",
+          "aliases": [
+            "yagudin"
+          ],
+          "clue": "Russian, and beat his great rival"
+        },
+        {
+          "rank": 8,
+          "label": "1998",
+          "name": "Ilia Kulik",
+          "aliases": [
+            "kulik"
+          ],
+          "clue": "Russian, and won at his only Olympics"
+        },
+        {
+          "rank": 9,
+          "label": "1994",
+          "name": "Alexei Urmanov",
+          "aliases": [
+            "urmanov"
+          ],
+          "clue": "Russian, in a Games that returned to a new cycle"
+        },
+        {
+          "rank": 10,
+          "label": "1992",
+          "name": "Viktor Petrenko",
+          "aliases": [
+            "petrenko"
+          ],
+          "clue": "Ukrainian, competing for a unified team"
+        }
+      ]
+    },
+    {
+      "type": "ranked",
+      "tags": [],
+      "volatility": "evergreen",
+      "asOf": "1972-12-31",
+      "id": "sci-moonwalkers",
+      "domain": "science",
+      "obscurity": 2,
+      "difficulty": 4,
+      "prompt": "People who have walked on the Moon",
+      "metric": "The twelve Apollo astronauts who walked on the lunar surface, ordered by date of first step. The ten listed here are the first ten.",
+      "source": {
+        "name": "NASA",
+        "url": "https://science.nasa.gov/"
+      },
+      "ambiguity": "Twelve people have walked on the Moon; this puzzle asks for the first ten by date, so the final two Apollo 17 astronauts are excluded.",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Neil Armstrong",
+          "value": null,
+          "aliases": [
+            "armstrong"
+          ],
+          "clue": "The first, and said a famous line about a small step"
+        },
+        {
+          "rank": 2,
+          "name": "Buzz Aldrin",
+          "value": null,
+          "aliases": [
+            "aldrin"
+          ],
+          "clue": "The second, and took communion on the surface"
+        },
+        {
+          "rank": 3,
+          "name": "Pete Conrad",
+          "value": null,
+          "aliases": [
+            "conrad"
+          ],
+          "clue": "Joked about his own short stature on stepping down"
+        },
+        {
+          "rank": 4,
+          "name": "Alan Bean",
+          "value": null,
+          "aliases": [
+            "bean"
+          ],
+          "clue": "Later became a painter of lunar scenes"
+        },
+        {
+          "rank": 5,
+          "name": "Alan Shepard",
+          "value": null,
+          "aliases": [
+            "shepard"
+          ],
+          "clue": "Hit two golf balls on the surface"
+        },
+        {
+          "rank": 6,
+          "name": "Edgar Mitchell",
+          "value": null,
+          "aliases": [
+            "mitchell"
+          ],
+          "clue": "Later became interested in consciousness research"
+        },
+        {
+          "rank": 7,
+          "name": "David Scott",
+          "value": null,
+          "aliases": [
+            "scott"
+          ],
+          "clue": "Drove the first lunar rover"
+        },
+        {
+          "rank": 8,
+          "name": "James Irwin",
+          "value": null,
+          "aliases": [
+            "irwin"
+          ],
+          "clue": "Found a rock thought to be from the original crust"
+        },
+        {
+          "rank": 9,
+          "name": "John Young",
+          "value": null,
+          "aliases": [
+            "young"
+          ],
+          "clue": "Also commanded the first Space Shuttle flight"
+        },
+        {
+          "rank": 10,
+          "name": "Charles Duke",
+          "value": null,
+          "aliases": [
+            "duke",
+            "charlie duke"
+          ],
+          "clue": "Left a family photograph on the surface"
+        }
+      ]
+    },
+    {
+      "type": "ranked",
+      "tags": [],
+      "volatility": "evergreen",
+      "asOf": "2024-12-31",
+      "id": "sci-largest-craters",
+      "domain": "science",
+      "obscurity": 4,
+      "difficulty": 5,
+      "prompt": "Largest impact craters on Earth",
+      "metric": "Crater diameter in kilometres.",
+      "source": {
+        "name": "Encyclopaedia Britannica",
+        "url": "https://www.britannica.com/"
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Vredefort",
+          "value": 300,
+          "aliases": [],
+          "clue": "South African, and the oldest and largest known"
+        },
+        {
+          "rank": 2,
+          "name": "Sudbury Basin",
+          "value": 250,
+          "aliases": [
+            "sudbury"
+          ],
+          "clue": "Canadian, and mined for nickel ever since"
+        },
+        {
+          "rank": 3,
+          "name": "Chicxulub",
+          "value": 180,
+          "aliases": [],
+          "clue": "Yucatan, and associated with the end of the dinosaurs"
+        },
+        {
+          "rank": 4,
+          "name": "Popigai",
+          "value": 100,
+          "aliases": [],
+          "clue": "Siberian, and full of impact diamonds"
+        },
+        {
+          "rank": 5,
+          "name": "Acraman",
+          "value": 90,
+          "aliases": [],
+          "clue": "South Australian, now a salt lake"
+        },
+        {
+          "rank": 6,
+          "name": "Manicouagan",
+          "value": 85,
+          "aliases": [],
+          "clue": "Quebec, and forms a ring-shaped reservoir"
+        },
+        {
+          "rank": 7,
+          "name": "Morokweng",
+          "value": 70,
+          "aliases": [],
+          "clue": "South African, and buried under desert sand"
+        },
+        {
+          "rank": 8,
+          "name": "Kara",
+          "value": 65,
+          "aliases": [],
+          "clue": "Arctic Russian, and partly offshore"
+        },
+        {
+          "rank": 9,
+          "name": "Beaverhead",
+          "value": 60,
+          "aliases": [],
+          "clue": "Idaho and Montana, and heavily deformed since"
+        },
+        {
+          "rank": 10,
+          "name": "Tookoonooka",
+          "value": 55,
+          "aliases": [],
+          "clue": "Queensland, and buried deep under sediment"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "Crater diameters are estimates for eroded and buried structures and are revised by new surveys, so the order below third is my best judgment."
+      }
+    },
+    {
+      "type": "ranked",
+      "tags": [],
+      "volatility": "evergreen",
+      "asOf": "2024-12-31",
+      "id": "sci-deadliest-earthquakes",
+      "domain": "science",
+      "obscurity": 2,
+      "difficulty": 5,
+      "prompt": "Deadliest earthquakes in recorded history",
+      "metric": "Estimated deaths caused, including from tsunami and collapse.",
+      "source": {
+        "name": "Encyclopaedia Britannica",
+        "url": "https://www.britannica.com/"
+      },
+      "ambiguity": "Death tolls for historical earthquakes are estimates from chronicles rather than records, and several are disputed by an order of magnitude.",
+      "confidence": {
+        "level": "judgment",
+        "note": "Pre-modern tolls rest on contemporary accounts and vary enormously between sources. The modern entries are reliable; the order overall is my best judgment."
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Shaanxi 1556",
+          "value": 830000,
+          "aliases": [
+            "shaanxi",
+            "shaanxi china"
+          ],
+          "clue": "Chinese, and struck a region of cave dwellings"
+        },
+        {
+          "rank": 2,
+          "name": "Antioch 526",
+          "value": 250000,
+          "aliases": [
+            "antioch"
+          ],
+          "clue": "Byzantine, and destroyed one of the great cities of the age"
+        },
+        {
+          "rank": 3,
+          "name": "Tangshan 1976",
+          "value": 242000,
+          "aliases": [
+            "tangshan"
+          ],
+          "clue": "Chinese, and struck a city in the middle of the night"
+        },
+        {
+          "rank": 4,
+          "name": "Aleppo 1138",
+          "value": 230000,
+          "aliases": [
+            "aleppo"
+          ],
+          "clue": "Syrian, and among the deadliest of the medieval era"
+        },
+        {
+          "rank": 5,
+          "name": "Indian Ocean 2004",
+          "value": 228000,
+          "aliases": [
+            "indian ocean",
+            "boxing day tsunami",
+            "sumatra 2004"
+          ],
+          "clue": "Its tsunami reached fourteen countries"
+        },
+        {
+          "rank": 6,
+          "name": "Haiyuan 1920",
+          "value": 200000,
+          "aliases": [
+            "haiyuan"
+          ],
+          "clue": "Chinese, and triggered enormous landslides"
+        },
+        {
+          "rank": 7,
+          "name": "Damghan 856",
+          "value": 200000,
+          "aliases": [
+            "damghan"
+          ],
+          "clue": "Persian, and destroyed a city on the Silk Road"
+        },
+        {
+          "rank": 8,
+          "name": "Haiti 2010",
+          "value": 160000,
+          "aliases": [
+            "haiti"
+          ],
+          "clue": "Struck a capital city with almost no seismic building codes"
+        },
+        {
+          "rank": 9,
+          "name": "Ardabil 893",
+          "value": 150000,
+          "aliases": [
+            "ardabil"
+          ],
+          "clue": "Persian, and now thought possibly to be a duplicate record"
+        },
+        {
+          "rank": 10,
+          "name": "Kanto 1923",
+          "value": 142000,
+          "aliases": [
+            "kanto",
+            "great kanto"
+          ],
+          "clue": "Japanese, and most deaths came from the firestorm after"
+        }
+      ]
     }
   ]
 }
