@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "note": "Readable source of truth. tools/build-data.js emits puzzles.min.json with obfuscated answer strings for shipping. Every entry must clear SOURCING.md.",
+  "puzzles": [
+    {
+      "id": "geo-area-total",
+      "type": "ranked",
+      "domain": "geography",
+      "obscurity": 1,
+      "prompt": "Largest countries in the world by area",
+      "metric": "Total area including inland water, in km²",
+      "source": {
+        "name": "UN Statistics Division, Demographic Yearbook, Table 3",
+        "url": "https://unstats.un.org/unsd/demographic-social/products/dyb/"
+      },
+      "asOf": "2024-12-31",
+      "volatility": "evergreen",
+      "margin": {
+        "tenth": 2381741,
+        "eleventh": 2344858,
+        "gapPct": 1.55,
+        "note": "Algeria over DR Congo by ~1.6%. Permanently fixed, so a tight gap is acceptable under rule 5."
+      },
+      "ambiguity": "Sources that rank by LAND area instead of total area place China 3rd and the United States 4th, and shift the tail. This puzzle uses total area, as stated in the metric.",
+      "answers": [
+        { "rank": 1,  "name": "Russia",        "value": 17098246, "aliases": ["russian federation"] },
+        { "rank": 2,  "name": "Canada",        "value": 9984670,  "aliases": [] },
+        { "rank": 3,  "name": "United States", "value": 9833517,  "aliases": ["usa", "us", "united states of america", "america"] },
+        { "rank": 4,  "name": "China",         "value": 9596960,  "aliases": ["prc", "peoples republic of china"] },
+        { "rank": 5,  "name": "Brazil",        "value": 8515767,  "aliases": [] },
+        { "rank": 6,  "name": "Australia",     "value": 7692024,  "aliases": [] },
+        { "rank": 7,  "name": "India",         "value": 3287263,  "aliases": ["bharat"] },
+        { "rank": 8,  "name": "Argentina",     "value": 2780400,  "aliases": [] },
+        { "rank": 9,  "name": "Kazakhstan",    "value": 2724900,  "aliases": [] },
+        { "rank": 10, "name": "Algeria",       "value": 2381741,  "aliases": [] }
+      ]
+    },
+    {
+      "id": "film-bestpicture-recent",
+      "type": "recency",
+      "domain": "film",
+      "obscurity": 1,
+      "prompt": "The ten most recent Best Picture winners",
+      "metric": "Academy Award for Best Picture, by ceremony year (the 89th through 98th Academy Awards)",
+      "source": {
+        "name": "Academy of Motion Picture Arts and Sciences — Ceremonies",
+        "url": "https://www.oscars.org/oscars/ceremonies/2026"
+      },
+      "asOf": "2026-03",
+      "volatility": "annual",
+      "generator": { "template": "recent-winners", "entity": "Academy Award for Best Picture" },
+      "answers": [
+        { "rank": 1,  "label": "2026", "name": "One Battle After Another", "aliases": ["one battle"] },
+        { "rank": 2,  "label": "2025", "name": "Anora", "aliases": [] },
+        { "rank": 3,  "label": "2024", "name": "Oppenheimer", "aliases": [] },
+        { "rank": 4,  "label": "2023", "name": "Everything Everywhere All at Once", "aliases": ["eeaao", "everything everywhere"] },
+        { "rank": 5,  "label": "2022", "name": "CODA", "aliases": [] },
+        { "rank": 6,  "label": "2021", "name": "Nomadland", "aliases": [] },
+        { "rank": 7,  "label": "2020", "name": "Parasite", "aliases": ["gisaengchung"] },
+        { "rank": 8,  "label": "2019", "name": "Green Book", "aliases": [] },
+        { "rank": 9,  "label": "2018", "name": "The Shape of Water", "aliases": ["shape of water"] },
+        { "rank": 10, "label": "2017", "name": "Moonlight", "aliases": [] }
+      ]
+    },
+    {
+      "id": "sport-masters-recent",
+      "type": "recency",
+      "domain": "sports",
+      "obscurity": 2,
+      "prompt": "The ten most recent Masters champions",
+      "metric": "Winner of the Masters Tournament at Augusta National, by year. Two men appear twice.",
+      "source": {
+        "name": "The Masters — Past Winners",
+        "url": "https://www.masters.com/en_US/history/past_winners.html"
+      },
+      "asOf": "2026-04",
+      "volatility": "annual",
+      "generator": { "template": "recent-winners", "entity": "Masters Tournament" },
+      "answers": [
+        { "rank": 1,  "label": "2026", "name": "Rory McIlroy",      "aliases": ["mcilroy", "rory"] },
+        { "rank": 2,  "label": "2025", "name": "Rory McIlroy",      "aliases": ["mcilroy", "rory"] },
+        { "rank": 3,  "label": "2024", "name": "Scottie Scheffler", "aliases": ["scheffler", "scottie"] },
+        { "rank": 4,  "label": "2023", "name": "Jon Rahm",          "aliases": ["rahm"] },
+        { "rank": 5,  "label": "2022", "name": "Scottie Scheffler", "aliases": ["scheffler", "scottie"] },
+        { "rank": 6,  "label": "2021", "name": "Hideki Matsuyama",  "aliases": ["matsuyama"] },
+        { "rank": 7,  "label": "2020", "name": "Dustin Johnson",    "aliases": ["dj", "d johnson"] },
+        { "rank": 8,  "label": "2019", "name": "Tiger Woods",       "aliases": ["tiger", "woods"] },
+        { "rank": 9,  "label": "2018", "name": "Patrick Reed",      "aliases": ["reed"] },
+        { "rank": 10, "label": "2017", "name": "Sergio Garcia",     "aliases": ["garcia", "sergio"] }
+      ]
+    }
+  ]
+}

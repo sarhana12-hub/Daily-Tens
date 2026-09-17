@@ -1,0 +1,585 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Daily Tens</title>
+<meta name="description" content="Name the top ten. One list, ten slots, five misses — with every answer sourced.">
+<link rel="manifest" href="./manifest.json">
+<link rel="icon" href="./icons/favicon-32.png" sizes="32x32">
+<link rel="icon" href="./icons/favicon-16.png" sizes="16x16">
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
+<meta name="theme-color" content="#101418">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Tens">
+<style>
+  :root{
+    --bg:#101418; --bg-lift:#161B21; --card:#1A2128; --card-2:#212A33;
+    --ink:#EAF0F4; --ink-soft:#93A4B2; --ink-dim:#65757F;
+    --border:#28323B; --border-soft:#202932;
+    --mint:#5FD3A8; --mint-deep:#3FB68C; --mint-soft:rgba(95,211,168,.13); --on-mint:#08160F;
+    --coral:#E8705C; --coral-soft:rgba(232,112,92,.14);
+    --gold:#E4B95E; --gold-soft:rgba(228,185,94,.14);
+    --radius:16px;
+    --shadow:0 1px 2px rgba(0,0,0,.45), 0 10px 30px rgba(0,0,0,.35);
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  html{background:var(--bg);}
+  body{
+    background:var(--bg); color:var(--ink);
+    font:15px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    -webkit-font-smoothing:antialiased;
+    min-height:100dvh;
+    padding-top:env(safe-area-inset-top); padding-bottom:env(safe-area-inset-bottom);
+    overscroll-behavior-y:none;
+  }
+  .shell{max-width:480px;margin:0 auto;min-height:100dvh;display:flex;flex-direction:column;}
+  button{font:inherit;color:inherit;touch-action:manipulation;}
+  input{font:inherit;color:inherit;}
+  .mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-variant-numeric:tabular-nums;}
+
+  /* buttons */
+  .btn{border:none;border-radius:999px;padding:14px 20px;font-weight:650;cursor:pointer;transition:transform .1s,opacity .15s;display:inline-flex;align-items:center;justify-content:center;gap:8px;}
+  .btn:active{transform:scale(.975);}
+  .btn-primary{background:var(--mint);color:var(--on-mint);}
+  .btn-secondary{background:var(--card-2);color:var(--ink);border:1px solid var(--border);}
+  .btn-ghost{background:none;border:1px solid var(--border);color:var(--ink-soft);}
+  .btn-block{width:100%;}
+  .btn[disabled]{opacity:.4;cursor:default;}
+  .btn-sm{padding:9px 14px;font-size:13px;}
+  .link-btn{background:none;border:none;color:var(--mint);font-weight:600;cursor:pointer;padding:8px;}
+  .icon-btn{background:none;border:none;cursor:pointer;padding:8px;border-radius:10px;color:var(--ink-soft);display:inline-flex;align-items:center;justify-content:center;}
+  .icon-btn:active{background:var(--card-2);}
+
+  /* chrome */
+  .topbar{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:14px 18px 6px;min-height:52px;}
+  .topbar h1{font-size:19px;margin:0;font-weight:700;letter-spacing:-.2px;}
+  .body{flex:1;padding:0 18px 32px;}
+  .footbar{position:sticky;bottom:0;background:linear-gradient(to top,var(--bg) 62%,rgba(16,20,24,0));padding:14px 18px calc(14px + env(safe-area-inset-bottom));margin-top:auto;}
+
+  /* cards & type */
+  .card{background:var(--card);border:1px solid var(--border-soft);border-radius:var(--radius);padding:16px;margin-bottom:12px;}
+  h2.sec{font-size:13px;text-transform:uppercase;letter-spacing:.7px;color:var(--ink-dim);margin:22px 0 10px;font-weight:700;}
+  .helper{color:var(--ink-soft);font-size:14px;line-height:1.5;margin:0 0 18px;}
+  .note{background:var(--mint-soft);border:1px solid rgba(95,211,168,.22);color:var(--ink);padding:12px 14px;border-radius:12px;font-size:13.5px;line-height:1.5;margin-bottom:14px;}
+
+  /* home */
+  .hero{text-align:center;padding:36px 8px 26px;}
+  .hero .mark{font-size:44px;font-weight:800;letter-spacing:-1.5px;margin:0;}
+  .hero .mark em{font-style:normal;color:var(--mint);}
+  .hero p{color:var(--ink-soft);font-size:14.5px;line-height:1.5;margin:10px 0 0;}
+  .statrow{display:flex;gap:10px;margin-bottom:14px;}
+  .stat{flex:1;background:var(--card);border:1px solid var(--border-soft);border-radius:14px;padding:12px 10px;text-align:center;}
+  .stat b{display:block;font-size:22px;font-weight:750;letter-spacing:-.5px;}
+  .stat span{display:block;color:var(--ink-dim);font-size:11px;text-transform:uppercase;letter-spacing:.6px;margin-top:3px;}
+
+  /* prompt */
+  .prompt{margin:4px 0 14px;}
+  .prompt .dom{color:var(--mint);font-size:11.5px;text-transform:uppercase;letter-spacing:.8px;font-weight:700;}
+  .prompt h2{font-size:22px;line-height:1.25;margin:6px 0 8px;font-weight:700;letter-spacing:-.4px;}
+  .prompt .meta{color:var(--ink-dim);font-size:12.5px;display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
+  .prompt .meta button{background:none;border:1px solid var(--border);color:var(--ink-soft);border-radius:999px;padding:3px 10px;font-size:11.5px;cursor:pointer;}
+
+  /* slots */
+  .slots{display:flex;flex-direction:column;gap:6px;margin:0 0 14px;}
+  .slot{display:flex;align-items:center;gap:10px;background:var(--card);border:1px solid var(--border-soft);border-radius:11px;padding:10px 12px;min-height:44px;}
+  .slot .n{color:var(--ink-dim);font-size:12px;font-weight:700;min-width:26px;font-variant-numeric:tabular-nums;}
+  .slot .nm{flex:1;font-size:14.5px;color:var(--ink-dim);}
+  .slot .vl{color:var(--ink-dim);font-size:12px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;}
+  .slot.got{background:var(--mint-soft);border-color:rgba(95,211,168,.3);}
+  .slot.got .nm{color:var(--ink);font-weight:600;}
+  .slot.got .n{color:var(--mint);}
+  .slot.shown{background:var(--card-2);border-color:var(--border);}
+  .slot.shown .nm{color:var(--ink-soft);font-style:italic;}
+
+  /* input */
+  .guessrow{display:flex;gap:8px;}
+  .guessrow input{flex:1;background:var(--bg-lift);border:1px solid var(--border);border-radius:12px;padding:14px 14px;font-size:16px;outline:none;}
+  .guessrow input:focus{border-color:var(--mint-deep);}
+  .misses{display:flex;align-items:center;gap:6px;justify-content:center;margin-top:10px;}
+  .misses i{width:9px;height:9px;border-radius:50%;background:var(--border);display:block;}
+  .misses i.x{background:var(--coral);}
+  .misses span{color:var(--ink-dim);font-size:12px;margin-left:4px;}
+  .flash{text-align:center;font-size:13px;min-height:18px;margin-top:8px;color:var(--ink-soft);}
+  .flash.bad{color:var(--coral);}
+  .flash.dup{color:var(--gold);}
+
+  /* sheet */
+  .scrim{position:fixed;inset:0;background:rgba(0,0,0,.6);display:flex;align-items:flex-end;justify-content:center;z-index:50;}
+  .sheet{background:var(--bg-lift);border:1px solid var(--border);border-radius:20px 20px 0 0;width:100%;max-width:480px;padding:18px 18px calc(18px + env(safe-area-inset-bottom));max-height:86dvh;overflow:auto;}
+  .sheet h3{margin:0 0 12px;font-size:17px;}
+  .kv{display:flex;flex-direction:column;gap:2px;padding:10px 0;border-bottom:1px solid var(--border-soft);}
+  .kv:last-of-type{border-bottom:none;}
+  .kv b{font-size:11px;text-transform:uppercase;letter-spacing:.7px;color:var(--ink-dim);font-weight:700;}
+  .kv span{font-size:14px;line-height:1.45;}
+  .kv a{color:var(--mint);word-break:break-all;}
+
+  /* result */
+  .score{text-align:center;padding:14px 0 6px;}
+  .score b{font-size:52px;font-weight:800;letter-spacing:-2px;display:block;line-height:1;}
+  .score b em{font-style:normal;color:var(--ink-dim);font-size:26px;}
+  .score p{color:var(--ink-soft);margin:8px 0 0;font-size:14px;}
+  .pips{display:flex;gap:5px;justify-content:center;margin:14px 0 4px;}
+  .pips i{width:16px;height:16px;border-radius:5px;background:var(--border);display:block;}
+  .pips i.on{background:var(--mint);}
+  .versus{display:flex;align-items:center;justify-content:center;gap:12px;background:var(--card);border:1px solid var(--border-soft);border-radius:14px;padding:12px;margin-bottom:12px;font-size:14px;}
+  .versus b{font-size:18px;}
+
+  /* settings */
+  .chips{display:flex;flex-wrap:wrap;gap:7px;}
+  .chip{background:var(--card-2);border:1px solid var(--border);border-radius:999px;padding:7px 13px;font-size:13px;cursor:pointer;color:var(--ink-soft);}
+  .chip.on{background:var(--mint-soft);border-color:rgba(95,211,168,.35);color:var(--ink);font-weight:600;}
+  .range{display:flex;gap:6px;}
+  .range button{flex:1;background:var(--card-2);border:1px solid var(--border);color:var(--ink-soft);border-radius:10px;padding:10px 0;font-size:14px;cursor:pointer;}
+  .range button.on{background:var(--mint-soft);border-color:rgba(95,211,168,.35);color:var(--ink);font-weight:700;}
+  .hist{display:flex;flex-direction:column;gap:6px;}
+  .hrow{display:flex;align-items:center;gap:10px;background:var(--card);border:1px solid var(--border-soft);border-radius:11px;padding:10px 12px;font-size:13.5px;}
+  .hrow .hp{flex:1;color:var(--ink-soft);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+  .hrow .hs{font-weight:700;font-variant-numeric:tabular-nums;}
+</style>
+</head>
+<body>
+<div class="shell" id="app"></div>
+
+<script>
+/* ============================================================
+   Daily Tens — single-file PWA, no dependencies.
+   Puzzle data lives in ./data/puzzles*.json so that content can be
+   revised without touching this file.
+   ============================================================ */
+
+const KEY = 'dailytens.v1';
+const DOMAINS = [
+  ['geography','Geography'], ['sports','Sports'], ['science','Science & nature'],
+  ['history','History & politics'], ['film','Film & TV'], ['business','Business & brands'],
+  ['food','Food & drink'], ['language','Language & literature'],
+];
+
+/* ---------- persistence ---------- */
+const defaults = () => ({
+  history: [],                       // [{id, prompt, score, misses, ts}]
+  settings: { domains: DOMAINS.map(d => d[0]), maxObscurity: 3 },
+});
+let store = load();
+function load() {
+  try {
+    const raw = localStorage.getItem(KEY);
+    if (!raw) return defaults();
+    return Object.assign(defaults(), JSON.parse(raw));
+  } catch { return defaults(); }
+}
+function save() {
+  try { localStorage.setItem(KEY, JSON.stringify(store)); } catch {}
+}
+
+/* ---------- answer obfuscation ----------
+   Answer strings ship XOR'd + base64'd so that a recipient of a shared
+   puzzle can't spoil it by reading the network response or the DOM. This is
+   deliberately not encryption — there is no server, so anything the app can
+   read, a determined reader can too. It stops casual ctrl-F, nothing more. */
+const XKEY = 'tens';
+function deob(s) {
+  try {
+    const b = atob(s);
+    let out = '';
+    for (let i = 0; i < b.length; i++) {
+      out += String.fromCharCode(b.charCodeAt(i) ^ XKEY.charCodeAt(i % XKEY.length));
+    }
+    return decodeURIComponent(escape(out));
+  } catch { return s; }
+}
+
+/* ---------- answer matching ----------
+   A correct answer rejected on a technicality is the worst thing this kind of
+   game does, so matching is generous: diacritics and punctuation stripped,
+   leading articles dropped, and a small edit distance tolerated. */
+function norm(s) {
+  return String(s)
+    .normalize('NFD').replace(/[̀-ͯ]/g, '')
+    .toLowerCase()
+    .replace(/&/g, ' and ')
+    .replace(/[^a-z0-9 ]/g, ' ')
+    .replace(/\b(the|a|an)\b/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+function lev(a, b) {
+  if (a === b) return 0;
+  if (!a.length || !b.length) return Math.max(a.length, b.length);
+  let prev = Array.from({ length: b.length + 1 }, (_, i) => i);
+  for (let i = 1; i <= a.length; i++) {
+    const cur = [i];
+    for (let j = 1; j <= b.length; j++) {
+      cur[j] = Math.min(
+        prev[j] + 1,
+        cur[j - 1] + 1,
+        prev[j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1)
+      );
+    }
+    prev = cur;
+  }
+  return prev[b.length];
+}
+function tolerance(n) { return n <= 6 ? 1 : n <= 12 ? 2 : 3; }
+
+// Returns EVERY answer index the guess satisfies, or [].
+// Recency lists repeat winners — Scheffler took the 2022 and 2024 Masters — so
+// one name can own several slots. Naming him once must fill both, otherwise a
+// player who knew the list perfectly would be capped below 10.
+function matchGuesses(guess, answers) {
+  const g = norm(guess);
+  if (!g) return [];
+  const forms = answers.map(a => [norm(a.name), ...(a.aliases || []).map(norm)]);
+  let hit = -1;
+  for (let i = 0; i < forms.length && hit < 0; i++) if (forms[i].includes(g)) hit = i;
+  if (hit < 0) {
+    let bestD = Infinity;
+    for (let i = 0; i < forms.length; i++) {
+      for (const f of forms[i]) {
+        const d = lev(g, f);
+        if (d <= tolerance(f.length) && d < bestD) { bestD = d; hit = i; }
+      }
+    }
+  }
+  if (hit < 0) return [];
+  const target = norm(answers[hit].name);
+  return answers.map((a, i) => (norm(a.name) === target ? i : -1)).filter(i => i >= 0);
+}
+
+/* ---------- puzzle data ---------- */
+let PUZZLES = [];
+async function loadPuzzles() {
+  // Prefer the built, obfuscated file; fall back to the readable source so the
+  // app runs from a clean checkout with no build step.
+  for (const url of ['./data/puzzles.min.json', './data/puzzles.json']) {
+    try {
+      const res = await fetch(url, { cache: 'no-store' });
+      if (!res.ok) continue;
+      const data = await res.json();
+      PUZZLES = (data.puzzles || []).map(p => normalizePuzzle(p, url.includes('.min.')));
+      if (PUZZLES.length) return;
+    } catch {}
+  }
+}
+function normalizePuzzle(p, obfuscated) {
+  const answers = (p.answers || []).map(a => ({
+    rank: a.rank,
+    label: a.label || null,
+    value: a.value != null ? a.value : null,
+    name: obfuscated ? deob(a.name) : a.name,
+    aliases: (a.aliases || []).map(x => (obfuscated ? deob(x) : x)),
+  }));
+  return Object.assign({}, p, { type: p.type || 'ranked', answers });
+}
+
+/* ---------- selection ---------- */
+function eligible() {
+  const s = store.settings;
+  return PUZZLES.filter(p =>
+    s.domains.includes(p.domain) && (p.obscurity || 1) <= s.maxObscurity
+  );
+}
+function pickPuzzle() {
+  const pool = eligible();
+  if (!pool.length) return null;
+  // Unplayed first; otherwise whatever was played longest ago. No daily lock —
+  // a new quiz is always available.
+  const lastPlayed = {};
+  for (const h of store.history) lastPlayed[h.id] = Math.max(lastPlayed[h.id] || 0, h.ts);
+  const unplayed = pool.filter(p => !lastPlayed[p.id]);
+  const from = unplayed.length ? unplayed : pool.slice().sort((a, b) => lastPlayed[a.id] - lastPlayed[b.id]).slice(0, Math.max(3, Math.ceil(pool.length / 4)));
+  return from[Math.floor(Math.random() * from.length)];
+}
+
+/* ---------- share link ----------
+   Only a puzzle id and the sender's score travel in the link. Answers never
+   do — the recipient's own copy of the app looks the puzzle up locally. The
+   score is self-reported and editable; that is fine for a game you text to a
+   friend. */
+function shareUrl(id, score) {
+  const base = location.href.split('#')[0];
+  return base + '#q=' + encodeURIComponent(id) + '&s=' + score;
+}
+function readHash() {
+  const h = location.hash.replace(/^#/, '');
+  if (!h) return null;
+  const q = new URLSearchParams(h);
+  const id = q.get('q');
+  if (!id) return null;
+  const s = parseInt(q.get('s'), 10);
+  return { id, score: Number.isFinite(s) && s >= 0 && s <= 10 ? s : null };
+}
+function clearHash() {
+  history.replaceState(null, '', location.pathname + location.search);
+}
+
+/* ---------- state ---------- */
+let view = 'home';      // home | game | result
+let game = null;        // { puzzle, found:Set, misses, over, challenge }
+let sheet = null;       // null | 'source' | 'settings' | 'history'
+let flash = { msg: '', kind: '' };
+
+function startGame(puzzle, challenge) {
+  game = { puzzle, found: new Set(), misses: 0, over: false, challenge: challenge || null };
+  flash = { msg: '', kind: '' };
+  view = 'game';
+  render();
+  setTimeout(() => { const i = document.getElementById('guess'); if (i) i.focus(); }, 60);
+}
+function endGame() {
+  game.over = true;
+  store.history.unshift({
+    id: game.puzzle.id,
+    prompt: game.puzzle.prompt,
+    score: game.found.size,
+    misses: game.misses,
+    ts: Date.now(),
+  });
+  store.history = store.history.slice(0, 200);
+  save();
+  view = 'result';
+  render();
+}
+function submitGuess() {
+  const input = document.getElementById('guess');
+  if (!input) return;
+  const raw = input.value.trim();
+  if (!raw) return;
+  input.value = '';
+  const hits = matchGuesses(raw, game.puzzle.answers);
+  const fresh = hits.filter(i => !game.found.has(i));
+  if (!hits.length) {
+    game.misses++;
+    flash = { msg: '“' + raw + '” isn’t on the list', kind: 'bad' };
+    if (game.misses >= 5) return endGame();
+  } else if (!fresh.length) {
+    flash = { msg: 'Already got ' + game.puzzle.answers[hits[0]].name, kind: 'dup' };
+  } else {
+    fresh.forEach(i => game.found.add(i));
+    flash = fresh.length > 1
+      ? { msg: game.puzzle.answers[fresh[0]].name + ' — ' + fresh.length + ' slots', kind: 'dup' }
+      : { msg: '', kind: '' };
+    if (game.found.size === game.puzzle.answers.length) return endGame();
+  }
+  render();
+  const i2 = document.getElementById('guess'); if (i2) i2.focus();
+}
+
+/* ---------- rendering ---------- */
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+// asOf is "YYYY-MM-DD" or "YYYY-MM". Both must be parsed as LOCAL time —
+// bare ISO dates parse as UTC, which renders "2026-04" as Mar 2026 anywhere
+// west of Greenwich.
+const fmtDate = iso => {
+  const s = String(iso);
+  const d = new Date(s.length === 7 ? s + '-01T00:00:00' : s.length === 10 ? s + 'T00:00:00' : s);
+  return isNaN(d) ? s : d.toLocaleDateString(undefined, { month: 'short', year: 'numeric' });
+};
+const fmtNum = n => n == null ? '' : n.toLocaleString();
+
+function render() {
+  const app = document.getElementById('app');
+  app.innerHTML = (view === 'home' ? viewHome() : view === 'game' ? viewGame() : viewResult())
+    + (sheet ? viewSheet() : '');
+  wire();
+}
+
+function viewHome() {
+  const h = store.history;
+  const last10 = h.slice(0, 10);
+  const avg = last10.length ? (last10.reduce((a, b) => a + b.score, 0) / last10.length) : 0;
+  const perfect = h.filter(x => x.score === 10).length;
+  const pool = eligible().length;
+  return `
+  <div class="body">
+    <div class="hero">
+      <p class="mark">Daily<em>Tens</em></p>
+      <p>Name the top ten. Five misses and you're out.<br>Every list carries its source.</p>
+    </div>
+    ${h.length ? `<div class="statrow">
+      <div class="stat"><b>${h.length}</b><span>Played</span></div>
+      <div class="stat"><b>${avg.toFixed(1)}</b><span>Avg last 10</span></div>
+      <div class="stat"><b>${perfect}</b><span>Perfect</span></div>
+    </div>` : ''}
+    ${pool ? '' : `<div class="note">No puzzles match your filters. Widen them in Settings.</div>`}
+    <button class="btn btn-primary btn-block" id="play" ${pool ? '' : 'disabled'}>Play a quiz</button>
+    <div style="display:flex;gap:8px;margin-top:10px;">
+      <button class="btn btn-ghost btn-sm" id="open-settings" style="flex:1">Categories</button>
+      <button class="btn btn-ghost btn-sm" id="open-history" style="flex:1" ${h.length ? '' : 'disabled'}>History</button>
+    </div>
+    <p class="helper" style="text-align:center;margin:16px 0 0;font-size:12.5px;color:var(--ink-dim)">${pool} quiz${pool === 1 ? '' : 'zes'} in rotation</p>
+  </div>`;
+}
+
+function slotsHtml(p, found, reveal) {
+  return `<div class="slots">` + p.answers.map((a, i) => {
+    const got = found.has(i);
+    const show = !got && reveal;
+    const label = p.type === 'recency' ? (a.label || a.rank) : a.rank + '.';
+    const name = got || show ? esc(a.name) : '???';
+    const val = (got || show) && a.value != null ? fmtNum(a.value) : '';
+    return `<div class="slot ${got ? 'got' : show ? 'shown' : ''}">
+      <span class="n">${esc(label)}</span>
+      <span class="nm">${name}</span>
+      <span class="vl">${val}</span>
+    </div>`;
+  }).join('') + `</div>`;
+}
+
+function viewGame() {
+  const p = game.puzzle;
+  const dom = (DOMAINS.find(d => d[0] === p.domain) || [, p.domain])[1];
+  return `
+  <div class="topbar">
+    <button class="icon-btn" id="back">‹ Back</button>
+    <button class="icon-btn" id="give-up">Give up</button>
+  </div>
+  <div class="body">
+    ${game.challenge ? `<div class="note">You were sent this quiz. They scored <b>${game.challenge.score}/10</b>.</div>` : ''}
+    <div class="prompt">
+      <span class="dom">${esc(dom)}</span>
+      <h2>${esc(p.prompt)}</h2>
+      <div class="meta">
+        <span>as of ${esc(fmtDate(p.asOf))}</span>
+        <button id="open-source">ⓘ Metric &amp; source</button>
+      </div>
+    </div>
+    ${slotsHtml(p, game.found, false)}
+  </div>
+  <div class="footbar">
+    <div class="guessrow">
+      <input id="guess" placeholder="Type an answer" autocomplete="off" autocapitalize="words" spellcheck="false" enterkeyhint="go">
+      <button class="btn btn-primary" id="submit">Go</button>
+    </div>
+    <div class="misses">
+      ${[0, 1, 2, 3, 4].map(i => `<i class="${i < game.misses ? 'x' : ''}"></i>`).join('')}
+      <span>${5 - game.misses} left</span>
+    </div>
+    <div class="flash ${flash.kind}">${esc(flash.msg)}</div>
+  </div>`;
+}
+
+function viewResult() {
+  const p = game.puzzle;
+  const score = game.found.size;
+  const ch = game.challenge;
+  return `
+  <div class="topbar"><h1>${score === 10 ? 'All ten.' : score >= 7 ? 'Good run.' : 'That’s a wrap.'}</h1></div>
+  <div class="body">
+    <div class="score">
+      <b>${score}<em>/10</em></b>
+      <p>${game.misses} miss${game.misses === 1 ? '' : 'es'} · ${esc(p.prompt)}</p>
+    </div>
+    <div class="pips">${p.answers.map((_, i) => `<i class="${game.found.has(i) ? 'on' : ''}"></i>`).join('')}</div>
+    ${ch ? `<div class="versus" style="margin-top:16px">
+      <span>You <b>${score}</b></span><span style="color:var(--ink-dim)">vs</span><span>Them <b>${ch.score}</b></span>
+      <span style="color:${score > ch.score ? 'var(--mint)' : score < ch.score ? 'var(--coral)' : 'var(--gold)'};font-weight:700">
+        ${score > ch.score ? 'You win' : score < ch.score ? 'They win' : 'Tie'}</span>
+    </div>` : ''}
+    <h2 class="sec">The full ten</h2>
+    ${slotsHtml(p, game.found, true)}
+    <button class="btn btn-ghost btn-block btn-sm" id="open-source">ⓘ Metric &amp; source</button>
+  </div>
+  <div class="footbar">
+    <button class="btn btn-primary btn-block" id="share">Share this quiz</button>
+    <div style="display:flex;gap:8px;margin-top:8px;">
+      <button class="btn btn-secondary btn-sm" id="again" style="flex:1">New quiz</button>
+      <button class="btn btn-ghost btn-sm" id="home" style="flex:1">Home</button>
+    </div>
+    <div class="flash">${esc(flash.msg)}</div>
+  </div>`;
+}
+
+function viewSheet() {
+  let inner = '';
+  if (sheet === 'source') {
+    const p = game.puzzle;
+    inner = `<h3>Metric &amp; source</h3>
+      <div class="kv"><b>Question means</b><span>${esc(p.metric)}</span></div>
+      <div class="kv"><b>Source</b><span>${esc(p.source.name)}<br><a href="${esc(p.source.url)}" target="_blank" rel="noopener">${esc(p.source.url)}</a></span></div>
+      <div class="kv"><b>Data as of</b><span>${esc(fmtDate(p.asOf))}</span></div>
+      ${p.ambiguity ? `<div class="kv"><b>Known disagreement</b><span>${esc(p.ambiguity)}</span></div>` : ''}`;
+  } else if (sheet === 'settings') {
+    const s = store.settings;
+    inner = `<h3>Categories</h3>
+      <p class="helper">Pick what you want to see. Obscurity caps how deep the catalogue goes — there are thousands of perfectly-sourced lists nobody wants to play.</p>
+      <div class="chips">${DOMAINS.map(([k, label]) =>
+        `<button class="chip ${s.domains.includes(k) ? 'on' : ''}" data-dom="${k}">${label}</button>`).join('')}</div>
+      <h2 class="sec">Obscurity cap</h2>
+      <div class="range">${[1, 2, 3, 4, 5].map(n =>
+        `<button class="${s.maxObscurity === n ? 'on' : ''}" data-obs="${n}">${n}</button>`).join('')}</div>
+      <p class="helper" style="margin-top:8px;font-size:12.5px">1 common knowledge · 3 knows the field · 5 specialist</p>`;
+  } else if (sheet === 'history') {
+    inner = `<h3>History</h3><div class="hist">${store.history.slice(0, 40).map(h =>
+      `<div class="hrow"><span class="hs">${h.score}/10</span><span class="hp">${esc(h.prompt)}</span></div>`).join('')
+      || '<p class="helper">Nothing yet.</p>'}</div>`;
+  }
+  return `<div class="scrim" id="scrim"><div class="sheet">${inner}
+    <button class="btn btn-secondary btn-block btn-sm" id="close-sheet" style="margin-top:14px">Close</button></div></div>`;
+}
+
+/* ---------- sharing ---------- */
+async function doShare() {
+  const p = game.puzzle, score = game.found.size;
+  const pips = p.answers.map((_, i) => game.found.has(i) ? '●' : '○').join('');
+  const text = `Daily Tens — ${p.prompt}\n${score}/10  ${pips}\nCan you beat it?`;
+  const url = shareUrl(p.id, score);
+  try {
+    if (navigator.share) { await navigator.share({ text, url }); return; }
+    await navigator.clipboard.writeText(text + '\n' + url);
+    flash = { msg: 'Copied to clipboard', kind: '' };
+  } catch {
+    flash = { msg: 'Could not share', kind: 'bad' };
+  }
+  render();
+}
+
+/* ---------- wiring ---------- */
+function on(id, fn, ev) {
+  const el = document.getElementById(id);
+  if (el) el.addEventListener(ev || 'click', fn);
+}
+function wire() {
+  on('play', () => { const p = pickPuzzle(); if (p) startGame(p); });
+  on('open-settings', () => { sheet = 'settings'; render(); });
+  on('open-history', () => { sheet = 'history'; render(); });
+  on('open-source', () => { sheet = 'source'; render(); });
+  on('close-sheet', () => { sheet = null; render(); });
+  on('scrim', e => { if (e.target.id === 'scrim') { sheet = null; render(); } });
+  on('back', () => { view = 'home'; game = null; clearHash(); render(); });
+  on('home', () => { view = 'home'; game = null; clearHash(); render(); });
+  on('give-up', () => endGame());
+  on('submit', submitGuess);
+  on('share', doShare);
+  on('again', () => { clearHash(); const p = pickPuzzle(); if (p) startGame(p); });
+  const g = document.getElementById('guess');
+  if (g) g.addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); submitGuess(); } });
+  document.querySelectorAll('[data-dom]').forEach(b => b.addEventListener('click', () => {
+    const k = b.dataset.dom, s = store.settings;
+    s.domains = s.domains.includes(k) ? s.domains.filter(x => x !== k) : s.domains.concat(k);
+    if (!s.domains.length) s.domains = [k];   // never allow an empty rotation
+    save(); render();
+  }));
+  document.querySelectorAll('[data-obs]').forEach(b => b.addEventListener('click', () => {
+    store.settings.maxObscurity = +b.dataset.obs; save(); render();
+  }));
+}
+
+/* ---------- boot ---------- */
+(async function boot() {
+  await loadPuzzles();
+  const link = readHash();
+  if (link) {
+    const p = PUZZLES.find(x => x.id === link.id);
+    // A shared puzzle bypasses the domain and obscurity filters on purpose —
+    // it was chosen by a person, not the rotation.
+    if (p) { startGame(p, link.score != null ? { score: link.score } : null); return; }
+  }
+  render();
+  if ('serviceWorker' in navigator) navigator.serviceWorker.register('./sw.js').catch(() => {});
+})();
+</script>
+</body>
+</html>
