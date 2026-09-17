@@ -136,9 +136,12 @@
   .chips{display:flex;flex-wrap:wrap;gap:7px;}
   .chip{background:var(--card-2);border:1px solid var(--border);border-radius:999px;padding:7px 13px;font-size:13px;cursor:pointer;color:var(--ink-soft);}
   .chip.on{background:var(--mint-soft);border-color:rgba(95,211,168,.35);color:var(--ink);font-weight:600;}
-  .range{display:flex;gap:6px;}
-  .range button{flex:1;background:var(--card-2);border:1px solid var(--border);color:var(--ink-soft);border-radius:10px;padding:10px 0;font-size:14px;cursor:pointer;}
+  .range{display:flex;gap:5px;}
+  .range button{flex:1;background:var(--card-2);border:1px solid var(--border);color:var(--ink-soft);border-radius:9px;padding:8px 0;font-size:13px;cursor:pointer;}
   .range button.on{background:var(--mint-soft);border-color:rgba(95,211,168,.35);color:var(--ink);font-weight:700;}
+  .caprow{margin:0 0 11px;}
+  .caplab{font-size:13.5px;font-weight:600;margin-bottom:5px;display:flex;gap:6px;align-items:baseline;}
+  .caplab span{color:var(--ink-dim);font-size:11px;text-transform:uppercase;letter-spacing:.6px;font-weight:700;}
   .hist{display:flex;flex-direction:column;gap:6px;}
   .hrow{display:flex;align-items:center;gap:10px;background:var(--card);border:1px solid var(--border-soft);border-radius:11px;padding:10px 12px;font-size:13.5px;}
   .hrow .hp{flex:1;color:var(--ink-soft);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
@@ -162,17 +165,35 @@ const DOMAINS = [
   ['food','Food & drink'], ['language','Language & literature'],
 ];
 
-/* ---------- persistence ---------- */
+/* ---------- persistence ----------
+   caps: per-domain obscurity ceiling, 0 = domain off, 1-5 = how deep.
+   boost: tags to follow all the way down regardless of their domain's cap,
+          so "sports at 3 but NFL at 5" is expressible. */
 const defaults = () => ({
-  history: [],                       // [{id, prompt, score, misses, ts}]
-  settings: { domains: DOMAINS.map(d => d[0]), maxObscurity: 3 },
+  history: [],                       // [{id, prompt, score, misses, hints, ts}]
+  settings: {
+    caps: Object.fromEntries(DOMAINS.map(d => [d[0], 3])),
+    boost: [],
+  },
 });
 let store = load();
 function load() {
   try {
     const raw = localStorage.getItem(KEY);
     if (!raw) return defaults();
-    return Object.assign(defaults(), JSON.parse(raw));
+    const s = Object.assign(defaults(), JSON.parse(raw));
+    // Migrate the old single-cap shape: {domains:[...], maxObscurity:n}.
+    if (!s.settings.caps) {
+      const old = s.settings || {};
+      const depth = old.maxObscurity || 3;
+      s.settings = {
+        caps: Object.fromEntries(DOMAINS.map(d =>
+          [d[0], (old.domains || []).includes(d[0]) ? depth : 0])),
+        boost: [],
+      };
+    }
+    if (!s.settings.boost) s.settings.boost = [];
+    return s;
   } catch { return defaults(); }
 }
 function save() {
@@ -280,15 +301,30 @@ function normalizePuzzle(p, obfuscated) {
 }
 
 /* ---------- selection ---------- */
-// With no domain argument this is the random rotation, which obeys the user's
-// saved domain filters. Naming a domain overrides those filters — an explicit
-// pick beats a standing preference — but still respects the obscurity cap.
-function eligible(domain) {
+// The obscurity ceiling that applies to one puzzle. A boosted tag lifts the
+// ceiling to 5 within an enabled domain — but a domain switched off stays off,
+// so "no sports" means no sports even if a sports tag is boosted.
+function ceilingFor(p, explicit) {
   const s = store.settings;
-  return PUZZLES.filter(p =>
-    (domain ? p.domain === domain : s.domains.includes(p.domain)) &&
-    (p.obscurity || 1) <= s.maxObscurity
-  );
+  const cap = s.caps[p.domain] == null ? 3 : s.caps[p.domain];
+  if (cap === 0) return explicit ? 5 : 0;   // explicit pick overrides "off"
+  return (p.tags || []).some(t => s.boost.includes(t)) ? 5 : cap;
+}
+
+// With no domain argument this is the random rotation, which obeys the saved
+// caps. Naming a domain overrides an "off" cap — an explicit pick beats a
+// standing preference.
+function eligible(domain) {
+  return PUZZLES.filter(p => {
+    if (domain && p.domain !== domain) return false;
+    const ceil = ceilingFor(p, !!domain);
+    return ceil > 0 && (p.obscurity || 1) <= ceil;
+  });
+}
+function allTags() {
+  const seen = new Map();
+  for (const p of PUZZLES) for (const t of (p.tags || [])) seen.set(t, (seen.get(t) || 0) + 1);
+  return [...seen.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
 }
 function pickPuzzle(domain) {
   const pool = eligible(domain);
@@ -560,14 +596,22 @@ function viewSheet() {
       <button class="btn btn-primary btn-block btn-sm" id="pick-random" style="margin-top:12px">Surprise me instead</button>`;
   } else if (sheet === 'settings') {
     const s = store.settings;
+    const tags = allTags();
     inner = `<h3>Rotation filters</h3>
-      <p class="helper">What “Random quiz” is allowed to serve. Obscurity caps how deep the catalogue goes — there are thousands of perfectly-sourced lists nobody wants to play.</p>
-      <div class="chips">${DOMAINS.map(([k, label]) =>
-        `<button class="chip ${s.domains.includes(k) ? 'on' : ''}" data-dom="${k}">${label}</button>`).join('')}</div>
-      <h2 class="sec">Obscurity cap</h2>
-      <div class="range">${[1, 2, 3, 4, 5].map(n =>
-        `<button class="${s.maxObscurity === n ? 'on' : ''}" data-obs="${n}">${n}</button>`).join('')}</div>
-      <p class="helper" style="margin-top:8px;font-size:12.5px">1 common knowledge · 3 knows the field · 5 specialist</p>`;
+      <p class="helper">How deep “Random quiz” goes in each category. Depth is about whether you <em>care</em>, not whether it's hard — 1 is common knowledge, 3 knows the field, 5 is specialist.</p>
+      ${DOMAINS.map(([k, label]) => {
+        const cap = s.caps[k] == null ? 3 : s.caps[k];
+        return `<div class="caprow">
+          <div class="caplab">${label}${cap ? '' : ' <span>off</span>'}</div>
+          <div class="range">
+            <button class="${cap === 0 ? 'on' : ''}" data-cap="${k}:0">Off</button>
+            ${[1, 2, 3, 4, 5].map(n => `<button class="${cap === n ? 'on' : ''}" data-cap="${k}:${n}">${n}</button>`).join('')}
+          </div></div>`;
+      }).join('')}
+      ${tags.length ? `<h2 class="sec">Go deep on</h2>
+      <p class="helper" style="font-size:12.5px;margin-bottom:10px">Follow these all the way to specialist level, whatever their category is set to. Useful when you're into one corner of a sport but not the rest of it.</p>
+      <div class="chips">${tags.map(([t, n]) =>
+        `<button class="chip ${s.boost.includes(t) ? 'on' : ''}" data-boost="${esc(t)}">${esc(t)} <span style="opacity:.55">${n}</span></button>`).join('')}</div>` : ''}`;
   } else if (sheet === 'history') {
     inner = `<h3>History</h3><div class="hist">${store.history.slice(0, 40).map(h =>
       `<div class="hrow"><span class="hs">${h.score}/10</span><span class="hp">${esc(h.prompt)}</span></div>`).join('')
@@ -616,14 +660,18 @@ function wire() {
   on('again', () => { clearHash(); const p = pickPuzzle(); if (p) startGame(p); });
   const g = document.getElementById('guess');
   if (g) g.addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); submitGuess(); } });
-  document.querySelectorAll('[data-dom]').forEach(b => b.addEventListener('click', () => {
-    const k = b.dataset.dom, s = store.settings;
-    s.domains = s.domains.includes(k) ? s.domains.filter(x => x !== k) : s.domains.concat(k);
-    if (!s.domains.length) s.domains = [k];   // never allow an empty rotation
+  document.querySelectorAll('[data-cap]').forEach(b => b.addEventListener('click', () => {
+    const [k, n] = b.dataset.cap.split(':');
+    const s = store.settings;
+    s.caps[k] = +n;
+    // Never leave the random rotation with nothing to serve.
+    if (Object.values(s.caps).every(v => v === 0)) s.caps[k] = 1;
     save(); render();
   }));
-  document.querySelectorAll('[data-obs]').forEach(b => b.addEventListener('click', () => {
-    store.settings.maxObscurity = +b.dataset.obs; save(); render();
+  document.querySelectorAll('[data-boost]').forEach(b => b.addEventListener('click', () => {
+    const t = b.dataset.boost, s = store.settings;
+    s.boost = s.boost.includes(t) ? s.boost.filter(x => x !== t) : s.boost.concat(t);
+    save(); render();
   }));
   document.querySelectorAll('[data-pick]').forEach(b => b.addEventListener('click', () => {
     const p = pickPuzzle(b.dataset.pick);

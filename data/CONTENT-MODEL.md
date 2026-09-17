@@ -67,3 +67,25 @@ Every puzzle carries `obscurity` 1–5:
 
 The app filters on this, and it is the lever that keeps an infinite catalogue
 from becoming an infinite catalogue of things nobody wants to play.
+
+## Weighting: deliberate overrepresentation
+
+Two sub-domains are authored **more heavily than proportionate interest would
+suggest**, by request. This is a content decision, not a filter — these
+puzzles are simply more numerous in the catalogue.
+
+- **`nfl`** — NFL. Champions, conference titles, award winners, career and
+  single-season leaders, draft history.
+- **`running`** — track and field, **running events only**.
+
+Target share of a 100-puzzle launch set: sports ~35, of which `nfl` ~12 and
+`running` ~10. Maintain roughly that proportion as the catalogue grows.
+
+### What counts as `running`
+
+In: sprints, middle distance, distance, hurdles, relays, steeplechase, road
+racing and the marathon — on track, road or cross country.
+
+Out: all field events (throws and jumps) and combined events that include them
+(decathlon, heptathlon). Race walking is excluded too — it is a track discipline
+but not running; flag if that call should go the other way.
