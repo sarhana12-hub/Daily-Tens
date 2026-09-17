@@ -20275,6 +20275,1092 @@
           "clue": "Japanese, and most deaths came from the firestorm after"
         }
       ]
+    },
+    {
+      "type": "ranked",
+      "tags": [],
+      "volatility": "evergreen",
+      "asOf": "2024-12-31",
+      "id": "hist-longest-presidencies",
+      "domain": "history",
+      "obscurity": 2,
+      "difficulty": 4,
+      "prompt": "Longest-serving US presidents",
+      "metric": "Days served in office.",
+      "source": {
+        "name": "The White House",
+        "url": "https://www.whitehouse.gov/about-the-white-house/presidents/"
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Franklin D. Roosevelt",
+          "value": 4422,
+          "aliases": [
+            "fdr",
+            "franklin roosevelt"
+          ],
+          "clue": "Elected four times, which is now impossible"
+        },
+        {
+          "rank": 2,
+          "name": "Ulysses S. Grant",
+          "value": 2922,
+          "aliases": [
+            "grant"
+          ],
+          "clue": "Two full terms after commanding an army"
+        },
+        {
+          "rank": 3,
+          "name": "Woodrow Wilson",
+          "value": 2922,
+          "aliases": [
+            "wilson"
+          ],
+          "clue": "Two terms spanning a world war"
+        },
+        {
+          "rank": 4,
+          "name": "Dwight Eisenhower",
+          "value": 2922,
+          "aliases": [
+            "eisenhower",
+            "ike"
+          ],
+          "clue": "Two terms after commanding an invasion"
+        },
+        {
+          "rank": 5,
+          "name": "Ronald Reagan",
+          "value": 2922,
+          "aliases": [
+            "reagan"
+          ],
+          "clue": "Two terms, and a film career before"
+        },
+        {
+          "rank": 6,
+          "name": "Bill Clinton",
+          "value": 2922,
+          "aliases": [
+            "clinton"
+          ],
+          "clue": "Two terms, and impeached in the second"
+        },
+        {
+          "rank": 7,
+          "name": "George W. Bush",
+          "value": 2922,
+          "aliases": [
+            "gw bush",
+            "dubya"
+          ],
+          "clue": "Two terms beginning with a disputed count"
+        },
+        {
+          "rank": 8,
+          "name": "Barack Obama",
+          "value": 2922,
+          "aliases": [
+            "obama"
+          ],
+          "clue": "Two terms, and the first Black president"
+        },
+        {
+          "rank": 9,
+          "name": "Thomas Jefferson",
+          "value": 2922,
+          "aliases": [
+            "jefferson"
+          ],
+          "clue": "Two terms, and wrote a famous declaration"
+        },
+        {
+          "rank": 10,
+          "name": "Theodore Roosevelt",
+          "value": 2728,
+          "aliases": [
+            "teddy roosevelt",
+            "tr"
+          ],
+          "clue": "Took office after an assassination, then won his own term"
+        }
+      ],
+      "ambiguity": "Many presidents served exactly two full terms, so they tie at 2,922 days and the order within that tie is arbitrary; the ten names are the point.",
+      "confidence": {
+        "level": "partial",
+        "note": "The first and the two-term group are certain. Which of the many two-term presidents appears here is my best judgment."
+      }
+    },
+    {
+      "type": "ranked",
+      "tags": [],
+      "volatility": "evergreen",
+      "asOf": "2024-12-31",
+      "id": "hist-largest-electoral-wins",
+      "domain": "history",
+      "obscurity": 3,
+      "difficulty": 5,
+      "prompt": "Largest US electoral college landslides",
+      "metric": "Share of electoral college votes won, as a percentage.",
+      "source": {
+        "name": "The White House",
+        "url": "https://www.whitehouse.gov/about-the-white-house/presidents/"
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Franklin D. Roosevelt 1936",
+          "value": 98.5,
+          "aliases": [
+            "fdr 1936",
+            "roosevelt 1936"
+          ],
+          "clue": "Won every state but two"
+        },
+        {
+          "rank": 2,
+          "name": "James Monroe 1820",
+          "value": 98.3,
+          "aliases": [
+            "monroe"
+          ],
+          "clue": "Ran effectively unopposed"
+        },
+        {
+          "rank": 3,
+          "name": "Ronald Reagan 1984",
+          "value": 97.6,
+          "aliases": [
+            "reagan 1984",
+            "reagan"
+          ],
+          "clue": "Won 49 of 50 states"
+        },
+        {
+          "rank": 4,
+          "name": "Richard Nixon 1972",
+          "value": 96.7,
+          "aliases": [
+            "nixon 1972",
+            "nixon"
+          ],
+          "clue": "Won 49 states, two years before resigning"
+        },
+        {
+          "rank": 5,
+          "name": "Abraham Lincoln 1864",
+          "value": 90.6,
+          "aliases": [
+            "lincoln"
+          ],
+          "clue": "Won a wartime election while the South was absent"
+        },
+        {
+          "rank": 6,
+          "name": "Lyndon Johnson 1964",
+          "value": 90.3,
+          "aliases": [
+            "lbj",
+            "johnson 1964"
+          ],
+          "clue": "Won the largest share of the popular vote ever"
+        },
+        {
+          "rank": 7,
+          "name": "Franklin D. Roosevelt 1932",
+          "value": 88.9,
+          "aliases": [
+            "fdr 1932"
+          ],
+          "clue": "Won during the depths of the Depression"
+        },
+        {
+          "rank": 8,
+          "name": "Dwight Eisenhower 1956",
+          "value": 86.1,
+          "aliases": [
+            "eisenhower 1956",
+            "ike"
+          ],
+          "clue": "Won a second term comfortably"
+        },
+        {
+          "rank": 9,
+          "name": "Herbert Hoover 1928",
+          "value": 83.6,
+          "aliases": [
+            "hoover"
+          ],
+          "clue": "A landslide immediately before a crash"
+        },
+        {
+          "rank": 10,
+          "name": "Theodore Roosevelt 1904",
+          "value": 70.6,
+          "aliases": [
+            "teddy roosevelt 1904"
+          ],
+          "clue": "Won his own term after inheriting the office"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "Early elections used a different electoral system, which makes percentages hard to compare, so the order is my best judgment."
+      }
+    },
+    {
+      "id": "hist-nobel-peace-recent",
+      "type": "recency",
+      "domain": "history",
+      "tags": [
+        "prizes"
+      ],
+      "obscurity": 2,
+      "difficulty": 4,
+      "prompt": "The ten most recent Nobel Peace Prize laureates",
+      "metric": "Winner of the Nobel Peace Prize, by year of award.",
+      "source": {
+        "name": "NobelPrize.org",
+        "url": "https://www.nobelprize.org/prizes/lists/all-nobel-peace-prizes/"
+      },
+      "asOf": "2025-10",
+      "volatility": "annual",
+      "confidence": {
+        "level": "partial",
+        "note": "Verified through 2024. The 2025 laureate is my best judgment."
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "label": "2025",
+          "name": "Maria Corina Machado",
+          "aliases": [
+            "machado"
+          ],
+          "clue": "Venezuelan opposition leader"
+        },
+        {
+          "rank": 2,
+          "label": "2024",
+          "name": "Nihon Hidankyo",
+          "aliases": [
+            "hidankyo"
+          ],
+          "clue": "A Japanese organisation of atomic bomb survivors"
+        },
+        {
+          "rank": 3,
+          "label": "2023",
+          "name": "Narges Mohammadi",
+          "aliases": [
+            "mohammadi"
+          ],
+          "clue": "Iranian, and imprisoned when awarded"
+        },
+        {
+          "rank": 4,
+          "label": "2022",
+          "name": "Memorial and others",
+          "aliases": [
+            "memorial"
+          ],
+          "clue": "Shared between Russian, Ukrainian and Belarusian rights groups"
+        },
+        {
+          "rank": 5,
+          "label": "2021",
+          "name": "Maria Ressa and Dmitry Muratov",
+          "aliases": [
+            "ressa",
+            "muratov"
+          ],
+          "clue": "Two journalists, for defending free expression"
+        },
+        {
+          "rank": 6,
+          "label": "2020",
+          "name": "World Food Programme",
+          "aliases": [
+            "wfp",
+            "world food program"
+          ],
+          "clue": "A UN agency, for fighting hunger"
+        },
+        {
+          "rank": 7,
+          "label": "2019",
+          "name": "Abiy Ahmed",
+          "aliases": [
+            "abiy"
+          ],
+          "clue": "Ethiopian prime minister, for peace with a neighbour"
+        },
+        {
+          "rank": 8,
+          "label": "2018",
+          "name": "Denis Mukwege and Nadia Murad",
+          "aliases": [
+            "mukwege",
+            "murad"
+          ],
+          "clue": "For campaigning against sexual violence in war"
+        },
+        {
+          "rank": 9,
+          "label": "2017",
+          "name": "ICAN",
+          "aliases": [
+            "ican",
+            "campaign to abolish nuclear weapons"
+          ],
+          "clue": "A coalition against nuclear weapons"
+        },
+        {
+          "rank": 10,
+          "label": "2016",
+          "name": "Juan Manuel Santos",
+          "aliases": [
+            "santos"
+          ],
+          "clue": "Colombian president, for a peace deal with rebels"
+        }
+      ]
+    },
+    {
+      "type": "ranked",
+      "tags": [],
+      "volatility": "evergreen",
+      "asOf": "2024-12-31",
+      "id": "geo-most-time-zones",
+      "domain": "geography",
+      "obscurity": 3,
+      "difficulty": 5,
+      "prompt": "Countries spanning the most time zones",
+      "metric": "Number of distinct time zones used, including overseas territories.",
+      "source": {
+        "name": "Encyclopaedia Britannica",
+        "url": "https://www.britannica.com/"
+      },
+      "ambiguity": "Counting overseas territories is what puts some European countries at the top; by contiguous mainland only, the order is completely different.",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "France",
+          "value": 12,
+          "aliases": [],
+          "clue": "Its overseas departments span the globe"
+        },
+        {
+          "rank": 2,
+          "name": "United States",
+          "value": 11,
+          "aliases": [
+            "usa",
+            "us",
+            "america"
+          ],
+          "clue": "Including Pacific territories"
+        },
+        {
+          "rank": 3,
+          "name": "Russia",
+          "value": 11,
+          "aliases": [],
+          "clue": "The most of any contiguous landmass"
+        },
+        {
+          "rank": 4,
+          "name": "United Kingdom",
+          "value": 9,
+          "aliases": [
+            "uk",
+            "britain"
+          ],
+          "clue": "Overseas territories from the Pacific to the Atlantic"
+        },
+        {
+          "rank": 5,
+          "name": "Australia",
+          "value": 9,
+          "aliases": [],
+          "clue": "Including Antarctic and Indian Ocean territories"
+        },
+        {
+          "rank": 6,
+          "name": "Canada",
+          "value": 6,
+          "aliases": [],
+          "clue": "Six across the mainland, and one is a half-hour offset"
+        },
+        {
+          "rank": 7,
+          "name": "Denmark",
+          "value": 5,
+          "aliases": [],
+          "clue": "Thanks to Greenland and the Faroes"
+        },
+        {
+          "rank": 8,
+          "name": "New Zealand",
+          "value": 5,
+          "aliases": [
+            "nz"
+          ],
+          "clue": "Including Antarctic and Pacific dependencies"
+        },
+        {
+          "rank": 9,
+          "name": "Brazil",
+          "value": 4,
+          "aliases": [
+            "brasil"
+          ],
+          "clue": "Four across a very wide country"
+        },
+        {
+          "rank": 10,
+          "name": "Mexico",
+          "value": 4,
+          "aliases": [],
+          "clue": "Four, recently reduced by abolishing daylight saving"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "Counts depend on how territories and half-hour offsets are treated, so the order is my best judgment."
+      }
+    },
+    {
+      "type": "ranked",
+      "tags": [],
+      "volatility": "evergreen",
+      "asOf": "2024-12-31",
+      "id": "geo-hottest-places",
+      "domain": "geography",
+      "obscurity": 2,
+      "difficulty": 5,
+      "prompt": "Hottest recorded air temperatures on Earth",
+      "metric": "Highest reliably recorded air temperature in degrees Celsius.",
+      "source": {
+        "name": "Encyclopaedia Britannica",
+        "url": "https://www.britannica.com/"
+      },
+      "ambiguity": "A 1922 reading of 58°C in Libya was long the record but was disqualified in 2012 as unreliable, which is why the list begins where it does.",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Furnace Creek, Death Valley",
+          "value": 56.7,
+          "aliases": [
+            "death valley",
+            "furnace creek"
+          ],
+          "clue": "Californian, and the accepted world record"
+        },
+        {
+          "rank": 2,
+          "name": "Kebili, Tunisia",
+          "value": 55,
+          "aliases": [
+            "kebili"
+          ],
+          "clue": "Tunisian, and also a very old reading"
+        },
+        {
+          "rank": 3,
+          "name": "Tirat Zvi, Israel",
+          "value": 54,
+          "aliases": [
+            "tirat zvi"
+          ],
+          "clue": "Israeli, in the Jordan valley"
+        },
+        {
+          "rank": 4,
+          "name": "Sulaibiya, Kuwait",
+          "value": 54,
+          "aliases": [
+            "sulaibiya"
+          ],
+          "clue": "Kuwaiti, and one of the hottest modern readings"
+        },
+        {
+          "rank": 5,
+          "name": "Mitribah, Kuwait",
+          "value": 53.9,
+          "aliases": [
+            "mitribah"
+          ],
+          "clue": "Kuwaiti, and verified by the WMO"
+        },
+        {
+          "rank": 6,
+          "name": "Basra, Iraq",
+          "value": 53.9,
+          "aliases": [
+            "basra"
+          ],
+          "clue": "Iraqi, and on the Gulf"
+        },
+        {
+          "rank": 7,
+          "name": "Turbat, Pakistan",
+          "value": 53.7,
+          "aliases": [
+            "turbat"
+          ],
+          "clue": "Pakistani, in Balochistan"
+        },
+        {
+          "rank": 8,
+          "name": "Ahvaz, Iran",
+          "value": 53.7,
+          "aliases": [
+            "ahvaz"
+          ],
+          "clue": "Iranian, and recorded a brutal heat index"
+        },
+        {
+          "rank": 9,
+          "name": "Jeddah, Saudi Arabia",
+          "value": 52,
+          "aliases": [
+            "jeddah"
+          ],
+          "clue": "Saudi, and on the Red Sea coast"
+        },
+        {
+          "rank": 10,
+          "name": "Oodnadatta, Australia",
+          "value": 50.7,
+          "aliases": [
+            "oodnadatta"
+          ],
+          "clue": "Australian, and the national record"
+        }
+      ],
+      "confidence": {
+        "level": "judgment",
+        "note": "Historical temperature records are repeatedly re-examined and some are disqualified, and several of these readings are within a tenth of a degree. Order is my best judgment."
+      }
+    },
+    {
+      "type": "ranked",
+      "tags": [],
+      "volatility": "annual",
+      "asOf": "2025-12-31",
+      "id": "geo-busiest-ports",
+      "domain": "geography",
+      "obscurity": 3,
+      "difficulty": 4,
+      "prompt": "Busiest container ports in the world",
+      "metric": "Container throughput per year, in twenty-foot equivalent units.",
+      "source": {
+        "name": "UN Trade and Development",
+        "url": "https://unctad.org/"
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Shanghai",
+          "value": null,
+          "aliases": [],
+          "clue": "The busiest, at over 47 million containers"
+        },
+        {
+          "rank": 2,
+          "name": "Singapore",
+          "value": null,
+          "aliases": [],
+          "clue": "A transshipment hub rather than a destination"
+        },
+        {
+          "rank": 3,
+          "name": "Ningbo-Zhoushan",
+          "value": null,
+          "aliases": [
+            "ningbo",
+            "zhoushan"
+          ],
+          "clue": "Chinese, and the largest by tonnage of any port"
+        },
+        {
+          "rank": 4,
+          "name": "Shenzhen",
+          "value": null,
+          "aliases": [],
+          "clue": "Serves the Pearl River Delta factories"
+        },
+        {
+          "rank": 5,
+          "name": "Qingdao",
+          "value": null,
+          "aliases": [],
+          "clue": "Northern Chinese, and heavily automated"
+        },
+        {
+          "rank": 6,
+          "name": "Guangzhou",
+          "value": null,
+          "aliases": [],
+          "clue": "Another Pearl River Delta port"
+        },
+        {
+          "rank": 7,
+          "name": "Busan",
+          "value": null,
+          "aliases": [
+            "pusan"
+          ],
+          "clue": "South Korean, and the largest outside China"
+        },
+        {
+          "rank": 8,
+          "name": "Tianjin",
+          "value": null,
+          "aliases": [],
+          "clue": "The port serving Beijing"
+        },
+        {
+          "rank": 9,
+          "name": "Los Angeles",
+          "value": null,
+          "aliases": [
+            "la",
+            "port of los angeles"
+          ],
+          "clue": "The busiest in the Americas"
+        },
+        {
+          "rank": 10,
+          "name": "Rotterdam",
+          "value": null,
+          "aliases": [],
+          "clue": "The busiest in Europe"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "The top four are firm. The Chinese ports below them are close together and the order is my best judgment."
+      }
+    },
+    {
+      "type": "ranked",
+      "tags": [],
+      "volatility": "annual",
+      "asOf": "2025-12-31",
+      "id": "food-largest-chains",
+      "domain": "food",
+      "obscurity": 1,
+      "difficulty": 4,
+      "prompt": "Largest fast food chains by number of locations",
+      "metric": "Number of outlets worldwide.",
+      "source": {
+        "name": "Company annual reports",
+        "url": "https://www.sec.gov/edgar/searchedgar/companysearch"
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "McDonald's",
+          "value": 42000,
+          "aliases": [
+            "mcdonalds",
+            "mickey ds"
+          ],
+          "clue": "Golden arches, and the largest by revenue"
+        },
+        {
+          "rank": 2,
+          "name": "Starbucks",
+          "value": 40000,
+          "aliases": [],
+          "clue": "Coffee, and grew fastest in China"
+        },
+        {
+          "rank": 3,
+          "name": "Subway",
+          "value": 37000,
+          "aliases": [],
+          "clue": "Sandwiches, and once had more outlets than anyone"
+        },
+        {
+          "rank": 4,
+          "name": "KFC",
+          "value": 30000,
+          "aliases": [
+            "kentucky fried chicken"
+          ],
+          "clue": "Fried chicken, and enormous in China"
+        },
+        {
+          "rank": 5,
+          "name": "Domino's",
+          "value": 21000,
+          "aliases": [
+            "dominos"
+          ],
+          "clue": "Pizza delivery, and calls itself a technology company"
+        },
+        {
+          "rank": 6,
+          "name": "Burger King",
+          "value": 19000,
+          "aliases": [
+            "bk"
+          ],
+          "clue": "Flame-grilled, and the perennial runner-up"
+        },
+        {
+          "rank": 7,
+          "name": "Pizza Hut",
+          "value": 19000,
+          "aliases": [],
+          "clue": "Pizza, and once known for its red roofs"
+        },
+        {
+          "rank": 8,
+          "name": "Dunkin",
+          "value": 13500,
+          "aliases": [
+            "dunkin donuts"
+          ],
+          "clue": "Dropped the second word from its name"
+        },
+        {
+          "rank": 9,
+          "name": "Tim Hortons",
+          "value": 5700,
+          "aliases": [
+            "tims"
+          ],
+          "clue": "Canadian, and named after a hockey player"
+        },
+        {
+          "rank": 10,
+          "name": "Popeyes",
+          "value": 4200,
+          "aliases": [],
+          "clue": "Louisiana-style chicken, and a famous sandwich"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "Outlet counts are self-reported and change monthly; the top four are firm and the rest is my best judgment."
+      }
+    },
+    {
+      "type": "ranked",
+      "tags": [],
+      "volatility": "annual",
+      "asOf": "2025-12-31",
+      "id": "food-michelin-countries",
+      "domain": "food",
+      "obscurity": 3,
+      "difficulty": 4,
+      "prompt": "Countries with the most Michelin three-star restaurants",
+      "metric": "Number of restaurants holding three Michelin stars.",
+      "source": {
+        "name": "Michelin Guide",
+        "url": "https://guide.michelin.com/"
+      },
+      "ambiguity": "The guide only covers countries it has chosen to review, so a country with no guide has no stars regardless of its cooking.",
+      "answers": [
+        {
+          "rank": 1,
+          "name": "France",
+          "value": 30,
+          "aliases": [],
+          "clue": "Where the guide began, as a tyre company's handbook"
+        },
+        {
+          "rank": 2,
+          "name": "Japan",
+          "value": 25,
+          "aliases": [],
+          "clue": "One city holds more stars than most countries"
+        },
+        {
+          "rank": 3,
+          "name": "Spain",
+          "value": 15,
+          "aliases": [
+            "espana"
+          ],
+          "clue": "Punches far above its weight, especially in the Basque country"
+        },
+        {
+          "rank": 4,
+          "name": "United States",
+          "value": 14,
+          "aliases": [
+            "usa",
+            "us",
+            "america"
+          ],
+          "clue": "Concentrated in three or four cities"
+        },
+        {
+          "rank": 5,
+          "name": "Italy",
+          "value": 13,
+          "aliases": [
+            "italia"
+          ],
+          "clue": "Fewer than you might expect for its cooking"
+        },
+        {
+          "rank": 6,
+          "name": "Germany",
+          "value": 10,
+          "aliases": [
+            "deutschland"
+          ],
+          "clue": "More stars than its reputation suggests"
+        },
+        {
+          "rank": 7,
+          "name": "United Kingdom",
+          "value": 9,
+          "aliases": [
+            "uk",
+            "britain"
+          ],
+          "clue": "Almost all of them in one city"
+        },
+        {
+          "rank": 8,
+          "name": "China",
+          "value": 8,
+          "aliases": [
+            "prc"
+          ],
+          "clue": "The guide covers only a few cities"
+        },
+        {
+          "rank": 9,
+          "name": "Switzerland",
+          "value": 5,
+          "aliases": [],
+          "clue": "Very high star density per head"
+        },
+        {
+          "rank": 10,
+          "name": "Belgium",
+          "value": 4,
+          "aliases": [],
+          "clue": "High density for a small country"
+        }
+      ],
+      "confidence": {
+        "level": "partial",
+        "note": "Star counts change with each annual guide and several countries are close, so the order is my best judgment."
+      }
+    },
+    {
+      "type": "ranked",
+      "tags": [],
+      "volatility": "evergreen",
+      "asOf": "2024-12-31",
+      "id": "food-most-expensive-spices",
+      "domain": "food",
+      "obscurity": 2,
+      "difficulty": 4,
+      "prompt": "Most expensive spices by weight",
+      "metric": "Typical retail price per kilogram, in US dollars.",
+      "source": {
+        "name": "Encyclopaedia Britannica",
+        "url": "https://www.britannica.com/"
+      },
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Saffron",
+          "value": 5000,
+          "aliases": [],
+          "clue": "Hand-picked stigmas, and thousands of flowers per kilo"
+        },
+        {
+          "rank": 2,
+          "name": "Vanilla",
+          "value": 600,
+          "aliases": [],
+          "clue": "A hand-pollinated orchid pod"
+        },
+        {
+          "rank": 3,
+          "name": "Mahlab",
+          "value": 200,
+          "aliases": [
+            "mahleb"
+          ],
+          "clue": "Ground cherry stones used in Middle Eastern baking"
+        },
+        {
+          "rank": 4,
+          "name": "Cardamom",
+          "value": 150,
+          "aliases": [],
+          "clue": "Green pods, and the third most expensive by weight in most years"
+        },
+        {
+          "rank": 5,
+          "name": "Long pepper",
+          "value": 100,
+          "aliases": [
+            "pippali"
+          ],
+          "clue": "An ancient spice largely displaced by its cousin"
+        },
+        {
+          "rank": 6,
+          "name": "Cloves",
+          "value": 40,
+          "aliases": [],
+          "clue": "Dried flower buds from Indonesia"
+        },
+        {
+          "rank": 7,
+          "name": "Cinnamon",
+          "value": 30,
+          "aliases": [],
+          "clue": "The true kind from Sri Lanka, not the common substitute"
+        },
+        {
+          "rank": 8,
+          "name": "Star anise",
+          "value": 25,
+          "aliases": [],
+          "clue": "Used in Chinese cooking and a famous flu drug"
+        },
+        {
+          "rank": 9,
+          "name": "Nutmeg",
+          "value": 20,
+          "aliases": [],
+          "clue": "Once worth fighting a war over"
+        },
+        {
+          "rank": 10,
+          "name": "Black pepper",
+          "value": 12,
+          "aliases": [
+            "pepper"
+          ],
+          "clue": "The most traded spice in the world"
+        }
+      ],
+      "confidence": {
+        "level": "judgment",
+        "note": "Spice prices vary hugely with grade, origin and harvest, so only the first two places are secure; the rest is my best judgment."
+      }
+    },
+    {
+      "id": "film-best-picture-earlier",
+      "type": "recency",
+      "domain": "film",
+      "tags": [
+        "oscars"
+      ],
+      "obscurity": 3,
+      "difficulty": 5,
+      "prompt": "Best Picture winners of the 2000s",
+      "metric": "Winner of the Academy Award for Best Picture for the ceremonies of 2007 to 2016, by ceremony year.",
+      "source": {
+        "name": "Academy of Motion Picture Arts and Sciences",
+        "url": "https://www.oscars.org/"
+      },
+      "asOf": "2016-02",
+      "volatility": "evergreen",
+      "ambiguity": "A fixed decade of winners rather than the most recent ten, so it does not change as new awards are given.",
+      "answers": [
+        {
+          "rank": 1,
+          "label": "2016",
+          "name": "Spotlight",
+          "aliases": [],
+          "clue": "Journalists investigating the Catholic church"
+        },
+        {
+          "rank": 2,
+          "label": "2015",
+          "name": "Birdman",
+          "aliases": [],
+          "clue": "Shot to look like one continuous take"
+        },
+        {
+          "rank": 3,
+          "label": "2014",
+          "name": "12 Years a Slave",
+          "aliases": [
+            "twelve years a slave"
+          ],
+          "clue": "Based on a nineteenth-century memoir"
+        },
+        {
+          "rank": 4,
+          "label": "2013",
+          "name": "Argo",
+          "aliases": [],
+          "clue": "A rescue disguised as a film production"
+        },
+        {
+          "rank": 5,
+          "label": "2012",
+          "name": "The Artist",
+          "aliases": [
+            "artist"
+          ],
+          "clue": "A silent black-and-white film about silent films"
+        },
+        {
+          "rank": 6,
+          "label": "2011",
+          "name": "The King's Speech",
+          "aliases": [
+            "kings speech"
+          ],
+          "clue": "A monarch and his speech therapist"
+        },
+        {
+          "rank": 7,
+          "label": "2010",
+          "name": "The Hurt Locker",
+          "aliases": [
+            "hurt locker"
+          ],
+          "clue": "A bomb disposal unit in Iraq"
+        },
+        {
+          "rank": 8,
+          "label": "2009",
+          "name": "Slumdog Millionaire",
+          "aliases": [
+            "slumdog"
+          ],
+          "clue": "A quiz show in Mumbai"
+        },
+        {
+          "rank": 9,
+          "label": "2008",
+          "name": "No Country for Old Men",
+          "aliases": [
+            "no country"
+          ],
+          "clue": "A hitman with a cattle gun"
+        },
+        {
+          "rank": 10,
+          "label": "2007",
+          "name": "The Departed",
+          "aliases": [
+            "departed"
+          ],
+          "clue": "Undercover police and mobsters in Boston"
+        }
+      ]
     }
   ]
 }
