@@ -497,7 +497,6 @@ function viewHome() {
       <button class="btn btn-ghost btn-sm" id="open-settings" style="flex:1">Rotation filters</button>
       <button class="btn btn-ghost btn-sm" id="open-history" style="flex:1" ${h.length ? '' : 'disabled'}>History</button>
     </div>
-    <p class="helper" style="text-align:center;margin:16px 0 0;font-size:12.5px;color:var(--ink-dim)">${pool} quiz${pool === 1 ? '' : 'zes'} in the random rotation</p>
   </div>`;
 }
 
@@ -611,15 +610,16 @@ function viewSheet() {
       ${p.ambiguity && over ? `<div class="kv"><b>Known disagreement</b><span>${esc(p.ambiguity)}</span></div>` : ''}
       ${p.ambiguity && !over ? `<div class="kv"><b>Known disagreement</b><span style="color:var(--ink-dim)">There is one for this list. It names answers, so it's shown when the quiz ends.</span></div>` : ''}`;
   } else if (sheet === 'pick') {
+    // No counts anywhere, and categories with nothing in them are simply
+    // absent rather than shown greyed out. The catalogue should feel
+    // bottomless; publishing its size only ever makes it feel finite.
+    const avail = DOMAINS.filter(([k]) => eligible(k).length > 0);
     inner = `<h3>Pick a category</h3>
       <p class="helper">Starts a quiz in that category, whatever your rotation filters say. Your obscurity cap still applies.</p>
-      <div class="hist">${DOMAINS.map(([k, label]) => {
-        const n = eligible(k).length;
-        return `<button class="hrow" style="cursor:pointer;text-align:left;width:100%"
-          ${n ? `data-pick="${k}"` : 'disabled style="opacity:.4;cursor:default;text-align:left;width:100%"'}>
+      <div class="hist">${avail.map(([k, label]) =>
+        `<button class="hrow" data-pick="${k}" style="cursor:pointer;text-align:left;width:100%">
           <span class="hp" style="color:var(--ink)">${label}</span>
-          <span class="hs" style="color:var(--ink-dim);font-weight:600">${n}</span></button>`;
-      }).join('')}</div>
+          <span class="hs" style="color:var(--ink-dim);font-weight:600">›</span></button>`).join('')}</div>
       <button class="btn btn-primary btn-block btn-sm" id="pick-random" style="margin-top:12px">Surprise me instead</button>`;
   } else if (sheet === 'settings') {
     const s = store.settings;
@@ -637,8 +637,8 @@ function viewSheet() {
       }).join('')}
       ${tags.length ? `<h2 class="sec">Go deep on</h2>
       <p class="helper" style="font-size:12.5px;margin-bottom:10px">Follow these all the way to specialist level, whatever their category is set to. Useful when you're into one corner of a sport but not the rest of it.</p>
-      <div class="chips">${tags.map(([t, n]) =>
-        `<button class="chip ${s.boost.includes(t) ? 'on' : ''}" data-boost="${esc(t)}">${esc(t)} <span style="opacity:.55">${n}</span></button>`).join('')}</div>` : ''}`;
+      <div class="chips">${tags.map(([t]) =>
+        `<button class="chip ${s.boost.includes(t) ? 'on' : ''}" data-boost="${esc(t)}">${esc(t)}</button>`).join('')}</div>` : ''}`;
   } else if (sheet === 'history') {
     inner = `<h3>History</h3><div class="hist">${store.history.slice(0, 40).map(h =>
       `<div class="hrow"><span class="hs">${h.score}/10</span><span class="hp">${esc(h.prompt)}</span></div>`).join('')
