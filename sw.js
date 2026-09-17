@@ -1,10 +1,11 @@
-const CACHE = 'daily-tens-v2';
+const CACHE = 'daily-tens-v3';
 const SHELL = ['./', './index.html', './manifest.json', './data/puzzles.min.json', './icons/icon-192.png', './icons/icon-512.png'];
 
 // GitHub Pages serves everything with Cache-Control: max-age=600, which we
 // can't override (static host, no server config). `cache: 'no-store'` makes
 // every fetch here bypass that entirely, so installs and revalidation never
 // silently reuse a browser-cached response that's up to 10 minutes stale.
+//
 // allSettled, not all: one missing shell file must not fail the whole install
 // and leave the app with no offline cache at all.
 self.addEventListener('install', (e) => {
